@@ -275,7 +275,7 @@
                                         <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_02.png' width="111" id="no_use">
                                     </div>
                                     <div class="box_right" style="width:140px; text-align:left; padding-left:10px;">
-                                        <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/use_item?l_frm=Memory_produce_work_memory_1&rnd=396315433" method="get" id="item_form">
+                                        <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/use_item?l_frm=Memory_produce_work_memory_1&rnd=396315433" method="post" id="item_form">
                                             <input type="hidden" name="item_id" value="" id="item_id">
                                             <input type="hidden" name="use_num" value="" id="use_num">
                                             <input type="hidden" name="" value="" id="csrf_token">
@@ -386,7 +386,7 @@
                         <a href="#" id="change_comment" style="display:none;" class="se_008" onclick="return false;"></a>
                     </section>
                     <section id="play_area" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/footer_bg.png); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;height:30px'>
-                        <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/ajax_play?l_frm=Memory_produce_work_memory_1&rnd=221188777' method="get" id="play">
+                        <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/ajax_play?l_frm=Memory_produce_work_memory_1&rnd=221188777' method="post" id="play">
                             <input type="button" value="" id="play_button" class="play_btn_df se_008">
                             <input type="hidden" name="area_id" value="1">
                             <input type="hidden" name="quest_id" value="1">
@@ -408,7 +408,7 @@
 <div class="m-Cnt" style="width:280px;">
 <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/gacha/chance/button_chance_item_exit01.png' id="choose_item_close">
 <div class="displayBox" style="-webkit-box-pack:justify;">
-<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/0.swf' method="get"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
+<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/0/' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
 <input type="hidden" name="use_item" value="3">
 <input type="hidden" name="area_id" value="1">
 <input type='hidden' name="max_use_flag" id="max_use_flag" value="0">
@@ -416,7 +416,7 @@
 <input type="image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_normal.png' class="jsOnDesignBtn" width="88" value=""><br>
 </div>
 </form>
-<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/1.swf' method="get"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
+<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/1/' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
 <input type="hidden" name="use_item" value="3">
 <input type="hidden" name="area_id" value="1">
 <input type='hidden' name="max_use_flag" id="max_use_flag" value="1">
@@ -424,7 +424,7 @@
 <input type="image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_good.png' class="jsOnDesignBtn" width="88" value=""><br>
 </div>
 </form>
-<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/2.swf' method="get" style="width:88px;">
+<form action='../../../../../memory_produce/produce_swf_memory/1716/1/1/2/' method="post" style="width:88px;">
 <div>
 <input type="hidden" name="use_item" value="1">
 <input type="hidden" name="area_id" value="1">
@@ -787,7 +787,7 @@
                 <div class="backLink">イベントメモリー詳細へ</div>
             </a>
             <div id="loadImages"></div>
-            <img id="background_image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event_flash/1716/bg/1716/bg00_rich.png' style="display:none;">
+            <img id="background_image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event_flash/bg/1716/bg00_rich.png' style="display:none;">
             <img id="dummy_image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event_flash/1716/idol/dummy.png' style="display:none;">
             <script type="text/javascript">
                 $(window).load(function() {
