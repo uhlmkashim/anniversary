@@ -37,20 +37,8 @@
             window.viewer_id = 134800333;
             var _url = "../../../../game_error/report_js_error";
             var _path = location.href;
-            var _spec_obj;
-            var _spec = 'none';
             var version = 1;
             // access方法検出
-            window._spec = _spec_obj;
-            if (_spec.isAndApp) {
-                _spec = 'andapp'
-            } else if (_spec.isIosApp) {
-                _spec = 'iosApp';
-            } else if (_spec.isShellApp) {
-                _spec = 'shellapp';
-            } else {
-                _spec = 'browser?';
-            }
             var _ua = window.navigator.userAgent.toLowerCase();
             window.onerror = function(msg, file, line, col, error) {
                 $.ajax({
@@ -63,8 +51,6 @@
                         'line': line,
                         'column': col,
                         'error': error,
-                        'spec': _spec,
-                        'spec_obj': _spec_obj,
                         'version': version
                     }
                 })
