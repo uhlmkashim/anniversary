@@ -32,31 +32,6 @@
     </script>
     <script src="../../../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="../../../../js/underscore-min.js"></script>
-    <script>
-        (function() {
-            window.viewer_id = 134800333;
-            var _url = "../../../../game_error/report_js_error";
-            var _path = location.href;
-            var version = 1;
-            // access方法検出
-            var _ua = window.navigator.userAgent.toLowerCase();
-            window.onerror = function(msg, file, line, col, error) {
-                $.ajax({
-                    url: _url,
-                    type: 'post',
-                    data: {
-                        'ua': _ua,
-                        'viewer_id': window.viewer_id,
-                        'path': _path,
-                        'line': line,
-                        'column': col,
-                        'error': error,
-                        'version': version
-                    }
-                })
-            };
-        })();
-    </script>
     <script src="../../../../js/require.js"></script>
     <script src="../../../../js/require.js"></script>
     <script>
@@ -155,17 +130,17 @@
                 <div class="m-Cnt m-Top4" style="width:280px">
                     <div class="m-Btm5 displayBox" style="-webkit-box-pack:justify;">
                         <form action='../../../raid_result_memory/1708/3/1/0.html' method="get" style="width:88px;">
-                            <div><input type="hidden" name="" value=""><input type="hidden" name="area_id" value="1"><input type='hidden' name="max_use_flag" id="max_use_flag" value="0"><input type="hidden" name="use_item" value="3">
+                            <div>
                                 <div><input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_normal.png' class="jsOnDesignBtn" width="88" value=""></div>
                             </div>
                         </form>
                         <form action='../../../raid_result_memory/1708/3/1/1' method="get" style="width:88px;">
-                            <div><input type="hidden" name="" value=""><input type="hidden" name="area_id" value="1"><input type='hidden' name="max_use_flag" id="max_use_flag" value="1"><input type="hidden" name="use_item" value="3">
+                            <div>
                                 <div class="eventItem_produce se_022" id="normalItemImg"><input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_good.png' class="jsOnDesignBtn" width="88" value=""></div>
                             </div>
                         </form>
                         <form action='../../../raid_result_memory/1708/3/1/2' method="get" style="width:88px;">
-                            <div><input type="hidden" name="" value=""><input type="hidden" name="use_item" value="1"><input type="hidden" name="area_id" value="1">
+                            <div>
                                 <div class="eventItem_produce"><input type="image" class='se_022 jsOnDesignBtn' src='../../../../image_sp/event/produce/sprite/lookback/btn_perfect.png' width="88" value=""></div>
                             </div>
                         </form>
@@ -279,22 +254,6 @@
                 </a>
             </footer>
         </div>
-        <script>
-            window._tarminal = {
-                'native_app_flg': false,
-                'android_app_flg': false,
-                'ios_app_flg': false,
-                'shell_app_flg': false
-            };
-        </script>
-        <script>
-            window._tarminal = {
-                'native_app_flg': false,
-                'android_app_flg': false,
-                'ios_app_flg': false,
-                'shell_app_flg': false
-            };
-        </script>
         <div id="mbga-pf-footer">
             <script type="text/javascript" charset="UTF-8">
                 (function() {
