@@ -806,12 +806,12 @@
 
 h2.title_img.event_red,
 div.title_img.event_red {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/line/red/line_head_bg.jpg?1487720052)
+    background-image: url(../../image_sp/event/common/line/red/line_head_bg.png?1487720052)
 }
 
 h2.title_img.event_red div,
 div.title_img.event_red div {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/line/red/line_head_bottom.jpg?1487720052)
+    background-image: url(../../image_sp/event/common/line/red/line_head_bottom.png?1487720052)
 }
 
 h2.title_img.event_red:before,
@@ -4478,7 +4478,7 @@ h3.title_img.m-Btm10 {
 }
 
 #mapIdolArea .fukidashiWrap .fukidashi.att_1.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cute.png?1487720326) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cute.png?1487720326) no-repeat 20% 95% #fff;
     background-size: 260px;
     padding: 10px 25px 20px 10px
 }
@@ -4494,7 +4494,7 @@ h3.title_img.m-Btm10 {
 }
 
 #mapIdolArea .fukidashiWrap .fukidashi.att_2.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cool.png?1487720326) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cool.png?1487720326) no-repeat 20% 95% #fff;
     background-size: 260px;
     padding: 10px 25px 20px 10px
 }
@@ -4510,7 +4510,7 @@ h3.title_img.m-Btm10 {
 }
 
 #mapIdolArea .fukidashiWrap .fukidashi.att_3.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_passion.png?1487720326) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_passion.png?1487720326) no-repeat 20% 95% #fff;
     background-size: 260px;
     padding: 10px 25px 20px 10px
 }
@@ -4526,7 +4526,7 @@ h3.title_img.m-Btm10 {
 }
 
 #mapIdolArea .fukidashiWrap .fukidashi.att_4.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_passion.png?1487720326) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_passion.png?1487720326) no-repeat 20% 95% #fff;
     background-size: 260px;
     padding: 10px 25px 20px 10px
 }
