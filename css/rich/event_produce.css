@@ -2836,23 +2836,23 @@ h3.title_img.event_purplepink:before {
 }
 
 .idol_comment_new.comment_attr_cute:before {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_cute.png?1487720052)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_cute.png?1487720052)
 }
 
 .idol_comment_new.comment_attr_cool:before {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_cool.png?1487720052)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_cool.png?1487720052)
 }
 
 .idol_comment_new.comment_attr_passion:before {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_passion.png?1487720052)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_passion.png?1487720052)
 }
 
 .idol_comment_new.comment_attr_trainer:before {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_trainer.png?1487720052)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_trainer.png?1487720052)
 }
 
 .idol_comment_new.comment_attr_chihiro:before {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_trainer.png?1487720052)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_trainer.png?1487720052)
 }
 
 .idol_comment_new .comment_fukidashi {
@@ -22072,7 +22072,7 @@ h3.title_img.event_produce:before {
 }
 
 .raidArea.produce .result_normal {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_normal.png?1487720327) center top no-repeat;
+    background: url(../../image_sp/ui/rich/quest/event/produce/communication_normal.png?1487720327) center top no-repeat;
     background-size: 258px;
     width: 258px;
     height: 38px;
@@ -22082,7 +22082,7 @@ h3.title_img.event_produce:before {
 }
 
 .raidArea.produce .result_good {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_good.png?1487720327) center top no-repeat;
+    background: url(../../image_sp/ui/rich/quest/event/produce/communication_good.png?1487720327) center top no-repeat;
     background-size: 258px;
     width: 258px;
     height: 38px;
@@ -22092,7 +22092,7 @@ h3.title_img.event_produce:before {
 }
 
 .raidArea.produce .result_perfet {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_perfet.png?1487720327) center top no-repeat;
+    background: url(../../image_sp/ui/rich/quest/event/produce/communication_perfet.png?1487720327) center top no-repeat;
     background-size: 258px;
     width: 258px;
     height: 38px;
