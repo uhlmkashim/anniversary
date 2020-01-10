@@ -8,6 +8,35 @@
     <meta http-equiv="expires" content="-1">
     <title>アイドルマスター シンデレラガールズ</title>
     <link rel="stylesheet" type="text/css" href="../../../../css/rich/new_mypage_common.css" media="all">
+    <script src="../../../../js/jquery-2.2.2.min.js"></script>	
+    <script src="../../../../js/underscore-min.js"></script>	
+    <script src="../../../../js/require.js"></script>	
+    <script src="../../../../js/require.js"></script>	
+    <script>	
+        requirejs.config({	
+            paths: {	
+                easeljs: "../../../../js/easeljs-0.8.2.min.js",	
+                easeljs_0_7_1: "../../../../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン	
+                tweenjs: "../../../../js/tweenjs-0.6.2.min.js",	
+                movieclipjs: "../../../../js/movieclip-0.7.1.min.js",	
+                createjs: "../../../../js/createjs-2015.11.26.min.js",	
+            }	
+        })	
+    </script>	
+    <script src="../../../../js/common.js"></script>	
+    <script src="../../../../js/common_new.js"></script>	
+    <script>	
+        $(function() {	
+            window.$ibox = $('.ibox').ibox();	
+        });	
+    </script>	
+    <script>	
+        $(document).ready(function() {	
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {	
+                newrelic.setPageViewName('/idolmaster/index.php/memory/detail/1716/10020/0');	
+            }	
+        });	
+    </script>
 </head>
 
 <body id="memory" class="detail">
