@@ -106,27 +106,6 @@
                 </a>
             </footer>
         </div>
-        <div id="mbga-pf-footer">
-            <script type="text/javascript" charset="UTF-8">
-                (function() {
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var list = document.getElementsByClassName('mbga-pf-footer-li');
-                        var i = 0,
-                            l = list.length;
-                        for (; i < l; i++) {
-                            var elem = list[i];
-                            elem.addEventListener('touchstart', function(e) {
-                                e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
-                            });
-                            elem.addEventListener('touchend', function(e) {
-                                e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
-                            });
-                            elem.addEventListener('touchmove', function(e) {});
-                        }
-                    });
-                })();
-            </script>
-        </div>
 </body>
 
 </html>
