@@ -6127,7 +6127,7 @@ span.LeftbgArrow {
     display: block;
     padding-left: 1.5rem;
     text-align: left;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/icon/icon_arrow_left.png?1285858800) no-repeat 0% 50%;
+    background: url(../../image_sp/ui/icon/icon_arrow_left.png?1285858800) no-repeat 0% 50%;
     background-size: 23px 23px
 }
 
@@ -25585,7 +25585,7 @@ body#mypage .area_main_idol .comment_main_idol_top:after {
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_cute,
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_1 {
     border: solid 3px #ff0073;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_cute.png?1285858800)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_cute.png?1285858800)
 }
 
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_cute::before,
@@ -25621,7 +25621,7 @@ body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_1::after {
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_cool,
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_2 {
     border: solid 3px #006aff;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_cool.png?1285858800)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_cool.png?1285858800)
 }
 
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_cool::before,
@@ -25657,7 +25657,7 @@ body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_2::after {
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_passion,
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_3 {
     border: solid 3px #fa0;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_passion.png?1285858800)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_passion.png?1285858800)
 }
 
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_passion::before,
@@ -25693,7 +25693,7 @@ body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_3::after {
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_trainer,
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_99 {
     border: solid 3px #21c421;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_trainer.png?1285858800)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_trainer.png?1285858800)
 }
 
 body#mypage .area_main_idol .comment_main_idol_top.comment_attribute_trainer::before,
