@@ -58,24 +58,7 @@
 </head>
 
 <body id="event_dream">
-    <div id="top" class="page_container jsOnBtn">
-        <script>
-            var $btnEventLogo = $('.jsBtnEventLogo');
-            var $btnGameMenu = $('.jsGameMenu');
-            var $menuElem = $('#headerPopupMenu');
-            // ゲームメニューは消しておく
-            $btnGameMenu.hide();
-            // メニュー開閉で表示制御
-            $('#headerAcd').on('click', function() {
-                if ($menuElem.css('display') == 'none') {
-                    $btnEventLogo.hide();
-                    $btnGameMenu.show();
-                } else {
-                    $btnEventLogo.show();
-                    $btnGameMenu.hide();
-                }
-            });
-        </script><input id="delay" type="hidden" value="0">
+    <div id="top" class="page_container jsOnBtn"><input id="delay" type="hidden" value="0">
         <h1 style="margin:0 0 10px;"><img src='../../../../../image_sp/event/1708/top_event.png' width="100%" alt="アイドルプロデュース<br />the 5th Anniversary" class="m-12px"></h1>
         <h2 class="title_img event_red nosp">
             <div>영업 - 사무소</div>
@@ -112,47 +95,8 @@
             <div class="backLink">이벤트 메모리 상세로</div>
         </a>
         <footer>
-            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
-                <div></div>
-            </a>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under"></a>
         </footer>
-    </div>
-    <script>
-        window._tarminal = {
-            'native_app_flg': false,
-            'android_app_flg': false,
-            'ios_app_flg': false,
-            'shell_app_flg': false
-        };
-    </script>
-    <script>
-        window._tarminal = {
-            'native_app_flg': false,
-            'android_app_flg': false,
-            'ios_app_flg': false,
-            'shell_app_flg': false
-        };
-    </script>
-    <div id="mbga-pf-footer">
-        <script type="text/javascript" charset="UTF-8">
-            (function() {
-                document.addEventListener('DOMContentLoaded', function() {
-                    var list = document.getElementsByClassName('mbga-pf-footer-li');
-                    var i = 0,
-                        l = list.length;
-                    for (; i < l; i++) {
-                        var elem = list[i];
-                        elem.addEventListener('touchstart', function(e) {
-                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
-                        });
-                        elem.addEventListener('touchend', function(e) {
-                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
-                        });
-                        elem.addEventListener('touchmove', function(e) {});
-                    }
-                });
-            })();
-        </script>
     </div>
 </body>
 
