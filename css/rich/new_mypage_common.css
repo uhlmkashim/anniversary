@@ -20218,7 +20218,7 @@ h2.title_img_blue:before {
     display: block;
     width: 320px;
     height: 10px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/line/standard/line_head_top.png?1285858800) no-repeat;
+    background: url(../../image_sp/ui/common/line/standard/line_head_top.png?1285858800) no-repeat;
     background-size: 320px;
     position: absolute;
     z-index: 5;
