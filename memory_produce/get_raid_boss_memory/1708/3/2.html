@@ -32,31 +32,6 @@
     </script>
     <script src="../../../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="../../../../js/underscore-min.js"></script>
-    <script>
-        (function() {
-            window.viewer_id = 134800333;
-            var _url = "../../../../game_error/report_js_error";
-            var _path = location.href;
-            var version = 1;
-            // access方法検出
-            var _ua = window.navigator.userAgent.toLowerCase();
-            window.onerror = function(msg, file, line, col, error) {
-                $.ajax({
-                    url: _url,
-                    type: 'post',
-                    data: {
-                        'ua': _ua,
-                        'viewer_id': window.viewer_id,
-                        'path': _path,
-                        'line': line,
-                        'column': col,
-                        'error': error,
-                        'version': version
-                    }
-                })
-            };
-        })();
-    </script>
     <script src="../../../../js/require.js"></script>
     <script src="../../../../js/require.js"></script>
     <script>
@@ -279,22 +254,6 @@
                 </a>
             </footer>
         </div>
-        <script>
-            window._tarminal = {
-                'native_app_flg': false,
-                'android_app_flg': false,
-                'ios_app_flg': false,
-                'shell_app_flg': false
-            };
-        </script>
-        <script>
-            window._tarminal = {
-                'native_app_flg': false,
-                'android_app_flg': false,
-                'ios_app_flg': false,
-                'shell_app_flg': false
-            };
-        </script>
         <div id="mbga-pf-footer">
             <script type="text/javascript" charset="UTF-8">
                 (function() {
