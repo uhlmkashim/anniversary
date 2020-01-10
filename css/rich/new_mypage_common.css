@@ -20507,12 +20507,12 @@ a.none {
     left: 4px;
     width: 23px;
     height: 23px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/icon/icon_arrow_left.png?1285858800) no-repeat;
+    background: url(../../image_sp/ui/icon/icon_arrow_left.png?1285858800) no-repeat;
     background-size: 23px 23px
 }
 
 .backLink._hover::before {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/icon/icon_arrow_left_gray.png?1285858800) no-repeat;
+    background: url(../../image_sp/ui/icon/icon_arrow_left_gray.png?1285858800) no-repeat;
     background-size: 23px 23px;
     color: #b9b9b9
 }
