@@ -1,0 +1,2625 @@
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.frame-common,
+.frame-chihiro {
+    position: relative;
+    width: 304px;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #1d1d1d
+}
+
+.frame-common:before,
+.frame-chihiro:before {
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue%2Fbg.png%3F1569822391) 40 round;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue%2Fbg.png%3F1569822391) 40 round;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue%2Fbg.png%3F1569822391) 40 round
+}
+
+.frame-common ._header,
+.frame-chihiro ._header {
+    background-color: #08123f;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue%2Fheading.png%3F1569822391);
+    background-size: 299px 5px
+}
+
+.frame-common ._header:before,
+.frame-chihiro ._header:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 -111px;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-common ._header:after,
+.frame-chihiro ._header:after {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 -139px;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-common ._header ._title,
+.frame-chihiro ._header ._title {
+    text-shadow: 0 0 4px #0090ff, 0 0 4px #0090ff, 0 0 4px #0090ff, 0 0 4px #0090ff
+}
+
+.frame-common ._line_solid,
+.frame-chihiro ._line_solid {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 -179px;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 299px;
+    height: 3px
+}
+
+.frame-common ._line_dot,
+.frame-chihiro ._line_dot {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 -167px;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 282px;
+    height: 5px
+}
+
+.frame-common ._btn_close,
+.frame-chihiro ._btn_close {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 0;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-common ._btn_close._hover,
+.frame-chihiro ._btn_close._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fblue-sa3dc7e08c6.png%3F1569822391) no-repeat 0 -33px;
+    -webkit-background-size: 299px 182px;
+    background-size: 299px 182px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-common._frame_pink:before,
+._frame_pink.frame-chihiro:before {
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink%2Fbg.png%3F1569822391) 40 round;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink%2Fbg.png%3F1569822391) 40 round;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink%2Fbg.png%3F1569822391) 40 round
+}
+
+.frame-common._frame_pink ._header,
+._frame_pink.frame-chihiro ._header {
+    background-color: #2b011f;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink%2Fheading.png%3F1569822391);
+    background-size: 299px 5px
+}
+
+.frame-common._frame_pink ._header:before,
+._frame_pink.frame-chihiro ._header:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 -111px;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-common._frame_pink ._header:after,
+._frame_pink.frame-chihiro ._header:after {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 -139px;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-common._frame_pink ._header ._title,
+._frame_pink.frame-chihiro ._header ._title {
+    text-shadow: 0 0 4px #ae4690, 0 0 4px #ae4690, 0 0 4px #ae4690, 0 0 4px #ae4690
+}
+
+.frame-common._frame_pink ._line_solid,
+._frame_pink.frame-chihiro ._line_solid {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 -197px;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 299px;
+    height: 3px
+}
+
+.frame-common._frame_pink ._line_dot,
+._frame_pink.frame-chihiro ._line_dot {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 -167px;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 282px;
+    height: 5px
+}
+
+.frame-common._frame_pink ._btn_close,
+._frame_pink.frame-chihiro ._btn_close {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 0;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-common._frame_pink ._btn_close._hover,
+._frame_pink.frame-chihiro ._btn_close._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fpink-sef8e65f470.png%3F1569822391) no-repeat 0 -33px;
+    -webkit-background-size: 299px 200px;
+    background-size: 299px 200px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-common:before,
+.frame-chihiro:before {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-top: 20px solid;
+    border-right: 20px solid;
+    border-left: 20px solid;
+    border-bottom: 20px solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none
+}
+
+.frame-common ._header,
+.frame-chihiro ._header {
+    position: relative;
+    height: 44px;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center
+}
+
+.frame-common ._header:before,
+.frame-chihiro ._header:before {
+    position: absolute;
+    bottom: 4px;
+    left: 8px;
+    content: ''
+}
+
+.frame-common ._header:after,
+.frame-chihiro ._header:after {
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    content: ''
+}
+
+.frame-common ._header ._title,
+.frame-chihiro ._header ._title {
+    padding-top: 12px;
+    text-align: center
+}
+
+.frame-common ._wrapper,
+.frame-chihiro ._wrapper {
+    position: relative
+}
+
+.frame-common ._contents,
+.frame-chihiro ._contents {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.frame-common ._in_frame,
+.frame-chihiro ._in_frame {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px
+}
+
+.frame-common ._in_frame._bg_gray,
+.frame-chihiro ._in_frame._bg_gray {
+    background: #333333;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px
+}
+
+.frame-common ._btn_close,
+.frame-chihiro ._btn_close {
+    position: absolute;
+    z-index: 2;
+    top: -8px;
+    right: -4px
+}
+
+.frame-common ._controll_accordion,
+.frame-chihiro ._controll_accordion {
+    position: relative;
+    z-index: 2;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none
+}
+
+.frame-common .information_light,
+.frame-chihiro .information_light {
+    width: 280px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.btn-navi {
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+    left: 8px
+}
+
+.frame-chihiro {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fbg_chihiro.png%3F1569822391);
+    background-size: 8px
+}
+
+.frame-chihiro:before {
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fbg.png%3F1569822391) 40 round;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fbg.png%3F1569822391) 40 round;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fbg.png%3F1569822391) 40 round
+}
+
+.frame-chihiro ._header {
+    background-color: #062c00;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fheading.png%3F1569822391);
+    background-size: 299px 5px
+}
+
+.frame-chihiro ._header:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 -111px;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-chihiro ._header:after {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 -139px;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 35px;
+    height: 27px
+}
+
+.frame-chihiro ._header ._title {
+    text-shadow: 0 0 4px #139a00, 0 0 4px #139a00, 0 0 4px #139a00, 0 0 4px #139a00
+}
+
+.frame-chihiro ._line_solid {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 -224px;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 299px;
+    height: 3px
+}
+
+.frame-chihiro ._line_dot {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 -212px;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 282px;
+    height: 5px
+}
+
+.frame-chihiro ._btn_close {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 0;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-chihiro ._btn_close._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen-s0360226c77.png%3F1569822391) no-repeat 0 -33px;
+    -webkit-background-size: 299px 236px;
+    background-size: 299px 236px;
+    width: 30px;
+    height: 32px
+}
+
+.frame-chihiro ._wrapper {
+    min-height: 112px
+}
+
+.frame-chihiro .chihiro_area {
+    position: relative;
+    height: 112px;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Frenewal%2Fui%2Fframe%2Fgreen%2Fbg_chihiro_star.png%3F1569822391);
+    background-size: 60px 44px;
+    background-position: right bottom;
+    background-repeat: no-repeat
+}
+
+.frame-chihiro .chihiro_img-area {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100px;
+    height: 112px
+}
+
+.frame-chihiro .chihiro_img-area .chihiro {
+    position: absolute;
+    width: 230px;
+    top: -56px;
+    left: -68px
+}
+
+.frame-chihiro .chihiro_comment-area {
+    position: absolute;
+    top: 8px;
+    left: 88px;
+    width: 204px;
+    font-size: 10px;
+    color: #1d1d1d;
+    line-height: 140%;
+    text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px 2px 3px rgba(255, 255, 255, 0.6)
+}
+
+.frame-common_simple {
+    width: 304px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.frame-common_simple._bg_black {
+    background-color: #1d1d1d
+}
+
+.frame-common_no-border {
+    width: 304px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333
+}
+
+.frame-common_no-border._in_frame {
+    width: 288px
+}
+
+.frame-common_no-border_mini {
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #eee
+}
+
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.list-box_rewards ._list {
+    display: table;
+    width: 100%;
+    height: 48px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-box_rewards ._list ._detail {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.list-box_rewards ._list ._detail._image {
+    width: 40px;
+    padding-left: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-box_rewards ._list ._detail._name {
+    width: 178px;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px
+}
+
+.list-box_rewards ._list ._detail._number {
+    width: 72px;
+    background: #2a42ab;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px;
+    text-align: center
+}
+
+.list-box_rewards ._list ._detail._number ._current {
+    font-size: 13px
+}
+
+.list-box_rewards ._list._gray {
+    background: #333333
+}
+
+.list-box_rewards ._list._gray ._detail._number {
+    background: #666666
+}
+
+.list-point_rewards .selectArea.type_02 {
+    overflow: hidden;
+    width: 296px;
+    border: none;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0
+}
+
+.list-point_rewards .selectArea.type_02 .selectArea_accordion:nth-last-of-type(1) {
+    margin-top: -9px
+}
+
+.list-point_rewards .selectArea.type_02 .selectArea_accordion:nth-last-of-type(1) .selectArea_accordion_title {
+    margin-left: -3px;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fdetail%2Fdetail_accordion_list.png%3F1558677469)
+}
+
+.list-point_rewards .selectArea.type_02 .selectArea_accordion:nth-last-of-type(1)._opened .selectArea_accordion_title {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fdetail%2Fdetail_accordion_list_gray.png%3F1558677469)
+}
+
+.list-point_rewards .icon_get {
+    width: 37px;
+    height: 14px;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fgacha%2Fcommon%2Fui%2Fcountup%2Fsprite%2Ficon_get.png%3F1558677435);
+    background-size: 37px 14px
+}
+
+.list-point_rewards ._list {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 48px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-point_rewards ._list ._detail {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.list-point_rewards ._list ._detail._image {
+    width: 40px;
+    padding-right: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-point_rewards ._list ._detail._name {
+    width: 178px;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px
+}
+
+.list-point_rewards ._list ._detail._number {
+    width: 80px;
+    background: #2a42ab;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px;
+    text-align: center
+}
+
+.list-point_rewards ._list._gray {
+    background: #333333
+}
+
+.list-point_rewards ._list._gray ._detail._number {
+    background: #666666
+}
+
+.list-point_rewards ._list._current {
+    background: #4f482a
+}
+
+.list-point_rewards ._list._current:before {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #d22a8b;
+    content: ''
+}
+
+.list-point_rewards ._list._current ._detail._number {
+    background: #d22a8b
+}
+
+.header_blue {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1256px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_emerald {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -157px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_gold {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -314px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_jam {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1099px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_red {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -942px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_result_blue {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1837px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_emerald {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1466px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_gold {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1572px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_jam {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1784px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_red {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1731px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_ruby {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1678px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_sapphire {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1413px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_silver {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1625px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_result_yellow {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1519px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 304px;
+    height: 52px
+}
+
+.header_ruby {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -471px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_sapphire {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 0;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_silver {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -628px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.header_yellow {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -785px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.icon_event_medal_s_ruby {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1919px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_blue {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2035px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_emerald {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1977px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_gold {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2093px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_jam {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2064px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_red {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2006px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_ruby {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1948px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_sapphire {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1890px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_silver {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2122px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.medal_yellow {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -2151px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 28px;
+    height: 28px
+}
+
+.bg_gift_blue_result {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 0;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 304px;
+    height: 376px
+}
+
+.bg_gift_red_result {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -754px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 304px;
+    height: 376px
+}
+
+.bg_gift_yellow_result {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -377px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 304px;
+    height: 376px
+}
+
+.header_gift_blue {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1288px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.header_gift_red {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1131px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.header_gift_yellow {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1445px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.icon_num_blue_0 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 0;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -210px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 11px;
+    height: 20px
+}
+
+.icon_num_blue_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -126px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -84px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_4 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -168px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_5 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -105px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_6 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -63px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_7 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -189px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_8 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -21px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_9 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -42px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+.icon_num_blue_batsu {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fnumber-s0558d5b2a6.png%3F1562651206) no-repeat 0 -147px;
+    -webkit-background-size: 16px 230px;
+    background-size: 16px 230px;
+    width: 16px;
+    height: 20px
+}
+
+#event_jam_box_reward *[class*='tab_common-large'] *[class*='tab_line'].selected,
+#event_jam_box_reward *[class*='tab_common-large'] *[class*='tab_line']._hover {
+    height: 39px
+}
+
+#event_jam_box_reward *[class*='tab_common-large'] *[class*='tab_line'].selected:before,
+#event_jam_box_reward *[class*='tab_common-large'] *[class*='tab_line']._hover:before {
+    height: 39px
+}
+
+.showdetails-text {
+    width: 84px;
+    height: 12px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fgacha%2Fcommon%2Fui%2Fsprite%2Fcommon%2Ftext_item_gacha_2.png%3F1487720150);
+    background-repeat: no-repeat;
+    background-size: 84px 12px
+}
+
+.showdetails-text._reward_top {
+    margin-left: 12px
+}
+
+.showdetails-text._result_list {
+    position: absolute;
+    top: -18px;
+    left: 12px
+}
+
+.showdetails-text._result_top {
+    position: absolute;
+    top: 39px;
+    right: 12px
+}
+
+.box_reward-header {
+    position: relative;
+    width: 320px;
+    height: 156px;
+    overflow: hidden;
+    margin-top: -4px;
+    padding-top: 4px
+}
+
+.box_reward-header:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 1
+}
+
+.box_reward-header:after {
+    content: '';
+    display: block;
+    width: 320px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0
+}
+
+.box_reward-header._event_color_red:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(48, 15, 15, 0)), color-stop(40%, rgba(48, 15, 15, 0.85)), color-stop(100%, #300f0f));
+    background-image: -webkit-linear-gradient(top, rgba(48, 15, 15, 0) 0%, rgba(48, 15, 15, 0.85) 40%, #300f0f 100%);
+    background-image: linear-gradient(top, rgba(48, 15, 15, 0) 0%, rgba(48, 15, 15, 0.85) 40%, #300f0f 100%)
+}
+
+.box_reward-header._event_color_blue:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(13, 42, 58, 0)), color-stop(40%, rgba(13, 42, 58, 0.85)), color-stop(100%, #0d2a3a));
+    background-image: -webkit-linear-gradient(top, rgba(13, 42, 58, 0) 0%, rgba(13, 42, 58, 0.85) 40%, #0d2a3a 100%);
+    background-image: linear-gradient(top, rgba(13, 42, 58, 0) 0%, rgba(13, 42, 58, 0.85) 40%, #0d2a3a 100%)
+}
+
+.box_reward-header._event_color_pink:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(51, 22, 38, 0)), color-stop(40%, rgba(51, 22, 38, 0.85)), color-stop(100%, #331626));
+    background-image: -webkit-linear-gradient(top, rgba(51, 22, 38, 0) 0%, rgba(51, 22, 38, 0.85) 40%, #331626 100%);
+    background-image: linear-gradient(top, rgba(51, 22, 38, 0) 0%, rgba(51, 22, 38, 0.85) 40%, #331626 100%)
+}
+
+.box_reward-header._event_color_parple:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(29, 17, 56, 0)), color-stop(40%, rgba(29, 17, 56, 0.85)), color-stop(100%, #1d1138));
+    background-image: -webkit-linear-gradient(top, rgba(29, 17, 56, 0) 0%, rgba(29, 17, 56, 0.85) 40%, #1d1138 100%);
+    background-image: linear-gradient(top, rgba(29, 17, 56, 0) 0%, rgba(29, 17, 56, 0.85) 40%, #1d1138 100%)
+}
+
+.box_reward-header._red:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -942px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._yellow:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -785px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._blue:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1256px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._emerald:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -157px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._jam:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -1099px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._ruby:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -471px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._gold:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -314px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._silver:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 -628px;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._sapphire:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward-s44e0a72c01.png%3F1577425600) no-repeat 0 0;
+    -webkit-background-size: 320px 2179px;
+    background-size: 320px 2179px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header .period-info {
+    position: absolute;
+    width: 130px;
+    height: 16px;
+    top: 86px;
+    left: 24px;
+    z-index: 2;
+    color: #1d1d1d;
+    font-size: 10px;
+    text-align: center;
+    text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px 2px 3px rgba(255, 255, 255, 0.6)
+}
+
+.box_reward-header .idol-area {
+    position: absolute;
+    top: -93px;
+    left: 87px;
+    width: 320px;
+    height: 235px;
+    overflow: hidden
+}
+
+.box_reward-header .idol-area img {
+    width: 320px
+}
+
+.box_reward-header+* {
+    margin-top: -50px
+}
+
+.box_reward-header._giftchance .idol-area {
+    top: -80px;
+    left: 87px;
+    width: 320px;
+    height: 235px
+}
+
+.box_reward-header._giftchance .idol-area img {
+    width: 320px
+}
+
+.box_reward-header._giftchance._yellow:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1445px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._giftchance._red:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1131px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._giftchance._blue:before {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift-sd9fde19eb9.png%3F1565934395) no-repeat 0 -1288px;
+    -webkit-background-size: 320px 1601px;
+    background-size: 320px 1601px;
+    width: 320px;
+    height: 156px
+}
+
+.box_reward-header._giftchance .period-info {
+    top: 54px;
+    left: 54px
+}
+
+.box_reward-header._giftchance .gift_chance_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 11px;
+    left: 143px
+}
+
+.box_reward-header._giftchance .idol_comment_new {
+    position: absolute;
+    width: 165px;
+    top: 70px;
+    left: 22px
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi {
+    font-size: 11px;
+    height: 24px;
+    padding: 2px 5px 4px
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi p {
+    line-height: 120%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute {
+    border: solid 3px #ff0073
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::before,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::before {
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #ff0073;
+    right: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::after {
+    border-width: 3px 0 3px 9px;
+    border-color: transparent transparent transparent #fff;
+    right: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute:after,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute:before {
+    top: 60%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool {
+    border: solid 3px #006aff
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::before,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::before {
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #006aff;
+    right: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::after {
+    border-width: 3px 0 3px 9px;
+    border-color: transparent transparent transparent #fff;
+    right: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool:after,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool:before {
+    top: 60%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion {
+    border: solid 3px #fa0
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::before,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::before {
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #fa0;
+    right: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::after {
+    border-width: 3px 0 3px 9px;
+    border-color: transparent transparent transparent #fff;
+    right: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion:after,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion:before {
+    top: 60%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer {
+    border: solid 3px #5ff55f
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::before,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::before {
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #5ff55f;
+    right: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::after {
+    border-width: 3px 0 3px 9px;
+    border-color: transparent transparent transparent #fff;
+    right: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer:after,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer:before {
+    top: 60%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro {
+    border: solid 3px #54d129
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::before,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::before {
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #54d129;
+    right: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::after {
+    border-width: 3px 0 3px 9px;
+    border-color: transparent transparent transparent #fff;
+    right: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro:after,
+.box_reward-header._giftchance .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro:before {
+    top: 60%
+}
+
+.dl-value_set {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    font-size: 11px
+}
+
+.dl-value_set dt {
+    background-color: #2553c7;
+    line-height: 120%;
+    border-radius: 12px 0 0 12px;
+    padding: 4px 2px 3px 4px;
+    box-sizing: border-box
+}
+
+.dl-value_set dt._red {
+    background-color: #c63687
+}
+
+.dl-value_set dt._gray {
+    background-color: #666
+}
+
+.dl-value_set dd {
+    background-color: #333;
+    border-radius: 0 12px 12px 0;
+    padding: 4px 6px 3px 2px;
+    margin-left: 2px;
+    text-align: center;
+    line-height: 120%;
+    box-sizing: border-box
+}
+
+.dl-value_set._item_status dt {
+    background-color: #2692d2
+}
+
+.dl-value_set._item_status dd {
+    background-color: #1d1d1d
+}
+
+.dl-value_set._w_3 {
+    width: 88px
+}
+
+.dl-value_set._w_3 dt {
+    width: 40px
+}
+
+.dl-value_set._w_3 dd {
+    width: 46px
+}
+
+.dl-value_set._w_2 {
+    width: 136px
+}
+
+.dl-value_set._w_2 dt {
+    width: 60px
+}
+
+.dl-value_set._w_2 dd {
+    width: 74px
+}
+
+.dl-value_set._w_1 {
+    width: 280px
+}
+
+.dl-value_set._w_1 dt {
+    width: 60px
+}
+
+.dl-value_set._w_1 dd {
+    width: 218px
+}
+
+.box_reward_result {
+    background-color: #1d1d1d !important;
+    background-repeat: no-repeat;
+    background-size: 320px;
+    overflow: hidden
+}
+
+.box_reward_result._red {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_red_result.jpg%3F1563860796)
+}
+
+.box_reward_result._yellow {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_yellow_result.jpg%3F1562651206)
+}
+
+.box_reward_result._blue {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_blue_result.jpg%3F1563417996)
+}
+
+.box_reward_result._emerald {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_emerald_result.jpg%3F1564551999)
+}
+
+.box_reward_result._jam {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_jam_result.jpg%3F1568008051)
+}
+
+.box_reward_result._ruby {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_ruby_result.jpg%3F1569379571)
+}
+
+.box_reward_result._gold {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_gold_result.jpg%3F1565243273)
+}
+
+.box_reward_result._silver {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_silver_result.jpg%3F1569379571)
+}
+
+.box_reward_result._sapphire {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_sapphire_result.jpg%3F1577425600)
+}
+
+.box_reward_result .gift_chance_yellow {
+    width: 304px;
+    height: 376px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift%2Fbg_gift_yellow_result.png%3F1565934395);
+    background-size: 304px
+}
+
+.box_reward_result .gift_chance_red {
+    width: 304px;
+    height: 376px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift%2Fbg_gift_red_result.png%3F1565934395);
+    background-size: 304px
+}
+
+.box_reward_result .gift_chance_blue {
+    width: 304px;
+    height: 376px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward_gift%2Fbg_gift_blue_result.png%3F1565934395);
+    background-size: 304px
+}
+
+.box_reward_result .gift_chance_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 13px;
+    left: 251px;
+    z-index: 0
+}
+
+.box_reward_result .selectArea_more_link {
+    position: relative;
+    z-index: 1
+}
+
+.box_reward_result .result_rewards_list {
+    padding-bottom: 8px;
+    position: relative
+}
+
+.box_reward_result .result_rewards_list ._title {
+    position: relative;
+    top: -4px
+}
+
+.box_reward_result .result-list {
+    width: 286px;
+    margin-left: 11px;
+    font-size: 0
+}
+
+.box_reward_result .result-list._default_ {
+    margin-top: -4px
+}
+
+.box_reward_result .result-list ._detail {
+    display: inline-block;
+    margin-top: 8px
+}
+
+.box_reward_result .result-list ._detail:not(:nth-of-type(5n - 4)) {
+    margin-left: 8px
+}
+
+.box_reward_result .result-list ._detail._image img {
+    border-radius: 5px
+}
+
+.box_reward_result .result-list ._detail._get_item {
+    position: relative;
+    padding-bottom: 8px
+}
+
+.box_reward_result .result-list ._detail .get_num {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.box_reward_result .result-list ._detail .get_num .get_num_parts {
+    float: right;
+    margin-left: -2px
+}
+
+.box_reward_result ._controll_accordion,
+.box_reward_result .selectArea_more_link {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff
+}
+
+.box_reward_result .idol-area {
+    position: absolute;
+    top: -70px;
+    left: -76px;
+    width: 320px;
+    height: 235px;
+    overflow: hidden
+}
+
+.box_reward_result .idol-area img {
+    width: 280px
+}
+
+.box_reward_result .idol_comment_new {
+    position: absolute;
+    width: 165px;
+    top: 60px;
+    right: 11px
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi {
+    font-size: 11px;
+    height: 24px;
+    padding: 2px 5px 4px
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi p {
+    line-height: 120%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute {
+    border: solid 3px #ff0073
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::before,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::before {
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #ff0073 transparent transparent;
+    left: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute::after {
+    border-width: 3px 9px 3px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute:after,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cute:before {
+    top: 60%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool {
+    border: solid 3px #006aff
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::before,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::before {
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #006aff transparent transparent;
+    left: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool::after {
+    border-width: 3px 9px 3px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool:after,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_cool:before {
+    top: 60%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion {
+    border: solid 3px #fa0
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::before,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::before {
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #fa0 transparent transparent;
+    left: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion::after {
+    border-width: 3px 9px 3px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion:after,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_passion:before {
+    top: 60%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer {
+    border: solid 3px #5ff55f
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::before,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::before {
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #5ff55f transparent transparent;
+    left: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer::after {
+    border-width: 3px 9px 3px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer:after,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_trainer:before {
+    top: 60%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro {
+    border: solid 3px #54d129
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::before,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    border-style: solid
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::before {
+    border-width: 6px 12px 6px 0;
+    border-color: transparent #54d129 transparent transparent;
+    left: -12px;
+    margin-top: -6px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro::after {
+    border-width: 3px 9px 3px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -6px;
+    margin-top: -3px;
+    top: 50%
+}
+
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro:after,
+.box_reward_result .idol_comment_new .comment_fukidashi.gift_fukidashi_attr_chihiro:before {
+    top: 60%
+}
+
+.box_reward-list .reward_details {
+    position: relative;
+    display: table;
+    width: 280px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.box_reward-list .reward_details ._detail {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.box_reward-list .reward_details ._image {
+    width: 40px;
+    text-align: center
+}
+
+.box_reward-list .reward_details ._name {
+    width: 176px;
+    font-size: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box
+}
+
+.box_reward-list .reward_details ._number {
+    position: relative;
+    width: 64px;
+    text-align: center;
+    background: #2a42ab;
+    box-sizing: border-box
+}
+
+.box_reward-list .reward_details ._number:before {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 10px;
+    background: #2a42ab;
+    content: ''
+}
+
+.box_reward-list .reward_details ._number ._value {
+    display: block;
+    margin-right: -8px;
+    font-size: 11px
+}
+
+.box_reward-list .reward_details ._number ._value .large {
+    font-size: 13px !important
+}
+
+.box_reward-list .reward_details._gray {
+    background-color: #333
+}
+
+.box_reward-list .reward_details._gray ._number {
+    background-color: #666
+}
+
+.box_reward-list .reward_details._gray ._number:before {
+    background-color: #666
+}
+
+.box_reward-list .reward_details._gray:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -12px;
+    right: -12px;
+    width: 12px;
+    height: 100%;
+    background-color: #333;
+    content: ''
+}
+
+.box_reward-list._result_list {
+    margin-top: 24px
+}
+
+.btn_draw_medal ._medal {
+    position: absolute;
+    top: 4px;
+    left: 6px
+}
+
+.btn_draw_medal ._gift {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 2px;
+    left: 6px;
+    background-size: 30px
+}
+
+.btn_draw_medal ._text {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    width: 96px;
+    text-align: center;
+    line-height: 1.0em;
+    font-size: 12px
+}
+
+.js-popup_item_view img {
+    border-radius: 8px;
+    border-radius: 4px
+}
+
+.box_rewards_result {
+    overflow: hidden;
+    background-size: 320px;
+    background-repeat: no-repeat
+}
+
+.box_rewards_result._red {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_red_result.jpg%3F1563860796)
+}
+
+.box_rewards_result._yellow {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_yellow_result.jpg%3F1562651206)
+}
+
+.box_rewards_result._blue {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_blue_result.jpg%3F1563417996)
+}
+
+.box_rewards_result._emerald {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_emerald_result.jpg%3F1564551999)
+}
+
+.box_rewards_result._jam {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_jam_result.jpg%3F1568008051)
+}
+
+.box_rewards_result._ruby {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_ruby_result.jpg%3F1569379571)
+}
+
+.box_rewards_result._gold {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_gold_result.jpg%3F1565243273)
+}
+
+.box_rewards_result._silver {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_silver_result.jpg%3F1569379571)
+}
+
+.box_rewards_result._sapphire {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fsprite%2Fbox_reward%2Fbg_sapphire_result.jpg%3F1577425600)
+}
+
+.box_rewards_result .box_rewards_title {
+    margin-left: -4px
+}
+
+.box_rewards_result .showdetails-text._result_top {
+    top: 48px
+}
+
+.list-box_rewards ._list {
+    display: table;
+    width: 100%;
+    height: 48px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-box_rewards ._list ._detail {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.list-box_rewards ._list ._detail._image {
+    width: 40px;
+    padding-left: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list-box_rewards ._list ._detail._name {
+    width: 178px;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px
+}
+
+.list-box_rewards ._list ._detail._number {
+    width: 72px;
+    background: #2a42ab;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px;
+    text-align: center
+}
+
+.list-box_rewards ._list ._detail._number ._current {
+    font-size: 13px !important
+}
+
+.list-box_rewards ._list._gray {
+    background: #333333
+}
+
+.list-box_rewards ._list._gray ._detail._number {
+    background: #666666
+}
+
+.list-box_rewards._is_only_text ._list {
+    height: 24px
+}
+
+.list-box_rewards._is_extra ._list ._detail._name {
+    width: 242px
+}
+
+.list-box_rewards_result {
+    width: 282px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.list-box_rewards_result ._detail {
+    display: inline-block;
+    margin-top: 8px
+}
+
+.list-box_rewards_result ._detail:not(:nth-of-type(5n - 4)) {
+    margin-left: 8px
+}
+
+.list-box_rewards_result ._detail._image img {
+    border-radius: 5px
+}
+
+.list-box_rewards_result ._detail._get_item {
+    position: relative;
+    padding-bottom: 8px
+}
+
+.list-box_rewards_result ._detail .get_num {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.list-box_rewards_result ._detail .get_num .get_num_parts {
+    float: right;
+    margin-left: -2px
+}
