@@ -308,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/jquery.common-popup.js%3Fv%3D20190524145756"></script>
+        <script src="js/jquery.common-popup.js"></script>
         <script>
             $('#lesson_menu').ou();
             $('#jsLessonConfirm').ou();
@@ -448,7 +448,7 @@
                 var target = $('#jsLessonConfirm');
                 var showHtml = "\
 <div class='jsPopWindow'>\
-<div class='window_title'>" + data.lesson_name + "を<span id='jsLessonState'>実施</span>しますか？</div>\
+<div class='window_title'>" + data.lesson_name + "을<span id='jsLessonState'>실시</span>합니까？</div>\
 <a href='#' class='close_btn jsLessonConfirm_close'><div></div></a>\
 <div class='in_block no-border'>\
 <div class='contents_confirm'>\
@@ -456,9 +456,9 @@
 <img src='" + path + "' width='120' height='100'>\
 </div>\
 <div class='data_area'>\
-<h3>レッスン時間</h3>\
+<h3>레슨 시간</h3>\
 <div class='time'>" + data.remaining_time + "</div>\
-<h3>効果</h3>\
+<h3>효과</h3>\
 <div class='effect'>\
 <span class='blue'>ぷち Exp:</span> <span class='yellow'>+" + data.exp + "</span><br>\
 <span class='blue'>テクニカル pt:</span> <span class='yellow'>+" + data.point + "</span>\
