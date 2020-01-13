@@ -297,12 +297,12 @@
         </div><a href="#" class="jsLessonComplete_btn" style="display:none"></a><a href="#" class="jsLessonComplete_close" style="display:none"></a>
         <div id="lesson_menu" class="jsPopUp" style="display:none">
             <div class="jsPopWindow">
-                <div class="window_title">ぷちレッスン選択</div><a href='#' class='close_btn lesson_menu_close'>
+                <div class="window_title">푸치레슨 선택</div><a href='#' class='close_btn lesson_menu_close'>
                     <div></div>
                 </a>
                 <div class="in_block no-border">
                     <div class="item_list" id="jsLessonList">
-                        <div class="red t-Cnt lesson_efficiency" style="padding-top:2px;display:none">ぷちレッスン効率<span id='lesson_efficiency'></span>%アップ中！<br /><span class="efficiency_period"></span></div>
+                        <div class="red t-Cnt lesson_efficiency" style="padding-top:2px;display:none">푸치레슨 효율<span id='lesson_efficiency'></span>%업 중!<br /><span class="efficiency_period"></span></div>
                         <ul class="jsOnBtn"></ul>
                     </div>
                 </div>
@@ -460,14 +460,14 @@
 <div class='time'>" + data.remaining_time + "</div>\
 <h3>효과</h3>\
 <div class='effect'>\
-<span class='blue'>ぷち Exp:</span> <span class='yellow'>+" + data.exp + "</span><br>\
-<span class='blue'>テクニカル pt:</span> <span class='yellow'>+" + data.point + "</span>\
+<span class='blue'>푸치 Exp:</span> <span class='yellow'>+" + data.exp + "</span><br>\
+<span class='blue'>테크니컬 pt:</span> <span class='yellow'>+" + data.point + "</span>\
 </div>\
 </div>\
 </div>\
 </div>\
-<p style='display:none' class='red t-Cnt' id='lessonStopText'>※ぷちレッスンを中止すると<br>ぷちExpとテクニカルptは獲得できません。</p>\
-<p style='display:none' class='red t-Cnt' id='lessonCenterText'>センターはぷちレッスン効率20%アップ!</p>\
+<p style='display:none' class='red t-Cnt' id='lessonStopText'>※푸치레슨을 중지하면<br>푸치Exp와 테크니컬pt는 획득할 수 없습니다。</p>\
+<p style='display:none' class='red t-Cnt' id='lessonCenterText'>센터는 푸치레슨 효율20%업!</p>\
 <div class='response_area jsOnBtn'>\
 <div class='left_area'>\
 <a href='#' class='jsNotBuyBtn jsLessonConfirm_cancel'><div></div></a>\
@@ -499,16 +499,16 @@
                 lesson_attribute[temp_position] = no;
                 switch (parseInt(no)) {
                     case 1:
-                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_vi.png%3Fv%3D20170222083826';
+                        path = 'image_sp/petit_cg/ui/etc/lesson_vi.png';
                         break;
                     case 2:
-                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_da.png%3Fv%3D20170222083826';
+                        path = 'image_sp/petit_cg/ui/etc/lesson_da.png';
                         break;
                     case 3:
-                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_vo.png%3Fv%3D20170222083826';
+                        path = 'image_sp/petit_cg/ui/etc/lesson_vo.png';
                         break;
                     default:
-                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_base.png%3Fv%3D20170222083826';
+                        path = 'image_sp/petit_cg/ui/etc/lesson_base.png';
                         break;
                 }
                 return path;
@@ -671,7 +671,7 @@
                 $('#jsLessonComplete > .jsPopWindow').empty();
                 var target = $('#jsLessonComplete > .jsPopWindow');
                 var showHtml = "\
-<div class='window_title'>レッスン完了</div>\
+<div class='window_title'>레슨 완료</div>\
 <a href='#' class='close_btn jsLessonCompBtnParts2'><div></div></a>\
 <div class='in_block no-border'>\
 <div class='contents_confirm'>\
@@ -679,10 +679,10 @@
 <img src='" + path + "' width='120' height='100'>\
 </div>\
 <div class='data_area'>\
-<h3>獲得</h3>\
+<h3>획득</h3>\
 <div class='effect' style='font-weight:normal'>\
-<span class='blue'>ぷち Exp:</span> <span class='yellow'>+" + data.up_exp + "</span><br>\
-<span class='blue'>テクニカル pt:</span> <span class='yellow'>+" + data.up_point + "</span>\
+<span class='blue'>푸치 Exp:</span> <span class='yellow'>+" + data.up_exp + "</span><br>\
+<span class='blue'>테크니컬 pt:</span> <span class='yellow'>+" + data.up_point + "</span>\
 </div>\
 ";
                 if (data.level_up_flag) {
@@ -727,24 +727,16 @@
         </script>
         <div class="t-Cnt m-Btm8">
             <div class="area_banner_type_text jsOnBanner">
-                <div class="t-Cnt"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_challenge/index%3Fl_frm%3DMypage_index_1%26rnd%3D950400256' class="banner_type_text" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/1229/banner_event_01.png%3Fv%3D20200109144621)'>
-                        <div class="text_value_campaign text_align_right">ラウンド終了まで<span class="yellow">残り</span><span id="challange_count" data-end="1579003199" class="yellow">20:32:56</span></div>
-                    </a></div>
-                <script type="text/javascript">
-                    if (window.countIdList === void 0) var countIdList = new Array();
-                    countIdList.push('#challange_count');
-                </script>
+                <div class="t-Cnt"><a href='memory/detail/1708/10020/Memory_index_1.html' class="banner_type_text" style='background-image:url(image_sp/event/1708/banner_event_01.png)'></a></div>
             </div>
         </div>
         <section class="t-Cnt">
             <div class="jsOnBanner">
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cinderella_history%3Fl_frm%3DMypage_index_1%26rnd%3D228978351' class="banner_type_text" style="background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/media/image_sp/banner/attraction/11525694598987e2a161918d9dac91a3.png%3F%26v%3D20191226152157)">
-                    <div></div>
+            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cinderella_history%3Fl_frm%3DMypage_index_1%26rnd%3D228978351' class="banner_type_text" style="background-image:url(image_sp/banner/attraction/11525694598987e2a161918d9dac91a3.png)">
                 </a></div>
             <div class="jsOnBanner">
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/refresh_room%3Fl_frm%3DMypage_index_1%26rnd%3D458747853' class="banner_refresh_room">
-            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/refresh_room/banner/129.png%3Fv%3D20200108144617' class="banner_refresh_room_img">
-                    <div class="banner_refresh_room_value">1月8日 更新</div>
+            <a href='https://uhlmkashim.github.io/refresh_room/detail/25/' class="banner_refresh_room">
+            <img src='image_sp/ui/refresh_room/banner/25.png' class="banner_refresh_room_img">
                 </a></div>
             <div class="area_birthday jsOnBanner">
                 <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/birthday%3Fl_frm%3DMypage_index_1%26rnd%3D763819076' class="banner_birthday_renewal area_banner_wrap">
@@ -764,8 +756,8 @@
             <div class="btn_menu_type_2 m-Btm4" style="width:288px;padding:8px 0 0 8px;margin:-8px auto 8px">
                 <ul class="jsOnBanner">
                     <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/index%3Fl_frm%3DMypage_index_1%26rnd%3D169639428' class="banner_type_gekijo banner_cartoon_bg">
-                            <div class="image_chara" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/media/image_sp/cartoon/1400/7c9d9e5666ff1340976c8389b3251840.png%3F%26v%3D19700101090000)'></div>
-                            <div class="text_value">第1400話 更新</div>
+                            <div class="image_chara" style='background-image:url(image_sp/cartoon/1400/7c9d9e5666ff1340976c8389b3251840.png)'></div>
+                            <div class="text_value">제1400화 갱신</div>
                             <div class="banner_cartoon_cover"></div>
                         </a>
                     </li>
@@ -788,23 +780,23 @@
             </script>
         </section>
         <script>
-            var loading_images = ["image_sp//ui/rich/quest/loading.gif", "image_sp//ui/rich/quest/loading/101007.gif", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100584.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100441.gif%3Fv%3D20170222083847", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100912.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101199.gif%3Fv%3D20170531174038", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100304.gif%3Fv%3D20170222083847", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101325.gif%3Fv%3D20190524145751", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100930.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101480.gif%3Fv%3D20190524145752", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101608.gif%3Fv%3D20190524145752"];
-            var loading_image_ami = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading_ami.gif%3Fv%3D20170222083849';
+            var loading_images = ["image_sp//ui/rich/quest/loading.gif", "image_sp//ui/rich/quest/loading/101007.gif", "image_sp/ui/rich/quest/loading/100584.gif", "image_sp//ui/rich/quest/loading/100441.gif", "image_sp/ui/rich/quest/loading/100912.gif", "image_sp/ui/rich/quest/loading/101199.gif", "image_sp/ui/rich/quest/loading/100304.gif", "image_sp/ui/rich/quest/loading/101325.gif", "image_sp/ui/rich/quest/loading/100930.gif", "image_sp/ui/rich/quest/loading/101480.gif", "image_sp/ui/rich/quest/loading/101608.gif"];
+            var loading_image_ami = 'image_sp/ui/rich/quest/loading_ami.gif';
             var native_app_flg = false;
             var is_debug = false;
             var now_time = 1578929223;
             var idolArr = [];
             var user_name = "argavand";
             var url_ajax_get_card_comment = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/mypage/ajax_get_card_comment%3Fl_frm%3DMypage_index_1%26rnd%3D146925907';
-            var url_bg_idol_5 = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_idol_5.jpg%3Fv%3D20170222083844';
+            var url_bg_idol_5 = 'image_sp/ui/mypage_new/bg/bg_idol_5.png';
             idolArr['atk'] = [];
             idolArr['def'] = [];
             var icount = new ICount(now_time);
             idolArr['atk'][0] = [];
-            idolArr['atk'][0]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/a5015bf028b92f11b86a2323e6df1e2c.jpg%3Fv%3D20190524145559';
-            idolArr['atk'][0]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/a5015bf028b92f11b86a2323e6df1e2c.jpg%3Fv%3D20190524145611';
+            idolArr['atk'][0]['img_path'] = 'image_sp/card/ls/a5015bf028b92f11b86a2323e6df1e2c.png';
+            idolArr['atk'][0]['img_path_large'] = 'image_sp/card/quest/a5015bf028b92f11b86a2323e6df1e2c.png';
             idolArr['atk'][0]['strength_level'] = 0;
-            idolArr['atk'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png';
             idolArr['atk'][0]['cost'] = '25';
             idolArr['atk'][0]['attribute'] = '2';
             idolArr['atk'][0]['attribute'] = '2';
@@ -812,10 +804,10 @@
             idolArr['atk'][0]['rarity'] = '6';
             idolArr['atk'][0]['comment_column_num'] = '5';
             idolArr['atk'][0]['card_comment'] = "…この道も､貴方がくれた舞台です｡だから､持てる全力で…!";
-            idolArr['atk'][0]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2549902/7433e55a5dd0cf576d84e54859bbb178.mp4';
+            idolArr['atk'][0]['voice_path'] = 'sound/2549902/7433e55a5dd0cf576d84e54859bbb178.mp3';
             idolArr['atk'][1] = [];
-            idolArr['atk'][1]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/307bbad827fe9c2fd0a7615d41047a8a.jpg%3Fv%3D20190524145559';
-            idolArr['atk'][1]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/307bbad827fe9c2fd0a7615d41047a8a.jpg%3Fv%3D20190524145612';
+            idolArr['atk'][1]['img_path'] = 'image_sp/card/ls/307bbad827fe9c2fd0a7615d41047a8a.png';
+            idolArr['atk'][1]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/307bbad827fe9c2fd0a7615d41047a8a.jpg';
             idolArr['atk'][1]['strength_level'] = 0;
             idolArr['atk'][1]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
             idolArr['atk'][1]['cost'] = '25';
@@ -827,7 +819,7 @@
             idolArr['atk'][1]['card_comment'] = "…華､と｡呼んでくださいますか";
             idolArr['atk'][1]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2554402/050ade09ca0b26f67fa632141034ea02.mp4';
             idolArr['atk'][2] = [];
-            idolArr['atk'][2]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/a03496280fbdbbb8c8652a7618f75278.jpg%3Fv%3D20190524145559';
+            idolArr['atk'][2]['img_path'] = 'image_sp/card/ls/a03496280fbdbbb8c8652a7618f75278.png';
             idolArr['atk'][2]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/a03496280fbdbbb8c8652a7618f75278.jpg%3Fv%3D20190524145611';
             idolArr['atk'][2]['strength_level'] = 0;
             idolArr['atk'][2]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
@@ -840,7 +832,7 @@
             idolArr['atk'][2]['card_comment'] = "胸の高鳴り､聞こえるでしょう?";
             idolArr['atk'][2]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2549002/beb838ec9ea2bc5c7676838c5ae12af0.mp4';
             idolArr['atk'][3] = [];
-            idolArr['atk'][3]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/4b7ca3e2cc6bfae71fa31a7e60ea8a3d.jpg%3Fv%3D20170531174036';
+            idolArr['atk'][3]['img_path'] = 'image_sp/card/ls/4b7ca3e2cc6bfae71fa31a7e60ea8a3d.png';
             idolArr['atk'][3]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/4b7ca3e2cc6bfae71fa31a7e60ea8a3d.jpg%3Fv%3D20170531174037';
             idolArr['atk'][3]['strength_level'] = 0;
             idolArr['atk'][3]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
@@ -853,7 +845,7 @@
             idolArr['atk'][3]['card_comment'] = "独りきりの私です…｡今は､まだ";
             idolArr['atk'][3]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2540502/26dad81243ea06cd84c765afd1a44153.mp4';
             idolArr['atk'][4] = [];
-            idolArr['atk'][4]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
+            idolArr['atk'][4]['img_path'] = 'image_sp/card/ls/84621b61ee5236ca51eb63ccc3ed03fb.png';
             idolArr['atk'][4]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
             idolArr['atk'][4]['rarity'] = '6';
             idolArr['atk'][4]['cost'] = '26';
