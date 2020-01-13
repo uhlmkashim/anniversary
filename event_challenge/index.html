@@ -310,6 +310,20 @@
             <script src="../js/islider.js" type="text/javascript"></script>
             <script type="text/javascript">
                 <!--
+                var get_limit_storage = function(storage_name) {
+                    var start = 0;
+                    if (window.localStorage) {
+                        var get_storage = localStorage.getItem(storage_name);
+                        var date_limit = localStorage.getItem('date_limit');
+                        if (date_limit) {
+                            var now = new Date();
+                            if (date_limit >= (Date.parse(now) * 0.001)) {
+                                start = get_storage;
+                            }
+                        }
+                    }
+                    return start;
+                }
                 $('#idol_stage_slide').iSlider({
                     slideshowSpeed: 0,
                     navi: ".select_challenge_idol_navi",
