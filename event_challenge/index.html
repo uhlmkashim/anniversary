@@ -120,7 +120,6 @@
                 });
             })
         </script>
-        <div class='tab_common-large_crimson tab_color-crimson m-Top8' style=""><a class='tab_line_2 tab_text   selected' style="">お仕事</a><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_ranking/ranking_menu%3Fevent_id%3D1229%26l_frm%3DEvent_challenge_index_1%26rnd%3D859622137" class='tab_line_2 tab_text   ' style="">報酬</a></div>
         <div style="position:relative">
             <style>
                 .stage_navi.selected_idol {
@@ -499,33 +498,6 @@
         </script>
         <script src="../js/ilibrary.js" type="text/javascript"></script>
         <script src="../js/min/event_common.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(function() {
-                var event_data = {
-                    viewer_id: 134800333,
-                    event_id: 1229,
-                    current_time: '2020/01/13 17:55:09'
-                };
-                var eventManager = new Event_common(event_data);
-                var timeCounter = eventManager.timecountManager;
-                window.eventManager = eventManager;
-                //スタミナ回復時間のカウントダウン
-                var stamina_cure_recoverytime = parseInt('2180' + '000');
-                timeCounter.exec(viewTimeStaminaCure, stamina_cure_recoverytime, 'viewTimeStaminaCure');
-
-                function viewTimeStaminaCure(time) {
-                    $('.jsStaminaCureTime').text(Commonjs.getFormatTime(time, "h:mm:ss"))
-                }
-                //JP回復時間のカウントダウン
-                var lp_cure_recoverytime = parseInt('' + '000');
-                var lp_cure_remainingTime = (lp_cure_recoverytime - timeCounter.current_time_stamp);
-                timeCounter.exec(viewTimeCPCure, lp_cure_remainingTime, 'viewTimeCPCure');
-
-                function viewTimeCPCure(time) {
-                    $('.jsLPCureTime').text(Commonjs.getFormatTime(time, "h:mm:ss"))
-                }
-            });
-        </script>
         <script type="text/javascript">
             $('#event_challenge_tab').tab_switch({
                 contents: ".area_tab",
