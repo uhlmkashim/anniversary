@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../css/rich/new_mypage_common.css" media="all">
+    <link rel="stylesheet" type="text/css" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fevent_challenge.css' media="all">
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../js/jquery-2.2.2.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/event_challenge/index');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+
+<body id="event_challenge">
+    <div id="top" class="page_container jsOnBtn">
+        <nav class="area_menu_header">
+            <style>
+                .event_logo-area {
+                    background-image: url(../image_sp/event/1202/bg_area_l_1201.png);
+                }
+
+                .area_menu_header_6btn h1 {
+                    font-size: 11px;
+                }
+            </style>
+            <div class="area_menu_header_6btn _event">
+                <h1 style="font-size:11px">アイドルチャレンジ</h1>
+                <ul>
+                    <li class="btn-popupmenu"><a class="head_menu_06 se_000" href='#' id="headerAcd">
+                            <div></div>
+                        </a></li>
+                </ul><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Findex%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D161799038" class="event_logo-area jsBtnEventLogo jsOnBtn">
+                    <div class="logo-area"><img src="../image_sp/event_flash/1202/ranking/event_logo.png" width="64"></div>
+                    <div class="round_info-area">제1라운드<br>n/n 15:00～n/n 20:59</div>
+                </a>
+            </div>
+        </nav>
+        <script>
+            var $btnEventLogo = $('.jsBtnEventLogo');
+            var $btnGameMenu = $('.jsGameMenu');
+            var $menuElem = $('#headerPopupMenu');
+            $btnGameMenu.hide();
+            $('#headerAcd').on('click', function() {
+                if ($menuElem.css('display') == 'none') {
+                    $btnEventLogo.hide();
+                    $btnGameMenu.show();
+                } else {
+                    $btnEventLogo.show();
+                    $btnGameMenu.hide();
+                }
+            });
+        </script>
+        <input id="delay" type="hidden" value="0">
+        <script type="text/template" id="tpl_new_info">
+            <section id="newInfo" class="newInfoArea">
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fchallenge%2Fwindow%2Fpopup_ue.png%3Fv%3D20170222083412' width="280" height="50">
+<div class="newInfoBody">
+<ul>
+</ul>
+</div>
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fchallenge%2Fwindow%2Fpopup_sita.png%3Fv%3D20170222083412' width="280" height="38">
+<a class='js_popup_close' style="display: block;width: 95px;height: 25px;position: absolute;right: 113px;bottom: 9px;"></a>
+<a class='js_popup_close' style="display: block;width: 34px;height: 34px;position: absolute;right: 20px;top: 9px;"></a>
+</section>
+</script>
+        <div class="top_info-area">
+            <span class="font-size-11 eventPeriodColor_crimson">★イベント開催期間★</span>
+            <span class="font-size-11">1/9 15:00～1/16 22:59</span>
+            <div class="stamina_battle_point-area">
+                <div class="box _w_50 display _inline_block vertical_align _top">
+                    <span class="box _w_35 display _inline_block vertical_align _middle label _crimson small">スタミナ</span>
+                    <span class="box _w_60 display _inline_block vertical_align _middle font-size-12">719/732</span>
+                    <span class="display _block small">
+                        全回復まで<span class="yellow jsStaminaCureTime">0:36:20</span>
+                    </span>
+                </div>
+                <div class="box _w_50 display _inline_block _clear_space vertical_align _top">
+                    <span class="box _w_35 display _inline_block vertical_align _middle label _crimson small">CP</span>
+                    <span class="box _w_60 display _inline_block vertical_align _middle font-size-12">6 / 6</span>
+                </div>
+            </div>
+            <div class="newInfo newInfo_img_gray"></div>
+        </div>
+        <script>
+            $(function() {
+                var template = $("#popup-custom").html();
+                Commonjs.createPopupByTemplate({
+                    "id": "tpl_new_info",
+                    $trigger: $(".js_newInfo"),
+                    "custom_flg": true,
+                });
+            })
+        </script>
+        <div class='tab_common-large_crimson tab_color-crimson m-Top8' style=""><a class='tab_line_2 tab_text   selected' style="">お仕事</a><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_ranking%2Franking_menu%3Fevent_id%3D1229%26l_frm%3DEvent_challenge_index_1%26rnd%3D859622137" class='tab_line_2 tab_text   ' style="">報酬</a></div>
+        <div style="position:relative">
+            <style>
+                .stage_navi.selected_idol {
+                    pointer-events: none;
+                }
+            </style>
+            <div class="select_challenge_idol">
+                <div id="idol_stage_slide">
+                    <ul class="slides" style="display:none">
+                        <li>
+                            <div class="event_main_graphic" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_bg_1.jpg%3Fv%3D20200109144621)'>
+                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_111.png%3Fv%3D20200109144621' class="main_idol_img">
+                                <div class="main_info_area">
+                                    <div class="battle_voltage max">
+                                        <div class="txt">100%</div>
+                                        <a href="#newBox_challenge" class="ibox newBox_challenge_voltage btn_push jsOnDesignBtn" data-select='1'>
+                                            <div></div>
+                                        </a>
+                                    </div>
+                                    <div class="idol_lv normal" style='background: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbase_status.png%3Fv%3D20200109144621) center top no-repeat;background-size:148px;'>
+                                        <div style="position:absolute;left:94px;top:1px">
+                                            <div class="lvCount" style="display:inline-block;vertical-align:middle;">
+                                                <div class="no1 scale_min" style="width:9px; "></div>
+                                            </div>
+                                            <div style="display:inline-block;vertical-align:middle;">/ 4</div>
+                                        </div>
+                                        <div class="yellow next">100</div>
+                                        <div class="reward">
+                                            <div class="reward-text">
+                                                お嬢様Lv達成で<br><span class="yellow">[ｴﾚｶﾞﾝﾄI.C]池袋晶葉+</span>GET!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_play_area">
+                                    <div class="eventBt_work stage jsOnDesignBtn" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbutton_work_1.png%3Fv%3D20200109144621)' ;>
+                                        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fmission_list%3Fstage%3D1%26l_frm%3DEvent_challenge_index_1%26rnd%3D355837106' class="work_start">
+                                            <div class="stamina_cost">3</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="idol_comment_new comment_attr_cute" style="z-index:30;">
+                                    <div class="comment_fukidashi fukidashi_attr_cute">
+                                        貴族社会のお嬢様か…未知の領域だが､挑んでみるか
+                                    </div>
+                                </div>
+                                <div class="event_items">
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120101.jpg%3Fv%3D20170222083700'>
+                                        ×109
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120102.jpg%3Fv%3D20170222083700'>
+                                        ×958
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent_flash%2Fbox%2Fm%2Fevent_item_1201.png%3Fv%3D20170222083522'>
+                                        ×20</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event_main_graphic" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_bg_1.jpg%3Fv%3D20200109144621)'>
+                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_211.png%3Fv%3D20200109144621' class="main_idol_img">
+                                <div class="main_info_area">
+                                    <div class="battle_voltage max">
+                                        <div class="txt">100%</div>
+                                        <a href="#newBox_challenge" class="ibox newBox_challenge_voltage btn_push jsOnDesignBtn" data-select='2'>
+                                            <div></div>
+                                        </a>
+                                    </div>
+                                    <div class="idol_lv normal" style='background: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbase_status.png%3Fv%3D20200109144621) center top no-repeat;background-size:148px;'>
+                                        <div style="position:absolute;left:94px;top:1px">
+                                            <div class="lvCount" style="display:inline-block;vertical-align:middle;">
+                                                <div class="no1 scale_min" style="width:9px; "></div>
+                                            </div>
+                                            <div style="display:inline-block;vertical-align:middle;">/ 5</div>
+                                        </div>
+                                        <div class="yellow next">100</div>
+                                        <div class="reward">
+                                            <div class="reward-text">
+                                                お嬢様Lv達成で<br><span class="yellow">[ｴﾚｶﾞﾝﾄI.C]東郷あい+</span>GET!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_play_area">
+                                    <div class="eventBt_work stage jsOnDesignBtn" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbutton_work_2.png%3Fv%3D20200109144621)' ;>
+                                        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fmission_list%3Fstage%3D2%26l_frm%3DEvent_challenge_index_1%26rnd%3D464933546' class="work_start">
+                                            <div class="stamina_cost">4</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="idol_comment_new comment_attr_cool" style="z-index:30;">
+                                    <div class="comment_fukidashi fukidashi_attr_cool">
+                                        ﾌﾌｯ､私がお嬢様か｡いろいろと学ぶ必要がありそうだ
+                                    </div>
+                                </div>
+                                <div class="event_items">
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120101.jpg%3Fv%3D20170222083700'>
+                                        ×109
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120102.jpg%3Fv%3D20170222083700'>
+                                        ×958
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent_flash%2Fbox%2Fm%2Fevent_item_1201.png%3Fv%3D20170222083522'>
+                                        ×20</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event_main_graphic" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_bg_1.jpg%3Fv%3D20200109144621)'>
+                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_311.png%3Fv%3D20200109144621' class="main_idol_img">
+                                <div class="main_info_area">
+                                    <div class="battle_voltage max">
+                                        <div class="txt">100%</div>
+                                        <a href="#newBox_challenge" class="ibox newBox_challenge_voltage btn_push jsOnDesignBtn" data-select='3'>
+                                            <div></div>
+                                        </a>
+                                    </div>
+                                    <div class="idol_lv normal" style='background: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbase_status.png%3Fv%3D20200109144621) center top no-repeat;background-size:148px;'>
+                                        <div style="position:absolute;left:94px;top:1px">
+                                            <div class="lvCount" style="display:inline-block;vertical-align:middle;">
+                                                <div class="no1 scale_min" style="width:9px; "></div>
+                                            </div>
+                                            <div style="display:inline-block;vertical-align:middle;">/ 6</div>
+                                        </div>
+                                        <div class="yellow next">100</div>
+                                        <div class="reward">
+                                            <div class="reward-text">
+                                                お嬢様Lv達成で<br><span class="yellow">[ｴﾚｶﾞﾝﾄI.C]龍崎薫+</span>GET!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_play_area">
+                                    <div class="eventBt_work stage jsOnDesignBtn" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Fsprite%2Ftop%2Fbutton_work_3.png%3Fv%3D20200109144621)' ;>
+                                        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fmission_list%3Fstage%3D3%26l_frm%3DEvent_challenge_index_1%26rnd%3D778463535' class="work_start">
+                                            <div class="stamina_cost">5</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="idol_comment_new comment_attr_passion" style="z-index:30;">
+                                    <div class="comment_fukidashi fukidashi_attr_passion">
+                                        かおるに､いっぱいお嬢さまのこと教えてｰ!
+                                    </div>
+                                </div>
+                                <div class="event_items">
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120101.jpg%3Fv%3D20170222083700'>
+                                        ×109
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fitem%2Fm%2F120102.jpg%3Fv%3D20170222083700'>
+                                        ×958
+                                    </div>
+                                    <div class="items">
+                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent_flash%2Fbox%2Fm%2Fevent_item_1201.png%3Fv%3D20170222083522'>
+                                        ×20</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top:-15px;margin-bottom:8px">
+                <ul class="select_challenge_idol_navi" style="width:304px;">
+                    <li class="stage_navi navi_3 " style="margin:0 8px 0 0;">
+                        <div class="stage_navi_cute_3 se_008 jsOnDesignBtn" style="-webkit-border-radius:8px;opacity:0.999">
+                            <div class="navi_img_wrap">
+                                <img class="navi_img" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_111.png%3Fv%3D20200109144621'>
+                            </div>
+                            <div class="lvCount">
+                                <div class="no1" style="width:9px; "></div>
+                            </div>
+                            <div class="gaugeArea">
+                                <div class="myArea" style="width:100%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="stage_navi navi_3 " style="margin:0 8px 0 0;">
+                        <div class="stage_navi_cool_3 se_008 jsOnDesignBtn" style="-webkit-border-radius:8px;opacity:0.999">
+                            <div class="navi_img_wrap">
+                                <img class="navi_img" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_211.png%3Fv%3D20200109144621'>
+                            </div>
+                            <div class="lvCount">
+                                <div class="no1" style="width:9px; "></div>
+                            </div>
+                            <div class="gaugeArea">
+                                <div class="myArea" style="width:100%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="stage_navi navi_3 " style="margin:0 8px 0 0;">
+                        <div class="stage_navi_passion_3 se_008 jsOnDesignBtn" style="-webkit-border-radius:8px;opacity:0.999">
+                            <div class="navi_img_wrap">
+                                <img class="navi_img" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1229%2Ftop_stage_chara_311.png%3Fv%3D20200109144621'>
+                            </div>
+                            <div class="lvCount">
+                                <div class="no1" style="width:9px; "></div>
+                            </div>
+                            <div class="gaugeArea">
+                                <div class="myArea" style="width:100%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fislider.js%3Fv%3D20191108144617" type="text/javascript"></script>
+            <script type="text/javascript">
+                <!--
+                var get_limit_storage = function(storage_name) {
+                    var start = 0;
+                    if (window.localStorage) {
+                        var get_storage = localStorage.getItem(storage_name);
+                        var date_limit = localStorage.getItem('date_limit');
+                        if (date_limit) {
+                            var now = new Date();
+                            if (date_limit >= (Date.parse(now) * 0.001)) {
+                                start = get_storage;
+                            }
+                        }
+                    }
+                    return start;
+                }
+                $('#idol_stage_slide').iSlider({
+                    slideshowSpeed: 0,
+                    navi: ".select_challenge_idol_navi",
+                    navi_child: ".stage_navi",
+                    selected: "selected_idol",
+                    touch: false,
+                    loop: false,
+                    start: get_limit_storage('challenge_selected_idol') < $('.select_challenge_idol_navi > .stage_navi').length ? get_limit_storage('challenge_selected_idol') : 0
+                });
+                var $work_start = $('.work_start');
+                $work_start.click(function() {
+                    if (window.localStorage) {
+                        localStorage.setItem('date_limit', 1579499999 + 0);
+                        localStorage.setItem('challenge_selected_idol', $work_start.index(this));
+                    }
+                });
+                -->
+            </script>
+        </div>
+        <div class="lBox">
+            <div id="newBox_challenge" class="area-popup_common _hd_blue _bd_black" style="display:none;">
+                <div class="area-popup_wrap t-Cnt">
+                    <h3 class="area-popup_header">
+                        <div class="area-popup_title">本気モード発動!</div>
+                    </h3>
+                    <div class="area-popup_contents">
+                        <div class="challengeArea" style="margin:0;padding:0;">
+                            <div class='t-Cnt m-Btm5'>
+                                本気モード発動中は<br>チャレンジレッスンで<br>
+                                <span class='yellow'>攻守アピール</span><span class='yellow'>1.5倍</span>アップ!
+                            </div>
+                            <div class="information_light m-Btm10 small gray t-Lft" style="box-sizing: border-box;width: 100%">
+                                <p>本気モードは10分間続きます。10分を経過すると本気ゲージがリセットされます。</p>
+                            </div>
+                            <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fstart_burst_bonus%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D775235280" method="post" style="padding:0;">
+                                <input type="hidden" id='idol_id' name="idol_id" value="">
+                                <input type="hidden" name="new_work" value="" id="burst_res_type">
+                                <label class="btn_decision_line_2 m-Cnt" onClick=""><input type="submit" value="発動" /></label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="area-popup_bg_image"></div>
+                    <div class="popup-common_btn_close jsOnDesignBtn ibox_close" style=""></div>
+                </div>
+            </div>
+        </div>
+        <div style="position:relative;margin-bottom:12px">
+            <img src="http://sp.pf-img-a.mbga.jp/12008305?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fline%2Fcrimson%2Fline_hoshi.jpg" width="100%">
+        </div>
+        <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fevent_ranking_new.css%3Fv%3D20200109144620" media="all">
+        <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fevent_box_reward.css%3Fv%3D20191227144639" media="all">
+        <div class="m-Cnt event_gacha_exchange_btn-area m-Btm12">
+            <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge_box_reward%2Findex%3Fbox_round%3D3%26l_frm%3DEvent_challenge_index_1%26rnd%3D65869627" class="button_chance button_chance_s _short _medal _is_multiple_medal jsOnDesignBtn" style="text-decoration: none;">
+                <div class="_number">
+                    <span class="medal_text_r">R</span><span class="yellow">0</span><span class="p-Lft2 medal_text_b">B</span><span class="yellow">0</span></span><span class="p-Lft2 medal_text_y">Y</span><span class="yellow">0</span></span></div>
+                <div class="_idol"><img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcard%2Fcm%2F8eff69e4d99a16ba0ab8d8808b1dcfce.png%3Fv%3D20200109144620" width=100></div>
+            </a>
+            <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fexchange_list%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D45392438" class="button_exchange _is_collabo jsOnDesignBtn" style="text-decoration: none;">
+                <div class="_number"><span class="yellow">0</span>枚</div>
+            </a>
+        </div>
+        <section class="m-Top12">
+            <div class="limited_shop type_02">
+                <ul class="jsOnBtn">
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%2F3%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D792413937#page_link_120103' class="btn_banner_limited">
+                            <div class="text_info"><span>CPブレッド×3個で150MC!<br />7個で300MC!</span></div>
+                            <div class="text_limit">あと21:04:51</div>
+                        </a></li>
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%2F3%3Fl_frm%3DEvent_challenge_index_2%26rnd%3D300688110#page_link_120115' class="btn_banner_limited">
+                            <div class="text_info"><span>お得なCPブレッド15個セット<br />1000MC!</span></div>
+                            <div class="text_limit">あと3:04:51</div>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <img src="http://sp.pf-img-a.mbga.jp/12008305?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fline%2Fcrimson%2Fline_hoshi.jpg" width="100%"><br>
+        <section class="naviArea">
+            <img src="http://sp.pf-img-a.mbga.jp/12008305?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fnavi%2Ftujo_m2.png" width="90">
+            <div class="Wrap">
+                <div class="fukiRight">
+                    アイドルが色々なことに挑戦する<br />「アイドルチャレンジ」開催!<br />レッスンを成功させてアイドルを<br />一人前に育て上げましょう!
+                </div>
+            </div>
+        </section>
+        <img src="http://sp.pf-img-a.mbga.jp/12008305?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fline%2Fcrimson%2Fline_hoshi.jpg" width="100%" class="m-Btm10"><br>
+        <section class="t-Cnt">
+            <div id="event_challenge_tab" class='tab_common-middle tab_color-crimson m-Btm12' style=""><a class='tab_line_2_1 tab_text   ' style="">メニュー</a><a class='tab_line_2_2 tab_text   ' style="">成績</a></div>
+            <div class="area_tab">
+                <div class="btn_menu_type_1">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Ftopics%3Ftab%3D0%26l_frm%3DEvent_challenge_index_1%26rnd%3D760436109' class="top_menu_01 jsOnDesignBtn"></a></li>
+                    </ul>
+                </div>
+                <div class="btn_menu_type_3">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fdeck_index%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D38391426' class="top_menu_04 jsOnDesignBtn"></a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fknights%2Fknights_event_building%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D956493196' class="top_menu_08 jsOnDesignBtn"></a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fidol_ability_list%3Fevent_id%3D1229%26l_frm%3DEvent_challenge_index_1%26rnd%3D899553187' class="top_menu_05 jsOnDesignBtn"></a></li>
+                        <li class="_btm_0"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%2F1%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D576989947' class="top_menu_06 jsOnDesignBtn"></a></li>
+                        <li class="_btm_0"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fexchange%2Fmedal_list%2F999999%2F2%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D31947026' class="top_menu_07 jsOnDesignBtn"></a></li>
+                        <li class="_btm_0"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fhelp%2F1%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D527633061' class="top_menu_09 jsOnDesignBtn"></a></li>
+                    </ul>
+                </div>
+                <div class="area-btn-common _base-width m-Top12 m-Btm8">
+                    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fbridge_play_swf%2Fopening%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D45688140' class="btn_normal_line_2" style="font-size:12px">オープニング演出</a>
+                    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fbridge_play_swf%2Feyechatch%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D280414835' class="btn_normal_line_2" style="font-size:12px">お嬢様の絆演出</a>
+                </div>
+            </div>
+            <div class="area_tab">
+                <div class="t-Cnt">
+                    <section class="statusArea_challenge">
+                        <h3>第4ラウンド成績</h3>
+                        <div class="line m-Btm10"></div>
+                        <ul class="list01">
+                            <li><span class="blue">グループ内順位 : </span>-位</li>
+                            <li><span class="blue">獲得チャレンジpt : </span>0 </li>
+                        </ul>
+                        <div class="t-Cnt yellow m-Btm5">ラウンド終了まで3時間04分51秒!</div>
+                        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fchapter_ranking%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D959379160' class="btn_normal_line_2 m-Cnt m-Btm8">ラウンドランキング</a>
+                        <h3>総合成績</h3>
+                        <div class="line m-Btm10"></div>
+                        <ul class="list01">
+                            <li><span class="blue">現在順位 : </span>-位</li>
+                            <li><span class="blue">獲得チャレンジpt : </span>0</li>
+                        </ul>
+                        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_ranking%2Franking_top%3Fevent_id%3D1229%26l_frm%3DEvent_challenge_index_1%26rnd%3D70739879' class="btn_normal_line_2 m-Cnt">ランキング</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_challenge%2Fevent_setting%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D9833143' class="btn_sup_line_2 _line_2 m-Cnt m-Btm12">CPブレッド<br />自動使用設定</a>
+        <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DEvent_challenge_index_2%26rnd%3D305766353">
+            <div class="backLink">マイスタジオ</div>
+        </a>
+        <script type="text/javascript">
+            $(function() {
+                $('form').bind('submit', function() {
+                    var $submit = $("input[type=submit], input[type=reset]");
+                    for (var i = 0; i < $submit.length; i++) {
+                        if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).val('送信中');
+                            $submit.eq(i).prop('disabled', true);
+                            var prev = $submit.eq(i).prev();
+                            if (prev.hasClass('btn_text')) {
+                                prev.text('送信中');
+                                if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                    $submit.eq(i).parent().removeClass('_line_2');
+                                }
+                            }
+                        } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).prop('disabled', true);
+                        }
+                        if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                            $submit.eq(i).parent().css({
+                                "opacity": "0.5"
+                            });
+                        }
+                    }
+                    $(".livebutton input[type='submit']").val('').css({
+                        "opacity": "0.5"
+                    }).prop('disabled', true);
+                    var $imagesub = $("input[type='image']");
+                    $imagesub.prop('disabled', true);
+                    for (var i = 0; i < $imagesub.length; i++) {
+                        if (!$imagesub.eq(i).attr('class')) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                            continue;
+                        }
+                        if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                        } else {
+                            $imagesub.eq(i).css({
+                                "opacity": "1"
+                            });
+                        }
+                    }
+                    setTimeout(function() {
+                        $submit.prop('disabled', false).parent().css({
+                            "opacity": "1"
+                        });
+                        $imagesub.prop('disabled', false).css({
+                            "opacity": "1"
+                        });
+                        $(".livebutton input[type='submit']").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $(".submit a").click(function() {
+                    $(this).click(function() {
+                        return false;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "0.5"
+                    });
+                    setTimeout(function() {
+                        $(this).click(function() {
+                            return true;
+                        })
+                        $(".submit").find("img").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $('body').on("click", '.stop-repeat-link', function(e) {
+                    var self = $('.stop-repeat-link');
+                    self.css({
+                        'pointer-events': 'none',
+                        'opacity': 0.6
+                    });
+                    setTimeout(function() {
+                        self.css({
+                            'pointer-events': 'auto',
+                            'opacity': 1
+                        });
+                    }, 2500);
+                });
+            });
+        </script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Filibrary.js%3Fv%3D20190524145756" type="text/javascript"></script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmin%2Fevent_common.min.js%3Fv%3D20191108144617" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                var event_data = {
+                    viewer_id: 134800333,
+                    event_id: 1229,
+                    current_time: '2020/01/13 17:55:09'
+                };
+                var eventManager = new Event_common(event_data);
+                var timeCounter = eventManager.timecountManager;
+                window.eventManager = eventManager;
+                //スタミナ回復時間のカウントダウン
+                var stamina_cure_recoverytime = parseInt('2180' + '000');
+                timeCounter.exec(viewTimeStaminaCure, stamina_cure_recoverytime, 'viewTimeStaminaCure');
+
+                function viewTimeStaminaCure(time) {
+                    $('.jsStaminaCureTime').text(Commonjs.getFormatTime(time, "h:mm:ss"))
+                }
+                //JP回復時間のカウントダウン
+                var lp_cure_recoverytime = parseInt('' + '000');
+                var lp_cure_remainingTime = (lp_cure_recoverytime - timeCounter.current_time_stamp);
+                timeCounter.exec(viewTimeCPCure, lp_cure_remainingTime, 'viewTimeCPCure');
+
+                function viewTimeCPCure(time) {
+                    $('.jsLPCureTime').text(Commonjs.getFormatTime(time, "h:mm:ss"))
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            $('#event_challenge_tab').tab_switch({
+                contents: ".area_tab",
+                storage: "challenge_top",
+                start: 0,
+                //start :  + 0
+            });
+            $('.newBox_challenge_voltage').on('click', function() {
+                $('#idol_id').val($(this).data('select'));
+                return false;
+            });
+        </script>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+            <div class="t-Cnt">(C)窪岡俊之 (C)2011 BNEI</div>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
+            <ul>
+                <li class="mbga-pf-footer-list">
+                    <div class="mbga-pf-fotter-content">
+                        <a class="mbga-pf-footer-arrow" href="http://sp.mbga.jp/_grp_view?g=32095227">
+                            <span class="mbga-pf-footer-caption">公式サークル</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="mbga-pf-footer-navbar">
+            <ul class="mbga-pf-box-h">
+                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="http://sp.mbga.jp/?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ホーム</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="http://sp.mbga.jp/_my0?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイページ</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイゲーム</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="http://sp.mbga.jp/_game_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ゲーム</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
