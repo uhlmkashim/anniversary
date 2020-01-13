@@ -96,16 +96,6 @@
         <div class="top_info-area">
             <span class="font-size-11 eventPeriodColor_crimson">★이벤트 개최기간★</span>
             <span class="font-size-11">7/31 15:00～8/11 22:59</span>
-        <script>
-            $(function() {
-                var template = $("#popup-custom").html();
-                Commonjs.createPopupByTemplate({
-                    "id": "tpl_new_info",
-                    $trigger: $(".js_newInfo"),
-                    "custom_flg": true,
-                });
-            })
-        </script>
         <div style="position:relative">
             <style>
                 .stage_navi.selected_idol {
@@ -320,20 +310,6 @@
             <script src="../js/islider.js" type="text/javascript"></script>
             <script type="text/javascript">
                 <!--
-                var get_limit_storage = function(storage_name) {
-                    var start = 0;
-                    if (window.localStorage) {
-                        var get_storage = localStorage.getItem(storage_name);
-                        var date_limit = localStorage.getItem('date_limit');
-                        if (date_limit) {
-                            var now = new Date();
-                            if (date_limit >= (Date.parse(now) * 0.001)) {
-                                start = get_storage;
-                            }
-                        }
-                    }
-                    return start;
-                }
                 $('#idol_stage_slide').iSlider({
                     slideshowSpeed: 0,
                     navi: ".select_challenge_idol_navi",
@@ -357,21 +333,21 @@
             <div id="newBox_challenge" class="area-popup_common _hd_blue _bd_black" style="display:none;">
                 <div class="area-popup_wrap t-Cnt">
                     <h3 class="area-popup_header">
-                        <div class="area-popup_title">本気モード発動!</div>
+                        <div class="area-popup_title">진심모드 발동!</div>
                     </h3>
                     <div class="area-popup_contents">
                         <div class="challengeArea" style="margin:0;padding:0;">
                             <div class='t-Cnt m-Btm5'>
-                                本気モード発動中は<br>チャレンジレッスンで<br>
-                                <span class='yellow'>攻守アピール</span><span class='yellow'>1.5倍</span>アップ!
+                                진심모드 발동중엔<br>챌린지레슨에서<br>
+                                <span class='yellow'>공수 어필</span><span class='yellow'>1.5배</span>업!
                             </div>
                             <div class="information_light m-Btm10 small gray t-Lft" style="box-sizing: border-box;width: 100%">
-                                <p>本気モードは10分間続きます。10分を経過すると本気ゲージがリセットされます。</p>
+                                <p>진심모드는 10분간 지속됩니다。10분이 경과하면 진심게이지가 리셋됩니다.</p>
                             </div>
-                            <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_challenge/start_burst_bonus%3Fl_frm%3DEvent_challenge_index_1%26rnd%3D775235280" method="post" style="padding:0;">
+                            <form action="anniversary/smart_phone_flash/convert/event_challenge/SsSsstart_burst_bonus_swf/2/0.html" method="post" style="padding:0;">
                                 <input type="hidden" id='idol_id' name="idol_id" value="">
                                 <input type="hidden" name="new_work" value="" id="burst_res_type">
-                                <label class="btn_decision_line_2 m-Cnt" onClick=""><input type="submit" value="発動" /></label>
+                                <label class="btn_decision_line_2 m-Cnt" onClick=""><input type="submit" value="발동" /></label>
                             </form>
                         </div>
                     </div>
