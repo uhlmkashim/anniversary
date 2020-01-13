@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="css/rich/new_mypage_common.css" media="all">
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/require.js"></script>
+    <script src="js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "js/tweenjs-0.6.2.min.js",
+                movieclipjs: "js/movieclip-0.7.1.min.js",
+                createjs: "js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="js/common.js"></script>
+    <script src="js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/mypage');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+</head>
+
+<body id="mypage" class="index">
+    <div id="top" class="page_container jsOnBtn">
+        <nav class="area_menu_header">
+            <div class="area_menu_header_6btn">
+                <h1 id="JtextLimit">Cirque du Soleil</h1>
+                <ul>
+                    <li><a class="head_menu_01" href="mypage.html">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_02" href="petit_cg.html">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_03" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_04" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_05" href="">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_06 se_000" href="#" id="headerAcd">
+                            <div></div>
+                        </a></li>
+                </ul>
+            </div>
+            <div id="headerPopupMenu" class="headerPopupMenu">
+                <div class="m-Top10 t-Cnt">
+                    <a href='memory/detail/1708/10020/Memory_index_1.html' class="jsOnDesignBtn">
+                    <img src='image_sp/event/1708/banner_event_01.png' width="280" height="60"></a>
+                </div>
+                <div class="area_menu_header_main4">
+                    <ul>
+                        <li><a class="btn_menu_header_lesson" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_work" href='quests'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_livebattle" href='battles'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_deck" href='deck'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_01"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_shop" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_item" href='item/index.html'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_present" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_change" href=''>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_02"></h3>
+                <div class="area_menu_header_5">
+                    <ul>
+                        <li><a class="btn_menu_header_idollist" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_trainer" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_production" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_pra" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_profile" href='results.html'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_03"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_favorite" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_memory" href='memorial.html'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_gamecenter" href=''>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_sound" href=''>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_04"></h3>
+                <div class="area_menu_header_3">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <input id="delay" type="hidden" value="0"><img src='image_sp/ui/rich/quest/loading.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp//ui/rich/quest/loading/101007.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/100584.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/100441.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/100912.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/101199.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/100304.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/101325.gif%' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/100930.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/101480.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading/101608.gif' style="display:none;" />
+        <img src='image_sp/ui/rich/quest/loading_ami.gif' style="display:none;" />
+        <section class="main_wrap"><a href='#' class="btn_main_petit-view_switch btn_change_petit se_000" id="jsPetitViewSwitch">
+                <div></div>
+            </a>
+            <div class="area_main_idol" id="jsAreaMainIdol" style='display:none;background-image:url(image_sp/ui/mypage_new/bg/bg_idol_5.png)'>
+                <div id="commentLoading">
+                    <div id="loadingNormal" style="margin-top: 60px;"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/working_1.gif%3Fv%3D20170222083827' width="195" height="139" /></div>
+                    <div id="loadingAmi" style="margin-top: 60px;display:none;"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/working_2.gif%3Fv%3D20170222083849' width="195" height="139" /></div>
+                    <div style="margin-top:-80px;"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading.gif%3Fv%3D20170222083849' id="loadingImage" width="102" height="102" /></div>
+                </div>
+                <div id="jsAreaDialogue" class="area_dialogue">
+                    <div id="jsAreaDialogue_idol1"></div>
+                    <div id="jsAreaDialogue_idol2"></div>
+                </div><a href='#' id="jsAreaMainIdolLarge" class="se_000" style="display:none;">
+                    <div></div>
+                </a>
+                <div class="area_main_idol_top"><a href='#' class="btn_change_base" id="jsBtn_a-d_Switch">
+                        <div></div>
+                    </a><a href='#' class="btn_change_comment_base btn_change_pattern_1" id="jsBtn_layout_change">
+                        <div></div>
+                    </a><a href='#' class="btn_change_comment" id="jsBtn_comment_change">
+                        <div></div>
+                    </a>
+                    <div id="jsTipsSwitch" class="reload_announce img_switch_comment"></div>
+                    <div class="comment_main_idol_top" id="jsCommentTop"></div><a href='#' class="btn_idol_voice se_000" id="jsBtnIdolVoice" rel='none' title="none">
+                        <div></div>
+                    </a>
+                </div>
+                <div class="area_main_idol_5continuous">
+                    <ul id="jsBtnIdolCtrl">
+                        <li class="idol_1"><a href='#' id="jsBtn5Idol_po2" data-po="2" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_ls.jpg%3Fv%3D20170222083833)' class="se_000">
+                                <div></div>
+                            </a></li>
+                        <li class="idol_2"><a href='#' id="jsBtn5Idol_po0" data-po="0" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_ls.jpg%3Fv%3D20170222083833)' class="se_000">
+                                <div></div>
+                            </a></li>
+                        <li class="idol_3"><a href='#' id="jsBtn5Idol_po4" data-po="4" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_ls.jpg%3Fv%3D20170222083833)' class="se_000">
+                                <div></div>
+                            </a></li>
+                        <li class="idol_4"><a href='#' id="jsBtn5Idol_po1" data-po="1" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_ls.jpg%3Fv%3D20170222083833)' class="se_000">
+                                <div></div>
+                            </a></li>
+                        <li class="idol_5"><a href='#' id="jsBtn5Idol_po3" data-po="3" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_ls.jpg%3Fv%3D20170222083833)' class="se_000">
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="area_main_idol_bottom">
+                    <div class="comment_main_idol_bottom" id="jsCommentBottom"></div>
+                </div>
+            </div>
+            <div class="area_main_petit" id="jsAreaPetit">
+                <div class="btn_good"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/like_list%3Fl_frm%3DMypage_index_1%26rnd%3D276460280' class="button_petit_mypage_nice">
+                        <div></div>
+                    </a>
+                    <div class="area_like_num">0 <span class="white">いいね!</span></div>
+                </div>
+                <div class="petit_idol_list" id="petit_idol_01"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/index/1%3Fview_page%3D1%26l_frm%3DMypage_index_1%26rnd%3D511089955'><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/chara/1033.png%3Fv%3D20190524145724' width="110" height="149" class="idol_img"></a><a href='#' class="lesson_comp jsOnDesignBtn" rel="petit_idol_1" data-id="1033" id="unique_1">
+                        <div></div>
+                    </a></div>
+                <div class="petit_idol_list" id="petit_idol_02"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/index/2%3Fview_page%3D1%26l_frm%3DMypage_index_1%26rnd%3D298551641'><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/chara/1095.png%3Fv%3D20190524145724' width="110" height="149" class="idol_img"></a><a href='#' class="lesson_comp jsOnDesignBtn" rel="petit_idol_2" data-id="1095" id="unique_2">
+                        <div></div>
+                    </a></div>
+                <div class="petit_idol_list" id="petit_idol_03"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/index/3%3Fview_page%3D1%26l_frm%3DMypage_index_1%26rnd%3D537289373'><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/chara/1108.png%3Fv%3D20190524145724' width="110" height="149" class="idol_img"></a><a href='#' class="lesson_comp jsOnDesignBtn" rel="petit_idol_3" data-id="1108" id="unique_3">
+                        <div></div>
+                    </a></div>
+            </div>
+            <div class="area_main_btn bg_main_menu"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/present/recieve/%3Fview_auth_type%3D1%26cache%3D1%26l_frm%3DMypage_index_2%26rnd%3D763378365' class="js_comment_off_target btn_main_present btn_main_present_position">
+                    <div class="value">0</div>
+                </a>
+                <ul class="js_comment_off_target">
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/card_str%3Fl_frm%3DMypage_index_3%26rnd%3D767048480' class="btn_main_lesson">
+                            <div></div>
+                        </a></li>
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/quests%3Fl_frm%3DMypage_index_2%26rnd%3D946519296' class="btn_main_work inner_gauge">
+                            <div class="bar_wrap">
+                                <div class="bar red" style="width:98.770491803279%"></div>
+                            </div>
+                            <div class="gauge_value">723 / 732</div>
+                        </a></li>
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/battles%3Fl_frm%3DMypage_index_2%26rnd%3D547011743' class="btn_main_battle inner_gauge">
+                            <div class="bar_wrap">
+                                <div class="bar blue" style="width:100%"></div>
+                            </div>
+                            <div class="gauge_value">97 / 97</div>
+                        </a></li>
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/deck/index%3Fl_frm%3DMypage_index_1%26rnd%3D483863998' class="btn_main_deck">
+                            <div></div>
+                        </a></li>
+                </ul><a href='#newInfo' class="js_comment_off_target btn_main_announce btn_main_announce_position ibox newInfo se_008">
+                    <div class="value">2</div>
+                </a>
+            </div>
+        </section><a href="#" class="lesson_menu_btn" style="display:none"></a><a href="#" class="lesson_menu_close" style="display:none"></a>
+        <div id="jsLessonConfirm" class="jsPopUp" style="display:none"></div><a href="#" class="jsLessonConfirm_btn" style="display:none"></a><a href="#" class="jsLessonConfirm_close" style="display:none"></a>
+        <div id="jsLessonComplete" class="jsPopUp" style="display:none">
+            <div class="jsPopWindow"></div>
+        </div><a href="#" class="jsLessonComplete_btn" style="display:none"></a><a href="#" class="jsLessonComplete_close" style="display:none"></a>
+        <div id="lesson_menu" class="jsPopUp" style="display:none">
+            <div class="jsPopWindow">
+                <div class="window_title">ぷちレッスン選択</div><a href='#' class='close_btn lesson_menu_close'>
+                    <div></div>
+                </a>
+                <div class="in_block no-border">
+                    <div class="item_list" id="jsLessonList">
+                        <div class="red t-Cnt lesson_efficiency" style="padding-top:2px;display:none">ぷちレッスン効率<span id='lesson_efficiency'></span>%アップ中！<br /><span class="efficiency_period"></span></div>
+                        <ul class="jsOnBtn"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/jquery.common-popup.js%3Fv%3D20190524145756"></script>
+        <script>
+            $('#lesson_menu').ou();
+            $('#jsLessonConfirm').ou();
+            $('#jsLessonComplete').ou();
+            var chara, petit_id;
+            var lesson_attribute = new Array();
+            var lessonCampaignFlg = 0;
+            $(function() {
+                $('.lesson_comp_lvup, .lesson_comp').on('click', function() {
+                    se_play('se_017');
+                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
+                    petit_id = $(this).data('id'); //ぷちid
+                    getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''), !$(this).hasClass('lesson_select'));
+                    $(this).removeClass().addClass('lesson_select');
+                    if ($('.lesson_comp, .lesson_comp_lvup').size() <= 0) {
+                        $("#jsPetitViewSwitch").find("div").removeClass("img_lesson_complete lesson_complete");
+                    }
+                    return false;
+                });
+                $('.lesson_select').on('click', function() {
+                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
+                    petit_id = $(this).data('id'); //ぷちid
+                    getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''));
+                    return false;
+                });
+            });
+
+            function getLessonList(sortId, chara_id, complete) {
+                var temp_id = chara_id ? chara_id : chara;
+                var type = (typeof(sortId) !== 'undefined') ? sortId : '1';
+                var url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/exchange%3Fl_frm%3DMypage_index_1%26rnd%3D184853608';
+                $.ajax({
+                        type: 'POST',
+                        url: url.replace('exchange', 'petit_cg/ajax_lesson_list?rnd=' + (Math.floor(Math.random() * 1000000))),
+                        dataType: 'json',
+                        headers: {
+                            "Pragma": "no-cache"
+                        },
+                        data: {
+                            "idol_id": petit_id,
+                            "type": sortId,
+                            "deck_position": temp_id
+                        }
+                    })
+                    .done(function(data) {
+                        lesson_campaign_view(data.lesson_ini.efficiency, data.lesson_ini.from, data.lesson_ini.to);
+                        if (data.user_lesson.state == 2) {
+                            var uniqueId = $('#unique_' + data.user_lesson.deck_position);
+                            if (uniqueId.hasClass('lesson_panel')) {
+                                uniqueId.empty();
+                                if (data.user_lesson.level_up_flag) {
+                                    uniqueId.removeClass().addClass('lesson_comp_lvup');
+                                } else {
+                                    uniqueId.removeClass().addClass('lesson_comp');
+                                }
+                                $("#jsPetitViewSwitch").find("div").addClass("img_lesson_complete lesson_complete");
+                                uniqueId.unbind('click');
+                                uniqueId.on('click', function() {
+                                    se_play('se_017');
+                                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
+                                    petit_id = $(this).data('id'); //ぷちid
+                                    getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''), 1);
+                                    $(this).removeClass().addClass('lesson_select');
+                                    return false;
+                                });
+                            } else {
+                                lesson_attribute[data.user_lesson.deck_position] = data.user_lesson.attribute;
+                                lessonFinish(data, temp_id);
+                            }
+                        } else if (data.user_lesson.state == 1) {} else {
+                            createLessonList(data.lesson_list, data.user_lesson.attribute, data.user_lesson.deck_position);
+                        }
+                        if (complete) {
+                            var user_lesson = $.extend({}, data.user_lesson);
+                            user_lesson.remaining_time = data.lesson_list[user_lesson.lesson_id].remaining_time;
+                            user_lesson.state = 0;
+                            user_lesson.lesson_type = user_lesson.lesson_type == 2 ? 'technical' : 'base';
+                            $('#lesson_menu').data(user_lesson);
+                        } else {
+                            lessonAgainData();
+                        }
+                    });
+                return false;
+            }
+
+            function lesson_campaign_view(value, start_time, finish_time) {
+                var regexp_start_time = /0?(\d+?\/)0?(\d+?)( .+):\d+$/;
+                var regexp_finish_time = /\d\d\d\d\/0?(\d+?\/)0?(\d+?)( .+):\d+$/;
+                if (value > 0) {
+                    $('#lesson_efficiency').text(value);
+                    $('.efficiency_period').text("期間：" + start_time.replace(regexp_start_time, "$1$2$3") + " ～ " + finish_time.replace(regexp_finish_time, "$1$2$3"));
+                    $('.lesson_efficiency').show();
+                    $('#jsLessonList').css('height', '217px');
+                    lessonCampaignFlg = 1;
+                } else {
+                    $('.lesson_efficiency').hide();
+                    $('#jsLessonList').css('height', '177px');
+                    lessonCampaignFlg = 0;
+                }
+            }
+
+            function createLessonList(lessons, attribute, deck_position) {
+                $('.lesson_menu_btn').trigger('click');
+                var list = $('#jsLessonList > ul');
+                var showHtml = "<ul class='jsOnBtn'>";
+                for (var key in lessons) {
+                    var row = lessons[key];
+                    var lesson_type = row.lesson_type == 2 ? 'technical' : 'base';
+                    var tmp = "\
+<li>\
+<a href='#' class='jsLessonStart' data-lesson_id='" + row.lesson_id + "' data-point='" + row.point + "' data-exp='" + row.exp + "' data-image='" + row.image + "' data-lesson_name='" + row.lesson_name + "' data-remaining_time='" + row.remaining_time + "' data-lesson_type='" + lesson_type + "' data-attribute='" + attribute + "'>\
+<div class='title " + lesson_type + "'>" + row.lesson_name + "</div>\
+<div class='textarea'>\
+" + row.comment + "\
+</div>\
+</a>\
+</li>\
+";
+                    showHtml += tmp;
+                }
+                list.replaceWith(showHtml += '</ul>');
+                $('.jsLessonStart').on('click', function() {
+                    se_play('se_022');
+                    $('#jsLessonConfirm').empty();
+                    createLessonConfirm($(this).data(), deck_position);
+                    return false;
+                });
+            }
+
+            function createLessonConfirm(data, deck_position) {
+                if (!data.remaining_time) {
+                    location.reload();
+                    return;
+                }
+                var deck_position = (typeof(deck_position) !== 'undefined') ? deck_position : '0';
+                var path = chooseLessonImage(data.state ? data.attribute : makeLessonAttribute(data.lesson_type == 'base'), deck_position);
+                var target = $('#jsLessonConfirm');
+                var showHtml = "\
+<div class='jsPopWindow'>\
+<div class='window_title'>" + data.lesson_name + "を<span id='jsLessonState'>実施</span>しますか？</div>\
+<a href='#' class='close_btn jsLessonConfirm_close'><div></div></a>\
+<div class='in_block no-border'>\
+<div class='contents_confirm'>\
+<div class='image_area'>\
+<img src='" + path + "' width='120' height='100'>\
+</div>\
+<div class='data_area'>\
+<h3>レッスン時間</h3>\
+<div class='time'>" + data.remaining_time + "</div>\
+<h3>効果</h3>\
+<div class='effect'>\
+<span class='blue'>ぷち Exp:</span> <span class='yellow'>+" + data.exp + "</span><br>\
+<span class='blue'>テクニカル pt:</span> <span class='yellow'>+" + data.point + "</span>\
+</div>\
+</div>\
+</div>\
+</div>\
+<p style='display:none' class='red t-Cnt' id='lessonStopText'>※ぷちレッスンを中止すると<br>ぷちExpとテクニカルptは獲得できません。</p>\
+<p style='display:none' class='red t-Cnt' id='lessonCenterText'>センターはぷちレッスン効率20%アップ!</p>\
+<div class='response_area jsOnBtn'>\
+<div class='left_area'>\
+<a href='#' class='jsNotBuyBtn jsLessonConfirm_cancel'><div></div></a>\
+</div>\
+<div class='right_area'>\
+<a href='#' id='jsLessonExec' class='jsBuyBtn' rel='1' data-position='" + deck_position + "' data-lesson_type='" + data.lesson_type + "'><div></div></a>\
+</div>\
+</div>\
+</div>\
+";
+                target.prepend(showHtml);
+                if (deck_position == 1) {
+                    $('#lessonCenterText').show();
+                } else {
+                    $('#lessonCenterText').hide();
+                }
+                $('.lesson_menu_close').trigger('click');
+                $('.jsLessonConfirm_btn').trigger('click');
+                lessonExec(data);
+                $('#jsLessonStop').on('click', function() {
+                    $('.jsLessonConfirm_btn').trigger('click');
+                    return false;
+                });
+            }
+
+            function chooseLessonImage(no, position) {
+                var path = '';
+                var temp_position = position ? position : chara;
+                lesson_attribute[temp_position] = no;
+                switch (parseInt(no)) {
+                    case 1:
+                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_vi.png%3Fv%3D20170222083826';
+                        break;
+                    case 2:
+                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_da.png%3Fv%3D20170222083826';
+                        break;
+                    case 3:
+                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_vo.png%3Fv%3D20170222083826';
+                        break;
+                    default:
+                        path = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/etc/lesson_base.png%3Fv%3D20170222083826';
+                        break;
+                }
+                return path;
+            }
+
+            function makeLessonAttribute(flag) {
+                var random_no = flag ? 4 : (Math.floor(Math.random() * 3) + 1);
+                return random_no;
+            }
+
+            function lessonExec(data) {
+                $('#jsLessonExec').on('click', function() {
+                    se_play('se_113');
+                    var temp_position = $(this).data('position');
+                    if ($(this).attr('rel') == 1) {
+                        se_play_flg = 0;
+                        data.attribute = lesson_attribute[temp_position];
+                        lessonStart(data, temp_position);
+                        lessonAgainData();
+                    }
+                    return false;
+                });
+            }
+
+            function lessonAgainData() {
+                var data = $('#lesson_menu').data();
+                if (typeof data != 'object') return false;
+                var flag = false;
+                if (Object.keys(data).length) {
+                    flag = true;
+                    $('#lesson_menu').removeData();
+                }
+                return flag;
+            }
+
+            function lessonStart(data, position) {
+                $('#jsLessonExec').attr('rel', 1);
+                showHaveLesson();
+                var temp_id = position;
+                $.ajax({
+                        type: 'POST',
+                        url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/ajax_start_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D205371477',
+                        dataType: 'json',
+                        data: {
+                            "lesson_id": data.lesson_id,
+                            "deck_position": temp_id,
+                            "attribute": data.attribute
+                        }
+                    })
+                    .done(function(data) {
+                        var $unique = $('#unique_' + data.deck_position);
+                        $unique.off();
+                        var instant_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/index/__position__%3Fview_page%3D2%26l_frm%3DMypage_index_1%26rnd%3D268477114';
+                        instant_url = instant_url.replace('__position__', data.deck_position);
+                        $unique.removeClass().addClass('lesson_panel').empty();
+                        var uniqueChild = document.createElement('div');
+                        $(uniqueChild).html('残り <span id="petit_' + data.deck_position + '">' + data.remaining_time + '</span>');
+                        $unique.append(uniqueChild);
+                        $unique.attr('href', instant_url);
+                        var end_time = Math.floor(new Date() * 0.001) + icount.delay + parseInt(data.lesson_data.require_time);
+                        var add = icount.addCount("#petit_" + data.deck_position, end_time);
+                        if (!add) {
+                            icount.editCount("#petit_" + data.deck_position, end_time);
+                        } else {
+                            icount.setCallback("#petit_" + data.deck_position, function() {
+                                chara = data.deck_position;
+                                getLessonList(1);
+                            });
+                        }
+                    });
+            }
+
+            function petitLocalStrageSave(param, value) {
+                if (window.localStorage) {
+                    if (param == 'position') var str = 'PetitDeckPosition';
+                    else if (param == 'idol_id') var str = 'PetitSelectIdolId';
+                    else if (param == 'now_position') var str = 'PetitSelectNowPosition';
+                    else if (param.indexOf('lesson') != -1) var str = 'PetitRunning' + param;
+                    else return false;
+                    if (str) localStorage.setItem(str, value);
+                    else return false;
+                } else {
+                    return false;
+                }
+            }
+
+            function petitLocalStrageLoad(param) {
+                if (window.localStorage) {
+                    if (param == 'position') var str = 'PetitDeckPosition';
+                    else if (param == 'idol_id') var str = 'PetitSelectIdolId';
+                    else if (param == 'now_position') var str = 'PetitSelectIdolId';
+                    else if (param.indexOf('lesson') != -1) var str = 'PetitRunning' + param;
+                    else return false;
+                    if (localStorage.getItem(str)) return localStorage.getItem(str);
+                    else return false;
+                } else {
+                    return false;
+                }
+            }
+
+            function setLessonRemainingTime(data) {
+                if (!data || data === '0') {
+                    $('#jsLessonRemainingTime').text('00:00:00');
+                    return;
+                }
+                $('#jsLessonRemainingTime').text(data.remaining_time);
+                count_down_timer('#jsLessonRemainingTime', data);
+            }
+
+            function showHaveLesson() {
+                hideLessonList();
+                $('#jsLessonStop').show();
+            }
+
+            function hideLessonList() {
+                se_play_flg = 0;
+                $('.jsLessonConfirm_close').trigger('click');
+                $('#lesson_menu').hide();
+            }
+            $(document).on('click', '.jsLessonConfirm_cancel', function() {
+                $('.jsLessonConfirm_close').trigger('click');
+                if (!lessonAgainData()) {
+                    $('.lesson_menu_btn').trigger('click');
+                }
+                return false;
+            });
+            $(document).on('click', '.jsLessonCompBtnParts2', function() {
+                $('.jsLessonComplete_close').trigger('click');
+                return false;
+            });
+
+            function lessonFinish(data, position) {
+                var current_chara = position ? position : chara;
+                $.ajax({
+                        type: 'POST',
+                        url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/ajax_finish_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D372393532',
+                        dataType: 'json',
+                        data: {
+                            "idol_id": petit_id,
+                            "lesson_id": data.lesson_id,
+                            "deck_position": current_chara
+                        }
+                    })
+                    .done(function(data) {
+                        if (data.level_up_flag) {
+                            showCompleteLesson(data);
+                        } else {
+                            showCompleteLesson(data);
+                        }
+                    });
+            }
+
+            function showCompleteLesson(data) {
+                createLessonResult(data);
+                $('.jsLessonComplete_btn').trigger('click');
+            }
+
+            function createLessonResult(data) {
+                var path = chooseLessonImage(lesson_attribute[data.deck_position], data.deck_position);
+                $('#jsLessonComplete > .jsPopWindow').empty();
+                var target = $('#jsLessonComplete > .jsPopWindow');
+                var showHtml = "\
+<div class='window_title'>レッスン完了</div>\
+<a href='#' class='close_btn jsLessonCompBtnParts2'><div></div></a>\
+<div class='in_block no-border'>\
+<div class='contents_confirm'>\
+<div class='image_area'>\
+<img src='" + path + "' width='120' height='100'>\
+</div>\
+<div class='data_area'>\
+<h3>獲得</h3>\
+<div class='effect' style='font-weight:normal'>\
+<span class='blue'>ぷち Exp:</span> <span class='yellow'>+" + data.up_exp + "</span><br>\
+<span class='blue'>テクニカル pt:</span> <span class='yellow'>+" + data.up_point + "</span>\
+</div>\
+";
+                if (data.level_up_flag) {
+                    showHtml += "\
+<h3>Lvアップ</h3>\
+<div class='effect' style='font-weight:normal;font-size:11px;color:#2e3d4a'>\
+<span class='blue'>Lv:</span>" + data.level + '/' + data.limit_level + "(<span class='yellow'>+" + data.up_level + "</span>) <span class='blue'>Vo:</span>" + data.vo + "(<span class='yellow'>+" + data.up_vo + "</span>)<br>\
+<span class='blue'>Da:</span>" + data.da + "(<span class='yellow'>+" + data.up_da + "</span>) <span class='blue'>Vi:</span>" + data.vi + "(<span class='yellow'>+" + data.up_vi + "</span>)\
+</div>\
+";
+                }
+                showHtml += "\
+</div>\
+</div>\
+</div>\
+<div class='response_area jsOnBtn' style='padding-bottom:0'>\
+<div class='jsOnBtn displayBox' style='width:266px; margin: 0 auto;'>\
+<a href='#' class='jsEtcLessonBtn jsLessonMenuBtnNew' id='link-petit-lesson'></a>\
+<a href='#' class='jsAgainLessonBtn jsLessonAgainMenu'></a>\
+</div>\
+</div>\
+";
+                if ($('.lesson_comp, .lesson_comp_lvup').size() <= 0) {
+                    $("#jsPetitViewSwitch").find("div").removeClass("img_lesson_complete lesson_complete");
+                }
+                target.prepend(showHtml);
+                $('.jsLessonMenuBtnNew').on('click', function() {
+                    se_play('se_022');
+                    $('.jsLessonComplete_close').trigger('click');
+                    getLessonList(1, data.deck_position);
+                    return false;
+                });
+                $('.jsLessonAgainMenu').on('click', function() {
+                    se_play('se_022');
+                    $('.jsLessonComplete_close').trigger('click');
+                    var data = $('#lesson_menu').data();
+                    $('#jsLessonConfirm').empty();
+                    createLessonConfirm(data, data.deck_position);
+                    return false;
+                });
+            }
+        </script>
+        <div class="t-Cnt m-Btm8">
+            <div class="area_banner_type_text jsOnBanner">
+                <div class="t-Cnt"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_challenge/index%3Fl_frm%3DMypage_index_1%26rnd%3D950400256' class="banner_type_text" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/1229/banner_event_01.png%3Fv%3D20200109144621)'>
+                        <div class="text_value_campaign text_align_right">ラウンド終了まで<span class="yellow">残り</span><span id="challange_count" data-end="1579003199" class="yellow">20:32:56</span></div>
+                    </a></div>
+                <script type="text/javascript">
+                    if (window.countIdList === void 0) var countIdList = new Array();
+                    countIdList.push('#challange_count');
+                </script>
+            </div>
+        </div>
+        <section class="t-Cnt">
+            <div class="jsOnBanner">
+            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cinderella_history%3Fl_frm%3DMypage_index_1%26rnd%3D228978351' class="banner_type_text" style="background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/media/image_sp/banner/attraction/11525694598987e2a161918d9dac91a3.png%3F%26v%3D20191226152157)">
+                    <div></div>
+                </a></div>
+            <div class="jsOnBanner">
+            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/refresh_room%3Fl_frm%3DMypage_index_1%26rnd%3D458747853' class="banner_refresh_room">
+            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/refresh_room/banner/129.png%3Fv%3D20200108144617' class="banner_refresh_room_img">
+                    <div class="banner_refresh_room_value">1月8日 更新</div>
+                </a></div>
+            <div class="area_birthday jsOnBanner">
+                <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/birthday%3Fl_frm%3DMypage_index_1%26rnd%3D763819076' class="banner_birthday_renewal area_banner_wrap">
+                    <div class="text_area"><span>次回</span>1月19日</div>
+                    <div class="idol_lbirthday">
+                        <ul>
+                            <li><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/xs/886e0e6ddf996f029d572480ab02dd81.jpg' width="30"></li>
+                        </ul>
+                    </div>
+                    <div class="idol_lbirthday_text count_1">
+                        <div>
+                            ﾒｱﾘｰ･ｺｸﾗﾝ<br>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="btn_menu_type_2 m-Btm4" style="width:288px;padding:8px 0 0 8px;margin:-8px auto 8px">
+                <ul class="jsOnBanner">
+                    <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/index%3Fl_frm%3DMypage_index_1%26rnd%3D169639428' class="banner_type_gekijo banner_cartoon_bg">
+                            <div class="image_chara" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/media/image_sp/cartoon/1400/7c9d9e5666ff1340976c8389b3251840.png%3F%26v%3D19700101090000)'></div>
+                            <div class="text_value">第1400話 更新</div>
+                            <div class="banner_cartoon_cover"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                $(function() {
+                    $('#jsBtnBreaBannerTriplicate').on('click', function(e) {
+                        var elem = $('.area_banner_triplicate_after');
+                        if (elem.css('display') == 'none') {
+                            elem.slideDown(350);
+                            $(this).addClass("_close");
+                        } else {
+                            elem.slideUp(350);
+                            $(this).removeClass("_close");
+                        }
+                        e.preventDefault();
+                    });
+                });
+            </script>
+        </section>
+        <script>
+            var loading_images = ["image_sp//ui/rich/quest/loading.gif", "image_sp//ui/rich/quest/loading/101007.gif", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100584.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100441.gif%3Fv%3D20170222083847", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100912.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101199.gif%3Fv%3D20170531174038", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100304.gif%3Fv%3D20170222083847", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101325.gif%3Fv%3D20190524145751", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/100930.gif%3Fv%3D20170222083848", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101480.gif%3Fv%3D20190524145752", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp//ui/rich/quest/loading/101608.gif%3Fv%3D20190524145752"];
+            var loading_image_ami = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading_ami.gif%3Fv%3D20170222083849';
+            var native_app_flg = false;
+            var is_debug = false;
+            var now_time = 1578929223;
+            var idolArr = [];
+            var user_name = "argavand";
+            var url_ajax_get_card_comment = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/mypage/ajax_get_card_comment%3Fl_frm%3DMypage_index_1%26rnd%3D146925907';
+            var url_bg_idol_5 = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_idol_5.jpg%3Fv%3D20170222083844';
+            idolArr['atk'] = [];
+            idolArr['def'] = [];
+            var icount = new ICount(now_time);
+            idolArr['atk'][0] = [];
+            idolArr['atk'][0]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/a5015bf028b92f11b86a2323e6df1e2c.jpg%3Fv%3D20190524145559';
+            idolArr['atk'][0]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/a5015bf028b92f11b86a2323e6df1e2c.jpg%3Fv%3D20190524145611';
+            idolArr['atk'][0]['strength_level'] = 0;
+            idolArr['atk'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][0]['cost'] = '25';
+            idolArr['atk'][0]['attribute'] = '2';
+            idolArr['atk'][0]['attribute'] = '2';
+            idolArr['atk'][0]['attribute_str'] = 'cool';
+            idolArr['atk'][0]['rarity'] = '6';
+            idolArr['atk'][0]['comment_column_num'] = '5';
+            idolArr['atk'][0]['card_comment'] = "…この道も､貴方がくれた舞台です｡だから､持てる全力で…!";
+            idolArr['atk'][0]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2549902/7433e55a5dd0cf576d84e54859bbb178.mp4';
+            idolArr['atk'][1] = [];
+            idolArr['atk'][1]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/307bbad827fe9c2fd0a7615d41047a8a.jpg%3Fv%3D20190524145559';
+            idolArr['atk'][1]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/307bbad827fe9c2fd0a7615d41047a8a.jpg%3Fv%3D20190524145612';
+            idolArr['atk'][1]['strength_level'] = 0;
+            idolArr['atk'][1]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][1]['cost'] = '25';
+            idolArr['atk'][1]['attribute'] = '2';
+            idolArr['atk'][1]['attribute'] = '2';
+            idolArr['atk'][1]['attribute_str'] = 'cool';
+            idolArr['atk'][1]['rarity'] = '6';
+            idolArr['atk'][1]['comment_column_num'] = '3';
+            idolArr['atk'][1]['card_comment'] = "…華､と｡呼んでくださいますか";
+            idolArr['atk'][1]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2554402/050ade09ca0b26f67fa632141034ea02.mp4';
+            idolArr['atk'][2] = [];
+            idolArr['atk'][2]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/a03496280fbdbbb8c8652a7618f75278.jpg%3Fv%3D20190524145559';
+            idolArr['atk'][2]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/a03496280fbdbbb8c8652a7618f75278.jpg%3Fv%3D20190524145611';
+            idolArr['atk'][2]['strength_level'] = 0;
+            idolArr['atk'][2]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][2]['cost'] = '25';
+            idolArr['atk'][2]['attribute'] = '2';
+            idolArr['atk'][2]['attribute'] = '2';
+            idolArr['atk'][2]['attribute_str'] = 'cool';
+            idolArr['atk'][2]['rarity'] = '6';
+            idolArr['atk'][2]['comment_column_num'] = '2';
+            idolArr['atk'][2]['card_comment'] = "胸の高鳴り､聞こえるでしょう?";
+            idolArr['atk'][2]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2549002/beb838ec9ea2bc5c7676838c5ae12af0.mp4';
+            idolArr['atk'][3] = [];
+            idolArr['atk'][3]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/4b7ca3e2cc6bfae71fa31a7e60ea8a3d.jpg%3Fv%3D20170531174036';
+            idolArr['atk'][3]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/4b7ca3e2cc6bfae71fa31a7e60ea8a3d.jpg%3Fv%3D20170531174037';
+            idolArr['atk'][3]['strength_level'] = 0;
+            idolArr['atk'][3]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][3]['cost'] = '23';
+            idolArr['atk'][3]['attribute'] = '2';
+            idolArr['atk'][3]['attribute'] = '2';
+            idolArr['atk'][3]['attribute_str'] = 'cool';
+            idolArr['atk'][3]['rarity'] = '6';
+            idolArr['atk'][3]['comment_column_num'] = '2';
+            idolArr['atk'][3]['card_comment'] = "独りきりの私です…｡今は､まだ";
+            idolArr['atk'][3]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2540502/26dad81243ea06cd84c765afd1a44153.mp4';
+            idolArr['atk'][4] = [];
+            idolArr['atk'][4]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
+            idolArr['atk'][4]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
+            idolArr['atk'][4]['rarity'] = '6';
+            idolArr['atk'][4]['cost'] = '26';
+            idolArr['atk'][4]['attribute'] = '2';
+            idolArr['atk'][4]['attribute'] = '2';
+            idolArr['atk'][4]['attribute_str'] = 'cool';
+            idolArr['atk'][4]['strength_level'] = 0;
+            idolArr['atk'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['atk'][4]['comment_column_num'] = '5';
+            idolArr['atk'][4]['card_comment'] = "…夢のような景色でも､夢ではない｡…其処に貴方がいるのなら";
+            idolArr['atk'][4]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2558102/973b7f834c2321401607c7f1e2257656.mp4';
+            idolArr['def'][0] = [];
+            idolArr['def'][0]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/5a726b8a757f4b8cf9119dfa675816b5.jpg%3Fv%3D20170222082913';
+            idolArr['def'][0]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/5a726b8a757f4b8cf9119dfa675816b5.jpg%3Fv%3D20170222083019';
+            idolArr['def'][0]['strength_level'] = 4;
+            idolArr['def'][0]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_4_2.png%3Fv%3D20190524145643';
+            idolArr['def'][0]['cost'] = '19';
+            idolArr['def'][0]['attribute'] = '2';
+            idolArr['def'][0]['attribute'] = '2';
+            idolArr['def'][0]['attribute_str'] = 'cool';
+            idolArr['def'][0]['rarity'] = '6';
+            idolArr['def'][0]['comment_column_num'] = '3';
+            idolArr['def'][0]['card_comment'] = "…まるで…画集の人物のよう";
+            idolArr['def'][0]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2512002/0c86e1ef29cdab430805f3d3a55423b6.mp4';
+            idolArr['def'][1] = [];
+            idolArr['def'][1]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/6e063bdc942ad4b54e2bbca4a78c8954.jpg%3Fv%3D20170222082913';
+            idolArr['def'][1]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/6e063bdc942ad4b54e2bbca4a78c8954.jpg%3Fv%3D20170222083019';
+            idolArr['def'][1]['strength_level'] = 4;
+            idolArr['def'][1]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_4_2.png%3Fv%3D20190524145643';
+            idolArr['def'][1]['cost'] = '20';
+            idolArr['def'][1]['attribute'] = '2';
+            idolArr['def'][1]['attribute'] = '2';
+            idolArr['def'][1]['attribute_str'] = 'cool';
+            idolArr['def'][1]['rarity'] = '5';
+            idolArr['def'][1]['comment_column_num'] = '1';
+            idolArr['def'][1]['card_comment'] = "…穏やかな時､よいものです";
+            idolArr['def'][1]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2436301/10a961149919f2c9c0c5673341f70aa9.mp4';
+            idolArr['def'][2] = [];
+            idolArr['def'][2]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/cf0f5af872286b4401c644ad570b1401.jpg%3Fv%3D20170222082909';
+            idolArr['def'][2]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/cf0f5af872286b4401c644ad570b1401.png%3Fv%3D20190524145611';
+            idolArr['def'][2]['strength_level'] = 4;
+            idolArr['def'][2]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_4_2.png%3Fv%3D20190524145643';
+            idolArr['def'][2]['cost'] = '11';
+            idolArr['def'][2]['attribute'] = '2';
+            idolArr['def'][2]['attribute'] = '2';
+            idolArr['def'][2]['attribute_str'] = 'cool';
+            idolArr['def'][2]['rarity'] = '1';
+            idolArr['def'][2]['comment_column_num'] = '2';
+            idolArr['def'][2]['card_comment'] = "……すみません｡本に夢中で";
+            idolArr['def'][2]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2002601/e56b283737e662ec1da75d3158dbdb61.mp4';
+            idolArr['def'][3] = [];
+            idolArr['def'][3]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/43a561d1471b0edb4143c7d7e392c45a.jpg%3Fv%3D20190524145559';
+            idolArr['def'][3]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/43a561d1471b0edb4143c7d7e392c45a.jpg%3Fv%3D20190524145611';
+            idolArr['def'][3]['strength_level'] = 0;
+            idolArr['def'][3]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['def'][3]['cost'] = '24';
+            idolArr['def'][3]['attribute'] = '2';
+            idolArr['def'][3]['attribute'] = '2';
+            idolArr['def'][3]['attribute_str'] = 'cool';
+            idolArr['def'][3]['rarity'] = '6';
+            idolArr['def'][3]['comment_column_num'] = '5';
+            idolArr['def'][3]['card_comment'] = "…憂いの中に潜んだ､妖精の想い…貴方に伝わりますように";
+            idolArr['def'][3]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2544802/3c7cd48f7a80d4e3312aff519c832f74.mp4';
+            idolArr['def'][4] = [];
+            idolArr['def'][4]['img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/ls/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
+            idolArr['def'][4]['img_path_large'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/card/quest/84621b61ee5236ca51eb63ccc3ed03fb.jpg%3Fv%3D20191031144628';
+            idolArr['def'][4]['rarity'] = '6';
+            idolArr['def'][4]['cost'] = '26';
+            idolArr['def'][4]['attribute'] = '2';
+            idolArr['def'][4]['attribute'] = '2';
+            idolArr['def'][4]['attribute_str'] = 'cool';
+            idolArr['def'][4]['strength_level'] = 0;
+            idolArr['def'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/c_effect/strengthen/ls/ls_0_2.png%3Fv%3D19700101090000';
+            idolArr['def'][4]['comment_column_num'] = '5';
+            idolArr['def'][4]['card_comment'] = "…夢のような景色でも､夢ではない｡…其処に貴方がいるのなら";
+            idolArr['def'][4]['voice_path'] = 'http://idolmaster.edgesuite.net/idolmaster/sound/2558102/973b7f834c2321401607c7f1e2257656.mp4';
+            idolArr['dialogue_info'] = [];
+        </script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/min/mypage.min.js%3Fv%3D20190524145756"></script>
+        <div class="lBox">
+            <section id="newInfo" class="newInfoArea">
+                <div class="bg_popup_top area_popup_top">
+                    <a href="#" class="btn_popup_close ibox_close btn_close_01">
+                        <div></div>
+                    </a>
+                </div>
+                <div class="newInfoBody">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/gacha/index/2%3Fl_frm%3DMypage_index_1%26rnd%3D701874904'>
+                                <div>無料ガチャが引けます!</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/special_scout/index/410002%3Fl_frm%3DMypage_index_1%26rnd%3D122916350'>
+                                <div>スカウトチケットを使ってアイドルをスカウトしよう!</div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="bg_popup_bottom area_popup_bottom">
+                    <a href="#" class="btn_popup_close_02 ibox_close btn_close_02">
+                        <div></div>
+                    </a>
+                </div>
+                <div></div>
+            </section>
+        </div>
+        <script src="js/islider.js"></script>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+            </a>
+        </footer>
+    </div>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
