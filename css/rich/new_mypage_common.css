@@ -18548,7 +18548,7 @@ body#battles .fukidashiWrap .fukidashi {
 
 body#battles .fukidashiWrap .fukidashi.cute {
     border-color: #ff0073;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_cute.png?1285858800) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_cute.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
@@ -18564,7 +18564,7 @@ body#battles .fukidashiWrap .fukidashi.cute:before {
 
 body#battles .fukidashiWrap .fukidashi.cool {
     border-color: #006aff;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_cool.png?1285858800) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_cool.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
@@ -18580,7 +18580,7 @@ body#battles .fukidashiWrap .fukidashi.cool:before {
 
 body#battles .fukidashiWrap .fukidashi.passion {
     border-color: #fa0;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_passin.png?1285858800) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_passin.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
