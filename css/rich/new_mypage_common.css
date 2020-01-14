@@ -18299,7 +18299,7 @@ td.status .icon {
 #deckIdolArea .fukidashiWrap .fukidashi.att_1,
 #mapIdolArea .fukidashiWrap .fukidashi.att_1 {
     border-color: #ff0073;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_cute.png?1285858800) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_cute.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
@@ -18318,7 +18318,7 @@ td.status .icon {
 #deckIdolArea .fukidashiWrap .fukidashi.att_2,
 #mapIdolArea .fukidashiWrap .fukidashi.att_2 {
     border-color: #006aff;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_cool.png?1285858800) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_cool.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
@@ -18337,7 +18337,7 @@ td.status .icon {
 #deckIdolArea .fukidashiWrap .fukidashi.att_3,
 #mapIdolArea .fukidashiWrap .fukidashi.att_3 {
     border-color: #fa0;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/comment_passin.png?1285858800) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/comment_passin.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
