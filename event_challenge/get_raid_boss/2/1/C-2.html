@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../../../../css/rich/new_mypage_common.css" media="all">
+    <link rel="stylesheet" type="text/css" href='../../../../css/rich/event_challenge.css' media="all">
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../../../../js/jquery-2.2.2.min.js"></script>
+    <script src="../../../../js/underscore-min.js"></script>
+    <script src="../../../../js/common.js"></script>
+    <script src="../../../../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/event_challenge/raid_lose');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../../css/base.css" />
+</head>
+
+<body id="event_challenge">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <style type="text/css">
+            <!--
+            #animation object {
+                width: 320px;
+                height: 258px;
+            }
+            -->
+        </style>
+        <section class="t-Cnt" style="position:relative;">
+            <style>
+                #mapIdolArea .fukidashiWrap #raid_fukiTop1:before,
+                #mapIdolArea .fukidashiWrap #raid_fukiTop1:after,
+                #mapIdolArea .fukidashiWrap #raid_fukiBtm1:before,
+                #mapIdolArea .fukidashiWrap #raid_fukiBtm1:after {
+                    left: 50%;
+                }
+            </style>
+            <ul class="displayBox m-Btm10" style="width:130px;">
+                <li style="width:130px;"><img src='../../../../image_sp/card/s/096e063d60b4b7702c871871d66b4519.png' width="130"></li>
+            </ul>
+            <seciton id='mapIdolArea'>
+                <div class="fukidashiWrap m-Btm10">
+                    <div class="fukiBtm fukidashi sub att_2" id="raid_fukiTop1" style="padding-top:4px;padding-bottom:4px;">
+                        <div class="comments">
+                            대사
+                        </div>
+                    </div>
+                </div>
+            </seciton>
+            <div class="challengeArea type_01" style="display:table; width: 300px; margin:0 5px 5px;">
+                <div style='display:table-cell; vertical-align:middle;'>
+                    <p><span class="blue">스코어 : </span><span class="yellow">50,000</span> / 100,000</p>
+                    <p><span class="blue">난이도 : </span>C</p>
+                </div>
+            </div>
+        </section>
+        <section class="t-Cnt challengeArea type_02">
+            <div class="m-Btm10">
+                머니를 소비하고 다시 1번 챌린지 레슨!<br>
+                <span class="yellow">1,000</span>머니로 재도전합니까?<br>
+            </div>
+            <form action='C-rematch.html' method="get">
+                <label class="btn_decision_line_2 m-Cnt m-Btm8" onClick=""><input type="submit" value="챌린지 레슨을 한다" style="font-size:10px;" /></label>
+            </form>
+        </section>
+        <section class="t-Cnt m-Btm5">
+            <div class="m-Btm10">
+                <div class="voltageArea max challenge">
+                    <div class="txt">100%</div>
+                    <div href="#newBox_challenge02" class="ibox btn_push jsOnDesignBtn"></div>
+                </div>
+                <div class="lBox">
+                    <div id="newBox_challenge02" class="area-popup_common _hd_blue _bd_black" style="display:none;">
+                        <div class="area-popup_wrap t-Cnt">
+                            <h3 class="area-popup_header">
+                                <div class="area-popup_title">진심모드 발동!</div>
+                            </h3>
+                            <div class="area-popup_contents">
+                                <div class="challengeArea" style="margin:0;padding:0;">
+                                    <div class='t-Cnt m-Btm5'>
+                                        本気モード発動中は<br>チャレンジレッスンで<br>
+                                        <span class='yellow'>攻守アピール</span><span class='yellow'>1.5倍</span>アップ!
+                                    </div>
+                                    <div class="information_light m-Btm10 small gray t-Lft" style="box-sizing: border-box;width: 100%">
+                                        <p>本気モードは10分間続きます。10分を経過すると本気ゲージがリセットされます。</p>
+                                    </div>
+                                    <form action="혼키발동링크" method="post" style="padding:0;">
+                                        <input type="hidden" name="idol_id" value="2">
+                                        <input type="hidden" name="raid_id" value="16246255">
+                                        <label class="btn_decision_line_2 m-Cnt" onClick=""><input type="submit" value="발동" /></label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="area-popup_bg_image"></div>
+                            <div class="popup-common_btn_close jsOnDesignBtn ibox_close" style=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="../../../get_nothing/2/1/1.html" method="get" class="m-Btm5">
+                <label class="btn_decision_line_2 m-Cnt" onClick=""><input type="submit" value="영업을 계속한다" /></label>
+                <input type="hidden" name="redirect_path" value="event_challenge/work/">
+            </form>
+            <span class="yellow">사에지마 키요미의 점수 리셋까지<br>
+                앞으로 3시간!</span><br>
+            <div class="gray small">※미완료 챌린지 레슨은 라운드 종료시 리셋됩니다.</div>
+        </section>
+        <img src="../../../../image_sp/event/common/line/crimson/line_hoshi.png" width="100%"><br>
+        <section class="naviArea">
+            <img src="../../../../image_sp/ui/navi/ikari_m2.png" width="90">
+            <div class="Wrap">
+                <div class="fukiRight">
+                    챌린지 레슨이 성공하지 못했습니다.
+                    그렇지만, 머니가 있으면, 계속 챌린지 레슨을 할 수 있어요!
+                </div>
+            </div>
+        </section>
+        <img src="../../../../image_sp/event/common/line/crimson/line_hoshi.png" width="100%"><br>
+        <script type="text/javascript">
+            <!--
+            $(function() {
+                Commonjs.setSearchMore({
+                    $trigger: $("#js_btn_more"),
+                    $contents: $("#js_more_contents"),
+                });
+                $('#js_btn_more').on('click', function() {
+                    $(this).toggleClass('_alone');
+                });
+            });
+            // 
+            -->
+        </script>
+        <a href='../../../index.html'>
+            <div class="backLink">아이돌 챌린지 TOP</div>
+        </a>
+        <footer>
+            <a href="#top" id="toPageTop" class="mypage_under">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
