@@ -103,81 +103,14 @@
                 </div>
             </div>
             <script src="../../../../js/min/bp_manager_challenge.min.js" type="text/javascript"></script>
-            <script>
-                $(function() {
-                    var base_input = {
-                        "bp_list": {
-                            "n": {
-                                num: parseInt(5),
-                                effect: 1
-                            },
-                            "m": {
-                                num: parseInt(958),
-                                effect: 1
-                            },
-                            "r": {
-                                num: parseInt(23),
-                                effect: 1
-                            },
-                            "f": {
-                                num: parseInt(109),
-                                effect: 6
-                            },
-                        },
-                        "bp_flag_list": {
-                            "is_auto": parseInt(0),
-                            "is_priority_half": parseInt(1),
-                        },
-                        "bp_master": {
-                            "bp_usable_max": 3,
-                            "bp_name": "tp",
-                        }
-                    }
-                    var dom = {
-                        "$battle_buttons": $('#challengeBattleButton form'),
-                        "$recover_btn": $('#recover_btn'),
-                    }
-                    var bp_manager = new BattlePointManagerChallenge(base_input);
-                    bp_manager.setup_draw_and_action(dom);
-                })
-            </script>
             <div class="m-Btm10">
-                CP1로 1턴에 예상 점수 : <span class="yellow">143,539</span><br>
+                CP1로 1턴에 예상 점수 : <span class="yellow">50,000</span><br>
             </div>
             <style>
                 label {
                     -webkit-transform: scale(1);
                 }
             </style>
-            <div class="challengeArea type_raidInfo">
-                <div id="bpImg" class="challenge t-Lft" style="margin-left:113px; height:20px;">
-                    <span style="margin-right: 5px;" class="blue">CP</span>
-                    <span class="js_bp_num">5</span>/6
-                    <span style="font-size:10px" class="gray">(전회복까지<span class="yellow">0:17:27</span>)</span>
-                </div>
-                <style>
-                    #bpImg.challenge img {
-                        vertical-align: middle;
-                    }
-                </style>
-                <script>
-                    $(function() {
-                        Commonjs.createPopupByTemplate({
-                            "id": "tpl_auto_pop",
-                            $trigger: $(".challenge_auto_btn"),
-                            onTrigger: function(e, popup) {
-                                Commonjs.setSearchRadio(popup.get_contents().find(".search_radio_2"));
-                                popup.open();
-                            }
-                        });
-                    })
-                </script>
-            </div>
-            <div class="challengeArea type_01 m-Btm10" style='font-size:0.8rem;'>
-                残り<span class="yellow">100,000</span>でチャレンジレッスン成功!<br>
-                チャレンジレッスン成功で成長度が<span class="yellow">12</span>UP!<br>
-                さらに<span class="yellow">50</span>チャレンジpt、ブルーメダル<span class="yellow">2</span>枚GET!<br>
-            </div>
         </section>
         <section class="t-Cnt">
             <div class="m-Btm15">
