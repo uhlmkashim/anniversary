@@ -103,6 +103,44 @@
                 </div>
             </div>
             <script src="../../../../js/min/bp_manager_challenge.min.js" type="text/javascript"></script>
+            <script>
+                $(function() {
+                    var base_input = {
+                        "bp_list": {
+                            "n": {
+                                num: parseInt(5),
+                                effect: 1
+                            },
+                            "m": {
+                                num: parseInt(978),
+                                effect: 1
+                            },
+                            "r": {
+                                num: parseInt(28),
+                                effect: 1
+                            },
+                            "f": {
+                                num: parseInt(108),
+                                effect: 6
+                            },
+                        },
+                        "bp_flag_list": {
+                            "is_auto": parseInt(0),
+                            "is_priority_half": parseInt(1),
+                        },
+                        "bp_master": {
+                            "bp_usable_max": 3,
+                            "bp_name": "tp",
+                        }
+                    }
+                    var dom = {
+                        "$battle_buttons": $('#challengeBattleButton form'),
+                        "$recover_btn": $('#recover_btn'),
+                    }
+                    var bp_manager = new BattlePointManagerChallenge(base_input);
+                    bp_manager.setup_draw_and_action(dom);
+                })
+            </script>
             <div class="m-Btm10">
                 CP1로 1턴에 예상 점수 : <span class="yellow">50,000</span><br>
             </div>
