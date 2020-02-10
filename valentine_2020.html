@@ -91,6 +91,7 @@
             "txt4_1": "\u9dfa\u6ca2\u6587\u9999\u3068\u306e\u9593\u306b\u307e\u305f1\u3064\u601d\u3044\u51fa",
             "txt4_2": "\u304c\u5897\u3048\u305f\uff61"
         };
+        window.im_cjs = window.im_cjs || {};
         window.im_cjs.jump_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON'; // createjsの演出が全て終了した場合の飛び先urlの定義
     </script>
     <script>
@@ -125,7 +126,7 @@
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': window.image_server + encodeURIComponent(window.base_url + _img_path),
                         'id': lib.properties.manifest[i].id
                     }
                 }
