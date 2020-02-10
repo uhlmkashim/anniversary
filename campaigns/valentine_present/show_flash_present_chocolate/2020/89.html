@@ -65,7 +65,7 @@
         var image_server = "";
         var base_url = "";
         window.file_name = "valentine_2020"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/campaign/valentine/2020/";
+        window.dir_name = "../../../../image_sp/cjs/campaign/valentine/2020/";
         window.replace_images = {
             "replace_target_480x502_character": "campaign/valentine/2018/idol/89.png",
             "replace_target_240x310_bg": "campaign/valentine/2018/bg/9.jpg"
@@ -122,7 +122,7 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = '../../../../image_sp/' + window.replace_images[_prefix];
+                        _img_path = 'image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
