@@ -5909,43 +5909,43 @@
         color: "#FFFFFF",
         opacity: 1.00,
         manifest: [{
-                src: "images/cover_sar.png?1581047941384",
+                src: "images/cover_sar.png",
                 id: "valentine_2020_cover_sar"
             },
             {
-                src: "images/fp_hana3.png?1581047941384",
+                src: "images/fp_hana3.png",
                 id: "valentine_2020_fp_hana3"
             },
             {
-                src: "images/heart.png?1581047941384",
+                src: "images/heart.png",
                 id: "valentine_2020_heart"
             },
             {
-                src: "images/img_kira.png?1581047941384",
+                src: "images/img_kira.png",
                 id: "valentine_2020_img_kira"
             },
             {
-                src: "images/replace_target_240x310_bg.jpg?1581047941384",
+                src: "images/9.png",
                 id: "valentine_2020_replace_target_240x310_bg"
             },
             {
-                src: "images/replace_target_480x502_character.png?1581047941384",
+                src: "images/89.png",
                 id: "valentine_2020_replace_target_480x502_character"
             },
             {
-                src: "images/Valentine2020.png?1581047941384",
+                src: "images/Valentine2020.png",
                 id: "valentine_2020_Valentine2020"
             },
             {
-                src: "images/window.png?1581047941384",
+                src: "images/window.png",
                 id: "valentine_2020_window"
             },
             {
-                src: "images/window_3.png?1581047941384",
+                src: "images/window_3.png",
                 id: "valentine_2020_window_3"
             },
             {
-                src: "images/window_4.png?1581047941384",
+                src: "images/window_4.png",
                 id: "valentine_2020_window_4"
             }
         ],
