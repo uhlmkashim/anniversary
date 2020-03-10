@@ -4032,59 +4032,59 @@
         color: "#FFFFFF",
         opacity: 1.00,
         manifest: [{
-                src: "images/bg_sp.jpg?1583399825541",
+                src: "images/bg_sp.jpg",
                 id: "whiteday_2020_opening_bg_sp"
             },
             {
-                src: "images/chihiro_base.png?1583399825541",
+                src: "images/chihiro_base.png",
                 id: "whiteday_2020_opening_chihiro_base"
             },
             {
-                src: "images/chihiro_face_close.png?1583399825541",
+                src: "images/chihiro_face_close.png",
                 id: "whiteday_2020_opening_chihiro_face_close"
             },
             {
-                src: "images/chihiro_face_laugh.png?1583399825541",
+                src: "images/chihiro_face_laugh.png",
                 id: "whiteday_2020_opening_chihiro_face_laugh"
             },
             {
-                src: "images/chihiro_face_sad.png?1583399825541",
+                src: "images/chihiro_face_sad.png",
                 id: "whiteday_2020_opening_chihiro_face_sad"
             },
             {
-                src: "images/chihiro_face_sad2.png?1583399825541",
+                src: "images/chihiro_face_sad2.png",
                 id: "whiteday_2020_opening_chihiro_face_sad2"
             },
             {
-                src: "images/chihiro_face_smile.png?1583399825541",
+                src: "images/chihiro_face_smile.png",
                 id: "whiteday_2020_opening_chihiro_face_smile"
             },
             {
-                src: "images/chihiro_face_strong.png?1583399825541",
+                src: "images/chihiro_face_strong.png",
                 id: "whiteday_2020_opening_chihiro_face_strong"
             },
             {
-                src: "images/chihiro_face_surprise1.png?1583399825541",
+                src: "images/chihiro_face_surprise1.png",
                 id: "whiteday_2020_opening_chihiro_face_surprise1"
             },
             {
-                src: "images/logo_2020_flash.png?1583399825541",
+                src: "images/logo_2020_flash.png",
                 id: "whiteday_2020_opening_logo_2020_flash"
             },
             {
-                src: "images/logo_2020_wd.png?1583399825541",
+                src: "images/logo_2020_wd.png",
                 id: "whiteday_2020_opening_logo_2020_wd"
             },
             {
-                src: "images/shabon.png?1583399825541",
+                src: "images/shabon.png",
                 id: "whiteday_2020_opening_shabon"
             },
             {
-                src: "images/sp_glitter_title.png?1583399825541",
+                src: "images/sp_glitter_title.png",
                 id: "whiteday_2020_opening_sp_glitter_title"
             },
             {
-                src: "images/tie_sp.png?1583399825541",
+                src: "images/tie_sp.png",
                 id: "whiteday_2020_opening_tie_sp"
             }
         ],
