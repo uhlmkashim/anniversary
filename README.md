@@ -7,3 +7,6 @@
 
 2020 화이트데이 오프닝
 https://uhlmkashim.github.io/anniversary/onetime_flash/show_swf/200260/normal/Onetime_flash_index_1.html
+
+후미카 2020 화이트데이
+https://uhlmkashim.github.io/anniversary/campaigns/whiteday_present/show_flash_return_gift_to_idol_whiteday/89/1/2/Whiteday_present_see_idol_flash_1.html
