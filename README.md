@@ -4,3 +4,6 @@
 후미카 2020 발렌타인<br>https://uhlmkashim.github.io/anniversary/campaigns/valentine_present/show_flash_present_chocolate/2020/89.html<br>https://uhlmkashim.github.io/anniversary/campaigns/valentine_present/show_flash_present_chocolate/2020/89k.html
 
 키요미 2020 발렌타인<br>https://uhlmkashim.github.io/anniversary/campaigns/valentine_present/show_flash_present_chocolate/2020/196.html<br>https://uhlmkashim.github.io/anniversary/campaigns/valentine_present/show_flash_present_chocolate/2020/196k.html
+
+2020 화이트데이 오프닝
+https://uhlmkashim.github.io/anniversary/onetime_flash/show_swf/200260/normal/Onetime_flash_index_1.html
