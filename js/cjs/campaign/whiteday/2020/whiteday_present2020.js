@@ -8223,7 +8223,7 @@
         color: "#FFFFFF",
         opacity: 1.00,
         manifest: [{
-                src: "images/bg_sp.jpg?1583727631411",
+                src: "images/bg_sp.jpg",
                 id: "whiteday_present2020_bg_sp"
             },
             {
