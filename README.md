@@ -14,4 +14,4 @@ https://uhlmkashim.github.io/anniversary/campaigns/whiteday_present/show_flash_r
 키요미 2020 화이트데이
 https://uhlmkashim.github.io/anniversary/campaigns/whiteday_present/show_flash_return_gift_to_idol_whiteday/196/11/2/Whiteday_present_see_idol_flash_1.html<br>https://uhlmkashim.github.io/anniversary/campaigns/whiteday_present/show_flash_return_gift_to_idol_whiteday/196/11/2/Whiteday_present_see_idol_flash_k.html
 
-데레마스 채널 아카이브<br>https://uhlmkashim.github.io/anniversary/radio/target_live_bc_id/4.html<br>시즌 1<br>https://uhlmkashim.github.io/anniversary/radio/archive/target_live_bc_id/4/index.html
+데레마스 채널 아카이브<br>https://uhlmkashim.github.io/anniversary/radio/target_live_bc_id/4.html
