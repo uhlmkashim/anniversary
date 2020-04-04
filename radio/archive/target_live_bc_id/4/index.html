@@ -8,8 +8,8 @@
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
     <title>アイドルマスター シンデレラガールズ</title>
-    <link rel="stylesheet" type="text/css" href="idolmaster/css/rich/new_mypage_common.css" media="all">
-    <link rel="apple-touch-icon-precomposed" href="idolmaster/image_sp/ui/icon_bookmark.png">
+    <link rel="stylesheet" type="text/css" href="../../../../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../../../../image_sp/ui/icon_bookmark.png">
     <script>
         (function() {
             window.console.log = function() {};
@@ -64,22 +64,22 @@
             }
         })();
     </script>
-    <script src="idolmaster/js/underscore-min.js"></script>
-    <script src="idolmaster/js/require.js"></script>
-    <script src="idolmaster/js/require.js"></script>
+    <script src="../../../../js/underscore-min.js"></script>
+    <script src="../../../../js/require.js"></script>
+    <script src="../../../../js/require.js"></script>
     <script>
         requirejs.config({
             paths: {
-                easeljs: "idolmaster/js/easeljs-0.8.2.min.js",
-                easeljs_0_7_1: "idolmaster/js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
-                tweenjs: "idolmaster/js/tweenjs-0.6.2.min.js",
-                movieclipjs: "idolmaster/js/movieclip-0.7.1.min.js",
-                createjs: "idolmaster/js/createjs-2015.11.26.min.js",
+                easeljs: "../../../../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../../../../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "../../../../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../../../../js/movieclip-0.7.1.min.js",
+                createjs: "../../../../js/createjs-2015.11.26.min.js",
             }
         })
     </script>
-    <script src="idolmaster/js/common.js"></script>
-    <script src="idolmaster/js/common_new.js"></script>
+    <script src="../../../../js/common.js"></script>
+    <script src="../../../../js/common_new.js"></script>
     <script>
         $(function() {
             window.$ibox = $('.ibox').ibox();
@@ -98,7 +98,7 @@
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='idolmaster/js/app_sound.js'></script>
+    <script type='text/javascript' src='../../../../js/app_sound.js'></script>
     <link rel="stylesheet" type="text/css" href="../../../../css/base.css" />
 </head>
 
@@ -383,11 +383,11 @@
         <script src='../../../../js/area_slide.js'></script>
         <script>
             var cjs_list = [
-                'idolmaster/js/live_broadcast/4/cjs001_character.js',
-                "idolmaster/js/live_broadcast/cjs002_live_text.js",
-                "idolmaster/js/live_broadcast/cjs003_clock.js",
-                "idolmaster/js/live_broadcast/cjs004_balloon.js",
-                "idolmaster/js/live_broadcast/cjs005_omikuji.js",
+                '../../../../js/live_broadcast/4/cjs001_character.js',
+                "../../../../js/live_broadcast/cjs002_live_text.js",
+                "../../../../js/live_broadcast/cjs003_clock.js",
+                "../../../../js/live_broadcast/cjs004_balloon.js",
+                "../../../../js/live_broadcast/cjs005_omikuji.js",
             ]
             var manifest = [{
                     src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/cast/4/1.png',
@@ -501,7 +501,7 @@
                 "get_archives": 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/radio/api_get_archives?l_frm=Radio_archive_1%26rnd=310147828',
             };
             // くじ引き形式のparamデータ
-            var area_slide_url = 'idolmaster/js/area_slide.js';
+            var area_slide_url = '../../../../js/area_slide.js';
             var in_social_game_viewer = false;
             try {
                 in_social_game_viewer = (chrome in window);
@@ -510,7 +510,7 @@
             }
             $(function() {
                 window.live_broadcast = new LiveBroadcast({
-                    "image_url": "http://125.6.169.35/idolmaster/image_sp/",
+                    "image_url": "",
                     "cjs_list": cjs_list,
                     "manifest": manifest,
                     "url": url,
