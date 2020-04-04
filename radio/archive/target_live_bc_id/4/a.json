@@ -40,7 +40,7 @@
 "effect_name":"\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
 "state":1,
 "categoryid":5
 }
@@ -1780,7 +1780,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 },
@@ -1789,7 +1789,7 @@
 "effect_name":"\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
 "state":1,
 "categoryid":5
 }
@@ -11900,7 +11900,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c81",
 "category_name":"enquete",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":6,
 "enquete_enable":true,
@@ -11959,7 +11959,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -15321,7 +15321,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c81\u7d50\u679c",
 "category_name":"enquete_result",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":7,
 "enquete_enable":true,
@@ -15384,7 +15384,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -16546,7 +16546,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 },
@@ -16555,7 +16555,7 @@
 "effect_name":"\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
 "state":1,
 "categoryid":5
 }
@@ -18761,7 +18761,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c82",
 "category_name":"enquete",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":6,
 "enquete_enable":true,
@@ -18820,7 +18820,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -20720,7 +20720,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c82\u7d50\u679c",
 "category_name":"enquete_result",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":7,
 "enquete_enable":true,
@@ -20783,7 +20783,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -22200,7 +22200,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 },
@@ -22209,7 +22209,7 @@
 "effect_name":"\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
 "state":1,
 "categoryid":5
 }
@@ -27764,7 +27764,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c83",
 "category_name":"enquete",
 "effectid":"3",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":6,
 "enquete_enable":true,
@@ -27819,7 +27819,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -29345,7 +29345,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c83\u7d50\u679c",
 "category_name":"enquete_result",
 "effectid":"3",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":7,
 "enquete_enable":true,
@@ -29403,7 +29403,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 }
@@ -30667,7 +30667,7 @@
 "effect_name":"\u653e\u9001\u5ba4",
 "category_name":"wall1",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/2_basebg.jpg",
 "state":1,
 "categoryid":4
 },
@@ -30676,7 +30676,7 @@
 "effect_name":"\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_open.jpg",
 "state":1,
 "categoryid":5
 }
@@ -34107,7 +34107,7 @@
 "effect_name":"\u30a8\u30f3\u30c7\u30a3\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
 "state":1,
 "categoryid":5
 }
@@ -34355,7 +34355,7 @@
 "effect_name":"\u30c6\u30ed\u30c3\u30d7",
 "category_name":"info_comment",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":8
 },
@@ -34382,7 +34382,7 @@
 "effect_name":"\u30a8\u30f3\u30c7\u30a3\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
 "state":1,
 "categoryid":5
 }
@@ -34783,7 +34783,7 @@
 "effect_name":"\u30c6\u30ed\u30c3\u30d7",
 "category_name":"info_comment",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":8
 },
@@ -34792,7 +34792,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c84",
 "category_name":"enquete",
 "effectid":"4",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":6,
 "enquete_enable":true,
@@ -34843,7 +34843,7 @@
 "effect_name":"\u30a8\u30f3\u30c7\u30a3\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
 "state":1,
 "categoryid":5
 }
@@ -35655,7 +35655,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c84\u7d50\u679c",
 "category_name":"enquete_result",
 "effectid":"4",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":7,
 "enquete_enable":true,
@@ -35711,7 +35711,7 @@
 "effect_name":"\u30a8\u30f3\u30c7\u30a3\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
 "state":1,
 "categoryid":5
 }
@@ -35823,7 +35823,7 @@
 "effect_name":"\u30c6\u30ed\u30c3\u30d7",
 "category_name":"info_comment",
 "effectid":"1",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":8
 },
@@ -35832,7 +35832,7 @@
 "effect_name":"\u30a2\u30f3\u30b1\u30fc\u30c84\u7d50\u679c",
 "category_name":"enquete_result",
 "effectid":"4",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_wait.jpg",
 "state":1,
 "categoryid":7,
 "enquete_enable":true,
@@ -35888,7 +35888,7 @@
 "effect_name":"\u30a8\u30f3\u30c7\u30a3\u30f3\u30b0",
 "category_name":"wall2",
 "effectid":"2",
-"image_path":"http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&url=http://125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
+"image_path":"../../../../image_sp/campaign/radio/livebroadcast/bg/0_close.jpg",
 "state":1,
 "categoryid":5
 }
