@@ -718,7 +718,7 @@
 
 .radio_omikuji_2 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -887px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -887px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -727,7 +727,7 @@
 
 .radio_omikuji_3 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -752px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -752px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -736,7 +736,7 @@
 
 .radio_omikuji_4 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -571px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -571px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -745,7 +745,7 @@
 
 .radio_omikuji_5 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1338px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1338px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -754,7 +754,7 @@
 
 .radio_omikuji_6 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1045px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1045px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -763,7 +763,7 @@
 
 .radio_omikuji_bg {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -112px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -112px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 320px;
@@ -772,7 +772,7 @@
 
 .radio_omikuji_btn {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1528px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1528px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 184px;
@@ -781,7 +781,7 @@
 
 .radio_omikuji_btn_gray {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1862px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1862px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 184px;
@@ -790,7 +790,7 @@
 
 .radio_omikuji_reverse {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -177px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -177px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 62px;
@@ -1303,14 +1303,14 @@ body {
 #live_broadcast .eye_catch .eye_catch_image .eye_catch_loading {
     width: 195px;
     height: 139px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/working_1.gif);
+    background: url(../../image_sp/petit_cg/ui/sprite/loading/working_1.gif);
     background-size: 195px
 }
 
 #live_broadcast .eye_catch .eye_catch_image .eye_catch_chara {
     width: 102px;
     height: 102px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/loading.gif);
+    background: url(../../image_sp/petit_cg/ui/sprite/loading/loading.gif);
     background-size: 102px;
     position: relative;
     top: -78px;
@@ -1477,7 +1477,7 @@ body {
 
 #message_submit_area {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1567px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1567px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 320px;
@@ -1487,7 +1487,7 @@ body {
 
 #message_submit_area._archive {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -48px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -48px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 320px;
@@ -1501,8 +1501,8 @@ body {
     padding-right: 0;
     border-style: solid;
     border-width: 3px;
-    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio/frame_comment.png%3F1558677326) 6 fill stretch;
-    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio/frame_comment.png%3F1558677326) 6 stretch;
+    border-image: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio/frame_comment.png) 6 fill stretch;
+    -webkit-border-image: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio/frame_comment.png) 6 stretch;
     width: 228px;
     height: 34px;
     line-height: 1;
@@ -1512,7 +1512,7 @@ body {
 
 #message_submit_area #message_submit_btn {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1638px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1638px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 65px;
@@ -1526,7 +1526,7 @@ body {
 
 #message_submit_area #message_submit_btn._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1801px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1801px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 65px;
@@ -1535,7 +1535,7 @@ body {
 
 #message_submit_area #message_submit_btn._disabled {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 -1740px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 -1740px;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 65px;
@@ -1584,7 +1584,7 @@ body {
 
 .area_themetalk {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png%3F1577425600) no-repeat 0 0;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/studio-s81a25ff042.png) no-repeat 0 0;
     -webkit-background-size: 320px 2417px;
     background-size: 320px 2417px;
     width: 318px;
@@ -1680,7 +1680,7 @@ body {
 
 .radio_controller .radio_btn_next_3min._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -267px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -267px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1690,7 +1690,7 @@ body {
 .radio_controller .radio_btn_next_3min._disabled {
     pointer-events: none;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -471px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -471px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1699,7 +1699,7 @@ body {
 
 .radio_controller .radio_btn_next_5sec._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -335px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -335px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1709,7 +1709,7 @@ body {
 .radio_controller .radio_btn_next_5sec._disabled {
     pointer-events: none;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -505px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -505px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1718,7 +1718,7 @@ body {
 
 .radio_controller .radio_btn_prev_5sec._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -437px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -437px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1727,7 +1727,7 @@ body {
 
 .radio_controller .radio_btn_prev_3min._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -301px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -301px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1736,7 +1736,7 @@ body {
 
 .radio_controller .radio_btn_play_stop {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -403px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -403px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1745,7 +1745,7 @@ body {
 
 .radio_controller .radio_btn_play_stop._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -539px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -539px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1754,7 +1754,7 @@ body {
 
 .radio_controller .radio_btn_play_stop._stop {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -369px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -369px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
@@ -1763,7 +1763,7 @@ body {
 
 .radio_controller .radio_btn_play_stop._stop._hover {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A//125.6.169.35/idolmaster/image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -573px;
+    background: url(../../image_sp/campaign/radio/livebroadcast/sprite/archive-s4a6e67d5b0.png) no-repeat 0 -573px;
     -webkit-background-size: 320px 606px;
     background-size: 320px 606px;
     width: 50px;
