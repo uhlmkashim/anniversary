@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fnew_mypage_common.css%3Fv%3D20200401144623" media="all">
+    <link rel="apple-touch-icon-precomposed" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Ficon_bookmark.png%3Fv%3D20191128144726">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fjquery-2.2.2.min.js%3Fv%3D20101001000000"></script>
+    <script>
+        (function() {
+            window.viewer_id = 134800333;
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DRadio_archive_1%26rnd%3D977829643";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Funderscore-min.js%3Fv%3D20101001000000"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Frequire.js%3Fv%3D20101001000000"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Frequire.js%3Fv%3D20101001000000"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Feaseljs-0.8.2.min.js%3Fv%3D20101001000000",
+                easeljs_0_7_1: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Feaseljs-0.7.1.min.js%3Fv%3D20101001000000", //スプライトを読むためのバージョン
+                tweenjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Ftweenjs-0.6.2.min.js%3Fv%3D20101001000000",
+                movieclipjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmovieclip-0.7.1.min.js%3Fv%3D20190524145756",
+                createjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcreatejs-2015.11.26.min.js%3Fv%3D20190909144732",
+            }
+        })
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon.js%3Fv%3D20191018114616"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon_new.js%3Fv%3D20191212144612"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/radio/archive');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20101001000000'></script>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+</head>
+
+<body id="radio" class="archive">
+    <div id="top" class="page_container jsOnBtn">
+        <nav class="area_menu_header">
+            <div class="area_menu_header_6btn">
+                <h1 id="JtextLimit">アーカイブ放送</h1>
+                <ul>
+                    <li><a class="head_menu_01" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DRadio_archive_1%26rnd%3D276642849">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_02" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpetit_cg%3Fl_frm%3DRadio_archive_1%26rnd%3D273795815">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_03" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgacha%3Fl_frm%3DRadio_archive_1%26rnd%3D601224194">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_04" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DRadio_archive_1%26rnd%3D353478079">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_05" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fauction%2Fauction_top%3Fl_frm%3DRadio_archive_1%26rnd%3D970742117">
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_06 se_000" href="#" id="headerAcd">
+                            <div></div>
+                        </a></li>
+                </ul>
+            </div>
+            <div id="headerPopupMenu" class="headerPopupMenu">
+                <div class="m-Top10 t-Cnt">
+                    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_dream%2Findex%3Fbanner_id%3D000752%26img%3D0%26l_frm%3DRadio_archive_1%26rnd%3D349998545' class="jsOnDesignBtn"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F752%2Fbanner_event_01.png%3Fv%3D20200331144636' width="280" height="60"></a>
+                </div>
+                <div class="area_menu_header_main4">
+                    <ul>
+                        <li><a class="btn_menu_header_lesson" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DRadio_archive_2%26rnd%3D87306114'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_work" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fquests%3Fl_frm%3DRadio_archive_1%26rnd%3D729608013'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_livebattle" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fbattles%3Fl_frm%3DRadio_archive_1%26rnd%3D96248305'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_deck" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fdeck%3Fl_frm%3DRadio_archive_1%26rnd%3D595817317'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_01"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_shop" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D426106449'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_item" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fitem%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D497491476'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_present" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpresent%2Frecieve%2F%3Fview_auth_type%3D1%26cache%3D1%26l_frm%3DRadio_archive_1%26rnd%3D465225820'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_change" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fexchange%2Fmedal_list%2F999999%3Fl_frm%3DRadio_archive_1%26rnd%3D502044834'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_02"></h3>
+                <div class="area_menu_header_5">
+                    <ul>
+                        <li><a class="btn_menu_header_idollist" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_list%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D798333790'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_trainer" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_storage%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D588138709'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_production" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fknights%2Fnot_join_knights_top%3Fl_frm%3DRadio_archive_1%26rnd%3D382180533'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_pra" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fp_ranking_award%3Fl_frm%3DRadio_archive_1%26rnd%3D201825267'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_profile" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fresults%3Fl_frm%3DRadio_archive_1%26rnd%3D485576819'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_03"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_favorite" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Ffriend%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D161079005'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_memory" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmemorial%3Fl_frm%3DRadio_archive_1%26rnd%3D2955034'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_gamecenter" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_center%3Fl_frm%3DRadio_archive_1%26rnd%3D968959374'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_sound" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fs_booth%3Fl_frm%3DRadio_archive_1%26rnd%3D984172343'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_04"></h3>
+                <div class="area_menu_header_3">
+                    <ul>
+                        <li><a class="btn_menu_header_setting" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpersonal_option%3Fl_frm%3DRadio_archive_1%26rnd%3D99958814'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_help" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fadvise%2Findex%2Ftop%3Fl_frm%3DRadio_archive_1%26rnd%3D318339402'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_top" href='http://sp.pf.mbga.jp/12008305/?guid=ON'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <input id="delay" type="hidden" value="0">
+        <link rel="stylesheet" type="text/css" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Flive_broadcast.css%3Fv%3D20191227144639' media="all">
+        <div class="studio_area">
+            <div id="live_broadcast">
+                <div id="main_area">
+                    <div id="layer_wall1" class="layer_base" style="display:none;">
+                        <img src='' class="wall_image" />
+                    </div>
+                    <div id="layer_user_comment" class="layer_user_comment" style="display:none;">
+                        <div class="radio_comment_board">
+                            <div class="user_comment_board"></div>
+                        </div>
+                        <canvas id="sub_canvas" width="640" height="480" style="position:absolute;top:0;left:0;zoom:0.5;pointer-events:none;">
+                    </div>
+                    <div id="layer_idol" style="position:relative;">
+                        <div class="radio_bg_time" style="display:none;"></div>
+                        <canvas id="stopped_canvas_idol" width="640" height="480" style="position:absolute;top:0;left:0;zoom:0.5;pointer-events:none;">
+                        </canvas>
+                        <canvas id="stopped_canvas_live_text" width="640" height="480" style="position:absolute;top:0;left:0;zoom:0.5;pointer-events:none;">
+                        </canvas>
+                        <canvas id="main_canvas" width="640" height="480" style="position:absolute;top:0;left:0;zoom:0.5;pointer-events:none;">
+                        </canvas>
+                        <div class="icon_enquete" style="display:none;"></div>
+                    </div>
+                    <div id="layer_idol_comment" class="layer_idol_comment" style="display:none;" data-mes_speed="140" data-mes_wait_1="250" data-mes_wait_2="600">
+                        <div id="js_idol_comment" class="idol_comment_front">
+                        </div>
+                    </div>
+                    <div id="layer_wall2" class="layer_base" style="display:none;">
+                        <img src='' class="wall_image" />
+                    </div>
+                    <div id="layer_enquete" class="layer_enquete jsOnDesignBtn-wrap" style="display:none;">
+                        <div id="enquete_area"></div>
+                    </div>
+                    <div id="layer_enquete_result" class="layer_enquete" style="display:none;">
+                        <div id="enquete_result_area"></div>
+                    </div>
+                </div>
+                <div id="admin_message" class="radio_bg_telop">
+                    <div class="admin_message_text"></div>
+                </div>
+                <div id="jsEyeCatch" class="eye_catch">
+                    <div class="eye_catch_image">
+                        <div class="eye_catch_loading"></div>
+                        <div class="eye_catch_chara"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="message_submit_area" class="_archive t-Cnt" style="position:relative;">
+                <div class="radio_frame_controller">
+                    <div class="radio_controller">
+                        <a class="js_controller radio_btn_prev_3min" data-second="-180"></a>
+                        <a class="js_controller radio_btn_prev_5sec" data-second="-5"></a>
+                        <a class="js_controller radio_btn_play_stop" data-second="0"></a>
+                        <a class="js_controller radio_btn_next_5sec" data-second="5"></a>
+                        <a class="js_controller radio_btn_next_3min" data-second="180"></a>
+                    </div>
+                </div>
+                <textarea class="textarea_message" name="message" placeholder="メッセージフォーム" style="display:none;"></textarea>
+                <div class="textarea_message_counter text_color" style="display:none;"><span id="chat_text_counter" class="yellow"></span>/文字</div>
+                <div class="message_submit_restrict text_color t-Cnt m-Btm8" style="display:none;position:absolute;top:10px;left:15px;">
+                    <div>アカウント制限措置に該当する行為を<br />行ったため機能が制限されています。</div>
+                </div>
+                <div class="radio_text_archive_notice"></div>
+            </div>
+            <div class="message_submit_restrict red t-Cnt m-Btm8" style="display:none;">
+                <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Fhelp%3Fl_frm%3DRadio_archive_1%26rnd%3D444819736' class="btn_sup_line_2 m-Top4 m-Cnt m-Btm4">注意事項</a>
+            </div>
+            <div id="enquete_detail_area" class="jsOnDesignBtn-wrap"></div>
+            <div class="radio_frame m-Cnt m-Top12">
+                <div class="deco_top"></div>
+                <div class="radio_content_area">
+                    <div class="radio_frame_title radio_title_corner"></div>
+                    <div class="radio_corner_area m-Top8 m-Btm12">
+                        <div class="radio_subtitle_themetalk radio_frame_subtitle"></div>
+                        お題：<span class="corner_topics">秋の夜長にしたいこと</span><br />
+                        みなさんが秋の夜長にしたいことを募集! パーソナリティがメッセージを紹介しながらお返事します!
+                    </div>
+                    <div class="radio_corner_area m-Top8 m-Btm4">
+                        <div class="radio_subtitle_normal_message radio_frame_subtitle"></div>
+                        最近あったこと、プロデュース報告、番組への感想などなど、
+                        どんなことでもメッセージを送ってくださいね!
+                    </div>
+                </div>
+                <div class="deco_bottom"></div>
+            </div>
+            <div class="radio_frame m-Cnt m-Top12">
+                <div class="deco_top"></div>
+                <div class="radio_frame_title_bg">
+                    <div class="radio_header_title">
+                        <div style="position:relative;top:-4px;text-align:center">
+                            <div class="js_log_title m-Cnt"></div>
+                        </div>
+                    </div>
+                    <div class="log_btn_change radio_btn_change jsOnDesignBtn"></div>
+                </div>
+                <div class="radio_content_area _log_area">
+                    <div id="idol_message_area" class="log_message_area area-slide">
+                        <div class="log_message_container">
+                        </div>
+                    </div>
+                    <div id="user_message_area" class="log_message_area _user area-slide">
+                        <div class="log_message_container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="radio_line_bottom"></div>
+        </div>
+        <div class="hide_text_area">
+            <div class="js_hide_idol_text idol_comment_front">
+            </div>
+        </div>
+        <div class="hide_admin_message_area">
+            <div class="js_hide_admin_message admin_message_text">
+            </div>
+        </div>
+        <div class="hide_enquete_area">
+        </div>
+        <!-- アンケート詳細表示用テンプレート-->
+        <script type="text/template" id="template_enquete_detail">
+            <div class="js_animation_target" style="overflow:hidden;">
+<div class="radio_frame m-Top12 m-Cnt m-Btm8">
+<div class="deco_top"></div>
+<div class="radio_frame_title_bg">
+<div class="radio_header_title">
+<div style="position:relative;top:-4px;text-align:center">
+<% if(result_flg) { %>
+<div class="radio_text_title_enquete_result m-Cnt"></div>
+<% } else if(enquete_answered_id == null) { %>
+<div class="radio_text_title_enquete m-Cnt"></div>
+<% } else { %>
+<div class="radio_text_title_enqueted m-Cnt"></div>
+<% } %>
+</div>
+</div>
+</div>
+<div class="radio_content_area" style="padding-top:0px;">
+<div id="detail_enquete">
+<div class="detail_enquete_title" style="font-size:11px;">Q.<%- enquete_title %></div>
+<div class="area_enquete jsOnDesignBtn-wrap">
+<% Object.keys(enquete_list).forEach(function(key, i) { %>
+<% var enquete = enquete_list[key]; %>
+<% var is_selected = enquete_answered_id == key %>
+<% var is_disabled = enquete_answered_id != null || result_flg %>
+<div class="enquete_content radio_btn_enquete<% if(is_selected) { %>_selected<% } else if(is_disabled || is_archive) { %>_disabled<% } %> <% if(!(is_disabled || is_archive)) { %>js_vote_enquete jsOnDesignBtn<% } else if(enquete_answered_id == enquete.answer_id) { %>_selected<% } %>" data-enquete-type="<%- enquete_type %>" data-answer-id="<%- enquete.answer_id %>">
+<div class="enquete_index radio_enquete_num_bg<% if(!is_selected && (is_disabled || is_archive)) { %>_disabled<% } %>"><div class="enquete_index_text"><%- (i+1) %></div></div>
+<div class="enquete_text <% if(is_selected) { %>_selected<% } %><% if(result_flg) { %> _result_state<% } %>"><%- enquete.text %></div>
+<% if(result_flg) { %>
+<div class="enquete_percent"><%- enquete.percent %>%</div>
+<% } %>
+</div>
+<% }) %>
+</div>
+</div>
+</div>
+<div class="deco_bottom"></div>
+</div>
+</div>
+</script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fbackbone-min.js%3Fv%3D20101001000000"></script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmin%2Flive_broadcast_archive.min.js%3Fv%3D20200402174136"></script>
+        <script src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Farea_slide.js%3Fv%3D20101001000000'></script>
+        <script>
+            var cjs_list = [
+                'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2F4%2Fcjs001_character.js%3Fv%3D20190524145756',
+                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs002_live_text.js%3Fv%3D20190524145756",
+                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs003_clock.js%3Fv%3D20190524145756",
+                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs004_balloon.js%3Fv%3D20190524145756",
+                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs005_omikuji.js%3Fv%3D20190524145756",
+            ]
+            var manifest = [{
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F1.png%3Fv%3D20190524145526',
+                    id: "c0004_1"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F2.png%3Fv%3D20190524145526',
+                    id: "c0004_2"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F3.png%3Fv%3D20190524145526',
+                    id: "c0004_3"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F4.png%3Fv%3D20190524145526',
+                    id: "c0004_4"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F5.png%3Fv%3D20190524145526',
+                    id: "c0004_5"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F4%2F6.png%3Fv%3D20190524145526',
+                    id: "c0004_6"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Flive.png%3Fv%3D20190524145526',
+                    id: "live"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_0.png%3Fv%3D20190524145526',
+                    id: "no_0"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_1.png%3Fv%3D20190524145526',
+                    id: "no_1"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_2.png%3Fv%3D20190524145526',
+                    id: "no_2"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_3.png%3Fv%3D20190524145526',
+                    id: "no_3"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_4.png%3Fv%3D20190524145526',
+                    id: "no_4"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_5.png%3Fv%3D20190524145526',
+                    id: "no_5"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_6.png%3Fv%3D20190524145526',
+                    id: "no_6"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_7.png%3Fv%3D20190524145526',
+                    id: "no_7"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_8.png%3Fv%3D20190524145526',
+                    id: "no_8"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_9.png%3Fv%3D20190524145526',
+                    id: "no_9"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fsecond.png%3Fv%3D20190524145526',
+                    id: "second"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_0.png%3Fv%3D20191227144640',
+                    id: "omikuji_00"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_1.png%3Fv%3D20191227144640',
+                    id: "omikuji_01"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_2.png%3Fv%3D20191227144640',
+                    id: "omikuji_02"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_3.png%3Fv%3D20191227144640',
+                    id: "omikuji_03"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_4.png%3Fv%3D20191227144640',
+                    id: "omikuji_04"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_5.png%3Fv%3D20191227144640',
+                    id: "omikuji_05"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_6.png%3Fv%3D20191227144640',
+                    id: "omikuji_06"
+                },
+                {
+                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_reverse.png%3Fv%3D20190524145526',
+                    id: "omikuji_reverse"
+                },
+            ]
+            var url = {
+                "restrict_redirect": 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D291078869',
+            };
+            var api_url = {
+                "get_archives": 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Fapi_get_archives%3Fl_frm%3DRadio_archive_1%26rnd%3D310147828',
+            };
+            // くじ引き形式のparamデータ
+            var area_slide_url = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Farea_slide.js%3Fv%3D20101001000000';
+            var in_social_game_viewer = false;
+            try {
+                in_social_game_viewer = (chrome in window);
+            } catch (e) {
+                in_social_game_viewer = false;
+            }
+            $(function() {
+                window.live_broadcast = new LiveBroadcast({
+                    "image_url": "http://125.6.169.35/idolmaster/image_sp/",
+                    "cjs_list": cjs_list,
+                    "manifest": manifest,
+                    "url": url,
+                    "api_url": api_url,
+                    "idol_attribute_num": "2",
+                    "viewer_id": "134800333",
+                    "live_bc_id": "4",
+                    "max_flush_message_num": 30,
+                    "max_log_idol_message_num": "100",
+                    "max_log_user_message_num": "100",
+                    "live_bc_user_setting": {
+                        "viewer_id": "134800333",
+                        "enable_comment": "1",
+                        "enable_animation": "1"
+                    },
+                    "live_bc_user_status": 1,
+                    "live_bc_start_time": "2018\/10\/18 19:00:00",
+                    "start_time": "2018\/10\/18 18:59:00",
+                    "close_time": "2018\/10\/18 19:34:59",
+                });
+            })
+        </script>
+        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_2%26rnd%3D51196250'>
+            <div class="backLink">デレマスチャンネルTOP</div>
+        </a>
+        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DRadio_archive_2%26rnd%3D458329195'>
+            <div class="backLink">マイスタジオ</div>
+        </a>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+            <div class="t-Cnt">(C)窪岡俊之 (C)2011 BNEI</div>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
+            <ul>
+                <li class="mbga-pf-footer-list">
+                    <div class="mbga-pf-fotter-content">
+                        <a class="mbga-pf-footer-arrow" href="http://sp.mbga.jp/_grp_view?g=32095227">
+                            <span class="mbga-pf-footer-caption">公式サークル</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="mbga-pf-footer-navbar">
+            <ul class="mbga-pf-box-h">
+                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="http://sp.mbga.jp/?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ホーム</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="http://sp.mbga.jp/_my0?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイページ</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイゲーム</span>
+                    </a>
+                </li>
+                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="http://sp.mbga.jp/_game_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ゲーム</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
