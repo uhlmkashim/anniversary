@@ -1,0 +1,1787 @@
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.radio_btn_archive {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -505px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_archive_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -789px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_common {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1136px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 136px;
+    height: 38px
+}
+
+.radio_btn_finish_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -648px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_on_air {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -442px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_on_air_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -852px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_open {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -568px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_preparation_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -938px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 138px;
+    height: 62px
+}
+
+.radio_btn_season_02 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1029px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 82px;
+    height: 42px
+}
+
+.radio_btn_tweet_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -750px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 136px;
+    height: 38px
+}
+
+.radio_btn_tweet_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -711px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 136px;
+    height: 38px
+}
+
+.radio_frame_common {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1248px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 304px;
+    height: 40px
+}
+
+.radio_frame_deco_bottom {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1198px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 24px
+}
+
+.radio_frame_deco_top {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1223px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 24px
+}
+
+.radio_frame_title_bg {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1095px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 304px;
+    height: 40px
+}
+
+.radio_header {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -341px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 100px
+}
+
+.radio_line_bottom {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1001px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 27px
+}
+
+.radio_subtitle_normal_message {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1289px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 76px;
+    height: 12px
+}
+
+.radio_subtitle_themetalk {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1330px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 76px;
+    height: 12px
+}
+
+.radio_text_archive_announce {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1175px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 134px;
+    height: 22px
+}
+
+.radio_text_hash_normal_message {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1302px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 129px;
+    height: 13px
+}
+
+.radio_text_hash_themetalk {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1316px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 141px;
+    height: 13px
+}
+
+.radio_text_title_backnumber {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -915px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 172px;
+    height: 22px
+}
+
+.radio_title_corner {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1072px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 164px;
+    height: 22px
+}
+
+.radio_title_hash {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -631px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 277px;
+    height: 16px
+}
+
+.radio_top_bg {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 0;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 340px
+}
+
+.radio_bg_bottom_kira {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2227px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 264px;
+    height: 9px
+}
+
+.radio_bg_comment {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1567px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 320px;
+    height: 70px
+}
+
+.radio_bg_telop {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -75px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 320px;
+    height: 36px
+}
+
+.radio_bg_time {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2116px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 127px;
+    height: 21px
+}
+
+.radio_btn_change {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2068px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 25px;
+    height: 25px
+}
+
+.radio_btn_enquete {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1699px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 280px;
+    height: 40px
+}
+
+.radio_btn_enquete_disabled {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1901px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 280px;
+    height: 40px
+}
+
+.radio_btn_enquete_selected {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1942px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 280px;
+    height: 40px
+}
+
+.radio_btn_submit {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1638px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px
+}
+
+.radio_btn_submit_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1740px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px
+}
+
+.radio_btn_submit_on {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1801px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px
+}
+
+.radio_comment_board {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -312px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 155px;
+    height: 123px
+}
+
+.radio_enquete_num_bg {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2179px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 23px;
+    height: 23px
+}
+
+.radio_enquete_num_bg_disabled {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2203px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 23px;
+    height: 23px
+}
+
+.radio_frame_comment {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2138px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 236px;
+    height: 40px
+}
+
+.radio_frame_log_bottom {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2237px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 304px;
+    height: 13px
+}
+
+.radio_frame_log_middle {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2416px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 304px;
+    height: 1px
+}
+
+.radio_frame_log_top {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1496px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 304px;
+    height: 31px
+}
+
+.radio_frame_themetalk {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 0;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 318px;
+    height: 74px
+}
+
+.radio_frame_title_bg_old {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2005px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 304px;
+    height: 40px
+}
+
+.radio_icon_enquete {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2046px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 49px;
+    height: 21px
+}
+
+.radio_icon_enquete_result {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1983px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 58px;
+    height: 21px
+}
+
+.radio_live {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2094px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 43px;
+    height: 21px
+}
+
+.radio_no_0 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2266px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2386px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 6px;
+    height: 14px
+}
+
+.radio_no_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2311px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2356px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_4 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2341px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_5 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2326px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_6 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2281px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_7 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2371px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_8 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2251px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_no_9 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2296px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 11px;
+    height: 14px
+}
+
+.radio_omikuji_0 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -436px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1203px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -887px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -752px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_4 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -571px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_5 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1338px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_6 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1045px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_omikuji_bg {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -112px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 320px;
+    height: 64px
+}
+
+.radio_omikuji_btn {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1528px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 184px;
+    height: 38px
+}
+
+.radio_omikuji_btn_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1862px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 184px;
+    height: 38px
+}
+
+.radio_omikuji_reverse {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -177px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 62px;
+    height: 134px
+}
+
+.radio_second {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -2401px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 6px;
+    height: 14px
+}
+
+.radio_text_title_enquete {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1473px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 141px;
+    height: 22px
+}
+
+.radio_text_title_enquete_result {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -706px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 198px;
+    height: 22px
+}
+
+.radio_text_title_enqueted {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1180px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 185px;
+    height: 22px
+}
+
+.radio_text_title_idol_log {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -729px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 205px;
+    height: 22px
+}
+
+.radio_text_title_producer_log {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1022px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 205px;
+    height: 22px
+}
+
+.radio_bg_controller {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -48px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 320px;
+    height: 70px
+}
+
+.radio_btn_next_3min {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -131px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_next_3min_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -471px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_next_3min_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -267px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_next_5sec {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -199px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_next_5sec_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -505px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_next_5sec_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -335px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_play {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -369px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_play_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -573px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_prev_3min {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -165px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_prev_3min_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -301px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_prev_5sec {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -233px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_prev_5sec_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -437px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_stop {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -403px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_btn_stop_hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -539px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_frame_controller {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 0;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 311px;
+    height: 47px
+}
+
+.radio_text_archive_notice {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -119px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 284px;
+    height: 11px
+}
+
+body {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png%3F1487720324);
+    background-size: 7px 7px
+}
+
+.top_area,
+.studio_area {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fbg%2Fbg_pattern.jpg%3F1558677326);
+    background-size: 328px 100px;
+    padding-bottom: 2px;
+    margin-bottom: 16px
+}
+
+.top_area .radio_line_bottom,
+.studio_area .radio_line_bottom {
+    position: relative;
+    top: 9px;
+    margin-top: -12px
+}
+
+.radio_frame {
+    position: relative;
+    width: 304px;
+    background-color: white;
+    border-radius: 16px
+}
+
+.radio_frame:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 14px;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop%2Fframe_common.png%3F1558677326) 28 fill repeat;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop%2Fframe_common.png%3F1558677326) 28 repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    pointer-events: none
+}
+
+.radio_frame .radio_content_area {
+    padding: 10px 12px
+}
+
+.radio_frame .radio_content_area._log_area {
+    padding: 0px 4px 4px
+}
+
+.radio_frame .radio_frame_no_padding {
+    position: relative;
+    left: -14px;
+    top: -14px
+}
+
+.radio_frame .radio_frame_title_bg {
+    position: relative
+}
+
+.radio_frame .radio_frame_title_bg .radio_header_title {
+    position: relative;
+    top: 9px
+}
+
+.radio_frame .radio_frame_title_bg .radio_header_title._log {
+    position: absolute;
+    left: 10px
+}
+
+.radio_frame .radio_frame_title_bg .log_btn_change {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    z-index: 10
+}
+
+.radio_frame .radio_frame_title {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2
+}
+
+.radio_frame .radio_frame_subtitle {
+    position: absolute;
+    top: -5px;
+    left: -2px
+}
+
+.radio_frame .radio_corner_area {
+    position: relative;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop%2Fbg_corner.jpg%3F1558677326);
+    background-size: 25px;
+    background-position: -6px -6px;
+    padding: 10px 6px 6px;
+    color: #1d1d1d;
+    font-size: 10px;
+    line-height: 1.1;
+    text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff
+}
+
+.radio_frame .radio_corner_area .corner_topics {
+    color: #ff1e9d
+}
+
+.radio_frame .radio_corner_area .corner_hash {
+    position: absolute;
+    top: -6px;
+    right: 3px
+}
+
+.radio_frame .deco_top {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1223px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 24px;
+    position: absolute;
+    top: -3px;
+    left: -8px;
+    z-index: 1;
+    pointer-events: none
+}
+
+.radio_frame .deco_bottom {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1198px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 320px;
+    height: 24px;
+    position: absolute;
+    bottom: -3px;
+    left: -8px;
+    z-index: 1;
+    pointer-events: none
+}
+
+.radio_btn_common {
+    text-decoration: none;
+    color: white;
+    line-height: 38px;
+    text-shadow: 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368, 0px 0px 3px #403368
+}
+
+.top_area .radio_header {
+    position: relative;
+    z-index: 1
+}
+
+.top_area .radio_header .btn_season_link {
+    position: absolute;
+    top: 18px;
+    right: -2px
+}
+
+.top_area .radio_header .btn_season_link._season_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Ftop-sfea6941ad6.png%3F1563515201) no-repeat 0 -1029px;
+    -webkit-background-size: 320px 1342px;
+    background-size: 320px 1342px;
+    width: 82px;
+    height: 42px
+}
+
+.top_area .radio_top_bg {
+    position: relative;
+    margin-top: -36px;
+    height: 330px
+}
+
+.top_area .radio_top_bg .idol_display {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.top_area .radio_top_bg .top_info {
+    position: absolute;
+    top: 38px;
+    right: 5px;
+    background-size: 164px;
+    width: 164px;
+    height: 112px
+}
+
+.top_area .radio_top_bg .top_info .on_air_time {
+    color: #0f0f91;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 11px;
+    text-align: center
+}
+
+.top_area .radio_top_bg .btn_main {
+    position: absolute;
+    top: 175px;
+    right: 18px
+}
+
+.top_area .radio_top_bg .radio_text_archive_announce {
+    position: absolute;
+    top: 237px;
+    right: 19px
+}
+
+#live_broadcast {
+    position: relative;
+    top: -14px;
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: -14px
+}
+
+#live_broadcast #main_area {
+    visibility: hidden
+}
+
+#live_broadcast #main_area .layer_base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 240px
+}
+
+#live_broadcast #main_area .layer_idol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 240px;
+    pointer-events: none
+}
+
+#live_broadcast #main_area .layer_idol_comment {
+    position: absolute;
+    left: 10px;
+    bottom: 8px
+}
+
+#live_broadcast #main_area .layer_user_comment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 240px;
+    pointer-events: none
+}
+
+#live_broadcast #main_area .icon_enquete {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transition: opacity 0.7s
+}
+
+#live_broadcast #main_area .wall_image {
+    width: 320px;
+    height: 240px
+}
+
+#live_broadcast .eye_catch {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fpetit_cg%2Fui%2Fsprite%2Floading%2Floading_bg.png%3F1487720307);
+    background-size: 50%;
+    text-align: center;
+    overflow: hidden;
+    top: 0
+}
+
+#live_broadcast .eye_catch .eye_catch_image {
+    width: 195px;
+    height: 166px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+#live_broadcast .eye_catch .eye_catch_image .eye_catch_loading {
+    width: 195px;
+    height: 139px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fpetit_cg%2Fui%2Fsprite%2Floading%2Fworking_1.gif%3F1487720307);
+    background-size: 195px
+}
+
+#live_broadcast .eye_catch .eye_catch_image .eye_catch_chara {
+    width: 102px;
+    height: 102px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fpetit_cg%2Fui%2Fsprite%2Floading%2Floading.gif%3F1487720307);
+    background-size: 102px;
+    position: relative;
+    top: -78px;
+    left: 4px;
+    right: 0;
+    margin: auto
+}
+
+#live_broadcast #admin_message {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    width: 100%;
+    padding-top: 12px;
+    box-sizing: border-box;
+    color: white;
+    overflow: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 13px
+}
+
+#live_broadcast #admin_message._animation {
+    transition: top 1s;
+    -webkit-transition: top 1s ease-out
+}
+
+#live_broadcast #admin_message._show {
+    top: 2px
+}
+
+#detail_enquete .detail_enquete_title {
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 1.1;
+    padding-bottom: 4px
+}
+
+#detail_enquete .area_enquete .enquete_content {
+    position: relative;
+    margin-bottom: 4px
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_index {
+    position: absolute;
+    top: 7px;
+    left: 12px
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_index .enquete_index_text {
+    margin-left: 8px;
+    margin-top: 5px;
+    color: #fcffb0;
+    text-shadow: 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_percent {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: yellow;
+    width: 44px;
+    background: white;
+    text-align: center;
+    border-radius: 7px;
+    padding: 1px 0;
+    color: #fcffb0;
+    text-shadow: 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91, 0px 0px 2px #0f0f91;
+    font-size: 12px
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_text {
+    position: relative;
+    left: 40px;
+    font-size: 12px;
+    line-height: 120%;
+    padding-right: 50px;
+    display: table-cell;
+    height: inherit;
+    vertical-align: middle;
+    color: #1d1d1d;
+    text-shadow: 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_text._selected {
+    text-shadow: 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c, 0px 0px 2px #fbf19c
+}
+
+#detail_enquete .area_enquete .enquete_content .enquete_text._result_state {
+    padding-right: 105px
+}
+
+.log_message_area {
+    position: relative;
+    top: -4px;
+    left: 2px;
+    height: 104px;
+    overflow: auto;
+    color: #545454;
+    border-color: #a9a9a9;
+    background-color: white;
+    font-weight: normal;
+    resize: none;
+    text-align: left;
+    border-radius: 0 0 7px 7px;
+    font-size: 10px
+}
+
+.log_message_area .log_message {
+    padding: 2px 0 2px 2px;
+    line-height: 1.3;
+    word-break: break-all
+}
+
+.log_message_area .log_message._even {
+    background-color: #dbedff
+}
+
+.log_message_area .move-area {
+    height: auto;
+    width: 100%;
+    position: absolute
+}
+
+.admin_message_text {
+    font-size: 13px;
+    text-align: center;
+    color: #1d1d1d;
+    text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff
+}
+
+.admin_message_text._marquee {
+    white-space: nowrap;
+    text-align: left;
+    position: relative
+}
+
+.hide_text_area {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none
+}
+
+.hide_admin_message_area {
+    white-space: nowrap;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    pointer-events: none
+}
+
+.back_number_area {
+    width: 288px;
+    position: relative;
+    left: -4px
+}
+
+.back_number_area .back_number {
+    display: inline-block;
+    margin: 0 4px 8px
+}
+
+#message_submit_area {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1567px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 320px;
+    height: 70px;
+    position: relative
+}
+
+#message_submit_area._archive {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -48px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 320px;
+    height: 70px
+}
+
+#message_submit_area .textarea_message {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    padding-right: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fframe_comment.png%3F1558677326) 6 fill stretch;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fframe_comment.png%3F1558677326) 6 stretch;
+    width: 228px;
+    height: 34px;
+    line-height: 1;
+    font-size: 10px;
+    resize: none
+}
+
+#message_submit_area #message_submit_btn {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1638px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    text-shadow: 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b, 0px 0px 3px #ab004b
+}
+
+#message_submit_area #message_submit_btn._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1801px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px
+}
+
+#message_submit_area #message_submit_btn._disabled {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 -1740px;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 65px;
+    height: 60px;
+    pointer-events: none;
+    text-shadow: 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555, 0px 0px 3px #555555
+}
+
+#message_submit_area #message_submit_btn .btn_inner_text {
+    vertical-align: middle;
+    display: table-cell;
+    width: inherit;
+    height: inherit;
+    padding-left: 13px;
+    line-height: 1.1
+}
+
+#message_submit_area .text_color {
+    color: #1d1d1d;
+    text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff
+}
+
+#message_submit_area .textarea_message_counter {
+    position: absolute;
+    bottom: 3px;
+    right: 82px;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4, 0px 0px 1px #2a39b4
+}
+
+#message_submit_area .radio_text_archive_notice {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 8px
+}
+
+#message_submit_area .radio_bg_bottom_kira {
+    position: absolute;
+    left: 0px;
+    bottom: 6px
+}
+
+.area_themetalk {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio-s81a25ff042.png%3F1577425600) no-repeat 0 0;
+    -webkit-background-size: 320px 2417px;
+    background-size: 320px 2417px;
+    width: 318px;
+    height: 74px;
+    position: relative
+}
+
+.area_themetalk .themetalk_title {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475, 0px 0px 3px #fa0475;
+    text-align: center;
+    line-height: 1
+}
+
+.area_themetalk .themetalk_description {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.1
+}
+
+.idol_comment_front {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 278px;
+    padding: 8px 8px;
+    height: auto;
+    min-height: 46px;
+    max-height: 76px;
+    color: #1d1d1d;
+    line-height: 1.3;
+    text-align: left;
+    font-size: 12px
+}
+
+.radio_comment_board {
+    position: absolute;
+    left: 157px;
+    top: 40px
+}
+
+.radio_comment_board .user_comment_board {
+    font-size: 10px;
+    color: #1d1d1d;
+    line-height: 1.2;
+    margin: 4px;
+    padding-left: 2px;
+    padding-top: 1px
+}
+
+.radio_comment_board .user_comment_board div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 12px;
+    margin-bottom: 0.8px
+}
+
+.radio_bg_time {
+    position: absolute;
+    top: 16px;
+    right: 3px
+}
+
+.radio_frame_controller {
+    position: relative;
+    top: 4px;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.radio_controller {
+    padding-top: 7px;
+    padding-left: 15px;
+    width: 280px;
+    display: -webkit-box;
+    -webkit-box-pack: justify
+}
+
+.radio_controller .radio_btn_next_3min._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -267px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_next_3min._disabled {
+    pointer-events: none;
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -471px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_next_5sec._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -335px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_next_5sec._disabled {
+    pointer-events: none;
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -505px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_prev_5sec._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -437px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_prev_3min._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -301px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_play_stop {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -403px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_play_stop._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -539px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_play_stop._stop {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -369px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.radio_controller .radio_btn_play_stop._stop._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Farchive-s4a6e67d5b0.png%3F1558677326) no-repeat 0 -573px;
+    -webkit-background-size: 320px 606px;
+    background-size: 320px 606px;
+    width: 50px;
+    height: 33px
+}
+
+.lot_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.lot_wrapper .lot {
+    zoom: 0.5
+}
+
+.lot_wrapper._omikuji {
+    width: 31px;
+    height: 67px;
+    margin-left: -15.5px
+}
