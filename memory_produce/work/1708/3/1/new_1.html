@@ -227,7 +227,7 @@
                     <a href="#" id="change_comment" style="display:none;" class="se_008" onclick="return false;"></a>
                 </section>
                 <section id="play_area" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/footer_bg.png); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;'>
-                    <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/ajax_play%3Fl_frm%3DEvent_produce_work_1%26rnd%3D509307210' method="post" id="play">
+                    <form action='a.json' method="get" id="play">
                         <input type="button" value="" id="play_button" class="play_btn_df se_008">
                         <input type="hidden" name="area_id" value="3">
                         <input type="hidden" name="quest_id" value="1">
@@ -399,14 +399,14 @@
                     Imascg.QuestIdolImage.init([{
                         "card_id": "963b05e86daf038003b417060a1646ed",
                         "ext": ".png",
-                        "card_image_path": "../../../../../image_sp/event_flash/1708/idol/idol_3_0_1_1.png"
+                        "card_image_path": "https://uhlmkashim.github.io/anniversary/image_sp/event_flash/1708/idol/idol_3_0_1_1.png"
                     }]);
-                    // 初回お仕事の実行
+                    // 첫 영업의 실행
                     if (location.hash === '#do-work') {
                         location.hash = '';
                         Imascg.QuestModel.play();
                     }
-                    // イベントデータの初期化
+                    // 이벤트 데이터의 초기화
                     Imascg.IdolProduce.init(1726, false, "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/get_raid_boss%3Fres_type%3Djson%26l_frm%3DEvent_produce_work_2%26rnd%3D867550606");
                     Imascg.IdolProduce.drawEventInfo({
                         "fever": {
