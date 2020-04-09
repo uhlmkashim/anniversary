@@ -113,7 +113,7 @@
                                     <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_02.png' width="111" id="no_use">
                                 </div>
                                 <div class="box_right" style="width:140px; text-align:left; padding-left:10px;">
-                                    <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/use_item%3Fl_frm%3DEvent_produce_work_1%26rnd%3D200765816" method="post" id="item_form">
+                                    <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/use_item%3Fl_frm%3DEvent_produce_work_1%26rnd%3D200765816" method="get" id="item_form">
                                         <input type="hidden" name="item_id" value="" id="item_id">
                                         <input type="hidden" name="use_num" value="" id="use_num">
                                         <input type="hidden" name="" value="" id="csrf_token">
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="card_sale" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/card_sale%3Fl_frm%3DEvent_produce_work_1%26rnd%3D203087206' method="post" style="display:none;">
+                <form id="card_sale" action='card_sale.json' method="get" style="display:none;">
                     <input type="hidden" name="area_id" value="3">
                     <input type="hidden" name="quest_id" value="1">
                     <input type="hidden" name="sleeve" value="">
