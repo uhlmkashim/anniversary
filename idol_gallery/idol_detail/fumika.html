@@ -271,18 +271,18 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">プロフィール</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">セリフ一覧</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">エピソード</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">アイドル情報</a>
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">プロフィール</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">セリフ一覧</a>
-<a name="tab_3" href="#" style='display:none;'>エピソード</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">アイドル情報</a>
+<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
+<a name="tab_3" href="#" style='display:none;'>에피소드</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="idol-base-template">
@@ -301,7 +301,7 @@
 <% if(idol_detail.is_exist_archive) { %>
 <a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
 <% } else { %>
-<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
+<img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
 <% } %>
 </div>
 <div class="t-Rft" style="width:50%">
@@ -459,7 +459,7 @@ kg
 <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
 <a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
 <div style="text-align:center; height:45px; margin:10px 0 5px;">
-<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage.jpg" width="84"><br>
+<img src="../../image_sp/ui/episode/epi_button_voicepage.jpg" width="84"><br>
 </div>
 </a>
 <% } %>
@@ -478,7 +478,7 @@ kg
 <% if (+val.voice_enable[key2]) { %>
 <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
 <div style="text-align:center; height:45px; margin:10px 0 5px;">
-<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage_gray.jpg" width="84"><br>
+<img src="../../image_sp/ui/episode/epi_button_voicepage_gray.jpg" width="84"><br>
 </div>
 <% } %>
 <% } %>
@@ -490,7 +490,7 @@ kg
 <% if (!ios_app_flg || !apple_review) { %>
 <% if (val.story_id > 0 && +val.voice_enable[last]) { %>
 <div class="checkForm ep_off" style="margin-top:0;margin-bottom:0">
-エピソードでボイスを再生させる
+에피소드에서 보이스를 재생한다
 </div>
 <% } %>
 <% } %>
@@ -564,7 +564,7 @@ kg
 </section>
 <% if(trade_prohibition.is_trade_limit) { %>
 <div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
-このアイドルはトレード、フリートレード、贈り物ができません。
+이 아이돌은 트레이드, 프리트레이드, 선물을 할 수 없습니다.
 </div>
 <% } %>
 <div class="area-btn-common _base-width">
@@ -577,7 +577,7 @@ kg
 </div>
 <% if (event) { %>
 <h3 class="title_hanyo m-Top8 m-Btm8">
-<div>登場イベント</div>
+<div>등장 이벤트</div>
 </h3>
 <% Object.keys(event).forEach(function (key) { %>
 <div class="t-Cnt m-Btm5">
@@ -705,7 +705,7 @@ kg
                 overflow: hidden;
                 position: absolute;
                 top: 0;
-                background: url('http://125.6.169.35/idolmaster/image_sp/ui/rich/effect/card_effect_01.png') center center;
+                background: url('../../image_sp/ui/rich/effect/card_effect_01.png') center center;
                 background-size: 608px 506px;
             }
         </style>
@@ -714,39 +714,39 @@ kg
                 var idol = {};
                 idol.detail_list = [{
                     "data": {
-                        "card_name": "\u9dfa\u6ca2\u6587\u9999",
+                        "card_name": "鷺沢文香",
                         "rarity": "1",
                         "cost": "11",
                         "attribute": "cool",
-                        "skill_name": "\uff78\uff70\uff98\uff6f\uff7c\uff6d\uff71\uff78\uff84",
+                        "skill_name": "ｸｰﾘｯｼｭｱｸﾄ",
                         "skill_effect": "",
                         "grow_idol_flag": "",
                         "default_attack": "880",
                         "default_defense": "1400",
                         "hash_card_id": "cf0f5af872286b4401c644ad570b1401",
                         "alias_name": "",
-                        "real_name": "\u9dfa\u6ca2\u6587\u9999"
+                        "real_name": "鷺沢文香"
                     },
                     "profile": {
                         "card_id": "2002601",
-                        "card_name": "\u9dfa\u6ca2\u6587\u9999",
-                        "card_kana": "\u3055\u304e\u3055\u308f\u3075\u307f\u304b",
+                        "card_name": "鷺沢文香",
+                        "card_kana": "사기사와 후미카",
                         "card_age": "19",
-                        "card_from": "\u9577\u91ce",
+                        "card_from": "나가노",
                         "card_height": "162",
                         "card_weight": "45",
                         "card_bust": "84",
                         "card_waist": "54",
                         "card_hip": "81",
-                        "card_birthday": "10\u670827\u65e5",
-                        "card_constellation": "\u880d\u5ea7",
+                        "card_birthday": "10월 27일",
+                        "card_constellation": "전갈자리",
                         "card_blood": "AB",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u672c\u5c4b\u3081\u3050\u308a\u30fb\u681e\u4f5c\u308a",
-                        "card_cv": "M\u30fbA\u30fbO"
+                        "card_arm": "오른쪽",
+                        "card_hobby": "서점 순례・책갈피 만들기",
+                        "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "\u2026\u2026\u2026\u2026\u306f\u3044? \u2026\uff71\uff72\uff84\uff9e\uff99\u3092\u2026\u304a\u63a2\u3057\u3067\u3059\u304b? \u2026\u5f53\u5e97\u306f\u2026\uff71\uff72\uff84\uff9e\uff99\u96d1\u8a8c\u306a\u3069\u306e\u304a\u53d6\u308a\u6271\u3044\u306f\u3054\u3056\u3044\u307e\u305b\u3093\uff61\u2026\u9055\u3046\u306e\u3067\u3059\u304b? \u2026\u2026\u2026\u2026\u3048\u3048\u3068\u2026\u3042\u306e\uff64\u304a\u8a71\u304c\u3088\u304f\u98f2\u307f\u8fbc\u3081\u306a\u3044\u306e\u3067\u3059\u304c",
+                        "comment": "…………はい? …ｱｲﾄﾞﾙを…お探しですか? …当店は…ｱｲﾄﾞﾙ雑誌などのお取り扱いはございません｡…違うのですか? …………ええと…あの､お話がよく飲み込めないのですが",
                         "comments_my_1": "\u2026\u672c\u306f\u2026\u304a\u597d\u304d\u3067\u3059\u304b?",
                         "comments_my_2": "\u2026\u2026\u3059\u307f\u307e\u305b\u3093\uff61\u672c\u306b\u5922\u4e2d\u3067",
                         "comments_my_3": "\u2026\u4eba\u3068\u8a71\u3059\u306e\u306f\u2026\u82e6\u624b\u3067\u3059",
