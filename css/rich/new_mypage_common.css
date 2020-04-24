@@ -3190,7 +3190,7 @@ body.lightbox:after {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
+    background: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px;
     z-index: 200
 }
@@ -25210,7 +25210,7 @@ body#quests div.area_main_petit .petit_idol_list .lesson_comp_lvup {
 }
 
 body#mypage.index {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
@@ -26725,7 +26725,7 @@ body#mypage .area_main_petit #petit_idol_03 {
 }
 
 body#top {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
@@ -28912,7 +28912,7 @@ body#top #slider.top-retina-sprite {
 }
 
 body#gacha {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
