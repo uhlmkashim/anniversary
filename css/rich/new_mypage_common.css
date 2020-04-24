@@ -2974,7 +2974,7 @@ section {
 .area_menu_header_6btn .bg_header,
 .headerPopupMenu .bg_header {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -17px;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -17px;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 276px;
@@ -2984,7 +2984,7 @@ section {
 .area_menu_header_6btn .icon_menu_header_01,
 .headerPopupMenu .icon_menu_header_01 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -99px;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -99px;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 240px;
@@ -2994,7 +2994,7 @@ section {
 .area_menu_header_6btn .icon_menu_header_02,
 .headerPopupMenu .icon_menu_header_02 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 0;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 0;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 240px;
@@ -3004,7 +3004,7 @@ section {
 .area_menu_header_6btn .icon_menu_header_03,
 .headerPopupMenu .icon_menu_header_03 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -82px;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -82px;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 240px;
@@ -3014,7 +3014,7 @@ section {
 .area_menu_header_6btn .icon_menu_header_04,
 .headerPopupMenu .icon_menu_header_04 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -116px;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -116px;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 240px;
@@ -3029,7 +3029,7 @@ section {
 .area_menu_header_6btn:before {
     content: '';
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -17px;
+    background: url(../../image_sp/ui/sprite/header_new/bg-sf13a35c89d.png) no-repeat 0 -17px;
     -webkit-background-size: 276px 132px;
     background-size: 276px 132px;
     width: 276px;
