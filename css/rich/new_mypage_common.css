@@ -15401,7 +15401,7 @@ a {
 
 .banner_cartoon_bg {
     display: block;
-    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -424px;
+    background: url(../../image_sp/ui/mypage_new/sprite/.png) no-repeat 0 -424px;
     -webkit-background-size: 280px 593px;
     background-size: 280px 593px;
     width: 136px;
@@ -15410,7 +15410,7 @@ a {
 
 .banner_cartoon_cover {
     display: block;
-    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -465px;
+    background: url(../../image_sp/ui/mypage_new/sprite/.png) no-repeat 0 -465px;
     -webkit-background-size: 280px 593px;
     background-size: 280px 593px;
     width: 141px;
@@ -26252,7 +26252,7 @@ body#mypage .idol_talk_pos202 {
     height: 100%;
     z-index: 15;
     position: absolute;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/loading_bg.png);
+    background: url(../../image_sp/petit_cg/ui/sprite/loading/loading_bg.png);
     background-size: 50%;
     text-align: center;
     overflow: hidden
