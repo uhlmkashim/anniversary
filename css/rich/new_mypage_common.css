@@ -15822,7 +15822,7 @@ body#mypage .banner_type_event_result .text_value {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/refresh_room/banner/banner_flame.png?1558677471) no-repeat;
+    background: url(../../image_sp/ui/refresh_room/banner/banner_flame.png) no-repeat;
     background-size: 280px;
     z-index: 2;
     pointer-events: none
