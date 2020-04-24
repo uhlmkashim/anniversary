@@ -15383,108 +15383,126 @@ a {
 
 .banner_birthday {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -301px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -342px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 280px;
     height: 40px
 }
 
 .banner_birthday_renewal {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -383px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -424px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 280px;
     height: 40px
 }
 
 .banner_cartoon_bg {
     display: block;
-    background: url(../../image_sp/ui/mypage_new/sprite/.png) no-repeat 0 -424px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -506px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 136px;
     height: 40px
 }
 
 .banner_cartoon_cover {
     display: block;
-    background: url(../../image_sp/ui/mypage_new/sprite/.png) no-repeat 0 -465px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -547px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 141px;
     height: 41px
 }
 
 .banner_gamecenter {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -223px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -182px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 136px;
     height: 40px
 }
 
-.banner_gamecenter_new {
+.banner_history_bg {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -182px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -465px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
+    width: 136px;
+    height: 40px
+}
+
+.banner_history_cover {
+    display: block;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -301px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 136px;
     height: 40px
 }
 
 .banner_limitshop_banner {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -507px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -589px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 240px;
     height: 36px
 }
 
 .banner_result {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -342px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -383px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 280px;
+    height: 40px
+}
+
+.banner_theatre {
+    display: block;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -223px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
+    width: 136px;
     height: 40px
 }
 
 .bg_limitshop_banner {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -581px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -663px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 280px;
     height: 12px
 }
 
 .icon_limitshop_01 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -264px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -264px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 90px;
     height: 36px
 }
 
 .icon_limitshop_02 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 -109px;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 -109px;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 75px;
     height: 72px
 }
 
 .icon_limitshop_03 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/sprite/banner-se729b5bce9.png) no-repeat 0 0;
-    -webkit-background-size: 280px 593px;
-    background-size: 280px 593px;
+    background: url(../../image_sp/ui/mypage_new/sprite/banner-s3952461eab.png) no-repeat 0 0;
+    -webkit-background-size: 280px 675px;
+    background-size: 280px 675px;
     width: 75px;
     height: 108px
 }
