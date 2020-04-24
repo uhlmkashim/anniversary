@@ -1403,7 +1403,7 @@ section {
 
 .common_line_solid {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -112px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -112px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -1448,7 +1448,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -42px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -42px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 35px;
@@ -1466,7 +1466,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -70px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -70px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 35px;
@@ -1492,7 +1492,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -106px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -106px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -1527,7 +1527,7 @@ section {
     left: -8px;
     padding-top: 8px;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -112px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -112px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -1559,7 +1559,7 @@ section {
 .area-frame_common:before {
     content: '';
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -21px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -21px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 304px;
@@ -1575,7 +1575,7 @@ section {
 .area-frame_common:after {
     content: '';
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 0;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 0;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 304px;
@@ -1677,7 +1677,7 @@ section {
 
 .area-frame_common .area-frame_line_dot {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -98px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -98px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 282px;
@@ -1820,7 +1820,7 @@ section {
     left: -8px;
     padding-top: 8px;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -112px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -112px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -2103,7 +2103,7 @@ section {
     left: -8px;
     padding-top: 8px;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame-sbb949863bf.png?1558677469) no-repeat 0 -112px;
+    background: url(../../image_sp/ui/common/frame-sbb949863bf.png) no-repeat 0 -112px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -15803,7 +15803,7 @@ body#mypage .banner_type_event_result .text_value {
     text-decoration: none;
     margin: 0 auto 12px;
     position: relative;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/refresh_room/banner/banner_bg.png?1558677471) no-repeat;
+    background: url(../../image_sp/ui/refresh_room/banner/banner_bg.png) no-repeat;
     background-size: 280px;
     -webkit-border-radius: 8px
 }
