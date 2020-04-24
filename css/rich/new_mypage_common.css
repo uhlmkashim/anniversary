@@ -3111,7 +3111,7 @@ section {
 
 .headerPopupMenu {
     width: 320px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/sprite/header_new/bg_ac_header.png) no-repeat;
+    background: url(../../image_sp/ui/sprite/header_new/bg_ac_header.png) no-repeat;
     background-size: 320px 466px;
     background-position: bottom;
     text-align: center;
