@@ -474,12 +474,12 @@
 }
 
 body#cartoon {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
 .theater-content {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/theater/sprite/page_bg.jpg);
+    background-image: url(../../image_sp/campaign/theater/sprite/page_bg.jpg);
     background-size: 320px 5px;
     position: relative
 }
