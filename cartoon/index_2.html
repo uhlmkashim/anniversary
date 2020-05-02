@@ -214,18 +214,10 @@
                     <input type="hidden" id="sort_type" name="sort_type" value="1">
                     <div class="pager_area" style="height:32px;">
                         <div class="pager_panel_area">
-                            <a href="index.html" class="btn_pager_first jsNotDisabled jsOnDesignBtn">
+                            <div class="btn_pager_first _disabled"></div>
+                            <div class="btn_pager_back _disabled"></div><input type="submit" name="next" class="btn_pager_next jsNotDisabled jsOnDesignBtn" value="1"><input type="submit" name="last" class="btn_pager_last jsNotDisabled jsOnDesignBtn" value="1">1 / 3
                         </div>
-                        <div class="pager_panel_area">
-                            <a href="index.html" name="prev" class="btn_pager_back jsNotDisabled jsOnDesignBtn">
-                        </div>
-                        <div class="pager_panel_area">
-                            <a href="index_3.html" name="next" class="btn_pager_next jsNotDisabled jsOnDesignBtn">
-                        </div>
-                        <div class="pager_panel_area">
-                            <a href="index_3.html" name="last" class="btn_pager_last jsNotDisabled jsOnDesignBtn">2 / 3
-                        </div>
-                    </div>
+                    </div><input type="hidden" name="is_paging" value="1">
                     <script>
                         $('#jsPageNumber').focus(function() {
                             $('#jsMovePagerLabel').removeClass("_disabled");
