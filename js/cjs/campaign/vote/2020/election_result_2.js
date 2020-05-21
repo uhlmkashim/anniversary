@@ -2516,19 +2516,19 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_003_ch2.png?1589894957801", id:"election_result_2__003_ch2"},
-		{src:"images/_004_place_2.png?1589894957801", id:"election_result_2__004_place_2"},
-		{src:"images/_004_votes_2.png?1589894957801", id:"election_result_2__004_votes_2"},
-		{src:"images/_005_name_2.png?1589894957801", id:"election_result_2__005_name_2"},
-		{src:"images/_005_shuttle_co.png?1589894957801", id:"election_result_2__005_shuttle_co"},
-		{src:"images/_005_shuttle_cu.png?1589894957801", id:"election_result_2__005_shuttle_cu"},
-		{src:"images/_005_shuttle_pa.png?1589894957801", id:"election_result_2__005_shuttle_pa"},
-		{src:"images/_005_textflame.png?1589894957801", id:"election_result_2__005_textflame"},
-		{src:"images/bg.jpg?1589894957801", id:"election_result_2_bg"},
-		{src:"images/bottom.png?1589894957801", id:"election_result_2_bottom"},
-		{src:"images/fp_flower3.png?1589894957801", id:"election_result_2_fp_flower3"},
-		{src:"images/sign2.png?1589894957801", id:"election_result_2_sign2"},
-		{src:"images/sp_kirakira.png?1589894957801", id:"election_result_2_sp_kirakira"}
+		{src:"images/_003_ch2.png", id:"election_result_2__003_ch2"},
+		{src:"images/_004_place_2.png", id:"election_result_2__004_place_2"},
+		{src:"images/_004_votes_2.png", id:"election_result_2__004_votes_2"},
+		{src:"images/_005_name_2.png", id:"election_result_2__005_name_2"},
+		{src:"images/_005_shuttle_co.png", id:"election_result_2__005_shuttle_co"},
+		{src:"images/_005_shuttle_cu.png", id:"election_result_2__005_shuttle_cu"},
+		{src:"images/_005_shuttle_pa.png", id:"election_result_2__005_shuttle_pa"},
+		{src:"images/_005_textflame.png", id:"election_result_2__005_textflame"},
+		{src:"images/bg.jpg", id:"election_result_2_bg"},
+		{src:"images/bottom.png", id:"election_result_2_bottom"},
+		{src:"images/fp_flower3.png", id:"election_result_2_fp_flower3"},
+		{src:"images/sign2.png", id:"election_result_2_sign2"},
+		{src:"images/sp_kirakira.png", id:"election_result_2_sp_kirakira"}
 	],
 	preloads: []
 };
