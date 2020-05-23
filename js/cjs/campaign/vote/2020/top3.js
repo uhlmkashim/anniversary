@@ -6084,7 +6084,7 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_004_shuttle_all.png", id:"top3__004_shuttle_all"},
+		{src:"images/004_shuttle_all.png", id:"top3__004_shuttle_all"},
 		{src:"images/bg.jpg", id:"top3_bg"},
 		{src:"images/cool.png", id:"top3_cool"},
 		{src:"images/cute.png", id:"top3_cute"},
