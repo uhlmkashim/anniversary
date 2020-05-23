@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Fgame%2Fpex.css%3Fv%3D20101001000000' media="all">
-    <script src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fjquery-1.9.1.min.js%3Fversion%3D1_9_1%26v%3D20101001000000'></script>
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-1.9.1.min.js'></script>
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
@@ -43,17 +43,17 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
     </style>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcreatejs.min.js%3Fv%3D20190925114611'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20101001000000'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcjs%2Fcampaign%2Fvote%2F2020%2Fvoice_election_result_2.js%3Fv%3D20200521114709'></script>
+    <script type='text/javascript' src='../../../js/createjs.min.js'></script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <script type='text/javascript' src='../../../js/cjs/campaign/vote/2020/voice_election_result_2.js'></script>
     <script type='text/javascript'>
         var se_flg = 0,
             bgm_flg = 0,
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20101001000000'></script>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
 </head>
 
 <body style="margin:0px;">
@@ -62,10 +62,10 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://125.6.169.35/idolmaster/";
+        var image_server = "";
+        var base_url = "";
         window.file_name = "voice_election_result_2"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/campaign/vote/2020/voice_election_result_2/";
+        window.dir_name = "../../../image_sp/cjs/campaign/vote/2020/voice_election_result_2/";
         window.replace_images = []
         window.im_cjs = {
             "card_comm": "\u307f\u3093\u306a\u306e\u58f0? \u805e\u3053\u3048\u3066\u305f\u3088\uff61\uff97\uff72\uff84\u52e2\u3067\u3082\uff76\uff9e\uff81\u52e2\u3067\u3082\uff64\u697d\u3057\u3081\u305f\u306a\u3089\u826f\u3000\u304b\u3063\u305f\uff83\uff9e\uff7d\u306d\uff61\u81ea\u5206? \u3082\u3061\u308d\u3093\uff64\u5b09\u3057\u3044\u3051\u3069\uff61",
@@ -74,7 +74,7 @@
             "card_comm1_3": "\u304b\u3063\u305f\uff83\uff9e\uff7d\u306d\uff61\u81ea\u5206? \u3082\u3061\u308d\u3093\uff64\u5b09",
             "card_comm1_4": "\u3057\u3044\u3051\u3069\uff61",
             "num_votes": "21226585",
-            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fvote%2Fpublish_all%2F210003%3Fl_frm%3DVote_again_publish_1%26rnd%3D486672348"
+            "_url": "../../publish_all/210003.html"
         };
         window.im_cjs = window.im_cjs || {};
         window.im_cjs.jump_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON'; // createjsの演出が全て終了した場合の飛び先urlの定義
@@ -107,11 +107,11 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = 'image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': window.image_server + encodeURIComponent(window.base_url + _img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }
@@ -209,7 +209,7 @@
     <script>
         (function() {
             window.viewer_id = 134800333;
-            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DVote_again_publish_1%26rnd%3D669804443";
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error%3Fl_frm%3DVote_again_publish_1%26rnd%3D669804443";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
@@ -235,41 +235,6 @@
         })();
     </script>
     <div id="mbga-pf-footer">
-        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
-            <ul>
-                <li class="mbga-pf-footer-list">
-                    <div class="mbga-pf-fotter-content">
-                        <a class="mbga-pf-footer-arrow" href="http://sp.mbga.jp/_grp_view?g=32095227">
-                            <span class="mbga-pf-footer-caption">公式サークル</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="mbga-pf-footer-navbar">
-            <ul class="mbga-pf-box-h">
-                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="http://sp.mbga.jp/?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ホーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="http://sp.mbga.jp/_my0?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイページ</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイゲーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="http://sp.mbga.jp/_game_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ゲーム</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
         <script type="text/javascript" charset="UTF-8">
             (function() {
                 document.addEventListener('DOMContentLoaded', function() {
