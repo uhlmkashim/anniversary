@@ -2521,19 +2521,19 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_003_voice_ch2.png?1589939637648", id:"voice_election_result_2__003_voice_ch2"},
-		{src:"images/_004_place_2.png?1589939637648", id:"voice_election_result_2__004_place_2"},
-		{src:"images/_004_voice_votes_2.png?1589939637648", id:"voice_election_result_2__004_voice_votes_2"},
-		{src:"images/_005_shuttle_co.png?1589939637648", id:"voice_election_result_2__005_shuttle_co"},
-		{src:"images/_005_shuttle_cu.png?1589939637648", id:"voice_election_result_2__005_shuttle_cu"},
-		{src:"images/_005_shuttle_pa.png?1589939637648", id:"voice_election_result_2__005_shuttle_pa"},
-		{src:"images/_005_textflame.png?1589939637648", id:"voice_election_result_2__005_textflame"},
-		{src:"images/_005_voice_name_2.png?1589939637648", id:"voice_election_result_2__005_voice_name_2"},
-		{src:"images/bg.jpg?1589939637648", id:"voice_election_result_2_bg"},
-		{src:"images/bottom.png?1589939637648", id:"voice_election_result_2_bottom"},
-		{src:"images/fp_flower3.png?1589939637648", id:"voice_election_result_2_fp_flower3"},
-		{src:"images/sign_voice2.png?1589939637648", id:"voice_election_result_2_sign_voice2"},
-		{src:"images/sp_kirakira.png?1589939637648", id:"voice_election_result_2_sp_kirakira"}
+		{src:"images/003_voice_ch2.png", id:"voice_election_result_2__003_voice_ch2"},
+		{src:"images/004_place_2.png", id:"voice_election_result_2__004_place_2"},
+		{src:"images/004_voice_votes_2.png", id:"voice_election_result_2__004_voice_votes_2"},
+		{src:"images/005_shuttle_co.png", id:"voice_election_result_2__005_shuttle_co"},
+		{src:"images/005_shuttle_cu.png", id:"voice_election_result_2__005_shuttle_cu"},
+		{src:"images/005_shuttle_pa.png", id:"voice_election_result_2__005_shuttle_pa"},
+		{src:"images/005_textflame.png", id:"voice_election_result_2__005_textflame"},
+		{src:"images/005_voice_name_2.png", id:"voice_election_result_2__005_voice_name_2"},
+		{src:"images/bg.jpg", id:"voice_election_result_2_bg"},
+		{src:"images/bottom.png", id:"voice_election_result_2_bottom"},
+		{src:"images/fp_flower3.png", id:"voice_election_result_2_fp_flower3"},
+		{src:"images/sign_voice2.png", id:"voice_election_result_2_sign_voice2"},
+		{src:"images/sp_kirakira.png", id:"voice_election_result_2_sp_kirakira"}
 	],
 	preloads: []
 };
