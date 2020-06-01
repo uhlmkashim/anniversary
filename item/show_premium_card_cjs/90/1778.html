@@ -63,8 +63,8 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://125.6.169.35/idolmaster/";
+        var image_server = "";
+        var base_url = "";
         window.file_name = "premium_pen"; // createjs の本体ファイルを定義
         window.dir_name = "image_sp/cjs/premium_pen/";
         window.replace_images = {
@@ -73,8 +73,8 @@
             "replace_card2": "card_sign_p\/l\/54fd689747f5196b64ec8a863d944f62.jpg"
         }
         window.im_cjs = {
-            "m1": "\u30d7\u30ec\u30df\u30a2\u30e0\u30b5\u30a4\u30f3\u306b\u306a\u308a\u307e\u3057\u305f!",
-            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/card_list/index%3Fopensocial_app_id%3D12008305%26opensocial_viewer_id%3D152774374%26opensocial_owner_id%3D152774374%26use_premium_card_item%3D1%26image%3D54fd689747f5196b64ec8a863d944f62%26s%3D1778%26p_pen%3D1%26l_frm%3DItem_show_premium_card_cjs_1%26rnd%3D621116765"
+            "m1": "プレミアムサインになりました!",
+            "_url": "../../../mypage.html"
         };
         window.child_obj = [{
             "dir_name": "js\/cjs\/sign_effect",
@@ -150,7 +150,7 @@
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': window.image_server + encodeURIComponent(window.base_url + _img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }
@@ -159,7 +159,7 @@
                     for (var n in lib_supporter[i].properties.manifest) {
                         new_manifest.push({
                             'type': 'image',
-                            'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src),
+                            'src': window.image_server + encodeURIComponent(window.base_url + window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src),
                             'id': lib_supporter[i].properties.manifest[n].id,
                             'crossOrigin': 'Anonymous'
                         });
@@ -253,7 +253,7 @@
     </script>
     <script>
         (function() {
-            window.viewer_id = 152774374;
+            window.viewer_id = ;
             var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error%3Fl_frm%3DItem_show_premium_card_cjs_1%26rnd%3D661265008";
             var _path = location.href;
             var _spec_obj;
