@@ -66,7 +66,7 @@
         var image_server = "";
         var base_url = "";
         window.file_name = "premium_pen"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/premium_pen/";
+        window.dir_name = "../../../image_sp/cjs/premium_pen/";
         window.replace_images = {
             "break_l_c01": "",
             "replace_card1": "card_sign_b\/l\/54fd689747f5196b64ec8a863d944f62.jpg",
@@ -79,7 +79,7 @@
         window.child_obj = [{
             "dir_name": "js\/cjs\/sign_effect",
             "file_name": "89_sign_effect",
-            "image_path": "",
+            "image_path": "../../../",
             "target_mc": "replace_sign"
         }];
         window.im_cjs = window.im_cjs || {};
@@ -146,7 +146,7 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = 'image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
