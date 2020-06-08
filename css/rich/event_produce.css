@@ -23849,7 +23849,7 @@ h3.title_img.event_produce:before {
 
 .area_look_back .area_select_area._attr_3 .select_area:before {
     display: block;
-    background: url(../../image_sp/event/produce/sprite/lookback-s95767bbfe5.png?1558677434) no-repeat 0 -222px;
+    background: url(../../image_sp/event/produce/sprite/lookback-s95767bbfe5.png) no-repeat 0 -222px;
     -webkit-background-size: 200px 1092px;
     background-size: 200px 1092px;
     width: 184px;
@@ -23857,14 +23857,14 @@ h3.title_img.event_produce:before {
 }
 
 #look_back_layout #play_button.play_btn_df {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_commu_play.png?1558677434) no-repeat right top;
+    background: url(../../image_sp/event/produce/sprite/lookback/btn_commu_play.png) no-repeat right top;
     background-size: 110px 110px;
     outline: none;
     border: none
 }
 
 #look_back_layout #play_button.play_btn_ac {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_commu_play_gray.png?1558677434) no-repeat right top;
+    background: url(../../image_sp/event/produce/sprite/lookback/btn_commu_play_gray.png) no-repeat right top;
     background-size: 110px 110px;
     outline: none;
     border: none
@@ -23872,7 +23872,7 @@ h3.title_img.event_produce:before {
 
 #play_area .area_play_guide {
     display: block;
-    background: url(../../image_sp/event/produce/sprite/lookback-s95767bbfe5.png?1558677434) no-repeat 0 -809px;
+    background: url(../../image_sp/event/produce/sprite/lookback-s95767bbfe5.png) no-repeat 0 -809px;
     -webkit-background-size: 200px 1092px;
     background-size: 200px 1092px;
     width: 200px;
