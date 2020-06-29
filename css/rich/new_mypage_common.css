@@ -18632,19 +18632,19 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
 }
 
 .idolProfile.deck .profile_top {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_up.png) center top no-repeat;
+    background: url(../../image_sp/ui/gallery/line_up.png) center top no-repeat;
     background-size: 314px;
     height: 12px
 }
 
 .idolProfile.deck .profile_bottom {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_down.png) center bottom no-repeat;
+    background: url(../../image_sp/ui/gallery/line_down.png) center bottom no-repeat;
     background-size: 314px;
     height: 12px
 }
 
 .idolProfile.deck .profile_content {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_middle.png) center top repeat-y;
+    background: url(../../image_sp/ui/gallery/line_middle.png) center top repeat-y;
     background-size: 314px;
     padding-bottom: 2px
 }
@@ -18728,7 +18728,7 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
 }
 
 .idolProfile.deck .profile_content .profile_box.detail_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_cool.png) right bottom no-repeat;
+    background: url(../../image_sp/ui/gallery/star_cool.png) right bottom no-repeat;
     background-size: 100px
 }
 
@@ -22194,14 +22194,14 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_top {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_up.png) no-repeat;
+    background: url(../../image_sp/ui/gallery/line_up.png) no-repeat;
     background-size: 308px 17px;
     width: 308px;
     height: 17px
 }
 
 .profile_area .profile_content {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_middle.png) repeat-y;
+    background: url(../../image_sp/ui/gallery/line_middle.png) repeat-y;
     background-size: 308px 4px;
     width: 308px
 }
@@ -22379,7 +22379,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .detail .star_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_cool.png) no-repeat;
+    background: url(../../image_sp/ui/gallery/star_cool.png) no-repeat;
     background-size: 85px 83px;
     background-position: right bottom;
     width: 140px;
@@ -22557,7 +22557,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_hobby_cute {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cute.png) 0 -175px no-repeat;
+    background: url(../../image_sp/ui/gallery/cute.png) 0 -175px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22566,7 +22566,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_cv_cute {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cute.png) 0 -192.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cute.png) 0 -192.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22575,7 +22575,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_kana_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 0px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 0px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22584,7 +22584,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_age_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -17.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -17.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22593,7 +22593,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_height_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -35px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -35px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22602,7 +22602,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_weight_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -52.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -52.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22611,7 +22611,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_size_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -70px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -70px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22620,7 +22620,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_birthday_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -87.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -87.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22629,7 +22629,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_constellation_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -105px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -105px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22638,7 +22638,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_blood_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -122.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -122.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22647,7 +22647,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_arm_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -140px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -140px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22656,7 +22656,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_from_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -157.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -157.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22665,7 +22665,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_hobby_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -175px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -175px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22674,7 +22674,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_cv_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png) 0 -192.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/cool.png) 0 -192.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22683,7 +22683,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_kana_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 0px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 0px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22692,7 +22692,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_age_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -17.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -17.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22701,7 +22701,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_height_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -35px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -35px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22710,7 +22710,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_weight_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -52.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -52.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22719,7 +22719,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_size_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -70px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -70px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22728,7 +22728,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_birthday_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -87.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -87.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22737,7 +22737,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_constellation_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -105px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -105px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22746,7 +22746,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_blood_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -122.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -122.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22755,7 +22755,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_arm_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -140px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -140px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22764,7 +22764,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_from_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -157.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -157.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22773,7 +22773,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_hobby_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -175px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -175px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -22782,7 +22782,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .icon_cv_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/passion.png) 0 -192.5px no-repeat;
+    background: url(../../image_sp/ui/gallery/passion.png) 0 -192.5px no-repeat;
     background-size: 42px 210px;
     width: 42px;
     height: 17.5px;
@@ -23066,7 +23066,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_bottom {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/line_down.png) repeat-y;
+    background: url(../../image_sp/ui/gallery/line_down.png) repeat-y;
     background-size: 308px 17px;
     width: 308px;
     height: 17px
