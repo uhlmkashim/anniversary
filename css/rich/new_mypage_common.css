@@ -1335,7 +1335,7 @@ section {
 }
 
 .area-popup_common._navi .area-popup_bg_image {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/popup_navi/bg_mypage_body.png?1567748775)
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/popup_navi/bg_mypage_body.png)
 }
 
 .area-popup_common._navi .ibox_close {
@@ -1842,7 +1842,7 @@ section {
 .area-frame_common._frame_pink .area-frame_bg_image {
     width: 304px;
     height: 100%;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame_pink/body.png?1558677469) repeat-y;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/frame_pink/body.png) repeat-y;
     background-size: 304px 1px;
     position: absolute;
     top: 0px;
@@ -2125,7 +2125,7 @@ section {
 .area-popup_common .area-popup_bg_image {
     width: 304px;
     height: 100%;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/common/lightbox/body.png) repeat-y;
+    background: url(../../image_sp/ui/common/lightbox/body.png) repeat-y;
     background-size: 304px 1px;
     position: absolute;
     top: 0px;
