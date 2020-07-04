@@ -563,18 +563,7 @@ kg
 <% } %>
 </section>
 <% if(trade_prohibition.is_trade_limit) { %>
-<div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
-이 아이돌은 트레이드, 프리트레이드, 선물을 할 수 없습니다.
-</div>
 <% } %>
-<div class="area-btn-common _base-width">
-<% if(!trade_prohibition.is_trade_limit) { %>
-<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a>
-<% } %>
-<% if(is_exist_archive) { %>
-<a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a>
-<% } %>
-</div>
 <% if (event) { %>
 <h3 class="title_hanyo m-Top8 m-Btm8">
 <div>등장 이벤트</div>
