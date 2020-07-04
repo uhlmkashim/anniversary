@@ -18323,7 +18323,7 @@ td.status .icon {
 
 #deckIdolArea .fukidashiWrap .fukidashi.att_1.voice,
 #mapIdolArea .fukidashiWrap .fukidashi.att_1.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cute.png) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cute.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
@@ -18342,7 +18342,7 @@ td.status .icon {
 
 #deckIdolArea .fukidashiWrap .fukidashi.att_2.voice,
 #mapIdolArea .fukidashiWrap .fukidashi.att_2.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cool.png) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cool.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
@@ -18361,7 +18361,7 @@ td.status .icon {
 
 #deckIdolArea .fukidashiWrap .fukidashi.att_3.voice,
 #mapIdolArea .fukidashiWrap .fukidashi.att_3.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_passion.png) no-repeat 20% 95% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_passion.png) no-repeat 20% 95% #fff;
     background-size: 260px
 }
 
@@ -18571,7 +18571,7 @@ body#battles .fukidashiWrap .fukidashi.cute {
 }
 
 body#battles .fukidashiWrap .fukidashi.cute.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cute.png) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cute.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
@@ -18587,7 +18587,7 @@ body#battles .fukidashiWrap .fukidashi.cool {
 }
 
 body#battles .fukidashiWrap .fukidashi.cool.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_cool.png) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_cool.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
@@ -18603,7 +18603,7 @@ body#battles .fukidashiWrap .fukidashi.passion {
 }
 
 body#battles .fukidashiWrap .fukidashi.passion.voice {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/rich/icon/commentvoice_passion.png) no-repeat 20% 10% #fff;
+    background: url(../../image_sp/ui/rich/icon/commentvoice_passion.png) no-repeat 20% 10% #fff;
     background-size: 260px
 }
 
@@ -18736,7 +18736,7 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
     margin-right: 5px;
     top: -2px;
     position: relative;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cool.png);
+    background-image: url(../../image_sp/ui/gallery/cool.png);
     background-size: 50px;
     background-repeat: no-repeat;
     width: 50px;
@@ -25791,7 +25791,7 @@ body#mypage .area_main_idol .comment_main_idol_bottom.comment_cute::after {
 body#mypage .area_main_idol .comment_main_idol_bottom.comment_attribute_cool,
 body#mypage .area_main_idol .comment_main_idol_bottom.comment_cool {
     border: solid 3px #006aff;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/event/common/img_fukidashi_top_cool.png)
+    background-image: url(../../image_sp/event/common/img_fukidashi_top_cool.png)
 }
 
 body#mypage .area_main_idol .comment_main_idol_bottom.comment_attribute_cool::before,
