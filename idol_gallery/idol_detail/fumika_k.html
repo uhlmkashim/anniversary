@@ -307,11 +307,11 @@
                 <div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div>
                     <div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;">
                         <div class="t-Lft" style="width:50%">
-                        <% if(idol_detail.is_exist_archive) { %>
-                        <a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
-                        <% } else { %>
-                        <img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
-                        <% } %>
+                            <% if(idol_detail.is_exist_archive) { %>
+                            <a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
+                            <% } else { %>
+                            <img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
+                            <% } %>
                         </div>
                         <div class="t-Rft" style="width:50%">
                             <div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
@@ -322,16 +322,16 @@
                             <div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
                             <div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
                         </div>
-                    <% if(birthday_flag) { %>
+                        <% if(birthday_flag) { %>
                         <div class="icon_birthday"></div>
-                    <% } %>
-                    <% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
-                    <% if(idol_detail.show_card_type == "l_premium") { %>
-                    <a id="btn_normal_sign" class="js_btn_change_card_type"></a>
-                    <% } else { %>
-                    <a id="btn_premium_sign" class="js_btn_change_card_type"></a>
-                    <% } %>
-                    <% } %>
+                        <% } %>
+                        <% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
+                        <% if(idol_detail.show_card_type == "l_premium") { %>
+                        <a id="btn_normal_sign" class="js_btn_change_card_type"></a>
+                        <% } else { %>
+                        <a id="btn_premium_sign" class="js_btn_change_card_type"></a>
+                        <% } %>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -356,10 +356,10 @@
                             <div class="blk">
                                 <div class="title wgt"></div>
                                 <div class="pr wgt">
-                                <%- profile.card_weight %>
-                                <% if ( /[0-9.]/.test(profile.card_weight) ) { %>
-                                kg
-                                <% } %>
+                                    <%- profile.card_weight %>
+                                    <% if ( /[0-9.]/.test(profile.card_weight) ) { %>
+                                    kg
+                                    <% } %>
                                 </div>
                             </div>
                             <div class="blk">
@@ -400,17 +400,17 @@
         </script>
         <script type="text/template" id="comment-template">
             <div class="selectArea type_02 m-Btm8">
-            <% Object.keys(filtered_comments).forEach(function (key) { %>
+                <% Object.keys(filtered_comments).forEach(function (key) { %>
                 <div class="selectArea_accordion">
                     <div class="selectArea_accordion_title"><div><%- category_names[key] %></div></div>
                     <div class="selectArea_accordion_body t-Lft">
                         <div class="selectArea_accordion_body_inner">
-                        <% Object.keys(filtered_comments[key]).forEach(function (key4) { %>
+                            <% Object.keys(filtered_comments[key]).forEach(function (key4) { %>
                             <div class="comment_title_<%- data.attribute %>"><%- type_names[key4] %></div>
                             <div class="comment_frame_wrapper_<%- data.attribute %> m-Btm8">
-                            <% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %>
-                            <% var attribute = data.attribute %>
-                            <% if(voice[key2]) { %>
+                                <% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %>
+                                <% var attribute = data.attribute %>
+                                <% if(voice[key2]) { %>
                                 <div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>">
                                     <div><%- filtered_comments[key][key4][key2] %></div>
                                     <% if(voice_enable) { %>
@@ -529,79 +529,79 @@
         </script>
         <script type="text/template" id="parameter-template">
             <section class="idolStatus deck m-Btm10">
-<div class="data_list">
-<div class="wrap">
-<div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div>
-</div>
-<div class="wrap" style="margin-left:4px;">
-<div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div>
-</div>
-<div class="wrap" style="margin-left:4px;">
-<div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div>
-</div>
-</div>
-<% if (data.skill_effect) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl"></div><div class="pr"><%- data.skill_name %></div>
-</div>
-</div>
-<%if (!data.grow_idol_flag) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div>
-</div>
-</div>
-<%if ( ! $.isEmptyObject(data.skill_effect_2)) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
-</div>
-</div>
-<% } %>
-<% } %>
-<% } %>
-</section>
-<% if(trade_prohibition.is_trade_limit) { %>
-<% } %>
-<% if (event) { %>
-<h3 class="title_hanyo m-Top8 m-Btm8">
-<div>등장 이벤트</div>
-</h3>
-<% Object.keys(event).forEach(function (key) { %>
-<div class="t-Cnt m-Btm5">
-<% if (event[key].event_name.indexOf("<br />") != -1) { %>
-<%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
-<%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
-<% } else if (key == 1908) { %>
-<span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
-<% } else { %>
-<%- event[key].event_name %>
-<% } %>
-</div>
-<div class="area-btn-common _base-width m-Btm8">
-<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
-<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
-</div>
-<% }); %>
-<% } %>
-</script>
+                <div class="data_list">
+                    <div class="wrap">
+                        <div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div>
+                    </div>
+                    <div class="wrap" style="margin-left:4px;">
+                        <div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div>
+                    </div>
+                    <div class="wrap" style="margin-left:4px;">
+                        <div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div>
+                    </div>
+                </div>
+                <% if (data.skill_effect) { %>
+                <div class="data_list line">
+                    <div class="wrap">
+                        <div class="title skl"></div><div class="pr"><%- data.skill_name %></div>
+                    </div>
+                </div>
+                <%if (!data.grow_idol_flag) { %>
+                <div class="data_list line">
+                    <div class="wrap">
+                        <div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div>
+                    </div>
+                </div>
+                <%if ( ! $.isEmptyObject(data.skill_effect_2)) { %>
+                <div class="data_list line">
+                    <div class="wrap">
+                        <div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
+                    </div>
+                </div>
+                <% } %>
+                <% } %>
+                <% } %>
+            </section>
+            <% if(trade_prohibition.is_trade_limit) { %>
+            <% } %>
+            <% if (event) { %>
+            <h3 class="title_hanyo m-Top8 m-Btm8">
+                <div>등장 이벤트</div>
+            </h3>
+            <% Object.keys(event).forEach(function (key) { %>
+            <div class="t-Cnt m-Btm5">
+                <% if (event[key].event_name.indexOf("<br />") != -1) { %>
+                <%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
+                <%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
+                <% } else if (key == 1908) { %>
+                <span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
+                <% } else { %>
+                <%- event[key].event_name %>
+                <% } %>
+            </div>
+            <div class="area-btn-common _base-width m-Btm8">
+                <a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
+                <a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
+            </div>
+            <% }); %>
+            <% } %>
+        </script>
         <script type="text/template" id="popup-expansion-template">
             <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
-    <div class="js_current rotate_img" <% if(idol_image_mask_l_p || idol_image_mask_l) { %>twinkle="1"<% } %> style="width:100%">
-    <img id="expansion_idol_image" class="js_replace_premium " src='<%- idol_image %>' style="width:100%;" />
-    </div>
-    <% if(idol_image_nosign) { %>
-    <img id="expansion_idol_image_nosign" class="rotate_img" src='<%- idol_image_nosign %>' style="width:100%;" />
-    <% } %>
-       <% if(idol_image_noframe) { %>
-    <img id="expansion_idol_image_noframe" class="rotate_img" src='<%- idol_image_noframe %>' style="width:100%;" />
-    <% } %>
-        <div class="mask01 cardFrame01">
-            <div class="mask02 cardFrame02"></div>
-        </div>
-    </div>
-</script>
+                <div class="js_current rotate_img" <% if(idol_image_mask_l_p || idol_image_mask_l) { %>twinkle="1"<% } %> style="width:100%">
+                    <img id="expansion_idol_image" class="js_replace_premium " src='<%- idol_image %>' style="width:100%;" />
+                </div>
+                <% if(idol_image_nosign) { %>
+                <img id="expansion_idol_image_nosign" class="rotate_img" src='<%- idol_image_nosign %>' style="width:100%;" />
+                <% } %>
+                <% if(idol_image_noframe) { %>
+                <img id="expansion_idol_image_noframe" class="rotate_img" src='<%- idol_image_noframe %>' style="width:100%;" />
+                <% } %>
+                <div class="mask01 cardFrame01">
+                    <div class="mask02 cardFrame02"></div>
+                </div>
+            </div>
+        </script>
         <style type='text/css'>
             .rotate_appear {
                 -webkit-animation-name: anime1b;
