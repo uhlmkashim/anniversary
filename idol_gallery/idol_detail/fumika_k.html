@@ -342,60 +342,60 @@
                 <div class="profile_content">
                     <div class="profile_box detail_<%- data.attribute %>">
                         <div class="data_list">
-                        <div class="title kana"></div><div class="pr"><%- profile.card_kana %></div>
-                    </div>
-                <div class="data_list">
-                    <div class="blk">
-                        <div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
-                    </div>
-                    <div class="blk">
-                        <div class="title age"></div><div class="pr"><%- profile.card_age %>세</div>
-                    </div>
-                </div>
+                            <div class="title kana"></div><div class="pr"><%- profile.card_kana %></div>
+                        </div>
                     <div class="data_list">
                         <div class="blk">
-                            <div class="title wgt"></div>
-                            <div class="pr wgt">
-                            <%- profile.card_weight %>
-                            <% if ( /[0-9.]/.test(profile.card_weight) ) { %>
-                            kg
-                            <% } %>
+                            <div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
+                        </div>
+                        <div class="blk">
+                            <div class="title age"></div><div class="pr"><%- profile.card_age %>세</div>
+                        </div>
+                    </div>
+                        <div class="data_list">
+                            <div class="blk">
+                                <div class="title wgt"></div>
+                                <div class="pr wgt">
+                                <%- profile.card_weight %>
+                                <% if ( /[0-9.]/.test(profile.card_weight) ) { %>
+                                kg
+                                <% } %>
+                                </div>
+                            </div>
+                            <div class="blk">
+                                <div class="title size"></div><div class="pr size"><%- profile.card_bust %>/<%- profile.card_waist %>/<%- profile.card_hip %></div>
                             </div>
                         </div>
-                        <div class="blk">
-                            <div class="title size"></div><div class="pr size"><%- profile.card_bust %>/<%- profile.card_waist %>/<%- profile.card_hip %></div>
+                        <div class="data_list">
+                            <div class="blk">
+                                <div class="title bd"></div><div class="pr"><%- profile.card_birthday %></div>
+                            </div>
+                            <div class="blk">
+                                <div class="title cns"></div><div class="pr cns"><%- profile.card_constellation %></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="data_list">
-                        <div class="blk">
-                            <div class="title bd"></div><div class="pr"><%- profile.card_birthday %></div>
+                        <div class="data_list">
+                            <div class="blk">
+                                <div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
+                            </div>
+                            <div class="blk">
+                                <div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
+                            </div>
                         </div>
-                        <div class="blk">
-                            <div class="title cns"></div><div class="pr cns"><%- profile.card_constellation %></div>
+                        <div class="data_list">
+                            <div class="title from"></div><div class="pr"><%- profile.card_from %></div>
                         </div>
-                    </div>
-                    <div class="data_list">
-                        <div class="blk">
-                            <div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
+                        <div class="data_list">
+                            <div class="title hby"></div><div class="pr hby"><%- profile.card_hobby %></div>
                         </div>
-                        <div class="blk">
-                            <div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
+                        <% if (profile.card_cv) { %> 
+                        <div class="data_list">
+                            <div class="title cv"></div><div class="pr"><%- profile.card_cv %></div>
                         </div>
+                        <% } %>
                     </div>
-                    <div class="data_list">
-                        <div class="title from"></div><div class="pr"><%- profile.card_from %></div>
-                    </div>
-                    <div class="data_list">
-                        <div class="title hby"></div><div class="pr hby"><%- profile.card_hobby %></div>
-                    </div>
-                    <% if (profile.card_cv) { %> 
-                    <div class="data_list">
-                        <div class="title cv"></div><div class="pr"><%- profile.card_cv %></div>
-                    </div>
-                    <% } %>
                 </div>
-            </div>
-            <div class="profile_bottom"></div>
+                <div class="profile_bottom"></div>
             </section>
         </script>
         <script type="text/template" id="comment-template">
