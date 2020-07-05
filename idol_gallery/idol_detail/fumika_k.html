@@ -296,46 +296,46 @@
 </script>
         <script type="text/template" id="idol-base-template">
             <div style="position:relative;top:-20px;padding-top:24px;height:312px;margin-bottom:-143px;">
-<div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div>
-<% if(idol_detail.data.rarity <= 2) { %>
-<% opacity = 0.5 %>
-<% } else if (idol_detail.data.rarity <= 4) { %>
-<% opacity = 0.6 %>
-<% } else { %>
-<% opacity = 0 %>
-<% } %>
-<div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div>
-<div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;">
-<div class="t-Lft" style="width:50%">
-<% if(idol_detail.is_exist_archive) { %>
-<a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
-<% } else { %>
-<img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
-<% } %>
-</div>
-<div class="t-Rft" style="width:50%">
-<div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
-<div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
-<div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
-</div>
-<div class="detail_idol_num_<%- idol_detail.data.attribute %>">
-<div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
-<div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
-</div>
-<% if(birthday_flag) { %>
-<div class="icon_birthday"></div>
-<% } %>
-<% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
-<% if(idol_detail.show_card_type == "l_premium") { %>
-<a id="btn_normal_sign" class="js_btn_change_card_type"></a>
-<% } else { %>
-<a id="btn_premium_sign" class="js_btn_change_card_type"></a>
-<% } %>
-<% } %>
-</div>
-</div>
-</div>
-</script>
+                <div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div>
+                <% if(idol_detail.data.rarity <= 2) { %>
+                <% opacity = 0.5 %>
+                <% } else if (idol_detail.data.rarity <= 4) { %>
+                <% opacity = 0.6 %>
+                <% } else { %>
+                <% opacity = 0 %>
+                <% } %>
+                <div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div>
+                    <div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;">
+                        <div class="t-Lft" style="width:50%">
+                        <% if(idol_detail.is_exist_archive) { %>
+                        <a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
+                        <% } else { %>
+                        <img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
+                        <% } %>
+                    </div>
+                    <div class="t-Rft" style="width:50%">
+                        <div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
+                        <div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
+                        <div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
+                    </div>
+                    <div class="detail_idol_num_<%- idol_detail.data.attribute %>">
+                        <div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
+                        <div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
+                    </div>
+                    <% if(birthday_flag) { %>
+                    <div class="icon_birthday"></div>
+                    <% } %>
+                    <% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
+                    <% if(idol_detail.show_card_type == "l_premium") { %>
+                    <a id="btn_normal_sign" class="js_btn_change_card_type"></a>
+                    <% } else { %>
+                    <a id="btn_premium_sign" class="js_btn_change_card_type"></a>
+                    <% } %>
+                    <% } %>
+                    </div>
+                </div>
+            </div>
+        </script>
         <script type="text/template" id="profile-template">
             <section class="idolProfile deck m-Btm5">
 <div class="profile_top"></div>
