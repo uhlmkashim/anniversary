@@ -280,20 +280,20 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
-</div>
-</script>
+                <a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
+                <a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
+                <a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
+                <a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
+            </div>
+        </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
-<a name="tab_3" href="#" style='display:none;'>에피소드</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
-</div>
-</script>
+                <a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
+                <a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
+                <a name="tab_3" href="#" style='display:none;'>에피소드</a>
+                <a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
+            </div>
+        </script>
         <script type="text/template" id="idol-base-template">
             <div style="position:relative;top:-20px;padding-top:24px;height:312px;margin-bottom:-143px;">
                 <div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div>
@@ -439,94 +439,94 @@
         </script>
         <script type="text/template" id="story-template">
             <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %>
-<% val = idol_story_list[i] %>
-<% if(val == undefined) { %>
-<% continue; %>
-<% } %>
-<div class="area-frame_common _hd_blue _bd_black m-Btm10">
-    <div class="area-frame_wrap">
-        <h3 class="area-frame_header">
-            <div class="area-frame_title" style="font-size:14px;"><%- val.story_title %></div>
-        </h3>
-<div style="width:280px; margin:0 auto; padding:10px 0 0; overflow:hidden;">
-<ul class="displayBox t-Cnt">
-<% Object.keys(val.icon).forEach(function (key2) { %>
-<% total = Object.keys(val.icon).length; %>
-<% val2 = val.icon[key2] %>
-<% if (+val.open_flag[key2]) { %>
-<li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>">
-<form method="get" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
-<input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br>
-<% if (+val.voice_enable[key2]) { %>
-<input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
-<% } else { %>
-<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
-<% } %>
-<% if (val.story_id > 0 && +val.voice_enable[key2]) { %><input type="hidden" name="voice" value="0"><% } %>
-</form>
-<% if (+val.voice_enable[key2]) { %>
-<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
-<a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
-</a>
-<% } %>
-<% } %>
-</li>
-<% } else { %>
-<li style="<% if (total == 2) { %> width:50%; <% } else if (total == 3) { %> width:33%;<% } else { %>margin:0 5px;<% } %>">
-<div style="height:90px;">
-<img src="<%- val2 %>" height="75"><br>
-<% if (+val.voice_enable[key2]) { %>
-<input class="movie_name" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
-<% } else { %>
-<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
-<% } %>
-</div>
-<% if (+val.voice_enable[key2]) { %>
-<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
-<% } %>
-<% } %>
-</li>
-<% } %>
-<% last = key2; %>
-<% }); %>
-</ul>
-<% if (!ios_app_flg || !apple_review) { %>
-<% if (val.story_id > 0 && +val.voice_enable[last]) { %>
-<% } %>
-<% } %>
-</div>
-        <div class="area-frame_bg_image"></div>
-    </div>
-</div>
-<% } %>
-<% if (paging_info.max_page_num > 0) { %>
-<div class="pager_area" style="height:auto;">
-<div class="pager_panel_area">
-<% if (paging_info.current_page != 0) { %>
-<input type="submit" class="btn_pager_first">
-<% } else { %>
-<div class="btn_pager_first _disabled"></div>
-<% } %>
-<% if (paging_info.current_page > 0) { %>
-<input type="submit" class="btn_pager_back">
-<% } else { %>
-<div class="btn_pager_back _disabled"></div>
-<% } %>
-<% if (paging_info.current_page != paging_info.max_page_num) { %>
-<input type="submit" class="btn_pager_next">
-<% } else { %>
-<div class="btn_pager_next _disabled"></div>
-<% } %>
-<% if (paging_info.current_page != paging_info.max_page_num) { %>
-<input type="submit" class="btn_pager_last">
-<% } else { %>
-<div class="btn_pager_last _disabled"></div>
-<% } %>
-<%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %>
-</div>
-</div>
-<% } %>
-</script>
+            <% val = idol_story_list[i] %>
+            <% if(val == undefined) { %>
+            <% continue; %>
+            <% } %>
+            <div class="area-frame_common _hd_blue _bd_black m-Btm10">
+                <div class="area-frame_wrap">
+                    <h3 class="area-frame_header">
+                    <div class="area-frame_title" style="font-size:14px;"><%- val.story_title %></div>
+                    </h3>
+                    <div style="width:280px; margin:0 auto; padding:10px 0 0; overflow:hidden;">
+                        <ul class="displayBox t-Cnt">
+                            <% Object.keys(val.icon).forEach(function (key2) { %>
+                            <% total = Object.keys(val.icon).length; %>
+                            <% val2 = val.icon[key2] %>
+                            <% if (+val.open_flag[key2]) { %>
+                            <li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>">
+                                <form method="get" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
+                                    <input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br>
+                                    <% if (+val.voice_enable[key2]) { %>
+                                    <input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+                                    <% } else { %>
+                                    <input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+                                    <% } %>
+                                    <% if (val.story_id > 0 && +val.voice_enable[key2]) { %><input type="hidden" name="voice" value="0"><% } %>
+                                </form>
+                                <% if (+val.voice_enable[key2]) { %>
+                                <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+                                <a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
+                                </a>
+                                <% } %>
+                                <% } %>
+                            </li>
+                            <% } else { %>
+                            <li style="<% if (total == 2) { %> width:50%; <% } else if (total == 3) { %> width:33%;<% } else { %>margin:0 5px;<% } %>">
+                                <div style="height:90px;">
+                                    <img src="<%- val2 %>" height="75"><br>
+                                    <% if (+val.voice_enable[key2]) { %>
+                                    <input class="movie_name" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+                                    <% } else { %>
+                                    <input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+                                    <% } %>
+                                </div>
+                                <% if (+val.voice_enable[key2]) { %>
+                                <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+                                <% } %>
+                                <% } %>
+                            </li>
+                            <% } %>
+                            <% last = key2; %>
+                            <% }); %>
+                        </ul>
+                        <% if (!ios_app_flg || !apple_review) { %>
+                        <% if (val.story_id > 0 && +val.voice_enable[last]) { %>
+                        <% } %>
+                        <% } %>
+                    </div>
+                    <div class="area-frame_bg_image"></div>
+                </div>
+            </div>
+            <% } %>
+            <% if (paging_info.max_page_num > 0) { %>
+            <div class="pager_area" style="height:auto;">
+                <div class="pager_panel_area">
+                    <% if (paging_info.current_page != 0) { %>
+                    <input type="submit" class="btn_pager_first">
+                    <% } else { %>
+                    <div class="btn_pager_first _disabled"></div>
+                    <% } %>
+                    <% if (paging_info.current_page > 0) { %>
+                    <input type="submit" class="btn_pager_back">
+                    <% } else { %>
+                    <div class="btn_pager_back _disabled"></div>
+                    <% } %>
+                    <% if (paging_info.current_page != paging_info.max_page_num) { %>
+                    <input type="submit" class="btn_pager_next">
+                    <% } else { %>
+                    <div class="btn_pager_next _disabled"></div>
+                    <% } %>
+                    <% if (paging_info.current_page != paging_info.max_page_num) { %>
+                    <input type="submit" class="btn_pager_last">
+                    <% } else { %>
+                    <div class="btn_pager_last _disabled"></div>
+                    <% } %>
+                    <%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %>
+                </div>
+            </div>
+            <% } %>
+        </script>
         <script type="text/template" id="parameter-template">
             <section class="idolStatus deck m-Btm10">
 <div class="data_list">
