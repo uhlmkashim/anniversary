@@ -312,18 +312,18 @@
                         <% } else { %>
                         <img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
                         <% } %>
-                    </div>
-                    <div class="t-Rft" style="width:50%">
-                        <div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
-                        <div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
-                        <div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
-                    </div>
-                    <div class="detail_idol_num_<%- idol_detail.data.attribute %>">
-                        <div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
-                        <div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
-                    </div>
+                        </div>
+                        <div class="t-Rft" style="width:50%">
+                            <div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
+                            <div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
+                            <div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
+                        </div>
+                        <div class="detail_idol_num_<%- idol_detail.data.attribute %>">
+                            <div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
+                            <div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
+                        </div>
                     <% if(birthday_flag) { %>
-                    <div class="icon_birthday"></div>
+                        <div class="icon_birthday"></div>
                     <% } %>
                     <% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
                     <% if(idol_detail.show_card_type == "l_premium") { %>
