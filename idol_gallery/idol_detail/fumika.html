@@ -280,18 +280,18 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">プロフィール</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">セリフ一覧</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">エピソード</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">アイドル情報</a>
 </div>
 </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
-<a name="tab_3" href="#" style='display:none;'>에피소드</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
+<a name="tab_1" class="tab_line_3 tab_text" href="#">プロフィール</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">セリフ一覧</a>
+<a name="tab_3" href="#" style='display:none;'>エピソード</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">アイドル情報</a>
 </div>
 </script>
         <script type="text/template" id="idol-base-template">
@@ -349,7 +349,7 @@
 <div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
 </div>
 <div class="blk">
-<div class="title age"></div><div class="pr"><%- profile.card_age %>세</div>
+<div class="title age"></div><div class="pr"><%- profile.card_age %>歳</div>
 </div>
 </div>
 <div class="data_list">
@@ -376,7 +376,7 @@ kg
 </div>
 <div class="data_list">
 <div class="blk">
-<div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
+<div class="title bld"></div><div class="pr"><%- profile.card_blood %>型</div>
 </div>
 <div class="blk">
 <div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
@@ -566,7 +566,7 @@ kg
 <% } %>
 <% if (event) { %>
 <h3 class="title_hanyo m-Top8 m-Btm8">
-<div>등장 이벤트</div>
+<div>登場イベント</div>
 </h3>
 <% Object.keys(event).forEach(function (key) { %>
 <div class="t-Cnt m-Btm5">
@@ -3849,24 +3849,24 @@ kg
                 }
             };
             var type_names = {
-                "idol": "아이돌코멘트",
-                "my": "마이스튜디오",
-                "my_max": "마이스튜디오(친애도MAX)",
-                "work": "영업",
-                "work_love_up": "영업(친애도UP)",
-                "work_max": "영업(친애도MAX)",
-                "live": "LIVE배틀",
-                "love_max": "친애도MAX연출"
+                "idol": "アイドルコメント",
+                "my": "マイスタジオ",
+                "my_max": "マイスタジオ(親愛度MAX)",
+                "work": "お仕事",
+                "work_love_up": "お仕事(親愛度UP)",
+                "work_max": "お仕事(親愛度MAX)",
+                "live": "LIVEバトル",
+                "love_max": "親愛度MAX演出"
             };
             var category_names = {
-                "greeting": "인사",
-                "work": "영업",
-                "love_max": "친애도MAX"
+                "greeting": "あいさつ",
+                "work": "お仕事",
+                "love_max": "親愛度MAX"
             };
             var conditions_names = {
-                "none": "조건없음",
-                "get_idol": "아이돌이 소속되면 볼 수 있습니다.",
-                "love_max": "친애도를 MAX로 하면 볼 수 있습니다."
+                "none": "条件無し",
+                "get_idol": "アイドルが所属すると閲覧できます",
+                "love_max": "親愛度をMAXにすると閲覧できます"
             };
             var comment_tab_start = null;
             var show_premium = true;
