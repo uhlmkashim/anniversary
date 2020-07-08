@@ -76,7 +76,7 @@
             refreshRoom.old_os = ua.match(/(OS [3-7]|Android [2-4])/);
             refreshRoom.is_multiply = false;
             refreshRoom.returnUrl = '../../index.html';
-            refreshRoom.dialogueSwf = '../../../petit_refresh_room_balloon_swf';
+            refreshRoom.dialogueSwf = '../../petit_refresh_room_balloon_swf';
             refreshRoom.data = {
                 "id": "151",
                 "refresh_room_id": "151",
@@ -228,7 +228,7 @@
                     }
                 }
             };
-            var default_swf = '../../../petit_refresh_room_character_swf';
+            var default_swf = '../../petit_refresh_room_character_swf';
             for (var i in refreshRoom.data.idol_avatar) {
                 refreshRoom.data.idol_avatar[i].swf = default_swf;
             }
