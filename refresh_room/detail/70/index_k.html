@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobage: footer-color" content="none">
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-2.2.2.min.js'></script>
+    <script src='../../../js/ilibrary.js'></script>
+    <script src='../../../js/pex-petit-1.2.0.js'></script>
+    <script src='../../../js/pex_common.js'></script>
+    <script src='../../../js/min/petit_manager.min.js'></script>
+    <script src='../../../js/min/refresh_room.min.js'></script>
+    <title>ｱｲﾄﾞﾙﾏｽﾀｰ ｼﾝﾃﾞﾚﾗｶﾞｰﾙｽﾞ </title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/refresh_room.css" media="all">
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+
+<body>
+    <article>
+        <section id="pageContainer" class="m-Btm0">
+            <div id="bg_space" class="large-size"></div>
+            <div id="jsEyeCatch">
+                <div style="margin-top:120px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
+                <div style="margin-top:-80px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/loading.gif' width="102" height="102"></div>
+            </div>
+            <div class="effect-container large-size">
+                <div id="animation-container"></div>
+                <div id="dialogue" class="animation"></div>
+                <div class="story" style="text-align:left;">
+                    <div class="comment-container">
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                    </div>
+                    <a href="#" class="story_btn" style="display:none;"></a>
+                </div>
+            </div>
+            <div id="name-plate" rel="2" class="large-size">
+                <div class="plate-area" rel="1">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/89.png'>
+                </div>
+                <div class="plate-area" rel="2">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/88.png'>
+                </div>
+            </div>
+            <a id="next" class="next large-size" href="#"></a>
+        </section>
+    </article>
+    <script type="text/javascript">
+        (function() {
+            var refreshRoom = window.refreshRoom || {};
+            var ua = navigator.userAgent;
+            var in_chome = false;
+            try {
+                in_chrome = (chrome in window);
+            } catch (e) {
+                in_chrome = false;
+            }
+            refreshRoom.is_pc = in_chrome || (window.chrome ? true : false) && (window.chrome.webstore) || ua.indexOf('ChromeApp') > -1 || ua.indexOf('AAWebview') > -1;
+            refreshRoom.old_os = ua.match(/(OS [3-7]|Android [2-4])/);
+            refreshRoom.is_multiply = false;
+            refreshRoom.returnUrl = '../../index.html';
+            refreshRoom.dialogueSwf = '../../petit_refresh_room_balloon_swf';
+            refreshRoom.data = {
+                "id": "70",
+                "refresh_room_id": "70",
+                "start_time": "2018\/10\/16 15:00:00",
+                "refresh_room_name": "\u305d\u308c\u305e\u308c\u306e\u71b1\u304c\u5165\u308b\u7406\u7531",
+                "idol_set_id_1": "78",
+                "idol_accessory_set_id_1": "7",
+                "idol_set_id_2": "58",
+                "idol_accessory_set_id_2": "46",
+                "idol_set_id_3": "",
+                "idol_accessory_set_id_3": "",
+                "idol_set_id_4": "",
+                "idol_accessory_set_id_4": "",
+                "idol_set_id_5": "",
+                "idol_accessory_set_id_5": "",
+                "idol_name_1": "\u9dfa\u6ca2\u6587\u9999",
+                "idol_kana_1": "\u3055\u304e\u3055\u308f\u3075\u307f\u304b",
+                "name_plate_id_1": "89",
+                "idol_name_2": "\u6a58\u3042\u308a\u3059",
+                "idol_kana_2": "\u305f\u3061\u3070\u306a\u3042\u308a\u3059",
+                "name_plate_id_2": "88",
+                "idol_name_3": "",
+                "idol_kana_3": "",
+                "idol_name_4": "",
+                "idol_kana_4": "",
+                "idol_name_5": "",
+                "idol_kana_5": "",
+                "idol_avatar": {
+                    "1": {
+                        "attribute": "2",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "\u6587\u9999",
+                        "image_url_list": {
+                            "expression_1033": "../../../js/petit_cg/expression/1033.js",
+                            "hair_10033": "../../../js/petit_cg/hair/10033.js",
+                            "costume_1_20033": "../../../js/petit_cg/costume/1/20033.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_20033": {
+                                "image_path": "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20033",
+                                "accessory_name": "\u30b9\u30c8\u30fc\u30eb\u30b3\u30fc\u30c7\u30fb\u6587\u9999",
+                                "explanation": "\u5927\u5224\u306e\u30b9\u30c8\u30fc\u30eb\u3092\u4f7f\u3063\u305f\u6587\u9999\u306e\u79c1\u670d\u3067\u3059\u3002<br>\u30aa\u30b7\u30e3\u30ec\u3068\u3044\u3046\u3082\u306e\u306b\u306f\u758e\u304f\u3066\u2026\u3002",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "2": {
+                        "attribute": "2",
+                        "body_type": "2",
+                        "breast_size": "3",
+                        "short_name": "\u3042\u308a\u3059",
+                        "image_url_list": {
+                            "expression_1035": "../../../js/petit_cg/expression/1035.js",
+                            "hair_10035": "../../../js/petit_cg/hair/10035.js",
+                            "costume_2_20035": "../../../js/petit_cg/costume/2/20035.js",
+                            "hand_2_43098": "../../../js/petit_cg/hand/2/43098.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_2_20035": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20035",
+                                "accessory_name": "\u30aa\u30c8\u30ca\u30b3\u30fc\u30c7\u30fb\u3042\u308a\u3059",
+                                "explanation": "\u3042\u308a\u3059\u306e\u5927\u4eba\u3063\u307d\u3044\u30b3\u30fc\u30c8\u3092\u4f7f\u3063\u305f\u79c1\u670d\u3067\u3059\u3002<br>\u30ab\u30c3\u30c8\u30ef\u30fc\u30af\u30ec\u30fc\u30b9\u304c\u30aa\u30b7\u30e3\u30ec\u3002",
+                                "type_id": "2"
+                            },
+                            "hand_2_43098": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/43098",
+                                "accessory_name": "\u30bf\u30d6\u30ec\u30c3\u30c8\u7aef\u672b",
+                                "explanation": "\u3068\u3066\u3082\u6a5f\u80fd\u7684\u306a\u30bf\u30d6\u30ec\u30c3\u30c8\u7aef\u672b\u3067\u3059\u3002<br>\u3053\u308c\u3055\u3048\u3042\u308c\u3070\u3001\u306a\u3093\u3067\u3082\u3067\u304d\u307e\u3059\u3002",
+                                "type_id": "4"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    }
+                }
+            };
+            var default_swf = '../../petit_refresh_room_character_swf';
+            for (var i in refreshRoom.data.idol_avatar) {
+                refreshRoom.data.idol_avatar[i].swf = default_swf;
+            }
+            refreshRoom.detail = [{
+                "id": "1",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "1",
+                "message": "ふぅ……。ありすちゃん、%nダンスレッスンお疲れ様でした。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "2",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "文香さんこそ、お疲れ様です。%n今日は、いつにも増して%n熱が入っているように見えました。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "3",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "trouble",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……元来、激しい運動とは縁遠い%n生活でしたから、ダンスが苦手で。%nせめてレッスンで少しでも向上を。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "4",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "文香さんのダンス、私は良いと%n思いますけど。激しくはなくても、%nその、幽玄…という感じです。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "5",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……ありがとうございます。%nとても嬉しい言葉です。%nですが、今度のＬＩＶＥは…。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "6",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "そう、ですね…。%n躍動感が求められるステージです。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "7",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "shy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……あれは、何と言いましたか。%n動きが鋭く、切れるような様相を…%nき、き…？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "8",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "キレキレ？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "9",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "そう、キレキレ。%nトレーナーさんが仰っていました。%n私には、まだ不足していると。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "10",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……ありすちゃん。%nどうか私に、キレキレのコツを%n教授していただけませんか？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "11",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shock",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "わ、私ですかっ！？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "12",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい。%n今日のレッスンでも、大変上手に%n踊っていらっしゃいました。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "13",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私が、文香さんに、教える。%nそんなこと…できるのかな…？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "14",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "…………。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "15",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "notice",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "こ、これは頼られている視線…！%nそれに文香さんの頼みでしたら、%n断れるはずありませんし……",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "16",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smug",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "わかりました！%n私に任せてください。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "17",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……ありがとうございます。%nよろしくお願いいたします。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "18",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "では…文香さん。%nまずは、このタブレットを%n見てください。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "19",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……動画、ですか？%nトレーナーさんが%nダンスされているものですね。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "20",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "light_joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい。トレーナーさんにお願いして%n自主練習用に撮らせてもらいました。%n…再生っ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "21",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……とても見事です。%nさすが、トレーナーさんです。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "22",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "今のを参考に、%n少し動いてみていただけますか？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "23",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "amazement",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ええっ！　……ここで、ですか？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "24",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "もちろん。%nさあ文香さん、カウントに合わせて、%nワン・ツー。ワン・ツー。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "25",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "sing",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ワン…ツー…。%nワン…ツー…。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "26",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ありがとうございます。%nでは、たった今撮影した文香さんの%nダンスを再生してみましょう。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "27",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……まあ。タブレットで、%nそのような事ができるのですね。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "28",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "light_joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "便利なアプリがありますので。%nトレーナーさんの動画と、文香さんの%nものを並べてみると…こうです。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "29",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "trouble",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "…………動きの差は、歴然ですね。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "30",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "苦手な部分をリピートしてみると、%nこんな感じにわかりやすく…。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "31",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ふむ、ふむ……。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "32",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shout",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "さらにスローモーションで再生すれば%nこの通り！　速い動きでもより細かく%n確認することもできます。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "33",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "amazement",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "…………。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "34",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "question_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "…あの、文香さん？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "35",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……………………。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "36",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "panic",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "あ……す、すみません…。%n私ったら、得意げになりすぎていた%nでしょうか。熱弁しすぎました…。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "37",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "deny",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……いいえ、とんでもない。%n感嘆のあまりに、言葉を失って%nいただけです。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "38",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……こんなにも便利な事が、%n容易にできるとは、驚きました。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "39",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はいっ。%nタブレットって、便利なんです♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "40",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "それに、私が驚いたのは%n文明の利器だけではありません。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "41",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "タブレットを見事に使いこなし、%nアイドル活動にも活用する%nありすちゃんに対しても、です。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "42",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shock",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ふぇっ！？%nあ、ありがとうございます…！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "43",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "question_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……もし、ありすちゃんさえよければ%nもう少しだけ、自主練習に付き合って%nいただけませんか？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "44",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい、喜んで！%nタブレットを持って、お供しますよ。%n……あ、そういえば！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "45",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "エクササイズメニューの管理アプリも%nあるんです。もしよければ文香さんの%nデータも作成してみましょうか？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "46",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……いいのでしょうか？%nですが、もしありすちゃんの%nご負担にならなければ、是非。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "47",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smug",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はいっ。任せてください♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "48",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ふふ。……不思議です。%nレッスンが、今まで以上に楽しみに%nなってきました。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "49",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "文香さんもですか？%nふふっ…！　実は私もです。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "50",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "では……自主練の続きをしましょう。%nありすちゃん、改めて%nよろしくお願いいたしますね。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }];
+            petitManager.loaded_action = function() {
+                if (refreshRoom.is_multiply) $('.animation').css({
+                    zoom: "50%"
+                });
+                var margin = window.innerHeight - parseInt($('#bg_space > img').css('height'));
+                if (margin > 0) $('#pageContainer').css({
+                    "margin-top": margin * 0.5
+                });
+                var $effect_container = $('.effect-container');
+                var $dialogue = $('#dialogue');
+                var dialogue_top = parseInt($dialogue.css('top'));
+                var dialogue_ratio = refreshRoom.dialogue.scaleSizeCheck() / 320;
+                $dialogue.css('top', dialogue_top * dialogue_ratio);
+                if (!$effect_container.hasClass('large-size')) {
+                    $dialogue.css('top', dialogue_top * dialogue_ratio);
+                    var $animation = $('.animation:not(#dialogue)');
+                    var anime_top = parseInt($animation.css('top'));
+                    $animation.css('top', anime_top * dialogue_ratio);
+                }
+                $('#jsEyeCatch').hide();
+                refreshRoom.dialogue.startSwf();
+            };
+            petitManager.setWidth(refreshRoom.dialogue.scaleSizeCheck(refreshRoom.is_pc));
+            refreshRoom.bg_list = {
+                "1": "../../../image_sp/ui/refresh_room/bg/bg1.jpg",
+                "": "../../../image_sp/ui/refresh_room/bg/bg.jpg"
+            };
+            var image = new Image;
+            var multiply = refreshRoom.is_pc || window.devicePixelRatio >= 1.5 && !refreshRoom.old_os ? 0.5 : 1;
+            var size = refreshRoom.dialogue.scaleSizeCheck() * multiply;
+            var ratio = size / 320;
+            image.width = size;
+            var effect_container = $('.effect-container');
+            effect_container.css({
+                width: size,
+                height: size,
+                bottom: parseInt(effect_container.css('bottom')) * ratio
+            });
+            image.onload = function() {
+                $('#bg_space').append(image);
+                var height = $(this).css('height');
+                $(this).parent().css('height', height);
+                $(image).css('top', parseInt($(image).css('top')) * ratio);
+                $('#name-plate').css({
+                    "-webkit-transform": "scale(" + ratio + ")"
+                })
+                petitManager.setCharacters(refreshRoom.data.idol_avatar);
+                refreshRoom.dialogue.setMotion();
+            }
+            image.src = refreshRoom.bg_list[refreshRoom.detail[0].bg_image];
+            //console.log(refreshRoom);
+        })();
+
+        function playText() {
+            if (window.refreshRoom == void 0) return;
+            refreshRoom.dialogue.comment_deferred.resolve();
+        }
+
+        function motion_callback(index, motion) {
+            var motion_end = refreshRoom.dialogue.walking == 0;
+            if (motion.indexOf("in_walk") > -1) {
+                if (refreshRoom.dialogue.walking) {
+                    if (--refreshRoom.dialogue.walking > 0) {
+                        motion_end = false;
+                    } else {
+                        motion_end = true;
+                    }
+                }
+            }
+            var filtered_plate = $('.plate-area[rel=' + index + ']');
+            if (filtered_plate.css('display') == 'none') filtered_plate.show();
+            if (motion_end) {
+                if (refreshRoom.dialogue.motion_wait) {
+                    $('#next').trigger('click');
+                }
+                refreshRoom.dialogue.motion_wait = false;
+            }
+        }
+    </script>
+    <style>
+    </style>
+</body>
+
+</html>
