@@ -283,7 +283,7 @@ body#refresh_room {
     font-size: 11px;
     color: #1d1d1d;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     overflow: visible;
     white-space: nowrap;
     font-family: Helvetica, Arial, "ヒラギノ角ゴ ProN W3", "モリサワ 新ゴ R", Droid Sans, "メイリオ", sans-serif
