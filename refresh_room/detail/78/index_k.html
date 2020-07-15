@@ -1,0 +1,1292 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobage: footer-color" content="none">
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-2.2.2.min.js'></script>
+    <script src='../../../js/ilibrary.js'></script>
+    <script src='../../../js/pex-petit-1.2.0.js'></script>
+    <script src='../../../js/pex_common.js'></script>
+    <script src='../../../js/min/petit_manager.min.js'></script>
+    <script src='../../../js/min/refresh_room.min.js'></script>
+    <title>ｱｲﾄﾞﾙﾏｽﾀｰ ｼﾝﾃﾞﾚﾗｶﾞｰﾙｽﾞ </title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/refresh_room.css" media="all">
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+
+<body>
+    <article>
+        <section id="pageContainer" class="m-Btm0">
+            <div id="bg_space" class="large-size"></div>
+            <div id="jsEyeCatch">
+                <div style="margin-top:120px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
+                <div style="margin-top:-80px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/loading.gif' width="102" height="102"></div>
+            </div>
+            <div class="effect-container large-size">
+                <div id="animation-container"></div>
+                <div id="dialogue" class="animation"></div>
+                <div class="story" style="text-align:left;">
+                    <div class="comment-container">
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                    </div>
+                    <a href="#" class="story_btn" style="display:none;"></a>
+                </div>
+            </div>
+            <div id="name-plate" rel="3" class="large-size">
+                <div class="plate-area" rel="1">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/13.png'>
+                </div>
+                <div class="plate-area" rel="2">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/73.png'>
+                </div>
+                <div class="plate-area" rel="3">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/196.png'>
+                </div>
+            </div>
+            <a id="next" class="next large-size" href="#"></a>
+        </section>
+    </article>
+    <script type="text/javascript">
+        (function() {
+            var refreshRoom = window.refreshRoom || {};
+            var ua = navigator.userAgent;
+            var in_chome = false;
+            try {
+                in_chrome = (chrome in window);
+            } catch (e) {
+                in_chrome = false;
+            }
+            refreshRoom.is_pc = in_chrome || (window.chrome ? true : false) && (window.chrome.webstore) || ua.indexOf('ChromeApp') > -1 || ua.indexOf('AAWebview') > -1;
+            refreshRoom.old_os = ua.match(/(OS [3-7]|Android [2-4])/);
+            refreshRoom.is_multiply = false;
+            refreshRoom.returnUrl = '../../index.html';
+            refreshRoom.dialogueSwf = '../../petit_refresh_room_balloon_swf';
+            refreshRoom.data = {
+                "id": "78",
+                "refresh_room_id": "78",
+                "start_time": "2018%/12%/18 15:00:00",
+                "refresh_room_name": "貴方に贈る感謝のクリーン",
+                "idol_set_id_1": "141",
+                "idol_accessory_set_id_1": "7",
+                "idol_set_id_2": "155",
+                "idol_accessory_set_id_2": "7",
+                "idol_set_id_3": "167",
+                "idol_accessory_set_id_3": "7",
+                "idol_set_id_4": "",
+                "idol_accessory_set_id_4": "",
+                "idol_set_id_5": "",
+                "idol_accessory_set_id_5": "",
+                "idol_name_1": "五十嵐響子",
+                "idol_kana_1": "いがらしきょうこ",
+                "name_plate_id_1": "13",
+                "idol_name_2": "川島瑞樹",
+                "idol_kana_2": "かわしまみずき",
+                "name_plate_id_2": "73",
+                "idol_name_3": "冴島清美",
+                "idol_kana_3": "さえじまきよみ",
+                "name_plate_id_3": "196",
+                "idol_name_4": "",
+                "idol_kana_4": "",
+                "idol_name_5": "",
+                "idol_kana_5": "",
+                "idol_avatar": {
+                    "1": {
+                        "attribute": "1",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "\u97ff\u5b50",
+                        "image_url_list": {
+                            "expression_1061": "../../../js/petit_cg/expression/1061.js",
+                            "hair_10061": "../../../js/petit_cg/hair/10061.js",
+                            "costume_1_20061": "../../../js/petit_cg/costume/1/20061.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_20061": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20061",
+                                "accessory_name": "ボーダーワンピ・響子",
+                                "explanation": "ボーダー柄にふんわりワンピの響子の私服です。<br>女の子らしくかわいくキメますねっ♪",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "2": {
+                        "attribute": "2",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "瑞樹",
+                        "image_url_list": {
+                            "expression_1005": "../../../js/petit_cg/expression/1005.js",
+                            "hair_10005": "../../../js/petit_cg/hair/10005.js",
+                            "costume_1_20005": "../../../js/petit_cg/costume/1/20005.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_20005": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20005",
+                                "accessory_name": "カジュアルスーツ・瑞樹",
+                                "explanation": "瑞樹のカジュアルなスーツです。<br>パンツスタイルだけど、フリルで女性らしく♪",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "3": {
+                        "attribute": "3",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "清美",
+                        "image_url_list": {
+                            "expression_1108": "../../../js/petit_cg/expression/1108.js",
+                            "hair_10108": "../../../js/petit_cg/hair/10108.js",
+                            "costume_1_20108": "../../../js/petit_cg/costume/1/20108.js",
+                            "head_1_30108": "../../../js/petit_cg/head/1/30108.js"
+                        },
+                        "sub_type_list": {
+                            "head": {
+                                "head_1_30108": "../../../js/petit_cg/head/1/30108.js"
+                            },
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_20108": {
+                                "image_path": "http:%/%/sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20108",
+                                "accessory_name": "制服A・清美",
+                                "explanation": "清美が通う学校の制服です。<br>腕章は手作り! 身だしなみはきっちりと!",
+                                "type_id": "2"
+                            },
+                            "head_1_30108": {
+                                "image_path": "http:%/%/sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30108",
+                                "accessory_name": "銀縁眼鏡・清美",
+                                "explanation": "しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!",
+                                "type_id": "3"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": {
+                            "head_1_30108": {
+                                "image_path": "http:%/%/sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30108",
+                                "accessory_name": "銀縁眼鏡・清美",
+                                "explanation": "しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!",
+                                "type_id": "3"
+                            }
+                        }
+                    }
+                }
+            };
+            var default_swf = '../../petit_refresh_room_character_swf';
+            for (var i in refreshRoom.data.idol_avatar) {
+                refreshRoom.data.idol_avatar[i].swf = default_swf;
+            }
+            refreshRoom.detail = [{
+                "id": "1",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "out",
+                "motion3": "out",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "1",
+                "message": "후우.\n청소, 끝났다~♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "2",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "in_walk",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "급탕실, 깨끗하게 만들고 왔어요.\n싱크도 식기도, 삐까삐까♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "3",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "in_walk",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "이 쪽도 자료실 정리정돈,\n완료했습니다!\n한층 더 사용하기 편해졌을까 해요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "4",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "이걸로 청소는 끝났네.\n두 사람 다, 수고했어♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "5",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "수고하셨습니다~♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "6",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smile_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "역시 청소는 협력과 분담이네요~.\n척척 진행하고,\n상호체크로 놓치는 곳 없음!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "7",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "shy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그렇네요♪\n키요미 쨩, 말 걸어주셔서\n감사합니다!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "8",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아뇨아뇨!\n깔끔좋아동지가 사무소에서 만났고,\n각자, 시간에 여유도 있었다…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "9",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shout",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "이건 이제, 청소죠!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "10",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "light_joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그래서, 즉석 청소 유닛 결성이라고\n하는거네.\n후훗, 드라마틱♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "11",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smug",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "지금의 우리들을 이름 붙이자면……\n초☆청소계 아이돌 유닛\n『클린 퀸』! 입니다!!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "12",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "amazement",
+                "motion2": "amazement",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "클린 퀸!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "13",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아하핫、좋네요!\n우리들, 어떤 더러움도 놓치지 않아요♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "14",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smug",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "너희들의 청소는, 전~부 \n클린 퀸에 맡겨라♪\n……어머、의외로 열중할지도.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "15",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod_smile",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "네! 몹시 모양이 나오네요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "16",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smile_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그래도 사실, 신기하긴 하네요.\n평소에도 청소는 잘 되어 있는데,\n오늘은 스스로 하고 싶어져서요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "17",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "notice",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "음~……앗!\n12월이니까요, 분명!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "18",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "question_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그렇다, 는건?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "19",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "여기, 저희 모두가 올해\n신세졌던 장소가 아닌가요.\n그러니까…….",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "20",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "12월분의 감사를 담아,\n사무소에 대한 보답……이란 뜻이야.\n잘 알겠어, 그 기분.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "21",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "notice",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "과연!\n그건 납득입니다!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "22",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "light_joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "학교에서도, 학기말이 되면\n평소보다 확실하게 교사를\n청소했으니까요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "23",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "후훗, 키요미 쨩 다워♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "24",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "오늘이 클린 퀸의 결성이라면,\n본방은……대청소 날, 인가요?",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "25",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그 날을 위해, 자주\n청소 레슨을 거듭할까♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "26",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smug",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "방의 풍기 유지는, LIVE와 같아요.\n날마다 조금씩 축적해야죠!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "27",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그렇죠♪\n레슨 장소는 많이 있구요.",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "28",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "응, 이런 식으로.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "29",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……룬、룬룬루루룬♪\n소파는 매끈매끈 브러싱~♪\n언제나 부드럽고 청결 쿠션~♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "30",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "선반 안도~ 정리정돈~♪\n깔끔하고 보기 좋고 아름답게♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "31",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_left",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "조명 커버는~ 깨끗하게 큣큐♪\n밝은 방에 밝은 미소~♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "32",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "sing",
+                "motion2": "sing",
+                "motion3": "sing",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "즐거운 청소~♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "1",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "33",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shout",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그리고 다음은~♪\n프로듀서의 책상 위를~♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "34",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "notice",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "앗, 그건…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "35",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "angry",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "키요미 쨩, 그건 위험하다구요!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "36",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "panic",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "오오!? 그, 그런가요?\n더럽지는 않지만, 서류나 자료가\n수북히……. 청소가 필요한가 하고…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "37",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그게, 그건 그거고,\n무엇이 어디에 있는지 프로듀서 군\n본인은 알고 있는 것 같아.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "38",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그래요.\n그러니까, 그냥 놔둬요.\n업무에 방해가 되니까요.",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "39",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "과, 과연……. 확실히,\n클린 퀸이라고 해서, 사람이 일하는\n성역을 침범할 수는 없겠네요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "40",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod_smile",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "알겠습니다!\n그러면, 그 주변만이라도\n청소시켜 주세요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "41",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "좋아요.\n저도 찬성이에요♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "42",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "우후훗.\n그래도, 그 전에…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "43",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "question_right",
+                "motion2": "",
+                "motion3": "question_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "전에？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "44",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "한숨 돌리면서, 차 한잔.\n반짝반짝한 다기로 어때?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "45",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shout",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "네, 잘 마시겠습니다!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "46",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "저, 찻잔을 준비해올게요~♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "47",
+                "refresh_room_id": "29",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smug",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "청소의 피로……차와 과자로\n깨끗하게 싹 제거하자♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }];
+            petitManager.loaded_action = function() {
+                if (refreshRoom.is_multiply) $('.animation').css({
+                    zoom: "50%"
+                });
+                var margin = window.innerHeight - parseInt($('#bg_space > img').css('height'));
+                if (margin > 0) $('#pageContainer').css({
+                    "margin-top": margin * 0.5
+                });
+                var $effect_container = $('.effect-container');
+                var $dialogue = $('#dialogue');
+                var dialogue_top = parseInt($dialogue.css('top'));
+                var dialogue_ratio = refreshRoom.dialogue.scaleSizeCheck() / 320;
+                $dialogue.css('top', dialogue_top * dialogue_ratio);
+                if (!$effect_container.hasClass('large-size')) {
+                    $dialogue.css('top', dialogue_top * dialogue_ratio);
+                    var $animation = $('.animation:not(#dialogue)');
+                    var anime_top = parseInt($animation.css('top'));
+                    $animation.css('top', anime_top * dialogue_ratio);
+                }
+                $('#jsEyeCatch').hide();
+                refreshRoom.dialogue.startSwf();
+            };
+            petitManager.setWidth(refreshRoom.dialogue.scaleSizeCheck(refreshRoom.is_pc));
+            refreshRoom.bg_list = {
+                "1": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/image_sp/ui/refresh_room/bg/bg1.jpg",
+                "": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/image_sp/ui/refresh_room/bg/bg.jpg"
+            };
+            var image = new Image;
+            var multiply = refreshRoom.is_pc || window.devicePixelRatio >= 1.5 && !refreshRoom.old_os ? 0.5 : 1;
+            var size = refreshRoom.dialogue.scaleSizeCheck() * multiply;
+            var ratio = size / 320;
+            image.width = size;
+            var effect_container = $('.effect-container');
+            effect_container.css({
+                width: size,
+                height: size,
+                bottom: parseInt(effect_container.css('bottom')) * ratio
+            });
+            image.onload = function() {
+                $('#bg_space').append(image);
+                var height = $(this).css('height');
+                $(this).parent().css('height', height);
+                $(image).css('top', parseInt($(image).css('top')) * ratio);
+                $('#name-plate').css({
+                    "-webkit-transform": "scale(" + ratio + ")"
+                })
+                petitManager.setCharacters(refreshRoom.data.idol_avatar);
+                refreshRoom.dialogue.setMotion();
+            }
+            image.src = refreshRoom.bg_list[refreshRoom.detail[0].bg_image];
+            //console.log(refreshRoom);
+        })();
+
+        function playText() {
+            if (window.refreshRoom == void 0) return;
+            refreshRoom.dialogue.comment_deferred.resolve();
+        }
+
+        function motion_callback(index, motion) {
+            var motion_end = refreshRoom.dialogue.walking == 0;
+            if (motion.indexOf("in_walk") > -1) {
+                if (refreshRoom.dialogue.walking) {
+                    if (--refreshRoom.dialogue.walking > 0) {
+                        motion_end = false;
+                    } else {
+                        motion_end = true;
+                    }
+                }
+            }
+            var filtered_plate = $('.plate-area[rel=' + index + ']');
+            if (filtered_plate.css('display') == 'none') filtered_plate.show();
+            if (motion_end) {
+                if (refreshRoom.dialogue.motion_wait) {
+                    $('#next').trigger('click');
+                }
+                refreshRoom.dialogue.motion_wait = false;
+            }
+        }
+    </script>
+    <style>
+    </style>
+</body>
+
+</html>
