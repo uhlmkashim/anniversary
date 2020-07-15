@@ -1,0 +1,1566 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobage: footer-color" content="none">
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-2.2.2.min.js'></script>
+    <script src='../../../js/ilibrary.js'></script>
+    <script src='../../../js/pex-petit-1.2.0.js'></script>
+    <script src='../../../js/pex_common.js'></script>
+    <script src='../../../js/min/petit_manager.min.js'></script>
+    <script src='../../../js/min/refresh_room.min.js'></script>
+    <title>ｱｲﾄﾞﾙﾏｽﾀｰ ｼﾝﾃﾞﾚﾗｶﾞｰﾙｽﾞ </title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/refresh_room.css" media="all">
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+
+<body>
+    <article>
+        <section id="pageContainer" class="m-Btm0">
+            <div id="bg_space"></div>
+            <div id="jsEyeCatch">
+                <div style="margin-top:120px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
+                <div style="margin-top:-80px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/loading.gif' width="102" height="102"></div>
+            </div>
+            <div class="effect-container">
+                <div id="animation-container"></div>
+                <div id="dialogue" class="animation"></div>
+                <div class="story" style="text-align:left;">
+                    <div class="comment-container">
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                    </div>
+                    <a href="#" class="story_btn" style="display:none;"></a>
+                </div>
+            </div>
+            <div id="name-plate" rel="4">
+                <div class="plate-area" rel="1">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/154.png'>
+                </div>
+                <div class="plate-area" rel="2">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/196.png'>
+                </div>
+                <div class="plate-area" rel="3">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/88.png'>
+                </div>
+                <div class="plate-area" rel="4">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/90.png'>
+                </div>
+            </div>
+            <a id="next" class="next" href="#"></a>
+        </section>
+    </article>
+    <script type="text/javascript">
+        (function() {
+            var refreshRoom = window.refreshRoom || {};
+            var ua = navigator.userAgent;
+            var in_chome = false;
+            try {
+                in_chrome = (chrome in window);
+            } catch (e) {
+                in_chrome = false;
+            }
+            refreshRoom.is_pc = in_chrome || (window.chrome ? true : false) && (window.chrome.webstore) || ua.indexOf('ChromeApp') > -1 || ua.indexOf('AAWebview') > -1;
+            refreshRoom.old_os = ua.match(/(OS [3-7]|Android [2-4])/);
+            refreshRoom.is_multiply = false;
+            refreshRoom.returnUrl = '../../index.html';
+            refreshRoom.dialogueSwf = '../../petit_refresh_room_balloon_swf';
+            refreshRoom.data = {
+                "id": "147",
+                "refresh_room_id": "147",
+                "start_time": "2020\/06\/10 15:00:00",
+                "refresh_room_name": "いつの間にか共犯に！？",
+                "idol_set_id_1": "65",
+                "idol_accessory_set_id_1": "177",
+                "idol_set_id_2": "167",
+                "idol_accessory_set_id_2": "178",
+                "idol_set_id_3": "58",
+                "idol_accessory_set_id_3": "179",
+                "idol_set_id_4": "156",
+                "idol_accessory_set_id_4": "180",
+                "idol_set_id_5": "",
+                "idol_accessory_set_id_5": "",
+                "idol_name_1": "小関麗奈",
+                "idol_kana_1": "こせきれいな",
+                "name_plate_id_1": "154",
+                "idol_name_2": "冴島清美",
+                "idol_kana_2": "さえじまきよみ",
+                "name_plate_id_2": "196",
+                "idol_name_3": "橘ありす",
+                "idol_kana_3": "たちばなありす",
+                "name_plate_id_3": "88",
+                "idol_name_4": "八神マキノ",
+                "idol_kana_4": "やがみまきの",
+                "name_plate_id_4": "90",
+                "idol_name_5": "",
+                "idol_kana_5": "",
+                "idol_avatar": {
+                    "1": {
+                        "attribute": "3",
+                        "body_type": "2",
+                        "breast_size": "3",
+                        "short_name": "麗奈",
+                        "image_url_list": {
+                            "expression_1055": "../../../js/petit_cg/expression/1055.js",
+                            "hair_10055": "../../../js/petit_cg/hair/10055.js",
+                            "costume_2_23350": "../../../js/petit_cg/costume/2/23350.js",
+                            "hand_2_43038": "../../../js/petit_cg/hand/2/43038.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_2_23350": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23350",
+                                "accessory_name": "リトルデビル・ビビッドコーデ",
+                                "explanation": "パンチの効いた、動きやすいコーデです。<br>イタズラを仕掛ける時も、逃げる時にもピッタリ☆",
+                                "type_id": "2"
+                            },
+                            "hand_2_43038": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/43038",
+                                "accessory_name": "ウルトラレイナ様砲",
+                                "explanation": "レイナサマ特製のバズーカ型クラッカーです。<br>アタシの力を思い知りなさい!アーッハッハッ…ゲホゲホ",
+                                "type_id": "4"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "2": {
+                        "attribute": "3",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "\u6e05\u7f8e",
+                        "image_url_list": {
+                            "expression_1108": "../../../js/petit_cg/expression/1108.js",
+                            "hair_10108": "../../../js/petit_cg/hair/10108.js",
+                            "costume_1_23340": "../../../js/petit_cg/costume/1/23340.js",
+                            "hand_1_43282": "../../../js/petit_cg/hand/1/43282.js",
+                            "head_1_30108": "../../../js/petit_cg/head/1/30108.js"
+                        },
+                        "sub_type_list": {
+                            "head": {
+                                "head_1_30108": "../../../js/petit_cg/head/1/30108.js"
+                            },
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_23340": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23340",
+                                "accessory_name": "カジュアルキャンプコーデ",
+                                "explanation": "爽やかな印象のキャンプコーデです。<br>花柄デニムで、アクティブとキュートをバッチリ両立☆",
+                                "type_id": "2"
+                            },
+                            "hand_1_43282": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/43282",
+                                "accessory_name": "キャッツメガホン",
+                                "explanation": "キャッツのマークが貼られた、メガホンのレプリカです。<br>鳴り物禁止の球場では、取扱い注意!",
+                                "type_id": "4"
+                            },
+                            "head_1_30108": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30108",
+                                "accessory_name": "銀縁眼鏡・清美",
+                                "explanation": "しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!",
+                                "type_id": "3"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": {
+                            "head_1_30108": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30108",
+                                "accessory_name": "銀縁眼鏡・清美",
+                                "explanation": "しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!",
+                                "type_id": "3"
+                            }
+                        }
+                    },
+                    "3": {
+                        "attribute": "2",
+                        "body_type": "2",
+                        "breast_size": "3",
+                        "short_name": "ありす",
+                        "image_url_list": {
+                            "expression_1035": "../../../js/petit_cg/expression/1035.js",
+                            "hair_10035": "../../../js/petit_cg/hair/10035.js",
+                            "costume_2_23488": "../../../js/petit_cg/costume/2/23488.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_2_23488": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23488",
+                                "accessory_name": "イチゴ柄ラブリーワンピース",
+                                "explanation": "イチゴ柄が散りばめられたワンピースです。<br>キュートな柄で、お出かけももっと楽しく♪",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "4": {
+                        "attribute": "2",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "マキノ",
+                        "image_url_list": {
+                            "expression_1078": "../../../js/petit_cg/expression/1078.js",
+                            "hair_10078": "../../../js/petit_cg/hair/10078.js",
+                            "costume_1_23482": "../../../js/petit_cg/costume/1/23482.js",
+                            "head_1_30078": "../../../js/petit_cg/head/1/30078.js"
+                        },
+                        "sub_type_list": {
+                            "head": {
+                                "head_1_30078": "../../../js/petit_cg/head/1/30078.js"
+                            },
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_23482": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23482",
+                                "accessory_name": "春のお出かけ♪大人コーデ",
+                                "explanation": "上品な大人のお出かけコーデです。<br>春先のカジュアルなパーティーにも、フォーマルな集まりにも◎",
+                                "type_id": "2"
+                            },
+                            "head_1_30078": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30078",
+                                "accessory_name": "銀縁の眼鏡・マキノ",
+                                "explanation": "マキノの銀色フレームの眼鏡です。<br>視力? フフ…それは秘密よ。",
+                                "type_id": "3"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": {
+                            "head_1_30078": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/30078",
+                                "accessory_name": "銀縁の眼鏡・マキノ",
+                                "explanation": "マキノの銀色フレームの眼鏡です。<br>視力? フフ…それは秘密よ。",
+                                "type_id": "3"
+                            }
+                        }
+                    }
+                }
+            };
+            var default_swf = '../../petit_refresh_room_character_swf';
+            for (var i in refreshRoom.data.idol_avatar) {
+                refreshRoom.data.idol_avatar[i].swf = default_swf;
+            }
+            refreshRoom.detail = [{
+                "id": "1",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "out",
+                "motion3": "out",
+                "motion4": "out",
+                "motion5": "",
+                "bg_image": "1",
+                "message": "크크크…… 이제 조금 있으면 완성이네!\n울트라레이나님대포 개선의개선의개선판……\n모두, 이 위력에 놀라면 좋겠어!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "2",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "시험삼아 한발 쏴볼까!\n하나~둘……!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "3",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "이봐~! 거기~!\n풍기를 어지럽히지 마~!!",
+                "message_window_type": "jaggy",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "4",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "panic",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "뭐, 뭐야!?",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "5",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "in_walk",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "효과직빵!\n역시 규율을 바로잡으려면, 메가폰으로\n부르는 것이 좋네요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "6",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smug",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "놀라셨죠, 레이나 쨩!\n하지만, 덕분에 당신의 장난을\n미연에 멈출 수 있었어요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "7",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "trouble",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "하아? 라고 할까, 딱히 나,\n놀라거나 하지 않았어!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "8",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "하지만, 장난이 멈춘 건\n누가 보더라도 명백하죠!\n후후후!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "9",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "앞으로의 풍기체크는, 유키 씨에게\n빌린 이 메가폰을 적극적으로\n사용하는 것을 검토해야겠네요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "10",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "angry",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "읏……. 착한아이 키요미 주제에,\n이 레이나님에게 대들다니\n건방지네……!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "11",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "하지만, 메가폰은 나쁘지 않아.\n좀 빌려줘! 레이나 님의\n장난에 끼워줄게♪",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "12",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "우선 메가폰으로 말을 걸어서,\n상대를 위축시키는 거야!\n거기에 바주카로 타격하는거야!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "13",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smug",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아~ 핫핫하! 최고다!!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "14",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "angry",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "뭔가요, 그건!!\n그런 사용법, 절대 안됩니다!\n메가폰은 빌려줄 수 없어요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "15",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "in_walk",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "도대체 뭘 떠들고 있는 건가요?\n독서를 하는 사람도 있어요.\n조금 조용히 해주시겠어요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "16",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "notice",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "앗, 딱 알맞은 곳에!\n함께 레이나 쨩의 장난을\n멈춰요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "17",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "과연, 또 레이나 씨인가요….\n이번엔 뭘 하려고 하시나요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "18",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "흥! 듣고 놀라지 마!\n울트라레이나님대포 개선의개선의개선판이\n또 다른 진화를 이루는거야!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "19",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "tire",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "개선의개선의개선이라니……\n뭐, 이야기만은 들어주겠지만\n뭘 어떻게 개량한 건가요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "20",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그게, 놀라지 마세요.\n레이나 쨩은 메가폰과 바주카를\n합치려고 하는 거에요!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "21",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "angry",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "게다가,사람을 꽤나 놀래키는\n도구로 만들 생각이라구요!\n아앗, 그런 일따위 한심스러워!!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "22",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……사정은 파악했습니다.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "23",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smile_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그런데 레이나 씨. 그런 과장된\n장난으로 사람을 놀라게 하다니,\n좀 더 생각하는 쪽이 좋지 않을까요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "24",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "trouble",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "뭐야, 그 말투는.",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "25",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "분명히 장난칠 것 같은 사람이\n큰 도구를 가지고 있다면,\n경계당해서 성공률이 내려가지 않을까요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "26",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shock",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "에엣!?\n생각한다는 게, 성공률 이야기인가요!?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "27",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smug",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "자자. 저에게 맡겨주세요,\n키요미 씨. 레이나 씨의 장난을\n멈추기 위한 이야기니까요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "28",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "trouble",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그렇지만…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "29",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "레이나 씨, 알고 계신가요?\n사람의 놀라움은, 예상을 초월할 때\n생기는 것입니다.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "30",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "question_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "예상대로 움직인다면 장난이라\n할 수 없지 않을까요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "31",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "shy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그것도, 그렇네….\n그래도, 기습이라는 방책도 있고!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "32",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod_smile",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "네, 확실히 그렇네요.\n하지만, 그 기습……레이나 씨는\n벌써 여러 번 사용하고 있죠.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "33",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "어딘가에 숨어서 한다고 해도,\n사무소에는 사람이 많으니까, 누군가\n목격하면, 성공하기 어려울 거예요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "34",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "흠……과연 그렇네.\n머리가 잘 돌아가잖아.",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "35",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smug",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그건 감사해요.\n이해하셨다면\n묘한 장난은 그만두도록……",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "36",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "question_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그래서, 너라면, 그런 상황에서\n어떤 장난을 치는거야?",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "37",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "amazement",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "엣? 저요?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "38",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그래! 성공률이 낮은 미션도\n어렵지 않게 해내겠어.\n너, 그런거 좋아하지?",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "39",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "shy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그렇네요…….\n저라면 우선, 바주카는 키요미 씨에게\n맞추겠습니다.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "40",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shock",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "저 말인가요!?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "41",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "네. 이 사람은 장난 따위\n하지 않을거라는 생각을\n역수로 삼는 거예요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "42",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smug",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "헤, 좋은 방안 아냐♪\n재밌어졌어!\n바로, 합의하자고!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "43",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "trouble",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "잠깐 기다려주세요.\n방금은 그냥 이야기일 뿐,\n정말로 하는게 아니라…….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "44",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "in_walk",
+                "motion5": "",
+                "bg_image": "",
+                "message": "수고했어.\n뭔가 재밌는 얘기를 하고 있네.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "45",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "panic",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "마키노 씨! 아녜요!\n빌린 책의 지식을 악용하려고\n한 게 아니라…!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "46",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "question_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "내 책……이라고 하면,\n놀람에 대해 연구중일까?\n레이나의 모습도 있고.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "47",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "tire",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아뇨! 그……처음엔,\n레이나 씨의 장난을 멈추려는 이야기\n였어요. 그렇죠, 키요미 씨!",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "48",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "네, 그래요! 그게\n어느덧 장난을 성공시키기\n라는, 그런 얘기가 돼서….",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "49",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "notice",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아아, 그런 거야…. 레이나가\n가지고 있는 게, 이 사건의 바주카지?\n조금 보여줘도 괜찮을까?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "50",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "question_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "뭐야? 이상한 짓은 안하겠지?\n뭐 좋아. 힘껏 레이나님의\n최고 걸작을 칭찬하라!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "51",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "smile_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "고마워. 헤에…과연,\n정말 잘 했어. 발사음도\n테이프의 색과 양도 계산되어 있고.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "52",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smug",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "쿳쿳쿳, 그렇지!\n하지만, 마키노. 그렇게 칭찬해도\n아무것도 안나와!?",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "53",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "nod",
+                "motion5": "",
+                "bg_image": "",
+                "message": "아니, 그냥 진심이야.\n단지, 좀 더 생각할 필요가 있을 것 같아.\n그건 사실이라고 생각해.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "54",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "smile_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "예를 들어, 상대에게 어떤 효과를\n가져올 지 생각하고,\n실행할 상황을 세세하게 정한다던가.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "55",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "light_joy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "후흥, 뭐야 마키노. 장난이\n뭔지, 이해하고 있잖아♪\n좀 더 이야기를 들려줘!",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "56",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "상세한 상황, 인가요…. 그런 일이라면, 저도\n좀 더 잘 생각해볼게요.",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "57",
+                "refresh_room_id": "147",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "angry",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "그럼 저도……라니, 여러분!\n대화하는 것은 좋지만, 정말로\n장난치는 것은 안되니까요!?",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }];
+            petitManager.loaded_action = function() {
+                if (refreshRoom.is_multiply) $('.animation').css({
+                    zoom: "50%"
+                });
+                var margin = window.innerHeight - parseInt($('#bg_space > img').css('height'));
+                if (margin > 0) $('#pageContainer').css({
+                    "margin-top": margin * 0.5
+                });
+                var $effect_container = $('.effect-container');
+                var $dialogue = $('#dialogue');
+                var dialogue_top = parseInt($dialogue.css('top'));
+                var dialogue_ratio = refreshRoom.dialogue.scaleSizeCheck() / 320;
+                $dialogue.css('top', dialogue_top * dialogue_ratio);
+                if (!$effect_container.hasClass('large-size')) {
+                    $dialogue.css('top', dialogue_top * dialogue_ratio);
+                    var $animation = $('.animation:not(#dialogue)');
+                    var anime_top = parseInt($animation.css('top'));
+                    $animation.css('top', anime_top * dialogue_ratio);
+                }
+                $('#jsEyeCatch').hide();
+                refreshRoom.dialogue.startSwf();
+            };
+            petitManager.setWidth(refreshRoom.dialogue.scaleSizeCheck(refreshRoom.is_pc));
+            refreshRoom.bg_list = {
+                "1": "../../../image_sp/ui/refresh_room/bg/bg1.jpg",
+                "": "../../../image_sp/ui/refresh_room/bg/bg.jpg"
+            };
+            var image = new Image;
+            var multiply = refreshRoom.is_pc || window.devicePixelRatio >= 1.5 && !refreshRoom.old_os ? 0.5 : 1;
+            var size = refreshRoom.dialogue.scaleSizeCheck() * multiply;
+            var ratio = size / 320;
+            image.width = size;
+            var effect_container = $('.effect-container');
+            effect_container.css({
+                width: size,
+                height: size,
+                bottom: parseInt(effect_container.css('bottom')) * ratio
+            });
+            image.onload = function() {
+                $('#bg_space').append(image);
+                var height = $(this).css('height');
+                $(this).parent().css('height', height);
+                $(image).css('top', parseInt($(image).css('top')) * ratio);
+                $('#name-plate').css({
+                    "-webkit-transform": "scale(" + ratio + ")"
+                })
+                petitManager.setCharacters(refreshRoom.data.idol_avatar);
+                refreshRoom.dialogue.setMotion();
+            }
+            image.src = refreshRoom.bg_list[refreshRoom.detail[0].bg_image];
+            //console.log(refreshRoom);
+        })();
+
+        function playText() {
+            if (window.refreshRoom == void 0) return;
+            refreshRoom.dialogue.comment_deferred.resolve();
+        }
+
+        function motion_callback(index, motion) {
+            var motion_end = refreshRoom.dialogue.walking == 0;
+            if (motion.indexOf("in_walk") > -1) {
+                if (refreshRoom.dialogue.walking) {
+                    if (--refreshRoom.dialogue.walking > 0) {
+                        motion_end = false;
+                    } else {
+                        motion_end = true;
+                    }
+                }
+            }
+            var filtered_plate = $('.plate-area[rel=' + index + ']');
+            if (filtered_plate.css('display') == 'none') filtered_plate.show();
+            if (motion_end) {
+                if (refreshRoom.dialogue.motion_wait) {
+                    $('#next').trigger('click');
+                }
+                refreshRoom.dialogue.motion_wait = false;
+            }
+        }
+    </script>
+    <style>
+    </style>
+</body>
+
+</html>
