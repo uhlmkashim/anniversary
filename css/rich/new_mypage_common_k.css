@@ -984,6 +984,7 @@ section {
 .naviArea .Wrap {
     width: 230px;
     min-height: 90px;
+    margin-left: 10px;
     text-align: left;
     position: relative
 }
@@ -1004,7 +1005,6 @@ section {
     border: 3px solid #006aff;
     color: #1d1d1d;
     padding: 5px;
-    left: -12px;
     border-radius: 10px;
     min-height: 74px;
     word-break: break-all;
