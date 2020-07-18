@@ -2393,6 +2393,10 @@ section {
     margin-bottom: 0
 }
 
+.infortext_derepo {
+    text-align: right
+}
+
 .information_light._in_frame {
     border: none !important;
     background: none !important;
