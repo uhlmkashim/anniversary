@@ -989,9 +989,9 @@ section {
 }
 
 .naviArea .Wrap_derepo {
-    width: 230px;
+    width: 225px;
     min-height: 90px;
-    margin-left: 10px;
+    margin-left: 5px;
     text-align: left;
     position: relative
 }
