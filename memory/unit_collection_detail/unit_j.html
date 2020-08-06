@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../../js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 000000001;
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error%3Fl_frm%3DMemory_detail_1%26rnd%3D134117581";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="../../js/underscore-min.js"></script>
+    <script src="../../js/require.js"></script>
+    <script src="../../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "../../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../../js/movieclip-0.7.1.min.js",
+                createjs: "../../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/anniversary/memory/unit');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+</head>
+
+<body id="memory" class="detail">
+    <div id="top" class="page_container jsOnBtn">
+        <style type="text/css">
+            .comments {
+                min-height: 115px;
+                text-align: left;
+                color: #1d1d1d;
+                padding: 25px 20px 10px;
+                position: relative;
+                top: -50px;
+            }
+
+            .comments.cute {
+                background: url('../../image_sp/ui/event_memory/cute_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.cool {
+                background: url('../../image_sp/ui/event_memory/cool_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.passion {
+                background: url('../../image_sp/ui/event_memory/passion_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .icon_navi {
+                width: auto;
+                margin: 0 13px;
+                padding: 8px 0;
+                background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 130, from(#222), to(#333));
+                -webkit-border-radius: 6px;
+            }
+
+            .cover {
+                height: 370px;
+            }
+
+            .exBox {
+                width: 320px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            a.inline {
+                width: 300px;
+                height: 70px;
+                color: #1d1d1d;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .exArea {
+                width: 260px;
+                margin: 10px auto 0;
+                padding: 0;
+                border: 2px solid #b4d5f4;
+                background: #1d1d1d;
+                z-index: 10;
+                color: #ffffff;
+                line-height: 140%;
+                -webkit-border-radius: 8px;
+            }
+
+            .exArea h3 {
+                background: #17285c;
+                -webkit-border-top-left-radius: 8px;
+                -webkit-border-top-right-radius: 8px;
+                padding: 10px 0;
+            }
+
+            .check_close_btn {
+                top: -10px;
+                width: 37px;
+                height: 37px;
+                right: 20px;
+                display: block;
+            }
+
+            .m-12px {
+                margin-top: -12px;
+            }
+
+            .appear_idol_area .appear_idol_bg {
+                position: relative;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_chara {
+                position: absolute;
+                top: -15px;
+                left: 0;
+                z-index: 1;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_title_area {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                z-index: 2;
+                width: 320px;
+                height: 36px;
+            }
+
+            .appear_idol_area .appear_idol_title_bg {
+                position: relative;
+                background-image: url('../../image_sp/ui/event_memory/appear_idol_title_bg.png');
+                background-size: 320px;
+                background-repeat: no-repeat;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: transparent;
+                padding-left: 34px;
+                -webkit-mask-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .appear_idol_area .appear_idol_title_text {
+                position: relative;
+                top: 2px;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: #1d1d1d;
+                padding-left: 34px;
+                text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
+            }
+
+            .appear_idol_area .appear_idol_title_text._line_2 {
+                top: -1px;
+                font-size: 12px;
+            }
+        </style>
+    <link rel="stylesheet" type="text/css" href="../../css/rich/memory.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/rich/event_carnival.css" media="all">
+    <section class="area_story_collection_tab  m-Btm8">
+        <div class="selectArea type_02  m-Btm8">
+            <form action="#" name="area_select_form" method="post">
+                <div class="area-btn-common _base-width">
+                    <select name="js_area_switch" id="js_area_switch" class="search_pulldown_1_5" style="font-size:12px;">
+                        <option value="1">로얄</option>
+                        <option value="2">도리페스</option>
+                        <option value="3">투어</option>
+                        <option value="4">그 외</option>
+                    </select>
+                    <a id="jsAreaSwitchBtn" class="btn_decision_sub_line_3">
+                        表示する
+                    </a>
+                </div>
+            </form>
+        </div>
+        <h2 id="area_title_1" class="title_img_blue" style="margin:0;">
+            <div>로얄</div>
+        </h2>
+        <h2 id="area_title_2" class="title_img_blue" style="margin:0;display:none">
+            <div>도리페스</div>
+        </h2>
+        <h2 id="area_title_3" class="title_img_blue" style="margin:0;display:none">
+            <div>투어</div>
+        </h2>
+        <h2 id="area_title_4" class="title_img_blue" style="margin:0;display:none">
+            <div>그 외</div>
+        </h2>
+        <style>
+            .unit_collection_blank .event_story_side_lock {
+                width: 28px;
+                height: 12px;
+                background-image: url(../../image_sp/event/1926/unit_skit_locked.png);
+                background-size: 28px 12px;
+                background-position: 0 0;
+            }
+
+            .unit_collection .event_story_side {
+                width: 28px;
+                height: 12px;
+                background-image: url(../../image_sp/event/1926/unit_skit.png);
+                background-size: 28px 12px;
+                background-position: 0 0;
+            }
+        </style>
+        <div id="area_tab_1" class="t-Cnt">
+            <a href='840/102/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>트랭퀼 위스퍼</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/840/unit/840102.png'>
+                </div>
+            </a>
+        </div>
+        <div id="area_tab_2" class="t-Cnt" style="display:none">
+            <a href='755/034/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>블루 미라주</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/755/unit/755034.png'>
+                </div>
+            </a>
+            <a href='755/072/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>서머 베케이션<br>메모리얼</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/755/unit/755072.png'>
+                </div>
+            </a>
+            <a href='755/073/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>끝나지 않은<br>바다의 판타지아</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/755/unit/755073.png'>
+                </div>
+            </a>
+        </div>
+        <div id="area_tab_3" class="t-Cnt" style="display:none">
+            <a href='840/102/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>트랭퀼 위스퍼</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/840/unit/840102.png'>
+                </div>
+            </a>
+        </div>
+        <div id="area_tab_4" class="t-Cnt" style="display:none">
+            <a href='840/102/1.html' class="unit_collection jsOnDesignBtn" style="">
+                <div class="event_story_title">
+                    <p>트랭퀼 위스퍼</p>
+                </div>
+                <div class="event_story_chara">
+                    <img src='../../image_sp/event_flash/840/unit/840102.png'>
+                </div>
+            </a>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(function(){
+            $('#jsAreaSwitchBtn').on('click', function(){
+                $("[id^='area_tab_']").hide();
+                $("[id^='area_title_']").hide();
+                $('#area_tab_' + $('#js_area_switch').val()).show();
+                $('#area_title_' + $('#js_area_switch').val()).show();
+                return false;
+            }).trigger("click");
+        });
+    </script>
+    <script src="../../js/ilibrary.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('#story_collection_tab_sub').tab_switch({
+            contents: ".area_tab",
+            start: 1 + 0
+        });
+        $('#story_collection_tab').tab_switch({
+            tabs: "[class^='tab_line_']",
+            contents: ".area_story_collection_tab",
+            start: 0
+        });
+    </script>
+    <img src="../../image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm8"><br>
+    <a href='../../mypage.html'>
+        <div class="backLink">마이스튜디오</div>
+    </a>
+    <script type="text/javascript">
+        $(function() {
+            $('form').bind('submit', function() {
+                var $submit = $("input[type=submit], input[type=reset]");
+                for (var i = 0; i < $submit.length; i++) {
+                    if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).val('送信中');
+                        $submit.eq(i).prop('disabled', true);
+                        var prev = $submit.eq(i).prev();
+                        if (prev.hasClass('btn_text')) {
+                            prev.text('送信中');
+                            if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                $submit.eq(i).parent().removeClass('_line_2');
+                            }
+                        }
+                    } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).prop('disabled', true);
+                    }
+                    if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                        $submit.eq(i).parent().css({
+                            "opacity": "0.5"
+                        });
+                    }
+                }
+                $(".livebutton input[type='submit']").val('').css({
+                    "opacity": "0.5"
+                }).prop('disabled', true);
+                var $imagesub = $("input[type='image']");
+                $imagesub.prop('disabled', true);
+                for (var i = 0; i < $imagesub.length; i++) {
+                    if (!$imagesub.eq(i).attr('class')) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                        continue;
+                    }
+                    if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                    } else {
+                        $imagesub.eq(i).css({
+                            "opacity": "1"
+                        });
+                    }
+                }
+                setTimeout(function() {
+                    $submit.prop('disabled', false).parent().css({
+                        "opacity": "1"
+                    });
+                    $imagesub.prop('disabled', false).css({
+                        "opacity": "1"
+                    });
+                    $(".livebutton input[type='submit']").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $(".submit a").click(function() {
+                $(this).click(function() {
+                    return false;
+                })
+                $(".submit").find("img").css({
+                    "opacity": "0.5"
+                });
+                setTimeout(function() {
+                    $(this).click(function() {
+                        return true;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $('body').on("click", '.stop-repeat-link', function(e) {
+                var self = $('.stop-repeat-link');
+                self.css({
+                    'pointer-events': 'none',
+                    'opacity': 0.6
+                });
+                setTimeout(function() {
+                    self.css({
+                        'pointer-events': 'auto',
+                        'opacity': 1
+                    });
+                }, 2500);
+            });
+        });
+    </script>
+    <footer>
+        <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+            <div></div>
+        </a>
+    </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
