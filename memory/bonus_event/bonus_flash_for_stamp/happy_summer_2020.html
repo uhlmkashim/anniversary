@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href='../../css/game/pex.css' media="all">
-    <script src='../../js/jquery-1.9.1.min.js'></script>
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-1.9.1.min.js'></script>
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
@@ -48,17 +48,17 @@
             window.console.log = function() {};
         })();
     </script>
-    <script type='text/javascript' src='../../js/createjs.min.js'></script>
-    <script type='text/javascript' src='../../js/app_sound.js'></script>
-    <script type='text/javascript' src='../../js/cjs/login_bonus/stamp/login_campaign_stamp_summer2020/login_campaign_stamp_summer2020.js'></script>
+    <script type='text/javascript' src='../../../js/createjs.min.js'></script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <script type='text/javascript' src='../../../js/cjs/login_bonus/stamp/login_campaign_stamp_summer2020/login_campaign_stamp_summer2020.js'></script>
     <script type='text/javascript'>
         var se_flg = 0,
             bgm_flg = 0,
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='../../js/app_sound.js'></script>
-    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
 </head>
 
 <body style="margin:0px;">
@@ -70,7 +70,7 @@
         var image_server = "";
         var base_url = "";
         window.file_name = "login_campaign_stamp_summer2020"; // createjs の本体ファイルを定義
-        window.dir_name = "../../image_sp/cjs/login_bonus/stamp/login_campaign_stamp_summer2020/";
+        window.dir_name = "../../../image_sp/cjs/login_bonus/stamp/login_campaign_stamp_summer2020/";
         window.replace_images = {
             "replace_item_m_1": "item_flash/m/many.png",
             "replace_item_m_2": "item_flash/m/icon_petit_money.png",
@@ -180,7 +180,7 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = '../../image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
@@ -282,7 +282,7 @@
     <script>
         (function() {
             window.viewer_id = 000000001;
-            var _url = "../../game_error/report_js_error%3Fl_frm%3DBonus_event_bonus_flash_for_stamp_common_1%26rnd%3D447792754";
+            var _url = "../../../game_error/report_js_error%3Fl_frm%3DBonus_event_bonus_flash_for_stamp_common_1%26rnd%3D447792754";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
