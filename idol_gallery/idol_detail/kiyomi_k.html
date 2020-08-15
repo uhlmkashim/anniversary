@@ -571,47 +571,36 @@ kg
 <div class="data_list line">
 <div class="wrap">
 <div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
-</div>
-</div>
-<% } %>
-<% } %>
-<% } %>
-</section>
-<% if(trade_prohibition.is_trade_limit) { %>
-<div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
-このアイドルはトレード、フリートレード、贈り物ができません。
-</div>
-<% } %>
-<div class="area-btn-common _base-width">
-<% if(!trade_prohibition.is_trade_limit) { %>
-<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a>
-<% } %>
-<% if(is_exist_archive) { %>
-<a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a>
-<% } %>
-</div>
-<% if (event) { %>
-<h3 class="title_hanyo m-Top8 m-Btm8">
-<div>등장 이벤트</div>
-</h3>
-<% Object.keys(event).forEach(function (key) { %>
-<div class="t-Cnt m-Btm5">
-<% if (event[key].event_name.indexOf("<br />") != -1) { %>
-<%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
-<%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
-<% } else if (key == 1908) { %>
-<span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
-<% } else { %>
-<%- event[key].event_name %>
-<% } %>
-</div>
-<div class="area-btn-common _base-width m-Btm8">
-<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
-<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
-</div>
-<% }); %>
-<% } %>
-</script>
+                    </div>
+                </div>
+                <% } %>
+                <% } %>
+                <% } %>
+            </section>
+            <% if(trade_prohibition.is_trade_limit) { %>
+            <% } %>
+            <% if (event) { %>
+            <h3 class="title_hanyo m-Top8 m-Btm8">
+                <div>등장 이벤트</div>
+            </h3>
+            <% Object.keys(event).forEach(function (key) { %>
+            <div class="t-Cnt m-Btm5">
+                <% if (event[key].event_name.indexOf("<br />") != -1) { %>
+                <%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
+                <%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
+                <% } else if (key == 1908) { %>
+                <span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
+                <% } else { %>
+                <%- event[key].event_name %>
+                <% } %>
+            </div>
+            <div class="area-btn-common _base-width m-Btm8">
+                <a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
+                <a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
+            </div>
+            <% }); %>
+            <% } %>
+        </script>
         <script type="text/template" id="popup-expansion-template">
             <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
     <div class="js_current rotate_img" <% if(idol_image_mask_l_p || idol_image_mask_l) { %>twinkle="1"<% } %> style="width:100%">
