@@ -286,18 +286,18 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">プロフィール</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">セリフ一覧</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">エピソード</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">アイドル情報</a>
 </div>
 </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
-<a name="tab_3" href="#" style='display:none;'>에피소드</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
+<a name="tab_1" class="tab_line_3 tab_text" href="#">プロフィール</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">セリフ一覧</a>
+<a name="tab_3" href="#" style='display:none;'>エピソード</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">アイドル情報</a>
 </div>
 </script>
         <script type="text/template" id="idol-base-template">
@@ -316,7 +316,7 @@
 <% if(idol_detail.is_exist_archive) { %>
 <a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
 <% } else { %>
-<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_l.jpg%3Fv%3D20170222083833' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
 <% } %>
 </div>
 <div class="t-Rft" style="width:50%">
@@ -3977,24 +3977,24 @@ kg
                 }
             };
             var type_names = {
-                "idol": "아이돌코멘트",
-                "my": "마이스튜디오",
-                "my_max": "마이스튜디오(친애도MAX)",
-                "work": "영업",
-                "work_love_up": "영업(친애도UP)",
-                "work_max": "영업(친애도MAX)",
-                "live": "LIVE배틀",
-                "love_max": "친애도MAX연출"
+                "idol": "アイドルコメント",
+                "my": "マイスタジオ",
+                "my_max": "マイスタジオ(親愛度MAX)",
+                "work": "お仕事",
+                "work_love_up": "お仕事(親愛度UP)",
+                "work_max": "お仕事(親愛度MAX)",
+                "live": "LIVEバトル",
+                "love_max": "親愛度MAX演出"
             };
             var category_names = {
-                "greeting": "인사",
-                "work": "영업",
-                "love_max": "친애도MAX"
+                "greeting": "あいさつ",
+                "work": "お仕事",
+                "love_max": "親愛度MAX"
             };
             var conditions_names = {
-                "none": "조건없음",
-                "get_idol": "아이돌이 소속되면 볼 수 있습니다.",
-                "love_max": "친애도를 MAX로 하면 볼 수 있습니다."
+                "none": "条件無し",
+                "get_idol": "アイドルが所属すると閲覧できます",
+                "love_max": "親愛度をMAXにすると閲覧できます"
             };
             var comment_tab_start = null;
             var show_premium = true;
@@ -4009,7 +4009,7 @@ kg
         <div class="m-Top8 m-Btm8">
             <img src="../../image_sp/ui/line_hoshi.jpg" width="100%">
         </div>
-        <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">극장에서 검색</a>
+        <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">劇場で検索</a>
         <a href='../../item/show_premium_card_cjs/90/kiyomi_main.html' class="btn_normal_line_2 m-Cnt m-Btm12">키요미 키라펜 연출</a>
         <a href='../../mypage.html'>
             <div class="backLink">마이 페이지로</div>
