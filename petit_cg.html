@@ -2697,8 +2697,8 @@
                         eyeCatch.offCount();
                     } else {
                         $.ajax({
-                                type: 'POST',
-                                url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/ajax_idol_status%3Fl_frm%3DPetit_cg_index_1%26rnd%3D492470726',
+                                type: 'get',
+                                url: 'petit_cg/ajax_idol_status.json',
                                 dataType: 'json',
                                 data: {
                                     "deck_position": chara()
@@ -2788,8 +2788,8 @@
                         $('#jsCoordinateSort').val(0);
                     }
                     $.ajax({
-                            type: 'POST',
-                            url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/ajax_coordinate_list%3Fl_frm%3DPetit_cg_index_1%26rnd%3D897921256',
+                            type: 'get',
+                            url: 'petit_cg/ajax_coordinate_list.json',
                             dataType: 'json',
                             data: {
                                 "type": type,
@@ -2873,8 +2873,8 @@
                         return false;
                     }
                     $.ajax({
-                            type: 'POST',
-                            url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/petit_cg/ajax_coordinate%3Fl_frm%3DPetit_cg_index_1%26rnd%3D109265222',
+                            type: 'get',
+                            url: 'petit_cg/ajax_coordinate.json',
                             dataType: 'json',
                             data: {
                                 "itemid_list": items,
