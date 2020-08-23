@@ -2000,8 +2000,6 @@
                 }
 
                 function lesson_campaign_view(value, start_time, finish_time, lesson_complete_flag) {
-                    var regexp_start_time = /0?(\d+?/)0?(\d+?)( .+):\d+$/;
-                    var regexp_finish_time = /\d\d\d\d/0?(\d+?/)0?(\d+?)( .+):\d+$/;
                     if (value > 0) {
                         $('.efficiency').text(value);
                         $('.efficiency_period').text("期間：" + start_time.replace(regexp_start_time, "$1$2$3") + " ～ " + finish_time.replace(regexp_finish_time, "$1$2$3"));
