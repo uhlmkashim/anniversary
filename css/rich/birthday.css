@@ -1,0 +1,646 @@
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.bg_footer {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -915px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 24px
+}
+
+.bg_none {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -422px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 320px
+}
+
+.button_long {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -940px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 136px;
+    height: 38px
+}
+
+.button_short {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -979px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 88px;
+    height: 38px
+}
+
+.contents_birthday_bg {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 0;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 340px
+}
+
+.contents_next_birthday {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -834px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 310px;
+    height: 80px
+}
+
+.line_bottom {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -341px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 80px
+}
+
+.line_top {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -743px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 90px
+}
+
+.name_cool {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1053px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px
+}
+
+.name_cute {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1088px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px
+}
+
+.name_passion {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1018px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px
+}
+
+.name_trainer {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1123px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px
+}
+
+body {
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png%3F1285858800);
+    background-size: 7px 7px
+}
+
+.birthday_contents {
+    position: relative;
+    margin-top: -14px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(../../image_sp/birthday/bg.png);
+    background-size: 25px
+}
+
+.birthday_contents:after {
+    position: absolute;
+    bottom: -6px;
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -915px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 24px;
+    content: ''
+}
+
+.birthday_contents._none {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -422px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 320px
+}
+
+.contents_birthday_bg {
+    position: absolute;
+    top: 0
+}
+
+.contents_birthday_bg:before {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -743px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 90px;
+    content: ''
+}
+
+.contents_birthday {
+    position: relative;
+    height: 340px
+}
+
+.contents_birthday:after {
+    position: absolute;
+    z-index: 1;
+    bottom: -12px;
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -341px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 320px;
+    height: 80px;
+    content: ''
+}
+
+.contents_birthday .idol_imgs_area {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 332px
+}
+
+.contents_birthday .idol_imgs_area .img_area {
+    position: relative;
+    top: -50px
+}
+
+.contents_birthday .idol_imgs_area .img_area ._img {
+    position: absolute;
+    width: 400px;
+    height: 500px
+}
+
+.contents_birthday .idol_imgs_area .img_area ._img img {
+    width: 100%
+}
+
+.contents_birthday .idol_imgs_area .img_area ._img:nth-of-type(1) {
+    z-index: 3
+}
+
+.contents_birthday .idol_imgs_area .img_area ._img:nth-of-type(2) {
+    z-index: 2
+}
+
+.contents_birthday .idol_imgs_area .img_area ._img:nth-of-type(3) {
+    z-index: 1
+}
+
+.contents_birthday .idol_names_area {
+    position: absolute;
+    z-index: 2;
+    bottom: 56px;
+    left: 8px;
+    width: 304px;
+    height: 34px
+}
+
+.contents_birthday .idol_names_area .name_area {
+    position: absolute;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg)
+}
+
+.contents_birthday .idol_names_area .name_area._attr_1 {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1088px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px;
+    text-shadow: 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073, 0px 0px 3px #ff0073
+}
+
+.contents_birthday .idol_names_area .name_area._attr_2 {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1053px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px;
+    text-shadow: 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff, 0px 0px 3px #006aff
+}
+
+.contents_birthday .idol_names_area .name_area._attr_3 {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1018px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px;
+    text-shadow: 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0, 0px 0px 3px #fa0
+}
+
+.contents_birthday .idol_names_area .name_area._attr_4 {
+    display: block;
+    background: url(../../image_sp/birthday/sprite-s5063e5e784.png) no-repeat 0 -1123px;
+    -webkit-background-size: 320px 1157px;
+    background-size: 320px 1157px;
+    width: 94px;
+    height: 34px;
+    text-shadow: 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090, 0px 0px 3px #090
+}
+
+.contents_birthday .idol_names_area ._name {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 72px;
+    font-size: 12px;
+    text-align: center
+}
+
+.contents_birthday .buttons_area {
+    position: absolute;
+    z-index: 2;
+    bottom: 8px;
+    left: 8px;
+    width: 304px;
+    height: 38px
+}
+
+.contents_birthday .buttons_area ._button {
+    position: absolute
+}
+
+.contents_birthday._1 .img_area {
+    left: 50%;
+    margin-left: -200px
+}
+
+.contents_birthday._1 .name_area {
+    left: 50%;
+    margin-left: -50px
+}
+
+.contents_birthday._1 ._button {
+    left: 50%;
+    margin-left: -68px
+}
+
+.contents_birthday._2 .img_area {
+    width: 288px;
+    margin-left: 16px
+}
+
+.contents_birthday._2 .img_area ._img:nth-of-type(1) {
+    left: 25%;
+    margin-left: -200px
+}
+
+.contents_birthday._2 .img_area ._img:nth-of-type(2) {
+    left: 75%;
+    margin-left: -200px
+}
+
+.contents_birthday._2 .idol_names_area {
+    width: 288px;
+    left: 16px
+}
+
+.contents_birthday._2 .idol_names_area .name_area:nth-of-type(1) {
+    left: 25%;
+    margin-left: -50px
+}
+
+.contents_birthday._2 .idol_names_area .name_area:nth-of-type(2) {
+    left: 75%;
+    margin-left: -50px
+}
+
+.contents_birthday._2 .buttons_area {
+    width: 288px;
+    left: 16px
+}
+
+.contents_birthday._2 .buttons_area ._button:nth-of-type(1) {
+    left: 25%;
+    margin-left: -68px
+}
+
+.contents_birthday._2 .buttons_area ._button:nth-of-type(2) {
+    left: 75%;
+    margin-left: -68px
+}
+
+.contents_birthday._3 .img_area {
+    width: 280px;
+    margin-left: 20px;
+    top: -40px
+}
+
+.contents_birthday._3 .img_area ._img {
+    width: 360px;
+    height: 450px
+}
+
+.contents_birthday._3 .img_area ._img:nth-of-type(1) {
+    left: 15%;
+    margin-left: -180px
+}
+
+.contents_birthday._3 .img_area ._img:nth-of-type(2) {
+    left: 50%;
+    margin-left: -180px
+}
+
+.contents_birthday._3 .img_area ._img:nth-of-type(3) {
+    right: 15%;
+    margin-right: -180px
+}
+
+.contents_birthday._3 .idol_names_area {
+    width: 288px;
+    left: 16px
+}
+
+.contents_birthday._3 .idol_names_area .name_area:nth-of-type(1) {
+    left: 0
+}
+
+.contents_birthday._3 .idol_names_area .name_area:nth-of-type(2) {
+    left: 50%;
+    margin-left: -47px
+}
+
+.contents_birthday._3 .idol_names_area .name_area:nth-of-type(3) {
+    right: 0
+}
+
+.contents_birthday._3 .buttons_area {
+    width: 280px;
+    left: 20px
+}
+
+.contents_birthday._3 .buttons_area ._button:nth-of-type(1) {
+    left: 0
+}
+
+.contents_birthday._3 .buttons_area ._button:nth-of-type(2) {
+    left: 50%;
+    margin-left: -44px
+}
+
+.contents_birthday._3 .buttons_area ._button:nth-of-type(3) {
+    right: 0
+}
+
+.contents_next_birthday {
+    position: relative;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.birthday_contents._none .contents_next_birthday {
+    position: absolute;
+    left: 8px;
+    bottom: 24px;
+    margin-top: 0
+}
+
+.contents_next_birthday .text_area {
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+    width: 110px;
+    height: 38px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #1d1d1d;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff
+}
+
+.contents_next_birthday .text_area ._date {
+    color: #ff2cf8
+}
+
+.contents_next_birthday .idols_area {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 158px;
+    height: 50px
+}
+
+.contents_next_birthday .idols_area .img_area {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contents_next_birthday .idols_area .img_area ._img {
+    display: inline-block;
+    width: 50px;
+    text-align: center
+}
+
+.contents_next_birthday .idols_area .img_area ._img:not(:first-of-type) {
+    margin-left: 4px
+}
+
+.contents_next_birthday .idols_area._1 .img_area {
+    width: 50px
+}
+
+.contents_next_birthday .idols_area._2 .img_area {
+    width: 104px
+}
+
+.contents_next_birthday .idols_area._3 .img_area {
+    width: 158px
+}
