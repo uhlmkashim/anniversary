@@ -44,26 +44,43 @@
 </head>
     
 <body id="memory" class="detail">
+    <section class="t-Cnt">
     <div id="top" class="page_container jsOnBtn">
         <input id="delay" type="hidden" value="0">
         <h2 class="title_img_blue" style="margin:0;">
             <div>2020</div>
         </h2>
         <div class="area_birthday jsOnBanner">
-          <a href="clarice2020.html" class="banner_birthday_renewal area_banner_wrap offBanner">
-        <div class="text_area">8월 26일</div>
-        <div class="idol_lbirthday">
-            <ul>
-                <li><img src="../image_sp/card/xs/clarice_01.jpg" width="30"></li>
-            </ul>
+                <a href="clarice2020.html" class="banner_birthday_renewal area_banner_wrap offBanner">
+                <div class="text_area">8월 26일</div>
+                <div class="idol_lbirthday">
+                    <ul>
+                        <li><img src="../image_sp/card/xs/clarice_01.jpg" width="30"></li>
+                    </ul>
+                </div>
+                <div class="idol_lbirthday_text count_1">
+                    <div>
+                        클라리스<br>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="idol_lbirthday_text count_1">
-            <div>
-                클라리스<br>
-            </div>
-        </div>
-    </a>
-</div>
+            <script>
+                $(function() {
+                    $('#jsBtnBreaBannerTriplicate').on('click', function(e) {
+                        var elem = $('.area_banner_triplicate_after');
+                        if (elem.css('display') == 'none') {
+                            elem.slideDown(350);
+                            $(this).addClass("_close");
+                        } else {
+                            elem.slideUp(350);
+                            $(this).removeClass("_close");
+                        }
+                        e.preventDefault();
+                    });
+                });
+            </script>
+    </section>
     <img src="../image_sp/ui/line_hoshi.png" width="100%" class="m-Btm8"><br>
     <footer>
         <a href='https://uhlmkashim.github.io/anniversary/mypage.html'>
