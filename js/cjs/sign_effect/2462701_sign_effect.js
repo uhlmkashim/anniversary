@@ -6,9 +6,8 @@ lib.ssMetadata = [];
 
 
 // symbols:
-
-
-
+// helper functions:
+	
 (lib.replace_image2462701_ = function() {
 	this.initialize(img._2462701_sign_effect_replace_image2462701_);
 }).prototype = p = new cjs.Bitmap();
