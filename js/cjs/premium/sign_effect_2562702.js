@@ -1,5 +1,5 @@
 (function (lib, img, cjs) {
-
+ 
 var p; // shortcut to reference prototypes
 
 // stage content:
