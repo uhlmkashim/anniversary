@@ -6,13 +6,7 @@ lib.ssMetadata = [];
 
 
 // symbols:
-
-
-
-(lib.replace_image2562702_ = function() {
-	this.initialize(img._2562702_sign_effect_replace_image2562702_);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,640,800);// helper functions:
+// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
