@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobage: footer-color" content="none">
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-2.2.2.min.js'></script>
+    <script src='../../../js/ilibrary.js'></script>
+    <script src='../../../js/pex-petit-1.2.0.js'></script>
+    <script src='../../../js/pex_common.js'></script>
+    <script src='../../../js/min/petit_manager.min.js'></script>
+    <script src='../../../js/min/refresh_room.min.js'></script>
+    <title>ｱｲﾄﾞﾙﾏｽﾀｰ ｼﾝﾃﾞﾚﾗｶﾞｰﾙｽﾞ </title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/refresh_room.css" media="all">
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+
+<body>
+    <article>
+        <section id="pageContainer" class="m-Btm0">
+            <div id="bg_space"></div>
+            <div id="jsEyeCatch">
+                <div style="margin-top:120px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/working_1.gif' width="195" height="139"></div>
+                <div style="margin-top:-80px"><img src='../../../image_sp/petit_cg/ui/sprite/loading/loading.gif' width="102" height="102"></div>
+            </div>
+            <div class="effect-container">
+                <div id="animation-container"></div>
+                <div id="dialogue" class="animation"></div>
+                <div class="story" style="text-align:left;">
+                    <div class="comment-container">
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                    </div>
+                    <a href="#" class="story_btn" style="display:none;"></a>
+                </div>
+            </div>
+            <div id="name-plate" rel="4">
+                <div class="plate-area" rel="1">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/89.png'>
+                </div>
+                <div class="plate-area" rel="2">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/102.png'>
+                </div>
+                <div class="plate-area" rel="3">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/116.png'>
+                </div>
+                <div class="plate-area" rel="4">
+                    <img class="plate" src='../../../image_sp/ui/refresh_room/name_plate/105.png'>
+                </div>
+            </div>
+            <a id="next" class="next" href="#"></a>
+        </section>
+    </article>
+    <script type="text/javascript">
+        (function() {
+            var refreshRoom = window.refreshRoom || {};
+            var ua = navigator.userAgent;
+            var in_chome = false;
+            try {
+                in_chrome = (chrome in window);
+            } catch (e) {
+                in_chrome = false;
+            }
+            refreshRoom.is_pc = in_chrome || (window.chrome ? true : false) && (window.chrome.webstore) || ua.indexOf('ChromeApp') > -1 || ua.indexOf('AAWebview') > -1;
+            refreshRoom.old_os = ua.match(/(OS [3-7]|Android [2-4])/);
+            refreshRoom.is_multiply = false;
+            refreshRoom.returnUrl = '../../index.html';
+            refreshRoom.dialogueSwf = '../../petit_refresh_room_balloon_swf';
+            refreshRoom.data = {
+                "id": "160",
+                "refresh_room_id": "160",
+                "start_time": "2020\/09\/28 15:00:00",
+                "refresh_room_name": "好きなこと、上手なこと",
+                "idol_set_id_1": "78",
+                "idol_accessory_set_id_1": "56",
+                "idol_set_id_2": "121",
+                "idol_accessory_set_id_2": "207",
+                "idol_set_id_3": "178",
+                "idol_accessory_set_id_3": "139",
+                "idol_set_id_4": "151",
+                "idol_accessory_set_id_4": "119",
+                "idol_set_id_5": "",
+                "idol_accessory_set_id_5": "",
+                "idol_name_1": "鷺沢文香",
+                "idol_kana_1": "さぎさわふみか",
+                "name_plate_id_1": "89",
+                "idol_name_2": "ケイト",
+                "idol_kana_2": "けいと",
+                "name_plate_id_2": "102",
+                "idol_name_3": "氏家むつみ",
+                "idol_kana_3": "うじいえむつみ",
+                "name_plate_id_3": "116",
+                "idol_name_4": "佐城雪美",
+                "idol_kana_4": "さじょうゆきみ",
+                "name_plate_id_4": "105",
+                "idol_name_5": "",
+                "idol_kana_5": "",
+                "idol_avatar": {
+                    "1": {
+                        "attribute": "2",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "\u6587\u9999",
+                        "image_url_list": {
+                            "expression_1033": "../../../js/petit_cg/expression/1033.js",
+                            "hair_10033": "../../../js/petit_cg/hair/10033.js",
+                            "costume_1_23398": "../../../js/petit_cg/costume/1/23398.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_23398": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23398",
+                                "accessory_name": "フェミニンニットコーデ",
+                                "explanation": "あたたかくて華やかな、冬のコーディネートです。<br>寒い季節だって、オシャレに過ごしたいから。",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "2": {
+                        "attribute": "2",
+                        "body_type": "1",
+                        "breast_size": "2",
+                        "short_name": "\u30b1\u30a4\u30c8",
+                        "image_url_list": {
+                            "expression_1088": "../../../js/petit_cg/expression/1088.js",
+                            "hair_10088": "../../../js/petit_cg/hair/10088.js",
+                            "costume_1_23482": "../../../js/petit_cg/costume/1/23482.js",
+                            "hand_1_42077": "../../../js/petit_cg/hand/1/42077.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_1_23482": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23482",
+                                "accessory_name": "春のお出かけ♪大人コーデ",
+                                "explanation": "上品な大人のお出かけコーデです。<br>春先のカジュアルなパーティーにも、フォーマルな集まりにも◎",
+                                "type_id": "2"
+                            },
+                            "hand_1_42077": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/42077",
+                                "accessory_name": "高級ティーセット",
+                                "explanation": "英国の高級陶磁器ブランドのティーセットです。<br>いつもの紅茶も一味違う…!?",
+                                "type_id": "4"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "3": {
+                        "attribute": "2",
+                        "body_type": "2",
+                        "breast_size": "3",
+                        "short_name": "\u3080\u3064\u307f",
+                        "image_url_list": {
+                            "expression_1174": "../../../js/petit_cg/expression/1174.js",
+                            "hair_10174": "../../../js/petit_cg/hair/10174.js",
+                            "costume_2_23297": "../../../js/petit_cg/costume/2/23297.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_2_23297": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23297",
+                                "accessory_name": "秋色ボーイッシュプレッピー",
+                                "explanation": "ボーイッシュに決めた秋色プレッピーコーデです。<br>街を歩けば、秋の主役間違いなし♪",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    },
+                    "4": {
+                        "attribute": "2",
+                        "body_type": "2",
+                        "breast_size": "3",
+                        "short_name": "\u96ea\u7f8e",
+                        "image_url_list": {
+                            "expression_1115": "../../../js/petit_cg/expression/1115.js",
+                            "hair_10115": "../../../js/petit_cg/hair/10115.js",
+                            "costume_2_23446": "../../../js/petit_cg/costume/2/23446.js"
+                        },
+                        "sub_type_list": {
+                            "head": null,
+                            "hand": null,
+                            "leg": null
+                        },
+                        "take_sub_type": {
+                            "head": 0,
+                            "hand": 0,
+                            "leg": 0
+                        },
+                        "petit_csv_info_list": {
+                            "costume_2_23446": {
+                                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/23446",
+                                "accessory_name": "ダークメルヘンドレス",
+                                "explanation": "絵本から飛び出したかのような、どこか謎めいたドレスです。<br>さぁ、目を閉じて…夢あふれる世界へ♪",
+                                "type_id": "2"
+                            }
+                        },
+                        "petit_csv_sub_type_info_list": []
+                    }
+                }
+            };
+            var default_swf = '../../petit_refresh_room_character_swf';
+            for (var i in refreshRoom.data.idol_avatar) {
+                refreshRoom.data.idol_avatar[i].swf = default_swf;
+            }
+            refreshRoom.detail = [{
+                "id": "1",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "in_walk",
+                "motion3": "out",
+                "motion4": "out",
+                "motion5": "",
+                "bg_image": "1",
+                "message": "フミカ、お茶を持ってきマシタ。\nドウゾ♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "2",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ありがとうございます。\nお手数をおかけして、すみません。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "3",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "No problem! たくさん話しました\nカラ、私も喉が渇いてマシタ。\n充実した対談で、楽しかったデス！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "4",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私もです。……書のこととなると、\n自分でも知らないうちに熱くなって\nしまい、饒舌になってしまって。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "5",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ですが、ケイトさんと読書観を\n話しながら、お薦めの一冊を互いに\n紹介しあう……楽しい時間でした。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "6",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "また是非やりたいデスネ♪\n読者からの熱いrequestがあれば、\nきっと！　そう願ってマス！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "7",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "shy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……実は、ずっと不安だったのです。\n…私はお喋りが得意ではありません\nから。ですが、杞憂だったようです。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "8",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ケイトさんは、お話し上手で、聞き\n上手なのですね。おかげで、とても\n楽しくお喋りすることができました。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "9",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ありがとうございマス♪\nでも、反省も少し…。日本語をもっと\n学びたいと、改めて思いマシタ。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "10",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ケイトさんは勉強熱心ですね。\n……私も、ケイトさんのように他国の\n言葉を楽しく学べたらよいのですが。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "11",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "notice",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "Hmm……楽しく…………あっ！\nそれなら、いい案がありマス♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "12",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "in_walk",
+                "motion4": "in_walk",
+                "motion5": "",
+                "bg_image": "",
+                "message": "お二人とも、お疲れ様です！\n……って、もしかして休憩中でした？\n大きな声出しちゃって、すみません！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "13",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "question_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "お昼のレッスン…終わったの……。\n邪魔…じゃなかった……？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "14",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "いいえ、大丈夫デスヨ♪\nムツミたちも一緒にお茶しまショウ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "15",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "light_joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はいっ、ご一緒させてください♪\nケイトさんたちは、今日はお仕事\nでしたよね。お仕事終わりですか？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "16",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい。ケイトさんとの、対談形式の\n雑誌インタビューのお仕事でした。\n…言うなれば読書談義、でしょうか。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "17",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "nod",
+                "motion5": "",
+                "bg_image": "",
+                "message": "読書談義……。\n好きな本の…お話、したり……？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "18",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "Yes♪お互いの好きな本について\nアレコレ楽しくお話しマシタ。\nユキミも、本は読みマスカ？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "19",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "shy",
+                "motion5": "",
+                "bg_image": "",
+                "message": "うん……。この前は…\n夏休みの宿題が……あったから……。\nたくさん……読んだ…♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "20",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "それは素敵ですね。\n……雪美ちゃんは、どのような書を\n読まれたのですか？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "21",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "nod",
+                "motion5": "",
+                "bg_image": "",
+                "message": "お気に入りは……猫の本……。\n男の子と、猫の話で……\n挿絵も……可愛いかった……。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "22",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "Wow、猫の本デスカ♪\n猫が好きなユキミらしいデスネ。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "23",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "nod_smile",
+                "motion5": "",
+                "bg_image": "",
+                "message": "猫が出てくると……嬉しい…。\nそれに……読むのも…\nとっても、楽しくなる……。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "24",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smile_right",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "好きなものって、楽しいよね！\n私は冒険小説が好きなんです！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "25",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod_smile",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "家や学校で、本をたくさん読みなさい\nって言われるけど、好きなものなら\nいくらでも読めちゃいますっ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "26",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "「好き」という気持ちは、強い力に\nなりマスヨネ♪フミカ、先ほど\n私が話したことを覚えていマスカ？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "27",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい。…他国の言葉を楽しく学ぶ\nための、いい案があるというお話\nでしたよね？",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "28",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "light_joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "わぁっ♪私にも教えてください！\n世界中を冒険するなら、色んな言葉を\n話せた方がいいと思いますから！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "29",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "shy",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私も……知りたいな……。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "30",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ふふふ…では、お教えしまショウ♪\n日本には、「好きこそ物の上手なれ」\nという言葉がありマスネ。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "31",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ムツミは、この言葉の意味を\n知っていマスカ？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "32",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "nod_smile",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はい！　「好きなことは上達する」\nって意味ですよね？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "33",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "light_joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "Exactly! 正解デス。\n好きなことは、一生懸命になります\nから、自然と上達するのデショウ。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "34",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "smile_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "上達……ケイトも、\n好きなこと……たくさんして…\n日本語、勉強してる……？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "35",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ハイ♪まだ知らない言葉がたくさん\nありマス。その時は、本を読んだり、\n雑誌をたくさん読みマスネ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "36",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "shy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "そうすると、もっとわからない言葉に\nたくさん出会えマス。難しい言葉が\n多いときは、少し大変デスケドネ…。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "37",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "light_joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "でも、だからもっと勉強したくなり\nマスネ♪　日本語が上手になれば、\nもっと日本が好きになりますカラ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "38",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "みなさんも、好きなことをしながら\n楽しく言葉を学んでみてクダサイ♪\nとっても楽しく勉強できマスヨ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "39",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "smile_left",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私なら……好きな冒険小説や映画を、\n英語のままで読んだり、観たりする\nとか、ですか？",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "40",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "nod_smile",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "フフ、いいデスネ♪\n映画でしたら、字幕を観ながら\nlisteningもいいと思いマス！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "41",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "trouble",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私は……ペロとおしゃべり？\nでも……ペロ、英語……\nしゃべれない……。",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "42",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_right",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "では、ペロと一緒に勉強するのは\nどうデショウ？　ふたりで、英語の\n絵本を読むのも楽しいと思いマス♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "43",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "light_joy",
+                "motion5": "",
+                "bg_image": "",
+                "message": "ペロと…一緒……？\nふふ…それ、楽しそう……♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "44",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod_smile",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "……なるほど。…書を好む私であれば\n翻訳前の海外文学を原文のまま読むと\nいうことですね。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "45",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "shy",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "大学の講義でも、何度か\n行ったことがあります。\n……とても、難しいことでしたが。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "46",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "smile_left",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "はじめは難しいかもしれませんが、\n少しずつ…少しずつ……デスヨ！\nフミカなら、できると思いマス♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "47",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "smile_right",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "…ふふ、ありがとうございます。\n…そうですね。まずは、翻訳された\nものと見比べながら読んでみます。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "48",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "nod",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "これから秋が深まり、趣味事に耽る\n季節となりますから……思い思いに、\n学びの季節とするのも良さそうです。",
+                "message_window_type": "",
+                "message_arrow_1": "1",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "49",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "light_joy",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私も、いろんな冒険小説や映画を\n英語で楽しんでみますね！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "1",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }, {
+                "id": "50",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "",
+                "motion3": "",
+                "motion4": "smile_left",
+                "motion5": "",
+                "bg_image": "",
+                "message": "私も……やってみる……。\nケイト……教えてくれて…\nありがとう……♪",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "",
+                "message_arrow_3": "",
+                "message_arrow_4": "1",
+                "message_arrow_5": ""
+            }, {
+                "id": "51",
+                "refresh_room_id": "160",
+                "idol_disp_1": "",
+                "idol_disp_2": "",
+                "idol_disp_3": "",
+                "idol_disp_4": "",
+                "idol_disp_5": "",
+                "motion1": "",
+                "motion2": "joy",
+                "motion3": "",
+                "motion4": "",
+                "motion5": "",
+                "bg_image": "",
+                "message": "You're welcome♪\n私も、もっと日本の勉強しマス！\n一緒に頑張りマショウ！",
+                "message_window_type": "",
+                "message_arrow_1": "",
+                "message_arrow_2": "1",
+                "message_arrow_3": "",
+                "message_arrow_4": "",
+                "message_arrow_5": ""
+            }];
+            petitManager.loaded_action = function() {
+                if (refreshRoom.is_multiply) $('.animation').css({
+                    zoom: "50%"
+                });
+                var margin = window.innerHeight - parseInt($('#bg_space > img').css('height'));
+                if (margin > 0) $('#pageContainer').css({
+                    "margin-top": margin * 0.5
+                });
+                var $effect_container = $('.effect-container');
+                var $dialogue = $('#dialogue');
+                var dialogue_top = parseInt($dialogue.css('top'));
+                var dialogue_ratio = refreshRoom.dialogue.scaleSizeCheck() / 320;
+                $dialogue.css('top', dialogue_top * dialogue_ratio);
+                if (!$effect_container.hasClass('large-size')) {
+                    $dialogue.css('top', dialogue_top * dialogue_ratio);
+                    var $animation = $('.animation:not(#dialogue)');
+                    var anime_top = parseInt($animation.css('top'));
+                    $animation.css('top', anime_top * dialogue_ratio);
+                }
+                $('#jsEyeCatch').hide();
+                refreshRoom.dialogue.startSwf();
+            };
+            petitManager.setWidth(refreshRoom.dialogue.scaleSizeCheck(refreshRoom.is_pc));
+            refreshRoom.bg_list = {
+                "1": "../../../image_sp/ui/refresh_room/bg/bg1.jpg",
+                "": "../../../image_sp/ui/refresh_room/bg/bg.jpg"
+            };
+            var image = new Image;
+            var multiply = refreshRoom.is_pc || window.devicePixelRatio >= 1.5 && !refreshRoom.old_os ? 0.5 : 1;
+            var size = refreshRoom.dialogue.scaleSizeCheck() * multiply;
+            var ratio = size / 320;
+            image.width = size;
+            var effect_container = $('.effect-container');
+            effect_container.css({
+                width: size,
+                height: size,
+                bottom: parseInt(effect_container.css('bottom')) * ratio
+            });
+            image.onload = function() {
+                $('#bg_space').append(image);
+                var height = $(this).css('height');
+                $(this).parent().css('height', height);
+                $(image).css('top', parseInt($(image).css('top')) * ratio);
+                $('#name-plate').css({
+                    "-webkit-transform": "scale(" + ratio + ")"
+                })
+                petitManager.setCharacters(refreshRoom.data.idol_avatar);
+                refreshRoom.dialogue.setMotion();
+            }
+            image.src = refreshRoom.bg_list[refreshRoom.detail[0].bg_image];
+            //console.log(refreshRoom);
+        })();
+
+        function playText() {
+            if (window.refreshRoom == void 0) return;
+            refreshRoom.dialogue.comment_deferred.resolve();
+        }
+
+        function motion_callback(index, motion) {
+            var motion_end = refreshRoom.dialogue.walking == 0;
+            if (motion.indexOf("in_walk") > -1) {
+                if (refreshRoom.dialogue.walking) {
+                    if (--refreshRoom.dialogue.walking > 0) {
+                        motion_end = false;
+                    } else {
+                        motion_end = true;
+                    }
+                }
+            }
+            var filtered_plate = $('.plate-area[rel=' + index + ']');
+            if (filtered_plate.css('display') == 'none') filtered_plate.show();
+            if (motion_end) {
+                if (refreshRoom.dialogue.motion_wait) {
+                    $('#next').trigger('click');
+                }
+                refreshRoom.dialogue.motion_wait = false;
+            }
+        }
+    </script>
+    <style>
+    </style>
+</body>
+
+</html>
