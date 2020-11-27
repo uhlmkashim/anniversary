@@ -57,8 +57,8 @@
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/app_sound.js'></script>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
 </head>
 
 <body style="margin:0px;">
@@ -67,8 +67,8 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://125.6.169.35/idolmaster/";
+        var image_server = "";
+        var base_url = "../../../";
         window.file_name = "sp_027_op_9th"; // createjs の本体ファイルを定義
         window.dir_name = "image_sp/cjs/campaign/anniversary/9th/sp_027_op_9th/";
         window.replace_images = []
@@ -135,7 +135,7 @@
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': window.image_server + encodeURIComponent(window.base_url + _img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }
