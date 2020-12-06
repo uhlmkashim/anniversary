@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+        <meta name="format-detection" content="telephone=no">
+        <title>アイドルマスター シンデレラガールズ</title>
+        <link rel="stylesheet" type="text/css" href="../css/rich/new_mypage_common.css" media="all">
+        <link rel="stylesheet" type="text/css" href="../css/rich/event_produce.css' media="all">
+        <link rel="apple-touch-icon-precomposed" href="../image_sp/ui/icon_bookmark.png">
+        <script>
+            (function() {
+                window.console.log = function() {}
+                ;
+            }
+            )();
+        </script>
+        <script type="text/javascript">
+            if (window.localStorage) {
+                var displaySet = localStorage.getItem('DisplayPositionSet');
+                if (displaySet == 1) {
+                    if (navigator.userAgent.indexOf('Android') > 0) {
+                        document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                        document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                    } else {
+                        document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                    }
+                    window.addEventListener('resize', function() {
+                        if (navigator.userAgent.indexOf('Android') > 0)
+                            document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                    });
+                } else {
+                    document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+                }
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        </script>
+        <script src="../js/jquery-2.2.2.min.js"></script>
+        <script src="../js/underscore-min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/common_new.js"></script>
+        <script>
+            $(function() {
+                window.$ibox = $('.ibox').ibox();
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                    newrelic.setPageViewName('/idolmaster/index.php/event_produce/select_idol_for_memorial');
+                }
+            });
+        </script>
+        <script type='text/javascript'>
+            var se_flg = 0
+              , bgm_flg = 0
+              , chrome_app_flg = 0
+              , chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+        </script>
+        <script type='text/javascript' src='../js/app_sound.js'></script>
+        <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    </head>
+    <body id="event_produce">
+        <div id="top" class="page_container jsOnBtn">
+            <script>
+                var $btnEventLogo = $('.jsBtnEventLogo');
+                var $btnGameMenu = $('.jsGameMenu');
+                var $menuElem = $('#headerPopupMenu');
+                // ゲームメニューは消しておく
+                $btnGameMenu.hide();
+                // メニュー開閉で表示制御
+                $('#headerAcd').on('click', function() {
+                    if ($menuElem.css('display') == 'none') {
+                        $btnEventLogo.hide();
+                        $btnGameMenu.show();
+                    } else {
+                        $btnEventLogo.show();
+                        $btnGameMenu.hide();
+                    }
+                });
+            </script>
+            <input id="delay" type="hidden" value="0">
+            <style>
+                .event_contents .information_light {
+                    padding-left: 8px;
+                }
+            </style>
+            <div class="event_contents _bluegreen _into_header">
+                <div class="event_contents-bg-top">
+                    <img src="../image_sp/event/1731/extramemory/extramemory_top2.jpg" width="320">
+                </div>
+                <div class="select_idol_for_memorial_header">
+                    <p class="item_number">0個</p>
+                </div>
+                <div class="comment m-Top8">
+                    <div id="change_box">
+                        <div class="change_target idol_comment_new comment_attr_chihiro m-Cnt" style="width:304px;">
+                            <div class="comment_fukidashi fukidashi_attr_chihiro top_left_large" style="height:inherit;padding:8px">集めたプレゼントBOXを使用して、アイドルからのコメントを解放しましょう! プレゼントBOX5個で解放することができますよ!
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectArea type_02 m-Top12">
+                    <div class="tab_attr_5">
+                        <div class="tab_attr_all _selected"></div>
+                        <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/1/0/1/0%3Fopen_idol_flg%3D0%26keyword%3D%26change_attr%3D1%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D465576365' style="margin:0">
+                            <label class="tab_attr_cute label_reset_style" onClick="">
+                                <input type="submit" value="" class="submit_reset_style">
+                            </label>
+                        </form>
+                        <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/2/0/1/0%3Fopen_idol_flg%3D0%26keyword%3D%26change_attr%3D1%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D883942205' style="margin:0">
+                            <label class="tab_attr_cool label_reset_style" onClick="">
+                                <input type="submit" value="" class="submit_reset_style">
+                            </label>
+                        </form>
+                        <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/3/0/1/0%3Fopen_idol_flg%3D0%26keyword%3D%26change_attr%3D1%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D644256081' style="margin:0">
+                            <label class="tab_attr_passion label_reset_style" onClick="">
+                                <input type="submit" value="" class="submit_reset_style">
+                            </label>
+                        </form>
+                        <form method="post" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/99/0/1/0%3Fopen_idol_flg%3D0%26keyword%3D%26change_attr%3D1%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D479423040' style="margin:0">
+                            <label class="tab_attr_trainer label_reset_style" onClick="">
+                                <input type="submit" value="" class="submit_reset_style">
+                            </label>
+                        </form>
+                    </div>
+                    <form name="sort_form" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/0%3Fl_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D650355074' method="post" class="m-Top8">
+                        <div class="area-btn-common _base-width m-Btm8">
+                            <select id="sort_idol" name="sort_type" class="search_pulldown_1_5">
+                                <option value="0" selected>キャラクター順</option>
+                                <option value="1">50音順</option>
+                            </select>
+                            <label class="btn_decision_sub_line_3" onClick="">
+                                <input type="submit" value="並び替え"/>
+                            </label>
+                        </div>
+                        <input type="hidden" name="history" value="1">
+                    </form>
+                    <div id="js_search_more_contents" class="selectArea_more_contents" style="display:none;">
+                        <form name="name_search" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial%3Fl_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D84571597' method="post">
+                            <div class="m-Cnt" style="text-align:left;width:280px;">
+                                <span class="blue">アイドル名</span>
+                                <input type="text" id="search_idol_name" class="search_text_1 m-Btm8" placeholder="※2文字以上、ひらがな、カタカナ検索可" value='' name="keyword">
+                            </div>
+                            <div class="area-btn-common _base-width m-Btm8">
+                                <div class="search_checkbox_1" id="checkbox_opened">
+                                    解放済みのアイドルのみ表示
+<input type="checkbox" value="1" name="open_idol_flg">
+                                </div>
+                            </div>
+                            <div class="area-btn-common _base-width m-Btm8">
+                                <a class="js_btn_clear btn_cancel_line_2">クリア</a>
+                                <label class="btn_decision_sub_line_2" onClick="">
+                                    <input type="submit" value="検索する"/>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#" id="js_btn_search_more" class="selectArea_more_link search_accordion">
+                        <div>絞り込み▼</div>
+                    </a>
+                </div>
+                <div class="frame-event _ m-Cnt m-Top12">
+                    <div class="_wrapper p-Top12 p-Btm4">
+                        <div class="_contents m-Btm8">
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="0" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">島村卯月</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="1" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">中野有香</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="2" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">水本ゆかり</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="3" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">福山舞</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="4" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">椎名法子</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="5" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">今井加奈</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="6" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">持田亜里沙</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="7" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">三村かな子</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="8" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">奥山沙織</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="9" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">間中美里</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="10" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">小日向美穂</div>
+                            </div>
+                            <div class="memorial_extra_idol _9th _locked jsBtnPopupExtraIdol jsOnDesignBtn" data-key="11" data-attribute="cute">
+                                <div class="memorial_extra_idol_name _attr_cute">緒方智絵里</div>
+                            </div>
+                        </div>
+                        <form method="POST" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_for_memorial/0/0/1/0%3Fopen_idol_flg%3D0%26keyword%3D%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D770064450' class="m-Btm8">
+                            <div class="new_page_layout">
+                                <div class="pager_area" style="height:74px;">
+                                    <div class="pager_submit_area">
+                                        <input type="number" name="target_page_num" id="jsPageNumber" pattern="\d*" value="">
+                                        ページに
+                                        <label class="btn_normal_line_4 _disabled m-Cnt m-Btm8" id="jsMovePagerLabel" for="jsMovePagerBtn" style="display:inline-block;vertical-align:middle;margin-left:5px;margin-bottom:3px;">
+                                            <input id="jsMovePagerBtn" type="submit" value="移動" style="width:inherit;height:inherit;line-height:inherit;margin:0;">
+                                        </label>
+                                    </div>
+                                    <div class="pager_panel_area">
+                                        <div class="btn_pager_first _disabled"></div>
+                                        <div class="btn_pager_back _disabled"></div>
+                                        <input type="submit" name="next" class="btn_pager_next jsNotDisabled jsOnDesignBtn" value="1">
+                                        <input type="submit" name="last" class="btn_pager_last jsNotDisabled jsOnDesignBtn" value="1">1 / 18
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="is_paging" value="1">
+                            <script>
+                                $('#jsPageNumber').focus(function() {
+                                    $('#jsMovePagerLabel').removeClass("_disabled");
+                                });
+                            </script>
+                        </form>
+                    </div>
+                </div>
+                <div class="frame-event _hd_bluegreen m-Cnt m-Top12">
+                    <div class="_header">
+                        <div class="_title">プレゼントBOX獲得方法</div>
+                    </div>
+                    <div class="_wrapper p-Top8 p-Btm12">
+                        <div class="_contents">
+                            <div class="subtitle _bluegreen">ドラマチックコミュイベント
+</div>
+                            <div class="m-Cnt m-Top4">
+                                ・グッドでプレゼントBOX<span class="yellow">1</span>
+                                個獲得<br/>
+                                ・パーフェクトでプレゼントBOX<span class="yellow">4</span>
+                                個獲得<br/>
+                            </div>
+                        </div>
+                        <div class="_line_solid m-Top8"></div>
+                        <div class="_contents">
+                            <div class="subtitle _bluegreen m-Top8">メモリアルプロデュース
+</div>
+                            <div class="m-Cnt m-Top4">
+                                ・目標絆Lvを達成するごとに<span class="yellow">5</span>
+                                個獲得
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="information_light infortext_nosp m-Top12">
+                    <p>・「the 9th Anniversaryの思い出」では、お仕事中にアイドルからコメントをもらう、もしくはプレゼントBOXを5個使用することでアイドルからのコメントが解放され、アイドルと何度でも振り返ることができます。</p>
+                    <p>※メモリアルプロデュース「the 6th Anniversary」で発生するエクストラコミュイベントは、「the 9th Anniversaryの思い出」の解放対象外となります。</p>
+                </div>
+            </div>
+            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/event_help%3Ftab%3D2%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D645495842' class="btn_sup_line_2 m-Cnt m-Top12">注意事項</a>
+            <div class="m-Top12">
+                <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce%3Fl_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D428454046">
+                    <div class="backLink">アイドルプロデュースTOP</div>
+                </a>
+                <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/mypage%3Fl_frm%3DEvent_produce_select_idol_for_memorial_2%26rnd%3D221176039">
+                    <div class="backLink">マイスタジオ</div>
+                </a>
+            </div>
+            <script type="text/template" id="templateOpenExtraIdol">
+                
+<div class="p-Top8 p-Btm12 popup-extra_idol">
+<div class="memorial_extra_idol _9th _locked m-Cnt">
+<div class="memorial_extra_idol_name _attr_<%- attribute %>">
+<%- idol.card_name_k %>
+</div>
+</div>
+<div class="displayBox m-Cnt m-Top8">
+<img src='../image_sp/event_flash/1731/coin_5_1731_l.png' style="width:48px; height:48px; display:block; vertical-align:middle;">
+<div class="m-Lft8">
+<dl class="dl-value_set m-Top2">
+<dt>プレゼントBOX所持数</dt>
+<dd class="t-Rgt"><span class="yellow">0</span>個</dd>
+</dl>
+<% if(idol.next_gift != null) { %>
+<dl class="dl-value_set m-Top4">
+<dt>プレゼントBOX消費数</dt>
+<dd class="t-Rgt"><span class="yellow"><%- idol.next_gift %></span>個</dd>
+</dl>
+<% } %>
+</div>
+</div>
+<% if(idol.next_gift != null) { %>
+<div class="_line_dot m-Top8"></div>
+<% if(memorial_gift >= idol.next_gift) { %>
+<div class="t-Cnt m-Top8 m-Btm8">
+プレゼントBOXを<span class="yellow"><%- idol.next_gift %></span>個<br />使用して解放しますか?
+</div>
+<div class="area-btn-common _base-width">
+<a class="btn_cancel_line_2 js_popup_close">キャンセル</a>
+<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/gift_memorial_present%3Foffset%3D0%26open_idol_flg%3D0%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D935713411' method="post">
+<label class="btn_decision_line_2" onclick=""><input type="submit" value="解放する"></label>
+<input type="hidden" name="gift_number" value="<%- idol.next_gift %>">
+<input type="hidden" name="idol_id" value="<%- idol.idol_base_id %>">
+</form>
+</div>
+<% } else { %>
+<div class="m-Top8 yellow t-Cnt">プレゼントBOXが不足しています</div>
+<% } %>
+<% } else { %>
+<% } %>
+</div>
+
+            </script>
+            <script type="text/javascript">
+                if (window.popup == void 0)
+                    window.popup = popup = new Commonjs.Popup();
+                var all_idol_list = [{
+                    "idol_base_id": "1",
+                    "card_name": "\u5cf6\u6751\u536f\u6708",
+                    "produce_idol_id": "7001",
+                    "card_id": "1558402",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u5cf6\u6751\u536f\u6708"
+                }, {
+                    "idol_base_id": "2",
+                    "card_name": "\u4e2d\u91ce\u6709\u9999",
+                    "produce_idol_id": "7002",
+                    "card_id": "1447601",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u4e2d\u91ce\u6709\u9999"
+                }, {
+                    "idol_base_id": "3",
+                    "card_name": "\u6c34\u672c\u3086\u304b\u308a",
+                    "produce_idol_id": "7003",
+                    "card_id": "1461601",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u6c34\u672c\u3086\u304b\u308a"
+                }, {
+                    "idol_base_id": "4",
+                    "card_name": "\u798f\u5c71\u821e",
+                    "produce_idol_id": "7004",
+                    "card_id": "1000401",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u798f\u5c71\u821e"
+                }, {
+                    "idol_base_id": "5",
+                    "card_name": "\u690e\u540d\u6cd5\u5b50",
+                    "produce_idol_id": "7005",
+                    "card_id": "1562902",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u690e\u540d\u6cd5\u5b50"
+                }, {
+                    "idol_base_id": "6",
+                    "card_name": "\u4eca\u4e95\u52a0\u5948",
+                    "produce_idol_id": "7006",
+                    "card_id": "1559202",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u4eca\u4e95\u52a0\u5948"
+                }, {
+                    "idol_base_id": "7",
+                    "card_name": "\u6301\u7530\u4e9c\u91cc\u6c99",
+                    "produce_idol_id": "7007",
+                    "card_id": "1346002",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u6301\u7530\u4e9c\u91cc\u6c99"
+                }, {
+                    "idol_base_id": "8",
+                    "card_name": "\u4e09\u6751\u304b\u306a\u5b50",
+                    "produce_idol_id": "7008",
+                    "card_id": "1560402",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u4e09\u6751\u304b\u306a\u5b50"
+                }, {
+                    "idol_base_id": "9",
+                    "card_name": "\u5965\u5c71\u6c99\u7e54",
+                    "produce_idol_id": "7009",
+                    "card_id": "1245501",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u5965\u5c71\u6c99\u7e54"
+                }, {
+                    "idol_base_id": "10",
+                    "card_name": "\u9593\u4e2d\u7f8e\u91cc",
+                    "produce_idol_id": "7010",
+                    "card_id": "1452101",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u9593\u4e2d\u7f8e\u91cc"
+                }, {
+                    "idol_base_id": "11",
+                    "card_name": "\u5c0f\u65e5\u5411\u7f8e\u7a42",
+                    "produce_idol_id": "7011",
+                    "card_id": "1560602",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u5c0f\u65e5\u5411\u7f8e\u7a42"
+                }, {
+                    "idol_base_id": "12",
+                    "card_name": "\u7dd2\u65b9\u667a\u7d75\u91cc",
+                    "produce_idol_id": "7012",
+                    "card_id": "1560902",
+                    "idol_type": "1",
+                    "attribute": "1",
+                    "gift_count": 0,
+                    "show_memorial": 0,
+                    "select_max": 0,
+                    "next_gift": 5,
+                    "card_name_k": "\u7dd2\u65b9\u667a\u7d75\u91cc"
+                }];
+                var memorial_gift = 0;
+                var show_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A//125.6.169.35/idolmaster/event_produce/select_idol_result/__idol_id__%3Foffset%3D0%26open_idol_flg%3D0%26l_frm%3DEvent_produce_select_idol_for_memorial_1%26rnd%3D261080192';
+                $('.jsBtnPopupExtraIdol').on('click', function() {
+                    se_play('se_002');
+                    var key = $(this).data('key');
+                    var attr = $(this).data('attribute');
+                    var idol = all_idol_list[key];
+                    //解放済み
+                    if (idol.next_gift == null) {
+                        location.href = show_url.replace("__idol_id__", idol.idol_base_id);
+                    }//解放する
+                    else {
+                        var param = {
+                            "idol": idol,
+                            "attribute": attr,
+                            "memorial_gift": memorial_gift,
+                        }
+                        popup.set({
+                            title: convertKana(idol.card_name, 'han') + 'コメントの解放',
+                            contents: _.template($('#templateOpenExtraIdol').html(), param),
+                            new_layout: true,
+                            is_event: true,
+                            color: 'bluegreen'
+                        });
+                        popup.open();
+                    }
+                });
+                Commonjs.setSearchMore({
+                    $trigger: $("#js_btn_search_more"),
+                    $contents: $("#js_search_more_contents"),
+                });
+                Commonjs.setSearchCheckBox($("#checkbox_opened"));
+                Commonjs.setSearchClear({
+                    $trigger: $(".js_btn_clear"),
+                    targets: [$("#search_idol_name"), $("input[name=open_idol_flg]")],
+                });
+            </script>
+            <footer>
+                <div class="line_idolmaster"></div>
+                <a href="#top" id="toPageTop" class="mypage_under">
+                    <div></div>
+                </a>
+            </footer>
+        </div>
+        <script>
+            window._tarminal = {
+                'native_app_flg': false,
+                'android_app_flg': false,
+                'ios_app_flg': false,
+                'shell_app_flg': false
+            };
+        </script>
+        <script>
+            window._tarminal = {
+                'native_app_flg': false,
+                'android_app_flg': false,
+                'ios_app_flg': false,
+                'shell_app_flg': false
+            };
+        </script>
+        <div id="mbga-pf-footer">
+            <script type="text/javascript" charset="UTF-8">
+                (function() {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var list = document.getElementsByClassName('mbga-pf-footer-li');
+                        var i = 0
+                          , l = list.length;
+                        for (; i < l; i++) {
+                            var elem = list[i];
+                            elem.addEventListener('touchstart', function(e) {
+                                e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                            });
+                            elem.addEventListener('touchend', function(e) {
+                                e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                            });
+                            elem.addEventListener('touchmove', function(e) {});
+                        }
+                    });
+                }
+                )();
+            </script>
+        </div>
+    </body>
+</html>
