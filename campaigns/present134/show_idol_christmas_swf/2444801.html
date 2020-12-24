@@ -67,7 +67,7 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "../../../";
+        var image_server = "";
         var base_url = "../../../";
         window.file_name = "sp_041_campaign_item_present"; // createjs の本体ファイルを定義
         window.dir_name = "image_sp/cjs/campaign/xmas/2020/";
@@ -108,7 +108,7 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
+                        _img_path = '/image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
