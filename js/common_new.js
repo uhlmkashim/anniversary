@@ -2,6 +2,111 @@
 	名前空間用
 */
 var Commonjs = Commonjs || (function() {
+    function CreateJsCanvas() {};
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    CreateJsCanvas.prototype.init = function(_canvas, _adobeid, manifest, stage, tick_flg, callback) {
+        var self = this;
+        this.stage = stage || null;
+
+        if (tick_flg == null) {
+            this.tick_flg = true;
+        } else {
+            this.tick_flg = tick_flg;
+        }
+
+        this.exportRoot = null;
+        this.callback = callback;
+        canvas = _canvas;
+        anim_container = document.getElementById("animation_container");
+        dom_overlay_container = document.getElementById("dom_overlay_container");
+        var comp = AdobeAn.getComposition(_adobeid);
+        var lib = comp.getLibrary();
+
+        this.cjs_deferred = $.Deferred();
+
+        createjs.MotionGuidePlugin.install();
+        var loader = new createjs.LoadQueue(false);
+        if (lib.properties.manifest.length <= 0) {
+            self.handleComplete({}, comp, _adobeid);
+        } else {
+            loader.addEventListener("fileload", function(evt) {
+                self.handleFileLoad(evt, comp);
+            });
+            loader.addEventListener("complete", function(evt) {
+                self.handleComplete(evt, comp, _adobeid);
+            });
+            var lib = comp.getLibrary();
+            loader.loadManifest(manifest);
+        }
+    };
+
+    CreateJsCanvas.prototype.handleFileLoad = function(evt, comp) {
+        var images = comp.getImages();
+        if (evt && (evt.item.type == "image")) {
+            images[evt.item.id] = evt.result;
+        }
+    };
+
+    CreateJsCanvas.prototype.handleComplete = function(evt, comp, _adobeid) {
+        //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+        var self = this;
+        var lib = comp.getLibrary();
+        var ss = comp.getSpriteSheet();
+        var queue = evt.target;
+        var ssMetadata = lib.ssMetadata;
+        for (i = 0; i < ssMetadata.length; i++) {
+            ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                "images": [queue.getResult(ssMetadata[i].name)],
+                "frames": ssMetadata[i].frames
+            })
+        }
+        exportRoot = new lib[_adobeid]();
+        this.exportRoot = exportRoot;
+        if (this.stage) {
+            stage = this.stage
+        } else {
+            stage = new lib.Stage(canvas);
+        }
+        //Registers the "tick" event listener.
+        fnStartAnimation = function() {
+            stage.addChild(exportRoot);
+            createjs.Ticker.setFPS(lib.properties.fps);
+            // createjs.Ticker.setFPS(9);
+
+            if (self.tick_flg) {
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+
+
+            if (self.callback != null) {
+                self.callback();
+            }
+
+            self.cjs_deferred.resolve();
+        }
+        //Code to support hidpi screens and responsive scaling.
+        if (AdobeAn.makeResponsive && anim_container != null && dom_overlay_container != null) {
+            AdobeAn.makeResponsive(true, 'width', true, 1, [canvas, anim_container, dom_overlay_container]);
+        }
+        AdobeAn.compositionLoaded(lib.properties.id);
+        fnStartAnimation();
+
+    };
+    CreateJsCanvas.prototype.addChild = function(name) {
+        var self = this;
+        if (this.stage == null) {
+            is_instantiate = true;
+            this.stage = new createjs.Stage(this.canvas);
+        }
+        this.exportRoot = new this.lib[name]();
+        this.exportRoot.manifest = manifest;
+        this.stage.addChild(this.exportRoot);
+        return this.exportRoot;
+    }
+    CreateJsCanvas.prototype.stop = function() {
+        createjs.Ticker.setPaused(true);
+        createjs.Ticker.reset();
+    };
 
 
     function Canvas() {}
@@ -591,6 +696,32 @@ var Commonjs = Commonjs || (function() {
             })
             return canvas;
         },
+        replacePremiumCardNew: function(param, _height, card_hidden) {
+            var canvas = new CreateJsCanvas();
+            var canvas_w = 640;
+            var canvas_h = _height || 800;
+            var fps = param.fps || 18;
+            var zoom = String(param.width).replace("px", "") / canvas_w;
+            var $target_element = $("<canvas/>")
+                .attr("width", canvas_w)
+                .attr("height", canvas_h)
+                .attr("id", "canvas")
+                .css("zoom", zoom)[0];
+            var idol_base_id = param.idol_base_id;
+            var $replace_element = $(param.replace_element);
+            var manifest = [{
+                src: param.card_image,
+                id: "replace_image_" + idol_base_id
+            }];
+
+            canvas.init($target_element, "_" + idol_base_id + "_sign_effect");
+            $replace_element.before($target_element)
+            if (!card_hidden) {
+                $replace_element.remove();
+            }
+            return canvas;
+        },
+        CreateJsCanvas: CreateJsCanvas,
         Canvas: Canvas,
         Popup: Popup,
         PopupTemplate: PopupTemplate,
@@ -842,6 +973,26 @@ var Commonjs = Commonjs || (function() {
                     }
                 }
             });
-        }
+        },
+        openBrowserByAndapp: function(url) {
+            var popup = new Commonjs.Popup("openBrowserByAndapp");
+            popup.set({
+                "title": "外部サイト移動確認",
+                "contents": '\
+					<div style="margin:8px 12px;font-size:12px">\
+						外部サイトに移動しようとしています。<br>\
+						※ここから先はモバゲーではありません\
+					</div>\
+					<div style="margin:8px 12px;font-size:12px">\
+						外部サイトへ移動しますか？\
+					</div>\
+					<a class="btn_decision_line_2 m-Cnt m-Btm4" style="font-size:12px" id="jsOpenBrowserByAndapp">リンク先へ移動する</a>\
+				'
+            });
+            popup.open();
+            popup.get_contents().find("#jsOpenBrowserByAndapp").on("click", function() {
+                EL_IMAS.shellapp.openUrl(url);
+            })
+        },
     }
 })();
