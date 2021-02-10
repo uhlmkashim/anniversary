@@ -59,7 +59,7 @@
               , chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
         </script>
         <script type='text/javascript' src='../../../../js/app_sound.js'></script>
-        <link rel="stylesheet" type="text/css" href="../../../../css/base.css?20171116"/>
+        <link rel="stylesheet" type="text/css" href="../../../../css/base.css"/>
     </head>
     <body>
         <style>
@@ -398,7 +398,7 @@
                 balloon: null,
                 effect: null,
                 cjsContainer: '#animation-container',
-                return_url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/valentine_present/select_base_idol/0/0/12%3Fitem_ids%3D45033%26item_get_flag%3D1%26keyword%3D%26l_frm%3DValentine_present_show_flash_present_chocolate_1%26rnd%3D397290447',
+                return_url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/valentine_present/select_base_idol/0/0/12',
                 isFinishedName: 'isFinished'
             }
             //演出初期化
@@ -521,7 +521,7 @@
                     // 吹き出しcjs読み込み完了したら、エフェクトcjsを読み込む
                     balloonManager.cjs_deferred.done(function() {
                         effectManager.init(petitManager.canvas, 'petit_effect', [{
-                            "src": "http://sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/drama/petit_effect_atlas_.png",
+                            "src": "../../../../image_sp/campaign/valentine/2021/drama/petit_effect_atlas_.png",
                             "id": "petit_effect_atlas_",
                             "type": "image"
                         }], petitManager.stage, false, function() {
