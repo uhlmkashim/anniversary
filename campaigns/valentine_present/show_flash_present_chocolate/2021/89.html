@@ -301,14 +301,14 @@
                 <div class="btn-nextscene"></div>
             </div>
             <div class="name-plate">
-                <img class="plate" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/coming_tv/name_tag_horizontal/089.png'>
+                <img class="plate" src='../../../../image_sp/ui/coming_tv/name_tag_horizontal/089.png'>
             </div>
             <div class="loading-container" id="jsEyeCatch">
                 <div class="img-loading">
-                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/working_1.gif">
+                    <img src="../../../../image_sp/petit_cg/ui/sprite/loading/working_1.gif">
                 </div>
                 <div class="img-loadingpetit">
-                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/petit_cg/ui/sprite/loading/loading.gif" width="102" height="102">
+                    <img src="../../../../image_sp/petit_cg/ui/sprite/loading/loading.gif" width="102" height="102">
                 </div>
             </div>
         </div>
@@ -327,7 +327,7 @@
                         "margin-top": margin
                     });
             });
-            var cjs_file = ['http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/petit_cjs/petit_base.js', 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/petit_cjs/petit_balloon.js', 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/petit_cjs/petit_effect.js'];
+            var cjs_file = ['../../../../js/petit_cjs/petit_base.js', '../../../../js/petit_cjs/petit_balloon.js', '../../../../js/petit_cjs/petit_effect.js'];
             var url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/valentine_present/ajax_petit_idol_avatar_data/1033%3Fl_frm%3DValentine_present_show_flash_present_chocolate_1%26rnd%3D956571741';
             var petitManager = window.petitManager || new PetitManager();
             var balloonManager = window.canvasManager || new Commonjs.CreateJsCanvas();
@@ -502,7 +502,7 @@
                 var characterList = [];
                 characterList[0] = data.accessory_list;
                 characterList[0].pose_id = 1;
-                characterList[0].image_url_list.gift_item = "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/petit_cg/etc/gift_valentine_2021.js";
+                characterList[0].image_url_list.gift_item = "../../../../js/petit_cg/etc/gift_valentine_2021.js";
                 var deffered = petitManager.requireCJS(cjs_file);
                 deffered.done(function() {
                     petitManager.setCharacters(characterList);
@@ -511,7 +511,7 @@
                     petitManager.stage.removeAllChildren();
                     // 吹き出しcjs描画準備
                     balloonManager.init(petitManager.canvas, 'petit_balloon', [{
-                        "src": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/drama/petit_balloon_atlas_.png",
+                        "src": "http://sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/drama/petit_balloon_atlas_.png",
                         "id": "petit_balloon_atlas_",
                         "type": "image"
                     }], petitManager.stage, false, function() {
@@ -521,7 +521,7 @@
                     // 吹き出しcjs読み込み完了したら、エフェクトcjsを読み込む
                     balloonManager.cjs_deferred.done(function() {
                         effectManager.init(petitManager.canvas, 'petit_effect', [{
-                            "src": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/drama/petit_effect_atlas_.png",
+                            "src": "http://sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/drama/petit_effect_atlas_.png",
                             "id": "petit_effect_atlas_",
                             "type": "image"
                         }], petitManager.stage, false, function() {
