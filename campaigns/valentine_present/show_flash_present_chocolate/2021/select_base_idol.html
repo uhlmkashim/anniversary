@@ -157,8 +157,15 @@
         </div>
         <img src='../../../../image_sp/__DUMMY__.png' id="js_dummy_path" style="display:none">
         <script type="text/template" id="template_idol_confirm">
-            <div class="idol_confirm-area bg_<%- bg %> p-Btm2"><div class="idol-area"><div id="animation-container"></div><div class="name_plate"><img src="<%- name_plate_path %>"></div></div><div class="text-area p-Btm4"><p class="popup_text m-Btm12 t-Cnt"><span class="attr_<%- attr %>"><%- name %></span><% if(checkbox && !have_seen) { %>に会いにいきます。<% }else{ %>との思い出を振り返ります。<% } %></p><% if(checkbox && !have_seen) { %><p class="popup_text font-size-11 t-Cnt"><span class="red">一度選択すると変更することはできません。</span><br>あと<span class="yellow">0</span>人からもらえます。</p><% } %><form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/valentine_present/see_idol_flash%3Fl_frm%3DValentine_present_select_base_idol_1%26rnd%3D528371521' method="get"><input type="hidden" name="keyword" value="<%- keyword %>"><input type="hidden" name="offset" value="<%- offset %>"><input type="hidden" name="idol_base_id" value="<%- id %>"><% if(checkbox && !have_seen) { %><div class="search_checkbox_2 popup_chk_box m-Cnt m-Top8"><span class="line_2">このアイドルから<br>ギフトをもらう</span><input class="checkbox" type="checkbox" value="1" name="confirm_flag"></div><% } %><% submit_class = (checkbox && !have_seen) ? '_disabled' : ''%><label class="<%- submit_class %>"><% if(checkbox && !have_seen) { %><input type="submit" class="submit-button m-Cnt m-Top8 jsOnDesignBtn"><div class="disabled-button m-Cnt m-Top8"></div><% } %><% if(!checkbox || have_seen) { %><input type="submit" class="submit-button2 m-Cnt m-Top8 jsOnDesignBtn"><% } %></label></form></div></div>
-</script>
+            <div class="idol_confirm-area bg_<%- bg %> p-Btm2">
+                <div class="idol-area">
+                <div id="animation-container"></div>
+                <div class="name_plate"><img src="<%- name_plate_path %>"></div>
+            </div>
+            <div class="text-area p-Btm4"><p class="popup_text m-Btm12 t-Cnt"><span class="attr_<%- attr %>"><%- name %></span><% if(checkbox && !have_seen) { %>に会いにいきます。<% }else{ %>との思い出を振り返ります。<% } %></p><% if(checkbox && !have_seen) { %><p class="popup_text font-size-11 t-Cnt"><span class="red">一度選択すると変更することはできません。</span><br>あと<span class="yellow">0</span>人からもらえます。</p><% } %><form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/valentine_present/see_idol_flash%3Fl_frm%3DValentine_present_select_base_idol_1%26rnd%3D528371521' method="get"><input type="hidden" name="keyword" value="<%- keyword %>"><input type="hidden" name="offset" value="<%- offset %>"><input type="hidden" name="idol_base_id" value="<%- id %>"><% if(checkbox && !have_seen) { %><div class="search_checkbox_2 popup_chk_box m-Cnt m-Top8"><span class="line_2">このアイドルから<br>ギフトをもらう</span><input class="checkbox" type="checkbox" value="1" name="confirm_flag"></div><% } %><% submit_class = (checkbox && !have_seen) ? '_disabled' : ''%><label class="<%- submit_class %>"><% if(checkbox && !have_seen) { %><input type="submit" class="submit-button m-Cnt m-Top8 jsOnDesignBtn"><div class="disabled-button m-Cnt m-Top8"></div><% } %><% if(!checkbox || have_seen) { %><input type="submit" class="submit-button2 m-Cnt m-Top8 jsOnDesignBtn"><% } %></label></form>
+            </div>
+            </div>
+        </script>
         <script src="../../../../js/ilibrary.js"></script>
         <script src="../../../../js/petit_cg/cheek/cheek1.js"></script>
         <script src="../../../../js/petit_cg/cheek/cheek2.js"></script>
@@ -360,7 +367,7 @@
                     param.checkbox = checkbox;
                     $.ajax({
                         url: param.petit,
-                        type: 'post',
+                        type: 'get',
                         history: 0
                     }).success(function(data) {
                         if (typeof data.accessory_list === "undefined") {
