@@ -1,0 +1,890 @@
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+header.background {
+    position: relative;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbackground.png%3F1612935993);
+    background-size: 320px 1px;
+    z-index: 3
+}
+
+body {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png%3F1285858800);
+    background-size: 7px 7px
+}
+
+.valentine_main_2021 {
+    position: relative;
+    top: -12px;
+    width: 320px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbackground.png%3F1612935993);
+    background-size: 320px 1px;
+    padding-bottom: 10px
+}
+
+.valentine_main_2021:after {
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 320px;
+    height: 32px;
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Ffooter.png%3F1612935993);
+    background-size: 320px 32px;
+    content: ''
+}
+
+.valentine_main_2021._top {
+    min-height: 392px
+}
+
+.valentine_main_2021 ._line {
+    border-top: 1px solid #bbb
+}
+
+.valentine_main_2021 .vp-Top {
+    padding-top: 6px
+}
+
+.valentine_main_2021 .chihiro_img {
+    position: relative;
+    z-index: 4
+}
+
+.valentine_main_2021 .valentine_title {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-top: -12px
+}
+
+.valentine_main_2021 .valentine_title img {
+    display: block;
+    position: relative
+}
+
+.valentine_main_2021 .valentine_wrapper {
+    position: relative;
+    width: 304px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a1004c;
+    font-size: 12px;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #FDE7F8;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.valentine_main_2021 .valentine_wrapper>* {
+    position: relative;
+    z-index: 1
+}
+
+.valentine_main_2021 .valentine_wrapper:before {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 10px solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    pointer-events: none;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20 fill;
+    content: ''
+}
+
+.valentine_main_2021 .valentine_wrapper ._contents {
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.valentine_main_2021 .valentine_wrapper ._title {
+    position: absolute;
+    z-index: 5;
+    top: -7px;
+    left: 0;
+    width: 304px;
+    text-align: center
+}
+
+.valentine_main_2021 .valentine_wrapper .recieved_idol_btn {
+    position: absolute;
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -721px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 56px;
+    height: 56px;
+    top: -56px;
+    left: 251px
+}
+
+.valentine_main_2021 .valentine_wrapper .selectArea.type_02._in_area {
+    padding-bottom: 0
+}
+
+.valentine_main_2021 .valentine_wrapper .selectArea.type_02 .selectArea_more_link {
+    top: inherit;
+    margin-top: 0
+}
+
+.valentine_main_2021 .remember_area {
+    position: relative;
+    z-index: 2;
+    display: box;
+    display: -webkit-box;
+    margin-top: -6px
+}
+
+.valentine_main_2021 .remember_area._num1 form {
+    width: 100%
+}
+
+.valentine_main_2021 .remember_area._num2 form {
+    width: 50%
+}
+
+.valentine_main_2021 .remember_area._num3 {
+    width: 100%
+}
+
+.valentine_main_2021 .remember_area._num3 form {
+    width: 33%
+}
+
+.valentine_main_2021 .pager_bg {
+    height: inherit;
+    color: #451901
+}
+
+.valentine_main_2021 .pager_bg:before {
+    position: absolute;
+    content: "";
+    width: 304px;
+    height: 85px;
+    background-color: #FFC7EF;
+    width: inherit;
+    left: -12px;
+    right: -12px;
+    z-index: 0
+}
+
+.valentine_main_2021 .new_page_layout {
+    background-color: transparent
+}
+
+.valentine_main_2021 .pager {
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    z-index: 10;
+    text-shadow: 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff
+}
+
+.valentine_main_2021 .valentine_select_option {
+    position: relative;
+    padding-top: 8px;
+    z-index: 5
+}
+
+.valentine_main_2021 .valentine_select_base {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    padding-top: 12px;
+    padding-bottom: 13px
+}
+
+.valentine_main_2021 .valentine_select_base._none {
+    padding-bottom: 0
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol {
+    position: relative;
+    display: inline-block;
+    width: 88px;
+    height: 100px;
+    overflow: hidden
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol:not(:nth-of-type(3n+1)) {
+    margin-left: 8px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol:nth-of-type(n+4) {
+    margin-top: 5px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -420px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 100px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -319px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 100px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -218px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 100px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_99 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 0;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 100px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg .v_idol {
+    position: absolute;
+    width: 74px;
+    left: 6px;
+    top: 6px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg .v_idol.top_adjust1 {
+    top: 6px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg .v_idol.top_adjust2 {
+    top: 2px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg .v_idol.top_adjust3 {
+    top: 6px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg .v_idol.top_adjust4 {
+    top: 10px
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg::after {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -581px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 100px;
+    content: "";
+    position: relative;
+    z-index: 10
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_idol_name {
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    width: 88px;
+    bottom: 9px;
+    left: 0;
+    text-align: center;
+    z-index: 20
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_idol_name.attr_1 {
+    text-shadow: 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5, 0px 0px 3px #ff3ac5
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_idol_name.attr_2 {
+    text-shadow: 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9, 0px 0px 3px #206dd9
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_idol_name.attr_3 {
+    text-shadow: 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400, 0px 0px 3px #ea8400
+}
+
+.valentine_main_2021 .valentine_select_base .v_btn_idol .v_idol_name.attr_99 {
+    text-shadow: 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f, 0px 0px 3px #117c0f
+}
+
+.valentine_main_2021 .bg_img_under {
+    position: relative;
+    bottom: -8px
+}
+
+#animation-container canvas {
+    zoom: 0.5
+}
+
+.idol_confirm-area.bg_1 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F1.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_2 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F2.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_3 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F3.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_4 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F4.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_5 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F5.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_6 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F6.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_7 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F7.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_8 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F8.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_9 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F9.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_10 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F10.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_11 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F11.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_12 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F12.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_13 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F13.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_14 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F14.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_15 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F15.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_16 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F16.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_17 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F17.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_18 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F18.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_19 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F19.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area.bg_20 {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F20.jpg%3F1612935993) no-repeat;
+    background-size: 304px 212px
+}
+
+.idol_confirm-area .idol-area {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 212px
+}
+
+.idol_confirm-area .idol-area:before {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background-size: 304px 24px;
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 24px;
+    top: 186px;
+    left: 0
+}
+
+.idol_confirm-area .idol-area img {
+    position: absolute;
+    top: 163px;
+    left: 175px;
+    width: 46px
+}
+
+.idol_confirm-area .text-area {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background-size: 304px;
+    padding-top: 2px;
+    margin-top: -2px;
+    border-radius: 0 0 10px 10px
+}
+
+.idol_confirm-area .text-area input[type='submit'] {
+    border: none;
+    outline: none;
+    text-indent: -99999px;
+    cursor: pointer;
+    margin-bottom: 12px
+}
+
+.idol_confirm-area .text-area input.submit-button {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -140px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 136px;
+    height: 38px;
+    width: 136px
+}
+
+.idol_confirm-area .text-area ._disabled {
+    pointer-events: none
+}
+
+.idol_confirm-area .text-area ._disabled input[type='submit'] {
+    display: none
+}
+
+.idol_confirm-area .text-area .disabled-button {
+    display: none
+}
+
+.idol_confirm-area .text-area ._disabled .disabled-button {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -521px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 136px;
+    height: 38px;
+    width: 136px;
+    margin-bottom: 12px
+}
+
+.idol_confirm-area .text-area input.submit-button2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -179px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 136px;
+    height: 38px;
+    width: 136px
+}
+
+.popup_text {
+    font-size: 12px;
+    margin-top: 2px;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, 1px 1px 1px #000000, -1px 1px 1px #000000
+}
+
+.popup_text .attr_1 {
+    color: #ff0073
+}
+
+.popup_text .attr_2 {
+    color: #006aff
+}
+
+.popup_text .attr_3 {
+    color: #fa0
+}
+
+.idol_recieved_area {
+    position: relative;
+    height: 263px
+}
+
+.idol_recieved_area #animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Frecieved_popup_bg.jpg%3F1612935993) no-repeat;
+    background-size: 304px;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    height: 263px
+}
+
+.idol_recieved_area #animation-container:before {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background-size: 304px 24px;
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 24px;
+    top: 184px;
+    left: 0
+}
+
+.idol_recieved_area #animation-container:after {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background-size: 304px;
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 52px;
+    top: 208px;
+    left: 0
+}
+
+.idol_recieved_area .name_plate {
+    position: absolute;
+    top: 164px
+}
+
+.idol_recieved_area .name_plate img {
+    position: absolute;
+    top: 0;
+    width: 46px
+}
+
+.idol_recieved_area .name_plate.num_1 img {
+    left: 158px
+}
+
+.idol_recieved_area .name_plate.num_2 img:nth-child(1) {
+    left: 106px
+}
+
+.idol_recieved_area .name_plate.num_2 img:nth-child(2) {
+    left: 207px
+}
+
+.idol_recieved_area .name_plate.num_3 img:nth-child(1) {
+    left: 158px
+}
+
+.idol_recieved_area .name_plate.num_3 img:nth-child(2) {
+    left: 60px
+}
+
+.idol_recieved_area .name_plate.num_3 img:nth-child(3) {
+    left: 252px
+}
+
+.idol_recieved_area .remember_btn_area {
+    position: absolute;
+    top: 210px
+}
+
+.idol_recieved_area .remember_btn_area form {
+    position: absolute;
+    top: 0
+}
+
+.idol_recieved_area .remember_btn_area.num_1 form:nth-child(1) {
+    left: 108px
+}
+
+.idol_recieved_area .remember_btn_area.num_2 form:nth-child(1) {
+    left: 57px
+}
+
+.idol_recieved_area .remember_btn_area.num_2 form:nth-child(2) {
+    left: 158px
+}
+
+.idol_recieved_area .remember_btn_area.num_3 form:nth-child(1) {
+    left: 108px
+}
+
+.idol_recieved_area .remember_btn_area.num_3 form:nth-child(2) {
+    left: 13px
+}
+
+.idol_recieved_area .remember_btn_area.num_3 form:nth-child(3) {
+    left: 203px
+}
+
+.idol_recieved_area input[type='submit'] {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -682px;
+    -webkit-background-size: 304px 777px;
+    background-size: 304px 777px;
+    width: 88px;
+    height: 38px;
+    width: 88px;
+    border: none;
+    outline: none;
+    text-indent: -99999px;
+    cursor: pointer;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1)
+}
+
+.idol_recieved_area input[type='submit']:active {
+    transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95)
+}
+
+.item_recieved_area {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Frecieved_popup_bg.jpg%3F1612935993) no-repeat;
+    background-size: 304px;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    height: 226px
+}
+
+.item_recieved_area:before {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background-size: 304px 24px;
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 24px;
+    top: 96px;
+    left: 0
+}
+
+.item_recieved_area .popup_text {
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background-size: 304px;
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 104px;
+    top: 118px;
+    left: 0;
+    border-radius: 0 0 10px 10px
+}
+
+.recieved-item-img img {
+    width: 80px;
+    margin: 12px 0;
+    border: 2px solid #6d104d;
+    border-radius: 10px
+}
+
+.button_gift_list {
+    width: 136px
+}
+
+.font-size-11 {
+    font-size: 11px
+}
