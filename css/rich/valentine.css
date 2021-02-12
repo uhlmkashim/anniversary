@@ -169,13 +169,13 @@
 
 header.background {
     position: relative;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbackground.png%3F1612935993);
+    background: url(../../image_sp/campaign/valentine/2021/bg/background.png);
     background-size: 320px 1px;
     z-index: 3
 }
 
 body {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png%3F1285858800);
+    background-image: url(../../image_sp/ui/mypage_new/bg/bg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
@@ -183,7 +183,7 @@ body {
     position: relative;
     top: -12px;
     width: 320px;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbackground.png%3F1612935993);
+    background: url(../../image_sp/campaign/valentine/2021/bg/background.png);
     background-size: 320px 1px;
     padding-bottom: 10px
 }
@@ -194,7 +194,7 @@ body {
     bottom: -8px;
     width: 320px;
     height: 32px;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Ffooter.png%3F1612935993);
+    background-image: url(../../image_sp/campaign/valentine/2021/bg/footer.png);
     background-size: 320px 32px;
     content: ''
 }
@@ -261,9 +261,9 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     pointer-events: none;
-    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20;
-    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20;
-    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fbg%2Fbg_2.png%3F1612935993) 20 fill;
+    -webkit-border-image: url(../../image_sp/campaign/valentine/2021/bg/bg_2.png) 20;
+    -webkit-border-image: url(../../image_sp/campaign/valentine/2021/bg/bg_2.png) 20;
+    border-image: url(../../image_sp/campaign/valentine/2021/bg/bg_2.png) 20 fill;
     content: ''
 }
 
@@ -286,7 +286,7 @@ body {
 .valentine_main_2021 .valentine_wrapper .recieved_idol_btn {
     position: absolute;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -721px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -721px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 56px;
@@ -404,7 +404,7 @@ body {
 
 .valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_1 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -420px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -420px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -413,7 +413,7 @@ body {
 
 .valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_2 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -319px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -319px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -422,7 +422,7 @@ body {
 
 .valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_3 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -218px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -218px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -431,7 +431,7 @@ body {
 
 .valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg.attr_99 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 0;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 0;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -463,7 +463,7 @@ body {
 
 .valentine_main_2021 .valentine_select_base .v_btn_idol .v_btn_bg::after {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -581px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -581px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -512,102 +512,102 @@ body {
 }
 
 .idol_confirm-area.bg_1 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F1.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/1.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_2 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F2.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/2.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_3 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F3.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/3.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_4 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F4.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/4.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_5 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F5.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/5.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_6 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F6.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/6.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_7 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F7.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/7.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_8 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F8.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/8.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_9 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F9.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/9.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_10 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F10.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/10.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_11 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F11.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/11.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_12 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F12.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/12.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_13 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F13.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/13.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_14 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F14.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/14.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_15 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F15.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/15.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_16 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F16.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/16.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_17 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F17.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/17.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_18 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F18.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/18.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_19 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F19.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/19.jpg) no-repeat;
     background-size: 304px 212px
 }
 
 .idol_confirm-area.bg_20 {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2F20.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/20.jpg) no-repeat;
     background-size: 304px 212px
 }
 
@@ -619,7 +619,7 @@ body {
 }
 
 .idol_confirm-area .idol-area:before {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_01.png) no-repeat;
     background-size: 304px 24px;
     content: "";
     position: absolute;
@@ -637,7 +637,7 @@ body {
 }
 
 .idol_confirm-area .text-area {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_02.png);
     background-size: 304px;
     padding-top: 2px;
     margin-top: -2px;
@@ -654,7 +654,7 @@ body {
 
 .idol_confirm-area .text-area input.submit-button {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -140px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -140px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 136px;
@@ -676,7 +676,7 @@ body {
 
 .idol_confirm-area .text-area ._disabled .disabled-button {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -521px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -521px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 136px;
@@ -687,7 +687,7 @@ body {
 
 .idol_confirm-area .text-area input.submit-button2 {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -179px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -179px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 136px;
@@ -723,7 +723,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Frecieved_popup_bg.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/recieved_popup_bg.jpg) no-repeat;
     background-size: 304px;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
@@ -731,7 +731,7 @@ body {
 }
 
 .idol_recieved_area #animation-container:before {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_01.png) no-repeat;
     background-size: 304px 24px;
     content: "";
     position: absolute;
@@ -742,7 +742,7 @@ body {
 }
 
 .idol_recieved_area #animation-container:after {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_02.png);
     background-size: 304px;
     content: "";
     position: absolute;
@@ -823,7 +823,7 @@ body {
 
 .idol_recieved_area input[type='submit'] {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fsprite-s430c72dc45.png%3F1612935993) no-repeat 0 -682px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/sprite-s430c72dc45.png) no-repeat 0 -682px;
     -webkit-background-size: 304px 777px;
     background-size: 304px 777px;
     width: 88px;
@@ -843,7 +843,7 @@ body {
 }
 
 .item_recieved_area {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Frecieved_popup_bg.jpg%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/recieved_popup_bg.jpg) no-repeat;
     background-size: 304px;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
@@ -852,7 +852,7 @@ body {
 }
 
 .item_recieved_area:before {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_01.png%3F1612935993) no-repeat;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_01.png) no-repeat;
     background-size: 304px 24px;
     content: "";
     position: absolute;
@@ -863,7 +863,7 @@ body {
 }
 
 .item_recieved_area .popup_text {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fvalentine%2F2021%2Fpopup_bg%2Fbg_02.png%3F1612935993);
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/campaign/valentine/2021/popup_bg/bg_02.png);
     background-size: 304px;
     content: "";
     position: absolute;
