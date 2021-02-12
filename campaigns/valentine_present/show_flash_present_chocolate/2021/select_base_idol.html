@@ -370,10 +370,6 @@
                         type: 'get',
                         history: 0
                     }).success(function(data) {
-                        if (typeof data.accessory_list === "undefined") {
-                            location.href = '../../../../game_error%3Fl_frm%3DValentine_present_select_base_idol_1%26rnd%3D769108195';
-                            return;
-                        }
                         characterList = [];
                         characterList[0] = data.accessory_list;
                         charaManager = [];
