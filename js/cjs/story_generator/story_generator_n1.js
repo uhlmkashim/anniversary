@@ -5306,19 +5306,19 @@
                 src: "images/c1_face9.png",
                 id: "story_generator_n1_c1_face9"
             }, {
-                src: "../../../images/event_logo.png",
+                src: "images/event_logo.png",
                 id: "story_generator_n1_event_logo"
             }, {
-                src: "../../../images/event_push.png",
+                src: "images/event_push.png",
                 id: "story_generator_n1_event_push"
             }, {
-                src: "../../../images/fp_kirakira.png",
+                src: "images/fp_kirakira.png",
                 id: "story_generator_n1_fp_kirakira"
             }, {
-                src: "../../../images/fp_kirakira_40x40.png",
+                src: "images/fp_kirakira_40x40.png",
                 id: "story_generator_n1_fp_kirakira_40x40"
             }, {
-                src: "../../../images/tie_sp.png",
+                src: "images/tie_sp.png",
                 id: "story_generator_n1_tie_sp"
             }
         ],
