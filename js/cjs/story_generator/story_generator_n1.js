@@ -5234,76 +5234,76 @@
         color: "#FFFFFF",
         opacity: 1,
         manifest: [{
-                src: "images/bg1.jpg?1612350924060",
+                src: "images/bg1.jpg",
                 id: "story_generator_n1_bg1"
             }, {
-                src: "images/bg10.jpg?1612350924060",
+                src: "images/bg10.jpg",
                 id: "story_generator_n1_bg10"
             }, {
-                src: "images/bg2.jpg?1612350924060",
+                src: "images/bg2.jpg",
                 id: "story_generator_n1_bg2"
             }, {
-                src: "images/bg3.jpg?1612350924060",
+                src: "images/bg3.jpg",
                 id: "story_generator_n1_bg3"
             },
             {
-                src: "images/bg4.jpg?1612350924060",
+                src: "images/bg4.jpg",
                 id: "story_generator_n1_bg4"
             }, {
-                src: "images/bg5.jpg?1612350924060",
+                src: "images/bg5.jpg",
                 id: "story_generator_n1_bg5"
             }, {
-                src: "images/bg6.jpg?1612350924060",
+                src: "images/bg6.jpg",
                 id: "story_generator_n1_bg6"
             }, {
-                src: "images/bg7.jpg?1612350924060",
+                src: "images/bg7.jpg",
                 id: "story_generator_n1_bg7"
             }, {
-                src: "images/bg8.jpg?1612350924060",
+                src: "images/bg8.jpg",
                 id: "story_generator_n1_bg8"
             }, {
-                src: "images/bg9.jpg?1612350924060",
+                src: "images/bg9.jpg",
                 id: "story_generator_n1_bg9"
             }, {
-                src: "images/c1_b.png?1612350924060",
+                src: "images/c1_b.png",
                 id: "story_generator_n1_c1_b"
             }, {
-                src: "images/c1_face1.png?1612350924060",
+                src: "images/c1_face1.png",
                 id: "story_generator_n1_c1_face1"
             },
             {
-                src: "images/c1_face10.png?1612350924060",
+                src: "images/c1_face10.png",
                 id: "story_generator_n1_c1_face10"
             }, {
-                src: "images/c1_face11.png?1612350924060",
+                src: "images/c1_face11.png",
                 id: "story_generator_n1_c1_face11"
             }, {
-                src: "images/c1_face12.png?1612350924060",
+                src: "images/c1_face12.png",
                 id: "story_generator_n1_c1_face12"
             }, {
-                src: "images/c1_face2.png?1612350924060",
+                src: "images/c1_face2.png",
                 id: "story_generator_n1_c1_face2"
             }, {
-                src: "images/c1_face3.png?1612350924060",
+                src: "images/c1_face3.png",
                 id: "story_generator_n1_c1_face3"
             }, {
-                src: "images/c1_face4.png?1612350924060",
+                src: "images/c1_face4.png",
                 id: "story_generator_n1_c1_face4"
             }, {
-                src: "images/c1_face5.png?1612350924060",
+                src: "images/c1_face5.png",
                 id: "story_generator_n1_c1_face5"
             },
             {
-                src: "images/c1_face6.png?1612350924060",
+                src: "images/c1_face6.png",
                 id: "story_generator_n1_c1_face6"
             }, {
-                src: "images/c1_face7.png?1612350924060",
+                src: "images/c1_face7.png",
                 id: "story_generator_n1_c1_face7"
             }, {
-                src: "images/c1_face8.png?1612350924060",
+                src: "images/c1_face8.png",
                 id: "story_generator_n1_c1_face8"
             }, {
-                src: "images/c1_face9.png?1612350924060",
+                src: "images/c1_face9.png",
                 id: "story_generator_n1_c1_face9"
             }, {
                 src: "../../../images/event_logo.png",
