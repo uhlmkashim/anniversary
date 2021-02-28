@@ -788,15 +788,15 @@
             }
         }
         // 必要なキャラ画像を追加
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face7'] = 'image_sp/cjs/chara/other/10189_7.png';
-        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c1_face3'] = 'image_sp/cjs/chara/other/10189_3.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face9'] = 'image_sp/cjs/chara/other/10189_9.png';
-        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c1_b'] = 'image_sp/cjs/chara/other/10189_b.png';
+        window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
+        window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
+        window.chara_replace_images['c1_face7'] = '../../../image_sp/cjs/chara/other/10189_7.png';
+        window.chara_replace_images['c1_face2'] = '../../../image_sp/cjs/chara/other/10189_2.png';
+        window.chara_replace_images['c1_face3'] = '../../../image_sp/cjs/chara/other/10189_3.png';
+        window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
+        window.chara_replace_images['c1_face9'] = '../../../image_sp/cjs/chara/other/10189_9.png';
+        window.chara_replace_images['c1_face2'] = '../../../image_sp/cjs/chara/other/10189_2.png';
+        window.chara_replace_images['c1_b'] = '../../../image_sp/cjs/chara/other/10189_b.png';
         window.im_cjs.bg_frame_info = {
             '20358': 0,
         };
@@ -895,7 +895,7 @@
                         _img_path = window.chara_replace_images[_prefix];
                     }
                     if (window.replace_images[_prefix]) {
-                        _img_path = '../../../' + window.replace_images[_prefix];
+                        _img_path = '/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
