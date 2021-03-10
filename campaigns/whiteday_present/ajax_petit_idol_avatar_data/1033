@@ -1,0 +1,32 @@
+{
+    "accessory_list": {
+        "attribute": "2",
+        "body_type": "1",
+        "breast_size": "2",
+        "short_name": "文香",
+        "image_url_list": {
+            "expression_1033": "../../../js/petit_cg/expression/1033.js",
+            "hair_10033": "../../../js/petit_cg/hair/10033.js",
+            "costume_1_20033": "../../../js/petit_cg/costume/1/20033.js"
+        },
+        "sub_type_list": {
+            "head": null,
+            "hand": null,
+            "leg": null
+        },
+        "take_sub_type": {
+            "head": 1,
+            "hand": 1,
+            "leg": 1
+        },
+        "petit_csv_info_list": {
+            "costume_1_20033": {
+                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20033",
+                "accessory_name": "ｽﾄｰﾙｺｰﾃﾞ･文香",
+                "explanation": "大判のｽﾄｰﾙを使った文香の私服です｡<br>ｵｼｬﾚというものには疎くて…｡",
+                "type_id": "2"
+            }
+        },
+        "petit_csv_sub_type_info_list": []
+    }
+}
