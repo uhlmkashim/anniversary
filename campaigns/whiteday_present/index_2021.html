@@ -169,7 +169,7 @@
         </div>
         <img src='../../image_sp/DUMMY.png' id="js_dummy_path" style="display:none">
         <script type="text/template" id="template_idol_confirm">
-            <div class="idol_confirm-area bg_<%- bg %> p-Btm2"><div class="idol-area"><div id="animation-container"></div><div class="name_plate"><img src="<%- name_plate_path %>"></div></div><div class="text-area p-Btm4"><p class="popup_text m-Btm12 t-Cnt"><span class="attr_<%- attr %>"><%- name %></span><% if(checkbox && !have_seen) { %>にお返しを渡します。<% }else{ %>との思い出を振り返ります。<% } %></p><% if(checkbox && !have_seen) { %><p class="popup_text font-size-11 t-Cnt"><span class="red">一度選択すると変更することはできません。</span><br>あと<span class="yellow">3</span>人に渡せます。</p><% } %><form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash%3Fl_frm%3DWhiteday_present_select_base_idol_1%26rnd%3D279955760' method="post"><input type="hidden" name="keyword" value="<%- keyword %>"><input type="hidden" name="offset" value="<%- offset %>"><input type="hidden" name="idol_base_id" value="<%- id %>"><% if(checkbox && !have_seen) { %><div class="search_checkbox_2 popup_chk_box m-Cnt m-Top8"><span class="line_2">このアイドルに<br>お返しを渡す</span><input class="checkbox" type="checkbox" value="1" name="confirm_flag"></div><% } %><% submit_class = (checkbox && !have_seen) ? '_disabled' : ''%><label class="<%- submit_class %>"><% if(checkbox && !have_seen) { %><input type="submit" class="submit-button m-Cnt m-Top8 jsOnDesignBtn"><div class="disabled-button m-Cnt m-Top8"></div><% } %><% if(!checkbox || have_seen) { %><input type="submit" class="submit-button2 m-Cnt m-Top8 jsOnDesignBtn"><% } %></label></form></div></div>
+            <div class="idol_confirm-area bg_<%- bg %> p-Btm2"><div class="idol-area"><div id="animation-container"></div><div class="name_plate"><img src="<%- name_plate_path %>"></div></div><div class="text-area p-Btm4"><p class="popup_text m-Btm12 t-Cnt"><span class="attr_<%- attr %>"><%- name %></span><% if(checkbox && !have_seen) { %>にお返しを渡します。<% }else{ %>との思い出を振り返ります。<% } %></p><% if(checkbox && !have_seen) { %><p class="popup_text font-size-11 t-Cnt"><span class="red">一度選択すると変更することはできません。</span><br>あと<span class="yellow">3</span>人に渡せます。</p><% } %><form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash%3Fl_frm%3DWhiteday_present_select_base_idol_1%26rnd%3D279955760' method="get"><input type="hidden" name="keyword" value="<%- keyword %>"><input type="hidden" name="offset" value="<%- offset %>"><input type="hidden" name="idol_base_id" value="<%- id %>"><% if(checkbox && !have_seen) { %><div class="search_checkbox_2 popup_chk_box m-Cnt m-Top8"><span class="line_2">このアイドルに<br>お返しを渡す</span><input class="checkbox" type="checkbox" value="1" name="confirm_flag"></div><% } %><% submit_class = (checkbox && !have_seen) ? '_disabled' : ''%><label class="<%- submit_class %>"><% if(checkbox && !have_seen) { %><input type="submit" class="submit-button m-Cnt m-Top8 jsOnDesignBtn"><div class="disabled-button m-Cnt m-Top8"></div><% } %><% if(!checkbox || have_seen) { %><input type="submit" class="submit-button2 m-Cnt m-Top8 jsOnDesignBtn"><% } %></label></form></div></div>
 </script>
         <script type="text/template" id="template_item_get">
             <div class="item_received_area"><div class="received-item-img"><img src="<%- _imgPath %>"></div><div class="popup_text t-Cnt"><p class="m-Top6 m-Btm12"><span class="attr_<%- attr %>"><%- name %></span>にお返しを渡しました。</p><p class="font-size-11">お返しは贈り物リストに送られました。</p><div class="m-Cnt m-Top8"><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/present/recieve/%3Fview_auth_type%3D1%26cache%3D1%26l_frm%3DWhiteday_present_select_base_idol_2%26rnd%3D951263569"><img src='../../image_sp/campaign/whiteday/2021/sprite/ui/btn_gift.png%3Fv%3D20210310144700' class="button_gift_list jsOnDesignBtn"></a></div></div></div>
@@ -188,19 +188,19 @@
 <img src='../../image_sp/ui/coming_tv/name_tag_horizontal/087.png'>
 </div>
 <div class="remember_btn_area num_3">
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="post">
+<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="get">
 <input type="hidden" name="offset" value="12">
 <input type="hidden" name="keyword" value="">
 <input type="hidden" name="idol_base_id" value="89">
 <input type="submit" class="jsOnDesignBtn">
 </form>
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="post">
+<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="get">
 <input type="hidden" name="offset" value="12">
 <input type="hidden" name="keyword" value="">
 <input type="hidden" name="idol_base_id" value="196">
 <input type="submit" class="jsOnDesignBtn">
 </form>
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="post">
+<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaigns/whiteday_present/see_idol_flash' method="get">
 <input type="hidden" name="offset" value="12">
 <input type="hidden" name="keyword" value="">
 <input type="hidden" name="idol_base_id" value="87">
@@ -355,7 +355,7 @@
                     param.checkbox = checkbox;
                     $.ajax({
                         url: param.petit,
-                        type: 'post',
+                        type: 'get',
                         history: 0
                     }).success(function(data) {
                         if (typeof data.accessory_list === "undefined") {
