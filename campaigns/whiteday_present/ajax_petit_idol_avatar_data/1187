@@ -5,9 +5,9 @@
         "breast_size": "2",
         "short_name": "\u3042\u304b\u308a",
         "image_url_list": {
-            "expression_1187": "../../../../js/petit_cg/expression/1187.js?v=20190524145757",
-            "hair_10187": "../../../../js/petit_cg/hair/10187.js?v=20190524145757",
-            "costume_1_20187": "../../../../js/petit_cg/costume/1/20187.js?v=20190524145756"
+            "expression_1187": "../../../../js/petit_cg/expression/1187.js",
+            "hair_10187": "../../../../js/petit_cg/hair/10187.js",
+            "costume_1_20187": "../../../../js/petit_cg/costume/1/20187.js"
         },
         "sub_type_list": {
             "head": null,
