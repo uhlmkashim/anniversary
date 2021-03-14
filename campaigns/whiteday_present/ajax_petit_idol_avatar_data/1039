@@ -1,0 +1,32 @@
+{
+    "accessory_list": {
+        "attribute": "3",
+        "body_type": "1",
+        "breast_size": "2",
+        "short_name": "\u88d5\u5b50",
+        "image_url_list": {
+            "expression_1039": "../../../../js/petit_cg/expression/1039.js",
+            "hair_10039": "../../../../js/petit_cg/hair/10039.js",
+            "costume_1_20039": "../../../../js/petit_cg/costume/1/20039.js"
+        },
+        "sub_type_list": {
+            "head": null,
+            "hand": null,
+            "leg": null
+        },
+        "take_sub_type": {
+            "head": 1,
+            "hand": 1,
+            "leg": 1
+        },
+        "petit_csv_info_list": {
+            "costume_1_20039": {
+                "image_path": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/petit_cg/20039",
+                "accessory_name": "\uff76\uff9e\uff70\uff98\uff70\uff7a\uff70\uff83\uff9e\uff65\u88d5\u5b50",
+                "explanation": "\u3075\u3093\u308f\u308a\uff84\uff6f\uff8c\uff9f\uff7d\u304c\u5973\u306e\u5b50\u3089\u3057\u3044\u88d5\u5b50\u306e\u79c1\u670d\u3067\u3059\uff61<br>\u77ed\u3081\uff8c\uff98\uff99\u306e\uff7c\uff6e\uff70\uff84\uff8a\uff9f\uff9d\uff82\u3082\u304b\u308f\u3044\u3044!",
+                "type_id": "2"
+            }
+        },
+        "petit_csv_sub_type_info_list": []
+    }
+}
