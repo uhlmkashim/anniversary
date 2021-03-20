@@ -69,8 +69,8 @@
             <script src='../../../../js/cjs/event/produce/event_idol_appearance_replace_pex_memory.js'></script>
             <script src='../../../../js/cjs/event/produce/event_communication_replace_pex_memory.js'></script>
             <script>
-                var base_url = "http://125.6.169.35/idolmaster/";
-                var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
+                var base_url = "";
+                var image_server = "";
                 var dev_local = false;
             </script>
             <style>
@@ -97,138 +97,30 @@
                     </nav>
                     <div id="musk" style="height:1px; display:none;">
                     </div>
-                    <section style="width:1px; height:1px; margin:0;">
-                        <div id="item_list" style="display:none;">
-                            <div id="item_title">
-                                <span id="title_val"></span>
-                            </div>
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px">
-                            <div class="box_top" style="width:180px; margin:0 auto">
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/caption_stamina.png%3Fv%3D20101001000000" class="box_left" style="width:35px;height:15px">
-                                <div class="box_center hp_bar_bg">
-                                    <div class="hp_bar" style="width:0px"></div>
-                                    <div class="progress_num box_right"><span class="cur_hp"></span> / <span class="max_hp"></span></div>
-                                </div>
-                            </div>
-                            <div id="item_select" style="display:none;">
-                                <span style="color:#a7cbe6;">スタミナは3分に1回復します</span><br>
-                                <span style="color:#a7cbe6;">全回復まで<span id="hour" style="color:#ffffff;"></span>時間<span id="minute" style="color:#ffffff;"></span>分<span id="sec" style="color:#ffffff;"></span>秒</span><br>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px"><br>
-                                以下のアイテムでスタミナを回復できます<br>
-                                <div class="item_box">
-                                    <div id="item8" class="item_left">
-                                        1/2回復<br>
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/8.jpg%3Fv%3D20101001000000' id="item_img8" width="60">
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/icon_gray_item_03.jpg%3Fv%3D20101001000000' id="gray_img8" width="60"><br>
-                                        ×<span id="item_num8"></span>個
-                                        <div style="margin-top: 5px; height:42px;">
-                                            <input type="image" id="use_item_button8" src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_use.png%3Fv%3D20101001000000" width="56px">
-                                            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_gray_item_use.png%3Fv%3D20101001000000' id="use_item_empty8" width="56px">
-                                        </div>
-                                    </div>
-                                    <div id="item8_2" class="item_center">
-                                        全回復<br />
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/icon_item_8_2.jpg%3Fv%3D20101001000000' id="item_img8_2" width="60" />
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/icon_gray_item_03_02.jpg%3Fv%3D20101001000000' id="gray_img8_2" width="60" /><br />
-                                        ×<span id="item_num8_2"></span>個
-                                        <div style="margin-top: 5px; height:42px;">
-                                            <input type="image" id="use_item_button8_2" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_use.png%3Fv%3D20101001000000' width="56" />
-                                            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_gray_item_use.png%3Fv%3D20101001000000' id="use_item_empty8_2" width="56px" />
-                                        </div>
-                                    </div>
-                                    <div id="item14" class="item_center">
-                                        全回復<br>
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/14.jpg%3Fv%3D20101001000000' id="item_img14" width="60">
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/icon_gray_item_02.jpg%3Fv%3D20101001000000' id="gray_img14" width="60"><br>
-                                        ×<span id="item_num14"></span>個
-                                        <div style="margin-top: 5px; height:42px;">
-                                            <input type="image" id="use_item_button14" src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_use.png%3Fv%3D20101001000000" width="56px">
-                                            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_gray_item_use.png%3Fv%3D20101001000000' id="use_item_empty14" width="56px">
-                                        </div>
-                                    </div>
-                                    <div id="item1" class="item_right">
-                                        全回復<br>
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/1.jpg%3Fv%3D20101001000000' id="item_img1" width="60">
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/icon_gray_item_01.jpg%3Fv%3D20101001000000' id="gray_img1" width="60"><br>
-                                        ×<span id="item_num1"></span>個
-                                        <div style="margin-top: 5px; height:42px;">
-                                            <input type="image" id="use_item_button1" src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_use.png%3Fv%3D20101001000000" width="56">
-                                            <input type="image" id="buy_item_button1" src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_buy.png%3Fv%3D20101001000000" width="56">
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/index%3Fl_frm%3DEvent_produce_work_memory_2%26rnd%3D735123042"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_03.png%3Fv%3D20101001000000' width="256" style="margin-top: 15px;"></a><br>
-                                <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/index%3Fl_frm%3DEvent_produce_work_memory_4%26rnd%3D637084949"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/assault/button_item_event.png%3Fv%3D20101001000000' width="256" style="margin-top: 15px;" id="back_mypage"></a>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_05.png%3Fv%3D20101001000000' width="256" alt="お仕事を続ける" style="margin-top: 10px; display:none;" id="go_quest2"><br>
-                                <div class='checkAreaBlock'>
-                                    <div class='checkCell'>
-                                        <input id="checkLabel" class='checkSkipConfirm' type="checkbox" value="1"><label for='checkLabel'>アイテムの使用確認をスキップする</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="item_result" style="display:none;">
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/1.jpg%3Fv%3D20101001000000' id="item_img_result" width="80" style="margin: 5px 0px 5px 0px;"><br>
-                                <span id="result_text"></span><br>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px"><br>
-                                <span class="blue">所持数</span> <span class="before_num"> </span> ⇒ <span class="after_num"> </span>個<br>
-                                <span class="blue">スタミナ</span> <span class="before_hp"></span> ⇒ <span class="cur_hp"></span>/<span class="max_hp"></span><br>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_06.png%3Fv%3D20101001000000' alt="もう1個使う" id="use_item_button_once" width="256" style="margin-top: 10px; margin-bottom: 5px;">
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_05.png%3Fv%3D20101001000000' alt="お仕事を続ける" id="go_quest" width="256" style="margin-top: 10px;">
-                            </div>
-                            <div id="item_confirm" style="display:none;">
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/item/l/1.jpg%3Fv%3D20101001000000' id="item_img_confirm" width="80" style="margin: 5px 0px 5px 0px;"><br>
-                                <span id="item_confirm_text1">ｽﾀﾐﾅが全回復する｡</span>
-                                <span id="item_confirm_text8">ｽﾀﾐﾅが最大値の半分回復する｡</span>
-                                <span id="item_confirm_text8_2">ｽﾀﾐﾅが全回復する｡</span>
-                                <span id="item_confirm_text14">ｽﾀﾐﾅが全回復する｡</span><br>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px"><br>
-                                <span class="blue">所持数</span> <span class="before_num"> </span> ⇒ <span class="after_num"> </span>個<br>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/line_item_01.png%3Fv%3D20101001000000" width="271px"><br>
-                                <div class="box_top" style="margin-top:5px;">
-                                    <div class="box_left" style="width:140px; text-align:right; padding-right:10px;">
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_02.png%3Fv%3D20101001000000' width="111" id="no_use">
-                                    </div>
-                                    <div class="box_right" style="width:140px; text-align:left; padding-left:10px;">
-                                        <form action="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/item/use_item%3Fl_frm%3DEvent_produce_work_memory_1%26rnd%3D376162793" method="post" id="item_form">
-                                            <input type="hidden" name="item_id" value="" id="item_id">
-                                            <input type="hidden" name="use_num" value="" id="use_num">
-                                            <input type="hidden" name="" value="" id="csrf_token">
-                                            <input type="hidden" name="res_type" value="json">
-                                            <input type="button" value="使用する" id="use_item_button" style="display:none;">
-                                            <input type="hidden" name="skip_confirm">
-                                            <input type="hidden" name="mode" value="quest">
-                                        </form>
-                                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_item_01.png%3Fv%3D20101001000000' width="111" id="use_item">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="direction_stage" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/1733/bg_area_xl_5300.jpg%3Fv%3D20210318144640); background-repeat:no-repeat; background-size:100%; background-position:right bottom;'>
+                    <section id="direction_stage" style='background-image:url(../../../../image_sp/event/1733/bg_area_xl_5300.jpg); background-repeat:no-repeat; background-size:100%; background-position:right bottom;'>
                         <div id="area_status" style="display:none;">
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_perfet.png%3Fv%3D20101001000000" id="res_perfet" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_good.png%3Fv%3D20101001000000" id="res_good" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/communication_normal.png%3Fv%3D20101001000000" id="res_normal" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
+                            <img src="../../../../image_sp/ui/rich/quest/event/produce/communication_perfet.png" id="res_perfet" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
+                            <img src="../../../../image_sp/ui/rich/quest/event/produce/communication_good.png" id="res_good" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
+                            <img src="../../../../image_sp/ui/rich/quest/event/produce/communication_normal.png" id="res_normal" style="width:258px; position:absolute; top:0px: left:0px; display:none;">
                         </div>
                         <div id="loading" style="display:none;">
                             <div id="load1" style="display:none;">
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/working_1.gif%3Fv%3D20101001000000' class="working_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/101007.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/100584.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/100441.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/100912.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/101199.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/100304.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/101325.gif%3Fv%3D20190524145751' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/100930.gif%3Fv%3D20101001000000' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/101480.gif%3Fv%3D20190524145752' class="load_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading/101608.gif%3Fv%3D20190524145752' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/working_1.gif' class="working_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/101007.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/100584.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/100441.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/100912.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/101199.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/100304.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/101325.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/100930.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/101480.gif' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading/101608.gif' class="load_img"><br>
                             </div>
                             <div id="load2" style="display:none;">
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/working_2.gif%3Fv%3D20101001000000' class="working_img"><br>
-                                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/loading_ami.gif%3Fv%3D20101001000000' class="load_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/working_2.gif' class="working_img"><br>
+                                <img src='../../../../image_sp/ui/rich/quest/loading_ami.gif' class="load_img"><br>
                             </div>
                         </div>
                         <div id="animation" style="display:none;"></div>
@@ -246,35 +138,29 @@
                         </a>
                         <div id="flash_voice" class="voice_play" style="display:none;"></div>
                         <div id="date_info">
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/event/produce/button_use_item.png%3Fv%3D20101001000000" style="width:63px; opacity:0.5; display:none; margin-bottom:5px;" id="choose_item_open" class="jsOnDesignBtn"><br>
+                            <img src="../../../../image_sp/ui/rich/quest/event/produce/button_use_item.png" style="width:63px; opacity:0.5; display:none; margin-bottom:5px;" id="choose_item_open" class="jsOnDesignBtn"><br>
                         </div>
                         <div id="idol_get">
                             <div id="idol_bg">
-                                <img id="cute_bg" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/cute_bg.jpg%3Fv%3D20101001000000' style="width:320px; display:none;">
-                                <img id="cool_bg" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/cool_bg.jpg%3Fv%3D20101001000000' style="width:320px; display:none;">
-                                <img id="passion_bg" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/passion_bg.jpg%3Fv%3D20101001000000' style="width:320px; display:none;">
+                                <img id="cute_bg" src='../../../../image_sp/ui/rich/quest/cute_bg.jpg' style="width:320px; display:none;">
+                                <img id="cool_bg" src='../../../../image_sp/ui/rich/quest/cool_bg.jpg' style="width:320px; display:none;">
+                                <img id="passion_bg" src='../../../../image_sp/ui/rich/quest/passion_bg.jpg' style="width:320px; display:none;">
                             </div>
-                            <div id="idol_num" class="num_off"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/idol.png%3Fv%3D20101001000000' width="57px"><span class="cur_idol" style="font-size:1.6rem;"></span>/<span class="max_idol"></span></div>
-                            <div id="transfer" class="transfer_off"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_transfer.png%3Fv%3D20101001000000' width="120px" id="transfer_button"></div>
-                            <div id="new" style="display:none;"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/new.png%3Fv%3D20101001000000' width="80px"></div>
+                            <div id="idol_num" class="num_off"><img src='../../../../image_sp/ui/rich/quest/idol.png' width="57px"><span class="cur_idol" style="font-size:1.6rem;"></span>/<span class="max_idol"></span></div>
+                            <div id="transfer" class="transfer_off"><img src='../../../../image_sp/ui/rich/quest/button_transfer.png' width="120px" id="transfer_button"></div>
+                            <div id="new" style="display:none;"><img src='../../../../image_sp/ui/rich/quest/new.png' width="80px"></div>
                             <div id="idol"></div>
-                            <div id="shilette"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/shilette.png%3Fv%3D20101001000000' style="display:none;"></div>
+                            <div id="shilette"><img src='../../../../image_sp/ui/rich/quest/shilette.png' style="display:none;"></div>
                             <div id="screen" style="display:none;"></div>
-                            <div id="get_txt" class="get_txt_standby"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/idolget.png%3Fv%3D20101001000000' style="width:266px;"></div>
+                            <div id="get_txt" class="get_txt_standby"><img src='../../../../image_sp/ui/rich/quest/idolget.png' style="width:266px;"></div>
                             <div id="detail_info" style="display:none;">
                                 <div id="detail_text"></div>
-                                <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/idol_get_star.png%3Fv%3D20101001000000" style="width:59px;" id="star">
-                                <div id="guid"><img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/arrow_tap_comment.gif%3Fv%3D20101001000000" style="width:16px;"><img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/tap_comment.png%3Fv%3D20101001000000" style="width:120px; margin-top:1px;"></div>
+                                <img src="../../../../image_sp/ui/rich/quest/idol_get_star.png" style="width:59px;" id="star">
+                                <div id="guid"><img src="../../../../image_sp/ui/rich/quest/arrow_tap_comment.gif" style="width:16px;"><img src="../../../../image_sp/ui/rich/quest/tap_comment.png" style="width:120px; margin-top:1px;"></div>
                             </div>
                             <div id="get_comment" style="display:none;">
                                 <div id="comment_bg" class="cute_bg cool_bg passion_bg">
                                     <div id="words"></div>
-                                </div>
-                                <div id="get_voice" style="display:none;">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_cute.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play cute_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_cool.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play cool_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_passion.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play passion_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_gray.png%3Fv%3D20101001000000" style="width:27px;" class="voice_off">
                                 </div>
                             </div>
                         </div>
@@ -282,12 +168,6 @@
                         <div id="communication_result_idol" style="bottom:-32px;"></div>
                         <div id="idol_comment">
                             <div id="balloon" class="ac004">
-                                <div id="voice_icon" style="display:none;">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_cute.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play cute_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_cool.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play cool_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_passion.png%3Fv%3D20101001000000" style="width:27px;" class="voice_play passion_voice">
-                                    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/button_voice_gray.png%3Fv%3D20101001000000" style="width:27px;" class="voice_off">
-                                </div>
                                 <div id="name"></div>
                                 <div id="comment"></div>
                             </div>
@@ -296,11 +176,11 @@
                         <div id="choose_energy_item" style="display:none;"></div>
                         <div id="get_reward" style="display:none;"></div>
                         <div id="wipe" style="display:none; top:0px;">
-                            <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/wipe.png%3Fv%3D20101001000000" id="wipe_reverse" style="display:none;">
+                            <img src="../../../../image_sp/ui/rich/quest/wipe.png" id="wipe_reverse" style="display:none;">
                         </div>
                         <a href="#" id="change_comment" style="display:none;" class="se_008" onclick="return false;"></a>
                     </section>
-                    <section id="play_area" style='background-image:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/rich/quest/footer_bg.png%3Fv%3D20101001000000); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;height:30px'>
+                    <section id="play_area" style='background-image:url(../../../../image_sp/ui/rich/quest/footer_bg.png); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;height:30px'>
                         <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/ajax_play%3Fl_frm%3DEvent_produce_work_memory_1%26rnd%3D977614093' method="post" id="play">
                             <input type="button" value="" id="play_button" class="play_btn_df se_008">
                             <input type="hidden" name="area_id" value="2">
@@ -321,14 +201,14 @@
             <script type="text/template" id="template_choose_item">
                 <section class="t-Cnt m-Top10 m-Btm10 l-Hgt140" id="itemSelect">
 <div class="m-Cnt" style="width:280px;">
-<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/gacha/chance/button_chance_item_exit01.png%3Fv%3D20101001000000' id="choose_item_close">
+<img src='../../../../image_sp/gacha/chance/button_chance_item_exit01.png' id="choose_item_close">
 <div class="displayBox" style="-webkit-box-pack:justify;">
 <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/0%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D663087485' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
 <input type="hidden" name="use_item" value="3">
 <input type="hidden" name="area_id" value="2">
 <input type='hidden' name="max_use_flag" id="max_use_flag" value="0">
 <div>
-<input type="image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_normal.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
+<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_normal.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
 </div>
 </form>
 <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/1%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D891996059' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
@@ -336,14 +216,14 @@
 <input type="hidden" name="area_id" value="2">
 <input type='hidden' name="max_use_flag" id="max_use_flag" value="1">
 <div>
-<input type="image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_good.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
+<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_good.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
 </div>
 </form>
 <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/2%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D594820591' method="post" style="width:88px;">
 <div>
 <input type="hidden" name="use_item" value="1">
 <input type="hidden" name="area_id" value="2">
-<input type="image" src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event/produce/sprite/lookback/btn_perfect.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="バレンタインカード"><br>
+<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_perfect.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="バレンタインカード"><br>
 </div>
 </form>
 </div>
