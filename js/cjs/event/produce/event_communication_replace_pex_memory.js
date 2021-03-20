@@ -193,7 +193,7 @@
         this.instance.setTransform(0, 0, .3225, .3219);
         this.timeline.addTween(a.Tween.get(this.instance).wait(1))
     }).prototype = g(b.continue_core, new a.Rectangle(0, 0, 129, 15.5), null);
-    (b.パーティクル_pp = function(c, d, e) {
+    (b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_pp = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.frame_0 = function() {
             this.visible = !1
@@ -207,8 +207,8 @@
         this.shape_1.graphics.f().s("#6600FF").ss(1, 1, 1).p("ArJN9QB4gDCIhCQEPiGBOk+QAgiAA8kbQA6j/BEibQBbjQCFhrQCbh+DhgC");
         this.shape_1.setTransform(71.375, -89.3);
         this.timeline.addTween(a.Tween.get(this.shape_1).wait(1))
-    }).prototype = g(b.パーティクル_pp, new a.Rectangle(-5.2, -179.6, 149, 185.2), null);
-    (b.パーティクル_p = function(c, d, e) {
+    }).prototype = g(b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_pp, new a.Rectangle(-5.2, -179.6, 149, 185.2), null);
+    (b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_p = function(c, d, e) {
         this.initialize(c,
             d, e, {});
         this.shape = new a.Shape;
@@ -228,15 +228,15 @@
         }, 1).wait(1))
     }).prototype = f = new a.MovieClip;
     f.nominalBounds = new a.Rectangle(-6.4, -5.7, 12.4, 12.5);
-    (b.シンボル100 = function(c, d, e) {
+    (b.\u30b7\u30f3\u30dc\u30eb100 = function(c, d, e) {
         this.initialize(c,
             d, e, {});
         this.shape = new a.Shape;
         this.shape.graphics.f("#FFFFFF").s().p("A3IAAIXIgcIXJAcI3JAdg");
         this.shape.setTransform(0, .025);
         this.timeline.addTween(a.Tween.get(this.shape).wait(1))
-    }).prototype = g(b.シンボル100, new a.Rectangle(-148.1, -2.9, 296.29999999999995, 5.9), null);
-    (b.シンボル7 = function(c, d, e) {
+    }).prototype = g(b.\u30b7\u30f3\u30dc\u30eb100, new a.Rectangle(-148.1, -2.9, 296.29999999999995, 5.9), null);
+    (b.\u30b7\u30f3\u30dc\u30eb7 = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.shape = new a.Shape;
         this.shape.graphics.lf(["rgba(255,255,255,0)", "#FFFFFF", "#FFFFFF", "rgba(255,255,255,0)"], [0, .043, .961, 1], 0, 43.5, 0, -43.5).s().p("A13E7IAAp1MArvAAAIAAJ1g");
@@ -425,7 +425,7 @@
         this.shape.graphics.f("#FF66CC").s().p("AhPBQIAAifICfAAIAACfg");
         this.timeline.addTween(a.Tween.get(this.shape).wait(1))
     }).prototype = g(b.effect_grip, new a.Rectangle(-8, -8, 16, 16), null);
-    (b.efa_ｷﾗｷﾗ_pp = function(c, d, e) {
+    (b.efa_\uff77\uff97\uff77\uff97_pp = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.frame_0 = function() {
             this.visible = !1
@@ -434,7 +434,7 @@
         this.shape = new a.Shape;
         this.shape.graphics.f("rgba(255,255,0,0.247)").s().p("AyvXcMAAAgu3MAlfAAAMAAAAu3g");
         this.timeline.addTween(a.Tween.get(this.shape).wait(1))
-    }).prototype = g(b.efa_ｷﾗｷﾗ_pp,
+    }).prototype = g(b.efa_\uff77\uff97\uff77\uff97_pp,
         new a.Rectangle(-120, -150, 240, 300), null);
     (b._window_shadow = function(c, d, e) {
         this.initialize(c, d, e, {});
@@ -693,18 +693,18 @@
         this.timeline.addTween(a.Tween.get(this.instance_1).wait(29))
     }).prototype = f = new a.MovieClip;
     f.nominalBounds = new a.Rectangle(-129.5, -78, 264, 150);
-    (b.パーティクル2 = function(c, d, e) {
+    (b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb2 = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.frame_15 = function() {
             this.stop()
         };
         this.timeline.addTween(a.Tween.get(this).wait(15).call(this.frame_15).wait(15));
-        this.instance = new b.パーティクル_pp;
+        this.instance = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_pp;
         this.instance.parent = this;
         this.instance.setTransform(0,
             .4);
         this.timeline.addTween(a.Tween.get(this.instance).wait(30));
-        this.instance_1 = new b.パーティクル_p;
+        this.instance_1 = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_p;
         this.instance_1.parent = this;
         this.instance_1.setTransform(41.85, -17.85, .7674, .7674);
         this.timeline.addTween(a.Tween.get(this.instance_1).wait(1).to({
@@ -817,12 +817,12 @@
             this.stop()
         };
         this.timeline.addTween(a.Tween.get(this).call(this.frame_0).wait(21).call(this.frame_21).wait(15));
-        this.instance = new b.パーティクル_pp;
+        this.instance = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_pp;
         this.instance.parent = this;
         this.instance.setTransform(0, .4);
         this.timeline.addTween(a.Tween.get(this.instance).wait(36));
         this.instance_1 =
-            new b.パーティクル_p;
+            new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb_p;
         this.instance_1.parent = this;
         this.instance_1.setTransform(40.95, -17, .7347, .7347);
         this.timeline.addTween(a.Tween.get(this.instance_1).wait(1).to({
@@ -967,14 +967,14 @@
         }, 1).wait(16))
     }).prototype = f = new a.MovieClip;
     f.nominalBounds = new a.Rectangle(-5.2, -178.7, 148.5, 184.7);
-    (b.シンボル8 = function(c, d, e) {
+    (b.\u30b7\u30f3\u30dc\u30eb8 = function(c, d, e) {
         this.initialize(c,
             d, e, {});
         this.instance = new b.\u30b7\u30f3\u30dc\u30eb7;
         this.instance.parent = this;
         this.instance.alpha = .6992;
         this.timeline.addTween(a.Tween.get(this.instance).wait(1))
-    }).prototype = g(b.シンボル8, new a.Rectangle(-140, -33.5, 280, 63), null);
+    }).prototype = g(b.\u30b7\u30f3\u30dc\u30eb8, new a.Rectangle(-140, -33.5, 280, 63), null);
     (b.square2c = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.instance = new b.squear;
@@ -1465,15 +1465,15 @@
         this.timeline.addTween(a.Tween.get(this.instance).wait(20))
     }).prototype = f = new a.MovieClip;
     f.nominalBounds = new a.Rectangle(-32, -32, 64, 64);
-    (b.efa_パーティクル集合 = function(c, d, e) {
+    (b.efa_\u30d1\u30fc\u30c6\u30a3\u30af\u30eb\u96c6\u5408 = function(c, d, e) {
         this.initialize(c, d, e, {});
-        this.instance = new b.パーティクル2;
+        this.instance = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb2;
         this.instance.parent = this;
         this.instance.setTransform(-3.7, 44.05, .8585, .8585, -173.2889);
-        this.instance_1 = new b.パーティクル2;
+        this.instance_1 = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb2;
         this.instance_1.parent = this;
         this.instance_1.setTransform(43.45, 31, .7527, .5292, 0, -164.9709, 40.6843);
-        this.instance_2 = new b.パーティクル1;
+        this.instance_2 = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb1;
         this.instance_2.parent = this;
         this.instance_2.setTransform(-26.55, 10.85, .8544, .5085, 0, -124.1512, 76.2156, -59.9, -3.9);
         this.instance_3 = new b.\u30d1\u30fc\u30c6\u30a3\u30af\u30eb1;
@@ -1634,7 +1634,7 @@
                 }
             ]
         }).wait(1))
-    }).prototype = g(b.efa_パーティクル集合, new a.Rectangle(-318.7, -245.4, 558.2, 474.70000000000005), null);
+    }).prototype = g(b.efa_\u30d1\u30fc\u30c6\u30a3\u30af\u30eb\u96c6\u5408, new a.Rectangle(-318.7, -245.4, 558.2, 474.70000000000005), null);
     (b.efa_\uff77\uff97\uff77\uff97 = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.frame_8 = function() {
@@ -1927,7 +1927,7 @@
                 1).wait(1))
         }).prototype = f = new a.MovieClip;
     f.nominalBounds = new a.Rectangle(-1.5, 0, 282, 321);
-    (b.エフェクト_レベルアップのコピー = function(c, d, e) {
+    (b.\u30a8\u30d5\u30a7\u30af\u30c8_\u30ec\u30d9\u30eb\u30a2\u30c3\u30d7\u306e\u30b3\u30d4\u30fc = function(c, d, e) {
         this.initialize(c, d, e, {});
         this.frame_0 = function() {};
         this.frame_12 = function() {
@@ -3347,61 +3347,61 @@
         color: "#000000",
         opacity: 0,
         manifest: [{
-            src: "images/change.",
+            src: "images/change.png",
             id: "event_communication_replace_pex_memory_change"
         }, {
-            src: "images/_continue.",
+            src: "images/_continue.png",
             id: "event_communication_replace_pex_memory__continue"
         }, {
-            src: "images/fp_kirakira.",
+            src: "images/fp_kirakira.png",
             id: "event_communication_replace_pex_memory_fp_kirakira"
         }, {
-            src: "images/heart_white.",
+            src: "images/heart_white.png",
             id: "event_communication_replace_pex_memory_heart_white"
         }, {
             src: "images/replace_bg.jpg",
             id: "event_communication_replace_pex_memory_replace_bg"
         }, {
-            src: "images/replace_character1.",
+            src: "images/replace_character1.png",
             id: "event_communication_replace_pex_memory_replace_character1"
         }, {
-            src: "images/replace_character2.",
+            src: "images/replace_character2.png",
             id: "event_communication_replace_pex_memory_replace_character2"
         }, {
-            src: "images/replace_character3.",
+            src: "images/replace_character3.png",
             id: "event_communication_replace_pex_memory_replace_character3"
         }, {
-            src: "images/replace_character4.",
+            src: "images/replace_character4.png",
             id: "event_communication_replace_pex_memory_replace_character4"
         }, {
-            src: "images/replace_name.",
+            src: "images/replace_name.png",
             id: "event_communication_replace_pex_memory_replace_name"
         }, {
-            src: "images/replace_name2.",
+            src: "images/replace_name2.png",
             id: "event_communication_replace_pex_memory_replace_name2"
         }, {
-            src: "images/sp_kirakira.",
+            src: "images/sp_kirakira.png",
             id: "event_communication_replace_pex_memory_sp_kirakira"
         }, {
-            src: "images/sp_textRes1.",
+            src: "images/sp_textRes1.png",
             id: "event_communication_replace_pex_memory_sp_textRes1"
         }, {
-            src: "images/sp_textRes2.",
+            src: "images/sp_textRes2.png",
             id: "event_communication_replace_pex_memory_sp_textRes2"
         }, {
-            src: "images/sp_textRes2_b.",
+            src: "images/sp_textRes2_b.png",
             id: "event_communication_replace_pex_memory_sp_textRes2_b"
         }, {
-            src: "images/sp_textRes2_w.",
+            src: "images/sp_textRes2_w.png",
             id: "event_communication_replace_pex_memory_sp_textRes2_w"
         }, {
-            src: "images/sp_textRes3.",
+            src: "images/sp_textRes3.png",
             id: "event_communication_replace_pex_memory_sp_textRes3"
         }, {
-            src: "images/sp_textRes3_b.",
+            src: "images/sp_textRes3_b.png",
             id: "event_communication_replace_pex_memory_sp_textRes3_b"
         }, {
-            src: "images/sp_textRes3_w.",
+            src: "images/sp_textRes3_w.png",
             id: "event_communication_replace_pex_memory_sp_textRes3_w"
         }],
         preloads: []
