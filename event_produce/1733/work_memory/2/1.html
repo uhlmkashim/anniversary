@@ -123,7 +123,7 @@
                             <div id="quest_dom_overlay_container"></div>
                         </div>
                         <div id="play_commu_result_view" class="result_commu" style="display:none;"></div>
-                        <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/bonus_point" id="bonus_point" style="display:none;">
+                        <a href="../../../../bonus_point" id="bonus_point" style="display:none;">
                             <div></div>
                         </a>
                         <a href="#" id="love_max_bonus" style="display:none;">
@@ -186,7 +186,7 @@
                         <a href="#" id="change_comment" style="display:none;" class="se_008" onclick="return false;"></a>
                     </section>
                     <section id="play_area" style='background-image:url(../../../../image_sp/ui/rich/quest/footer_bg.png); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;height:30px'>
-                        <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/ajax_play' method="get" id="play">
+                        <form action='../../../../event_produce/ajax_play' method="get" id="play">
                             <input type="button" value="" id="play_button" class="play_btn_df se_008">
                             <input type="hidden" name="area_id" value="2">
                             <input type="hidden" name="quest_id" value="1">
@@ -202,7 +202,7 @@
                     </section>
                 </div>
             </div>
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/get_raid_boss' id="communication_event_json" style="display:none;"></a>
+            <a href='../../../../event_produce/get_raid_boss' id="communication_event_json" style="display:none;"></a>
             <script type="text/template" id="template_choose_item">
                 <section class="t-Cnt m-Top10 m-Btm10 l-Hgt140" id="itemSelect">
                     <div class="m-Cnt" style="width:280px;">
@@ -230,11 +230,11 @@
                     </div>
                 </section>
             </script>
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/personal_option/work' class="btn_sup_line_2 m-Cnt m-Btm8">영업 연출 설정</a>
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/memory'>
+            <a href='../../../../personal_option/work' class="btn_sup_line_2 m-Cnt m-Btm8">영업 연출 설정</a>
+            <a href='../../../../event_produce/memory'>
                 <div class="backLink">커뮤 이벤트 메모리 TOP</div>
             </a>
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/index'>
+            <a href='../../../../event_produce/index'>
                 <div class="backLink">아이돌 프로듀스 TOP</div>
             </a>
             <div id="loadImages"></div>
@@ -259,12 +259,12 @@
                     title: "清美をプロデュース",
                     mission_name: "手作りチョコスイーツ!",
                     play_per: ,
-                    new_work_url: "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/work/2/1",
+                    new_work_url: "../../../../event_produce/work/2/1",
                     next_work_url: "http://sp.pf.mbga.jp/12008305/?guid=ON",
-                    error_report_url: "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/report_ajax_error",
+                    error_report_url: "../../../../event_produce/report_ajax_error",
                     title_name_short_flag:true,
                     });
-                    Imascg.QuestModel.special_raid_url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/redirect_appear_raid_boss_swf/3/1";
+                    Imascg.QuestModel.special_raid_url = "../../../../event_produce/redirect_appear_raid_boss_swf/3/1";
                     Imascg.StatusModel.init({
                     max_hp: ,
                     cur_hp: ,
@@ -277,13 +277,13 @@
                     max_idol: 
                     });
                     Imascg.UserItemModel.init({
-                    item_url: "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/user_stamina_items",
-                    shop_url: "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/shop/index"
+                    item_url: "../../../../event_produce/user_stamina_items",
+                    shop_url: "../../../../shop/index"
                     });
                     */
                     //Imascg.QuestIdolImage.init(null);
                     // イベントデータの初期化
-                    Imascg.IdolProduce.init(1733, false, "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/get_raid_boss", 2, 1, 0, "normal");
+                    Imascg.IdolProduce.init(1733, false, "../../../../event_produce/get_raid_boss", 2, 1, 0, "normal");
                     Imascg.IdolProduce.drawEventInfo({
                         "fever": null,
                         "has_raid": false,
@@ -325,7 +325,7 @@
                         }
                     });
                     Imascg.IdolProduce.EnergyItem.init({
-                        item_url: "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/user_energy_items"
+                        item_url: "../../../../event_produce/user_energy_items"
                     });
                     Commonjs.setSearchMore({
                         $trigger: $("#js_btn_more"),
