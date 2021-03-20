@@ -8,7 +8,7 @@
         "lv_l": 10,
         "lv_b": 10,
         "lvup_flg": 0,
-        "comm_result": 0,
+        "comm_result": 1,
         "point": 10,
         "emo": "5",
         "effect": "0",
