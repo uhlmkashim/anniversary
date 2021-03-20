@@ -4198,8 +4198,7 @@
         fps: 12,
         color: "#000000",
         opacity: 0,
-        manifest: [
-            {
+        manifest: [{
                 src: "images/_1_sp.png",
                 id: "event_idol_appearance_replace_pex_memory__1_sp"
             },
@@ -4302,7 +4301,7 @@
                 src: "images/sp_txt3_3.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_3"
             }, {
-                src: "images/sp_txt3_3_w.",
+                src: "images/sp_txt3_3_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_3_w"
             }, {
                 src: "images/sp_txt5_1.png",
