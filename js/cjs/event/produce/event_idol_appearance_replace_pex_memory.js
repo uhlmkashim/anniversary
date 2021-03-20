@@ -4198,7 +4198,8 @@
         fps: 12,
         color: "#000000",
         opacity: 0,
-        manifest: [{
+        manifest: [
+            {
                 src: "images/_1_sp.png",
                 id: "event_idol_appearance_replace_pex_memory__1_sp"
             },
@@ -4230,110 +4231,110 @@
                 src: "images/replace_character1_3.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_character1_3"
             }, {
-                src: "images/replace_character1_4.",
+                src: "images/replace_character1_4.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_character1_4"
             },
             {
-                src: "images/replace_character1_5.",
+                src: "images/replace_character1_5.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_character1_5"
             }, {
-                src: "images/replace_character1_6.",
+                src: "images/replace_character1_6.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_character1_6"
             }, {
-                src: "images/replace_name.",
+                src: "images/replace_name.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_name"
             }, {
-                src: "images/replace_name2.",
+                src: "images/replace_name2.png",
                 id: "event_idol_appearance_replace_pex_memory_replace_name2"
             }, {
-                src: "images/sp_kirakira.",
+                src: "images/sp_kirakira.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_kirakira"
             },
             {
-                src: "images/sp_text1_1.",
+                src: "images/sp_text1_1.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text1_1"
             }, {
-                src: "images/sp_text1_2.",
+                src: "images/sp_text1_2.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text1_2"
             }, {
-                src: "images/sp_text1_2_w.",
+                src: "images/sp_text1_2_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text1_2_w"
             }, {
-                src: "images/sp_text1_3.",
+                src: "images/sp_text1_3.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text1_3"
             }, {
-                src: "images/sp_text1_3_w.",
+                src: "images/sp_text1_3_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text1_3_w"
             },
             {
-                src: "images/sp_text2_1.",
+                src: "images/sp_text2_1.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_1"
             }, {
-                src: "images/sp_text2_1_w.",
+                src: "images/sp_text2_1_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_1_w"
             }, {
-                src: "images/sp_text2_2.",
+                src: "images/sp_text2_2.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_2"
             }, {
-                src: "images/sp_text2_2_w.",
+                src: "images/sp_text2_2_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_2_w"
             }, {
-                src: "images/sp_text2_3.",
+                src: "images/sp_text2_3.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_3"
             },
             {
-                src: "images/sp_text2_3_w.",
+                src: "images/sp_text2_3_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_text2_3_w"
             }, {
-                src: "images/sp_txt3_1.",
+                src: "images/sp_txt3_1.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_1"
             }, {
-                src: "images/sp_txt3_1_w.",
+                src: "images/sp_txt3_1_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_1_w"
             }, {
-                src: "images/sp_txt3_2.",
+                src: "images/sp_txt3_2.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_2"
             }, {
                 src: "images/sp_txt3_2_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_2_w"
             },
             {
-                src: "images/sp_txt3_3.",
+                src: "images/sp_txt3_3.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_3"
             }, {
                 src: "images/sp_txt3_3_w.",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt3_3_w"
             }, {
-                src: "images/sp_txt5_1.",
+                src: "images/sp_txt5_1.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_1"
             }, {
-                src: "images/sp_txt5_1_b.",
+                src: "images/sp_txt5_1_b.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_1_b"
             }, {
-                src: "images/sp_txt5_1_w.",
+                src: "images/sp_txt5_1_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_1_w"
             },
             {
-                src: "images/sp_txt5_2.",
+                src: "images/sp_txt5_2.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_2"
             }, {
-                src: "images/sp_txt5_2_b.",
+                src: "images/sp_txt5_2_b.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_2_b"
             }, {
-                src: "images/sp_txt5_2_w.",
+                src: "images/sp_txt5_2_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_2_w"
             }, {
-                src: "images/sp_txt5_3.",
+                src: "images/sp_txt5_3.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_3"
             }, {
-                src: "images/sp_txt5_3_b.",
+                src: "images/sp_txt5_3_b.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_3_b"
             },
             {
-                src: "images/sp_txt5_3_w.",
+                src: "images/sp_txt5_3_w.png",
                 id: "event_idol_appearance_replace_pex_memory_sp_txt5_3_w"
             }, {
-                src: "images/star.",
+                src: "images/star.png",
                 id: "event_idol_appearance_replace_pex_memory_star"
             }
         ],
