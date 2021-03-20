@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fnew_mypage_common.css%3Fv%3D20210219144630" media="all">
+    <link rel="stylesheet" type="text/css" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fevent_produce.css%3Fv%3D20210108144632' media="all">
+    <link rel="apple-touch-icon-precomposed" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Ficon_bookmark.png%3Fv%3D20201209144616">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fjquery-2.2.2.min.js%3Fv%3D20170222083919"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Funderscore-min.js%3Fv%3D20170222083931"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon.js%3Fv%3D20201127144733"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon_new.js%3Fv%3D20210318144641"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/event_produce/memory');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20200713144634'></script>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+</head>
+
+<body id="event_produce">
+    <div id="top" class="page_container jsOnBtn">
+        <nav class="area_menu_header">
+            <style>
+                .event_logo-area {
+                    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Fbg_area_l_5300.jpg%3Fv%3D20210318144640);
+                }
+            </style>
+            <div class="area_menu_header_6btn _event">
+                <h1 style="font-size:11px">アイドルプロデュース</h1>
+                <ul>
+                    <li><a class="head_menu_01" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D113083066'>
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_02 jsGameMenu" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpetit_cg%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D131387473'>
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_03 jsGameMenu" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgacha%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D591070617'>
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_04 jsGameMenu" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D523037035'>
+                            <div></div>
+                        </a></li>
+                    <li><a class="head_menu_05 jsGameMenu" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fauction%2Fauction_top%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D534389163'>
+                            <div></div>
+                        </a></li>
+                    <li class="btn-popupmenu"><a class="head_menu_06 se_000" href='#' id="headerAcd">
+                            <div></div>
+                        </a></li>
+                </ul><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D523167329" class="event_logo-area jsBtnEventLogo jsOnBtn">
+                    <div class="logo-area"><img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent_flash%2F1733%2Franking%2Fevent_logo.png%3Fv%3D20210318144641" width="64"></div>
+                    <div class="round_info-area">1日目<br>3/18 15:00～3/19 20:59</div>
+                </a>
+            </div>
+            <div id="headerPopupMenu" class="headerPopupMenu">
+                <div class="m-Top10 t-Cnt">
+                    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Findex%3Fl_frm%3DEvent_produce_memory_2%26rnd%3D603466696' class="jsOnDesignBtn"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Fbanner_event_01.png%3Fv%3D20210318144640' width="280" height="60"></a>
+                </div>
+                <div class="area_menu_header_main4">
+                    <ul>
+                        <li><a class="btn_menu_header_lesson" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DEvent_produce_memory_2%26rnd%3D810580843'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_work" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fquests%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D607551914'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_livebattle" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fbattles%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D477644113'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_deck" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fdeck%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D709741839'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_01"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_shop" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D128955899'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_item" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fitem%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D656131973'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_present" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpresent%2Frecieve%2F%3Fview_auth_type%3D1%26cache%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D830653380'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_change" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fexchange%2Fmedal_list%2F999999%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D378034932'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_02"></h3>
+                <div class="area_menu_header_5">
+                    <ul>
+                        <li><a class="btn_menu_header_idollist" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_list%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D947894974'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_trainer" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_storage%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D301017874'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_production" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fknights%2Fnot_join_knights_top%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D991794038'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_pra" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fp_ranking_award%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D988762652'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_profile" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fresults%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D155428956'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_03"></h3>
+                <div class="area_menu_header_4">
+                    <ul>
+                        <li><a class="btn_menu_header_favorite" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Ffriend%2Findex%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D884453190'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_memory" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmemorial%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D45497462'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_gamecenter" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_center%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D790955058'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_sound" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fs_booth%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D806392608'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_menu_header_04"></h3>
+                <div class="area_menu_header_3">
+                    <ul>
+                        <li><a class="btn_menu_header_setting" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpersonal_option%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D997410881'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_help" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fadvise%2Findex%2Ftop%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D376358020'>
+                                <div></div>
+                            </a></li>
+                        <li><a class="btn_menu_header_top" href='http://sp.pf.mbga.jp/12008305/?guid=ON'>
+                                <div></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            var $btnEventLogo = $('.jsBtnEventLogo');
+            var $btnGameMenu = $('.jsGameMenu');
+            var $menuElem = $('#headerPopupMenu');
+            // ゲームメニューは消しておく
+            $btnGameMenu.hide();
+            // メニュー開閉で表示制御
+            $('#headerAcd').on('click', function() {
+                if ($menuElem.css('display') == 'none') {
+                    $btnEventLogo.hide();
+                    $btnGameMenu.show();
+                } else {
+                    $btnEventLogo.show();
+                    $btnGameMenu.hide();
+                }
+            });
+        </script>
+        <input id="delay" type="hidden" value="0">
+        <script type="text/template" id="tpl_new_info">
+            <section id="newInfo" class="newInfoArea">
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Flightbox%2Fpopup_ue.png%3Fv%3D20170222083412' width="280" height="50">
+<div class="newInfoBody">
+<ul>
+<li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Ftweet%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D922749727'><div>Twitter投稿で「バレンタインカード」GET!</div></a></li>
+<li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Ftopics%3Ftab%3D1%26check%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D970954173#page_schedule'><div>イベントスケジュールを確認</div></a></li>
+</ul>
+</div>
+<img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Flightbox%2Fpopup_sita.png%3Fv%3D20170222083412' width="280" height="38">
+<a class='js_popup_close' style="display: block;width: 95px;height: 25px;position: absolute;right: 113px;bottom: 9px;"></a>
+<a class='js_popup_close' style="display: block;width: 34px;height: 34px;position: absolute;right: 20px;top: 9px;"></a>
+</section>
+</script>
+        <div class="top_info-area">
+            <span class="font-size-11 eventPeriodColor_crimson">★イベント開催期間★</span>
+            <span class="font-size-11">3/18 15:00～3/25 22:59</span>
+            <div class="stamina_battle_point-area">
+                <div class="box display _inline_block vertical_align _top" style="width: 100%; text-align:center;">
+                    <span class="box display _inline_block vertical_align _middle label _crimson small" style="padding: 0 4px;">スタミナ</span>
+                    <span class="box  display _inline_block vertical_align _middle font-size-12" style="width: 22%;">87/737</span>
+                    <span class="display _inline_block small m-Lft8">
+                        全回復まで<span class="yellow jsStaminaCureTime">32:29:51</span>
+                    </span>
+                </div>
+            </div>
+            <a class="js_newInfo newInfo newInfo_img se_008 jsOnDesignBtn">
+                <div></div>
+                <div class="count_text">2</div>
+            </a>
+        </div>
+        <script>
+            $(function() {
+                var template = $("#popup-custom").html();
+                Commonjs.createPopupByTemplate({
+                    "id": "tpl_new_info",
+                    $trigger: $(".js_newInfo"),
+                    "custom_flg": true,
+                });
+            })
+        </script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmin%2Fevent_common.min.js%3Fv%3D20191108144617" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                var event_data = {
+                    viewer_id: 134800333,
+                    event_id: 1733,
+                    current_time: '2021/03/18 23:57:54'
+                };
+                var eventManager = new Event_common(event_data);
+                var timeCounter = eventManager.timecountManager;
+                window.eventManager = eventManager;
+                //スタミナ回復時間のカウントダウン
+                var stamina_cure_recoverytime = parseInt('116991' + '000');
+                timeCounter.exec(viewTimeStaminaCure, stamina_cure_recoverytime, 'viewTimeStaminaCure');
+
+                function viewTimeStaminaCure(time) {
+                    $('.jsStaminaCureTime').text(Commonjs.getFormatTime(time, "h:mm:ss"))
+                }
+            });
+        </script>
+        <div class='tab_common-large_crimson tab_color-crimson m-Top8' style=""><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Findex%3Fl_frm%3DEvent_produce_memory_3%26rnd%3D356146697" class='tab_line_3 tab_text   ' style="">お仕事</a><a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_ranking%2Franking_menu%3Fevent_id%3D1733%26l_frm%3DEvent_produce_memory_1%26rnd%3D756342399" class='tab_line_3_center tab_text   ' style="">報酬</a><a class='tab_line_3 tab_text _line_2  selected' style="font-size:10px;padding-top:8px;padding-left:2px;letter-spacing:-1px">コミュイベント<br>メモリー</a></div>
+        <style>
+            .encore_color {
+                color: #ff7100;
+            }
+
+            ._ls {
+                letter-spacing: -0.9px;
+            }
+        </style>
+        <div class="area_look_back">
+            <section class="area_select_idol t-Cnt m-Top4" id="main_idol_tab"><a href='#' class="tab_idol_list jsOnDesignBtn" data-key=1><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Frich%2Ficon_idol_1_1.png%3Fv%3D20210318144640' width="60"></a><a href='#' class="tab_idol_list jsOnDesignBtn" data-key=2><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Frich%2Ficon_idol_2_1.png%3Fv%3D20210318144640' width="60"></a><a href='#' class="tab_idol_list jsOnDesignBtn" data-key=3><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Frich%2Ficon_idol_3_1.png%3Fv%3D20210318144640' width="60"></a><a href='#' class="tab_idol_list jsOnDesignBtn" data-key=4><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Frich%2Ficon_idol_4_1.png%3Fv%3D20210318144640' width="60"></a></section>
+            <section class="main_idol_tab_1 area_select_area _attr_2" data-idol_id=1 data-view=1>
+                <div class="bg_area"></div>
+                <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Ftop_stage_chara_103.png%3Fv%3D20210318144640' class="idol_img" width="250">
+                    <div class="idol_name">
+                        <div class="text_value">岡崎泰葉</div>
+                    </div>
+                    <div class="main_area_name">エンドレスプロデュース</div>
+                </div>
+                <div class="select_area">
+                    <div id="small_tab_1" class='tab_common-small  m-Top4 m-Btm4 js_tab_elm' style=""><a class='tab_line_3_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">手作りチョコスイーツ!</div>
+                        </a><a class='tab_line_3_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">チョコレートフォーユー!</div>
+                        </a><a class='tab_line_3_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">エンドレスプロデュース</div>
+                        </a></div>
+                    <div class="small_area_tab_1 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F1%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D523647163' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F2%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D380990618' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F3%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D267748019' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F4%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D138123732' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F5%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D773037702' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F6%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D611976162' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F7%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D553596550' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F1%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D365110983' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F2%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D642764292' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F3%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D665436212' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F4%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D203888376' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F1%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D375793020' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F2%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D407764557' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F3%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D807320048' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F4%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D628217346' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F1%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D285891265' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F2%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D57461878' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F3%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D539455807' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F4%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D582995055' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F1%2F1%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D177980135' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="small_area_tab_1 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F8%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D10975846' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F9%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D433568639' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F10%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D333799001' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F11%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D358198534' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F12%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D369576269' class="btn_area jsOnDesignBtn">コミュイベント5</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F13%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D688916716' class="btn_area jsOnDesignBtn">コミュイベント6</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F14%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D848513231' class="btn_area jsOnDesignBtn">コミュイベント7</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F15%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D496452509' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F16%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D162210181' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F17%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D16342796' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F18%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D988362283' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F5%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D565476779' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F6%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D763369798' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F7%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D563134032' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F8%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D315709469' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F5%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D629936699' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F6%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D785847434' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F7%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D809680753' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F8%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D758880427' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F5%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D926436066' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F6%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D251905434' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F7%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D848651366' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F8%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D545449852' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F1%2F5%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D563903009' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="small_area_tab_1 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F19%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D238314818' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F20%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D653276639' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F21%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D15222673' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F22%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D489216169' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F23%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D904602122' class="btn_area jsOnDesignBtn">コミュイベント5</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F24%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D434078982' class="btn_area jsOnDesignBtn">コミュイベント6</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F25%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D358148461' class="btn_area jsOnDesignBtn">コミュイベント7</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F26%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D716672789' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F27%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D632948824' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F28%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D556652828' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F1%2F29%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D886776299' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F9%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D179373232' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F10%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D7692247' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F11%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D909544622' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F12%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D255446072' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F9%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D137252992' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F10%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D141929185' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F11%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D467148808' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F12%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D709097410' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F9%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D280233610' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F10%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D570727851' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F11%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D199169554' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F12%3Farea_id%3D1%26l_frm%3DEvent_produce_memory_1%26rnd%3D778870281' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F1%2F9%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D424201492' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main_idol_tab_2 area_select_area _attr_3" data-idol_id=2 data-view=1>
+                <div class="bg_area"></div>
+                <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Ftop_stage_chara_203.png%3Fv%3D20210318144640' class="idol_img" width="250">
+                    <div class="idol_name">
+                        <div class="text_value">冴島清美</div>
+                    </div>
+                    <div class="main_area_name">エンドレスプロデュース</div>
+                </div>
+                <div class="select_area">
+                    <div id="small_tab_2" class='tab_common-small  m-Top4 m-Btm4 js_tab_elm' style=""><a class='tab_line_3_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">手作りチョコスイーツ!</div>
+                        </a><a class='tab_line_3_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">チョコレートフォーユー!</div>
+                        </a><a class='tab_line_3_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">エンドレスプロデュース</div>
+                        </a></div>
+                    <div class="small_area_tab_2 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F1%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D845785412' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F2%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D128215997' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F3%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D201119859' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F4%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D580925491' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F5%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D386366041' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F6%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D168232646' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F7%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D989980760' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F1%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D280495683' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F2%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D418804263' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F3%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D268276957' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F4%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D8281287' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F1%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D155003799' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F2%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D339762911' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F3%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D598252402' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F4%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D888900341' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F1%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D806691261' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F2%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D692566014' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F3%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D942398493' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F4%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D924751149' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F2%2F2%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D388448351' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="small_area_tab_2 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F8%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D498459247' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F9%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D323652691' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F10%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D672827079' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F11%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D667949178' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F12%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D579549849' class="btn_area jsOnDesignBtn">コミュイベント5</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F13%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D851451197' class="btn_area jsOnDesignBtn">コミュイベント6</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F14%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D926862457' class="btn_area jsOnDesignBtn">コミュイベント7</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F15%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D12676798' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F16%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D41241157' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F17%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D804843953' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F18%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D587505394' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F5%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D95397964' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F6%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D67298313' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F7%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D312224948' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F8%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D945282624' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F5%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D747046208' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F6%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D397605892' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F7%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D170975519' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F8%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D557473258' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F5%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D920600912' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F6%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D937877335' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F7%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D575768760' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F8%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D714003243' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F2%2F6%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D925307640' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="small_area_tab_2 area_list m-Btm4">
+                        <ul>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F19%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D765029560' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F20%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D454035752' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F21%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D570286663' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F22%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D712659615' class="btn_area jsOnDesignBtn">コミュイベント4</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F23%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D60497679' class="btn_area jsOnDesignBtn">コミュイベント5</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F24%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D120288344' class="btn_area jsOnDesignBtn">コミュイベント6</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F25%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D297697866' class="btn_area jsOnDesignBtn">コミュイベント7</a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F26%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D96295790' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F27%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D946657676' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F28%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D705519966' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F2%2F29%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D559633084' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F9%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D593843917' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント1</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F10%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D639857396' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント2</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F11%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D48771047' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント3</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F5%2F12%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D893585530' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント4</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F9%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D519867819' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント5</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F10%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D355487387' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント6</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F11%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D819784239' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント7</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F6%2F12%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D355682128' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント8</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F9%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D581103018' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント9</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F10%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D582801834' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント10</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F11%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D301630365' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント11</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_appear_raid_boss_swf_memory%2F7%2F12%3Farea_id%3D2%26l_frm%3DEvent_produce_memory_1%26rnd%3D230677484' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エクストラ<br>コミュイベント12</div>
+                                </a></li>
+                            <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fredirect_episode_commu_swf_memory%2F2%2F10%3Fbg_id%3D%26l_frm%3DEvent_produce_memory_1%26rnd%3D787938312' class="btn_area jsOnDesignBtn">
+                                    <div class="text_elem">エピソード<br>コミュイベント</div>
+                                </a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main_idol_tab_3 area_select_area _attr_1" data-idol_id=3 data-view=1>
+                <div class="bg_area"></div>
+                <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Ftop_stage_chara_301.png%3Fv%3D20210318144640' class="idol_img" width="250">
+                    <div class="idol_name">
+                        <div class="text_value">宮本フレデリカ</div>
+                    </div>
+                    <div class="main_area_name">手作りチョコスイーツ!</div>
+                </div>
+                <div class="select_area">
+                    <div class="small_area_tab_3 area_list m-Btm4">
+                        <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                        <div class="t-Lft area_unlock_text">・宮本フレデリカの<span class="encore_color">2回目の目標絆Lv</span>を達成しましょう!</div>
+                        <div class="btn_play_area t-Cnt m-Btm8 m-Top4"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fmission_list%3Fstage%3D3%26l_frm%3DEvent_produce_memory_1%26rnd%3D510915072'><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fproduce%2Fname_button_work%2F31.png%3Fv%3D20190524145714' width="200"></a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_idol_tab_4 area_select_area _attr_2" data-idol_id=4 data-view=1>
+                <div class="bg_area"></div>
+                <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Ftop_stage_chara_401.png%3Fv%3D20210318144640' class="idol_img" width="250">
+                    <div class="idol_name">
+                        <div class="text_value">森久保乃々</div>
+                    </div>
+                    <div class="main_area_name">手作りチョコスイーツ!</div>
+                </div>
+                <div class="select_area">
+                    <div class="small_area_tab_4 area_list m-Btm4">
+                        <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                        <div class="t-Lft area_unlock_text">・森久保乃々の<span class="encore_color">2回目の目標絆Lv</span>を達成しましょう!</div>
+                        <div class="btn_play_area t-Cnt m-Btm8 m-Top4"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Fmission_list%3Fstage%3D4%26l_frm%3DEvent_produce_memory_1%26rnd%3D148975404'><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2Fproduce%2Fname_button_work%2F126.png%3Fv%3D20190524145713' width="200"></a></div>
+                    </div>
+                </div>
+            </section>
+        </div><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpersonal_option%2Fwork%3Fl_frm%3DEvent_produce_memory_1%26rnd%3D186957764' class="btn_sup_line_2 m-Cnt m-Btm12">お仕事演出設定</a><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Findex%3Fl_frm%3DEvent_produce_memory_4%26rnd%3D430656696'>
+            <div class="backLink">アイドルプロデュースTOP</div>
+        </a><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DEvent_produce_memory_2%26rnd%3D821527208'>
+            <div class="backLink">マイスタジオ</div>
+        </a><br>
+        <script type="text/javascript">
+            $(function() {
+                $('form').bind('submit', function() {
+                    var $submit = $("input[type=submit], input[type=reset]");
+                    for (var i = 0; i < $submit.length; i++) {
+                        if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).val('送信中');
+                            $submit.eq(i).prop('disabled', true);
+                            var prev = $submit.eq(i).prev();
+                            if (prev.hasClass('btn_text')) {
+                                prev.text('送信中');
+                                if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                    $submit.eq(i).parent().removeClass('_line_2');
+                                }
+                            }
+                        } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).prop('disabled', true);
+                        }
+                        if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                            $submit.eq(i).parent().css({
+                                "opacity": "0.5"
+                            });
+                        }
+                    }
+                    $(".livebutton input[type='submit']").val('').css({
+                        "opacity": "0.5"
+                    }).prop('disabled', true);
+                    var $imagesub = $("input[type='image']");
+                    $imagesub.prop('disabled', true);
+                    for (var i = 0; i < $imagesub.length; i++) {
+                        if (!$imagesub.eq(i).attr('class')) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                            continue;
+                        }
+                        if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                        } else {
+                            $imagesub.eq(i).css({
+                                "opacity": "1"
+                            });
+                        }
+                    }
+                    setTimeout(function() {
+                        $submit.prop('disabled', false).parent().css({
+                            "opacity": "1"
+                        });
+                        $imagesub.prop('disabled', false).css({
+                            "opacity": "1"
+                        });
+                        $(".livebutton input[type='submit']").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $(".submit a").click(function() {
+                    $(this).click(function() {
+                        return false;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "0.5"
+                    });
+                    setTimeout(function() {
+                        $(this).click(function() {
+                            return true;
+                        })
+                        $(".submit").find("img").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $('body').on("click", '.stop-repeat-link', function(e) {
+                    var self = $('.stop-repeat-link');
+                    self.css({
+                        'pointer-events': 'none',
+                        'opacity': 0.6
+                    });
+                    setTimeout(function() {
+                        self.css({
+                            'pointer-events': 'auto',
+                            'opacity': 1
+                        });
+                    }, 2500);
+                });
+            });
+        </script>
+        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Filibrary.js%3Fv%3D20190524145756" type="text/javascript"></script>
+        <script type="text/javascript">
+            'use strict';
+            $(function() {
+                var produce_idols = {
+                    "1": {
+                        "produce_idol_id": "1",
+                        "produce_idoleimage1": "2214301",
+                        "produce_idoleimage2": "2314302",
+                        "produce_idoleimage3": "2214301",
+                        "produce_idol_flash1": "1",
+                        "produce_idol_flash2": "1",
+                        "produce_idol_flash3": "1",
+                        "produce_idol_flash4": "1",
+                        "produce_idol_name": "\u5ca1\u5d0e\u6cf0\u8449",
+                        "produce_idol_type": "2",
+                        "need_hearts_rank_up": "5",
+                        "complete_rank1": "3",
+                        "complete_rank2": 4,
+                        "complete_rank3": "",
+                        "complete1_item_category": "3",
+                        "complete1_item": "2214301",
+                        "complete1_item_num": "1",
+                        "complete1_item_category2": "1",
+                        "complete1_item2": "5000",
+                        "complete1_item_num2": "1",
+                        "complete1_item_category3": "0",
+                        "complete1_item3": "0",
+                        "complete1_item_num3": "0",
+                        "complete2_item_category": "3",
+                        "complete2_item": "2214301",
+                        "complete2_item_num": "1",
+                        "complete2_item_category2": "1",
+                        "complete2_item2": "5000",
+                        "complete2_item_num2": "2",
+                        "complete2_item_category3": "0",
+                        "complete2_item3": "0",
+                        "complete2_item_num3": "0",
+                        "complete3_item_category": "0",
+                        "complete3_item": "0",
+                        "complete3_item_num": "0",
+                        "complete3_item_category2": "0",
+                        "complete3_item2": "0",
+                        "complete3_item_num2": "0",
+                        "complete3_item_category3": "0",
+                        "complete3_item3": "0",
+                        "complete3_item_num3": "0",
+                        "rank2_up_event_point": "6700",
+                        "rank3_up_event_point": "10000",
+                        "rank4_up_event_point": "",
+                        "rank2_up_comment": "\u5fc3\u3092\u8fbc\u3081\u3066\u6e96\u5099\u3057\u307e\u3057\u305f\u2026\u3002\u559c\u3093\u3067\u3082\u3089\u3048\u308b\u3088\u3046\u306b\u304c\u3093\u3070\u308a\u307e\u3059\u2026\u3002%s\u3055\u3093\u2026\u898b\u5b88\u3063\u3066\u3044\u3066\u304f\u3060\u3055\u3044\u306d",
+                        "rank3_up_comment": "\u6c17\u6301\u3061\u304c\u4f1d\u308f\u308b\u3068\u3001\u3053\u3093\u306a\u306b\u3082\u5fc3\u304c\u6674\u308c\u3084\u304b\u306b\u306a\u308b\u3093\u3067\u3059\u306d\u3002%s\u3055\u3093\u2026\u79c1\u3001\u30a2\u30a4\u30c9\u30eb\u306b\u306a\u308c\u3066\u3001\u672c\u5f53\u306b\u826f\u304b\u3063\u305f\u3067\u3059\u2026",
+                        "rank4_up_comment": "",
+                        "fever_time_comment": "\u3082\u3046\u5c11\u3057\u8fd1\u304f\u306b\u884c\u3063\u3066\u3082\u2026\u3044\u3044\u3067\u3059\u304b? %s\u3055\u3093\u3068\u3044\u308b\u3068\u3001\u3068\u3066\u3082\u5b89\u5fc3\u3057\u3066\u5fc3\u5730\u3088\u304f\u3066\u2026\u3002\u3082\u3063\u3068\u304a\u8a71\u3057\u305f\u3044\u3067\u3059\u2026",
+                        "encore_time_comment": "",
+                        "quest_type": "1",
+                        "mission_costume1": "",
+                        "mission_costume2": "",
+                        "mission_costume3": "",
+                        "half_add_flg": false,
+                        "unlock_flag": true,
+                        "produce_idol_area_hearts": {
+                            "1": 17,
+                            "2": 18,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "produce_idol_hearts": 0,
+                        "produce_idol_rank": 0,
+                        "current_complete_rank": 0,
+                        "endless_flag": true,
+                        "mission_name": "\u30a8\u30f3\u30c9\u30ec\u30b9\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
+                        "current_chapter_mission_name": "\u30a8\u30f3\u30c9\u30ec\u30b9\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
+                        "mission_bg": "3",
+                        "current_mission_bg": "3",
+                        "mission_costume": "3",
+                        "top_comment": "\u30c9\u30ad\u30c9\u30ad\u3057\u307e\u3059\u3051\u3069\u2026\u304d\u3063\u3068\u6210\u529f\u3055\u305b\u3066\u307f\u305b\u307e\u3059\u2026!",
+                        "face_id": "1",
+                        "stamina_cost": "12",
+                        "quest_id": "3",
+                        "enable_select_chapter_id_list": [],
+                        "user_select_chapter_key": 0,
+                        "is_raid_battle": false,
+                        "stage_release_type_list": {
+                            "is_regular": true,
+                            "is_add": false
+                        },
+                        "bg_costume_list": {
+                            "1": {
+                                "mission_costume": "1",
+                                "mission_bg": "1"
+                            },
+                            "2": {
+                                "mission_costume": "2",
+                                "mission_bg": "2"
+                            },
+                            "3": {
+                                "mission_costume": "3",
+                                "mission_bg": "3"
+                            }
+                        }
+                    },
+                    "2": {
+                        "produce_idol_id": "2",
+                        "produce_idoleimage1": "3215301",
+                        "produce_idoleimage2": "3315302",
+                        "produce_idoleimage3": "3215301",
+                        "produce_idol_flash1": "2",
+                        "produce_idol_flash2": "2",
+                        "produce_idol_flash3": "2",
+                        "produce_idol_flash4": "2",
+                        "produce_idol_name": "\u51b4\u5cf6\u6e05\u7f8e",
+                        "produce_idol_type": "3",
+                        "need_hearts_rank_up": "5",
+                        "complete_rank1": "3",
+                        "complete_rank2": 7,
+                        "complete_rank3": "",
+                        "complete1_item_category": "3",
+                        "complete1_item": "3215301",
+                        "complete1_item_num": "1",
+                        "complete1_item_category2": "1",
+                        "complete1_item2": "5000",
+                        "complete1_item_num2": "1",
+                        "complete1_item_category3": "0",
+                        "complete1_item3": "0",
+                        "complete1_item_num3": "0",
+                        "complete2_item_category": "3",
+                        "complete2_item": "3215301",
+                        "complete2_item_num": "1",
+                        "complete2_item_category2": "1",
+                        "complete2_item2": "5000",
+                        "complete2_item_num2": "2",
+                        "complete2_item_category3": "0",
+                        "complete2_item3": "0",
+                        "complete2_item_num3": "0",
+                        "complete3_item_category": "0",
+                        "complete3_item": "0",
+                        "complete3_item_num": "0",
+                        "complete3_item_category2": "0",
+                        "complete3_item2": "0",
+                        "complete3_item_num2": "0",
+                        "complete3_item_category3": "0",
+                        "complete3_item3": "0",
+                        "complete3_item_num3": "0",
+                        "rank2_up_event_point": "7200",
+                        "rank3_up_event_point": "11000",
+                        "rank4_up_event_point": "",
+                        "rank2_up_comment": "\u30c1\u30e7\u30b3\u30ec\u30fc\u30c8\u3001\u5b8c\u6210\u3067\u3059\u306d\u3002\u3042\u3068\u306f\u30e9\u30c3\u30d4\u30f3\u30b0\u3092\u3059\u308b\u3060\u3051\u3067\u3059! \u30a4\u30d9\u30f3\u30c8\u672c\u756a\u3082\u3053\u306e\u8abf\u5b50\u3067\u8d85\u2606\u5927\u6210\u529f\u3055\u305b\u307e\u3057\u3087\u3046!",
+                        "rank3_up_comment": "\u7121\u4e8b\u306b\u30a4\u30d9\u30f3\u30c8\u3092\u7d42\u3048\u3089\u308c\u307e\u3057\u305f! \u3053\u308c\u3082\u3072\u3068\u3048\u306b\u6e05\u304f\u6b63\u3057\u3044\u98a8\u7d00\u3092\u5b88\u308b\u4e8b\u304c\u3067\u304d\u305f\u304b\u3089\u3067\u3059! \u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f!",
+                        "rank4_up_comment": "",
+                        "fever_time_comment": "\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3001\u3061\u3087\u3063\u3068\u304a\u8a71\u304c\u3042\u308a\u307e\u3059! \u3082\u3061\u308d\u3093\u5927\u5207\u306a\u304a\u8a71\u3067\u3059\u3002\u6642\u9593\u3092\u3068\u3063\u3066\u3082\u3089\u3048\u307e\u3059\u304b\u2026?",
+                        "encore_time_comment": "",
+                        "quest_type": "1",
+                        "mission_costume1": "",
+                        "mission_costume2": "",
+                        "mission_costume3": "",
+                        "half_add_flg": false,
+                        "unlock_flag": true,
+                        "produce_idol_area_hearts": {
+                            "1": 15,
+                            "2": 35,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "produce_idol_hearts": 0,
+                        "produce_idol_rank": 0,
+                        "current_complete_rank": 0,
+                        "endless_flag": true,
+                        "mission_name": "\u30a8\u30f3\u30c9\u30ec\u30b9\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
+                        "current_chapter_mission_name": "\u30a8\u30f3\u30c9\u30ec\u30b9\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9",
+                        "mission_bg": "3",
+                        "current_mission_bg": "3",
+                        "mission_costume": "3",
+                        "top_comment": "\u6e05\u304f\u6b63\u3057\u304f\u7f8e\u3057\u304f\u2026\u697d\u3057\u3044\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3\u306b\u3057\u307e\u3057\u3087\u3046!",
+                        "face_id": "1",
+                        "stamina_cost": "12",
+                        "quest_id": "3",
+                        "enable_select_chapter_id_list": [],
+                        "user_select_chapter_key": 0,
+                        "is_raid_battle": false,
+                        "stage_release_type_list": {
+                            "is_regular": true,
+                            "is_add": false
+                        },
+                        "bg_costume_list": {
+                            "1": {
+                                "mission_costume": "1",
+                                "mission_bg": "1"
+                            },
+                            "2": {
+                                "mission_costume": "2",
+                                "mission_bg": "2"
+                            },
+                            "3": {
+                                "mission_costume": "3",
+                                "mission_bg": "3"
+                            }
+                        }
+                    },
+                    "3": {
+                        "produce_idol_id": "3",
+                        "produce_idoleimage1": "1412301",
+                        "produce_idoleimage2": "1512302",
+                        "produce_idoleimage3": "1412301",
+                        "produce_idol_flash1": "3",
+                        "produce_idol_flash2": "3",
+                        "produce_idol_flash3": "3",
+                        "produce_idol_flash4": "3",
+                        "produce_idol_name": "\u5bae\u672c\u30d5\u30ec\u30c7\u30ea\u30ab",
+                        "produce_idol_type": "1",
+                        "need_hearts_rank_up": "5",
+                        "complete_rank1": "4",
+                        "complete_rank2": 13,
+                        "complete_rank3": "",
+                        "complete1_item_category": "3",
+                        "complete1_item": "1412301",
+                        "complete1_item_num": "1",
+                        "complete1_item_category2": "1",
+                        "complete1_item2": "5000",
+                        "complete1_item_num2": "1",
+                        "complete1_item_category3": "0",
+                        "complete1_item3": "0",
+                        "complete1_item_num3": "0",
+                        "complete2_item_category": "3",
+                        "complete2_item": "1412301",
+                        "complete2_item_num": "1",
+                        "complete2_item_category2": "1",
+                        "complete2_item2": "5000",
+                        "complete2_item_num2": "2",
+                        "complete2_item_category3": "0",
+                        "complete2_item3": "0",
+                        "complete2_item_num3": "0",
+                        "complete3_item_category": "0",
+                        "complete3_item": "0",
+                        "complete3_item_num": "0",
+                        "complete3_item_category2": "0",
+                        "complete3_item2": "0",
+                        "complete3_item_num2": "0",
+                        "complete3_item_category3": "0",
+                        "complete3_item3": "0",
+                        "complete3_item_num3": "0",
+                        "rank2_up_event_point": "11000",
+                        "rank3_up_event_point": "16000",
+                        "rank4_up_event_point": "",
+                        "rank2_up_comment": "\u30c1\u30e7\u30b3\u5168\u90e8\u5b8c\u6210\u30fc\u266a\u6700\u521d\u306b\u3064\u304f\u3063\u305f\u306e\u3068\u6bd4\u3079\u308b\u3068\u3001\u3060\u3093\u3060\u3093\u3046\u307e\u304f\u306a\u3063\u3066\u308b\u306e\u3001\u308f\u304b\u308b\u3088\u306d\u30fc\u3002\u4f1a\u5834\u306b\u904b\u3076\u306e\u624b\u4f1d\u3063\u3066\u3001\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u2606",
+                        "rank3_up_comment": "\u3084\u3063\u305f\u30fc\u3001\u914d\u308a\u7d42\u308f\u308a\u30fc\u2606\u30c9\u30fc\u30e03\u500b\u5206\u3042\u3063\u305f\u30c1\u30e7\u30b3\u304c\u3001\u5168\u90e8\u7a7a\u306b! \u305d\u3093\u306a\u306b\u306a\u304b\u3063\u305f? \u5e30\u308a\u9053\u306f\u4eca\u65e5\u306e\u601d\u3044\u51fa\u3001\u305f\u304f\u3055\u3093\u8a71\u305d\u3046\u306d\u266a",
+                        "rank4_up_comment": "",
+                        "fever_time_comment": "\u3067\u3055\u30fc\u3001\u306a\u3093\u306e\u8a71\u3060\u3063\u3051? %s\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u306b\u8a71\u3057\u305f\u3044\u3053\u3068\u3001\u30c9\u30f3\u30c9\u30f3\u51fa\u3066\u304f\u308b\u3093\u3060\u3088\u306d\u3002\u671d\u307e\u3067\u30c8\u30fc\u30af\u3060\u3063\u3066\u3001\u3067\u304d\u3061\u3083\u3046\u3088\u2606",
+                        "encore_time_comment": "",
+                        "quest_type": "1",
+                        "mission_costume1": "",
+                        "mission_costume2": "",
+                        "mission_costume3": "",
+                        "half_add_flg": false,
+                        "unlock_flag": true,
+                        "produce_idol_area_hearts": {
+                            "1": 14,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "produce_idol_hearts": 4,
+                        "produce_idol_rank": 2,
+                        "current_complete_rank": "4",
+                        "endless_flag": false,
+                        "mission_name": "\u624b\u4f5c\u308a\u30c1\u30e7\u30b3\u30b9\u30a4\u30fc\u30c4!",
+                        "current_chapter_mission_name": "\u624b\u4f5c\u308a\u30c1\u30e7\u30b3\u30b9\u30a4\u30fc\u30c4!",
+                        "mission_bg": "1",
+                        "current_mission_bg": "1",
+                        "mission_costume": "1",
+                        "top_comment": "\u30c1\u30e7\u30b3\u4e89\u596a! \u7121\u4eba\u5cf6\u30b5\u30d0\u30a4\u30d0\u30eb\u30af\u30a4\u30ba\u5927\u4f1a! \u306f\u3058\u307e\u308b\u3088\uff5e\u266a",
+                        "face_id": "1",
+                        "stamina_cost": "7",
+                        "quest_id": "1",
+                        "enable_select_chapter_id_list": [],
+                        "user_select_chapter_key": 0,
+                        "is_raid_battle": true,
+                        "stage_release_type_list": {
+                            "is_regular": true,
+                            "is_add": false
+                        },
+                        "bg_costume_list": {
+                            "1": {
+                                "mission_costume": "1",
+                                "mission_bg": "1"
+                            },
+                            "2": {
+                                "mission_costume": "2",
+                                "mission_bg": "2"
+                            },
+                            "3": {
+                                "mission_costume": "3",
+                                "mission_bg": "3"
+                            }
+                        }
+                    },
+                    "4": {
+                        "produce_idol_id": "4",
+                        "produce_idoleimage1": "2412301",
+                        "produce_idoleimage2": "2512302",
+                        "produce_idoleimage3": "2412301",
+                        "produce_idol_flash1": "4",
+                        "produce_idol_flash2": "4",
+                        "produce_idol_flash3": "4",
+                        "produce_idol_flash4": "3",
+                        "produce_idol_name": "\u68ee\u4e45\u4fdd\u4e43\u3005",
+                        "produce_idol_type": "2",
+                        "need_hearts_rank_up": "5",
+                        "complete_rank1": "4",
+                        "complete_rank2": 14,
+                        "complete_rank3": "",
+                        "complete1_item_category": "3",
+                        "complete1_item": "2412301",
+                        "complete1_item_num": "1",
+                        "complete1_item_category2": "1",
+                        "complete1_item2": "5000",
+                        "complete1_item_num2": "1",
+                        "complete1_item_category3": "0",
+                        "complete1_item3": "0",
+                        "complete1_item_num3": "0",
+                        "complete2_item_category": "3",
+                        "complete2_item": "2412301",
+                        "complete2_item_num": "1",
+                        "complete2_item_category2": "1",
+                        "complete2_item2": "5000",
+                        "complete2_item_num2": "2",
+                        "complete2_item_category3": "0",
+                        "complete2_item3": "0",
+                        "complete2_item_num3": "0",
+                        "complete3_item_category": "0",
+                        "complete3_item": "0",
+                        "complete3_item_num": "0",
+                        "complete3_item_category2": "0",
+                        "complete3_item2": "0",
+                        "complete3_item_num2": "0",
+                        "complete3_item_category3": "0",
+                        "complete3_item3": "0",
+                        "complete3_item_num3": "0",
+                        "rank2_up_event_point": "13000",
+                        "rank3_up_event_point": "20000",
+                        "rank4_up_event_point": "",
+                        "rank2_up_comment": "\u30c1\u30e7\u3001\u30c1\u30e7\u30b3\u2026\u305f\u304f\u3055\u3093\u4f5c\u308a\u307e\u3057\u305f\u3051\u3069\u2026\u75b2\u308c\u307e\u3057\u305f\u2026\u3002\u3042\u3001\u3042\u3068\u306f\u30e9\u30c3\u30d4\u30f3\u30b0\u2026\u5927\u5909\u306a\u3093\u3067\u3059\u3051\u3069\u2026\u3064\u3044\u306b\u30a4\u30d9\u30f3\u30c8\u304c\u2026\u3042\u3045\u2026",
+                        "rank3_up_comment": "\u3042\u306f\u2026\u3042\u306f\u306f\u2026\u306f\u3041\u2026\u304a\u3001\u7d42\u308f\u308a\u307e\u3057\u305f\u2026\u30a4\u30d9\u30f3\u30c8\u7d42\u308f\u308a\u307e\u3057\u305f\u2026\u3002\u3042\u2026\u5f8c\u7247\u4ed8\u3051\u304c\u3042\u308b\u2026\u3067\u3082\u3053\u308c\u3067\u5e30\u308c\u308b\u2026\u306f\u305a\u2026",
+                        "rank4_up_comment": "",
+                        "fever_time_comment": "%s\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u304c\u3044\u306a\u3044\u3068\u2026\u307e\u3001\u307e\u3060\u3001\u56f0\u308b\u3093\u3067\u3059\u3051\u3069\u2026\u3082\u3046\u5c11\u3057\u304a\u8a71\u3092\u3057\u3066\u307b\u3057\u3044\u3067\u3059\u2026",
+                        "encore_time_comment": "",
+                        "quest_type": "1",
+                        "mission_costume1": "",
+                        "mission_costume2": "",
+                        "mission_costume3": "",
+                        "half_add_flg": false,
+                        "unlock_flag": true,
+                        "produce_idol_area_hearts": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "produce_idol_hearts": 0,
+                        "produce_idol_rank": 0,
+                        "current_complete_rank": "4",
+                        "endless_flag": false,
+                        "mission_name": "\u624b\u4f5c\u308a\u30c1\u30e7\u30b3\u30b9\u30a4\u30fc\u30c4!",
+                        "current_chapter_mission_name": "\u624b\u4f5c\u308a\u30c1\u30e7\u30b3\u30b9\u30a4\u30fc\u30c4!",
+                        "mission_bg": "1",
+                        "current_mission_bg": "1",
+                        "mission_costume": "1",
+                        "top_comment": "\u3082\u308a\u304f\u307c\u304c\u2026\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3\u2026\u4f55\u304b\u306e\u9593\u9055\u3044\u306a\u306e\u3067\u306f\u2026?",
+                        "face_id": "1",
+                        "stamina_cost": "7",
+                        "quest_id": "1",
+                        "enable_select_chapter_id_list": [],
+                        "user_select_chapter_key": 0,
+                        "is_raid_battle": false,
+                        "stage_release_type_list": {
+                            "is_regular": true,
+                            "is_add": false
+                        },
+                        "bg_costume_list": {
+                            "1": {
+                                "mission_costume": "1",
+                                "mission_bg": "1"
+                            },
+                            "2": {
+                                "mission_costume": "2",
+                                "mission_bg": "2"
+                            },
+                            "3": {
+                                "mission_costume": "3",
+                                "mission_bg": "3"
+                            }
+                        }
+                    }
+                };
+                var stage_data = {
+                    "1": "\u624b\u4f5c\u308a\u30c1\u30e7\u30b3\u30b9\u30a4\u30fc\u30c4!",
+                    "2": "\u30c1\u30e7\u30b3\u30ec\u30fc\u30c8\u30d5\u30a9\u30fc\u30e6\u30fc!",
+                    "3": "\u30a8\u30f3\u30c9\u30ec\u30b9\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9"
+                };
+                var extra_idol_key = null;
+                var extra_stage_data = null;
+                var current_area_info = {};
+                window.current_area_info = current_area_info;
+                // アイドルタブ活性化
+                $('#main_idol_tab').tab_switch({
+                    contents: "[class^='main_idol_tab_']",
+                    storage: "produce_memory_idol_tab"
+                });
+                // エリアタブ活性化
+                $('#small_tab_1').tab_switch({
+                    contents: "[class^='small_area_tab_1']",
+                    storage: "produce_memory_idol_tab_mini_1"
+                });
+                var $area_id = $('.main_idol_tab_' + (1)).find('.selected');
+                var view_id = $('.main_idol_tab_' + (1)).data('view');
+                current_area_info[1] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+                // エリアタブ活性化
+                $('#small_tab_2').tab_switch({
+                    contents: "[class^='small_area_tab_2']",
+                    storage: "produce_memory_idol_tab_mini_2"
+                });
+                var $area_id = $('.main_idol_tab_' + (2)).find('.selected');
+                var view_id = $('.main_idol_tab_' + (2)).data('view');
+                current_area_info[2] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+                // エリアタブ活性化
+                $('#small_tab_3').tab_switch({
+                    contents: "[class^='small_area_tab_3']",
+                    storage: "produce_memory_idol_tab_mini_3"
+                });
+                var $area_id = $('.main_idol_tab_' + (3)).find('.selected');
+                var view_id = $('.main_idol_tab_' + (3)).data('view');
+                current_area_info[3] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+                // エリアタブ活性化
+                $('#small_tab_4').tab_switch({
+                    contents: "[class^='small_area_tab_4']",
+                    storage: "produce_memory_idol_tab_mini_4"
+                });
+                var $area_id = $('.main_idol_tab_' + (4)).find('.selected');
+                var view_id = $('.main_idol_tab_' + (4)).data('view');
+                current_area_info[4] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+                // アイドル画像描画
+                function viewIdol(idol_key, area_id) {
+                    // if(idol_key >= 4 && area_id < 3) {
+                    // area_id += 2;
+                    // }
+                    var img_path_pattern = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1733%2Ftop_stage_chara_XXX.png%3Fv%3D19700101090000';
+                    var idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+                    if (idol_img_path) {
+                        var _idol_img_path = img_path_pattern.replace('XXX', idol_key + '0' + idol_img_path.mission_costume);
+                        $('.idol_img').attr('src', _idol_img_path);
+                    }
+                }
+                // エリア名と背景描画
+                function viewBgText(idol_key, area_id) {
+                    var $area_tab = $('.area_select_area').filter(function(element, index, array) {
+                        return ($(index).data('idol_id') == idol_key);
+                    });
+                    // エリア名表示
+                    var _stage_data = (idol_key == extra_idol_key) ? extra_stage_data : stage_data;
+                    $area_tab
+                        .find('.main_area_name')
+                        .text(_stage_data[area_id]);
+                    // 背景表示
+                    var imagePathPattern = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/event_flash/1733/bg/1733%2Fbg__AREA_ID___rich.jpg%3Fv%3D19700101090000'
+                    var _area_bg_id = produce_idols[idol_key].bg_costume_list[area_id].mission_bg;
+                    $area_tab
+                        .find('.bg_area')
+                        .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', _area_bg_id) + ')')
+                }
+                // 初期描画
+                var $idol_tab = $('.tab_idol_list').filter(function(element, index, array) {
+                    return ($(index).hasClass('selected'));
+                });
+                $.each(current_area_info, function(index, elem) {
+                    var $area_tab = $('#small_tab_' + index + ' a').filter(function(element, index, array) {
+                        return ($(index).data('area_id') == elem);
+                    });
+                    $area_tab.trigger('click');
+                });
+                var current_idol_key = $idol_tab.data('key');
+                viewBgText(current_idol_key, current_area_info[current_idol_key]);
+                viewIdol(current_idol_key, current_area_info[current_idol_key]);
+                // アイドルタブ制御
+                $('.tab_idol_list').on('click', function() {
+                    var idol_key = $(this).data('key');
+                    viewBgText(idol_key, current_area_info[idol_key]);
+                    viewIdol(idol_key, current_area_info[idol_key]);
+                });
+                // エリアタブ制御
+                $('.js_tab_elm').children('a').on('click', function() {
+                    var idol_key = $('.tab_idol_list.selected').data('key');
+                    var area_id = $(this).data('area_id');
+                    current_area_info[idol_key] = area_id;
+                    viewBgText(idol_key, area_id);
+                    viewIdol(idol_key, area_id);
+                });
+            });
+        </script>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+            <div class="t-Cnt">(C)窪岡俊之 (C)2011 BNEI</div>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
