@@ -130,7 +130,7 @@
                             <div id="quest_dom_overlay_container"></div>
                         </div>
                         <div id="play_commu_result_view" class="result_commu" style="display:none;"></div>
-                        <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/bonus_point%3Fl_frm%3DEvent_produce_work_memory_1%26rnd%3D241513942" id="bonus_point" style="display:none;">
+                        <a href="../../../../bonus_point" id="bonus_point" style="display:none;">
                             <div></div>
                         </a>
                         <a href="#" id="love_max_bonus" style="display:none;">
@@ -181,7 +181,7 @@
                         <a href="#" id="change_comment" style="display:none;" class="se_008" onclick="return false;"></a>
                     </section>
                     <section id="play_area" style='background-image:url(../../../../image_sp/ui/rich/quest/footer_bg.png); background-repeat:no-repeat; background-size:100%; background-position:0px 2px;height:30px'>
-                        <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/ajax_play%3Fl_frm%3DEvent_produce_work_memory_1%26rnd%3D977614093' method="post" id="play">
+                        <form action='../../../../event_produce/ajax_play' method="get" id="play">
                             <input type="button" value="" id="play_button" class="play_btn_df se_008">
                             <input type="hidden" name="area_id" value="2">
                             <input type="hidden" name="quest_id" value="1">
@@ -197,41 +197,41 @@
                     </section>
                 </div>
             </div>
-            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/get_raid_boss%3Fres_type%3Djson%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D738565600' id="communication_event_json" style="display:none;"></a>
+            <a href='../../../../event_produce/get_raid_boss' id="communication_event_json" style="display:none;"></a>
             <script type="text/template" id="template_choose_item">
                 <section class="t-Cnt m-Top10 m-Btm10 l-Hgt140" id="itemSelect">
-<div class="m-Cnt" style="width:280px;">
-<img src='../../../../image_sp/gacha/chance/button_chance_item_exit01.png' id="choose_item_close">
-<div class="displayBox" style="-webkit-box-pack:justify;">
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/0%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D663087485' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
-<input type="hidden" name="use_item" value="3">
-<input type="hidden" name="area_id" value="2">
-<input type='hidden' name="max_use_flag" id="max_use_flag" value="0">
-<div>
-<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_normal.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
-</div>
-</form>
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/1%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D891996059' method="post"<% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;"<% } %>>
-<input type="hidden" name="use_item" value="3">
-<input type="hidden" name="area_id" value="2">
-<input type='hidden' name="max_use_flag" id="max_use_flag" value="1">
-<div>
-<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_good.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="カード"><br>
-</div>
-</form>
-<form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce/produce_swf_memory/2/5/2%3Farea_id%3D2%26l_frm%3DEvent_produce_work_memory_1%26rnd%3D594820591' method="post" style="width:88px;">
-<div>
-<input type="hidden" name="use_item" value="1">
-<input type="hidden" name="area_id" value="2">
-<input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_perfect.png%3Fv%3D20190524145714' class="jsOnDesignBtn" width="88" value="バレンタインカード"><br>
-</div>
-</form>
-</div>
-<div class="t-Cnt m-Top4" style="font-size:12px">
-※아이템은 사용되지 않습니다.
-</div>
-</div>
-</section>
+                    <div class="m-Cnt" style="width:280px;">
+                        <img src='../../../../image_sp/gacha/chance/button_chance_item_exit01.png' id="choose_item_close">
+                        <div class="displayBox" style="-webkit-box-pack:justify;">
+                            <form action='../../produce_swf_memory/2/5/0' method="get" <% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;" <% } %>>
+                                <input type="hidden" name="use_item" value="3">
+                                <input type="hidden" name="area_id" value="2">
+                                <input type='hidden' name="max_use_flag" id="max_use_flag" value="0">
+                                <div>
+                                    <input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_normal.png' class="jsOnDesignBtn" width="88" value="カード"><br>
+                                </div>
+                            </form>
+                            <form action='../../produce_swf_memory/2/5/1' method="get" <% if (raid_boss.boss_type !== 'extra') { %> style="width:88px;" <% } %>>
+                                <input type="hidden" name="use_item" value="3">
+                                <input type="hidden" name="area_id" value="2">
+                                <input type='hidden' name="max_use_flag" id="max_use_flag" value="1">
+                                <div>
+                                    <input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_good.png' class="jsOnDesignBtn" width="88" value="カード"><br>
+                                </div>
+                            </form>
+                            <form action='../../produce_swf_memory/2/5/2' method="get" style="width:88px;">
+                                <div>
+                                    <input type="hidden" name="use_item" value="1">
+                                    <input type="hidden" name="area_id" value="2">
+                                    <input type="image" src='../../../../image_sp/event/produce/sprite/lookback/btn_perfect.png' class="jsOnDesignBtn" width="88" value="バレンタインカード"><br>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="t-Cnt m-Top4" style="font-size:12px">
+                            ※아이템은 사용되지 않습니다.
+                        </div>
+                    </div>
+                </section>
 </script>
             <a href='../../memory.html'>
                 <div class="backLink">커뮤 이벤트 메모리 TOP</div>
