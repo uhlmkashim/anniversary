@@ -4,6 +4,31 @@
         flash_id: 544058,
         special_generate_flag: false,
         special_raid_point: 0,
+        card_comm: "ﾁｮｺをもらえなかった男子達の悲しみはひどいです｡ﾁｮｺ程度で世間を呪われても困ります",
+        card_comm1: "ﾁｮｺをもらえなかった男子達の悲しみはひどいです｡ﾁｮｺ程度で世間を呪われても困ります",
+        card_comm1_1: "ﾁｮｺをもらえなかった男子達の",
+        card_comm1_2: "悲しみはひどいです｡ﾁｮｺ程度で",
+        card_comm1_3: "世間を呪われても困ります",
+        ch: "2_1",
+        character_num: 1,
+        com_mode: 1,
+        comm_result: 0,
+        communication_type: "normal",
+        effect: "0",
+        emo: "3",
+        heart_f: 0,
+        heart_l: 1,
+        lv_b: 10,
+        lv_f: 10,
+        lv_inf_flg: 1,
+        lv_l: 10,
+        lvup_flg: 0,
+        momorial_power: 0,
+        pair_produce_idol_id: false,
+        point: 10,
+        puchi_power: 0,
+        training_room_flag: 0,
+        url: "../../memory.html"
     },
     swf_images: [
         0: "../../../../image_sp/event_flash/1733/bg/1733/bg00_rich.png"
@@ -12,32 +37,6 @@
         3: "../../../../image_sp/event_flash/1733/idol/idol_2_0_1_3.png"
         4: "../../../../image_sp/event_flash/1733/idol/dummy.png"
         5: "../../../../image_sp/event_flash/1733/idol/dummy.png"
-        6: "../../../../image_sp/event_flash/1733/idol/dummy.png"],
-    special_raid_point: 0,
-    card_comm: "ﾁｮｺをもらえなかった男子達の悲しみはひどいです｡ﾁｮｺ程度で世間を呪われても困ります",
-card_comm1: "ﾁｮｺをもらえなかった男子達の悲しみはひどいです｡ﾁｮｺ程度で世間を呪われても困ります",
-card_comm1_1: "ﾁｮｺをもらえなかった男子達の",
-card_comm1_2: "悲しみはひどいです｡ﾁｮｺ程度で",
-card_comm1_3: "世間を呪われても困ります",
-ch: "2_1",
-character_num: 1,
-com_mode: 1,
-comm_result: 0,
-communication_type: "normal",
-effect: "0",
-emo: "3",
-heart_f: 0,
-heart_l: 1,
-lv_b: 10,
-lv_f: 10,
-lv_inf_flg: 1,
-lv_l: 10,
-lvup_flg: 0,
-momorial_power: 0,
-pair_produce_idol_id: false,
-point: 10,
-puchi_power: 0,
-training_room_flag: 0,
-url: "../../memory.html"
+        6: "../../../../image_sp/event_flash/1733/idol/dummy.png"
+    ]
 }
-
