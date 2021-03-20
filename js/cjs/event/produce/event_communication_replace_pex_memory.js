@@ -3359,7 +3359,7 @@
             src: "images/heart_white.",
             id: "event_communication_replace_pex_memory_heart_white"
         }, {
-            src: "images/replace_bg.jpg?1615882811734",
+            src: "images/replace_bg.jpg",
             id: "event_communication_replace_pex_memory_replace_bg"
         }, {
             src: "images/replace_character1.",
