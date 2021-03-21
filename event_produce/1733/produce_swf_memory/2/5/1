@@ -9,6 +9,7 @@
         "lv_b": 10,
         "lvup_flg": 0,
         "comm_result": 1,
+        "communication_type": "special",
         "point": 10,
         "emo": "4",
         "effect": "0",
