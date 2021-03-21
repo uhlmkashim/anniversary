@@ -1,0 +1,41 @@
+{
+    "flash_id": 544058,
+    "swf_params": {
+        "url": "https://uhlmkashim.github.io/anniversary/event_produce/1733/work_memory/2/23.html",
+        "heart_f": 0,
+        "heart_l": 1,
+        "lv_f": 10,
+        "lv_l": 10,
+        "lv_b": 10,
+        "lvup_flg": 0,
+        "comm_result": 2,
+        "point": 10,
+        "emo": "5",
+        "effect": "0",
+        "card_comm": "一緒に横断歩道を渡ってきました｡感謝して頂きましたけど風紀委員としては当然の行動です!",
+        "card_comm1": "一緒に横断歩道を渡ってきました｡感謝して頂きましたけど風紀委員としては当然の行動です!",
+        "lv_inf_flg": 1,
+        "momorial_power": 0,
+        "training_room_flag": 0,
+        "puchi_power": 0,
+        "character_num": 1,
+        "ch": "2_3",
+        "pair_produce_idol_id": false,
+        "card_comm1_1": "一緒に横断歩道を渡ってきまし",
+        "card_comm1_2": "た｡感謝して頂きましたけど風",
+        "card_comm1_3": "紀委員としては当然の行動です",
+        "card_comm1_4": "!",
+        "com_mode": 1
+    },
+    "swf_images": [
+        "../../../../image_sp/event_flash/1733/bg/1733/bg00_rich.png",
+        "../../../../image_sp/event_flash/common/name_plate/196.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png",
+        "../../../../image_sp/event_flash/1733/idol/idol_2_0_3_1.png",
+        "../../../../image_sp/event_flash/1733/idol/idol_2_0_3_5.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png"
+    ],
+    "special_raid_point": 0,
+    "special_generate_flag": false
+}
