@@ -1,0 +1,41 @@
+{
+    "flash_id": 544058,
+    "swf_params": {
+        "url": "https://uhlmkashim.github.io/anniversary/event_produce/1733/work_memory/2/16.html",
+        "heart_f": 0,
+        "heart_l": 1,
+        "lv_f": 10,
+        "lv_l": 10,
+        "lv_b": 10,
+        "lvup_flg": 0,
+        "comm_result": 2,
+        "communication_type": "special",
+        "point": 10,
+        "emo": "2",
+        "effect": "0",
+        "card_comm": "…あ､飲み物…｡…ん､これはｺｺｱ? もしかしてﾌﾟﾛﾃﾞｭｰｻｰからのﾁｮｺですか? いただきます!",
+        "card_comm1": "…あ､飲み物…｡…ん､これはｺｺｱ? もしかしてﾌﾟﾛﾃﾞｭｰｻｰからのﾁｮｺですか? いただきます!",
+        "lv_inf_flg": 1,
+        "momorial_power": 0,
+        "training_room_flag": 0,
+        "puchi_power": 0,
+        "character_num": 1,
+        "ch": "2_2",
+        "pair_produce_idol_id": false,
+        "card_comm1_1": "…あ､飲み物…｡…ん､これはｺｺｱ",
+        "card_comm1_2": "? もしかしてﾌﾟﾛﾃﾞｭｰｻｰからのﾁｮ",
+        "card_comm1_3": "ｺですか? いただきます!",
+        "com_mode": 1
+    },
+    "swf_images": [
+        "../../../../image_sp/event_flash/1733/bg/1733/bg00_rich.png",
+        "../../../../image_sp/event_flash/common/name_plate/196.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png",
+        "../../../../image_sp/event_flash/1733/idol/idol_2_0_2_1.png",
+        "../../../../image_sp/event_flash/1733/idol/idol_2_0_2_2.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png",
+        "../../../../image_sp/event_flash/1733/idol/dummy.png"
+    ],
+    "special_raid_point": 0,
+    "special_generate_flag": false
+}
