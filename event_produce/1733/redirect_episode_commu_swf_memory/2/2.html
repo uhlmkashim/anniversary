@@ -355,9 +355,10 @@
             $.ajax({
                 data: data,
                 type: "get",
-                url: '../../memory_produce/episode_produce_swf_memory2',
+                url: select_num + '.json',
                 success: function(data) {
-                    if (data.type == "redirect") location.href = data.url;
+                    if (data.type == "redirect")
+                        location.href = data.url;
                     else {
                         pexApi.setVariables("/", data);
                         pexApi.callActions("/", "call_selected");
@@ -409,10 +410,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
