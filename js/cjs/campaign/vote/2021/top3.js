@@ -6574,7 +6574,7 @@
         color: "#666666",
         opacity: 1,
         manifest: [{
-                src: "images/_004_shuttle_all.png",
+                src: "images/004_shuttle_all.png",
                 id: "top3__004_shuttle_all"
             }, {
                 src: "images/bg.jpg",
