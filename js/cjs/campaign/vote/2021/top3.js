@@ -6600,8 +6600,7 @@
             }, {
                 src: "images/logo_result_white.png",
                 id: "top3_logo_result_white"
-            },
-            {
+            }, {
                 src: "images/shuttle_co.png",
                 id: "top3_shuttle_co"
             }, {
@@ -6628,8 +6627,7 @@
             }, {
                 src: "images/type_result_co2_name.png",
                 id: "top3_type_result_co2_name"
-            },
-            {
+            }, {
                 src: "images/type_result_co3.jpg",
                 id: "top3_type_result_co3"
             }, {
