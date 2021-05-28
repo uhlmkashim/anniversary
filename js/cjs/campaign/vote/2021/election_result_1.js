@@ -4578,13 +4578,13 @@
         color: "#333333",
         opacity: 1,
         manifest: [{
-                src: "images/_004_shuttle_all.png",
+                src: "images/004_shuttle_all.png",
                 id: "election_result_1__004_shuttle_all"
             }, {
-                src: "images/_005_shuttle_co.png",
+                src: "images/005_shuttle_co.png",
                 id: "election_result_1__005_shuttle_co"
             }, {
-                src: "images/_005_textflame.png",
+                src: "images/005_textflame.png",
                 id: "election_result_1__005_textflame"
             }, {
                 src: "images/bg.jpg",
