@@ -39,7 +39,7 @@
     <script>
         (function() {
             window.viewer_id = 134800333;
-            var _url = "../../game_error/report_js_error%3Fl_frm%3DIdol_gallery_idol_detail_1";
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
@@ -88,7 +88,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/anniversary/idol_gallery/idol_detail/fumika');
+                newrelic.setPageViewName('/idolmaster/index.php/idol_gallery/idol_detail/cf0f5af872286b4401c644ad570b1401');
             }
         });
     </script>
@@ -217,6 +217,10 @@
                     <div class="displayBox">
                         <div class="idol" style="background:url(../../image_sp/card/xs/fumika_36.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="35">
                         </div>
+                        <div class="idol" style="background:url(../../image_sp/card/xs/fumika_37.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="36">
+                        </div>
+                        <div class="idol" style="background:url(../../image_sp/card/xs/fumika_38.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="37">
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -309,45 +313,7 @@
 </script>
         <script type="text/template" id="idol-base-template">
             <div style="position:relative;top:-20px;padding-top:24px;height:312px;margin-bottom:-143px;">
-<div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div>
-<% if(idol_detail.data.rarity <= 2) { %>
-<% opacity = 0.5 %>
-<% } else if (idol_detail.data.rarity <= 4) { %>
-<% opacity = 0.6 %>
-<% } else { %>
-<% opacity = 0 %>
-<% } %>
-<div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div>
-<div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;">
-<div class="t-Lft" style="width:50%">
-<% if(idol_detail.is_exist_archive) { %>
-<a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a>
-<% } else { %>
-<img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" />
-<% } %>
-</div>
-<div class="t-Rft" style="width:50%">
-<div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>">
-<div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div>
-<div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
-</div>
-<div class="detail_idol_num_<%- idol_detail.data.attribute %>">
-<div class="detail_idol_register_num"><span class="yellow">32</span> / 32</div>
-<div class="detail_idol_love_num"><span class="yellow">32</span> / 32</div>
-</div>
-<% if(birthday_flag) { %>
-<div class="icon_birthday"></div>
-<% } %>
-<% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %>
-<% if(idol_detail.show_card_type == "l_premium") { %>
-<a id="btn_normal_sign" class="js_btn_change_card_type"></a>
-<% } else { %>
-<a id="btn_premium_sign" class="js_btn_change_card_type"></a>
-<% } %>
-<% } %>
-</div>
-</div>
-</div>
+<div style="background-image:url(<%- idol_image_bg_attribute[idol_detail.data.rarity][idol_detail.data.attribute.substr(0, 2)] %>);background-size:320px;position:absolute;top:0;width:100%;height:100%;"></div><% if(idol_detail.data.rarity <= 2) { %><% opacity = 0.5 %><% } else if (idol_detail.data.rarity <= 4) { %><% opacity = 0.6 %><% } else { %><% opacity = 0 %><% } %><div style="background:white;width:100%;height:100%;opacity:<%- opacity %>;position:absolute;top:0;"></div><div class="displayBox m-Top5 t-Lft" style="width:304px;position:relative;"><div class="t-Lft" style="width:50%"><% if(idol_detail.is_exist_archive) { %><a class="js_btn_expansion"><img src='<%- idol_image %>' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /></a><% } else { %><img src='../../image_sp/ui/blank_l.jpg' style="width:148px;height:185px;box-shadow: 2px 2px 2px #555555;" /><% } %></div><div class="t-Rft" style="width:50%"><div class="detail_idol_name_plate_<%- idol_detail.data.attribute %>"><div class="detail_idol_alias_name"><%- idol_detail.data.alias_name %></div><div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div></div><div class="detail_idol_num_<%- idol_detail.data.attribute %>"><div class="detail_idol_register_num"><span class="yellow">38</span> / 38</div><div class="detail_idol_love_num"><span class="yellow">38</span> / 38</div></div><% if(birthday_flag) { %><div class="icon_birthday"></div><% } %><% if(+idol_detail.archive.premium && +idol_detail.archive.normal) { %><% if(idol_detail.show_card_type == "l_premium") { %><a id="btn_normal_sign" class="js_btn_change_card_type"></a><% } else { %><a id="btn_premium_sign" class="js_btn_change_card_type"></a><% } %><% } %></div></div></div>
 </script>
         <script type="text/template" id="profile-template">
             <section class="idolProfile deck m-Btm5">
@@ -414,48 +380,9 @@ kg
         <script type="text/template" id="comment-template">
             <div class="selectArea type_02 m-Btm8">
 <% Object.keys(filtered_comments).forEach(function (key) { %>
-<div class="selectArea_accordion">
-<div class="selectArea_accordion_title"><div><%- category_names[key] %></div></div>
-<div class="selectArea_accordion_body t-Lft">
-<div class="selectArea_accordion_body_inner">
-<% Object.keys(filtered_comments[key]).forEach(function (key4) { %>
-<div class="comment_title_<%- data.attribute %>"><%- type_names[key4] %></div>
-<div class="comment_frame_wrapper_<%- data.attribute %> m-Btm8">
-<% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %>
-<% var attribute = data.attribute %>
-<% if(voice[key2]) { %>
-<div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>">
-<div><%- filtered_comments[key][key4][key2] %></div>
-<% if(voice_enable) { %>
-<a class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_02" id="jsBtnIdolVoice<%= key2 %>"  data-voice-key="<%- key2 %>"><div></div></a>
-<% } else { %>
-<div class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_03">
-</div>
-<% } %>
-</div>
-<% } else { %>
-<div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>">
-<div><%- filtered_comments[key][key4][key2] %></div>
-<% if(comments[key2] != "???") { %>
-<div class="star_<%- attribute %>"></div>
-<% } %>
-</div>
-<% } %>
-<% }); %>
-</div>
-<% }); %>
-</div>
-</div>
-</div>
-<% }); %>
-</div>
-</script>
+<div class="selectArea_accordion"><div class="selectArea_accordion_title"><div><%- category_names[key] %></div></div><div class="selectArea_accordion_body t-Lft"><div class="selectArea_accordion_body_inner"><% Object.keys(filtered_comments[key]).forEach(function (key4) { %><div class="comment_title_<%- data.attribute %>"><%- type_names[key4] %></div><div class="comment_frame_wrapper_<%- data.attribute %> m-Btm8"><% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %><% var attribute = data.attribute %><% if(voice[key2]) { %><div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>"><div><%- filtered_comments[key][key4][key2] %></div><% if(voice_enable) { %><a class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_02" id="jsBtnIdolVoice<%= key2 %>"  data-voice-key="<%- key2 %>"><div></div></a><% } else { %><div class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_03"></div><% } %></div><% } else { %><div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>"><div><%- filtered_comments[key][key4][key2] %></div><% if(comments[key2] != "???") { %><div class="star_<%- attribute %>"></div><% } %></div><% } %><% }); %></div><% }); %></div></div></div><% }); %></div></script>
         <script type="text/template" id="story-template">
-            <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %>
-<% val = idol_story_list[i] %>
-<% if(val == undefined) { %>
-<% continue; %>
-<% } %>
+            <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %><% val = idol_story_list[i] %><% if(val == undefined) { %><% continue; %><% } %>
 <div class="area-frame_common _hd_blue _bd_black m-Btm10">
     <div class="area-frame_wrap">
         <h3 class="area-frame_header">
@@ -508,96 +435,10 @@ kg
 <% } %>
 <% } %>
 </div>
-        <div class="area-frame_bg_image"></div>
-    </div>
-</div>
-<% } %>
-<% if (paging_info.max_page_num > 0) { %>
-<div class="pager_area" style="height:auto;">
-<div class="pager_panel_area">
-<% if (paging_info.current_page != 0) { %>
-<input type="submit" class="btn_pager_first">
-<% } else { %>
-<div class="btn_pager_first _disabled"></div>
-<% } %>
-<% if (paging_info.current_page > 0) { %>
-<input type="submit" class="btn_pager_back">
-<% } else { %>
-<div class="btn_pager_back _disabled"></div>
-<% } %>
-<% if (paging_info.current_page != paging_info.max_page_num) { %>
-<input type="submit" class="btn_pager_next">
-<% } else { %>
-<div class="btn_pager_next _disabled"></div>
-<% } %>
-<% if (paging_info.current_page != paging_info.max_page_num) { %>
-<input type="submit" class="btn_pager_last">
-<% } else { %>
-<div class="btn_pager_last _disabled"></div>
-<% } %>
-<%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %>
-</div>
-</div>
-<% } %>
+<div class="area-frame_bg_image"></div></div></div><% } %><% if (paging_info.max_page_num > 0) { %><div class="pager_area" style="height:auto;"><div class="pager_panel_area"><% if (paging_info.current_page != 0) { %><input type="submit" class="btn_pager_first"><% } else { %><div class="btn_pager_first _disabled"></div><% } %><% if (paging_info.current_page > 0) { %><input type="submit" class="btn_pager_back"><% } else { %><div class="btn_pager_back _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_next"><% } else { %><div class="btn_pager_next _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_last"><% } else { %><div class="btn_pager_last _disabled"></div><% } %><%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %></div></div><% } %>
 </script>
         <script type="text/template" id="parameter-template">
-            <section class="idolStatus deck m-Btm10">
-<div class="data_list">
-<div class="wrap">
-<div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div>
-</div>
-<div class="wrap" style="margin-left:4px;">
-<div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div>
-</div>
-<div class="wrap" style="margin-left:4px;">
-<div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div>
-</div>
-</div>
-<% if (data.skill_effect) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl"></div><div class="pr"><%- data.skill_name %></div>
-</div>
-</div>
-<%if (!data.grow_idol_flag) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div>
-</div>
-</div>
-<%if ( ! $.isEmptyObject(data.skill_effect_2)) { %>
-<div class="data_list line">
-<div class="wrap">
-<div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
-</div>
-</div>
-<% } %>
-<% } %>
-<% } %>
-</section>
-<% if(trade_prohibition.is_trade_limit) { %>
-<% } %>
-<% if (event) { %>
-<h3 class="title_hanyo m-Top8 m-Btm8">
-<div>登場イベント</div>
-</h3>
-<% Object.keys(event).forEach(function (key) { %>
-<div class="t-Cnt m-Btm5">
-<% if (event[key].event_name.indexOf("<br />") != -1) { %>
-<%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
-<%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
-<% } else if (key == 1908) { %>
-<span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
-<% } else { %>
-<%- event[key].event_name %>
-<% } %>
-</div>
-<div class="area-btn-common _base-width m-Btm8">
-<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
-<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
-</div>
-<% }); %>
-<% } %>
+            <section class="idolStatus deck m-Btm10"><div class="data_list"><div class="wrap"><div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div></div><div class="wrap" style="margin-left:4px;"><div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div></div><div class="wrap" style="margin-left:4px;"><div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div></div></div><% if (data.skill_effect) { %><div class="data_list line"><div class="wrap"><div class="title skl"></div><div class="pr"><%- data.skill_name %></div></div></div><%if (!data.grow_idol_flag) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div></div></div><%if ( ! $.isEmptyObject(data.skill_effect_2)) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div></div></div><% } %><% } %><% } %></section><% if(trade_prohibition.is_trade_limit) { %><div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">このアイドルはトレード、フリートレード、贈り物ができません。</div><% } %><div class="area-btn-common _base-width"><% if(!trade_prohibition.is_trade_limit) { %><a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a><% } %><% if(is_exist_archive) { %><a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a><% } %></div><% if (event) { %><h3 class="title_hanyo m-Top8 m-Btm8"><div>登場イベント</div></h3><% Object.keys(event).forEach(function (key) { %><div class="t-Cnt m-Btm5"><% if (event[key].event_name.indexOf("<br />") != -1) { %><%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br><%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %><% } else if (key == 1908) { %><span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span><% } else { %><%- event[key].event_name %><% } %></div><div class="area-btn-common _base-width m-Btm8"><a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a><a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a></div><% }); %><% } %>
 </script>
         <script type="text/template" id="popup-expansion-template">
             <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
@@ -1099,9 +940,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1184,9 +1025,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1263,9 +1104,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "2416501",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_2416501.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2416501_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1342,9 +1183,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1421,9 +1262,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1500,9 +1341,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1579,9 +1420,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1658,9 +1499,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1737,9 +1578,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1816,9 +1657,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1895,9 +1736,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -1974,9 +1815,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2053,14 +1894,14 @@ kg
                     "trade_prohibition": {
                         "card_id": "2436301",
                         "card_name": "[5thアニバーサリー]鷺沢文香",
-                        "from": "2016\/11\/28\/15:00",
-                        "to": "2030\/03\/11\/18:00",
+                        "from": "2016%/11%/28%/15:00",
+                        "to": "2030%/03%/11%/18:00",
                         "limitless_flag": "1",
                         "is_trade_limit": true
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "2436301",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_2436301.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2436301_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2143,14 +1984,14 @@ kg
                     "trade_prohibition": {
                         "card_id": "2536302",
                         "card_name": "[5thアニバーサリー]鷺沢文香+",
-                        "from": "2016\/11\/28\/15:00",
-                        "to": "2030\/03\/11\/18:00",
+                        "from": "2016%/11%/28%/15:00",
+                        "to": "2030%/03%/11%/18:00",
                         "limitless_flag": "1",
                         "is_trade_limit": true
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "2536302",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_2536302.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2536302_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2226,15 +2067,15 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "2436401",
-                        "card_name": "[5th\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30fbS]\u9dfa\u6ca2\u6587\u9999",
-                        "from": "2016\/11\/28\/15:00",
-                        "to": "2030\/03\/11\/18:00",
+                        "card_name": "[5thアニバーサリー・S]鷺沢文香",
+                        "from": "2016%/11%/28%/15:00",
+                        "to": "2030%/03%/11%/18:00",
                         "limitless_flag": "1",
                         "is_trade_limit": true
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2311,14 +2152,14 @@ kg
                     "trade_prohibition": {
                         "card_id": "2536402",
                         "card_name": "[5thアニバーサリー・S]鷺沢文香+",
-                        "from": "2016\/11\/28\/15:00",
-                        "to": "2030\/03\/11\/18:00",
+                        "from": "2016%/11%/28%/15:00",
+                        "to": "2030%/03%/11%/18:00",
                         "limitless_flag": "1",
                         "is_trade_limit": true
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2395,9 +2236,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2474,9 +2315,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2553,9 +2394,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2632,9 +2473,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2711,9 +2552,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2790,9 +2631,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2869,9 +2710,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -2948,9 +2789,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3027,9 +2868,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3107,9 +2948,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3188,7 +3029,7 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3266,9 +3107,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3325,29 +3166,29 @@ kg
                         "comments_love_max": "…社交場という舞台は､物語の転機になる場所です｡…どうか､頁を繰る手は止めず､共に楽しみましょう｡OOさん"
                     },
                     "voice": {
-                        "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/685275a1cebc7284195711abaabf89c7.mp4",
-                        "comments_my_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/de4a17dff3d3631b3dd55a64608ff157.mp4",
-                        "comments_my_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/515039da538849eb825a5c65230349c1.mp4",
-                        "comments_my_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/7887dfe0ef987b7631532e1957b5cf32.mp4",
-                        "comments_my_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/eb26cfe6884135381c922b626473b21f.mp4",
-                        "comments_my_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/e445dd36d3ecfb5df51fd4d909313509.mp4",
-                        "comments_work_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/341cd0fe32aad05d5780865aebfff970.mp4",
-                        "comments_work_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/5763ce03fd770d8128779ee1880ec8fd.mp4",
-                        "comments_work_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/d4aaa60bd3187a563388302ef77e8953.mp4",
-                        "comments_work_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/92b0fbc94baa326dc4b8998a9db78dac.mp4",
-                        "comments_work_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/d2ec7bf4200e76983bc0647d783f9a2f.mp4",
-                        "comments_work_love_up": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/0ed3c7be1763226ebbb8c4f2b25274cb.mp4",
-                        "comments_live": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/42816153bd1cb196db706c42049c4509.mp4",
-                        "comments_love_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2462701\/84fb020b7bfab0860fcfc640d4c83fd7.mp4"
+                        "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/c224049e468b2305d9768c722d872902.mp4",
+                        "comments_my_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/d4c2931a5216c5535dabecbf96a02162.mp4",
+                        "comments_my_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/7ffeec8a4db951f876993d295f848c7e.mp4",
+                        "comments_my_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/deffde1af68cc0c419abf65dd245b577.mp4",
+                        "comments_my_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/e65ac2341754574f07f5c7443eda11d1.mp4",
+                        "comments_my_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/5cc73719a68bf89a88b91a9fc49fbe6d.mp4",
+                        "comments_work_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/7c1cb4ea016bb845afc7f7ba75a4cd9e.mp4",
+                        "comments_work_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/2652782fa6b82ff74de42a9479ae94eb.mp4",
+                        "comments_work_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/44efa697a0923139e3eceaac8d44bf9d.mp4",
+                        "comments_work_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/5b2ccc7c78fd34e74e8d1bd804369988.mp4",
+                        "comments_work_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/3473f3ffd6ad704ac82c54dd0f759e19.mp4",
+                        "comments_work_love_up": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/4d4d143a4794c74696db7810c6ff8e2b.mp4",
+                        "comments_live": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/21dd90a527751663fe5bf745655e20f3.mp4",
+                        "comments_love_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/945ef99d7bd6bbd308ecbf2950949740.mp4"
                     },
                     "event": null,
                     "release": "",
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "2462701",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_2462701.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2462701_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3384,7 +3225,7 @@ kg
                         "card_birthday": "10月27日",
                         "card_constellation": "蠍座",
                         "card_blood": "AB",
-                        "card_arm": "\u53f3",
+                        "card_arm": "右",
                         "card_hobby": "本屋めぐり・栞作り",
                         "card_cv": "M・A・O"
                     },
@@ -3425,9 +3266,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "2562702",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_2562702.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2562702_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3504,9 +3345,9 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3584,9 +3425,168 @@ kg
                     "trade_prohibition": {
                         "is_trade_limit": false
                     },
-                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "idol_search_param": "keyword=ãããããµã¿ã",
                     "premium_sign_idol_base_id": "89",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_89.js",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp%/12008305%/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/89_sign_effect",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "1"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }, {
+                    "data": {
+                        "card_name": "[ｼﾝﾃﾞﾚﾗｶﾞｰﾙ]鷺沢文香",
+                        "rarity": "5",
+                        "cost": "26",
+                        "attribute": "cool",
+                        "skill_name": "ｼﾝﾃﾞﾚﾗﾌﾞﾗｲﾄ",
+                        "skill_effect": "全ﾀｲﾌﾟのﾌﾛﾝﾄﾒﾝﾊﾞｰ及びﾊﾞｯｸﾒﾝﾊﾞｰ上位5人の攻守 究極ｱｯﾌﾟ",
+                        "grow_idol_flag": "",
+                        "default_attack": "7780",
+                        "default_defense": "7780",
+                        "hash_card_id": "45b089ee2ddc60f26d271e1e0a86e0df",
+                        "alias_name": "ｼﾝﾃﾞﾚﾗｶﾞｰﾙ",
+                        "real_name": "鷺沢文香"
+                    },
+                    "profile": {
+                        "card_id": "2467001",
+                        "card_name": "[シンデレラガール]鷺沢文香",
+                        "card_kana": "さぎさわふみか",
+                        "card_age": "19",
+                        "card_from": "長野",
+                        "card_height": "162",
+                        "card_weight": "45",
+                        "card_bust": "84",
+                        "card_waist": "54",
+                        "card_hip": "81",
+                        "card_birthday": "10月27日",
+                        "card_constellation": "蠍座",
+                        "card_blood": "AB",
+                        "card_arm": "右",
+                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_cv": "M・A・O"
+                    },
+                    "comments": {
+                        "comment": "…ここにある書は全て､人が､人のために綴ったもの｡…私というｱｲﾄﾞﾙも､ﾌﾟﾛﾃﾞｭｰｻｰさんが､私と､ﾌｧﾝの方々のために｡そう気づいた時､私は…私を取り巻く全てを､愛おしく思ったんです",
+                        "comments_my_1": "今を…心に刻みましょう",
+                        "comments_my_2": "感じるのは…眩くも優しい光…",
+                        "comments_my_3": "今日も…空は青く澄んでいます",
+                        "comments_my_4": "古書のように…時を重ねても褪せない想いは､今､私の胸に…",
+                        "comments_my_max": "ふふ…OOさんと過ごすうちに､笑顔も増えました",
+                        "comments_work_1": "…ｱｲﾄﾞﾙにも､書にも､夢中です",
+                        "comments_work_2": "…夢が､さらに広がりますね",
+                        "comments_work_3": "…共に､読みましょうか",
+                        "comments_work_4": "…今も､変わらず思っています｡もっと､多くの書に触れたい､と",
+                        "comments_work_max": "感動も､思い出も､愛しい日々も…貴方と分かち合ってこそ…",
+                        "comments_work_love_up": "書を読み…気づけば､口ずさんでいました｡貴方がくれた歌を…",
+                        "comments_live": "もう少しだけ…このまま…",
+                        "comments_love_max": "奇跡のような日々が降り積もり…未来を､私とOOさんで紡ぐ…｡過去も未来も､煌めきで満ちるに､違いありません"
+                    },
+                    "voice": {
+                        "comment": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/18d153943eea61cb3f8dbaff0bc2dbeb.mp4",
+                        "comments_my_1": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/da43fa82121b9fe807abd5c89a324698.mp4",
+                        "comments_my_2": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/cea4932be8cac2f8debe4766c7a9b663.mp4",
+                        "comments_my_3": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/20e91e4519460088257a4df3b013f8c5.mp4",
+                        "comments_my_4": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/9e729bce885c1f512e834bef0c9e321a.mp4",
+                        "comments_my_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/4c1f20313cb7342680b6b03e2025965c.mp4",
+                        "comments_work_1": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/9dbe7c6f1c3c006d837d88fdc8e18a8d.mp4",
+                        "comments_work_2": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/7a0e6f91f570f23b8ac303701bc0e066.mp4",
+                        "comments_work_3": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/da3c4fd800beeeb92c87f4ef0842a2cb.mp4",
+                        "comments_work_4": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/098dac7395caccf7269825bdb27c8a15.mp4",
+                        "comments_work_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/0139746d5b1b4cf600f134e6698fad77.mp4",
+                        "comments_work_love_up": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/bd052b35c1d65a1f131dd341e3bb2553.mp4",
+                        "comments_live": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/c11fa0371705024bab342102632a2f40.mp4",
+                        "comments_love_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/ef18ff3bcf4813be30d009e2f2a9d993.mp4"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "premium_sign_idol_base_id": "2467001",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2467001_sign_effect",
+                    "archive": {
+                        "normal": "1",
+                        "premium": "1"
+                    },
+                    "is_exist_archive": true,
+                    "is_max_love": true
+                }, {
+                    "data": {
+                        "card_name": "[ｼﾝﾃﾞﾚﾗｶﾞｰﾙ]鷺沢文香+",
+                        "rarity": "6",
+                        "cost": "26",
+                        "attribute": "cool",
+                        "skill_name": "ｼﾝﾃﾞﾚﾗﾌﾞﾗｲﾄ",
+                        "skill_effect": "全ﾀｲﾌﾟのﾌﾛﾝﾄﾒﾝﾊﾞｰ及びﾊﾞｯｸﾒﾝﾊﾞｰ上位5人の攻守 究極ｱｯﾌﾟ",
+                        "grow_idol_flag": "",
+                        "default_attack": "9336",
+                        "default_defense": "9336",
+                        "skill_effect_2": "全ﾀｲﾌﾟのﾌﾛﾝﾄﾒﾝﾊﾞｰ及びﾊﾞｯｸﾒﾝﾊﾞｰ上位5人の攻守 小ｱｯﾌﾟ",
+                        "hash_card_id": "1bfbf5c344ce17e6e86444dbb72154d6",
+                        "alias_name": "ｼﾝﾃﾞﾚﾗｶﾞｰﾙ",
+                        "real_name": "鷺沢文香+"
+                    },
+                    "profile": {
+                        "card_id": "2567002",
+                        "card_name": "[シンデレラガール]鷺沢文香+",
+                        "card_kana": "さぎさわふみか",
+                        "card_age": "19",
+                        "card_from": "長野",
+                        "card_height": "162",
+                        "card_weight": "45",
+                        "card_bust": "84",
+                        "card_waist": "54",
+                        "card_hip": "81",
+                        "card_birthday": "10月27日",
+                        "card_constellation": "蠍座",
+                        "card_blood": "AB",
+                        "card_arm": "右",
+                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_cv": "M・A・O"
+                    },
+                    "comments": {
+                        "comment": "ｱｲﾄﾞﾙになり…私にも残すことができました｡書が好きなだけの､普通の少女が輝きだす…ｼﾝﾃﾞﾚﾗのようなお話を｡…美しい舞台に立てた今､語らせてください｡私の言葉で…鷺沢文香の物語を",
+                        "comments_my_1": "今を…心に刻みましょう",
+                        "comments_my_2": "感じるのは…眩くも優しい光…",
+                        "comments_my_3": "私…また､変われたんですね",
+                        "comments_my_4": "書を開けば…零時の鐘が鳴り､新たな物語が動き出しますよ",
+                        "comments_my_max": "…私も､私を信じています｡OOさんが信じた私を",
+                        "comments_work_1": "…ｱｲﾄﾞﾙにも､書にも､夢中です",
+                        "comments_work_2": "…夢が､さらに広がりますね",
+                        "comments_work_3": "はい…鷺沢文香は､ｱｲﾄﾞﾙです",
+                        "comments_work_4": "ﾌｧﾝの皆さんに､感謝を…｡顔を上げ､目を合わせて伝えます",
+                        "comments_work_max": "私が輝いているというのなら…照らしてくれたのは､貴方です",
+                        "comments_work_love_up": "OOさんの本気が…私をここまで導いてくれました",
+                        "comments_live": "…頁を捲るのが楽しみです",
+                        "comments_love_max": "…OOさん､素敵な物語をありがとうございます｡…そして､これからも､紡いでいきましょう｡輝く物語を､ふたりで"
+                    },
+                    "voice": {
+                        "comment": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/fd0de4a881ec5e8e1931f6ac4d2c499d.mp4",
+                        "comments_my_1": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/49b45644d4b59c5f400e772d1a6dc247.mp4",
+                        "comments_my_2": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/6eb4c2755da56c688d9242d4bb6a999f.mp4",
+                        "comments_my_3": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/5f4b863adfcd2f7a06d94e4554f4fd38.mp4",
+                        "comments_my_4": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/a70d1846466950ab5d6b4408ca1fad24.mp4",
+                        "comments_my_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/ee10a20cb336b85437daf61027888a30.mp4",
+                        "comments_work_1": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/1a509c649d4b265c0bfd0427f068816d.mp4",
+                        "comments_work_2": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/e46c0c9b7b05b688d189ccfae5ff3fa8.mp4",
+                        "comments_work_3": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/a36499480cf69e63ec1f964b586dafae.mp4",
+                        "comments_work_4": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/4b60f72195d372b2136b598e3f110390.mp4",
+                        "comments_work_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/badff8a71192f4de1983394d8a3d7e21.mp4",
+                        "comments_work_love_up": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/14d7eb1a3a35f2806a5d18528ccd7878.mp4",
+                        "comments_live": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/a0003adfd927939c034e1aedbfeb801e.mp4",
+                        "comments_love_max": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/9bc3b129019e0f99973531b53f785e90.mp4"
+                    },
+                    "event": null,
+                    "release": "",
+                    "trade_prohibition": {
+                        "is_trade_limit": false
+                    },
+                    "idol_search_param": "keyword=%E3%81%95%E3%81%8E%E3%81%95%E3%82%8F%E3%81%B5%E3%81%BF%E3%81%8B",
+                    "premium_sign_idol_base_id": "2567002",
+                    "js_premium_sign": "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/2567002_sign_effect",
                     "archive": {
                         "normal": "1",
                         "premium": "1"
@@ -3595,58 +3595,71 @@ kg
                     "is_max_love": true
                 }];
                 idol.idol_story_list = [{
+                    "story_id": "448",
+                    "story_title": "シンデレラガール鷺沢文香",
+                    "voice_enable": ["1", "1"],
+                    "flash_path": ["../../idol_story/movie_play/448/1.html", 
+                                   "../../idol_story/movie_play/448/2.html"],
+                    "voice_url": ["../../idol_story/sound_play/448/1.html", 
+                                  "../../idol_story/sound_play/448/2.html"],
+                    "open_flag": ["1", "1"],
+                    "icon": ["../../image_sp/ui/episode/base/089.jpg", 
+                             "../../image_sp/ui/episode/epi_button_movie_448_2.jpg"],
+                    "movie_name_voice": ["../../image_sp/ui/episode/epi_button_moviename_cool_early.png", 
+                                         "../../image_sp/ui/episode/epi_button_moviename_cool_late.png"]
+                }, {
                     "story_id": "436",
                     "story_title": "旅立ちの時♪まだ見ぬ明日へ",
                     "voice_enable": {
                         "0": "1",
-                        "3": "1"
+                        "2": "1"
                     },
                     "flash_path": {
                         "0": "../../idol_story/movie_play/436/1.html",
-                        "3": "../../idol_story/movie_play/436/3.html"
+                        "2": "../../idol_story/movie_play/436/3.html"
                     },
                     "voice_url": {
                         "0": "../../idol_story/sound_play/436/1.html",
-                        "3": "../../idol_story/sound_play/436/3.html"
+                        "2": "../../idol_story/sound_play/436/3.html"
                     },
                     "open_flag": {
                         "0": "1",
-                        "3": "1"
+                        "2": "1"
                     },
                     "icon": {
                         "0": "../../image_sp/ui/episode/base/089.jpg",
-                        "3": "../../image_sp/ui/episode/epi_button_movie_436_3.jpg"
+                        "2": "../../image_sp/ui/episode/epi_button_movie_436_3.jpg"
                     },
                     "movie_name_voice": {
                         "0": "../../image_sp/ui/episode/epi_button_moviename_cool_early.png",
-                        "3": "../../image_sp/ui/episode/epi_button_moviename_cool_late.png"
+                        "2": "../../image_sp/ui/episode/epi_button_moviename_cool_late.png"
                     }
                 }, {
                     "story_id": "407",
                     "story_title": "素敵を探して♪まだ見ぬ場所へ",
                     "voice_enable": {
                         "0": "1",
-                        "3": "1"
+                        "2": "1"
                     },
                     "flash_path": {
                         "0": "../../idol_story/movie_play/407/1.html",
-                        "3": "../../idol_story/movie_play/407/3.html"
+                        "2": "../../idol_story/movie_play/407/3.html"
                     },
                     "voice_url": {
                         "0": "../../idol_story/sound_play/407/1.html",
-                        "3": "../../idol_story/sound_play/407/3.html"
+                        "2": "../../idol_story/sound_play/407/3.html"
                     },
                     "open_flag": {
                         "0": "1",
-                        "3": "1"
+                        "2": "1"
                     },
                     "icon": {
                         "0": "../../image_sp/ui/episode/base/089.jpg",
-                        "3": "../../image_sp/ui/episode/epi_button_movie_407_3.jpg"
+                        "2": "../../image_sp/ui/episode/epi_button_movie_407_3.jpg"
                     },
                     "movie_name_voice": {
                         "0": "../../image_sp/ui/episode/epi_button_moviename_cool_early.png",
-                        "3": "../../image_sp/ui/episode/epi_button_moviename_cool_late.png"
+                        "2": "../../image_sp/ui/episode/epi_button_moviename_cool_late.png"
                     }
                 }, {
                     "story_id": "381",
@@ -3872,42 +3885,44 @@ kg
                             "pa": "../../image_sp/ui/gallery/bg_sr_passion.jpg"
                         }
                     },
-                    "l": ["../../image_sp/card/l/fumika_01.jpg",
-                          "../../image_sp/card/l/fumika_02.jpg",
-                          "../../image_sp/card/l/fumika_03.jpg",
-                          "../../image_sp/card/l/fumika_04.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_05.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_06.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_07.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_08.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_09.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_10.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_11.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_12.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_13.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_14.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_15.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_16.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_17.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_18.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_19.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_20.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_21.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_22.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_23.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_24.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_25.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_26.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_27.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_28.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_29.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_30.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_31.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_32.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_33.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_34.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_35.jpg",
-                          "../../image_sp/card_sign_b/l/fumika_36.jpg"],
+                    "l": ["../../image_sp/card/l/fumika_01.jpg", 
+                          "../../image_sp/card/l/fumika_02.jpg", 
+                          "../../image_sp/card/l/fumika_03.jpg", 
+                          "../../image_sp/card/l/fumika_04.jpg", 
+                          "../../image_sp/card/l/fumika_05.jpg", 
+                          "../../image_sp/card/l/fumika_06.jpg", 
+                          "../../image_sp/card/l/fumika_07.jpg", 
+                          "../../image_sp/card/l/fumika_08.jpg", 
+                          "../../image_sp/card/l/fumika_09.jpg", 
+                          "../../image_sp/card/l/fumika_10.jpg", 
+                          "../../image_sp/card/l/fumika_11.jpg", 
+                          "../../image_sp/card/l/fumika_12.jpg", 
+                          "../../image_sp/card/l/fumika_13.jpg", 
+                          "../../image_sp/card/l/fumika_14.jpg", 
+                          "../../image_sp/card/l/fumika_15.jpg", 
+                          "../../image_sp/card/l/fumika_16.jpg", 
+                          "../../image_sp/card/l/fumika_17.jpg", 
+                          "../../image_sp/card/l/fumika_18.jpg", 
+                          "../../image_sp/card/l/fumika_19.jpg", 
+                          "../../image_sp/card/l/fumika_20.jpg", 
+                          "../../image_sp/card/l/fumika_21.jpg", 
+                          "../../image_sp/card/l/fumika_22.jpg", 
+                          "../../image_sp/card/l/fumika_23.jpg", 
+                          "../../image_sp/card/l/fumika_24.jpg", 
+                          "../../image_sp/card/l/fumika_25.jpg", 
+                          "../../image_sp/card/l/fumika_26.jpg", 
+                          "../../image_sp/card/l/fumika_27.jpg", 
+                          "../../image_sp/card/l/fumika_28.jpg", 
+                          "../../image_sp/card/l/fumika_29.jpg", 
+                          "../../image_sp/card/l/fumika_30.jpg", 
+                          "../../image_sp/card/l/fumika_31.jpg", 
+                          "../../image_sp/card/l/fumika_32.jpg", 
+                          "../../image_sp/card/l/fumika_33.jpg", 
+                          "../../image_sp/card/l/fumika_34.jpg", 
+                          "../../image_sp/card/l/fumika_35.jpg", 
+                          "../../image_sp/card/l/fumika_36.jpg", 
+                          "../../image_sp/card/l/fumika_37.jpg", 
+                          "../../image_sp/card/l/fumika_38.jpg"],
                     "l_premium": {
                         "4": "../../image_sp/card_sign_p/l/fumika_05.jpg",
                         "5": "../../image_sp/card_sign_p/l/fumika_06.jpg",
@@ -3940,45 +3955,45 @@ kg
                         "32": "../../image_sp/card_sign_p/l/fumika_33.jpg",
                         "33": "../../image_sp/card_sign_p/l/fumika_34.jpg",
                         "34": "../../image_sp/card_sign_p/l/fumika_35.jpg",
-                        "35": "../../image_sp/card_sign_p/l/fumika_36.jpg"
+                        "35": "../../image_sp/card_sign_p/l/fumika_36.jpg",
+                        "36": "../../image_sp/card_sign_p/l/fumika_37.jpg",
+                        "37": "../../image_sp/card_sign_p/l/fumika_38.jpg"
                     },
-                    "l_nosign": ["", 
-                                 "", 
-                                 "", 
-                                 "", 
-                                 "../../image_sp/card/l/fumika_05.jpg",
-                                 "../../image_sp/card/l/fumika_06.jpg",
-                                 "../../image_sp/card/l/fumika_07.jpg",
-                                 "../../image_sp/card/l/fumika_08.jpg",
-                                 "../../image_sp/card/l/fumika_09.jpg",
-                                 "../../image_sp/card/l/fumika_10.jpg",
-                                 "../../image_sp/card/l/fumika_11.jpg",
-                                 "../../image_sp/card/l/fumika_12.jpg",
-                                 "../../image_sp/card/l/fumika_13.jpg",
-                                 "../../image_sp/card/l/fumika_14.jpg",
-                                 "../../image_sp/card/l/fumika_15.jpg",
-                                 "../../image_sp/card/l/fumika_16.jpg",
-                                 "../../image_sp/card/l/fumika_17.jpg",
-                                 "../../image_sp/card/l/fumika_18.jpg",
-                                 "../../image_sp/card/l/fumika_19.jpg",
-                                 "../../image_sp/card/l/fumika_20.jpg",
-                                 "../../image_sp/card/l/fumika_21.jpg",
-                                 "../../image_sp/card/l/fumika_22.jpg",
-                                 "../../image_sp/card/l/fumika_23.jpg",
-                                 "../../image_sp/card/l/fumika_24.jpg",
-                                 "../../image_sp/card/l/fumika_25.jpg",
-                                 "../../image_sp/card/l/fumika_26.jpg",
-                                 "../../image_sp/card/l/fumika_27.jpg",
-                                 "../../image_sp/card/l/fumika_28.jpg",
-                                 "../../image_sp/card/l/fumika_29.jpg",
-                                 "../../image_sp/card/l/fumika_30.jpg",
-                                 "../../image_sp/card/l/fumika_31.jpg",
-                                 "../../image_sp/card/l/fumika_32.jpg",
-                                 "../../image_sp/card/l/fumika_33.jpg",
-                                 "../../image_sp/card/l/fumika_34.jpg",
-                                 "../../image_sp/card/l/fumika_35.jpg",
-                                 "../../image_sp/card/l/fumika_36.jpg"
-                                ],
+                    "l_nosign": ["", "", "", "", 
+                                 "../../image_sp/card/l/fumika_05.jpg", 
+                                 "../../image_sp/card/l/fumika_06.jpg", 
+                                 "../../image_sp/card/l/fumika_07.jpg", 
+                                 "../../image_sp/card/l/fumika_08.jpg", 
+                                 "../../image_sp/card/l/fumika_09.jpg", 
+                                 "../../image_sp/card/l/fumika_10.jpg", 
+                                 "../../image_sp/card/l/fumika_11.jpg", 
+                                 "../../image_sp/card/l/fumika_12.jpg", 
+                                 "../../image_sp/card/l/fumika_13.jpg", 
+                                 "../../image_sp/card/l/fumika_14.jpg", 
+                                 "../../image_sp/card/l/fumika_15.jpg", 
+                                 "../../image_sp/card/l/fumika_16.jpg", 
+                                 "../../image_sp/card/l/fumika_17.jpg", 
+                                 "../../image_sp/card/l/fumika_18.jpg", 
+                                 "../../image_sp/card/l/fumika_19.jpg", 
+                                 "../../image_sp/card/l/fumika_20.jpg", 
+                                 "../../image_sp/card/l/fumika_21.jpg", 
+                                 "../../image_sp/card/l/fumika_22.jpg", 
+                                 "../../image_sp/card/l/fumika_23.jpg", 
+                                 "../../image_sp/card/l/fumika_24.jpg", 
+                                 "../../image_sp/card/l/fumika_25.jpg", 
+                                 "../../image_sp/card/l/fumika_26.jpg", 
+                                 "../../image_sp/card/l/fumika_27.jpg", 
+                                 "../../image_sp/card/l/fumika_28.jpg", 
+                                 "../../image_sp/card/l/fumika_29.jpg", 
+                                 "../../image_sp/card/l/fumika_30.jpg", 
+                                 "../../image_sp/card/l/fumika_31.jpg", 
+                                 "../../image_sp/card/l/fumika_32.jpg", 
+                                 "../../image_sp/card/l/fumika_33.jpg", 
+                                 "../../image_sp/card/l/fumika_34.jpg", 
+                                 "../../image_sp/card/l/fumika_35.jpg", 
+                                 "../../image_sp/card/l/fumika_36.jpg", 
+                                 "../../image_sp/card/l/fumika_37.jpg", 
+                                 "../../image_sp/card/l/fumika_38.jpg"],
                     "l_nosign_p": {
                         "4": "../../image_sp/card_sign_no_p/l/fumika_05.jpg",
                         "5": "../../image_sp/card_sign_no_p/l/fumika_06.jpg",
@@ -4011,152 +4026,173 @@ kg
                         "32": "../../image_sp/card_sign_no_p/l/fumika_33.jpg",
                         "33": "../../image_sp/card_sign_no_p/l/fumika_34.jpg",
                         "34": "../../image_sp/card_sign_no_p/l/fumika_35.jpg",
-                        "35": "../../image_sp/card_sign_no_p/l/fumika_36.jpg"
+                        "35": "../../image_sp/card_sign_no_p/l/fumika_36.jpg",
+                        "36": "../../image_sp/card_sign_no_p/l/fumika_37.jpg",
+                        "37": "../../image_sp/card_sign_no_p/l/fumika_38.jpg"
                     },
-                    "l_noframe": [null, null, null, null, "../../image_sp/card/l_noframe/fumika_05.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_06.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_07.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_08.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_09.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_10.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_11.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_12.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_13.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_14.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_15.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_16.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_17.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_18.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_19.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_20.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_21.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_22.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_23.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_24.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_25.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_26.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_27.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_28.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_29.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_30.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_31.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_32.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_33.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_34.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_35.jpg",
-                                                          "../../image_sp/card/l_noframe/fumika_36.jpg"],
-                    "mask_l": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-                    "mask_l2": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-                    "mask_l_p": [],
-                    "mask_l2_p": [],
-                    "xs": ["../../image_sp/card/xs/fumika_01.jpg",
-                           "../../image_sp/card/xs/fumika_02.jpg",
-                           "../../image_sp/card/xs/fumika_03.jpg",
-                           "../../image_sp/card/xs/fumika_04.jpg",
-                           "../../image_sp/card/xs/fumika_05.jpg",
-                           "../../image_sp/card/xs/fumika_06.jpg",
-                           "../../image_sp/card/xs/fumika_07.jpg",
-                           "../../image_sp/card/xs/fumika_08.jpg",
-                           "../../image_sp/card/xs/fumika_09.jpg",
-                           "../../image_sp/card/xs/fumika_10.jpg",
-                           "../../image_sp/card/xs/fumika_11.jpg",
-                           "../../image_sp/card/xs/fumika_12.jpg",
-                           "../../image_sp/card/xs/fumika_13.jpg",
-                           "../../image_sp/card/xs/fumika_14.jpg",
-                           "../../image_sp/card/xs/fumika_15.jpg",
-                           "../../image_sp/card/xs/fumika_16.jpg",
-                           "../../image_sp/card/xs/fumika_17.jpg",
-                           "../../image_sp/card/xs/fumika_18.jpg",
-                           "../../image_sp/card/xs/fumika_19.jpg",
-                           "../../image_sp/card/xs/fumika_20.jpg",
-                           "../../image_sp/card/xs/fumika_21.jpg",
-                           "../../image_sp/card/xs/fumika_22.jpg",
-                           "../../image_sp/card/xs/fumika_23.jpg",
-                           "../../image_sp/card/xs/fumika_24.jpg",
-                           "../../image_sp/card/xs/fumika_25.jpg",
-                           "../../image_sp/card/xs/fumika_26.jpg",
-                           "../../image_sp/card/xs/fumika_27.jpg",
-                           "../../image_sp/card/xs/fumika_28.jpg",
-                           "../../image_sp/card/xs/fumika_29.jpg",
-                           "../../image_sp/card/xs/fumika_30.jpg",
-                           "../../image_sp/card/xs/fumika_31.jpg",
-                           "../../image_sp/card/xs/fumika_32.jpg",
-                           "../../image_sp/card/xs/fumika_33.jpg",
-                           "../../image_sp/card/xs/fumika_34.jpg",
-                           "../../image_sp/card/xs/fumika_35.jpg",
-                           "../../image_sp/card/xs/fumika_36.jpg"],
-                    "m2": ["../../image_sp/card/m2/fumika_01.jpg",
-                           "../../image_sp/card/m2/fumika_02.jpg",
-                           "../../image_sp/card/m2/fumika_03.jpg",
-                           "../../image_sp/card/m2/fumika_04.jpg",
-                           "../../image_sp/card/m2/fumika_05.jpg",
-                           "../../image_sp/card/m2/fumika_06.jpg",
-                           "../../image_sp/card/m2/fumika_07.jpg",
-                           "../../image_sp/card/m2/fumika_08.jpg",
-                           "../../image_sp/card/m2/fumika_09.jpg",
-                           "../../image_sp/card/m2/fumika_10.jpg",
-                           "../../image_sp/card/m2/fumika_11.jpg",
-                           "../../image_sp/card/m2/fumika_12.jpg",
-                           "../../image_sp/card/m2/fumika_13.jpg",
-                           "../../image_sp/card/m2/fumika_14.jpg",
-                           "../../image_sp/card/m2/fumika_15.jpg",
-                           "../../image_sp/card/m2/fumika_16.jpg",
-                           "../../image_sp/card/m2/fumika_17.jpg",
-                           "../../image_sp/card/m2/fumika_18.jpg",
-                           "../../image_sp/card/m2/fumika_19.jpg",
-                           "../../image_sp/card/m2/fumika_20.jpg",
-                           "../../image_sp/card/m2/fumika_21.jpg",
-                           "../../image_sp/card/m2/fumika_22.jpg",
-                           "../../image_sp/card/m2/fumika_23.jpg",
-                           "../../image_sp/card/m2/fumika_24.jpg",
-                           "../../image_sp/card/m2/fumika_25.jpg",
-                           "../../image_sp/card/m2/fumika_26.jpg",
-                           "../../image_sp/card/m2/fumika_27.jpg",
-                           "../../image_sp/card/m2/fumika_28.jpg",
-                           "../../image_sp/card/m2/fumika_29.jpg",
-                           "../../image_sp/card/m2/fumika_30.jpg",
-                           "../../image_sp/card/m2/fumika_31.jpg",
-                           "../../image_sp/card/m2/fumika_32.jpg",
-                           "../../image_sp/card/m2/fumika_33.jpg",
-                           "../../image_sp/card/m2/fumika_34.jpg",
-                           "../../image_sp/card/m2/fumika_35.jpg",
-                           "../../image_sp/card/m2/fumika_36.jpg"],
-                    "quest": ["../../image_sp/card/quest/fumika_01.png",
-                              "../../image_sp/card/quest/fumika_02.png",
-                              "../../image_sp/card/quest/fumika_03.png",
-                              "../../image_sp/card/quest/fumika_04.png",
-                              "../../image_sp/card/quest/fumika_05.jpg",
-                              "../../image_sp/card/quest/fumika_06.jpg",
-                              "../../image_sp/card/quest/fumika_07.jpg",
-                              "../../image_sp/card/quest/fumika_08.jpg",
-                              "../../image_sp/card/quest/fumika_09.jpg",
-                              "../../image_sp/card/quest/fumika_10.jpg",
-                              "../../image_sp/card/quest/fumika_11.jpg",
-                              "../../image_sp/card/quest/fumika_12.jpg",
-                              "../../image_sp/card/quest/fumika_13.jpg",
-                              "../../image_sp/card/quest/fumika_14.jpg",
-                              "../../image_sp/card/quest/fumika_15.jpg",
-                              "../../image_sp/card/quest/fumika_16.jpg",
-                              "../../image_sp/card/quest/fumika_17.jpg",
-                              "../../image_sp/card/quest/fumika_18.jpg",
-                              "../../image_sp/card/quest/fumika_19.jpg",
-                              "../../image_sp/card/quest/fumika_20.jpg",
-                              "../../image_sp/card/quest/fumika_21.jpg",
-                              "../../image_sp/card/quest/fumika_22.jpg",
-                              "../../image_sp/card/quest/fumika_23.jpg",
-                              "../../image_sp/card/quest/fumika_24.jpg",
-                              "../../image_sp/card/quest/fumika_25.jpg",
-                              "../../image_sp/card/quest/fumika_26.jpg",
-                              "../../image_sp/card/quest/fumika_27.jpg",
-                              "../../image_sp/card/quest/fumika_28.jpg",
-                              "../../image_sp/card/quest/fumika_29.jpg",
-                              "../../image_sp/card/quest/fumika_30.jpg",
-                              "../../image_sp/card/quest/fumika_31.jpg",
-                              "../../image_sp/card/quest/fumika_32.jpg",
-                              "../../image_sp/card/quest/fumika_33.jpg",
-                              "../../image_sp/card/quest/fumika_34.jpg",
-                              "../../image_sp/card/quest/fumika_35.jpg",
-                              "../../image_sp/card/quest/fumika_36.jpg"]
+                    "l_noframe": [null, null, null, null, 
+                                  "../../image_sp/card/l_noframe/fumika_05.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_06.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_07.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_08.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_09.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_10.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_11.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_12.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_13.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_14.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_15.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_16.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_17.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_18.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_19.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_20.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_21.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_22.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_23.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_24.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_25.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_26.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_27.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_28.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_29.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_30.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_31.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_32.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_33.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_34.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_35.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_36.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_37.jpg", 
+                                  "../../image_sp/card/l_noframe/fumika_38.jpg"],
+                    "mask_l": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+                               "../../image_sp/card/mask_l/45b089ee2ddc60f26d271e1e0a86e0df.png", 
+                               "../../image_sp/card/mask_l/1bfbf5c344ce17e6e86444dbb72154d6.png"],
+                    "mask_l2": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+                                "../../image_sp/card/mask_l2/45b089ee2ddc60f26d271e1e0a86e0df.png", 
+                                "../../image_sp/card/mask_l2/1bfbf5c344ce17e6e86444dbb72154d6.png"],
+                    "mask_l_p": {
+                        "36": "../../image_sp/card/mask_l_p/45b089ee2ddc60f26d271e1e0a86e0df.png",
+                        "37": "../../image_sp/card/mask_l_p/1bfbf5c344ce17e6e86444dbb72154d6.png"
+                    },
+                    "mask_l2_p": {
+                        "36": "../../image_sp/card/mask_l2_p/45b089ee2ddc60f26d271e1e0a86e0df.png",
+                        "37": "../../image_sp/card/mask_l2_p/1bfbf5c344ce17e6e86444dbb72154d6.png"
+                    },
+                    "xs": ["../../image_sp/card/xs/fumika_01.jpg", 
+                           "../../image_sp/card/xs/fumika_02.jpg", 
+                           "../../image_sp/card/xs/fumika_03.jpg", 
+                           "../../image_sp/card/xs/fumika_04.jpg", 
+                           "../../image_sp/card/xs/fumika_05.jpg", 
+                           "../../image_sp/card/xs/fumika_06.jpg", 
+                           "../../image_sp/card/xs/fumika_07.jpg", 
+                           "../../image_sp/card/xs/fumika_08.jpg", 
+                           "../../image_sp/card/xs/fumika_09.jpg", 
+                           "../../image_sp/card/xs/fumika_10.jpg", 
+                           "../../image_sp/card/xs/fumika_11.jpg", 
+                           "../../image_sp/card/xs/fumika_12.jpg", 
+                           "../../image_sp/card/xs/fumika_13.jpg", 
+                           "../../image_sp/card/xs/fumika_14.jpg", 
+                           "../../image_sp/card/xs/fumika_15.jpg", 
+                           "../../image_sp/card/xs/fumika_16.jpg", 
+                           "../../image_sp/card/xs/fumika_17.jpg", 
+                           "../../image_sp/card/xs/fumika_18.jpg", 
+                           "../../image_sp/card/xs/fumika_19.jpg", 
+                           "../../image_sp/card/xs/fumika_20.jpg", 
+                           "../../image_sp/card/xs/fumika_21.jpg", 
+                           "../../image_sp/card/xs/fumika_22.jpg", 
+                           "../../image_sp/card/xs/fumika_23.jpg", 
+                           "../../image_sp/card/xs/fumika_24.jpg", 
+                           "../../image_sp/card/xs/fumika_25.jpg", 
+                           "../../image_sp/card/xs/fumika_26.jpg", 
+                           "../../image_sp/card/xs/fumika_27.jpg", 
+                           "../../image_sp/card/xs/fumika_28.jpg", 
+                           "../../image_sp/card/xs/fumika_29.jpg", 
+                           "../../image_sp/card/xs/fumika_30.jpg", 
+                           "../../image_sp/card/xs/fumika_31.jpg", 
+                           "../../image_sp/card/xs/fumika_32.jpg", 
+                           "../../image_sp/card/xs/fumika_33.jpg", 
+                           "../../image_sp/card/xs/fumika_34.jpg", 
+                           "../../image_sp/card/xs/fumika_35.jpg", 
+                           "../../image_sp/card/xs/fumika_36.jpg", 
+                           "../../image_sp/card/xs/fumika_37.jpg", 
+                           "../../image_sp/card/xs/fumika_38.jpg"],
+                    "m2": ["../../image_sp/card/m2/fumika_01.jpg", 
+                           "../../image_sp/card/m2/fumika_02.jpg", 
+                           "../../image_sp/card/m2/fumika_03.jpg", 
+                           "../../image_sp/card/m2/fumika_04.jpg", 
+                           "../../image_sp/card/m2/fumika_05.jpg", 
+                           "../../image_sp/card/m2/fumika_06.jpg", 
+                           "../../image_sp/card/m2/fumika_07.jpg", 
+                           "../../image_sp/card/m2/fumika_08.jpg", 
+                           "../../image_sp/card/m2/fumika_09.jpg", 
+                           "../../image_sp/card/m2/fumika_10.jpg", 
+                           "../../image_sp/card/m2/fumika_11.jpg", 
+                           "../../image_sp/card/m2/fumika_12.jpg", 
+                           "../../image_sp/card/m2/fumika_13.jpg", 
+                           "../../image_sp/card/m2/fumika_14.jpg", 
+                           "../../image_sp/card/m2/fumika_15.jpg", 
+                           "../../image_sp/card/m2/fumika_16.jpg", 
+                           "../../image_sp/card/m2/fumika_17.jpg", 
+                           "../../image_sp/card/m2/fumika_18.jpg", 
+                           "../../image_sp/card/m2/fumika_19.jpg", 
+                           "../../image_sp/card/m2/fumika_20.jpg", 
+                           "../../image_sp/card/m2/fumika_21.jpg", 
+                           "../../image_sp/card/m2/fumika_22.jpg", 
+                           "../../image_sp/card/m2/fumika_23.jpg", 
+                           "../../image_sp/card/m2/fumika_24.jpg", 
+                           "../../image_sp/card/m2/fumika_25.jpg", 
+                           "../../image_sp/card/m2/fumika_26.jpg", 
+                           "../../image_sp/card/m2/fumika_27.jpg", 
+                           "../../image_sp/card/m2/fumika_28.jpg", 
+                           "../../image_sp/card/m2/fumika_29.jpg", 
+                           "../../image_sp/card/m2/fumika_30.jpg", 
+                           "../../image_sp/card/m2/fumika_31.jpg", 
+                           "../../image_sp/card/m2/fumika_32.jpg", 
+                           "../../image_sp/card/m2/fumika_33.jpg", 
+                           "../../image_sp/card/m2/fumika_34.jpg", 
+                           "../../image_sp/card/m2/fumika_35.jpg", 
+                           "../../image_sp/card/m2/fumika_36.jpg", 
+                           "../../image_sp/card/m2/fumika_37.jpg", 
+                           "../../image_sp/card/m2/fumika_38.jpg"],
+                    "quest": ["../../image_sp/card/quest/fumika_01.png", 
+                              "../../image_sp/card/quest/fumika_02.png", 
+                              "../../image_sp/card/quest/fumika_03.png", 
+                              "../../image_sp/card/quest/fumika_04.png", 
+                              "../../image_sp/card/quest/fumika_05.jpg", 
+                              "../../image_sp/card/quest/fumika_06.jpg", 
+                              "../../image_sp/card/quest/fumika_07.jpg", 
+                              "../../image_sp/card/quest/fumika_08.jpg", 
+                              "../../image_sp/card/quest/fumika_09.jpg", 
+                              "../../image_sp/card/quest/fumika_10.jpg", 
+                              "../../image_sp/card/quest/fumika_11.jpg", 
+                              "../../image_sp/card/quest/fumika_12.jpg", 
+                              "../../image_sp/card/quest/fumika_13.jpg", 
+                              "../../image_sp/card/quest/fumika_14.jpg", 
+                              "../../image_sp/card/quest/fumika_15.jpg", 
+                              "../../image_sp/card/quest/fumika_16.jpg", 
+                              "../../image_sp/card/quest/fumika_17.jpg", 
+                              "../../image_sp/card/quest/fumika_18.jpg", 
+                              "../../image_sp/card/quest/fumika_19.jpg", 
+                              "../../image_sp/card/quest/fumika_20.jpg", 
+                              "../../image_sp/card/quest/fumika_21.jpg", 
+                              "../../image_sp/card/quest/fumika_22.jpg", 
+                              "../../image_sp/card/quest/fumika_23.jpg", 
+                              "../../image_sp/card/quest/fumika_24.jpg", 
+                              "../../image_sp/card/quest/fumika_25.jpg", 
+                              "../../image_sp/card/quest/fumika_26.jpg", 
+                              "../../image_sp/card/quest/fumika_27.jpg", 
+                              "../../image_sp/card/quest/fumika_28.jpg", 
+                              "../../image_sp/card/quest/fumika_29.jpg", 
+                              "../../image_sp/card/quest/fumika_30.jpg", 
+                              "../../image_sp/card/quest/fumika_31.jpg", 
+                              "../../image_sp/card/quest/fumika_32.jpg", 
+                              "../../image_sp/card/quest/fumika_33.jpg", 
+                              "../../image_sp/card/quest/fumika_34.jpg", 
+                              "../../image_sp/card/quest/fumika_35.jpg", 
+                              "../../image_sp/card/quest/fumika_36.jpg", 
+                              "../../image_sp/card/quest/fumika_37.jpg", 
+                              "../../image_sp/card/quest/fumika_38.jpg"]
                 };
                 idol.ios_app_flg = false;
                 idol.apple_review = null;
@@ -4165,11 +4201,11 @@ kg
             var birthday_flag = false;
             var select_card_index = "0";
             var selected_num = null;
-            var url_trade = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/auction/search_top/0/__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D716575393';
-            var url_album = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/archive/view/__hash_card_id__/0/0/0%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D160234285';
-            var url_event_memory = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/detail/__event_id__/__category_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D92593351';
-            var url_other_event = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_gallery/index/0/0/2/0%3Fis_search%3D1%26event_category%3D__category_id__%26event_id%3D__event_id__%26l_frm%3DIdol_gallery_idol_detail_1%26rnd%3D638123745';
-            var url_cartoon = 'https://uhlmkashim.github.io/anniversary/cartoon/index.html';
+            var url_trade = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/auction/search_top/0/__hash_card_id__';
+            var url_album = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/archive/view/__hash_card_id__/0/0/0';
+            var url_event_memory = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/detail/__event_id__/__category_id__';
+            var url_other_event = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_gallery/index/0/0/2/0';
+            var url_cartoon = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/search';
             var url_comment_5th_redirect = "idol_gallery/idol_detail/__hash_card_id__";
             var slider_pos = 0;
             var select_tab = 0;
@@ -4301,6 +4337,8 @@ kg
         <script src='../../js/cjs/sign_effect/2562702_sign_effect.js'></script>
         <script src='../../js/cjs/sign_effect/89_sign_effect.js'></script>
         <script src='../../js/cjs/sign_effect/89_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/2467001_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/2567002_sign_effect.js'></script>
         <script src="../../js/underscore-min.js"></script>
         <script src="../../js/backbone-min.js"></script>
         <script src="../../js/ilibrary.js" type="text/javascript"></script>
@@ -4309,10 +4347,10 @@ kg
         <script src="../../js/min/gallery.min.js" type="text/javascript"></script>
         <script src="../../js/min/bb_loader.min.js" type="text/javascript"></script>
         <div class="m-Top8 m-Btm8">
-            <img src="../../image_sp/ui/line_hoshi.png" width="100%">
+            <img src="../../image_sp/ui/line_hoshi.jpg" width="100%">
         </div>
         <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">劇場で検索</a>
-        <a href='../../item/show_premium_card_cjs/90/fumi_main.html' class="btn_normal_line_2 m-Cnt m-Btm12">후미카 키라펜 연출</a>
+        <a href='../../item/show_premium_card_cjs/90/fumi_main.html' class="btn_normal_line_2 m-Cnt m-Btm12">プレミアムサイン</a>
         <a href='../../mypage.html'>
             <div class="backLink">マイスタジオ</div>
         </a>
