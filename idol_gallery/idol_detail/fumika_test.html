@@ -8,7 +8,7 @@
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
     <title>アイドルマスター シンデレラガールズ</title>
-    <link rel="stylesheet" type="text/css" href="../../css/rich/new_mypage_common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/rich/new_mypage_common_k.css" media="all">
     <link rel="apple-touch-icon-precomposed" href="../../image_sp/ui/icon_bookmark.png">
     <script>
         (function() {
@@ -297,18 +297,18 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">プロフィール</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">セリフ一覧</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">エピソード</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">アイドル情報</a>
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 일람</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">プロフィール</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">セリフ一覧</a>
-<a name="tab_3" href="#" style='display:none;'>エピソード</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">アイドル情報</a>
+<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 일람</a>
+<a name="tab_3" href="#" style='display:none;'>에피소드</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="idol-base-template">
@@ -328,7 +328,7 @@
 <div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
 </div>
 <div class="blk">
-<div class="title age"></div><div class="pr"><%- profile.card_age %>歳</div>
+<div class="title age"></div><div class="pr"><%- profile.card_age %>세</div>
 </div>
 </div>
 <div class="data_list">
@@ -355,7 +355,7 @@ kg
 </div>
 <div class="data_list">
 <div class="blk">
-<div class="title bld"></div><div class="pr"><%- profile.card_blood %>型</div>
+<div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
 </div>
 <div class="blk">
 <div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
@@ -438,7 +438,7 @@ kg
 <div class="area-frame_bg_image"></div></div></div><% } %><% if (paging_info.max_page_num > 0) { %><div class="pager_area" style="height:auto;"><div class="pager_panel_area"><% if (paging_info.current_page != 0) { %><input type="submit" class="btn_pager_first"><% } else { %><div class="btn_pager_first _disabled"></div><% } %><% if (paging_info.current_page > 0) { %><input type="submit" class="btn_pager_back"><% } else { %><div class="btn_pager_back _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_next"><% } else { %><div class="btn_pager_next _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_last"><% } else { %><div class="btn_pager_last _disabled"></div><% } %><%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %></div></div><% } %>
 </script>
         <script type="text/template" id="parameter-template">
-            <section class="idolStatus deck m-Btm10"><div class="data_list"><div class="wrap"><div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div></div><div class="wrap" style="margin-left:4px;"><div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div></div><div class="wrap" style="margin-left:4px;"><div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div></div></div><% if (data.skill_effect) { %><div class="data_list line"><div class="wrap"><div class="title skl"></div><div class="pr"><%- data.skill_name %></div></div></div><%if (!data.grow_idol_flag) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div></div></div><%if ( ! $.isEmptyObject(data.skill_effect_2)) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div></div></div><% } %><% } %><% } %></section><% if(trade_prohibition.is_trade_limit) { %><div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">このアイドルはトレード、フリートレード、贈り物ができません。</div><% } %><div class="area-btn-common _base-width"><% if(!trade_prohibition.is_trade_limit) { %><a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a><% } %><% if(is_exist_archive) { %><a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a><% } %></div><% if (event) { %><h3 class="title_hanyo m-Top8 m-Btm8"><div>登場イベント</div></h3><% Object.keys(event).forEach(function (key) { %><div class="t-Cnt m-Btm5"><% if (event[key].event_name.indexOf("<br />") != -1) { %><%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br><%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %><% } else if (key == 1908) { %><span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span><% } else { %><%- event[key].event_name %><% } %></div><div class="area-btn-common _base-width m-Btm8"><a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a><a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a></div><% }); %><% } %>
+            <section class="idolStatus deck m-Btm10"><div class="data_list"><div class="wrap"><div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div></div><div class="wrap" style="margin-left:4px;"><div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div></div><div class="wrap" style="margin-left:4px;"><div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div></div></div><% if (data.skill_effect) { %><div class="data_list line"><div class="wrap"><div class="title skl"></div><div class="pr"><%- data.skill_name %></div></div></div><%if (!data.grow_idol_flag) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div></div></div><%if ( ! $.isEmptyObject(data.skill_effect_2)) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div></div></div><% } %><% } %><% } %></section><% if(trade_prohibition.is_trade_limit) { %><div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">このアイドルはトレード、フリートレード、贈り物ができません。</div><% } %><div class="area-btn-common _base-width"><% if(!trade_prohibition.is_trade_limit) { %><a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a><% } %><% if(is_exist_archive) { %><a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a><% } %></div><% if (event) { %><h3 class="title_hanyo m-Top8 m-Btm8"><div>등장 이벤트</div></h3><% Object.keys(event).forEach(function (key) { %><div class="t-Cnt m-Btm5"><% if (event[key].event_name.indexOf("<br />") != -1) { %><%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br><%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %><% } else if (key == 1908) { %><span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span><% } else { %><%- event[key].event_name %><% } %></div><div class="area-btn-common _base-width m-Btm8"><a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">이벤트 메모리를<br>본다</a><a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">다른 이벤트 등장<br>아이돌을 검색한다</a></div><% }); %><% } %>
 </script>
         <script type="text/template" id="popup-expansion-template">
             <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
@@ -564,52 +564,52 @@ kg
                 var idol = {};
                 idol.detail_list = [{
                     "data": {
-                        "card_name": "鷺沢文香",
+                        "card_name": "사기사와 후미카",
                         "rarity": "1",
                         "cost": "11",
                         "attribute": "cool",
-                        "skill_name": "ｸｰﾘｯｼｭｱｸﾄ",
+                        "skill_name": "쿨리쉬 액트",
                         "skill_effect": "",
                         "grow_idol_flag": "",
                         "default_attack": "880",
                         "default_defense": "1400",
                         "hash_card_id": "cf0f5af872286b4401c644ad570b1401",
                         "alias_name": "",
-                        "real_name": "鷺沢文香"
+                        "real_name": "사기사와후미카"
                     },
                     "profile": {
                         "card_id": "2002601",
                         "card_name": "鷺沢文香",
-                        "card_kana": "さぎさわふみか",
+                        "card_kana": "사기사와 후미카",
                         "card_age": "19",
-                        "card_from": "長野",
+                        "card_from": "나가노",
                         "card_height": "162",
                         "card_weight": "45",
                         "card_bust": "84",
                         "card_waist": "54",
                         "card_hip": "81",
-                        "card_birthday": "10月27日",
-                        "card_constellation": "蠍座",
+                        "card_birthday": "10월 27일",
+                        "card_constellation": "전갈자리",
                         "card_blood": "AB",
-                        "card_arm": "右",
-                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_arm": "오른쪽",
+                        "card_hobby": "서점 순례・책갈피 만들기",
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "…………はい? …ｱｲﾄﾞﾙを…お探しですか? …当店は…ｱｲﾄﾞﾙ雑誌などのお取り扱いはございません｡…違うのですか? …………ええと…あの､お話がよく飲み込めないのですが",
-                        "comments_my_1": "…本は…お好きですか?",
-                        "comments_my_2": "……すみません｡本に夢中で",
-                        "comments_my_3": "…人と話すのは…苦手です",
-                        "comments_my_4": "…書店は叔父の手伝いで｡…本業は学生で…専攻は文学部です",
-                        "comments_my_max": "………もし…ｱｲﾄﾞﾙになったら､何か変われますか? …私も",
-                        "comments_work_1": "…人前…抵抗があります",
-                        "comments_work_2": "……あの､すみません",
-                        "comments_work_3": "…目を合わせるのも苦手で",
-                        "comments_work_4": "書店のお仕事は座っていればよかったのに､ｱｲﾄﾞﾙというのは…",
-                        "comments_work_max": "…新しい自分…興味あります｡ｱｲﾄﾞﾙになったらもしかしたら…",
-                        "comments_work_love_up": "…ｱｲﾄﾞﾙという仕事を…まだ理解できている自信がありません",
-                        "comments_live": "…LIVE…ですか?",
-                        "comments_love_max": "書の世界はどこか時が止まったような感覚で…でも､もしｱｲﾄﾞﾙという道に一歩を踏み出せば…私も前に進めるでしょうか…?"
+                        "comment": "…………네? …아이돌을… 찾고 계십니까? …저희 가게는… 아이돌 잡지 등의 취급은 하지 않습니다. …다른 건가요? …………저기 …저, 말씀이 잘 이해되지 않습니다만.",
+                        "comments_my_1": "…책은… 좋아하시나요?",
+                        "comments_my_2": "……죄송합니다. 책에 몰두해버려서.",
+                        "comments_my_3": "…사람과 이야기 하는 것은… 서툽니다.",
+                        "comments_my_4": "…서점은 숙부를 돕기 위해. …본업은 학생이고… 전공은 문학부입니다.",
+                        "comments_my_max": "………만약… 아이돌이 된다면, 무언가 바뀔까요? …저도.",
+                        "comments_work_1": "…사람들 앞… 저항이 있습니다.",
+                        "comments_work_2": "……저, 죄송합니다.",
+                        "comments_work_3": "…눈을 마주치는 것도 서툴러서.",
+                        "comments_work_4": "서점 일은 앉아있는 것만으로 괜찮았는데, 아이돌이라는 것은…",
+                        "comments_work_max": "…새로운 자신… 흥미 있습니다. 아이돌이 된다면 어쩌면…",
+                        "comments_work_love_up": "…아이돌이라는 일을… 아직 이해하고 있다는 자신이 없습니다.",
+                        "comments_live": "…LIVE…입니까?",
+                        "comments_love_max": "책의 세계는 어딘가 시간이 멈춘 듯한 감각이라… 하지만, 만약 아이돌이라는 길에 한걸음을 내딛는다면… 저도 앞으로 나아갈 수 있을까요?"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2002601/idolcomment.mp3",
@@ -641,52 +641,52 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "鷺沢文香+",
+                        "card_name": "사기사와 후미카+",
                         "rarity": "2",
                         "cost": "11",
                         "attribute": "cool",
-                        "skill_name": "ｸｰﾘｯｼｭｱｸﾄ",
+                        "skill_name": "쿨리쉬 액트",
                         "skill_effect": "",
                         "grow_idol_flag": "",
                         "default_attack": "1056",
                         "default_defense": "1680",
                         "hash_card_id": "7e5915c0369bb67f9240d3b0a501a2e5",
                         "alias_name": "",
-                        "real_name": "鷺沢文香+"
+                        "real_name": "사기사와후미카+"
                     },
                     "profile": {
                         "card_id": "2102602",
                         "card_name": "鷺沢文香+",
-                        "card_kana": "さぎさわふみか",
+                        "card_kana": "사기사와 후미카",
                         "card_age": "19",
-                        "card_from": "長野",
+                        "card_from": "나가노",
                         "card_height": "162",
                         "card_weight": "45",
                         "card_bust": "84",
                         "card_waist": "54",
                         "card_hip": "81",
-                        "card_birthday": "10月27日",
-                        "card_constellation": "蠍座",
+                        "card_birthday": "10월 27일",
+                        "card_constellation": "전갈자리",
                         "card_blood": "AB",
-                        "card_arm": "右",
-                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_arm": "오른쪽",
+                        "card_hobby": "서점 순례・책갈피 만들기",
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "…あの…ﾌﾟﾛﾃﾞｭｰｻｰさんって…本当にﾌﾟﾛﾃﾞｭｰｻｰだったんですね｡…すみません､言葉がおかしくて｡実感はないのですが…ｱｲﾄﾞﾙになったからには頑張ってお話してみようかと思って…",
-                        "comments_my_1": "…本は…お好きですか?",
-                        "comments_my_2": "……すみません｡本に夢中で",
-                        "comments_my_3": "あ､あの…おはようございます",
-                        "comments_my_4": "…せめて､顔くらい俯かずにいようかと思いまして…努力を",
-                        "comments_my_max": "…ﾌﾟﾛﾃﾞｭｰｻｰさんに出会って､なにかが変わったでしょうか",
-                        "comments_work_1": "…人前…抵抗があります",
-                        "comments_work_2": "……あの､すみません",
-                        "comments_work_3": "…笑顔は､まだ…その…はい",
-                        "comments_work_4": "…すみません…まだ衣装に慣れていないので…お恥ずかしい",
-                        "comments_work_max": "…出会いは大切ですね｡書も､ﾌﾟﾛﾃﾞｭｰｻｰさんも…同じです",
-                        "comments_work_love_up": "…まだｱｲﾄﾞﾙはよくわかりませんが､自信はついてきました",
-                        "comments_live": "せめて…前を向いて…",
-                        "comments_love_max": "…まだまだ新米のｱｲﾄﾞﾙですけれども…私､せめて顔を上げて…こうして…目を見てお話できるように頑張ります"
+                        "comment": "…저기… 프로듀서 씨는… 정말로 프로듀서셨군요. …죄송합니다, 말이 이상했네요. 실감은 없습니다만… 아이돌이 된 이상 힘내서 얘기해볼까 생각해서…",
+                        "comments_my_1": "…책은… 좋아하시나요?",
+                        "comments_my_2": "……죄송합니다. 책에 몰두해버려서.",
+                        "comments_my_3": "저, 저기… 안녕하세요.",
+                        "comments_my_4": "…적어도, 고개는 숙이지 말자고 생각해서… 노력을.",
+                        "comments_my_max": "…프로듀서 씨와 만나서, 무언가가 달라졌을까요.",
+                        "comments_work_1": "…사람들 앞… 저항이 있습니다.",
+                        "comments_work_2": "……저, 죄송합니다.",
+                        "comments_work_3": "…미소는, 아직… 그… 네.",
+                        "comments_work_4": "…죄송합니다… 아직 의상에 익숙하지 않아서… 부끄러워요.",
+                        "comments_work_max": "…만남은 소중하네요. 책도, 프로듀서 씨도… 같습니다.",
+                        "comments_work_love_up": "…아직 아이돌은 잘 모르겠습니다만, 자신감은 붙었습니다.",
+                        "comments_live": "적어도… 앞을 향해서…",
+                        "comments_love_max": "…아직 신출내기 아이돌이지만… 저, 적어도 고개를 들고… 이렇게… 눈을 보고 이야기할 수 있도록 노력하겠습니다."
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2102602/idolcomment.mp3",
@@ -718,52 +718,52 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[新たな一歩]鷺沢文香",
+                        "card_name": "[새로운 한걸음]사기사와 후미카",
                         "rarity": "3",
                         "cost": "13",
                         "attribute": "cool",
-                        "skill_name": "小さな目覚め",
-                        "skill_effect": "ｷｭｰﾄ･ｸｰﾙﾀｲﾌﾟの攻守 大ｱｯﾌﾟ",
+                        "skill_name": "작은 각성",
+                        "skill_effect": "큐트･쿨 타입의 공수 대 업",
                         "grow_idol_flag": "",
                         "default_attack": "2440",
                         "default_defense": "2580",
                         "hash_card_id": "ced7d4f37c325fd9e001d90e359b17b1",
-                        "alias_name": "新たな一歩",
-                        "real_name": "鷺沢文香"
+                        "alias_name": "새로운 한걸음",
+                        "real_name": "사기사와후미카"
                     },
                     "profile": {
                         "card_id": "2212001",
                         "card_name": "[新たな一歩]鷺沢文香",
-                        "card_kana": "さぎさわふみか",
+                        "card_kana": "사기사와 후미카",
                         "card_age": "19",
-                        "card_from": "長野",
+                        "card_from": "나가노",
                         "card_height": "162",
                         "card_weight": "45",
                         "card_bust": "84",
                         "card_waist": "54",
                         "card_hip": "81",
-                        "card_birthday": "10月27日",
-                        "card_constellation": "蠍座",
+                        "card_birthday": "10월 27일",
+                        "card_constellation": "전갈자리",
                         "card_blood": "AB",
-                        "card_arm": "右",
-                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_arm": "오른쪽",
+                        "card_hobby": "서점 순례・책갈피 만들기",
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "……あ､すみません｡今､本を整理している最中で｡……書店は力仕事もあります｡…重ねて運ぶと重いのですが､数も多いので｡……あ､いえ､手伝ってもらう程では…その…すみません",
-                        "comments_my_1": "…えと｡…あ……どうぞ",
-                        "comments_my_2": "…歌詞にも…世界観が",
-                        "comments_my_3": "…その…もういいでしょうか",
-                        "comments_my_4": "…私を知って…どうしようというのですか? 知る事など何も…",
-                        "comments_my_max": "…Yervandashatﾌﾟﾛﾃﾞｭｰｻｰさんは…読み切れない…深い人です",
-                        "comments_work_1": "…すみません…手際が悪くて",
-                        "comments_work_2": "…雰囲気があると…言われても",
-                        "comments_work_3": "(…台本…どこに挟んだかしら)",
-                        "comments_work_4": "…お仕事は…筋書きが読めません｡いつも予期できないことが",
-                        "comments_work_max": "…出来具合の判断は…Yervandashatﾌﾟﾛﾃﾞｭｰｻｰさんに頼るしか",
-                        "comments_work_love_up": "…お､落ちましたか…? 一番上に…静かに載せていただけると",
-                        "comments_live": "…この展開は…どういう?",
-                        "comments_love_max": "…書物には…一生残したくなるようなものがあります｡…そういう価値を…私に求めるのでしょうか｡…本気､なのですね"
+                        "comment": "……아, 죄송합니다. 지금, 책을 정리하던 중이라서. ……서점엔 힘쓰는 일도 있습니다. …쌓아서 옮기면 무겁습니다만, 갯수도 많으니까요. ……아, 아뇨, 도움을 받을 정도는… 그… 죄송합니다.",
+                        "comments_my_1": "…음. …아…… 부디.",
+                        "comments_my_2": "…가사에도… 세계관이",
+                        "comments_my_3": "…저기… 이제 괜찮을까요.",
+                        "comments_my_4": "…저를 알아서… 어쩌시려는 건가요? 알만한 것따위는 아무것도…",
+                        "comments_my_max": "…OO프로듀서 씨는… 읽어낼 수 없는… 깊은 사람입니다.",
+                        "comments_work_1": "…죄송합니다… 솜씨가 안좋아서요.",
+                        "comments_work_2": "…분위기가 있다고… 말씀하셔도.",
+                        "comments_work_3": "(…대본… 어디에 끼워뒀을까.)",
+                        "comments_work_4": "…일은… 줄거리를 읽을 수 없습니다. 언제나 예기치 못한 일이.",
+                        "comments_work_max": "…모양새의 판단은… OO프로듀서 씨에게 의지할 수밖에.",
+                        "comments_work_love_up": "…떠, 떨어졌나요…? 맨 위에… 조용히 올려주시면.",
+                        "comments_live": "…이 전개는… 어떤?",
+                        "comments_love_max": "…책에는… 평생 남기고 싶어지는 것이 있습니다. …그런 가치를… 제게 바라는 건가요. …진심, 이군요."
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2212001/idolcomment.mp3",
@@ -795,52 +795,52 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[新たな一歩]鷺沢文香+",
+                        "card_name": "[새로운 한걸음]사기사와 후미카+",
                         "rarity": "4",
                         "cost": "13",
                         "attribute": "cool",
-                        "skill_name": "小さな目覚め",
-                        "skill_effect": "ｷｭｰﾄ･ｸｰﾙﾀｲﾌﾟの攻守 大ｱｯﾌﾟ",
+                        "skill_name": "작은 각성",
+                        "skill_effect": "큐트･쿨 타입의 공수 대 업",
                         "grow_idol_flag": "",
                         "default_attack": "2928",
                         "default_defense": "3096",
                         "hash_card_id": "b6d1d6f360b6bc3660dc54fbc3fe7df0",
-                        "alias_name": "新たな一歩",
-                        "real_name": "鷺沢文香+"
+                        "alias_name": "새로운 한걸음",
+                        "real_name": "사기사와후미카+"
                     },
                     "profile": {
                         "card_id": "2312002",
                         "card_name": "[新たな一歩]鷺沢文香+",
-                        "card_kana": "さぎさわふみか",
+                        "card_kana": "사기사와 후미카",
                         "card_age": "19",
-                        "card_from": "長野",
+                        "card_from": "나가노",
                         "card_height": "162",
                         "card_weight": "45",
                         "card_bust": "84",
                         "card_waist": "54",
                         "card_hip": "81",
-                        "card_birthday": "10月27日",
-                        "card_constellation": "蠍座",
+                        "card_birthday": "10월 27일",
+                        "card_constellation": "전갈자리",
                         "card_blood": "AB",
-                        "card_arm": "右",
-                        "card_hobby": "本屋めぐり・栞作り",
+                        "card_arm": "오른쪽",
+                        "card_hobby": "서점 순례・책갈피 만들기",
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "……たしかに豪華な装丁の本は…見栄えがします｡けれど､この衣装はすこし過剰なような｡…いえ､きっと考え方次第ですね｡私は本と違って成長できるのだから…ふさわしく…",
-                        "comments_my_1": "…えと｡…あ……どうぞ",
-                        "comments_my_2": "…歌詞にも…世界観が",
-                        "comments_my_3": "…まるで…別世界の住人ですね",
-                        "comments_my_4": "…古くても良きものは…時を越えて残る｡本もｱｲﾄﾞﾙも同じ…?",
-                        "comments_my_max": "…Yervandashatさんと会い…自分史が新章に入ったようです",
-                        "comments_work_1": "…すみません…手際が悪くて",
-                        "comments_work_2": "…雰囲気があると…言われても",
-                        "comments_work_3": "…画集で見かけた…ﾎﾟｰｽﾞです",
-                        "comments_work_4": "…手に取ってもらうのを待つ本の気持ち…わかった気がして",
-                        "comments_work_max": "…Yervandashatさんに教わりました｡自分の知らない…自分",
-                        "comments_work_love_up": "…学問に王道なしといいますし､ｱｲﾄﾞﾙもまた同じでしょうか",
-                        "comments_live": "…なにかを…残せたら",
-                        "comments_love_max": "…読書百遍意自ずから通ず｡…どんな難しい書物でも何度も読めば分かる｡…ｱｲﾄﾞﾙもまた､何度も練習すれば…私でも…"
+                        "comment": "……확실히 호화로운 표지의 책은… 보기 좋습니다. 하지만, 이 의상은 조금 과한 것 같아요. …아뇨, 분명 생각하기 나름이네요. 저는 책과 달리 성장할 수 있으니까요… 어울리게…",
+                        "comments_my_1": "…음. …아…… 부디.",
+                        "comments_my_2": "…가사에도… 세계관이",
+                        "comments_my_3": "…마치… 다른 세계의 주민이네요.",
+                        "comments_my_4": "…오래됐어도 좋은 것은… 시간을 넘어 전해진다. 책도 아이돌도 같아…?",
+                        "comments_my_max": "…OO씨와 만나서… 자서전이 새로운 장에 들어선 것 같습니다.",
+                        "comments_work_1": "…죄송합니다… 솜씨가 안좋아서요.",
+                        "comments_work_2": "…분위기가 있다고… 말씀하셔도.",
+                        "comments_work_3": "…화집에서 언뜻 봤던… 포즈입니다.",
+                        "comments_work_4": "…손에 잡히기를 기다리는 책의 마음… 이해한 느낌이에요.",
+                        "comments_work_max": "…OO씨에게 배웠습니다. 자신이 모르는… 자신.",
+                        "comments_work_love_up": "…학문에 왕도는 없다고 하듯, 아이돌도 또한 같을까요.",
+                        "comments_live": "…무언가를… 남길 수 있다면.",
+                        "comments_love_max": "…독서백편이면 뜻이 저절로 통한다. …어떤 어려운 책이라도 몇번이고 읽으면 알 수 있다. …아이돌도 또한, 몇번이고 연습하면… 저라도…"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2312002/idolcomment.mp3",
@@ -914,10 +914,10 @@ kg
                         "comments_work_2": "…まさかの…どんでん返し",
                         "comments_work_3": "…台本…ありがとうございます",
                         "comments_work_4": "…予期せぬﾊﾌﾟﾆﾝｸﾞ｡…そういうときに本質が見えるのでしょう",
-                        "comments_work_max": "…Yervandashatさん…本当にいるんですね｡…拾う神って",
+                        "comments_work_max": "…OOさん…本当にいるんですね｡…拾う神って",
                         "comments_work_love_up": "…拾ってくださるのですか｡…なんだか､意味深ですね",
                         "comments_live": "(…この舞台…意外と高い)",
-                        "comments_love_max": "…本を大切にする人に悪い人はいません｡…そんなYervandashatさんだから…私はｱｲﾄﾞﾙになったのですね｡…職よりも人です"
+                        "comments_love_max": "…本を大切にする人に悪い人はいません｡…そんなOOさんだから…私はｱｲﾄﾞﾙになったのですね｡…職よりも人です"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2412001/idolcomment.mp3",
@@ -988,15 +988,15 @@ kg
                         "comments_my_2": "…約束された…出会いとでも",
                         "comments_my_3": "…まるで…画集の人物のよう",
                         "comments_my_4": "…人から学ぶこともありますね｡言葉は文字と同じく大切です",
-                        "comments_my_max": "…ｲﾒｰｼﾞ刷新です｡…Yervandashatさんの手で…装いも新たに",
+                        "comments_my_max": "…ｲﾒｰｼﾞ刷新です｡…OOさんの手で…装いも新たに",
                         "comments_work_1": "…今日も…新しい1ﾍﾟｰｼﾞを",
                         "comments_work_2": "…まさかの…どんでん返し",
                         "comments_work_3": "…文香です｡…はい､あの文香",
                         "comments_work_4": "…あの…なにか? …無言で見ているような気がしましたので",
-                        "comments_work_max": "…良書は人を変えてくれます｡…Yervandashatさんも､おそらく",
-                        "comments_work_love_up": "…著者と編者は…信頼が大切らしいです､Yervandashatさん",
+                        "comments_work_max": "…良書は人を変えてくれます｡…OOさんも､おそらく",
+                        "comments_work_love_up": "…著者と編者は…信頼が大切らしいです､OOさん",
                         "comments_live": "…歌詞の意味を…大切に",
-                        "comments_love_max": "…私からは､物語など生まれないと思っていました｡…でもYervandashatさんが紐解いてくれました｡…続きが…気になります"
+                        "comments_love_max": "…私からは､物語など生まれないと思っていました｡…でもOOさんが紐解いてくれました｡…続きが…気になります"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2512002/idolcomment.mp3",
@@ -2527,7 +2527,7 @@ kg
                         "comments_work_3": "…ﾎﾞｰﾙは､手強いです｡とても",
                         "comments_work_4": "…笑顔､ですか? えぇ､自然に｡疲れていても､心は晴れやかで",
                         "comments_work_max": "…貴方から､受け取りました｡疲弊した体を突き動かす…気力を",
-                        "comments_work_love_up": "…Yervandashatさんの応援も､普段より一段と､力強く感じます",
+                        "comments_work_love_up": "…OOさんの応援も､普段より一段と､力強く感じます",
                         "comments_live": "…すみません｡まだ､息が…",
                         "comments_love_max": "…観客を魅了する華麗さなどには､まだ遠く及びません｡それでも挑み続けます｡…貴方が育てた､私自身の強さを信じて"
                     },
@@ -2605,7 +2605,7 @@ kg
                         "comments_work_2": "足が重く…でも､まだ動けます",
                         "comments_work_3": "背中を…声援が押しています…",
                         "comments_work_4": "…恥ずかしさや､戸惑いは捨てて…今は走ることに集中を…!",
-                        "comments_work_max": "Yervandashatさんを､笑顔に…確かな願いを､力に変えます…!",
+                        "comments_work_max": "OOさんを､笑顔に…確かな願いを､力に変えます…!",
                         "comments_work_love_up": "…貴方の声が聞こえます｡幻などではなく…力強く､はっきりと",
                         "comments_live": "みなさんの想い…繋ぎます",
                         "comments_love_max": "…振り返れば､ほんの僅かな距離でしょう｡でも､貴方に導かれ走った､この景色は…どんな物語より深く､心に刻まれました"
@@ -2679,12 +2679,12 @@ kg
                         "comments_my_2": "…眩い欠片が､また…ひとつ",
                         "comments_my_3": "…あっ｡栞も､風を好むのですね",
                         "comments_my_4": "…記憶を広大な宮殿としたら…これは､その見取り図かと",
-                        "comments_my_max": "…Yervandashatさんから繋がる言葉や想いは､あまりに多くて",
+                        "comments_my_max": "…OOさんから繋がる言葉や想いは､あまりに多くて",
                         "comments_work_1": "…これは､いつかの名残り日",
                         "comments_work_2": "…胸の熱は､どう書き記せば?",
                         "comments_work_3": "幼少より…続けてきた習慣です",
                         "comments_work_4": "…折角のお茶を､冷ませてしまいました｡没頭しすぎました",
-                        "comments_work_max": "…一言｡Yervandashatさんの手で､綴ってくださいませんか?",
+                        "comments_work_max": "…一言｡OOさんの手で､綴ってくださいませんか?",
                         "comments_work_love_up": "…貴方の顔を見て､また､一段…｡綴りたい文章が生まれました",
                         "comments_live": "私たちの想い出が…ここに",
                         "comments_love_max": "…いつか､まだ見ぬ未来が訪れたら…共に読み返しましょう｡それはきっと､私たちの心を照らし､温めてくれるはずですから"
@@ -2763,10 +2763,10 @@ kg
                         "comments_work_2": "…胸の熱は､どう書き記せば?",
                         "comments_work_3": "…舞台に幻想を咲かせましょう",
                         "comments_work_4": "…欲が､出てきました｡次を求める…ｱｲﾄﾞﾙの性でしょうか",
-                        "comments_work_max": "Yervandashatさんと共に創る物語…どうか､いついつまでも…!",
+                        "comments_work_max": "OOさんと共に創る物語…どうか､いついつまでも…!",
                         "comments_work_love_up": "…ひしひしと感じています｡終わらない物語というものを",
                         "comments_live": "…儚くなんて…ありません",
-                        "comments_love_max": "…困っています｡Yervandashatさんへの返し歌が､心から湧き溢れ､止まりません…｡せめて欠片だけでも…受け取ってください"
+                        "comments_love_max": "…困っています｡OOさんへの返し歌が､心から湧き溢れ､止まりません…｡せめて欠片だけでも…受け取ってください"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2554402/idolcomment.mp3",
@@ -2832,12 +2832,12 @@ kg
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "…思わず､見惚れてしまうよう｡手足の先まで温まり､ひと息つく時間…それは､心に止め処なく浮かぶ想いを整えるに相応しく…｡感想は､湯上がりに､Yervandashatさんへと伝えましょう",
+                        "comment": "…思わず､見惚れてしまうよう｡手足の先まで温まり､ひと息つく時間…それは､心に止め処なく浮かぶ想いを整えるに相応しく…｡感想は､湯上がりに､OOさんへと伝えましょう",
                         "comments_my_1": "…幻想､ではないのでしょうね",
                         "comments_my_2": "まるで､夢への旅路のような…",
                         "comments_my_3": "長逗留…かの書を思い出します",
                         "comments_my_4": "秋は一瞬…それでも､感動を生み出すには､十分すぎる時間…",
-                        "comments_my_max": "温もり｡癒し｡…どこか､Yervandashatさんを思い出す言葉たち",
+                        "comments_my_max": "温もり｡癒し｡…どこか､OOさんを思い出す言葉たち",
                         "comments_work_1": "引き込まれてしまいそう…",
                         "comments_work_2": "この場所もまた､書の舞台…",
                         "comments_work_3": "…湯の香に､安らぎを覚えます",
@@ -2845,7 +2845,7 @@ kg
                         "comments_work_max": "貴方と､今､同じ景色を見られたら…つい､そう願っています",
                         "comments_work_love_up": "…いけませんね｡想いを馳せていると､心は火照るばかり…",
                         "comments_live": "…湯冷めには､ご注意を",
-                        "comments_love_max": "先人は､移ろう秋を言葉にし､書に残しました｡私もまた､言葉で伝えられたら…｡Yervandashatさんに､この美しい景色を…"
+                        "comments_love_max": "先人は､移ろう秋を言葉にし､書に残しました｡私もまた､言葉で伝えられたら…｡OOさんに､この美しい景色を…"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2458101/idolcomment.mp3",
@@ -3001,10 +3001,10 @@ kg
                         "comments_work_2": "…旅路は､まだ続きますから",
                         "comments_work_3": "…気ばかりが､急いています",
                         "comments_work_4": "…路地裏に隠された､古書店｡物語のような､本当の話です",
-                        "comments_work_max": "安心は､地図ではなく…Yervandashatさんが与えてくれますね",
-                        "comments_work_love_up": "澱みなく､Yervandashatさんを導くつもりだったのですが…",
+                        "comments_work_max": "安心は､地図ではなく…OOさんが与えてくれますね",
+                        "comments_work_love_up": "澱みなく､OOさんを導くつもりだったのですが…",
                         "comments_live": "…進みましょう｡この先へ",
-                        "comments_love_max": "…風の吹くままに､ゆるりと進みましょうか｡Yervandashatさんと共に歩く風情を…旅の一頁として､心に記したいのです"
+                        "comments_love_max": "…風の吹くままに､ゆるりと進みましょうか｡OOさんと共に歩く風情を…旅の一頁として､心に記したいのです"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2461201/idolcomment.mp3",
@@ -3081,10 +3081,10 @@ kg
                         "comments_work_2": "…旅路は､まだ続きますから",
                         "comments_work_3": "心ゆくまで､愉しみましょう",
                         "comments_work_4": "…知りたいですか? 私が､此処に至るまでの､長い長い物語を",
-                        "comments_work_max": "付き合ってください､Yervandashatさん｡最後の頁を捲っても…",
-                        "comments_work_love_up": "…穏やかに､流され続けています｡私も､Yervandashatさんも",
+                        "comments_work_max": "付き合ってください､OOさん｡最後の頁を捲っても…",
+                        "comments_work_love_up": "…穏やかに､流され続けています｡私も､OOさんも",
                         "comments_live": "興味は､尽きませんよ",
-                        "comments_love_max": "…今は､ここまでにしましょう｡この先は､まだ真っ新な頁だけ｡私とYervandashatさんが紡ぐ物語は､始まったばかりですから"
+                        "comments_love_max": "…今は､ここまでにしましょう｡この先は､まだ真っ新な頁だけ｡私とOOさんが紡ぐ物語は､始まったばかりですから"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2561202/idolcomment.mp3",
@@ -3155,15 +3155,15 @@ kg
                         "comments_my_2": "まだ､饗宴は始まったばかり…",
                         "comments_my_3": "…ﾄﾞﾘﾝｸは周子さんのお薦めを",
                         "comments_my_4": "口下手な私ですが…皆さんと共にいる場は､楽しいと思えます",
-                        "comments_my_max": "…ﾊﾟｰﾃｨｰの前から､Yervandashatさんを､目で追っていました",
+                        "comments_my_max": "…ﾊﾟｰﾃｨｰの前から､OOさんを､目で追っていました",
                         "comments_work_1": "…時間が､穏やかに過ぎますね",
                         "comments_work_2": "…ただ､品ある振る舞いを､と",
                         "comments_work_3": "…私と､歓談はいかがですか?",
                         "comments_work_4": "…壮麗な言葉もありますが…今は､飾らない会話をしようかと",
-                        "comments_work_max": "…華やかな場も､Yervandashatさんと一緒であれば､安らげます",
-                        "comments_work_love_up": "Yervandashatさんさえよければ､ｴｽｺｰﾄをお願いできますか",
+                        "comments_work_max": "…華やかな場も､OOさんと一緒であれば､安らげます",
+                        "comments_work_love_up": "OOさんさえよければ､ｴｽｺｰﾄをお願いできますか",
                         "comments_live": "…貴方も楽しんで",
-                        "comments_love_max": "…社交場という舞台は､物語の転機になる場所です｡…どうか､頁を繰る手は止めず､共に楽しみましょう｡Yervandashatさん"
+                        "comments_love_max": "…社交場という舞台は､物語の転機になる場所です｡…どうか､頁を繰る手は止めず､共に楽しみましょう｡OOさん"
                     },
                     "voice": {
                         "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/c224049e468b2305d9768c722d872902.mp4",
@@ -3240,10 +3240,10 @@ kg
                         "comments_work_2": "…ただ､品ある振る舞いを､と",
                         "comments_work_3": "ええ…月が綺麗です｡とても",
                         "comments_work_4": "…夜､二人でﾊﾟｰﾃｨｰを抜け出して…古き良きﾛﾏﾝｽのようですね",
-                        "comments_work_max": "…私の微笑みも､Yervandashatさんの筋書きのうち､でしょうか",
+                        "comments_work_max": "…私の微笑みも､OOさんの筋書きのうち､でしょうか",
                         "comments_work_love_up": "…月のように優しい光で､貴方の目を惹きつけたいのです",
                         "comments_live": "夜の物語は､次の頁へと…",
-                        "comments_love_max": "…夜は明けても､再び廻り来る｡その円環に終わりはなく…私とYervandashatさんの物語も､そうであればと､願っています"
+                        "comments_love_max": "…夜は明けても､再び廻り来る｡その円環に終わりはなく…私とOOさんの物語も､そうであればと､願っています"
                     },
                     "voice": {
                         "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/2562702\/c224049e468b2305d9768c722d872902.mp4",
@@ -3309,7 +3309,7 @@ kg
                         "card_cv": "M・A・O"
                     },
                     "comments": {
-                        "comment": "『女の子は旅に出ます｡前だけを見据えて｡』…音読にも興が乗りますね｡Yervandashatさんが､温かな眼差しで見守り､静かに耳を傾けてくれていますから｡…春がひと足早く訪れた心地です",
+                        "comment": "『女の子は旅に出ます｡前だけを見据えて｡』…音読にも興が乗りますね｡OOさんが､温かな眼差しで見守り､静かに耳を傾けてくれていますから｡…春がひと足早く訪れた心地です",
                         "comments_my_1": "…想いを､声に乗せましょう",
                         "comments_my_2": "共に過ごした日々はこの胸に…",
                         "comments_my_3": "風景が甦ります…鮮やかに",
@@ -3319,7 +3319,7 @@ kg
                         "comments_work_2": "さぁ…､春はすぐそこですよ",
                         "comments_work_3": "心を込めて､読みますね…",
                         "comments_work_4": "私の声が物語を彩る…読み聞かせというのは､大役ですね",
-                        "comments_work_max": "過去と今…私の全てを知ってください､Yervandashatさん",
+                        "comments_work_max": "過去と今…私の全てを知ってください､OOさん",
                         "comments_work_love_up": "続きが気になりますか? …では､共に読んでいきましょうか",
                         "comments_live": "…物語は､続きます",
                         "comments_love_max": "親愛､冒険､夢…幼い頃憧れたものは､書の中だけで終わりませんでした｡それらは､貴方と共に歩む､私の心に宿っていますから"
@@ -3402,7 +3402,7 @@ kg
                         "comments_work_max": "夢は夢物語などではないと､鷺沢先生は知っているんですよ",
                         "comments_work_love_up": "私はもう知っています｡人と共に歩む未来の素晴らしさを…",
                         "comments_live": "…出席をとりましょう",
-                        "comments_love_max": "言の葉の力は､よく知っています｡それは､人の歩む道を照らすもの…私が､Yervandashatさんから頂いた言葉のように…"
+                        "comments_love_max": "言の葉の力は､よく知っています｡それは､人の歩む道を照らすもの…私が､OOさんから頂いた言葉のように…"
                     },
                     "voice": {
                         "comment": "https://raw.githubusercontent.com/uhlmkashim/anniversary/master/sound/2565402/idolcomment.mp3",
@@ -3473,7 +3473,7 @@ kg
                         "comments_my_2": "感じるのは…眩くも優しい光…",
                         "comments_my_3": "今日も…空は青く澄んでいます",
                         "comments_my_4": "古書のように…時を重ねても褪せない想いは､今､私の胸に…",
-                        "comments_my_max": "ふふ…Yervandashatさんと過ごすうちに､笑顔も増えました",
+                        "comments_my_max": "ふふ…OOさんと過ごすうちに､笑顔も増えました",
                         "comments_work_1": "…ｱｲﾄﾞﾙにも､書にも､夢中です",
                         "comments_work_2": "…夢が､さらに広がりますね",
                         "comments_work_3": "…共に､読みましょうか",
@@ -3481,7 +3481,7 @@ kg
                         "comments_work_max": "感動も､思い出も､愛しい日々も…貴方と分かち合ってこそ…",
                         "comments_work_love_up": "書を読み…気づけば､口ずさんでいました｡貴方がくれた歌を…",
                         "comments_live": "もう少しだけ…このまま…",
-                        "comments_love_max": "奇跡のような日々が降り積もり…未来を､私とYervandashatさんで紡ぐ…｡過去も未来も､煌めきで満ちるに､違いありません"
+                        "comments_love_max": "奇跡のような日々が降り積もり…未来を､私とOOさんで紡ぐ…｡過去も未来も､煌めきで満ちるに､違いありません"
                     },
                     "voice": {
                         "comment": "http://idolmaster.edgesuite.net/idolmaster/sound/2467001/18d153943eea61cb3f8dbaff0bc2dbeb.mp4",
@@ -3553,15 +3553,15 @@ kg
                         "comments_my_2": "感じるのは…眩くも優しい光…",
                         "comments_my_3": "私…また､変われたんですね",
                         "comments_my_4": "書を開けば…零時の鐘が鳴り､新たな物語が動き出しますよ",
-                        "comments_my_max": "…私も､私を信じています｡Yervandashatさんが信じた私を",
+                        "comments_my_max": "…私も､私を信じています｡OOさんが信じた私を",
                         "comments_work_1": "…ｱｲﾄﾞﾙにも､書にも､夢中です",
                         "comments_work_2": "…夢が､さらに広がりますね",
                         "comments_work_3": "はい…鷺沢文香は､ｱｲﾄﾞﾙです",
                         "comments_work_4": "ﾌｧﾝの皆さんに､感謝を…｡顔を上げ､目を合わせて伝えます",
                         "comments_work_max": "私が輝いているというのなら…照らしてくれたのは､貴方です",
-                        "comments_work_love_up": "Yervandashatさんの本気が…私をここまで導いてくれました",
+                        "comments_work_love_up": "OOさんの本気が…私をここまで導いてくれました",
                         "comments_live": "…頁を捲るのが楽しみです",
-                        "comments_love_max": "…Yervandashatさん､素敵な物語をありがとうございます｡…そして､これからも､紡いでいきましょう｡輝く物語を､ふたりで"
+                        "comments_love_max": "…OOさん､素敵な物語をありがとうございます｡…そして､これからも､紡いでいきましょう｡輝く物語を､ふたりで"
                     },
                     "voice": {
                         "comment": "http://idolmaster.edgesuite.net/idolmaster/sound/2567002/fd0de4a881ec5e8e1931f6ac4d2c499d.mp4",
