@@ -4,25 +4,26 @@
 var Commonjs = Commonjs || (function() {
     function CreateJsCanvas() {};
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-    CreateJsCanvas.prototype.init = function(_canvas, _adobeid, manifest, stage, tick_flg, callback) {
-        var self = this;
-        this.stage = stage || null;
+    CreateJsCanvas.prototype.init = function(_canvas, _adobeid, manifest, _stage, tick_flg, callback) {
 
-        if (tick_flg == null) {
-            this.tick_flg = true;
-        } else {
-            this.tick_flg = tick_flg;
-        }
+        var self = this;
+
+        this.cjs_deferred = $.Deferred();
 
         this.exportRoot = null;
         this.callback = callback;
+        this.tick_flg = tick_flg || true;
+        if (tick_flg == 'false') {
+            this.tick_flg = false;
+        }
+
         canvas = _canvas;
+        stage = _stage || null;
         anim_container = document.getElementById("animation_container");
         dom_overlay_container = document.getElementById("dom_overlay_container");
+
         var comp = AdobeAn.getComposition(_adobeid);
         var lib = comp.getLibrary();
-
-        this.cjs_deferred = $.Deferred();
 
         createjs.MotionGuidePlugin.install();
         var loader = new createjs.LoadQueue(false);
@@ -60,23 +61,18 @@ var Commonjs = Commonjs || (function() {
                 "frames": ssMetadata[i].frames
             })
         }
-        exportRoot = new lib[_adobeid]();
-        this.exportRoot = exportRoot;
-        if (this.stage) {
-            stage = this.stage
-        } else {
-            stage = new lib.Stage(canvas);
-        }
+
+        window.exportRoot = this.exportRoot = exportRoot = new lib[_adobeid]();
+        window.stage = stage = stage || new lib.Stage(canvas);
+
         //Registers the "tick" event listener.
         fnStartAnimation = function() {
             stage.addChild(exportRoot);
             createjs.Ticker.setFPS(lib.properties.fps);
-            // createjs.Ticker.setFPS(9);
 
             if (self.tick_flg) {
                 createjs.Ticker.addEventListener("tick", stage);
             }
-
 
             if (self.callback != null) {
                 self.callback();
@@ -92,22 +88,17 @@ var Commonjs = Commonjs || (function() {
         fnStartAnimation();
 
     };
-    CreateJsCanvas.prototype.addChild = function(name) {
-        var self = this;
-        if (this.stage == null) {
-            is_instantiate = true;
-            this.stage = new createjs.Stage(this.canvas);
+    CreateJsCanvas.prototype.rehash = function() {
+        createjs.Ticker.removeEventListener("tick", stage);
+        createjs.Tween.removeAllTweens();
+        if (stage) {
+            stage.removeAllEventListeners();
+            stage.removeAllChildren();
+            stage.clear();
         }
-        this.exportRoot = new this.lib[name]();
-        this.exportRoot.manifest = manifest;
-        this.stage.addChild(this.exportRoot);
-        return this.exportRoot;
+        window.exportRoot = exportRoot = null;
+        window.stage = stage = null
     }
-    CreateJsCanvas.prototype.stop = function() {
-        createjs.Ticker.setPaused(true);
-        createjs.Ticker.reset();
-    };
-
 
     function Canvas() {}
 
