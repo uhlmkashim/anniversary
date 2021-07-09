@@ -382,8 +382,60 @@ kg
 <% Object.keys(filtered_comments).forEach(function (key) { %>
 <div class="selectArea_accordion"><div class="selectArea_accordion_title"><div><%- category_names[key] %></div></div><div class="selectArea_accordion_body t-Lft"><div class="selectArea_accordion_body_inner"><% Object.keys(filtered_comments[key]).forEach(function (key4) { %><div class="comment_title_<%- data.attribute %>"><%- type_names[key4] %></div><div class="comment_frame_wrapper_<%- data.attribute %> m-Btm8"><% Object.keys(filtered_comments[key][key4]).forEach(function (key2) { %><% var attribute = data.attribute %><% if(voice[key2]) { %><div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>"><div><%- filtered_comments[key][key4][key2] %></div><% if(voice_enable) { %><a class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_02" id="jsBtnIdolVoice<%= key2 %>"  data-voice-key="<%- key2 %>"><div></div></a><% } else { %><div class="btn_idol_voice se_000 attribute_<%- attribute.match(/^../) %>_voice_mark_03"></div><% } %></div><% } else { %><div class="comment_frame<% if(comments[key2] == "???") { %> _disable<% } %>"><div><%- filtered_comments[key][key4][key2] %></div><% if(comments[key2] != "???") { %><div class="star_<%- attribute %>"></div><% } %></div><% } %><% }); %></div><% }); %></div></div></div><% }); %></div></script>
         <script type="text/template" id="story-template">
-            <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %><% val = idol_story_list[i] %><% if(val == undefined) { %><% continue; %><% } %><div class="area-frame_common _hd_blue _bd_black m-Btm10">    <div class="area-frame_wrap">        <h3 class="area-frame_header">            <div class="area-frame_title" style="font-size:14px;"><%- val.story_title %></div>        </h3><div style="width:280px; margin:0 auto; padding:10px 0 0; overflow:hidden;"><ul class="displayBox t-Cnt"><% Object.keys(val.icon).forEach(function (key2) { %><% total = Object.keys(val.icon).length; %><% val2 = val.icon[key2] %><% if (+val.open_flag[key2]) { %><li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>"><form method="get" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;"><input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br><% if (+val.voice_enable[key2]) { %>
-<input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br><% } else { %><input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br><% } %><% if (val.story_id > 0 && +val.voice_enable[key2]) { %><input type="hidden" name="voice" value="0"><% } %></form><% if (+val.voice_enable[key2]) { %><% if (!val.voice_attention || !+val.voice_attention[key2]) { %><a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn"><div style="text-align:center; height:45px; margin:10px 0 5px;"><img src="../../image_sp/ui/episode/epi_button_voicepage.jpg" width="84"><br></div></a><% } %><% } %></li><% } else { %><li style="<% if (total == 2) { %> width:50%; <% } else if (total == 3) { %> width:33%;<% } else { %>margin:0 5px;<% } %>"><div style="height:90px;"><img src="<%- val2 %>" height="75"><br><% if (+val.voice_enable[key2]) { %><input class="movie_name" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br><% } else { %><input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br><% } %></div><% if (+val.voice_enable[key2]) { %><% if (!val.voice_attention || !+val.voice_attention[key2]) { %><div style="text-align:center; height:45px; margin:10px 0 5px;"><img src="../../image_sp/ui/episode/epi_button_voicepage_gray.jpg" width="84"><br></div><% } %><% } %></li><% } %><% last = key2; %><% }); %></ul><% if (!ios_app_flg || !apple_review) { %><% if (val.story_id > 0 && +val.voice_enable[last]) { %><div class="checkForm ep_off" style="margin-top:0;margin-bottom:0">エピソードでボイスを再生させる</div><% } %><% } %></div><div class="area-frame_bg_image"></div></div></div><% } %><% if (paging_info.max_page_num > 0) { %><div class="pager_area" style="height:auto;"><div class="pager_panel_area"><% if (paging_info.current_page != 0) { %><input type="submit" class="btn_pager_first"><% } else { %><div class="btn_pager_first _disabled"></div><% } %><% if (paging_info.current_page > 0) { %><input type="submit" class="btn_pager_back"><% } else { %><div class="btn_pager_back _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_next"><% } else { %><div class="btn_pager_next _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_last"><% } else { %><div class="btn_pager_last _disabled"></div><% } %><%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %></div></div><% } %>
+            <% for(var i = paging_info.current_page * paging_info.contents_num; i < paging_info.current_page * (paging_info.contents_num) + paging_info.contents_num ; i++) { %><% val = idol_story_list[i] %><% if(val == undefined) { %><% continue; %><% } %>
+<div class="area-frame_common _hd_blue _bd_black m-Btm10">
+    <div class="area-frame_wrap">
+        <h3 class="area-frame_header">
+            <div class="area-frame_title" style="font-size:14px;"><%- val.story_title %></div>
+        </h3>
+<div style="width:280px; margin:0 auto; padding:10px 0 0; overflow:hidden;">
+<ul class="displayBox t-Cnt">
+<% Object.keys(val.icon).forEach(function (key2) { %>
+<% total = Object.keys(val.icon).length; %>
+<% val2 = val.icon[key2] %>
+<% if (+val.open_flag[key2]) { %>
+<li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>">
+<form method="get" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
+<input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br>
+<% if (+val.voice_enable[key2]) { %>
+<input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } else { %>
+<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } %>
+<% if (val.story_id > 0 && +val.voice_enable[key2]) { %><input type="hidden" name="voice" value="0"><% } %>
+</form>
+<% if (+val.voice_enable[key2]) { %>
+<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+<a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
+</a>
+<% } %>
+<% } %>
+</li>
+<% } else { %>
+<li style="<% if (total == 2) { %> width:50%; <% } else if (total == 3) { %> width:33%;<% } else { %>margin:0 5px;<% } %>">
+<div style="height:90px;">
+<img src="<%- val2 %>" height="75"><br>
+<% if (+val.voice_enable[key2]) { %>
+<input class="movie_name" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } else { %>
+<input type="image" src="<%- val.movie_name[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
+<% } %>
+</div>
+<% if (+val.voice_enable[key2]) { %>
+<% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
+<% } %>
+<% } %>
+</li>
+<% } %>
+<% last = key2; %>
+<% }); %>
+</ul>
+<% if (!ios_app_flg || !apple_review) { %>
+<% if (val.story_id > 0 && +val.voice_enable[last]) { %>
+<% } %>
+<% } %>
+</div>
+<div class="area-frame_bg_image"></div></div></div><% } %><% if (paging_info.max_page_num > 0) { %><div class="pager_area" style="height:auto;"><div class="pager_panel_area"><% if (paging_info.current_page != 0) { %><input type="submit" class="btn_pager_first"><% } else { %><div class="btn_pager_first _disabled"></div><% } %><% if (paging_info.current_page > 0) { %><input type="submit" class="btn_pager_back"><% } else { %><div class="btn_pager_back _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_next"><% } else { %><div class="btn_pager_next _disabled"></div><% } %><% if (paging_info.current_page != paging_info.max_page_num) { %><input type="submit" class="btn_pager_last"><% } else { %><div class="btn_pager_last _disabled"></div><% } %><%- paging_info.current_page+1 %> / <%- paging_info.max_page_num+1 %></div></div><% } %>
 </script>
         <script type="text/template" id="parameter-template">
             <section class="idolStatus deck m-Btm10"><div class="data_list"><div class="wrap"><div class="title cost"></div><div class="pr" style="width: 42px;"><%- data.cost %></div></div><div class="wrap" style="margin-left:4px;"><div class="title att"></div><div class="pr" style="width: 42px;"><%- data.default_attack %></div></div><div class="wrap" style="margin-left:4px;"><div class="title def"></div><div class="pr" style="width: 42px;"><%- data.default_defense %></div></div></div><% if (data.skill_effect) { %><div class="data_list line"><div class="wrap"><div class="title skl"></div><div class="pr"><%- data.skill_name %></div></div></div><%if (!data.grow_idol_flag) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect %></div></div></div><%if ( ! $.isEmptyObject(data.skill_effect_2)) { %><div class="data_list line"><div class="wrap"><div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div></div></div><% } %><% } %><% } %></section><% if(trade_prohibition.is_trade_limit) { %><div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">このアイドルはトレード、フリートレード、贈り物ができません。</div><% } %><div class="area-btn-common _base-width"><% if(!trade_prohibition.is_trade_limit) { %><a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a><% } %><% if(is_exist_archive) { %><a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a><% } %></div><% if (event) { %><h3 class="title_hanyo m-Top8 m-Btm8"><div>登場イベント</div></h3><% Object.keys(event).forEach(function (key) { %><div class="t-Cnt m-Btm5"><% if (event[key].event_name.indexOf("<br />") != -1) { %><%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br><%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %><% } else if (key == 1908) { %><span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span><% } else { %><%- event[key].event_name %><% } %></div><div class="area-btn-common _base-width m-Btm8"><a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a><a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a></div><% }); %><% } %>
