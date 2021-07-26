@@ -8,7 +8,7 @@
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
     <title>アイドルマスター シンデレラガールズ</title>
-    <link rel="stylesheet" type="text/css" href="../../css/rich/new_mypage_common_k.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/rich/new_mypage_common.css" media="all">
     <link rel="apple-touch-icon-precomposed" href="../../image_sp/ui/icon_bookmark.png">
     <script>
         (function() {
@@ -39,7 +39,7 @@
     <script>
         (function() {
             window.viewer_id = 134800333;
-            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D933189372";
+            var _url = "../../game_error/report_js_error";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
@@ -88,7 +88,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/anniversary/idol_gallery/idol_detail/kiyomi');
+                newrelic.setPageViewName('/idolmaster/index.php/idol_gallery/idol_detail/697e19df704f2ef4b9aca8fb57aa39d2');
             }
         });
     </script>
@@ -232,14 +232,14 @@
             <div class="displayBox" style="-webkit-box-pack:center;width:300px;">
                 <div style="width:50%">
                     <a class="btn_3rd_anniversary js_submit_check_idol_comment_3rd m-Top10 t-Cnt jsOnDesignBtn"></a>
-                    <form method="get" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaign/check_idol_comment%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D986629431' class="form_check_idol_comment_3rd" style="display:none;">
+                    <form method="get" action='../../campaign/check_idol_comment' class="form_check_idol_comment_3rd" style="display:none;">
                         <input type="hidden" name="character_id" value="196">
                         <input type="hidden" name="select_card_hash" value="">
                     </form>
                 </div>
                 <div style="width:50%">
                     <a class="btn_5th_anniversary js_submit_check_idol_comment_5th m-Top10 t-Cnt jsOnDesignBtn"></a>
-                    <form method="get" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/campaign_present/redirect_flash_idol_comment_replay%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D713472583' class="form_check_idol_comment_5th" style="display:none;">
+                    <form method="get" action='../../campaign_present/redirect_flash_idol_comment_replay' class="form_check_idol_comment_5th" style="display:none;">
                         <input type="hidden" name="card_hash" value="">
                         <input type="hidden" name="redirect_url" value="">
                         <input type="hidden" name="campaign_id" value="114">
@@ -474,7 +474,7 @@ kg
 <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
 <a href='<%- val.voice_url[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>' class="jsOnDesignBtn">
 <div style="text-align:center; height:45px; margin:10px 0 5px;">
-<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage.jpg%3Fv%3D20170222083838" width="84"><br>
+<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage.jpg" width="84"><br>
 </div>
 </a>
 <% } %>
@@ -493,7 +493,7 @@ kg
 <% if (+val.voice_enable[key2]) { %>
 <% if (!val.voice_attention || !+val.voice_attention[key2]) { %>
 <div style="text-align:center; height:45px; margin:10px 0 5px;">
-<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage_gray.jpg%3Fv%3D20170222083838" width="84"><br>
+<img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/image_sp/ui/episode/epi_button_voicepage_gray.jpg" width="84"><br>
 </div>
 <% } %>
 <% } %>
@@ -571,36 +571,47 @@ kg
 <div class="data_list line">
 <div class="wrap">
 <div class="title skl_ef"></div><div class="pr"><%- data.skill_effect_2 %></div>
-                    </div>
-                </div>
-                <% } %>
-                <% } %>
-                <% } %>
-            </section>
-            <% if(trade_prohibition.is_trade_limit) { %>
-            <% } %>
-            <% if (event) { %>
-            <h3 class="title_hanyo m-Top8 m-Btm8">
-                <div>등장 이벤트</div>
-            </h3>
-            <% Object.keys(event).forEach(function (key) { %>
-            <div class="t-Cnt m-Btm5">
-                <% if (event[key].event_name.indexOf("<br />") != -1) { %>
-                <%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
-                <%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
-                <% } else if (key == 1908) { %>
-                <span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
-                <% } else { %>
-                <%- event[key].event_name %>
-                <% } %>
-            </div>
-            <div class="area-btn-common _base-width m-Btm8">
-                <a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
-                <a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
-            </div>
-            <% }); %>
-            <% } %>
-        </script>
+</div>
+</div>
+<% } %>
+<% } %>
+<% } %>
+</section>
+<% if(trade_prohibition.is_trade_limit) { %>
+<div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
+このアイドルはトレード、フリートレード、贈り物ができません。
+</div>
+<% } %>
+<div class="area-btn-common _base-width">
+<% if(!trade_prohibition.is_trade_limit) { %>
+<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a>
+<% } %>
+<% if(is_exist_archive) { %>
+<a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a>
+<% } %>
+</div>
+<% if (event) { %>
+<h3 class="title_hanyo m-Top8 m-Btm8">
+<div>登場イベント</div>
+</h3>
+<% Object.keys(event).forEach(function (key) { %>
+<div class="t-Cnt m-Btm5">
+<% if (event[key].event_name.indexOf("<br />") != -1) { %>
+<%- event[key].event_name.slice(0,event[key].event_name.indexOf("<br />")) %><br>
+<%- event[key].event_name.slice(event[key].event_name.indexOf("<br />")+6) %>
+<% } else if (key == 1908) { %>
+<span style="font-size:11px;"><%- event[key].event_name %>(リメイク版)</span>
+<% } else { %>
+<%- event[key].event_name %>
+<% } %>
+</div>
+<div class="area-btn-common _base-width m-Btm8">
+<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
+<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
+</div>
+<% }); %>
+<% } %>
+</script>
         <script type="text/template" id="popup-expansion-template">
             <div class="js_card_rotate" style="position:relative;z-index:1;margin-bottom:12px;height:380px;">
     <div class="js_current rotate_img" <% if(idol_image_mask_l_p || idol_image_mask_l) { %>twinkle="1"<% } %> style="width:100%">
@@ -673,6 +684,13 @@ kg
 
             .card_img {
                 position: absolute;
+            }
+
+            .js_replace_premium {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
             }
         </style>
         <style type="text/css">
@@ -1093,7 +1111,7 @@ kg
                         "411": {
                             "event_id": 411,
                             "category_id": "10020",
-                            "event_name": "アイドルプロデュース チョコレートフォーユー!"
+                            "event_name": "아이돌 프로듀스 초콜렛 포 유!"
                         }
                     },
                     "release": "",
@@ -1410,9 +1428,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1489,9 +1507,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3513502",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3513502.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3513502_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1565,7 +1583,7 @@ kg
                         "1202": {
                             "event_id": 1202,
                             "category_id": "10090",
-                            "event_name": "目指せロックスター アイドルチャレンジ"
+                            "event_name": "노려라 록스타 아이돌 챌린지"
                         }
                     },
                     "release": "",
@@ -1648,7 +1666,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3416101",
-                        "card_name": "[걸즈 록커]사에지마 키요미",
+                        "card_name": "[ガールズロッカー]冴島清美",
                         "from": "2014\/08\/01\/22:00",
                         "to": "2014\/08\/12\/12:00",
                         "limitless_flag": "0",
@@ -1656,9 +1674,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1735,14 +1753,14 @@ kg
                         "card_name": "[걸즈 록커]사에지마 키요미+",
                         "from": "2014\/08\/01\/22:00",
                         "to": "2014\/08\/12\/12:00",
-                        "limitless_flag": "0",
+                        "limitless_flag": "1",
                         "is_trade_limit": false
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
-                    "premium_sign_idol_base_id": "3516102",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3516102.js",
+                    "premium_sign_idol_base_id": "3516202",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3516202_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1816,7 +1834,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3416201",
-                        "card_name": "[걸즈 록커・S]사에지마 키요미",
+                        "card_name": "[ガールズロッカー・S]冴島清美",
                         "from": "2014\/08\/01\/22:00",
                         "to": "2014\/08\/20\/12:00",
                         "limitless_flag": "0",
@@ -1824,9 +1842,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1908,9 +1926,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3516202",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3516202.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3516202_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -1992,9 +2010,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2068,23 +2086,23 @@ kg
                         "1107": {
                             "event_id": 1107,
                             "category_id": "10080",
-                            "event_name": "プロダクション対抗トークバトルショー <br %/>クリスマスSP"
+                            "event_name": "プロダクション対抗トークバトルショー <br \/>クリスマスSP"
                         }
                     },
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3520102",
-                        "card_name": "[ベリーメリーチアー]사에지마 키요미+",
-                        "from": "2014\/12\/18\/15:00",
+                        "card_name": "[ベリーメリーチアー]冴島清美+",
+                        "from": "2014%/12%/18%/15:00",
                         "to": "2014\/12\/26\/12:00",
                         "limitless_flag": "0",
                         "is_trade_limit": false
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2315,9 +2333,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2391,7 +2409,7 @@ kg
                         "1406": {
                             "event_id": 1406,
                             "category_id": "10100",
-                            "event_name": "第6回ぷちデレラコレクション"
+                            "event_name": "제6회 푸치데렐라 콜렉션"
                         }
                     },
                     "release": "",
@@ -2400,9 +2418,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2638,9 +2656,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3438601",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3438601.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3438601_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2714,7 +2732,7 @@ kg
                         "822": {
                             "event_id": 822,
                             "category_id": "10070",
-                            "event_name": "第22回アイドルLIVEロワイヤル"
+                            "event_name": "제22회 아이돌 LIVE 로얄"
                         }
                     },
                     "release": "",
@@ -2728,9 +2746,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3538602",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3538602.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3538602_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2812,9 +2830,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3442301",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3442301.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3442301_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2888,7 +2906,7 @@ kg
                         "1711": {
                             "event_id": 1711,
                             "category_id": "10020",
-                            "event_name": "アイドルプロデュース 夏島☆シーサイドLIVE!!"
+                            "event_name": "아이돌 프로듀스 나츠시마☆시사이드 LIVE!!"
                         }
                     },
                     "release": "",
@@ -2902,9 +2920,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3542302",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3542302.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3542302_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -2986,9 +3004,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3442401",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3442401.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3442401_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -3070,9 +3088,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "3542402",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_3542402.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/3542402_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -3146,7 +3164,7 @@ kg
                         "1806": {
                             "event_id": 1806,
                             "category_id": "10110",
-                            "event_name": "アイドルバラエティ <br %/>みんなで大きく! 冬の雪像コンテスト"
+                            "event_name": "아이돌 버라이어티 <br \/>모두 함께 크게! 겨울 설상 콘테스트"
                         }
                     },
                     "release": "",
@@ -3391,9 +3409,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -3467,7 +3485,7 @@ kg
                         "742": {
                             "event_id": 742,
                             "category_id": "10040",
-                            "event_name": "ドリームLIVEフェスティバル 新春SP"
+                            "event_name": "드림 LIVE 페스티벌 신춘 SP"
                         }
                     },
                     "release": "",
@@ -3481,9 +3499,9 @@ kg
                     },
                     "idol_search_param": "keyword=%E3%81%95%E3%81%88%E3%81%98%E3%81%BE%E3%81%8D%E3%82%88%E3%81%BF",
                     "premium_sign_idol_base_id": "196",
-                    "js_premium_sign": "../../js/cjs/premium/sign_effect_196.js",
+                    "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/cjs/196_sign_effect",
                     "archive": {
-                        "normal": "0",
+                        "normal": "1",
                         "premium": "1"
                     },
                     "is_exist_archive": true,
@@ -3557,7 +3575,7 @@ kg
                         "1918": {
                             "event_id": 1918,
                             "category_id": "10030",
-                            "event_name": "人魚公演 南海のファンタジア"
+                            "event_name": "인어공연 남해의 판타지아"
                         }
                     },
                     "release": "",
@@ -3574,17 +3592,13 @@ kg
                 }];
                 idol.idol_story_list = [{
                     "story_id": "163",
-                    "story_title": "貴方と紡ぐ!剣と魔法のファンタジー",
+                    "story_title": "당신과 자아내다! 검과 마법의 판타지",
                     "voice_enable": ["0", "0"],
-                    "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_story/movie_play/163/1/idol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D574355384",
-                                   "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_story/movie_play/163/2/idol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D313288811"],
-                    "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_story/sound_play/163/1/idol_gallery/__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D566632786",
-                                  "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_story/sound_play/163/2/idol_gallery/__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D795032020"],
+                    "flash_path": ["../../idol_story/movie_play/163/1", "../../idol_story/movie_play/163/2"],
+                    "voice_url": ["../../idol_story/sound_play/163/1", "../../idol_story/sound_play/163/2"],
                     "open_flag": ["1", "1"],
-                    "icon": ["../../image_sp/ui/episode/epi_button_movie_163_1.jpg",
-                             "../../image_sp/ui/episode/epi_button_movie_163_2.jpg"],
-                    "movie_name": ["../../image_sp/ui/episode/epi_button_moviename_r_early.png",
-                                   "../../image_sp/ui/episode/epi_button_moviename_r_late.png"]
+                    "icon": ["../../image_sp/ui/episode/epi_button_movie_163_1.jpg", "../../image_sp/ui/episode/epi_button_movie_163_2.jpg"],
+                    "movie_name": ["../../image_sp/ui/episode/epi_button_moviename_r_early.png", "../../image_sp/ui/episode/epi_button_moviename_r_late.png"]
                 }];
                 idol.images = {
                     "bg": {
@@ -3875,8 +3889,7 @@ kg
                               "../../image_sp/card/quest/kiyomi_32.png",
                               "../../image_sp/card/quest/kiyomi_33.jpg",
                               "../../image_sp/card/quest/kiyomi_34.jpg",
-                              "../../image_sp/card/quest/kiyomi_35.png",
-]
+                              "../../image_sp/card/quest/kiyomi_35.png",]
                 };
                 idol.ios_app_flg = false;
                 idol.apple_review = null;
@@ -3885,11 +3898,11 @@ kg
             var birthday_flag = false;
             var select_card_index = "0";
             var selected_num = null;
-            var url_trade = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/auction/search_top/0/__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D134224914';
-            var url_album = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/archive/view/__hash_card_id__/0/0/0%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D669272856';
-            var url_event_memory = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/detail/__event_id__/__category_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D677098744';
-            var url_other_event = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_gallery/index/0/0/2/0%3Fis_search%3D1%26event_category%3D__category_id__%26event_id%3D__event_id__%26l_frm%3DIdol_gallery_idol_detail_1%26rnd%3D35692820';
-            var url_cartoon = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/search%3F__idol_search_param__%26l_frm%3DIdol_gallery_idol_detail_1%26rnd%3D725367900';
+            var url_trade = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/auction/search_top/0/__hash_card_id__';
+            var url_album = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/archive/view/__hash_card_id__/0/0/0';
+            var url_event_memory = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/detail/__event_id__/__category_id__';
+            var url_other_event = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_gallery/index/0/0/2/0';
+            var url_cartoon = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/search';
             var url_comment_5th_redirect = "idol_gallery/idol_detail/__hash_card_id__";
             var slider_pos = 0;
             var select_tab = 0;
@@ -3988,6 +4001,23 @@ kg
             var comment_tab_start = null;
             var show_premium = true;
         </script>
+        <script type='text/javascript' src='../../js/createjs.min.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3513502_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3516202_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3438601_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3538602_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3442301_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3542302_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3442401_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/3542402_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
+        <script src='../../js/cjs/sign_effect/196_sign_effect.js'></script>
         <script src="../../js/underscore-min.js"></script>
         <script src="../../js/backbone-min.js"></script>
         <script src="../../js/ilibrary.js" type="text/javascript"></script>
