@@ -18697,7 +18697,7 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
 }
 
 .idolProfile.deck .profile_content .profile_box.detail_cute {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_cute.png) right bottom no-repeat;
+    background: url(../../image_sp/ui/gallery/star_cute.png) right bottom no-repeat;
     background-size: 100px
 }
 
@@ -18705,7 +18705,7 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
     margin-right: 5px;
     top: -2px;
     position: relative;
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/cute.png);
+    background-image: url(../../image_sp/ui/gallery/cute.png);
     background-size: 50px;
     background-repeat: no-repeat;
     width: 50px;
@@ -18825,7 +18825,7 @@ body#battles .fukidashiWrap .fukidashi img.voiceIdol {
 }
 
 .idolProfile.deck .profile_content .profile_box.detail_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_passion.png) right bottom no-repeat;
+    background: url(../../image_sp/ui/gallery/star_passion.png) right bottom no-repeat;
     background-size: 100px
 }
 
@@ -22373,7 +22373,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .detail .star_cute {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_cute.png) no-repeat;
+    background: url(../../image_sp/ui/gallery/star_cute.png) no-repeat;
     background-size: 85px 83px;
     background-position: right bottom;
     width: 140px;
@@ -22451,7 +22451,7 @@ input[type="submit"].submit_reset_style {
 }
 
 .profile_area .profile_content .detail .star_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http://125.6.169.35/idolmaster/image_sp/ui/gallery/star_passion.png) no-repeat;
+    background: url(../../image_sp/ui/gallery/star_passion.png) no-repeat;
     background-size: 85px 83px;
     background-position: right bottom;
     width: 140px;
