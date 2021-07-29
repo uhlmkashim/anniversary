@@ -16,7 +16,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/smart_phone_flash/convert/idol_story');
+                newrelic.setPageViewName('/uhlmkashim/anniversary/idol_story/movie_play/069/6');
             }
         });
     </script>
@@ -29,9 +29,12 @@
     <script>
         var isTouch = ('ontouchstart' in window);
         var isSp = false;
-        if (isTouch === false) isSp = false;
-        else if (window.orientation === undefined) isSp = false;
-        else isSp = true;
+        if (isTouch === false)
+            isSp = false;
+        else if (window.orientation === undefined)
+            isSp = false;
+        else
+            isSp = true;
         displayScaleValue = scaleSizeCheck();
         var width = 240 * displayScaleValue * 2;
         marginLeft = widthMarginCheck(displayScaleValue);
@@ -75,28 +78,6 @@
         });
         window.onunload = function() {};
         window.onload = function() {
-            var flashPlayerVersion = getFlashPlayerVersion();
-            var aa = "1";
-            var bb = "0";
-            var pexFlag = "0";
-            var native_app_flg = "";
-            var chrome_app_flg = "";
-            var andapp_flg = "";
-            if (aa > 0 && bb == "") {
-                var flashPlayerVersion = getFlashPlayerVersion();
-                var filename = "http://125.6.169.35/idolmaster/smart_phone_flash/playerCash/" + flashPlayerVersion;
-                var uri = encodeURIComponent(filename);
-                var requrl = window.location.origin + "/12008305/?guid=ON&url=" + uri;
-                httpObj = new XMLHttpRequest();
-                httpObj.overrideMimeType('text/xml');
-                httpObj.open("GET", requrl, false);
-                httpObj.send(null);
-            }
-            if (flashPlayerVersion != "" && aa != "2" && pexFlag != 1 && native_app_flg != "1" && chrome_app_flg != "1" && andapp_flg != "1") {
-                var retUrl = "https://uhlmkashim.github.io/anniversary/idol_gallery/idol_detail/momoka.html";
-                location.href = retUrl;
-                return;
-            }
             var option = {
                 enableButton: true,
                 enableTouch: true,
@@ -154,7 +135,7 @@
         };
 
         function redirect() {
-            location.href = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error%3Fl_frm%3DSmart_phone_flash_convert_1%26rnd%3D192263163";
+            location.href = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error%3Fl_frm%3DSmart_phone_flash_convert_1%26rnd%3D984387708";
         };
 
         function isFlash() {
