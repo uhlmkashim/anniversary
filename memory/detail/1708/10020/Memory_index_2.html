@@ -1204,6 +1204,14 @@
                 var $area_id = $('.main_idol_tab_' + (4)).find('.selected');
                 var view_id = $('.main_idol_tab_' + (4)).data('view');
                 current_area_info[4] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+                // エリアタブ活性化
+                $('#small_tab_5').tab_switch({
+                    contents: "[class^='small_area_tab_5']",
+                    storage: "produce_memory_idol_tab_mini_5"
+                });
+                var $area_id = $('.main_idol_tab_' + (5)).find('.selected');
+                var view_id = $('.main_idol_tab_' + (5)).data('view');
+                current_area_info[4] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
                 // アイドル画像描画
                 function viewIdol(idol_key, area_id) {
                     // if(idol_key >= 4 && area_id < 3) {
