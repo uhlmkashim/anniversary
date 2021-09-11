@@ -4277,7 +4277,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.stop();
 	}
 	this.frame_15 = function() {
-		exportRoot._g.m1 = "高まる……";
+		exportRoot._g.m1 = "높아진다……";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4286,30 +4286,30 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		exportRoot._u.setFace("ch1", 6);
 	}
 	this.frame_38 = function() {
-		exportRoot._g.m1 = "高まる……高まるわ! ";
+		exportRoot._g.m1 = "높아진다…… 높아져!";
 		exportRoot._u.setText();
 	}
 	this.frame_55 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "が溢れる! ";
+		exportRoot._g.m2 = "흘러넘친다!";
 		exportRoot._u.setText();
 		this.ch1.gotoAndPlay("concent");
 		exportRoot._u.setFace("ch1", 3);
 	}
 	this.frame_83 = function() {
-		exportRoot._g.m2 = "が溢れる! これも､";
+		exportRoot._g.m2 = "흘러넘친다! 이것도,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 6);
 	}
 	this.frame_95 = function() {
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "もたらしたもの……! ";
+		exportRoot._g.m3 = "가져온 것……!";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 2);
 	}
 	this.frame_139 = function() {
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "着､";
+		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 5);
 	}
@@ -4336,7 +4336,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		exportRoot._u.setFace("ch1", 3);
 	}
 	this.frame_256 = function() {
-		exportRoot._g.m3 = "胸が躍ったわ! ";
+		exportRoot._g.m3 = "가슴이 뛰었다!";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 5);
 		this.ch1.gotoAndPlay("jump");
@@ -4356,7 +4356,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_351 = function() {
-		exportRoot._g.m1 = "この地に降り立った時､";
+		exportRoot._g.m1 = "이 땅에 내려섰을 때,";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4365,26 +4365,26 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 	}
 	this.frame_391 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "業火が､";
+		exportRoot._g.m2 = "업화가,";
 		exportRoot._u.setText();
 		this.ch1.gotoAndPlay("nod");
 	}
 	this.frame_416 = function() {
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "と思われた……";
+		exportRoot._g.m3 = "생각했다……";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 8);
 		this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_460 = function() {
-		exportRoot._g.m3 = "と思われた……しかし､";
+		exportRoot._g.m3 = "생각했다…… 하지만,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 3);
 		this.ch1.gotoAndPlay("concent");
 	}
 	this.frame_477 = function() {
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "杞憂｡";
+		exportRoot._g.m4 = "기우.";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 12);
 	}
@@ -4400,7 +4400,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_520 = function() {
-		exportRoot._g.m1 = "……暑いのは､";
+		exportRoot._g.m1 = "……더운 건,";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4414,18 +4414,18 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("down");
 	}
 	this.frame_581 = function() {
-		exportRoot._g.m3 = "今は､";
+		exportRoot._g.m3 = "지금은,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 6);
 	}
 	this.frame_594 = function() {
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "夢中で……";
+		exportRoot._g.m4 = "열중해서……";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 2);
 	}
 	this.frame_650 = function() {
-		exportRoot._g.m4 = "夢中で……えっと､";
+		exportRoot._g.m4 = "열중해서…… 저기,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 12);
 		this.ch1.gotoAndPlay("swing");
@@ -4440,7 +4440,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_677 = function() {
-		exportRoot._g.m1 = "そう! ";
+		exportRoot._g.m1 = "그래!";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4449,7 +4449,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("concent");
 	}
 	this.frame_696 = function() {
-		exportRoot._g.m1 = "そう! ﾌﾟﾛﾃﾞｭｰｻｰは……";
+		exportRoot._g.m1 = "그래! 프로듀서는……";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 2);
 	}
@@ -4458,13 +4458,13 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 	}
 	this.frame_728 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "私に､";
+		exportRoot._g.m2 = "내게,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 6);
 	}
 	this.frame_753 = function() {
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "るわ!";
+		exportRoot._g.m3 = "";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 2);
 	}
@@ -4472,7 +4472,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_798 = function() {
-		exportRoot._g.m3 = "るわ! 其方の導きに､";
+		exportRoot._g.m3 = "그쪽의 인도에,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 6);
 	}
@@ -4491,7 +4491,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		exportRoot._u.setFace("ch1", 2);
 	}
 	this.frame_866 = function() {
-		exportRoot._g.m1 = "ﾌﾌｯ､";
+		exportRoot._g.m1 = "후훗,";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4501,21 +4501,21 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 	}
 	this.frame_883 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "番よ!";
+		exportRoot._g.m2 = "실전이야!";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 2);
 		this.ch1.gotoAndPlay("chord2");
 		// this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_936 = function() {
-		exportRoot._g.m2 = "番よ! 翼の休息を終え､";
+		exportRoot._g.m2 = "실전이야! 날개의 휴식을 끝내고,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 3);
 		this.ch1.gotoAndPlay("nod2");
 	}
 	this.frame_968 = function() {
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "の牢獄の鍵を､";
+		exportRoot._g.m3 = "푸른 감옥의 열쇠를,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 12);
 	}
@@ -4526,7 +4526,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("jump");
 	}
 	this.frame_1041 = function() {
-		exportRoot._g.m4 = "……それでね､";
+		exportRoot._g.m4 = "……그래서 말야,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 1);
 		this.ch1.gotoAndPlay("nod");
@@ -4541,7 +4541,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_1066 = function() {
-		exportRoot._g.m1 = "今だけは､";
+		exportRoot._g.m1 = "지금만은,";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4550,7 +4550,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 	}
 	this.frame_1083 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "みして､";
+		exportRoot._g.m2 = "재워두고,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 12);
 	}
@@ -4561,7 +4561,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 	}
 	this.frame_1165 = function() {
 		// finish指定時は exportRoot._g.m の後ろの数字をsetTextの2つ目の引数に指定する
-		exportRoot._g.m3 = "ﾌﾟﾛﾃﾞｭｰｻｰとしたいこと､";
+		exportRoot._g.m3 = "프로듀서와 하고 싶은 것,";
 		exportRoot._u.setText("finish", 3);
 	}
 	this.frame_1190 = function() {
