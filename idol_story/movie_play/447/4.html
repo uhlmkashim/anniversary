@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Fgame%2Fpex.css%3Fv%3D20101001000000' media="all">
-    <script src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fjquery-1.9.1.min.js%3Fversion%3D1_9_1%26v%3D20101001000000'></script>
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-1.9.1.min.js'></script>
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/idol_story/cjs/447/4/idol_story--index--2--0---keyword----らんこ/1');
+                newrelic.setPageViewName('/idolmaster/index.php/idol_story/cjs/447/4');
             }
         });
     </script>
@@ -43,27 +43,27 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
     </style>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcreatejs.min.js%3Fv%3D20190925114611'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20200713144634'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcjs%2Fepisode%2F447_4%2Ftalk.js%3Fv%3D20210630144651'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcjs%2Fepisode%2F447_4%2F447_4.js%3Fv%3D20210630144651'></script>
+    <script type='text/javascript' src='../../../js/createjs.min.js'></script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <script type='text/javascript' src='../../../js/cjs/episode/447_4/talk.js'></script>
+    <script type='text/javascript' src='../../../js/cjs/episode/447_4/447_4.js'></script>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://125.6.169.35/idolmaster/";
+        var image_server = "";
+        var base_url = "";
         // 音声ファイルのmanifestを定義
         window.voice_manifest = {
-            'scene1': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/45c6e33b494fe37030750ee43f0dfadc.mp4',
-            'scene2': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/af9dd21c3679e6a55d0469ac9ef8d494.mp4',
-            'scene3': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/f6c7827b7fc6697afe0ab57c78cd6a13.mp4',
-            'scene4': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/237c6ad51075fbb1d2560663e6277248.mp4',
-            'scene5': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/9534c11f0b258c511af7a479f858d26b.mp4',
-            'scene6': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/07145b693623ef4c6831398b6a98326a.mp4',
-            'scene7': 'http://idolmaster.edgesuite.net/idolmaster/sound/9901050/c3876c2b36d308748b1430dc85697334.mp4',
+            'scene1': '../../../sound/9901050/scene1.mp3',
+            'scene2': '../../../sound/9901050/scene2.mp3',
+            'scene3': '../../../sound/9901050/scene4.mp3',
+            'scene4': '../../../sound/9901050/scene3.mp3',
+            'scene5': '../../../sound/9901050/scene5.mp3',
+            'scene6': '../../../sound/9901050/scene6.mp3',
+            'scene7': '../../../sound/9901050/scene7.mp3',
         };
         window.file_name = "_447_4"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/episode/447_4/";
+        window.dir_name = "../../../image_sp/cjs/episode/447_4/";
         window.im_cjs.voice_flag = true; // 音声再生フラグを定義
-        window.im_cjs.jump_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Findex%2F2%2F0%3Fkeyword%3D%25E3%2582%2589%25E3%2582%2593%25E3%2581%2593%26l_frm%3DIdol_story_cjs_1%26rnd%3D749882901'; // createjsの演出が全て終了した場合の飛び先urlの定義
+        window.im_cjs.jump_url = '../../../idol_gallery/idol_detail/ranko.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
     </script>
     <script>
         var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -81,7 +81,7 @@
                 for (var i = 0, len = lib.properties.manifest.length; i < len; i++) {
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + window.dir_name + lib.properties.manifest[i].src),
+                        'src': encodeURIComponent(window.dir_name + lib.properties.manifest[i].src),
                         'id': lib.properties.manifest[i].id
                     }
                 }
@@ -89,7 +89,7 @@
                 for (var i = 0, len = lib.properties.manifest.length; i < len; i++) {
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.base_url + window.dir_name + lib.properties.manifest[i].src,
+                        'src': window.dir_name + lib.properties.manifest[i].src,
                         'id': lib.properties.manifest[i].id
                     }
                 }
@@ -192,7 +192,7 @@
     <script>
         (function() {
             window.viewer_id = 134800333;
-            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DIdol_story_cjs_1%26rnd%3D338619070";
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error%3Fl_frm%3DIdol_story_cjs_1%26rnd%3D338619070";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
@@ -223,8 +223,8 @@
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20200713144634'></script>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css" />
 </head>
 
 <body onload="init();" style="margin:0px;">
@@ -233,8 +233,8 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;">
         </div>
     </div>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fboombox.min.js'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fvoice_cjs.js'></script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/boombox.min.js'></script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/js/voice_cjs.js'></script>
     <div id="mbga-pf-footer">
         <script type="text/javascript" charset="UTF-8">
             (function() {
