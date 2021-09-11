@@ -4472,7 +4472,7 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_798 = function() {
-		exportRoot._g.m3 = "그쪽의 인도에,";
+		exportRoot._g.m3 = "그대의 인도에,";
 		exportRoot._u.setText();
 		exportRoot._u.setFace("ch1", 6);
 	}
