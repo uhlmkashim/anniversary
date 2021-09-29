@@ -140,7 +140,7 @@ div#mbga-pf-footer div.mbga-pf-footer-container .mbga-pf-footer-arrow {
 }
 
 div#mbga-pf-footer .mbga-pf-footer-arrow {
-    background-image: url("/img/arrow_link.png?20130918");
+    background-image: url("/img/arrow_link.png");
     background-position: 96% 50%;
     background-repeat: no-repeat;
     -webkit-background-size: 6px 9px;
@@ -206,7 +206,7 @@ li.mbga-pf-footer-li {
 }
 
 a.mbga-pf-footer-a {
-    background-image: url(/img/sg-sprite.png?20130918);
+    background-image: url(/img/sg-sprite.png);
     background-repeat: no-repeat;
     -webkit-background-size: 320px auto;
     -moz-background-size: 320px auto;
@@ -220,7 +220,7 @@ a.mbga-pf-footer-a {
 }
 
 #mbga-pf-footer-navbar-mini a.mbga-pf-footer-a {
-    background-image: url(/img/sg-sprite.png?20130918);
+    background-image: url(/img/sg-sprite.png);
     background-repeat: no-repeat;
     -webkit-background-size: 240px auto;
     -moz-background-size: 240px auto;
