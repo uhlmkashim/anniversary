@@ -36,34 +36,6 @@
         }
     </script>
     <script src="../js/jquery-2.2.2.min.js"></script>
-    <script>
-        (function() {
-            window.viewer_id = 134800333;
-            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/game_error/report_js_error";
-            var _path = location.href;
-            var _spec_obj;
-            var _spec = 'none';
-            var version = 1;
-            // access方法検出
-            _spec_obj = {
-                'isNative': false,
-                'isAndApp': false,
-                'isShellApp': false,
-                'isIosApp': false,
-                'isChromeApp': false
-            };
-            window._spec = _spec_obj;
-            if (_spec.isAndApp) {
-                _spec = 'andapp'
-            } else if (_spec.isIosApp) {
-                _spec = 'iosApp';
-            } else if (_spec.isShellApp) {
-                _spec = 'shellapp';
-            } else {
-                _spec = 'browser?';
-            }
-        })();
-    </script>
     <script src="../js/underscore-min.js"></script>
     <script src="../js/require.js"></script>
     <script src="../js/require.js"></script>
@@ -136,8 +108,6 @@
                         </div>
                         <div class="theater-idol_name_frame t-Cnt">
                         </div>
-                        <a class="theater-btn_selected_theater jsOnDesignBtn"></a>
-                        <a class="theater-btn_idol_gallery jsOnDesignBtn"></a>
                     </div>
                 </div>
             </div>
@@ -154,26 +124,7 @@
                     likeStart(cartoon_id);
                 })
 
-                function likeStart(cartoon_id) {
-                    $.ajax({
-                            type: 'POST',
-                            url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/like_check',
-                            dataType: 'json',
-                            data: {
-                                "cartoon_id": cartoon_id,
-                            }
-                        })
-                        .done(function(data) {
-                            if (data.success) {
-                                $(".theater-btn_like").toggleClass("_blank", !$target.hasClass("_blank"));
-                            } else {
-                                alert("お気に入りの登録に失敗しました。");
-                            }
-                        });
-                }
                 var $appearance_idols = $(".theater-appearance_idol");
-                var url_idol_gallery = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/idol_gallery/idol_detail/__hash_id__%3Fl_frm%3DCartoon_scene_1%26rnd%3D996278016';
-                var url_select_idol_name = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/cartoon/select_idol_name/__idol_id__%3Fl_frm%3DCartoon_scene_1%26rnd%3D465920001';
                 $appearance_idols.on("click", function(e) {
                     var $target = $(e.currentTarget);
                     var attr_name = $target.data("attribute-name");
@@ -195,18 +146,7 @@
                         $(".theater-idol_image").addClass("_appear");
                     }, 0);
                 })
-                $(".theater-idol_image").on('webkitAnimationEnd', function(e) {
-                    $(e.currentTarget).removeClass("_appear");
-                });
                 $appearance_idols.eq(0).trigger("click");
-                $(".theater-btn_selected_theater").on("click", function() {
-                    var hash_id = $appearance_idols.filter("._selected").data("idol-id");
-                    location.href = url_select_idol_name.replace("__idol_id__", hash_id);
-                })
-                $(".theater-btn_idol_gallery").on("click", function() {
-                    var hash_id = $appearance_idols.filter("._selected").data("hash-id");
-                    location.href = url_idol_gallery.replace("__hash_id__", hash_id);
-                })
             })
         </script>
         <a href='../../mypage.html'>
