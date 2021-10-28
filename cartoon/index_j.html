@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../js/jquery-2.2.2.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/require.js"></script>
+    <script src="../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../js/movieclip-0.7.1.min.js",
+                createjs: "../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../js/common.js"></script>
+    <script src="../js/common_new.js"></script>
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+
+<body id="cartoon" class="index">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <link rel="stylesheet" type="text/css" href='../css/rich/theater.css' media="all">
+        <div class="theater-content m-Btm12">
+            <div class="theater-page_header_new m-Head_img m-Btm4">
+                <div class="theater-latest_story_num">第1552話</div>
+                <div class="theater-latest_update_date">21/10/26</div>
+                <div class="theater-latest_thumbnail">
+                    <a href='scene/1.html' class="jsOnDesignBtn">
+                    <img src="../image_sp/cartoon/1552/cover.jpg" width="137"></a>
+                </div>
+                <div class="theater-latest_title">
+                    <div class="theater-latest_title_text">えっ×4</div>
+                </div>
+                <a href='scene/1.html' class="theater-btn_watch theater-btn_new_theater jsOnDesignBtn"></a>
+                <div class="theater-history_story_num">第1552話</div>
+                <div class="theater-history_update_date">21/10/26</div>
+                <div class="theater-history_title">
+                    <div class="theater-latest_title_text">えっ×4</div>
+                </div>
+                <a href='scene/111.html' class="theater-btn_watch theater-btn_recent jsOnDesignBtn"></a>
+                <form action="index.html" method="post">
+                    <input type="number" value="" pattern="\d*" min="1" max="1" name="scene" class="theater-textbox_story_number">
+                    <label class="theater-btn_watch theater-btn_search_story label_reset_style jsOnDesignBtn" style="cursor:pointer;"><input type="submit" value="" style="display:none;"></label>
+                </form>
+            </div>
+            <script>
+                Commonjs.setSearchMore({
+                    $trigger: $("#js_btn_search_more"),
+                    $contents: $("#js_search_more_contents"),
+                });
+                Commonjs.setSearchCheckBox($(".search_checkbox_1"));
+                Commonjs.setSearchCheckBox($(".search_checkbox_2"));
+                Commonjs.setSearchClear({
+                    $trigger: $(".js_btn_clear"),
+                    targets: [$("#search_idol_name"), $("#like_only"), $("#noread_only"), $("#number_scene")],
+                });
+            </script>
+            <div id="paging_target" class="theater-text_notice m-Cnt m-Btm4"></div>
+            <div class="theater-common_area m-Btm12">
+                <div class="theater-thumbnail_list m-Cnt">
+                    <a href='111.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第111話</div></div>
+                        <img src="../image_sp/cartoon/111/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">13/5/21</div></div>
+                    </a><a href='133.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第133話</div></div>
+                        <img src="../image_sp/cartoon/133/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">13/7/17</div></div>
+                    </a><a href='178.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第178話</div></div>
+                        <img src="../image_sp/cartoon/178/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">13/11/3</div></div>
+                    </a><a href='234.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第234話</div></div>
+                        <img src="../image_sp/cartoon/234/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/1/30</div></div>
+                    </a><a href='242.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第242話</div></div>
+                        <img src="../image_sp/cartoon/242/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/2/13</div></div>
+                    </a><a href='244.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第244話</div></div>
+                        <img src="../image_sp/cartoon/244/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/2/15</div></div>
+                    </a><a href='287.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第287話</div></div>
+                        <img src="../image_sp/cartoon/287/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/4/23</div></div>
+                    </a><a href='288.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第288話</div></div>
+                        <img src="../image_sp/cartoon/288/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/4/24</div></div>
+                    </a><a href='347.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第347話</div></div>
+                        <img src="../image_sp/cartoon/347/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/7/22</div></div>
+                    </a><a href='353.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第353話</div></div>
+                        <img src="../image_sp/cartoon/353/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/7/31</div></div>
+                    </a><a href='354.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第354話</div></div>
+                        <img src="../image_sp/cartoon/354/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/7/31</div></div>
+                    </a><a href='356.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第356話</div></div>
+                        <img src="../image_sp/cartoon/356/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/8/4</div></div>
+                    </a><a href='358.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第358話</div></div>
+                        <img src="../image_sp/cartoon/358/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/8/6</div></div>
+                    </a><a href='433.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第433話</div></div>
+                        <img src="../image_sp/cartoon/433/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">14/12/20</div></div>
+                    </a><a href='454.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第454話</div></div>
+                        <img src="../image_sp/cartoon/454/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">15/2/2</div></div>
+                    </a><a href='456.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第456話</div></div>
+                        <img src="../image_sp/cartoon/456/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">15/2/4</div></div>
+                    </a><a href='514.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第514話</div></div>
+                        <img src="../image_sp/cartoon/514/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">15/5/21</div></div>
+                    </a><a href='663.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第663話</div></div>
+                        <img src="../image_sp/cartoon/663/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/2/22</div></div>
+                    </a><a href='665.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第665話</div></div>
+                        <img src="../image_sp/cartoon/665/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/2/26</div></div>
+                    </a><a href='676.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第676話</div></div>
+                        <img src="../image_sp/cartoon/676/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/3/20</div></div>
+                    </a><a href='745.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第745話</div></div>
+                        <img src="../image_sp/cartoon/745/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/7/27</div></div>
+                    </a><a href='765.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第765話</div></div>
+                        <img src="../image_sp/cartoon/765/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/9/4</div></div>
+                    </a><a href='766.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第766話</div></div>
+                        <img src="../image_sp/cartoon/766/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/9/6</div></div>
+                    </a><a href='815.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第815話</div></div>
+                        <img src="../image_sp/cartoon/815/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">16/12/7</div></div>
+                    </a><a href='866.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第866話</div></div>
+                        <img src="../image_sp/cartoon/866/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/3/13</div></div>
+                    </a><a href='905.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第905話</div></div>
+                        <img src="../image_sp/cartoon/905/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/5/26</div></div>
+                    </a><a href='909.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第909話</div></div>
+                        <img src="../image_sp/cartoon/909/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/6/1</div></div>
+                    </a><a href='959.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第959話</div></div>
+                        <img src="../image_sp/cartoon/959/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/9/5</div></div>
+                    </a><a href='966.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第966話</div></div>
+                        <img src="../image_sp/cartoon/966/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/9/19</div></div>
+                    </a><a href='996.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第996話</div></div>
+                        <img src="../image_sp/cartoon/996/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/11/16</div></div>
+                    </a><a href='1015.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1015話</div></div>
+                        <img src="../image_sp/cartoon/1015/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">17/12/19</div></div>
+                    </a><a href='1048.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1048話</div></div>
+                        <img src="../image_sp/cartoon/1048/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">18/2/20</div></div>
+                    </a><a href='1126.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1126話</div></div>
+                        <img src="../image_sp/cartoon/1126/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">18/7/13</div></div>
+                    </a><a href='1149.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1149話</div></div>
+                        <img src="../image_sp/cartoon/1149/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">18/8/30</div></div>
+                    </a><a href='1150.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1150話</div></div>
+                        <img src="../image_sp/cartoon/1150/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">18/8/31</div></div>
+                    </a><a href='1219.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1219話</div></div>
+                        <img src="../image_sp/cartoon/1219/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/1/3</div></div>
+                    </a><a href='1220.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1220話</div></div>
+                        <img src="../image_sp/cartoon/1220/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/1/4</div></div>
+                    </a><a href='1231.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1231話</div></div>
+                        <img src="../image_sp/cartoon/1231/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/1/25</div></div>
+                    </a><a href='1260.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1260話</div></div>
+                        <img src="../image_sp/cartoon/1260/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/3/18</div></div>
+                    </a><a href='1292.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1292話</div></div>
+                        <img src="../image_sp/cartoon/1292/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/5/16</div></div>
+                    </a><a href='1331.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1331話</div></div>
+                        <img src="../image_sp/cartoon/1331/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/8/12</div></div>
+                    </a><a href='1332.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1332話</div></div>
+                        <img src="../image_sp/cartoon/1332/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/8/13</div></div>
+                    </a><a href='1368.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1368話</div></div>
+                        <img src="../image_sp/cartoon/1368/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">19/10/31</div></div>
+                    </a><a href='1426.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1426話</div></div>
+                        <img src="../image_sp/cartoon/1426/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">20/4/30</div></div>
+                    </a><a href='1497.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1497話</div></div>
+                        <img src="../image_sp/cartoon/1497/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">21/2/28</div></div>
+                    </a><a href='1528.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1528話</div></div>
+                        <img src="../image_sp/cartoon/1528/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">21/7/9</div></div>
+                    </a><a href='1552.html' class="theater-thumbnail jsOnDesignBtn">
+                        <div class="theater-thumbnail_top"><div class="theater-story_num ">第1552話</div></div>
+                        <img src="../image_sp/cartoon/1552/small_cover.jpg" width="88">
+                        <div class="theater-thumbnail_bottom"><div class="theater-update_date">21/10/26</div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="theater-page_footer"></div>
+        </div>
+        <div class="information_light gray m-Btm12">
+            ブラウザバックや複数タブで操作を行うと、『続きから』機能が正常に動作しないことがあります。<br />
+            『続きから』機能が正常に動作しない場合、再読み込みを行うと改善されることがあります。
+        </div>
+        <a href='../mypage.html'>
+            <div class="backLink">マイスタジオ</div>
+        </a>
+        <script>
+            $(function() {
+                $(".theater-btn_search_story").on("click", function() {
+                    se_play('se_002');
+                })
+            })
+        </script>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
