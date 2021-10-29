@@ -760,12 +760,12 @@ body#cartoon {
 
 .theater-content .theater-appearance_idol_list .theater-appearance_idol {
     display: inline-block;
-    margin: 4px;
+    margin: 2px;
     position: relative
 }
 
 .theater-content .theater-appearance_idol_list .theater-appearance_idol .theater-appearance_idol_img {
-    width: 49.6px;
+    width: 50px;
     position: relative
 }
 
