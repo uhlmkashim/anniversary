@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../js/jquery-2.2.2.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/require.js"></script>
+    <script src="../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../js/movieclip-0.7.1.min.js",
+                createjs: "../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../js/common.js"></script>
+    <script src="../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+
+<body id="cartoon" class="scene">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <link rel="stylesheet" type="text/css" href='../css/rich/theater.css' media="all">
+        <div class="theater-content m-Btm12">
+            <div class="theater-page_header m-Head_img m-Btm4"></div>
+            <div class="theater-title_area">
+                <a href='1368.html' class="theater-next jsOnDesignBtn"></a>
+                <div class="theater-story_num">第1426話</div>
+                <div class="theater-update_date">20/4/30更新</div>
+                <div class="theater-latest_title">観光のアドバイス</div>
+                <a class="theater-btn_like jsOnDesignBtn " data-cartoon-id="111"></a>
+                <a href='1497.html' class="theater-previous jsOnDesignBtn"></a>
+            </div>
+            <div class="theater-cartoon_area m-Top8 m-Btm8">
+                <img src="../image_sp/cartoon/1426/comic.jpg" width="292"><br>
+            </div>
+            <div class="theater-title_area">
+                <a href='1368.html' class="theater-next jsOnDesignBtn"></a>
+                <div class="theater-story_num">第1426話</div>
+                <div class="theater-update_date">20/4/30更新</div>
+                <div class="theater-latest_title">観光のアドバイス</div>
+                <a class="theater-btn_like jsOnDesignBtn " data-cartoon-id="111"></a>
+                <a href='1497.html' class="theater-previous jsOnDesignBtn"></a>
+            </div>
+            <div class="theater-common_area m-Top12 m-Btm8">
+                <div class="theater-common_area_title theater-text_appearance_idol"></div>
+                <div class="theater-appearance_idol_list m-Top8 m-Cnt t-Lft">
+                    <div class="theater-appearance_idol" data-name="鷺沢文香" data-attribute-name="cool" data-rarity="1" data-image="../image_sp/card/cm/fumika_31.png">
+                        <img src="../image_sp/card/xs/fumika_31.jpg" class="theater-appearance_idol_img"></div>
+                    <div class="theater-appearance_idol" data-name="並木芽衣子" data-attribute-name="passion" data-rarity="1" data-image="../image_sp/card/quest/meiko_01.png">
+                        <img src="../image_sp/card/xs/meiko_27.jpg" class="theater-appearance_idol_img"></div>
+                    <div class="theater-appearance_idol" data-name="相馬夏美" data-attribute-name="passion" data-rarity="3" data-image="../image_sp/card/quest/natsumi_09.png">
+                        <img src="../image_sp/card/xs/natsumi_09.jpg" class="theater-appearance_idol_img"></div>
+                    <div class="theater-idol_bg m-Top8 m-Btm4">
+                        <div class="theater-idol_wrapper">
+                            <div class="theater-idol_image">
+                            </div>
+                        </div>
+                        <div class="theater-idol_name_frame t-Cnt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theater-page_footer"></div>
+        </div>
+        <a href='index_j.html'>
+            <div class="backLink">劇場TOP</div>
+        </a>
+        <script>
+            $(function() {
+                $(".theater-btn_like").on("click", function(e) {
+                    $target = $(e.currentTarget);
+                    var cartoon_id = $target.data("cartoon-id");
+                    likeStart(cartoon_id);
+                })
+
+                var $appearance_idols = $(".theater-appearance_idol");
+                $appearance_idols.on("click", function(e) {
+                    var $target = $(e.currentTarget);
+                    var attr_name = $target.data("attribute-name");
+                    var rarity = $target.data("rarity");
+                    if ($target.hasClass("_selected")) {
+                        return;
+                    }
+                    $(".theater-idol_image").removeClass("_appear");
+                    setTimeout(function() {
+                        $appearance_idols.removeClass("_selected");
+                        $target.addClass("_selected");
+                        $(".theater-idol_name_frame").text($target.data("name"));
+                        $(".theater-idol_name_frame")[0].setAttribute("data-attribute-name", attr_name);
+                        $(".theater-idol_name_frame")[0].setAttribute("data-attribute-name", attr_name);
+                        $(".theater-idol_bg")[0].setAttribute("data-type", attr_name + "_" + rarity);
+                        $(".theater-idol_image").css({
+                            "background-image": "url(" + $target.data("image") + ")"
+                        });
+                        $(".theater-idol_image").addClass("_appear");
+                    }, 0);
+                })
+                $appearance_idols.eq(0).trigger("click");
+            })
+        </script>
+        <a href='../../mypage.html'>
+            <div class="backLink">マイスタジオ</div>
+        </a>
+        <footer>
+            <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+        </footer>
+    </div>
+    <div id="mbga-pf-footer">
+    </div>
+</body>
+
+</html>
