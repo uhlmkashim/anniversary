@@ -78,7 +78,7 @@ function bgm_play(bgm_name, fade_time, loop, need_version, default_bgm_name) {
             bgm_name == "bgm_lose_01"
         ) {
             var version = mobage.shellapp.App.getVersionCode();
-            if (version == "1") {
+            if (version == "1" && bgm_name) {
                 bgm_name = bgm_name.replace("bgm", "me");
             }
         }

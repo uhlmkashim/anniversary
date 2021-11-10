@@ -407,6 +407,19 @@ var number_format = function(num) {
         });
     }
 
+    /*　iboxClickが使用できない場合こちらを使用　*/
+    $.fn.iboxClick2 = function(click_el, callback) {
+        if (typeof click_el == 'undefind' || typeof call == 'function') return false;
+        this.click(function(e) {
+            if ($(e.target).is(click_el)) {
+                callback(e.target);
+                return false;
+            } else {
+                return true;
+            }
+        });
+    }
+
     $.fn.ibox = function(options) {
         return new $.ibox(this, options);
     }
