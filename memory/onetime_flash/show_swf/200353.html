@@ -61,15 +61,15 @@
     </div>
     <script>
         window.file_name = "memorial_month"; // createjs の本体ファイルを定義
-        window.dir_name = "../../../../image_sp/cjs/campaign/anniversary/10th/memorial_month/";
+        window.dir_name = "../../../image_sp/cjs/campaign/anniversary/10th/memorial_month/";
         window.replace_images = []
         window.im_cjs = {
-            "url": "../../../anniversary.html",
-            "_url": "../../../anniversary.html"
+            "url": "200354.html",
+            "_url": "200354.html"
         };
         window.child_obj = [];
         window.im_cjs = window.im_cjs || {};
-        window.im_cjs.jump_url = '../../../../mypage.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
+        window.im_cjs.jump_url = '200354.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
         var _ua = navigator.userAgent;
         var ios_app_flg = false;
         var ios_browser_flg = (_ua.indexOf('iPhone') !== -1) ? true : false;
@@ -126,7 +126,7 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = 'image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
