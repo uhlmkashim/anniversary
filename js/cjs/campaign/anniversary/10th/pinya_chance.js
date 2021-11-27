@@ -9776,25 +9776,25 @@
         color: "#000000",
         opacity: 1,
         manifest: [{
-                src: "images/_0000000_154_chihiro_base.png",
+                src: "images/0000000_154_chihiro_base.png",
                 id: "pinya_chance__0000000_154_chihiro_base"
             }, {
-                src: "images/_0000000_154_chihiro_f2.png",
+                src: "images/0000000_154_chihiro_f2.png",
                 id: "pinya_chance__0000000_154_chihiro_f2"
             }, {
-                src: "images/_1.png",
+                src: "images/1.png",
                 id: "pinya_chance__1"
             }, {
-                src: "images/_2.png",
+                src: "images/2.png",
                 id: "pinya_chance__2"
             }, {
-                src: "images/_3.png",
+                src: "images/3.png",
                 id: "pinya_chance__3"
             }, {
-                src: "images/_4.png",
+                src: "images/4.png",
                 id: "pinya_chance__4"
             }, {
-                src: "images/_5.png",
+                src: "images/5.png",
                 id: "pinya_chance__5"
             }, {
                 src: "images/barrel.png",

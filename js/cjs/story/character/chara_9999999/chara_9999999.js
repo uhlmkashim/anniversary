@@ -442,11 +442,11 @@
         color: "#999999",
         opacity: 1.00,
         manifest: [{
-                src: "images/_0000000_154_chihiro_base.png",
+                src: "images/0000000_154_chihiro_base.png",
                 id: "chara_9999999__0000000_154_chihiro_base"
             },
             {
-                src: "images/_0000000_154_chihiro_f2.png",
+                src: "images/0000000_154_chihiro_f2.png",
                 id: "chara_9999999__0000000_154_chihiro_f2"
             }
         ],
