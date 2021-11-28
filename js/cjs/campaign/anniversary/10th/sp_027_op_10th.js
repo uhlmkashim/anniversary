@@ -10602,9 +10602,6 @@
                 window.location.href = exportRoot._url
             }
         };
-        this.frame_517 = function() {
-            window.se_play("se_karen")
-        };
         this.frame_545 = function() {
             window.se_play("se_093")
         };
