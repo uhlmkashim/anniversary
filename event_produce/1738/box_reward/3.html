@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fcss%2Fgame%2Fpex.css%3Fv%3D20210909201058' media="all">
-    <script src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fjquery-1.9.1.min.js%3Fversion%3D1_9_1%26v%3D20210904134922'></script>
+    <link rel="stylesheet" href='../../../css/game/pex.css' media="all">
+    <script src='../../../js/jquery-1.9.1.min.js'></script>
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/event_produce_box_reward/show_box_chance_flash/1/0/343');
+                newrelic.setPageViewName('/idolmaster/index.php/event_produce_box_reward/show_box_chance_flash/1/2/192');
             }
         });
     </script>
@@ -48,42 +48,40 @@
             window.console.log = function() {};
         })();
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fcreatejs.min.js%3Fv%3D20210904134921'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20210904134916'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fcjs%2Fevent%2Fproduce%2Fevent_gift_chance_extra.js%3Fv%3D20210904134918'></script>
+    <script type='text/javascript' src='../../../js/createjs.min.js'></script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <script type='text/javascript' src='../../../js/cjs/event/produce/event_gift_chance_extra.js'></script>
     <script type='text/javascript'>
         var se_flg = 0,
             bgm_flg = 0,
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20210904134916'></script>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
 </head>
 
 <body style="margin:0px;">
-    <div id="animation_container" style="background-color:rgba(0, 0, 0, 0); width:100%; height: 1500px position: relative">
+    <div id="animation_container" style="background-color:rgba(0, 0, 0, 0); width:100%; height: 1500px; position: relative; margin:auto">
         <canvas id="canvas" width="100%" height="" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0);"></canvas>
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://mobamas.net/idolmaster/";
         window.file_name = "event_gift_chance_extra"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/event/produce/event_gift_chance_extra/";
+        window.dir_name = "../../../image_sp/cjs/event/produce/event_gift_chance_extra/";
         window.replace_images = {
-            "replace_card": "card_sign_b\/l\/5f8c7bd7de922bfd8f6a5fc83ff5c55d.jpg",
-            "replace_bg": "event_flash\/1738\/bg\/1738\/bg1_wide.jpg",
-            "replace_character1_1": "event_flash\/1738\/idol_cm\/1999_1_1.png",
-            "replace_character1_2": "event_flash\/1738\/idol_cm\/1999_1_2.png",
-            "replace_character1_3": "event_flash\/1738\/idol_cm\/1999_1_3.png",
-            "replace_character1_4": "event_flash\/1738\/idol_cm\/1999_1_4.png",
-            "replace_character1_5": "event_flash\/1738\/idol_cm\/1999_1_5.png",
-            "replace_character2_1": "event_flash\/1738\/idol_cm\/3_2_1.png",
-            "replace_character2_2": "event_flash\/1738\/idol_cm\/3_2_2.png",
-            "replace_character2_3": "event_flash\/1738\/idol_cm\/3_2_3.png",
-            "replace_character2_4": "event_flash\/1738\/idol_cm\/3_2_4.png",
-            "replace_character2_5": "event_flash\/1738\/idol_cm\/3_2_5.png"
+            "replace_card": "card_sign_b/l/uzuki_49.jpg",
+            "replace_bg": "event_flash/1738/bg/1738/bg1_wide.jpg",
+            "replace_character1_1": "event_flash/1738/idol_cm/1999_1_1.png",
+            "replace_character1_2": "event_flash/1738/idol_cm/1999_1_2.png",
+            "replace_character1_3": "event_flash/1738/idol_cm/1999_1_3.png",
+            "replace_character1_4": "event_flash/1738/idol_cm/1999_1_4.png",
+            "replace_character1_5": "event_flash/1738/idol_cm/1999_1_5.png",
+            "replace_character2_1": "event_flash/1738/idol_cm/3_2_1.png",
+            "replace_character2_2": "event_flash/1738/idol_cm/3_2_2.png",
+            "replace_character2_3": "event_flash/1738/idol_cm/3_2_3.png",
+            "replace_character2_4": "event_flash/1738/idol_cm/3_2_4.png",
+            "replace_character2_5": "event_flash/1738/idol_cm/3_2_5.png"
         }
         window.im_cjs = {
             "idol_comment1_1": "今日も卯月ちゃんの笑顔は眩しい",
@@ -96,7 +94,7 @@
             "character_face2": "2",
             "character_face3": "2",
             "positive_reaction": "1",
-            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce_box_reward%2Fbox_result%3Fbox_round%3D3%26l_frm%3DEvent_produce_box_reward_show_box_chance_flash_1%26rnd%3D165129903",
+            "_url": "../../../mypage.html",
             "card_name1": "[10thｱﾆﾊﾞｰｻﾘｰ]島村卯月(Sﾚｱ)",
             "card_att1": "4580",
             "card_def1": "4460",
@@ -104,7 +102,7 @@
         };
         window.child_obj = [];
         window.im_cjs = window.im_cjs || {};
-        window.im_cjs.jump_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON'; // createjsの演出が全て終了した場合の飛び先urlの定義
+        window.im_cjs.jump_url = '../../../mypage.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
         var _ua = navigator.userAgent;
         var ios_app_flg = false;
         var ios_browser_flg = (_ua.indexOf('iPhone') !== -1) ? true : false;
@@ -133,9 +131,9 @@
                     _use_item = select_num;
                     break;
             }
-            var _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce%2Fraid_battle%3Fres_type%3Djson%26l_frm%3DEvent_produce_box_reward_show_box_chance_flash_1%26rnd%3D204491993';
+            var _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/event_produce/raid_battle';
             if (select_num >= 7) {
-                _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fmemory_produce%2Fepisode_produce_cjs_memory%3Fres_type%3Djson%26l_frm%3DEvent_produce_box_reward_show_box_chance_flash_1%26rnd%3D488694633';
+                _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/episode_produce_cjs_memory';
             }
             var data = {
                 area_id: null,
@@ -213,11 +211,11 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = 'image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': encodeURIComponent(_img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }
@@ -226,9 +224,9 @@
                     for (var n in lib_supporter[i].properties.manifest) {
                         var _img_path = window.dir_name + lib_supporter[i].properties.manifest[n].src;
                         if (window.child_replace_images && window.child_replace_images[lib_supporter[i].properties.manifest[n].id]) {
-                            _img_path = window.image_server + '?url=' + encodeURIComponent(window.base_url + 'image_sp/' + window.child_replace_images[lib_supporter[i].properties.manifest[n].id]);
+                            _img_path = encodeURIComponent('../../../image_sp/' + window.child_replace_images[lib_supporter[i].properties.manifest[n].id]);
                         } else {
-                            _img_path = window.image_server + '?url=' + encodeURIComponent(window.base_url + window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src);
+                            _img_path = encodeURIComponent(window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src);
                         }
                         new_manifest.push({
                             'type': 'image',
