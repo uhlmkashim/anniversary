@@ -15,7 +15,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/event_produce_grow_idol/rank_up_swf/1');
+                newrelic.setPageViewName('/idolmaster/index.php/event_produce/event_commu_clear_swf/8');
             }
         });
     </script>
@@ -50,7 +50,7 @@
     </script>
     <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fcreatejs.min.js%3Fv%3D20210904134921'></script>
     <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20210904134916'></script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fcjs%2Fevent%2Fproduce%2Fproduce_grow_idol_rank_up.js%3Fv%3D20210904134918'></script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fjs%2Fcjs%2Fevent%2Fproduce%2Fevent_commu_clear.js%3Fv%3D20210904134918'></script>
     <script type='text/javascript'>
         var se_flg = 0,
             bgm_flg = 0,
@@ -69,39 +69,40 @@
     <script>
         var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
         var base_url = "http://mobamas.net/idolmaster/";
-        window.file_name = "produce_grow_idol_rank_up"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/event/produce/produce_grow_idol_rank_up/";
+        window.file_name = "event_commu_clear"; // createjs の本体ファイルを定義
+        window.dir_name = "image_sp/cjs/event/produce/event_commu_clear/";
         window.replace_images = {
+            "replace_name": "event_flash\/common\/name_plate\/1.png",
             "replace_bg": "event_flash\/1738\/bg\/1738\/bg3_tall.jpg",
-            "replace_name": "event_flash\/common\/name_plate\/134.png",
-            "replace_character1_1": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character1_2": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character1_3": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character1_4": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character1_5": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character1_6": "event_flash\/1738\/idol_cm\/1_2_2.png",
-            "replace_character2_1": "event_flash\/1738\/idol_cm\/1_3_2.png",
-            "replace_character2_2": "event_flash\/1738\/idol_cm\/1_3_2.png",
-            "replace_character2_3": "event_flash\/1738\/idol_cm\/1_3_2.png",
-            "replace_character2_4": "event_flash\/1738\/idol_cm\/1_3_2.png",
-            "replace_character2_5": "event_flash\/1738\/idol_cm\/1_3_2.png",
-            "replace_character2_6": "event_flash\/1738\/idol_cm\/1_3_2.png"
+            "replace_card": "card\/l\/dab97d4a474b61ddc22854c4ba2839a4.jpg",
+            "replace_item": "event_flash\/box\/l\/item_5000.png",
+            "replace_character1_1": "event_flash\/1738\/idol_cm\/3_3_1.png",
+            "replace_character1_2": "event_flash\/1738\/idol_cm\/3_3_2.png",
+            "replace_character1_3": "event_flash\/1738\/idol_cm\/3_3_3.png",
+            "replace_character1_4": "event_flash\/1738\/idol_cm\/3_3_4.png",
+            "replace_character1_5": "event_flash\/1738\/idol_cm\/3_3_5.png"
         }
         window.im_cjs = {
-            "message1_1": "OOﾌﾟﾛﾃﾞｭｰｻｰの願い､こ",
-            "message1_2": "の流れ星未央ちゃんが叶えてあげ",
-            "message1_3": "る｡さあ､これからﾊﾞﾝﾊﾞﾝ盛り上げ",
-            "message1_4": "ていっくよー☆",
-            "message2_1": "ﾒﾓﾘｱﾙﾊﾟﾜｰがｱｯﾌﾟ!",
-            "message2_2": "ｺﾐｭｲﾍﾞﾝﾄ中の攻守発揮値が",
-            "message2_3": "4倍になった!",
-            "message2_4": "",
-            "url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce_grow_idol%2Fstrength_top%2F1%3Fl_frm%3Devent_produce_grow_idol_rank_up_swf_1%26rnd%3D41179929",
-            "character1_face": 2,
-            "character1_motion": "nod",
-            "character2_face": 2,
-            "character2_motion": "jump",
-            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce_grow_idol%2Fstrength_top%2F1%3Fl_frm%3Devent_produce_grow_idol_rank_up_swf_1%26rnd%3D41179929"
+            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fidol_story%2Fmovie_play%2F463%2F1%2Fevent_produce--raid_win---rnd----568008713%2F1%3Fvoice%3D0%26l_frm%3DEvent_produce_event_commu_clear_swf_1%26rnd%3D823777249",
+            "card_name": "[10thｱﾆﾊﾞｰｻﾘｰ･S]島村卯月",
+            "act": 1,
+            "emo": 2,
+            "card_comm1": "あなたのｱｲﾄﾞﾙ､島村卯月です! えへへ､言ってみたかったんです｡ここにいる私は､ﾌﾟﾛﾃﾞｭｰｻｰさんが育てたんですから♪",
+            "card_comm": "あなたのｱｲﾄﾞﾙ､島村卯月です! えへへ､言ってみたかったんです｡ここにいる私は､ﾌﾟﾛﾃﾞｭｰｻｰさんが育てたんですから♪",
+            "center_comm": "ｱｲﾄﾞﾙの信頼を得た!",
+            "item_flag": 1,
+            "card_comm1_1": "あなたのｱｲﾄﾞﾙ､島村卯月です! ",
+            "card_comm1_2": "えへへ､言ってみたかったんで",
+            "card_comm1_3": "す｡ここにいる私は､ﾌﾟﾛﾃﾞｭｰｻｰ",
+            "card_comm1_4": "さんが育てたんですから♪",
+            "card_comm2_1": "[10thｱﾆﾊﾞｰｻﾘｰ･S]島村卯月が",
+            "card_comm2_2": "ﾌﾟﾛﾃﾞｭｰｽﾒﾝﾊﾞｰに加わった!",
+            "card_comm2_3": "[10thｱﾆﾊﾞｰｻﾘｰ･S]島村卯月を",
+            "card_comm2_4": "ｽﾍﾟｼｬﾙﾚｯｽﾝできるようになった!",
+            "card_comm3_1": "さらに",
+            "card_comm3_2": "ｽﾀｰﾒﾓﾘｰを1個",
+            "card_comm3_3": "獲得した!",
+            "card_comm3_4": ""
         };
         window.child_obj = [];
         window.im_cjs = window.im_cjs || {};
@@ -134,9 +135,9 @@
                     _use_item = select_num;
                     break;
             }
-            var _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce%2Fraid_battle%3Fres_type%3Djson%26l_frm%3Devent_produce_grow_idol_rank_up_swf_1%26rnd%3D835047904';
+            var _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fevent_produce%2Fraid_battle%3Fres_type%3Djson%26l_frm%3DEvent_produce_event_commu_clear_swf_1%26rnd%3D170523178';
             if (select_num >= 7) {
-                _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fmemory_produce%2Fepisode_produce_cjs_memory%3Fres_type%3Djson%26l_frm%3Devent_produce_grow_idol_rank_up_swf_1%26rnd%3D132210160';
+                _url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fmemory_produce%2Fepisode_produce_cjs_memory%3Fres_type%3Djson%26l_frm%3DEvent_produce_event_commu_clear_swf_1%26rnd%3D98661269';
             }
             var data = {
                 area_id: null,
