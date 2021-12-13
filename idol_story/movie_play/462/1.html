@@ -15,7 +15,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/idol_story/generator_cjs/436/1');
+                newrelic.setPageViewName('/idolmaster/index.php/idol_story/generator_cjs/462/1');
             }
         });
     </script>
@@ -61,7 +61,9 @@
     </style>
     <script type='text/javascript' src='../../../js/createjs.min.js'></script>
     <script type='text/javascript' src='../../../js/app_sound.js'></script>
-    <script type='text/javascript' src='../../../js/cjs/story_generator/story_generator_n1_k.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/story_generator_n1.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_chord.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_flower_red.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
     <script type='text/javascript'>
         var se_flg = 0,
@@ -74,7 +76,7 @@
 </head>
 
 <body style="margin:0px;">
-    <div id="animation_container" style="background-color:rgba(0, 0, 0, 0); width:100%; height: 1500px; position: relative; margin: auto;">
+    <div id="animation_container" style="background-color:rgba(0, 0, 0, 0); width:100%; height: 1500px position: relative">
         <canvas id="canvas" width="100%" height="" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0);"></canvas>
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
@@ -99,21 +101,19 @@
         load_js.addEventListener("complete", handleComplete);
         // 読み込み開始
         load_js.loadManifest(window.js_load_files);
-        var _effect_cnt = 1;
-        var image_server = "";
-        var base_url = "";
+        var _effect_cnt = 3;
         window.im_cjs = window.im_cjs || {};
         window.replace_images = [];
         window.file_name = "story_generator_n1"; // createjs の本体ファイルを定義
         window.dir_name = "../../../image_sp/cjs/genechara/";
         window.voice_manifest = {
-            'scene1': '../../../sound/9901017/scene1.mp3',
-            'scene2': '../../../sound/9901017/scene2.mp3',
-            'scene3': '../../../sound/9901017/scene3.mp3',
-            'scene4': '../../../sound/9901017/scene4.mp3',
-            'scene5': '../../../sound/9901017/scene5.mp3',
-            'scene6': '../../../sound/9901017/scene6.mp3',
-            'scene7': '../../../sound/9901017/scene7.mp3',
+            'scene1': '../../../sound/9901089/scene1.mp3',
+            'scene2': '../../../sound/9901089/scene2.mp3',
+            'scene3': '../../../sound/9901089/scene3.mp3',
+            'scene4': '../../../sound/9901089/scene4.mp3',
+            'scene5': '../../../sound/9901089/scene5.mp3',
+            'scene6': '../../../sound/9901089/scene6.mp3',
+            'scene7': '../../../sound/9901089/scene7.mp3',
         };
         window._wrap_flag = 0;
         window._ua = window.navigator.userAgent;
@@ -125,119 +125,65 @@
         window.im_cjs = {
             "scene_list": [{
                 "id": "1",
-                "story_id": "20512",
+                "story_id": "173804",
                 "character_id": "10189",
                 "cname": "",
                 "height_diff": "",
-                "face": "1",
+                "face": "3",
                 "position": "C",
                 "movement": "in_R",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
-                "bgimg": "20358",
-                "message": "……! 수고하셨습니다, 프로듀서\n씨. ……저말인가요? 저는\n그림책을. 여기엔, 모두가\n가져오신 것들이 있으니까요.",
+                "bgimg": "173801",
+                "message": "……っ! ﾌﾟﾛﾃﾞｭｰｻｰさん､こちら\nです……｡すみません……走る\nことは､未だ慣れず……見苦し\nいところをお見せしました｡",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
                 "id": "2",
-                "story_id": "20512",
+                "story_id": "173804",
                 "character_id": "10189",
                 "cname": "",
                 "height_diff": "",
-                "face": "7",
+                "face": "2",
                 "position": "C",
-                "movement": "question_left2",
-                "chara_effect": "",
+                "movement": "swing",
+                "chara_effect": "chord",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
-                "message": "……사무소의 아이들에게, 부탁\n받았습니다. 제가 그림책을 읽어줬으면\n한다, 고요……. 평소엔 묵독이라,\n자신은 없습니다만…….",
+                "message": "……もうすぐ､ﾐｭｰｼﾞｱﾑが完成し\nます｡私たちが綴った､ｱｲﾄﾞﾙと\nいう物語を……新たな形で､ﾌｧﾝ\nの方々にお見せできますね｡",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
                 "id": "3",
-                "story_id": "20512",
-                "character_id": "10189",
-                "cname": "",
-                "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "nod2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "message": "제 목소리로 얘기를 물들일 수 있다고\n한다면…… 거절할 이유는 없습니다.\n열심히 해보려고, 읽을\n그림책을 찾고 있었습니다.",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "4",
-                "story_id": "20512",
-                "character_id": "10189",
-                "cname": "",
-                "height_diff": "",
-                "face": "3",
-                "position": "C",
-                "movement": "swing",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "message": "하지만…… 안되네요. 어느\n그림책도, 제게는 그리운 것\n뿐이라…… 정신을 차리면,\n무심코 독서에 열중해 버려서…….",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "5",
-                "story_id": "20512",
+                "story_id": "173804",
                 "character_id": "10189",
                 "cname": "",
                 "height_diff": "",
                 "face": "1",
                 "position": "C",
-                "movement": "nod",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "message": "……네, 책을 읽는 습관은, 어릴\n적부터 있었습니다. 도서실의\n조용함에, 낡은 대출 카드,\n그리고, 마음에 드는 그림책.",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "6",
-                "story_id": "20512",
-                "character_id": "10189",
-                "cname": "",
-                "height_diff": "",
-                "face": "9",
-                "position": "C",
                 "movement": "nod2",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
-                "message": "어릴 때를 상기한 건…… 다음\n촬영 장소가, 초등학교이기\n때문일까요. 촬영 사이에, 도서실에서\n휴식도 할 수 있다든지.",
+                "message": "……どの物語も､貴方がいたか\nら､創られたものです｡……だか\nらこそ､ﾌﾟﾛﾃﾞｭｰｻｰさんに完成を\n見届けてほしいと思い……",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "7",
-                "story_id": "20512",
+                "id": "4",
+                "story_id": "173804",
                 "character_id": "10189",
                 "cname": "",
                 "height_diff": "",
-                "face": "2",
+                "face": "6",
                 "position": "C",
                 "movement": "question_left2",
                 "chara_effect": "",
@@ -245,532 +191,91 @@
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
-                "message": "그리운 책을 접하게 돼서\n…… 무척 기쁘게 생각합니다.\n프로듀서 씨에게도, 소개하고 싶은\n그림책이, 많이 있으니까요.",
+                "message": "気づけば､貴方の手を取り､駆け\n出していました……｡お忙しい\n中､すみません｡はい､ﾒﾓﾘｱﾙﾌﾞｯｸ\nの展示は､あちらに……｡",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "5",
+                "story_id": "173804",
+                "character_id": "10189",
+                "cname": "",
+                "height_diff": "",
+                "face": "1",
+                "position": "C",
+                "movement": "nod2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "message": "……先ほど､私は見届けてほし\nいと言いました｡ですが……本\n当は､私が､共に見届けたかった\nだけなのかもしれません｡",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "6",
+                "story_id": "173804",
+                "character_id": "10189",
+                "cname": "",
+                "height_diff": "",
+                "face": "5",
+                "position": "C",
+                "movement": "question_left2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "message": "ﾌﾟﾛﾃﾞｭｰｻｰさんと胸の高鳴りを\n共有し……そして､見たかった\nんです｡完成した瞬間の……貴\n方の､華やいだ笑顔を｡",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "7",
+                "story_id": "173804",
+                "character_id": "10189",
+                "cname": "",
+                "height_diff": "",
+                "face": "2",
+                "position": "C",
+                "movement": "nod2",
+                "chara_effect": "flower_red",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "message": "お付き合いさせてしまい､申し\n訳……いえ､これからも､お付き\n合いいただけますか? 私の……\n私たちの､胸躍る物語に｡",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }],
             "chara_list": {
-                "10112": {
-                    "master_id": "10112",
-                    "id": "10112",
-                    "name": "智絵里",
-                    "image_story": "10112.png",
-                    "image_icon": "10112.png",
-                    "other_chara_flg": "1"
-                },
-                "2000701": {
-                    "master_id": "2000701",
-                    "id": "2000701",
-                    "name": "瑞樹",
-                    "image_story": "2000701.png",
-                    "image_icon": "2000701.png",
-                    "other_chara_flg": ""
-                },
-                "10164": {
-                    "master_id": "10164",
-                    "id": "10164",
-                    "name": "\u60a0\u8cb4",
-                    "image_story": "10164.png",
-                    "image_icon": "10164.png",
-                    "other_chara_flg": "1"
-                },
-                "10243": {
-                    "master_id": "10243",
-                    "id": "10243",
-                    "name": "\u307f\u308a\u3042",
-                    "image_story": "10243.png",
-                    "image_icon": "10243.png",
-                    "other_chara_flg": "1"
-                },
-                "10297": {
-                    "master_id": "10297",
-                    "id": "10297",
-                    "name": "\u5fc3",
-                    "image_story": "10297.png",
-                    "image_icon": "10297.png",
-                    "other_chara_flg": "1"
-                },
-                "10103": {
-                    "master_id": "10103",
-                    "id": "10103",
-                    "name": "\u3086\u304b\u308a",
-                    "image_story": "10103.png",
-                    "image_icon": "10103.png",
-                    "other_chara_flg": "1"
-                },
-                "10188": {
-                    "master_id": "10188",
-                    "id": "10188",
-                    "name": "\u3042\u308a\u3059",
-                    "image_story": "10188.png",
-                    "image_icon": "10188.png",
-                    "other_chara_flg": "1"
-                },
-                "1564002": {
-                    "master_id": "1564002",
-                    "id": "1564002",
-                    "name": "\u67d1\u5948",
-                    "image_story": "1564002.png",
-                    "image_icon": "1564002.png",
-                    "other_chara_flg": ""
-                },
-                "2535002": {
-                    "master_id": "2535002",
-                    "id": "2535002",
-                    "name": "\u4fdd\u5948\u7f8e",
-                    "image_story": "2535002.png",
-                    "image_icon": "2535002.png",
-                    "other_chara_flg": ""
-                },
-                "2331802": {
-                    "master_id": "2331802",
-                    "id": "2331802",
-                    "name": "\u73e0\u7f8e",
-                    "image_story": "2331802.png",
-                    "image_icon": "2331802.png",
-                    "other_chara_flg": ""
-                },
-                "3344102": {
-                    "master_id": "3344102",
-                    "id": "3344102",
-                    "name": "\u8475",
-                    "image_story": "3344102.png",
-                    "image_icon": "3344102.png",
-                    "other_chara_flg": ""
-                },
-                "1340102": {
-                    "master_id": "1340102",
-                    "id": "1340102",
-                    "name": "\u4ec1\u7f8e",
-                    "image_story": "1340102.png",
-                    "image_icon": "1340102.png",
-                    "other_chara_flg": ""
-                },
-                "3334702": {
-                    "master_id": "3334702",
-                    "id": "3334702",
-                    "name": "\u3042\u3084\u3081",
-                    "image_story": "3334702.png",
-                    "image_icon": "3334702.png",
-                    "other_chara_flg": ""
-                },
-                "1317902": {
-                    "master_id": "1317902",
-                    "id": "1317902",
-                    "name": "\u745b\u68a8\u83ef",
-                    "image_story": "1317902.png",
-                    "image_icon": "1317902.png",
-                    "other_chara_flg": ""
-                },
-                "3319802": {
-                    "master_id": "3319802",
-                    "id": "3319802",
-                    "name": "\u30ad\u30e3\u30b7\u30fc",
-                    "image_story": "3319802.png",
-                    "image_icon": "3319802.png",
-                    "other_chara_flg": ""
-                },
-                "2558002": {
-                    "master_id": "2558002",
-                    "id": "2558002",
-                    "name": "\u30a2\u30ca\u30b9\u30bf\u30b7\u30a2",
-                    "image_story": "2558002.png",
-                    "image_icon": "2558002.png",
-                    "other_chara_flg": ""
-                },
-                "2559902": {
-                    "master_id": "2559902",
-                    "id": "2559902",
-                    "name": "\u6953",
-                    "image_story": "2559902.png",
-                    "image_icon": "2559902.png",
-                    "other_chara_flg": ""
-                },
-                "2562702": {
-                    "master_id": "2562702",
-                    "id": "2562702",
-                    "name": "\u6587\u9999",
-                    "image_story": "2562702.png",
-                    "image_icon": "2562702.png",
-                    "other_chara_flg": ""
-                },
-                "10119": {
-                    "master_id": "10119",
-                    "id": "10119",
-                    "name": "\u88d5\u7f8e",
-                    "image_story": "10119.png",
-                    "image_icon": "10119.png",
-                    "other_chara_flg": "1"
-                },
-                "10256": {
-                    "master_id": "10256",
-                    "id": "10256",
-                    "name": "\u8f1d\u5b50",
-                    "image_story": "10256.png",
-                    "image_icon": "10256.png",
-                    "other_chara_flg": "1"
-                },
-                "10154": {
-                    "master_id": "10154",
-                    "id": "10154",
-                    "name": "\u83dc\u3005",
-                    "image_story": "10154.png",
-                    "image_icon": "10154.png",
-                    "other_chara_flg": "1"
-                },
-                "10108": {
-                    "master_id": "10108",
-                    "id": "10108",
-                    "name": "\u304b\u306a\u5b50",
-                    "image_story": "10108.png",
-                    "image_icon": "10108.png",
-                    "other_chara_flg": "1"
-                },
-                "10156": {
-                    "master_id": "10156",
-                    "id": "10156",
-                    "name": "\u30cd\u30cd",
-                    "image_story": "10156.png",
-                    "image_icon": "10156.png",
-                    "other_chara_flg": "1"
-                },
-                "10170": {
-                    "master_id": "10170",
-                    "id": "10170",
-                    "name": "\u30a2\u30e4",
-                    "image_story": "10170.png",
-                    "image_icon": "10170.png",
-                    "other_chara_flg": "1"
-                },
-                "10205": {
-                    "master_id": "10205",
-                    "id": "10205",
-                    "name": "\u96ea\u7f8e",
-                    "image_story": "10205.png",
-                    "image_icon": "10205.png",
-                    "other_chara_flg": "1"
-                },
-                "10260": {
-                    "master_id": "10260",
-                    "id": "10260",
-                    "name": "\u68a8\u6c99",
-                    "image_story": "10260.png",
-                    "image_icon": "10260.png",
-                    "other_chara_flg": "1"
-                },
-                "10275": {
-                    "master_id": "10275",
-                    "id": "10275",
-                    "name": "\u5fd7\u4fdd",
-                    "image_story": "10275.png",
-                    "image_icon": "10275.png",
-                    "other_chara_flg": "1"
-                },
-                "10282": {
-                    "master_id": "10282",
-                    "id": "10282",
-                    "name": "\u30d9\u30c6\u30e9\u30f3\u30c8\u30ec\u30fc\u30ca\u30fc",
-                    "image_story": "10282.png",
-                    "image_icon": "10282.png",
-                    "other_chara_flg": "1"
-                },
-                "10288": {
-                    "master_id": "10288",
-                    "id": "10288",
-                    "name": "\u4f0a\u5439",
-                    "image_story": "10288.png",
-                    "image_icon": "10288.png",
-                    "other_chara_flg": "1"
-                },
-                "10298": {
-                    "master_id": "10298",
-                    "id": "10298",
-                    "name": "\u5149",
-                    "image_story": "10298.png",
-                    "image_icon": "10298.png",
-                    "other_chara_flg": "1"
-                },
-                "3201301": {
-                    "master_id": "3201301",
-                    "id": "3201301",
-                    "name": "\u5fd7\u4fdd",
-                    "image_story": "3201301.png",
-                    "image_icon": "3201301.png",
-                    "other_chara_flg": ""
-                },
-                "10080": {
-                    "master_id": "10080",
-                    "id": "10080",
-                    "name": "\u9ed2\u670d",
-                    "image_story": "10080.png",
-                    "image_icon": "10080.png",
-                    "other_chara_flg": "1"
-                },
-                "10249": {
-                    "master_id": "10249",
-                    "id": "10249",
-                    "name": "\u67da",
-                    "image_story": "10249.png",
-                    "image_icon": "10249.png",
-                    "other_chara_flg": "1"
-                },
-                "10006": {
-                    "master_id": "10006",
-                    "id": "10006",
-                    "name": "\u90e8\u9577(\u7537)",
-                    "image_story": "10006.png",
-                    "image_icon": "10006.png",
-                    "other_chara_flg": "1"
-                },
-                "10017": {
-                    "master_id": "10017",
-                    "id": "10017",
-                    "name": "\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8(\u5973\u6027\u30b9\u30bf\u30c3\u30d5)",
-                    "image_story": "10017.png",
-                    "image_icon": "10017.png",
-                    "other_chara_flg": "1"
-                },
-                "10151": {
-                    "master_id": "10151",
-                    "id": "10151",
-                    "name": "\u90fd",
-                    "image_story": "10151.png",
-                    "image_icon": "10151.png",
-                    "other_chara_flg": "1"
-                },
-                "10187": {
-                    "master_id": "10187",
-                    "id": "10187",
-                    "name": "\u983c\u5b50",
-                    "image_story": "10187.png",
-                    "image_icon": "10187.png",
-                    "other_chara_flg": "1"
-                },
-                "10280": {
-                    "master_id": "10280",
-                    "id": "10280",
-                    "name": "\u62d3\u6d77",
-                    "image_story": "10280.png",
-                    "image_icon": "10280.png",
-                    "other_chara_flg": "1"
-                },
-                "10008": {
-                    "master_id": "10008",
-                    "id": "10008",
-                    "name": "\u4e00\u822c\u6210\u4eba(\u5973)",
-                    "image_story": "10008.png",
-                    "image_icon": "10008.png",
-                    "other_chara_flg": "1"
-                },
-                "10033": {
-                    "master_id": "10033",
-                    "id": "10033",
-                    "name": "\u304a\u3070\u3061\u3083\u3093",
-                    "image_story": "10033.png",
-                    "image_icon": "10033.png",
-                    "other_chara_flg": "1"
-                },
-                "10076": {
-                    "master_id": "10076",
-                    "id": "10076",
-                    "name": "\u548c\u670d\u306e\u304a\u3070\u3061\u3083\u3093",
-                    "image_story": "10076.png",
-                    "image_icon": "10076.png",
-                    "other_chara_flg": "1"
-                },
-                "10674": {
-                    "master_id": "10674",
-                    "id": "10674",
-                    "name": "\u30da\u30ed",
-                    "image_story": "10674.png",
-                    "image_icon": "10674.png",
-                    "other_chara_flg": "1"
-                },
-                "10058": {
-                    "master_id": "10058",
-                    "id": "10058",
-                    "name": "\u5973\u6027_\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8",
-                    "image_story": "10058.png",
-                    "image_icon": "10058.png",
-                    "other_chara_flg": "1"
-                },
-                "10657": {
-                    "master_id": "10657",
-                    "id": "10657",
-                    "name": "\u5973\u5b50\u9ad8\u751f(\u30e6\u30cb\u30db\u30fc\u30e0)",
-                    "image_story": "10657.png",
-                    "image_icon": "10657.png",
-                    "other_chara_flg": "1"
-                },
-                "10189": {
-                    "master_id": "10189",
-                    "id": "10189",
-                    "name": "\u6587\u9999",
-                    "image_story": "10189.png",
-                    "image_icon": "10189.png",
-                    "other_chara_flg": "1"
-                },
-                "10271": {
-                    "master_id": "10271",
-                    "id": "10271",
-                    "name": "\u304d\u3089\u308a",
-                    "image_story": "10271.png",
-                    "image_icon": "10271.png",
-                    "other_chara_flg": "1"
-                },
-                "10271_002": {
-                    "master_id": "10271_002",
-                    "id": "10271_002",
-                    "name": "\u304d\u3089\u308a",
-                    "image_story": "10271_002.png",
-                    "image_icon": "10271_002.png",
-                    "other_chara_flg": "1"
-                },
-                "10002": {
-                    "master_id": "10002",
-                    "id": "10002",
-                    "name": "\u3061\u3072\u308d",
-                    "image_story": "10002.png",
-                    "image_icon": "10002.png",
-                    "other_chara_flg": "1"
-                },
-                "10115": {
-                    "master_id": "10115",
-                    "id": "10115",
-                    "name": "\u6843\u83ef",
-                    "image_story": "10115.png",
-                    "image_icon": "10115.png",
-                    "other_chara_flg": "1"
-                },
-                "10124": {
-                    "master_id": "10124",
-                    "id": "10124",
-                    "name": "\u3053\u305a\u3048",
-                    "image_story": "10124.png",
-                    "image_icon": "10124.png",
-                    "other_chara_flg": "1"
-                },
-                "10165": {
-                    "master_id": "10165",
-                    "id": "10165",
-                    "name": "\u7f8e\u4e16",
-                    "image_story": "10165.png",
-                    "image_icon": "10165.png",
-                    "other_chara_flg": "1"
-                },
-                "10180": {
-                    "master_id": "10180",
-                    "id": "10180",
-                    "name": "\u5343\u679d",
-                    "image_story": "10180.png",
-                    "image_icon": "10180.png",
-                    "other_chara_flg": "1"
-                },
-                "10181": {
-                    "master_id": "10181",
-                    "id": "10181",
-                    "name": "\u7f8e\u512a",
-                    "image_story": "10181.png",
-                    "image_icon": "10181.png",
-                    "other_chara_flg": "1"
-                },
-                "10229": {
-                    "master_id": "10229",
-                    "id": "10229",
-                    "name": "\u6674",
-                    "image_story": "10229.png",
-                    "image_icon": "10229.png",
-                    "other_chara_flg": "1"
-                },
-                "10248": {
-                    "master_id": "10248",
-                    "id": "10248",
-                    "name": "\u30c8\u30ec\u30fc\u30ca\u30fc",
-                    "image_story": "10248.png",
-                    "image_icon": "10248.png",
-                    "other_chara_flg": "1"
-                },
-                "10268": {
-                    "master_id": "10268",
-                    "id": "10268",
-                    "name": "\u8389\u5609",
-                    "image_story": "10268.png",
-                    "image_icon": "10268.png",
-                    "other_chara_flg": "1"
-                },
-                "10283": {
-                    "master_id": "10283",
-                    "id": "10283",
-                    "name": "\u4ec1\u5948",
-                    "image_story": "10283.png",
-                    "image_icon": "10283.png",
-                    "other_chara_flg": "1"
-                },
-                "10011": {
-                    "master_id": "10011",
-                    "id": "10011",
-                    "name": "\u5b50\u4f9b",
-                    "image_story": "10011.png",
-                    "image_icon": "10011.png",
-                    "other_chara_flg": "1"
-                },
-                "10026": {
-                    "master_id": "10026",
-                    "id": "10026",
-                    "name": "\u5973\u6027",
-                    "image_story": "10026.png",
-                    "image_icon": "10026.png",
-                    "other_chara_flg": "1"
-                },
-                "10039": {
-                    "master_id": "10039",
-                    "id": "10039",
-                    "name": "\u304a\u5316\u3051",
-                    "image_story": "10039.png",
-                    "image_icon": "10039.png",
-                    "other_chara_flg": "1"
-                },
-                "10040": {
-                    "master_id": "10040",
-                    "id": "10040",
-                    "name": "\u304a\u5316\u3051",
-                    "image_story": "10040.png",
-                    "image_icon": "10040.png",
-                    "other_chara_flg": "1"
-                },
-                "10059": {
-                    "master_id": "10059",
-                    "id": "10059",
-                    "name": "\u62c5\u4efb\u306e\u5148\u751f",
-                    "image_story": "10059.png",
-                    "image_icon": "10059.png",
-                    "other_chara_flg": "1"
-                },
-                "10659": {
-                    "master_id": "10659",
-                    "id": "10659",
-                    "name": "\u30bf\u30cc\u30ad",
-                    "image_story": "10659.png",
-                    "image_icon": "10659.png",
+                "2536302": {
+                    "master_id": "2536302",
+                    "id": "2536302",
+                    "name": "文香",
+                    "image_story": "2536302.png",
+                    "image_icon": "2536302.png",
                     "other_chara_flg": "1"
                 }
             },
-            "bg_list": [20358],
-            "effect_list": ["question"],
+            "bg_list": [173801],
+            "effect_list": ["chord", "flower_red", "question"],
             "character_list": {
                 "10189": {
                     "id": 1,
                     "hash_id": "",
-                    "name": "\u6587\u9999",
+                    "name": "文香",
                     "offsetx": "0",
                     "offsety": "0",
                     "other_flg": "1"
                 }
             },
-            "title": "\u8cc7\u6599\u5ba4",
-            "story_type": "3",
-            "all_skip": "0"
+            "title": "設営中のミュージアム",
+            "story_type": "0",
+            "all_skip": "0",
+            "logo_bg": ""
         };
         window.replace_images = []
         2
@@ -789,19 +294,19 @@
         }
         // 必要なキャラ画像を追加
         window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face7'] = '../../../image_sp/cjs/chara/other/10189_7.png';
-        window.chara_replace_images['c1_face2'] = '../../../image_sp/cjs/chara/other/10189_2.png';
         window.chara_replace_images['c1_face3'] = '../../../image_sp/cjs/chara/other/10189_3.png';
+        window.chara_replace_images['c1_face2'] = '../../../image_sp/cjs/chara/other/10189_2.png';
         window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c1_face9'] = '../../../image_sp/cjs/chara/other/10189_9.png';
+        window.chara_replace_images['c1_face6'] = '../../../image_sp/cjs/chara/other/10189_6.png';
+        window.chara_replace_images['c1_face1'] = '../../../image_sp/cjs/chara/other/10189.png';
+        window.chara_replace_images['c1_face5'] = '../../../image_sp/cjs/chara/other/10189_5.png';
         window.chara_replace_images['c1_face2'] = '../../../image_sp/cjs/chara/other/10189_2.png';
         window.chara_replace_images['c1_b'] = '../../../image_sp/cjs/chara/other/10189_b.png';
         window.im_cjs.bg_frame_info = {
-            '20358': 0,
+            '173801': 0,
         };
         window.bg_replace_images = {};
-        window.bg_replace_images['bg1'] = '20358';
+        window.bg_replace_images['bg1'] = '173801';
         window.bg_replace_images['bg2'] = '_nobg';
         window.bg_replace_images['bg3'] = '_nobg';
         window.bg_replace_images['bg4'] = '_nobg';
@@ -811,23 +316,26 @@
         window.bg_replace_images['bg8'] = '_nobg';
         window.bg_replace_images['bg9'] = '_nobg';
         window.bg_replace_images['bg10'] = '_nobg';
+        window.op_bg_replace_images = {};
         window.im_cjs.effect_frame_info = {
-            'question': 0,
+            'chord': 0,
+            'flower_red': 1,
+            'question': 2,
         };
         window.im_cjs.chara_frame_info = {
             "10189": {
                 "id": 1,
                 "hash_id": "",
-                "name": "후미카",
+                "name": "文香",
                 "offsetx": "0",
                 "offsety": "0",
                 "other_flg": "1",
-                "face": ["1", "1", "7", "2", "3", "1", "9", "2"]
+                "face": ["1", "3", "2", "1", "6", "1", "5", "2"]
             }
         };
-        window.im_cjs.title_name = '자료실' || 'no_title';
-        window.im_cjs.event_type = '3' || 0;
-        window.im_cjs.jump_url = '../../../idol_gallery/idol_detail/fumika_k.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
+        window.im_cjs.title_name = '設営中のミュージアム' || 'no_title';
+        window.im_cjs.event_type = '0' || 0;
+        window.im_cjs.jump_url = '../../../idol_gallery/idol_detail/fumika.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
         window.im_cjs.chara_num = 1;
         window.im_cjs.voice_flag = 1; // 音声再生フラグを定義
     </script>
@@ -850,7 +358,7 @@
                 var comp = AdobeAn.getComposition(window.file_name);
                 lib = comp.getLibrary();
                 var comp_eff_supporter = [];
-                var effect_list = ["question"];
+                var effect_list = ["chord", "flower_red", "question"];
                 for (var n = 0, len = _effect_cnt; n < len; n++) {
                     comp_eff_supporter[n] = AdobeAn.getComposition('eff_' + effect_list[n]);
                     if (comp_eff_supporter[n]) {
@@ -883,6 +391,22 @@
                         handleComplete(evt, comp_eff_supporter[1])
                     });
                 }
+                if (comp_eff_supporter[2]) {
+                    loader.addEventListener("fileload", function(evt) {
+                        handleFileLoad(evt, comp_eff_supporter[2])
+                    });
+                    loader.addEventListener("complete", function(evt) {
+                        handleComplete(evt, comp_eff_supporter[2])
+                    });
+                }
+                if (comp_eff_supporter[3]) {
+                    loader.addEventListener("fileload", function(evt) {
+                        handleFileLoad(evt, comp_eff_supporter[3])
+                    });
+                    loader.addEventListener("complete", function(evt) {
+                        handleComplete(evt, comp_eff_supporter[3])
+                    });
+                }
                 var new_manifest = [];
                 for (var i = 0, len = lib.properties.manifest.length; i < len; i++) {
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
@@ -891,15 +415,19 @@
                     if (window.bg_replace_images[_prefix]) {
                         _img_path = '../../../image_sp/event_flash/story/bg/bg' + window.bg_replace_images[_prefix] + '_wide.jpg';
                     }
+                    // op背景
+                    if (window.op_bg_replace_images[_prefix]) {
+                        _img_path = '../../../image_sp/event_flash/story/bg/bg' + window.op_bg_replace_images[_prefix] + '.jpg';
+                    }
                     if (window.chara_replace_images[_prefix]) {
                         _img_path = window.chara_replace_images[_prefix];
                     }
                     if (window.replace_images[_prefix]) {
-                        _img_path = '/' + window.replace_images[_prefix];
+                        _img_path = window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + encodeURIComponent(window.base_url + _img_path),
+                        'src': encodeURIComponent(_img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }

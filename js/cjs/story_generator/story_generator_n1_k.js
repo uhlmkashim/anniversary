@@ -396,7 +396,7 @@
     }).prototype = f(b.white_overlay, new a.Rectangle(-120, -155, 240, 310), null);
     (b.textfield = function(b, d, e) {
         this.initialize(b, d, e, {});
-        this.message = new a.Text("", "12px 'Arial'");
+        this.message = new a.Text("", "12px 'NanumSquare'");
         this.message.name = "message";
         this.message.lineHeight = 16;
         this.message.lineWidth = 224;
@@ -444,7 +444,7 @@
             d, e, {});
         this.frame_0 = function() {};
         this.timeline.addTween(a.Tween.get(this).call(this.frame_0).wait(1));
-        this.title = new a.Text("?", "16px 'Arial'", "#333333");
+        this.title = new a.Text("?", "16px 'NanumSquare'", "#333333");
         this.title.name = "title";
         this.title.textAlign = "center";
         this.title.lineHeight = 18;
@@ -555,7 +555,7 @@
     }).prototype = f(b.gr_white_cover, new a.Rectangle(-120, -160, 240, 320), null);
     (b.gr_nametxt = function(b, d, e) {
         this.initialize(b, d, e, {});
-        this.name_text = new a.Text("", "16px 'Arial'");
+        this.name_text = new a.Text("", "16px 'NanumSquare'");
         this.name_text.name = "name_text";
         this.name_text.lineHeight = 18;
         this.name_text.lineWidth = 171;
