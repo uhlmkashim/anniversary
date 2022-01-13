@@ -1,0 +1,1628 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 134800333;
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/game_error/report_js_error";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/underscore-min.js"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/require.js"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/tweenjs-0.6.2.min.js",
+                movieclipjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/movieclip-0.7.1.min.js",
+                createjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/common.js"></script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/memory/detail/1738/0/0');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css" />
+</head>
+
+<body id="memory" class="detail">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <style type="text/css">
+            .comments {
+                min-height: 115px;
+                text-align: left;
+                color: #1d1d1d;
+                padding: 25px 20px 10px;
+                position: relative;
+                top: -50px;
+            }
+
+            .comments.cute {
+                background: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/event_memory/cute_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.cool {
+                background: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/event_memory/cool_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.passion {
+                background: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/event_memory/passion_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .icon_navi {
+                width: auto;
+                margin: 0 13px;
+                padding: 8px 0;
+                background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 130, from(#222), to(#333));
+                -webkit-border-radius: 6px;
+            }
+
+            .cover {
+                height: 370px;
+            }
+
+            .exBox {
+                width: 320px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            a.inline {
+                width: 300px;
+                height: 70px;
+                color: #1d1d1d;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .exArea {
+                width: 260px;
+                margin: 10px auto 0;
+                padding: 0;
+                border: 2px solid #b4d5f4;
+                background: #1d1d1d;
+                z-index: 10;
+                color: #ffffff;
+                line-height: 140%;
+                -webkit-border-radius: 8px;
+            }
+
+            .exArea h3 {
+                background: #17285c;
+                -webkit-border-top-left-radius: 8px;
+                -webkit-border-top-right-radius: 8px;
+                padding: 10px 0;
+            }
+
+            .check_close_btn {
+                top: -10px;
+                width: 37px;
+                height: 37px;
+                right: 20px;
+                display: block;
+            }
+
+            .m-12px {
+                margin-top: -12px;
+            }
+
+            .appear_idol_area .appear_idol_bg {
+                position: relative;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_chara {
+                position: absolute;
+                top: -15px;
+                left: 0;
+                z-index: 1;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_title_area {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                z-index: 2;
+                width: 320px;
+                height: 36px;
+            }
+
+            .appear_idol_area .appear_idol_title_bg {
+                position: relative;
+                background-image: url('http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/event_memory/appear_idol_title_bg.png');
+                background-size: 320px;
+                background-repeat: no-repeat;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: transparent;
+                padding-left: 34px;
+                -webkit-mask-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .appear_idol_area .appear_idol_title_text {
+                position: relative;
+                top: 2px;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: #1d1d1d;
+                padding-left: 34px;
+                text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
+            }
+
+            .appear_idol_area .appear_idol_title_text._line_2 {
+                top: -1px;
+                font-size: 12px;
+            }
+        </style>
+        <header style="margin:0 0 5px;">
+            <h1 style="margin:0 0 10px;"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_event.jpg' width="100%" alt="アイドルプロデュース<br />the 10th Anniversary" class="m-12px"></h1>
+            <div class="titleH2" style="margin:0 auto; padding:5px; line-height:110%;"><span class="blue">開催期間</span><br>2021/11/28 ～ 2021/12/09</div>
+        </header><img src="http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/ui/line_hoshi.jpg" width="100%"><br>
+        <section class="naviArea"><img src="http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/ui/navi/tujo_m2.png" width="90">
+            <div class="Wrap">
+                <div class="fukiRight">アイドルのみんなが力を合わせて作り上げたミュージアム、そして最後はアニバーサリーLIVEとどちらも共に大盛況でしたね! アイドルのみんな、ファンのみなさんにとって最高の思い出になったはずです♪<br></div>
+            </div>
+        </section><img src="http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm10"><br>
+        <h2 class="title_img_blue" style="margin:0;">
+            <div>登場アイドル</div>
+        </h2>
+        <section class="iSlider">
+            <div class="underline"></div>
+            <div class="medal_idol">
+                <style>
+                    .cover {
+                        height: inherit;
+                    }
+                </style>
+                <div class="medal_slide" style="height:369px;">
+                    <ul class="slides" style="display:none;">
+                        <li class="appear_idol_area" style="width:320px;margin:0; position:relative;">
+                            <h3 class="slideTitle">
+                                <div class="name">[10thｱﾆﾊﾞｰｻﾘｰ]本田未央+</div>
+                                <div class="icon">
+                                    <div class="type att_3"></div>
+                                    <div class="rarity r_6"></div>
+                                </div>
+                            </h3>
+                            <div style="position:relative;">
+                                <div style="height:300px;overflow:hidden;position:relative;">
+                                    <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/bg_area_xl_5320.jpg' class="appear_idol_bg" style="width:320px;height:335px;">
+                                    <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/card/quest/4d7a5b08dbc3090d69a7ef8cc2bb0f03.jpg' class="appear_idol_chara"></div>
+                                <div class="appear_idol_title_area""><div class=" appear_idol_title_bg" style="">アイドルプロデュース<br />the 10th Anniversary</div>
+                            </div>
+                            <div class="appear_idol_title_area">
+                                <div class="appear_idol_title_text _line_2">アイドルプロデュース<br />the 10th Anniversary</div>
+                            </div>
+                            <div class="comments passion" style="z-index:2;top:-48px;">
+                                <div>
+                                    <p class="l-Hgt120">眩しい? 私の輝きに､限界はなｰし! 銀河の果てまで煌めくよ!</p>
+                                </div>
+                            </div>
+                </div>
+                </li>
+                <li class="appear_idol_area" style="width:320px;margin:0; position:relative;">
+                    <h3 class="slideTitle">
+                        <div class="name">[10thｱﾆﾊﾞｰｻﾘｰ]渋谷凛+</div>
+                        <div class="icon">
+                            <div class="type att_2"></div>
+                            <div class="rarity r_6"></div>
+                        </div>
+                    </h3>
+                    <div style="position:relative;">
+                        <div style="height:300px;overflow:hidden;position:relative;">
+                            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/bg_area_xl_5320.jpg' class="appear_idol_bg" style="width:320px;height:335px;">
+                            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/card/quest/d82a50254b2d126c7b8bfbc3fd66f5a8.jpg' class="appear_idol_chara"></div>
+                        <div class="appear_idol_title_area""><div class=" appear_idol_title_bg" style="">アイドルプロデュース<br />the 10th Anniversary</div>
+                    </div>
+                    <div class="appear_idol_title_area">
+                        <div class="appear_idol_title_text _line_2">アイドルプロデュース<br />the 10th Anniversary</div>
+                    </div>
+                    <div class="comments cool" style="z-index:2;top:-48px;">
+                        <div>
+                            <p class="l-Hgt120">私たちと､ﾌﾟﾛﾃﾞｭｰｻｰで作ったｽﾃｰｼﾞ…張り切らなきゃ､嘘だよね</p>
+                        </div>
+                    </div>
+            </div>
+            </li>
+            <li class="appear_idol_area" style="width:320px;margin:0; position:relative;">
+                <h3 class="slideTitle">
+                    <div class="name">[10thｱﾆﾊﾞｰｻﾘｰ]島村卯月+</div>
+                    <div class="icon">
+                        <div class="type att_1"></div>
+                        <div class="rarity r_6"></div>
+                    </div>
+                </h3>
+                <div style="position:relative;">
+                    <div style="height:300px;overflow:hidden;position:relative;">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/bg_area_xl_5320.jpg' class="appear_idol_bg" style="width:320px;height:335px;">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/card/quest/d95050958bf6873744d077da0b6918b1.jpg' class="appear_idol_chara"></div>
+                    <div class="appear_idol_title_area""><div class=" appear_idol_title_bg" style="">アイドルプロデュース<br />the 10th Anniversary</div>
+                </div>
+                <div class="appear_idol_title_area">
+                    <div class="appear_idol_title_text _line_2">アイドルプロデュース<br />the 10th Anniversary</div>
+                </div>
+                <div class="comments cute" style="z-index:2;top:-48px;">
+                    <div>
+                        <p class="l-Hgt120">世界中のみんなに声が届くまで､何度でも歌います､ずっと…!</p>
+                    </div>
+                </div>
+    </div>
+    </li>
+    <li class="appear_idol_area" style="width:320px;margin:0; position:relative;">
+        <h3 class="slideTitle">
+            <div class="name">[ｱﾆﾊﾞｰｻﾘｰﾌﾟﾘﾝｾｽ]鷺沢文香</div>
+            <div class="icon">
+                <div class="type att_2"></div>
+                <div class="rarity r_5"></div>
+            </div>
+        </h3>
+        <div style="position:relative;">
+            <div style="height:300px;overflow:hidden;position:relative;">
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/bg_area_xl_5320.jpg' class="appear_idol_bg" style="width:320px;height:335px;">
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/card/quest/042ab185218d32236d671f2f396f452c.jpg' class="appear_idol_chara"></div>
+            <div class="appear_idol_title_area""><div class=" appear_idol_title_bg" style="">アイドルプロデュース<br />the 10th Anniversary</div>
+        </div>
+        <div class="appear_idol_title_area">
+            <div class="appear_idol_title_text _line_2">アイドルプロデュース<br />the 10th Anniversary</div>
+        </div>
+        <div class="comments cool" style="z-index:2;top:-48px;">
+            <div>
+                <p class="l-Hgt120">幻でも､奇跡でもなく…今日は､私たちが紡いだ確かな現実です</p>
+            </div>
+        </div>
+        </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <ol class="icon_navi">
+        <li><a>0</a></li>
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+    </ol>
+    </section>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/islider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.medal_slide').iSlider({
+            slideshowSpeed: 5000,
+            navi: ".icon_navi",
+            selected: "icon_selected",
+            touch: true,
+            loop: true
+        });
+    </script>
+    <section class="t-Cnt m-Btm0"><img src="http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/ui/line_hanyo_ten.jpg" width="100%" class="m-Btm10"><br>
+        <p class="m-Btm10"><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/cartoon/scene/1563' class="jsOnDesignBtn">
+            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/event_memory/theater/1563.jpg' style="width:150px; height:40px;"></a></p>
+        <div class="t-Cnt m-Top12 m-Btm12">
+            <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/memorial2/1738' class="jsOnDesignBtn">
+            <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/extramemory/extra_banner.png' width="280" height="44"></a></div>
+        <div class="area-btn-common _base-width m-Btm8">
+            <a class="btn_normal_line_2 " href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/show_opening/1738/0/0/1'><span style="font-size: 12px;">イベントOP演出を見る</span></a>
+            <a class="btn_normal_line_2 " href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/show_opening/1738/0/0/2'><span style="font-size: 12px;">後半開始演出を見る</span></a>
+        </div>
+        <div class="area-btn-common _base-width m-Btm8">
+            <a class="btn_normal_line_2 " href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/show_opening/1738/0/0/3'><span style="font-size: 12px;">イベントED演出を見る</span></a>
+        </div>
+        <div style="background:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/episode/epi_frame_prof_top.jpg) center top no-repeat;background-size:326px;width:304px;height:44px; line-height:47px; margin:0 auto;">
+            登場アイドル一覧<br>
+        </div>
+        <div style="background:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/episode/epi_frame_prof_line.jpg) center top repeat-y;background-size:326px;width:304px;text-align:center;margin:0 auto;">
+            <ul style="width:220px; margin:0 auto; padding: 10px 0 0; overflow:hidden; text-align:left;" class="displayBox">
+                <li style="padding:5px 3px 5px 0px;">
+                    <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/idol_gallery/idol_detail/4d7a5b08dbc3090d69a7ef8cc2bb0f03" class="jsOnDesignBtn">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/card/xs/4d7a5b08dbc3090d69a7ef8cc2bb0f03.jpg' style='width:50px; height:50px;'></a></li>
+                <li style="padding:5px 3px;">
+                    <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/idol_gallery/idol_detail/d82a50254b2d126c7b8bfbc3fd66f5a8" class="jsOnDesignBtn">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/card/xs/d82a50254b2d126c7b8bfbc3fd66f5a8.jpg' style='width:50px; height:50px;'></a></li>
+                <li style="padding:5px 3px;">
+                    <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/idol_gallery/idol_detail/d95050958bf6873744d077da0b6918b1" class="jsOnDesignBtn">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/card/xs/d95050958bf6873744d077da0b6918b1.jpg' style='width:50px; height:50px;'></a></li>
+                <li style="padding:5px 3px;">
+                    <a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/idol_gallery/idol_detail/042ab185218d32236d671f2f396f452c" class="jsOnDesignBtn">
+                        <img src='http://sp.pf-img-a.mbga.jp/12008305?url=http://mobamas.net/idolmaster/image_sp/card/xs/042ab185218d32236d671f2f396f452c.jpg' style='width:50px; height:50px;'></a></li>
+            </ul>
+            <ul style="width:220px; margin:0 auto; overflow:hidden; text-align:left;" class="displayBox">
+            </ul>
+        </div>
+        <div style="background:url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/episode/epi_frame_prof_bottom.jpg) center top no-repeat;background-size:326px; width:304px; height:19px; margin:0 auto 10px;"></div>
+    </section>
+    <link rel="stylesheet" type="text/css" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/css/rich/event_produce.css' media="all">
+    <style>
+        .encore_color {
+            color: #ff7100;
+        }
+
+        ._ls {
+            letter-spacing: -0.9px;
+        }
+
+        .select_area .tab_line_4_1._free_line {
+            letter-spacing: -0.9px;
+        }
+    </style>
+    <h2 class="title_img_blue" style="margin:0;">
+        <div>コミュイベントメモリー</div>
+    </h2>
+    <div class="area_look_back">
+        <section class="area_select_idol t-Cnt m-Top4" id="main_idol_tab">
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=1>
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/rich/icon_idol_1_1.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=2>
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/rich/icon_idol_2_1.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=3>
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/rich/icon_idol_3_1.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=4>
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/rich/icon_idol_4_1.png' width="60"></a></section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_1 area_select_area _attr_3" data-idol_id=1 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px">
+                <img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_stage_chara_101.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">本田未央</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_1" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">設営中のミュージアム</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">開館中のミュージアム</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">パーティー会場</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/1' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/2' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/3' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/4' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/5' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/6' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/7' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/1/8' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/1/1' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="1" data-bg_id="2" data-idol_name="本田未央" data-idol_area="開館中のミュージアム">解放する</a>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="1" data-bg_id="3" data-idol_name="本田未央" data-idol_area="LIVEステージ">解放する</a>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="1" data-bg_id="4" data-idol_name="本田未央" data-idol_area="パーティー会場">解放する</a>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_2 area_select_area _attr_2" data-idol_id=2 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_stage_chara_201.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">渋谷凛</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_2" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">設営中のミュージアム</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">開館中のミュージアム</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">パーティー会場</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/1' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/2' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/3' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/4' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/5' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/6' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/7' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/2/8' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/2/2' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="2" data-bg_id="2" data-idol_name="渋谷凛" data-idol_area="開館中のミュージアム">解放する</a>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="2" data-bg_id="3" data-idol_name="渋谷凛" data-idol_area="LIVEステージ">解放する</a>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="2" data-bg_id="4" data-idol_name="渋谷凛" data-idol_area="パーティー会場">解放する</a>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_3 area_select_area _attr_1" data-idol_id=3 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_stage_chara_301.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">島村卯月</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_3" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">設営中のミュージアム</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">開館中のミュージアム</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">パーティー会場</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/1%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D175818340' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/2%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D743757841' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/3%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D807916259' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/4%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D117534440' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/5%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D85137196' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/6%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D621837368' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/7%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D976239585' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/8%3Farea_id%3D3%26l_frm%3DMemory_detail_1%26rnd%3D584243105' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/3/3%3Fbg_id%3D%26l_frm%3DMemory_detail_1%26rnd%3D243009236' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/17' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/18' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/19' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/20' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/21' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/22' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/23' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/3/24' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/3/7' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="3" data-bg_id="3" data-idol_name="島村卯月" data-idol_area="LIVEステージ">解放する</a>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <div class="area_unlock_description m-Top8 m-Btm8">解放条件を満たしていません</div>
+                    <div class="t-Cnt m-Btm4" style="font-size:11px;color:#1d1d1d;text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;line-height:120%">未解放のコミュイベントメモリーは<br>スターエンブレム×5個で解放できます</div><a href='#' class="btn_decision_line_2 m-Cnt js_epsode_release" data-idol_id="3" data-bg_id="4" data-idol_name="島村卯月" data-idol_area="パーティー会場">解放する</a>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_4 area_select_area _attr_2" data-idol_id=4 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_stage_chara_401.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">鷺沢文香</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_4" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">設営中のミュージアム</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">開館中のミュージアム</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">パーティー会場</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/1' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/2' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/3' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/4' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/5' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/6' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/7' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/8' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/4/4' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/17' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/18' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/19' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/20' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/21' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/22' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/23' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/24' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/4/8' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/41' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/42' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/43' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/44' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/45' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/46' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/47' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/48' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/4/12' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/65' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/66' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/67' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/68' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/69' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/70' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/71' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/72' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/89' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/work_memory/1738/4/90' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント5</div>
+                            </a></li>
+                        <li><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/redirect_episode_commu_swf_memory/1738/4/16' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="area-frame_common _hd_blue _bd_black ibox_content" id="commu_event_memory_popup">
+        <div class="area-frame_wrap"><a href="#" class="btn-ibox-close icon_close ibox_close jsOnDesignBtn" style="top:-14px">
+                <div></div>
+            </a>
+            <h3 class="area-frame_header m-Btm8">
+                <div class="area-frame_title">コミュイベントメモリー解放</div>
+            </h3>
+            <div class="t-Cnt m-Btm8" style="font-size:12px"><span id="js_idol_name" class="yellow"></span>・<span id="js_idol_area" class="yellow"></span><br>のコミュイベントメモリーを解放します</div>
+            <div style="font-size:12px" class="t-Cnt m-Btm8"><span class="blue">必要スターエンブレム</span>: <span class="yellow">5</span>個<br><span class="blue">所持スターエンブレム</span>: 8,304個 ⇒ <span class="yellow">8,299</span>個</div>
+            <div class="area-btn-common _base-width m-Btm4"><a href='#' class="ibox_close btn_cancel_line_2">キャンセル</a>
+                <form action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory_produce/exec_commu_memory_exchange' method="post"><input type="hidden" name="idol_id" id="js_idol_id" value=""><input type="hidden" name="bg_id" id="js_bg_id" value=""><input type="hidden" name="event_id" value="1738"><input type="hidden" name="csrf_test_name" value="d755bf927ae241c43bf4b92aacd82ed8"><label for="submit_id" class="btn_decision_line_2 m-Cnt m-Btm4"><input type="submit" value="解放する" id="submit_id"></label></form>
+            </div>
+            <div class="area-frame_bg_image"></div>
+        </div>
+    </div><a href='#commu_event_memory_popup' class="ibox" id="js_release_popup"></a><a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/personal_option/work' class="btn_sup_line_2 m-Cnt m-Btm12">お仕事演出設定</a>
+    <script type="text/javascript">
+        $(function() {
+            $('form').bind('submit', function() {
+                var $submit = $("input[type=submit], input[type=reset]");
+                for (var i = 0; i < $submit.length; i++) {
+                    if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).val('送信中');
+                        $submit.eq(i).prop('disabled', true);
+                        var prev = $submit.eq(i).prev();
+                        if (prev.hasClass('btn_text')) {
+                            prev.text('送信中');
+                            if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                $submit.eq(i).parent().removeClass('_line_2');
+                            }
+                        }
+                    } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).prop('disabled', true);
+                    }
+                    if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                        $submit.eq(i).parent().css({
+                            "opacity": "0.5"
+                        });
+                    }
+                }
+                $(".livebutton input[type='submit']").val('').css({
+                    "opacity": "0.5"
+                }).prop('disabled', true);
+                var $imagesub = $("input[type='image']");
+                $imagesub.prop('disabled', true);
+                for (var i = 0; i < $imagesub.length; i++) {
+                    if (!$imagesub.eq(i).attr('class')) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                        continue;
+                    }
+                    if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                    } else {
+                        $imagesub.eq(i).css({
+                            "opacity": "1"
+                        });
+                    }
+                }
+                setTimeout(function() {
+                    $submit.prop('disabled', false).parent().css({
+                        "opacity": "1"
+                    });
+                    $imagesub.prop('disabled', false).css({
+                        "opacity": "1"
+                    });
+                    $(".livebutton input[type='submit']").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $(".submit a").click(function() {
+                $(this).click(function() {
+                    return false;
+                })
+                $(".submit").find("img").css({
+                    "opacity": "0.5"
+                });
+                setTimeout(function() {
+                    $(this).click(function() {
+                        return true;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $('body').on("click", '.stop-repeat-link', function(e) {
+                var self = $('.stop-repeat-link');
+                self.css({
+                    'pointer-events': 'none',
+                    'opacity': 0.6
+                });
+                setTimeout(function() {
+                    self.css({
+                        'pointer-events': 'auto',
+                        'opacity': 1
+                    });
+                }, 2500);
+            });
+        });
+    </script>
+    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/js/ilibrary.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        'use strict';
+        var produce_idols = {
+            "1": {
+                "produce_idol_id": "1",
+                "produce_idoleimage1": "3000101",
+                "produce_idoleimage2": "3468201",
+                "produce_idoleimage3": "3568202",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "1",
+                "produce_idol_flash2": "1",
+                "produce_idol_flash3": "1",
+                "produce_idol_flash4": "1",
+                "produce_idol_name": "本田未央",
+                "produce_idol_type": "3",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "4",
+                "complete_rank2": "14",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "1",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "1",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "12000",
+                "rank3_up_event_point": "18000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "私の光、もっとずっと遠くまで届かせよう! 星空の上を、これからも進むよ。%sプロデューサーと☆",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "プロデューサーの言葉は、いつだってキラキラしてるよね! だから、もっと聞いていたいんだ。たくさん話そうよ。私とふたりでさ♪",
+                "encore_time_comment": "私のワガママ、聞いてくれる? ふたりの時間がもっと続いてほしい…%sプロデューサーのこと、独り占めしていいかな?",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "2",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "3",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "3",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "2": {
+                "produce_idol_id": "2",
+                "produce_idoleimage1": "2000101",
+                "produce_idoleimage2": "2468601",
+                "produce_idoleimage3": "2568602",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "2",
+                "produce_idol_flash2": "2",
+                "produce_idol_flash3": "2",
+                "produce_idol_flash4": "2",
+                "produce_idol_name": "渋谷凛",
+                "produce_idol_type": "2",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "5",
+                "complete_rank2": "19",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "2",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "2",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "16000",
+                "rank3_up_event_point": "24000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "プロデューサー、もっと堂々としなよ。自慢のプロデューサーです、って言わないと自信持てない? …言ってもいいよ。本当のことだし",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "ごめん、ちょっと待って。プロデューサーの顔見てたら…話したいことがどんどん出てきた。なにそれ、って感じだよね。ふふっ",
+                "encore_time_comment": "…プロデューサー、もうちょっとだけここにいたら? …別に、言葉なんて要らないよ。私の近くにいてくれるだけで、十分だから",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "2",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "3",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "3",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "3": {
+                "produce_idol_id": "3",
+                "produce_idoleimage1": "1000101",
+                "produce_idoleimage2": "1468001",
+                "produce_idoleimage3": "1568002",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "3",
+                "produce_idol_flash2": "3",
+                "produce_idol_flash3": "3",
+                "produce_idol_flash4": "3",
+                "produce_idol_name": "島村卯月",
+                "produce_idol_type": "1",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "6",
+                "complete_rank2": "24",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "3",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "3",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "19000",
+                "rank3_up_event_point": "28000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "あなたのアイドル、島村卯月です! えへへ、言ってみたかったんです。ここにいる私は、プロデューサーさんが育てたんですから♪",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "プロデューサーさんとだと話が尽きなくて…もう少しお話ししてもいいですか? できれば二人だけで…。ナイショのお話、ですね♪",
+                "encore_time_comment": "プロデューサーさんのお話も聞かせてください。どんなお話でも構いません。今はただ、あなたの声を聞いていたいんです…♪",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "2",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "3",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "3",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "4": {
+                "produce_idol_id": "4",
+                "produce_idoleimage1": "2002601",
+                "produce_idoleimage2": "2536302",
+                "produce_idoleimage3": "2468501",
+                "produce_idoleimage4": "2568502",
+                "produce_idol_flash1": "4",
+                "produce_idol_flash2": "4",
+                "produce_idol_flash3": "4",
+                "produce_idol_flash4": "4",
+                "produce_idol_name": "鷺沢文香",
+                "produce_idol_type": "2",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "6",
+                "complete_rank2": "18",
+                "complete_rank3": "",
+                "complete1_item_category": "40",
+                "complete1_item": "466",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "40",
+                "complete2_item": "466",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "25000",
+                "rank3_up_event_point": "37000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "変わりたい…そんな、私の淡い憧れは、%sさんの手で、眩い希望へ…そして、夢から現実へと形を変えました",
+                "rank3_up_comment": "…書ですら、時と共に評価は移ろいます。それでも…信じようと思います。…私の未来は変わらず、貴方と共に在る、と",
+                "rank4_up_comment": "",
+                "fever_time_comment": "%sさんに、お願いが…貴方の隣に居られる喜びを、まだ味わっていたいのです。…できれば、もう少し近くで…",
+                "encore_time_comment": "どうか…もう少しだけ、一緒に。言葉を交わしても、交わさずとも…貴方の隣で見る景色は、美しく、愛おしいものですから",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "2",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "3",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "4",
+                        "mission_bg": 4
+                    }
+                }
+            }
+        };
+        var stage_data = {
+            "1": "設営中のミュージアム",
+            "2": "開館中のミュージアム",
+            "3": "LIVEステージ",
+            "4": "パーティー会場"
+        };
+        var extra_idol_key = null;
+        var extra_stage_data = null;
+        var current_area_info = {};
+        // アイドルタブ活性化
+        $('#main_idol_tab').tab_switch({
+            contents: "[class^='main_idol_tab_']",
+            storage: "produce_memory_idol_tab"
+        });
+        // エリアタブ活性化
+        $('#small_tab_1').tab_switch({
+            contents: "[class^='small_area_tab_1']",
+            storage: "produce_memory_idol_tab_mini_1"
+        });
+        var $area_id = $('.main_idol_tab_' + (1)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (1)).data('view');
+        current_area_info[1] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_2').tab_switch({
+            contents: "[class^='small_area_tab_2']",
+            storage: "produce_memory_idol_tab_mini_2"
+        });
+        var $area_id = $('.main_idol_tab_' + (2)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (2)).data('view');
+        current_area_info[2] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_3').tab_switch({
+            contents: "[class^='small_area_tab_3']",
+            storage: "produce_memory_idol_tab_mini_3"
+        });
+        var $area_id = $('.main_idol_tab_' + (3)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (3)).data('view');
+        current_area_info[3] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_4').tab_switch({
+            contents: "[class^='small_area_tab_4']",
+            storage: "produce_memory_idol_tab_mini_4"
+        });
+        var $area_id = $('.main_idol_tab_' + (4)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (4)).data('view');
+        current_area_info[4] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // アイドル画像描画
+        function viewIdol(idol_key, area_id) {
+            var img_path_pattern = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event/1738/top_stage_chara_XXX.png';
+            var idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+            if (!idol_img_path) {
+                while (!idol_img_path) {
+                    area_id++;
+                    idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+                }
+            }
+            if (idol_img_path) {
+                var _idol_img_path = img_path_pattern.replace('XXX', idol_key + '0' + idol_img_path.mission_costume);
+                $('.idol_img').attr('src', _idol_img_path);
+            }
+        }
+        // エリア名と背景描画
+        function viewBgText(idol_key, area_id) {
+            var $area_tab = $('.area_select_area').filter(function(element, index, array) {
+                return ($(index).data('idol_id') == idol_key);
+            });
+            // 背景表示
+            var imagePathPattern = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg__AREA_ID___rich.jpg'
+            var idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+            if (idol_key == 5 && area_id == 1 & 1738 == 1735) {
+                $area_tab
+                    .find('.bg_area')
+                    .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', 1) + ')')
+            } else {
+                if (!idol_img_path) {
+                    while (!idol_img_path) {
+                        area_id++;
+                        idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+                    }
+                }
+                if (idol_img_path) {
+                    var _area_bg_id = produce_idols[idol_key].bg_costume_list[area_id].mission_bg;
+                    $area_tab
+                        .find('.bg_area')
+                        .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', _area_bg_id) + ')')
+                }
+            }
+            // エリア名表示
+            var _stage_data = (idol_key == extra_idol_key) ? extra_stage_data : stage_data;
+            if (idol_key == 5 && area_id == 1 & 1738 == 1735) {
+                $area_tab
+                    .find('.main_area_name')
+                    .text("校庭");
+            } else {
+                $area_tab
+                    .find('.main_area_name')
+                    .text(_stage_data[area_id]);
+            }
+            // エリア名表示
+            /*var _stage_data  = (idol_key == extra_idol_key) ? extra_stage_data : stage_data;
+            $area_tab
+            .find('.main_area_name')
+            .text(_stage_data[area_id]);
+            */
+            // 背景表示
+            /*var imagePathPattern = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/event_flash/1738/bg/1738/bg__AREA_ID___rich.jpg'
+            var _area_bg_id = produce_idols[idol_key].bg_costume_list[area_id].mission_bg;
+            $area_tab
+            .find('.bg_area')
+            .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', _area_bg_id) + ')')
+            */
+        }
+        // 初期描画
+        var $idol_tab = $('.tab_idol_list').filter(function(element, index, array) {
+            return ($(index).hasClass('selected'));
+        });
+        $.each(current_area_info, function(index, elem) {
+            var $area_tab = $('#small_tab_' + index + ' a').filter(function(element, index, array) {
+                return ($(index).data('area_id') == elem);
+            });
+            $area_tab.trigger('click');
+        });
+        var current_idol_key = $idol_tab.data('key');
+        viewBgText(current_idol_key, current_area_info[current_idol_key]);
+        viewIdol(current_idol_key, current_area_info[current_idol_key]);
+        // アイドルタブ制御
+        $('.tab_idol_list').on('click', function() {
+            var idol_key = $(this).data('key');
+            viewBgText(idol_key, current_area_info[idol_key]);
+            viewIdol(idol_key, current_area_info[idol_key]);
+        });
+        // エリアタブ制御
+        $('.js_tab_elm').find('a').on('click', function() {
+            var idol_key = $('.tab_idol_list.selected').data('key');
+            var area_id = $(this).data('area_id');
+            current_area_info[idol_key] = area_id;
+            viewBgText(idol_key, area_id);
+            viewIdol(idol_key, area_id);
+        });
+        $('.js_epsode_release').on('click', function(e) {
+            $('#js_idol_name').text($(this).data('idol_name'));
+            $('#js_idol_area').text($(this).data('idol_area'));
+            $('#js_idol_id').val($(this).data('idol_id'));
+            $('#js_bg_id').val($(this).data('bg_id'));
+            $('#js_release_popup').trigger('click');
+            e.preventDefault();
+        });
+    </script>
+    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm8"><br>
+    <form method="POST" action='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/detail/1738/0/0' style="margin:0">
+        <input type="hidden" name="before_event_id" value="848">
+        <input type="hidden" name="after_event_id" value="2012">
+        <input type="hidden" name="first_event_id" value="101">
+        <input type="hidden" name="last_event_id" value="763">
+        <div class="pager_area" style="height:74px;">
+            <div class="pager_submit_area"><input type="number" name="target_page_num" id="jsPageNumber" pattern="\d*" value="">ページに<label class="btn_normal_line_4 _disabled m-Cnt m-Btm8" id="jsMovePagerLabel" for="jsMovePagerBtn" style="display:inline-block;vertical-align:middle;margin-left:5px;margin-bottom:3px;"><input id="jsMovePagerBtn" type="submit" value="移動" style="width:inherit;height:inherit;line-height:inherit;margin:0;"></label></div>
+            <div class="pager_panel_area"><input type="submit" name="first" class="btn_pager_first jsNotDisabled jsOnDesignBtn" value="1"><input type="submit" name="prev" class="btn_pager_back jsNotDisabled jsOnDesignBtn" value="1"><input type="submit" name="next" class="btn_pager_next jsNotDisabled jsOnDesignBtn" value="1"><input type="submit" name="last" class="btn_pager_last jsNotDisabled jsOnDesignBtn" value="1">405 / 408</div>
+        </div><input type="hidden" name="is_paging" value="1">
+        <script>
+            $('#jsPageNumber').focus(function() {
+                $('#jsMovePagerLabel').removeClass("_disabled");
+            });
+        </script>
+    </form>
+    <img src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm8"><br>
+    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/memory/index/0/0'>
+        <div class="backLink">イベントメモリーTOP</div>
+    </a>
+    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/mypage'>
+        <div class="backLink">マイスタジオ</div>
+    </a>
+    <script type="text/javascript">
+        $(function() {
+            $('form').bind('submit', function() {
+                var $submit = $("input[type=submit], input[type=reset]");
+                for (var i = 0; i < $submit.length; i++) {
+                    if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).val('送信中');
+                        $submit.eq(i).prop('disabled', true);
+                        var prev = $submit.eq(i).prev();
+                        if (prev.hasClass('btn_text')) {
+                            prev.text('送信中');
+                            if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                $submit.eq(i).parent().removeClass('_line_2');
+                            }
+                        }
+                    } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).prop('disabled', true);
+                    }
+                    if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                        $submit.eq(i).parent().css({
+                            "opacity": "0.5"
+                        });
+                    }
+                }
+                $(".livebutton input[type='submit']").val('').css({
+                    "opacity": "0.5"
+                }).prop('disabled', true);
+                var $imagesub = $("input[type='image']");
+                $imagesub.prop('disabled', true);
+                for (var i = 0; i < $imagesub.length; i++) {
+                    if (!$imagesub.eq(i).attr('class')) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                        continue;
+                    }
+                    if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                    } else {
+                        $imagesub.eq(i).css({
+                            "opacity": "1"
+                        });
+                    }
+                }
+                setTimeout(function() {
+                    $submit.prop('disabled', false).parent().css({
+                        "opacity": "1"
+                    });
+                    $imagesub.prop('disabled', false).css({
+                        "opacity": "1"
+                    });
+                    $(".livebutton input[type='submit']").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $(".submit a").click(function() {
+                $(this).click(function() {
+                    return false;
+                })
+                $(".submit").find("img").css({
+                    "opacity": "0.5"
+                });
+                setTimeout(function() {
+                    $(this).click(function() {
+                        return true;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $('body').on("click", '.stop-repeat-link', function(e) {
+                var self = $('.stop-repeat-link');
+                self.css({
+                    'pointer-events': 'none',
+                    'opacity': 0.6
+                });
+                setTimeout(function() {
+                    self.css({
+                        'pointer-events': 'auto',
+                        'opacity': 1
+                    });
+                }, 2500);
+            });
+        });
+    </script>
+    <footer>
+        <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+            <div></div>
+        </a>
+    </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
