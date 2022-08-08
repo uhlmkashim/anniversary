@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href='../../../../../css/game/pex.css' media="all">
-    <script src='../../../../../js/jquery-1.9.1.min.js'></script>
+    <link rel="stylesheet" href='../css/game/pex.css' media="all">
+    <script src='../js/jquery-1.9.1.min.js'></script>
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/cinderella_history/play_episode/44/3000110');
+                newrelic.setPageViewName('/idolmaster/index.php/cinderella_history/play_episode/177');
             }
         });
     </script>
@@ -59,27 +59,27 @@
             width: 40px;
         }
     </style>
-    <script type='text/javascript' src='../../../../../js/createjs.min.js'></script>
-    <script type='text/javascript' src='../../../../../js/app_sound.js'></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/story_generator_n10.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_notice.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_sweat_fly.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_flower_yellow.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_flower_red.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_chord.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_shock.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_shock2.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_drop.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/createjs.min.js'></script>
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/story_generator_n10.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_notice.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_sweat_fly.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_flower_yellow.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_flower_red.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_chord.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_shock.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_shock2.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_drop.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
     <script type='text/javascript'>
         var se_flg = 0,
             bgm_flg = 0,
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='../../../../../js/app_sound.js'></script>
-    <link rel="stylesheet" type="text/css" href="../../../../../css/base.css" />
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
 </head>
 
 <body style="margin:0px;">
@@ -114,7 +114,7 @@
         window.im_cjs = window.im_cjs || {};
         window.replace_images = [];
         window.file_name = "story_generator_n10"; // createjs の本体ファイルを定義
-        window.dir_name = "../../../../../image_sp/cjs/genechara/";
+        window.dir_name = "../image_sp/cjs/genechara/";
         window.im_cjs = {
             "scene_list": [{
                 "id": "1",
@@ -2872,14 +2872,14 @@
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     // 背景
                     if (window.bg_replace_images[_prefix]) {
-                        _img_path = '../../../../../image_sp/event_flash/story/bg/bg' + window.bg_replace_images[_prefix] + '_wide.jpg';
+                        _img_path = '../image_sp/event_flash/story/bg/bg' + window.bg_replace_images[_prefix] + '_wide.jpg';
                     }
                     // op背景
                     if (window.op_bg_replace_images[_prefix]) {
-                        _img_path = '../../../../../image_sp/event_flash/story/bg/bg' + window.op_bg_replace_images[_prefix] + '.jpg';
+                        _img_path = '../image_sp/event_flash/story/bg/bg' + window.op_bg_replace_images[_prefix] + '.jpg';
                     }
                     if (window.chara_replace_images[_prefix]) {
-                        _img_path =  '../../../../../' + window.chara_replace_images[_prefix];
+                        _img_path =  '../' + window.chara_replace_images[_prefix];
                     }
                     if (window.replace_images[_prefix]) {
                         _img_path = window.replace_images[_prefix];

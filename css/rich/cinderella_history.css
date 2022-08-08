@@ -1,0 +1,1522 @@
+.large {
+    font-size: 22px
+}
+
+.small {
+    font-size: 10px
+}
+
+.red {
+    color: #ff0000
+}
+
+.red_mild {
+    color: #ff3333
+}
+
+.green {
+    color: #33ff33
+}
+
+.yellow {
+    color: #ff9900
+}
+
+.lemon_yellow {
+    color: #fff800
+}
+
+.blue {
+    color: #00ccff
+}
+
+.blue_st {
+    color: #0066ff
+}
+
+.gray {
+    color: #aaaaaa
+}
+
+.pink {
+    color: #f08080
+}
+
+.dark_gray {
+    color: #666666
+}
+
+.white {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.defMargin {
+    width: 296px;
+    padding: 0 12px
+}
+
+.m-Btm0 {
+    margin-bottom: 0px
+}
+
+.m-Btm4 {
+    margin-bottom: 4px
+}
+
+.m-Btm5 {
+    margin-bottom: 5px
+}
+
+.m-Btm8 {
+    margin-bottom: 8px
+}
+
+.m-Btm10 {
+    margin-bottom: 10px
+}
+
+.m-Btm12 {
+    margin-bottom: 12px
+}
+
+.m-Btm15 {
+    margin-bottom: 15px
+}
+
+.m-Btm20 {
+    margin-bottom: 20px
+}
+
+.m-Top4 {
+    margin-top: 4px
+}
+
+.m-Top5 {
+    margin-top: 5px
+}
+
+.m-Top8 {
+    margin-top: 8px
+}
+
+.m-Top10 {
+    margin-top: 10px
+}
+
+.m-Top12 {
+    margin-top: 12px
+}
+
+.m-Head_img {
+    margin-top: -14px
+}
+
+.m-Cnt {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-Lft {
+    text-align: left !important
+}
+
+.t-Rgt {
+    text-align: right !important
+}
+
+.t-Cnt {
+    text-align: center !important
+}
+
+.left_float {
+    float: left
+}
+
+.right_float {
+    float: right
+}
+
+.displayBox {
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.v-Top {
+    vertical-align: top
+}
+
+.v-Mdl {
+    vertical-align: middle
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.l-Hgt120 {
+    line-height: 120%
+}
+
+.l-Hgt140 {
+    line-height: 140%
+}
+
+.bg_icon_jump {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1152px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 60px;
+    height: 61px
+}
+
+.bg_key_area {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1052px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 66px;
+    height: 26px
+}
+
+.btn_memory {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -539px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_memory_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -404px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_play {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -494px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_play_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -449px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_release {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -665px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_release_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -584px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_search {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -971px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_search_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -782px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_theatre {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1007px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_theatre_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -890px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.btn_zoom_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -935px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_zoom_1_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -746px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_zoom_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -818px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_zoom_2_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -629px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_zoom_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -854px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.btn_zoom_3_gray {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -710px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.group_select {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -162px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 96px;
+    height: 96px
+}
+
+.headline_01 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1092px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 76px;
+    height: 14px
+}
+
+.headline_02 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1214px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.headline_03 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1107px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 68px;
+    height: 14px
+}
+
+.headline_type_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1289px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.headline_type_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1229px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.headline_type_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1259px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.headline_type_4 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1244px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.headline_type_5 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1274px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 40px;
+    height: 14px
+}
+
+.icon_deco {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -259px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 224px;
+    height: 18px
+}
+
+.icon_episode_unlock {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 0;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 80px;
+    height: 80px
+}
+
+.icon_jewel {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1122px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 52px;
+    height: 16px
+}
+
+.icon_jump {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -81px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 80px;
+    height: 80px
+}
+
+.icon_shoes {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -359px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.icon_tap {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1079px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 119px;
+    height: 12px
+}
+
+.icon_tap_move {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1139px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 56px;
+    height: 12px
+}
+
+.icon_unlock_mask {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -278px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 80px;
+    height: 80px
+}
+
+body {
+    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png%3F1630730944);
+    background-size: 7px 7px;
+    position: relative
+}
+
+.area_ground {
+    position: relative
+}
+
+.area_ground .map_data {
+    width: 304px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    z-index: 1;
+    margin: auto
+}
+
+.area_ground .map_data:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 20px;
+    border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fframe.png%3F1631186132) 40 fill stretch;
+    -webkit-border-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fframe.png%3F1631186132) 40 stretch;
+    pointer-events: none
+}
+
+.area_ground .map_data ._wrapper {
+    width: 304px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fbg_frame_area.png%3F1631186132);
+    background-size: 16px 16px;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.area_ground .map_data .map_content {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.area_ground .map_data .map_content .info_bar_area {
+    width: 230px;
+    position: relative
+}
+
+.area_ground .map_data .map_content #js-memory_area {
+    position: relative
+}
+
+.area_ground .map_data .map_content #js-memory_area a {
+    position: absolute;
+    top: -1px;
+    right: 1px
+}
+
+.area_ground .map_data .map_content #js-event_jump_link {
+    display: none
+}
+
+.area_ground .map_data .map_content #js-event_jump_link .icon_tap_move {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1139px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 56px;
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    right: 65px;
+    pointer-events: none
+}
+
+.area_ground .map_data .map_content .jump_area {
+    overflow: hidden;
+    width: 236px;
+    height: 60px;
+    margin-left: -4px;
+    margin-top: -3px
+}
+
+.area_ground .map_data .map_content .jump_area._ios {
+    height: 64px
+}
+
+.area_ground .map_data .map_content .jump_area .text_content {
+    margin-top: 2px;
+    margin-left: 4px;
+    width: 212px
+}
+
+.area_ground .map_data .map_content .jump_area .text_content ._marquee {
+    width: 164px
+}
+
+.area_ground .map_data .map_content .bg_icon_jump {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1152px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 60px;
+    height: 61px;
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: -1px
+}
+
+.area_ground .map_data .map_content .bg_icon_jump .jump_icon_view {
+    position: absolute;
+    top: 2px;
+    left: 2px
+}
+
+.area_ground .map_data .map_content .bg_icon_jump._lock:after {
+    content: '';
+    width: 56px;
+    height: 56px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap%2Ficon_unlock_mask.png%3F1631186132);
+    background-size: 56px 56px;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    pointer-events: none
+}
+
+.area_ground .map_data .map_content .idol_list {
+    width: 282px;
+    overflow: hidden;
+    margin-left: -1px;
+    margin-bottom: 4px
+}
+
+.area_ground .map_data .map_content .idol_list ul {
+    width: 290px
+}
+
+.area_ground .map_data .map_content .idol_list li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    margin-bottom: 8px
+}
+
+.area_ground .map_data .map_content .idol_list li a._on_mouse_down img {
+    transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95)
+}
+
+.area_ground .map_data .map_content .btn_release {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -665px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_release._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -584px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_memory {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -539px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_memory._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -404px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_play {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -494px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_play._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -449px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_theatre {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1007px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .btn_theatre._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -890px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content ._no_btn {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -359px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 44px;
+    height: 44px
+}
+
+.area_ground .map_data .map_content .cast_idol {
+    width: 280px;
+    overflow: hidden
+}
+
+.area_ground .area_key {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1052px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 66px;
+    height: 26px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    line-height: 24px;
+    z-index: 5;
+    font-size: 11px;
+    text-indent: 12px
+}
+
+.area_ground #btn_zoom {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    z-index: 5
+}
+
+.area_ground #btn_zoom._zoom_1 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -935px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._zoom_1._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -746px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._zoom_2 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -818px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._zoom_2._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -629px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._zoom_3 {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -854px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._zoom_3._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -710px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground #btn_zoom._disabled {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    pointer-events: none
+}
+
+.area_ground #btn_zoom._disabled:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 42px;
+    height: 29px;
+    top: 2px;
+    left: 2px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none
+}
+
+.area_ground .btn_search {
+    position: absolute;
+    top: 2px;
+    right: 58px;
+    z-index: 5;
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -971px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.area_ground .btn_search._hover {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -782px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 47px;
+    height: 35px
+}
+
+.search_list_text_area {
+    top: 8px;
+    left: 54px;
+    width: 218px;
+    position: absolute
+}
+
+.text_content {
+    background-color: #c5ddff;
+    border-radius: 8px;
+    height: 15px;
+    padding: 2px;
+    overflow: hidden
+}
+
+.text_content._m_btm3 {
+    margin-bottom: 3px
+}
+
+.text_content .event_type {
+    float: left;
+    margin-right: 8px
+}
+
+.text_content .event_title {
+    float: left;
+    color: #000;
+    font-size: 11px;
+    line-height: 15px;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff
+}
+
+.text_content ._marquee {
+    width: 175px;
+    left: 50px;
+    position: absolute;
+    overflow: hidden;
+    color: #000;
+    font-size: 11px;
+    line-height: 15px;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff
+}
+
+.text_content ._marquee:after {
+    content: '';
+    white-space: nowrap;
+    display: inline-block
+}
+
+.text_content ._marquee ._marquee_in {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite
+}
+
+.text_content ._marquee ._marquee_in._go {
+    animation-name: _marquee;
+    -webkit-animation-name: _marquee
+}
+
+.icon_deco,
+.icon_deco_search {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -259px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 224px;
+    height: 18px
+}
+
+.area_story_map {
+    width: 320px;
+    height: 450px;
+    overflow: auto;
+    position: relative;
+    top: -14px;
+    background: url("http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fbg_map.jpg%3F1631186132") no-repeat;
+    background-size: 320px 500px
+}
+
+.area_story_map:-webkit-scrollbar {
+    display: none
+}
+
+.area_story_map:scrollbar {
+    display: none
+}
+
+.area_story_map .area_story_map_inner {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1
+}
+
+.area_story_map .area_story_map_inner:-webkit-selection {
+    background: none;
+    color: none
+}
+
+.area_story_map .area_story_map_inner:selection {
+    background: none;
+    color: none
+}
+
+.area_story_map .event {
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer
+}
+
+.area_story_map .event img {
+    width: 80px;
+    height: 80px
+}
+
+.area_story_map .event .reward_jewel {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1122px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 52px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.area_story_map .event:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 80px
+}
+
+.area_story_map .event._lock:after {
+    content: '';
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -278px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+.area_story_map .event.importance_cin_his:before {
+    content: '';
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -162px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    margin: auto;
+    z-index: -1;
+    -webkit-animation-name: opacity_ef;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s
+}
+
+.area_story_map .dl-value_set {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    font-size: 11px
+}
+
+.area_story_map .dl-value_set dt {
+    background-color: #2553c7;
+    line-height: 120%;
+    border-radius: 12px 0 0 12px;
+    padding: 4px 2px 3px 4px;
+    box-sizing: border-box
+}
+
+.area_story_map .dl-value_set dd {
+    background-color: #333;
+    border-radius: 0 12px 12px 0;
+    padding: 4px 6px 3px 2px;
+    margin-left: 2px;
+    text-align: center;
+    line-height: 120%;
+    box-sizing: border-box
+}
+
+.area_story_map .imgboo {
+    position: absolute;
+    z-index: 0
+}
+
+.area_story_map .target_select {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 96px;
+    height: 96px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Ftarget_select.png%3F1631186132) no-repeat;
+    background-size: 96px 96px;
+    z-index: 1;
+    display: none;
+    animation: rotate-anime 3s linear infinite;
+    -webkit-animation: rotate-anime 3s linear infinite
+}
+
+@keyframes rotate-anime {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotate-anime {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.dl-value_set {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    font-size: 11px
+}
+
+.dl-value_set dt {
+    background-color: #2553c7;
+    line-height: 120%;
+    border-radius: 12px 0 0 12px;
+    padding: 4px 2px 3px 4px;
+    box-sizing: border-box
+}
+
+.dl-value_set dt._red {
+    background-color: #c63687
+}
+
+.dl-value_set dt._gray {
+    background-color: #666
+}
+
+.dl-value_set dd {
+    background-color: #333;
+    border-radius: 0 12px 12px 0;
+    padding: 4px 6px 3px 2px;
+    margin-left: 2px;
+    text-align: center;
+    line-height: 120%;
+    box-sizing: border-box
+}
+
+.dl-value_set._item_status dt {
+    background-color: #2692d2
+}
+
+.dl-value_set._item_status dd {
+    background-color: #1d1d1d
+}
+
+.dl-value_set._w_3 {
+    width: 88px
+}
+
+.dl-value_set._w_3 dt {
+    width: 40px
+}
+
+.dl-value_set._w_3 dd {
+    width: 46px
+}
+
+.dl-value_set._w_2 {
+    width: 136px
+}
+
+.dl-value_set._w_2 dt {
+    width: 60px
+}
+
+.dl-value_set._w_2 dd {
+    width: 74px
+}
+
+.dl-value_set._w_1 {
+    width: 280px
+}
+
+.dl-value_set._w_1 dt {
+    width: 60px
+}
+
+.dl-value_set._w_1 dd {
+    width: 218px
+}
+
+@keyframes importance_cin_his {
+    0% {
+        box-shadow: 0px 0px 30px rgba(255, 220, 30, 0.3)
+    }
+
+    50% {
+        box-shadow: 0px 0px 30px #ffdc1e
+    }
+
+    100% {
+        box-shadow: 0px 0px 30px rgba(255, 220, 30, 0.3)
+    }
+}
+
+@-webkit-keyframes importance_cin_his {
+    0% {
+        -webkit-box-shadow: 0px 0px 30px rgba(255, 220, 30, 0.3)
+    }
+
+    50% {
+        -webkit-box-shadow: 0px 0px 30px #ffdc1e
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 30px rgba(255, 220, 30, 0.3)
+    }
+}
+
+@keyframes _marquee {
+    0% {
+        transform: translateX(0%)
+    }
+
+    30% {
+        transform: translateX(0%)
+    }
+
+    100% {
+        transform: translateX(-130%)
+    }
+}
+
+@-webkit-keyframes _marquee {
+    0% {
+        -webkit-transform: translateX(0%)
+    }
+
+    30% {
+        -webkit-transform: translateX(0%)
+    }
+
+    100% {
+        -webkit-transform: translateX(-130%)
+    }
+}
+
+.ef_area {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 320px;
+    height: 448px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0
+}
+
+.ef_area ._base {
+    position: absolute;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite
+}
+
+.ef_area .anime_type_1 {
+    -webkit-animation-name: bg_move_1;
+    -webkit-animation-duration: 40s
+}
+
+.ef_area .anime_type_2 {
+    -webkit-animation-name: bg_move_2;
+    -webkit-animation-duration: 50s
+}
+
+.ef_area .anime_type_3 {
+    -webkit-animation-name: bg_move_3;
+    -webkit-animation-duration: 80s
+}
+
+.ef_area .anime_type_4 {
+    -webkit-animation-name: bg_move_4;
+    -webkit-animation-duration: 70s
+}
+
+.ef_area .anime_type_5 {
+    -webkit-animation-name: bg_move_5;
+    -webkit-animation-duration: 60s
+}
+
+.ef_area .anime_type_6 {
+    -webkit-animation-name: bg_move_6;
+    -webkit-animation-duration: 100s
+}
+
+@-webkit-keyframes bg_move_1 {
+    0% {
+        -webkit-transform: translate(10px, -250px)
+    }
+
+    100% {
+        -webkit-transform: translate(-80px, 500px)
+    }
+}
+
+@-webkit-keyframes bg_move_2 {
+    0% {
+        -webkit-transform: translate(300px, -350px)
+    }
+
+    100% {
+        -webkit-transform: translate(80px, 500px)
+    }
+}
+
+@-webkit-keyframes bg_move_3 {
+    0% {
+        -webkit-transform: translate(0px, -650px)
+    }
+
+    100% {
+        -webkit-transform: translate(-80px, 700px)
+    }
+}
+
+@-webkit-keyframes bg_move_4 {
+    0% {
+        -webkit-transform: translate(80px, -550px)
+    }
+
+    100% {
+        -webkit-transform: translate(120px, 500px)
+    }
+}
+
+@-webkit-keyframes bg_move_5 {
+    0% {
+        -webkit-transform: translate(50px, -300px)
+    }
+
+    100% {
+        -webkit-transform: translate(-20px, 500px)
+    }
+}
+
+@-webkit-keyframes bg_move_6 {
+    0% {
+        -webkit-transform: translate(120px, -400px)
+    }
+
+    100% {
+        -webkit-transform: translate(60px, 500px)
+    }
+}
+
+@-webkit-keyframes opacity_ef {
+    0% {
+        opacity: 0.3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0.3
+    }
+}
+
+.slider_back {
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 125px;
+    left: -4px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fui%2Ficon%2Ficon_arrow_left.png%3F1630730943) no-repeat;
+    background-size: 23px 23px;
+    z-index: 1
+}
+
+.slider_next {
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 125px;
+    right: -4px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fui%2Ficon%2Ficon_arrow_right.png%3F1630730943) no-repeat;
+    background-size: 23px 23px;
+    z-index: 1
+}
+
+.arrow {
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Farrow.png%3F1631186132) no-repeat;
+    background-size: 100px 4px
+}
+
+.arrow2 {
+    display: block;
+    width: 200px;
+    height: 4px;
+    position: absolute;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Farrow2.png%3F1631186132) no-repeat;
+    background-size: 200px 4px
+}
+
+.search_result {
+    width: 280px;
+    overflow: hidden;
+    padding-top: 12px;
+    position: relative
+}
+
+.search_result:before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 322px;
+    position: absolute;
+    bottom: 8px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fbg_search.png%3F1631186132) no-repeat;
+    background-size: 280px 322px
+}
+
+.search_result_list {
+    width: 280px
+}
+
+.search_result_list li {
+    width: 280px;
+    height: 58px;
+    margin-bottom: 8px;
+    position: relative;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fbg_frame_area.png%3F1631186132);
+    background-size: 16px 16px;
+    border-radius: 8px
+}
+
+.search_result_list li .js-search_list_btn {
+    display: block;
+    width: 280px;
+    height: 58px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fbg_search_list.png%3F1631186132);
+    background-size: 280px 58px
+}
+
+.search_result_list li .js-search_list_btn._target_select:after {
+    content: '';
+    display: block;
+    top: 1px;
+    left: 1px;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Ftarget_select.png%3F1631186132) no-repeat;
+    background-size: 56px 56px;
+    z-index: 1;
+    animation: rotate-anime 3s linear infinite;
+    -webkit-animation: rotate-anime 3s linear infinite
+}
+
+.search_result_list li .js-search_list_btn .reward_jewel {
+    display: block;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap-s5604901edc.png%3F1631186132) no-repeat 0 -1122px;
+    -webkit-background-size: 224px 1303px;
+    background-size: 224px 1303px;
+    width: 52px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    top: 37px;
+    left: 3px;
+    transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5)
+}
+
+.search_result_list li._disabled {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    position: relative;
+    pointer-events: none
+}
+
+.search_result_list li._disabled:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none
+}
+
+.search_result_list li._disabled .js-search_list_btn {
+    pointer-events: none
+}
+
+.search_result_list li ._marquee {
+    width: 164px
+}
+
+.search_result_list li._lock:before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fcinderella_history%2Fui%2Fsprite%2Fmap%2Ficon_unlock_mask.png%3F1631186132);
+    background-size: 42px 42px;
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 8px;
+    pointer-events: none
+}
+
+.search_result_list li .icon_map_list {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 8px;
+    left: 8px
+}
+
+.pager_panel_area a {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 0;
+    border: none;
+    text-indent: 100px
+}
