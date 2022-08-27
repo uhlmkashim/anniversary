@@ -470,7 +470,7 @@ kg
 <% val2 = val.icon[key2] %>
 <% if (+val.open_flag[key2]) { %>
 <li style="<% if (total == 2) { %>width:50%;<% } else if(total == 3) { %> width:33%; <% } else { %>margin:0 5px;<% } %>">
-<form method="post" action="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
+<a href="<%- val.flash_path[key2].replace('__hash_card_id__', idol_detail.data.hash_card_id) %>" style="height:90px;">
 <input type="image" src="<%- val2 %>" height="75" class="jsOnDesignBtn"><br>
 <% if (+val.voice_enable[key2]) { %>
 <input class="movie_name jsOnDesignBtn" type="image" src="<%- val.movie_name_voice[key2] %>" width="77" style="width:77px;position:relative;top:-15px;"><br>
@@ -3762,7 +3762,7 @@ kg
                     "story_id": "163",
                     "story_title": "貴方と紡ぐ!剣と魔法のファンタジー",
                     "voice_enable": ["0", "0"],
-                    "flash_path": ["../../idol_story/movie_play/163/1", "../../idol_story/movie_play/163/2"],
+                    "flash_path": ["../../idol_story/movie_play/163/1.html", "../../idol_story/movie_play/163/2.html"],
                     "voice_url": ["../../idol_story/sound_play/163/1", "../../idol_story/sound_play/163/2"],
                     "open_flag": ["1", "1"],
                     "icon": ["../../image_sp/ui/episode/epi_button_movie_163_1.jpg", "../../image_sp/ui/episode/epi_button_movie_163_2.jpg"],
