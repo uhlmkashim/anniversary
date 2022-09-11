@@ -15,7 +15,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/memory/show_opening/1738/0/0/1');
+                newrelic.setPageViewName('/idolmaster/index.php/memory/show_opening/1738/0/0/2');
             }
         });
     </script>
@@ -61,13 +61,15 @@
     </style>
     <script type='text/javascript' src='../../../js/createjs.min.js'></script>
     <script type='text/javascript' src='../../../js/app_sound.js'></script>
-    <script type='text/javascript' src='../../../js/cjs/story_generator/story_generator_n10.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_sweat_fly.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/story_generator_n5.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_laugh.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_flower_yellow.js' crossorigin="anonymous"></script>
-    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_concent.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_chord.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_notice.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_exclamation.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_sweat_fly.js' crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_concent.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_flower_red.js' crossorigin="anonymous"></script>
     <script type='text/javascript' src='../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
     <script type='text/javascript'>
@@ -106,18 +108,18 @@
         load_js.addEventListener("complete", handleComplete);
         // 読み込み開始
         load_js.loadManifest(window.js_load_files);
-        var _effect_cnt = 8;
+        var _effect_cnt = 10;
         var image_server = "";
         var base_url = "";
         window.im_cjs = window.im_cjs || {};
         window.replace_images = [];
-        window.file_name = "story_generator_n10"; // createjs の本体ファイルを定義
+        window.file_name = "story_generator_n5"; // createjs の本体ファイルを定義
         window.dir_name = "image_sp/cjs/genechara/";
         window.im_cjs = {
             "scene_list": [{
                 "id": "1",
-                "story_id": "173801",
-                "character_id": "",
+                "story_id": "173802",
+                "character_id": "2468501",
                 "cname": "",
                 "height_diff": "",
                 "face": "",
@@ -127,7 +129,7 @@
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
-                "bgimg": "173801",
+                "bgimg": "",
                 "button": "",
                 "message": "",
                 "timing": "0",
@@ -135,8 +137,8 @@
                 "sound_effect": ""
             }, {
                 "id": "2",
-                "story_id": "173801",
-                "character_id": "",
+                "story_id": "173802",
+                "character_id": "3568202",
                 "cname": "",
                 "height_diff": "",
                 "face": "",
@@ -146,7 +148,7 @@
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
-                "bgimg": "00008",
+                "bgimg": "",
                 "button": "",
                 "message": "",
                 "timing": "0",
@@ -154,8 +156,8 @@
                 "sound_effect": ""
             }, {
                 "id": "3",
-                "story_id": "173801",
-                "character_id": "10234",
+                "story_id": "173802",
+                "character_id": "2568602",
                 "cname": "",
                 "height_diff": "",
                 "face": "",
@@ -173,8 +175,8 @@
                 "sound_effect": ""
             }, {
                 "id": "4",
-                "story_id": "173801",
-                "character_id": "10167",
+                "story_id": "173802",
+                "character_id": "1568002",
                 "cname": "",
                 "height_diff": "",
                 "face": "",
@@ -192,8 +194,8 @@
                 "sound_effect": ""
             }, {
                 "id": "5",
-                "story_id": "173801",
-                "character_id": "10101",
+                "story_id": "173802",
+                "character_id": "",
                 "cname": "",
                 "height_diff": "",
                 "face": "",
@@ -203,7 +205,7 @@
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
-                "bgimg": "",
+                "bgimg": "173803",
                 "button": "",
                 "message": "",
                 "timing": "0",
@@ -211,49 +213,11 @@
                 "sound_effect": ""
             }, {
                 "id": "6",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
                 "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "7",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "3",
-                "position": "C",
-                "movement": "in_float",
-                "chara_effect": "sweat_fly",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u2026\u2026\u306f\u3001\u30cf\u30c3\u30d4\u30fc\n\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u2026\u2026\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "8",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "2",
+                "face": "1",
                 "position": "RR",
                 "movement": "in_R",
                 "chara_effect": "laugh",
@@ -262,55 +226,55 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3044\u3044\u611f\u3058\uff01\u3000\u3082\u3046\u3044\u3063\u3061\u3087\n\u3044\u3053\u3046\u304b\uff01",
-                "timing": "20",
-                "auto": "0",
+                "message": "LIVE\u3001\u3082\u3046\u3059\u3050\u59cb\u307e\u308a\n\u307e\u3059\u306d\uff01",
+                "timing": "",
+                "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "9",
-                "story_id": "173801",
-                "character_id": "10234",
+                "id": "7",
+                "story_id": "173802",
+                "character_id": "3568202",
                 "cname": "\u672a\u592e",
                 "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "jump_double",
+                "face": "2",
+                "position": "C",
+                "movement": "in_L",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3046\u3093\uff01\u3000\u3057\u304b\u3082\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\n\u306e\u7279\u5927LIVE\uff01",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "8",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "\u672a\u592e",
+                "height_diff": "",
+                "face": "3",
+                "position": "C",
+                "movement": "pop",
                 "chara_effect": "flower_yellow",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3044\u3044\u611f\u3058\uff01\u3000\u3082\u3046\u3044\u3063\u3061\u3087\n\u3044\u3053\u3046\u304b\uff01\n\u30cf\u30c3\u30d4\u30fc\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\uff01\uff01",
+                "message": "\u79c1\u305f\u3061\u304c\u6b4c\u3046\u30b9\u30c6\u30fc\u30b8\u4ee5\u5916\u306b\u3001\n\u305f\u304f\u3055\u3093\u306e\u30b9\u30c6\u30fc\u30b8\u304c\u5404\u5730\u306b\n\u3042\u3063\u3066\u3001\u4e2d\u7d99\u3082\u5165\u3063\u3066\u3001\n\u5168\u54e1\u304c\u30bd\u30ed\u66f2\u3092\u6b4c\u3048\u308b\u3093\u3060\u2606",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "10",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
+                "id": "9",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
                 "height_diff": "",
                 "face": "1",
-                "position": "C",
-                "movement": "pop",
-                "chara_effect": "concent",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u30cf\u30c3\u30d4\u30fc\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u2026\u2026\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "11",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "2",
                 "position": "LL",
                 "movement": "in_L",
                 "chara_effect": "",
@@ -319,241 +283,32 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3075\u305f\u308a\u3068\u3082\u3001\u697d\u3057\u305d\u3046\uff01\n\u3058\u3083\u3042\u79c1\u3082\u2026\u2026",
-                "timing": "20",
-                "auto": "0",
+                "message": "\u307f\u3093\u306a\u3067\u6b69\u3093\u3067\u304d\u305f\u304b\u3089\u3053\u305d\n\u8fce\u3048\u3089\u308c\u305f\u4eca\u65e5\u3060\u304b\u3089\u2026\u2026\n\u5168\u54e1\u304c\u4e3b\u5f79\u3002\u5f53\u7136\u3060\u3088\u3002",
+                "timing": "",
+                "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "12",
-                "story_id": "173801",
-                "character_id": "10101",
+                "id": "10",
+                "story_id": "173802",
+                "character_id": "1568002",
                 "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "9",
-                "position": "LL",
-                "movement": "jump",
-                "chara_effect": "chord",
-                "effect_direction": "R",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3075\u305f\u308a\u3068\u3082\u3001\u697d\u3057\u305d\u3046\uff01\n\u3058\u3083\u3042\u79c1\u3082\u2026\u2026\n\u30cf\u30c3\u30d4\u30fc\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u266a",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "13",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "7",
-                "position": "RR",
-                "movement": "nod",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3088\u3057\u3001\u3057\u3076\u308a\u3093\u3082\u3001\u3053\u306e\u6d41\u308c\u306b\n\u4e57\u3089\u306a\u3044\u624b\u306f\u306a\u3044\u3088\u306d\uff1f",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "14",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "7",
-                "position": "",
-                "movement": "out_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "15",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "6",
-                "position": "RR",
-                "movement": "in_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u308f\u304b\u3063\u3066\u308b\u3002",
-                "timing": "15",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "16",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "pop",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u308f\u304b\u3063\u3066\u308b\u3002\n\u30cf\u30c3\u30d4\u30fc\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "17",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "3",
-                "position": "RR",
-                "movement": "question_left2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u2026\u2026\u3063\u3066\u3001\u58f0\u51fa\u3057\u306e\u7df4\u7fd2\u3082\n\u3044\u3044\u3051\u3069\u3001\u983c\u307e\u308c\u305f\u901a\u308a\n\u547c\u3093\u3067\u304d\u305f\u3088\u3002\u3061\u3072\u308d\u3055\u3093\u3068\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3092\u3055\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "18",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "",
-                "position": "RR",
-                "movement": "out_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "19",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
-                "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "in_R",
-                "chara_effect": "chord",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3075\u3075\u3063\u3001\u30b5\u30d7\u30e9\u30a4\u30ba\u304c\u3042\u308b\u3068\n\u805e\u3044\u3066\u3001\u30ef\u30af\u30ef\u30af\u3057\u306a\u304c\u3089\n\u3084\u3063\u3066\u304d\u307e\u3057\u305f\u266a",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "20",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
                 "height_diff": "",
                 "face": "2",
-                "position": "C",
-                "movement": "nod2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u2026\u2026\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\u3001\n\u3061\u3072\u308d\u3055\u3093\u3001\u304a\u5fd9\u3057\u3044\u4e2d\n\u6765\u3066\u304f\u3060\u3055\u308a\u3001\u3042\u308a\u304c\u3068\u3046\n\u3054\u3056\u3044\u307e\u3059\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "21",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "7",
-                "position": "LL",
-                "movement": "pop",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u5b9f\u306f\u3001\u6700\u7d42\u30c1\u30a7\u30c3\u30af\u3057\u3066\u3082\u3089\u3044\n\u305f\u3044\u3082\u306e\u304c\u3042\u308b\u3093\u3067\u3059\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "22",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
-                "height_diff": "",
-                "face": "",
                 "position": "RR",
-                "movement": "out_R",
-                "chara_effect": "",
+                "movement": "jump",
+                "chara_effect": "chord",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "23",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "in_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u307e\u305a\u306f\u898b\u3066\u3082\u3089\u3063\u305f\u65b9\u304c\n\u65e9\u3044\u304b\u306a\u3002\u6d41\u3059\u306d\u3002",
+                "message": "\u4e2d\u7d99\u3067\u58f0\u3092\u5408\u308f\u305b\u3066\u6b4c\u3046\u66f2\u3082\n\u3042\u308a\u307e\u3059\u3088\u306d\uff01\u3000\u30ea\u30cf\u30fc\u30b5\u30eb\n\u306e\u6642\u304b\u3089\u3001\u307f\u3093\u306a\u306e\u6b4c\u58f0\u304c\n\u91cd\u306a\u308b\u306e\u304c\u3068\u306b\u304b\u304f\u697d\u3057\u304f\u3066\u266a",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "24",
-                "story_id": "173801",
+                "id": "11",
+                "story_id": "173802",
                 "character_id": "",
                 "cname": "",
                 "height_diff": "",
@@ -562,36 +317,17 @@
                 "movement": "all_out_fade",
                 "chara_effect": "",
                 "effect_direction": "",
-                "a_fade": "white_in",
-                "": "",
-                "bgimg": "change2",
-                "button": "",
-                "message": "",
-                "timing": "10",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "25",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "",
-                "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "white_out",
+                "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
                 "message": "",
-                "timing": "10",
+                "timing": "0",
                 "auto": "0",
                 "sound_effect": ""
             }, {
-                "id": "26",
-                "story_id": "173801",
+                "id": "12",
+                "story_id": "173802",
                 "character_id": "",
                 "cname": "",
                 "height_diff": "",
@@ -602,58 +338,20 @@
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
-                "bgimg": "",
+                "bgimg": "CtoL",
                 "button": "",
-                "message": "\u307f\u306a\u3055\u3093\u3001\u672c\u65e5\u306f\u79c1\u305f\u3061\u306e\n\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u306b\u304a\u8d8a\u3057\n\u304f\u3060\u3055\u308a\u2026\u2026\u305d\u3057\u3066\u3001",
-                "timing": "",
+                "message": "",
+                "timing": "10",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "27",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "",
+                "id": "13",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
                 "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305a\u3063\u3068\u3001\u305a\u3063\u3068\u3001\n\u79c1\u305f\u3061\u3092\u5fdc\u63f4\u3057\u3066\u304f\u3060\u3055\u308a\u3001\n\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3063\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "28",
-                "story_id": "173801",
-                "character_id": "3100102",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "in_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u521d\u3081\u3066\u8863\u88c5\u3092\u7740\u305f\u65e5\u3084\u3001\u521d\u3081\u3066\n\u30b9\u30c6\u30fc\u30b8\u306b\u7acb\u3063\u305f\u65e5\u2026\u2026\u79c1\u305f\u3061\n\u304c\u697d\u3057\u3093\u3067\u3001\u7a4d\u307f\u91cd\u306d\u3066\u304d\u305f\n\u77ac\u9593\u304c\u3001\u3053\u3053\u306b\u306f\u8a70\u307e\u3063\u3066\u308b\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "29",
-                "story_id": "173801",
-                "character_id": "2100102",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "1",
-                "position": "LL",
+                "face": "4",
+                "position": "C",
                 "movement": "in_L",
                 "chara_effect": "",
                 "effect_direction": "",
@@ -661,18 +359,56 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3044\u308d\u3093\u306a\u5b63\u7bc0\u306b\u3001\u305f\u304f\u3055\u3093\u306e\n\u51fa\u6765\u4e8b\u304c\u3042\u3063\u3066\u2026\u2026\u3069\u308c\u3082\n\u3053\u308c\u3082\u3001\u5927\u5207\u306a\u60f3\u3044\u51fa\u3060\u3088\u3002",
+                "message": "\u2026\u2026\u2026\u2026\u3002",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "30",
-                "story_id": "173801",
-                "character_id": "1100102",
+                "id": "14",
+                "story_id": "173802",
+                "character_id": "1568002",
                 "cname": "\u536f\u6708",
                 "height_diff": "",
-                "face": "1",
+                "face": "3",
+                "position": "RR",
+                "movement": "in_R",
+                "chara_effect": "question",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u6587\u9999\u3055\u3093\u3001\u3069\u3046\u3057\u305f\u3093\u3067\u3059\u304b\uff1f",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "15",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
+                "height_diff": "",
+                "face": "4",
                 "position": "C",
+                "movement": "swing",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3042\u3001\u3044\u3048\u2026\u2026\u3002",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "16",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": " ",
+                "height_diff": "",
+                "face": "2",
+                "position": "LL",
                 "movement": "in_R",
                 "chara_effect": "",
                 "effect_direction": "",
@@ -680,37 +416,75 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3053\u306e\u65e5\u3092\u8fce\u3048\u3089\u308c\u3066\u3001\u672c\u5f53\u306b\n\u5b09\u3057\u3044\u3067\u3059\uff01\u3000\u3067\u3082\u3001\u904e\u53bb\u3092\n\u632f\u308a\u8fd4\u308b\u3060\u3051\u3058\u3083\u306a\u304f\u3066\u2026\u2026",
+                "message": " ",
+                "timing": "0",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "17",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
+                "height_diff": "",
+                "face": "",
+                "position": "",
+                "movement": "",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "flash_short",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u304e\u3085\u3063",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "31",
-                "story_id": "173801",
-                "character_id": "1100102",
-                "cname": "\u536f\u6708",
+                "id": "18",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "\u672a\u592e",
                 "height_diff": "",
                 "face": "1",
-                "position": "C",
-                "movement": "jump_double",
+                "position": "LL",
+                "movement": "nod2",
                 "chara_effect": "chord",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3053\u308c\u304b\u3089\u306e\u3001\u307f\u306a\u3055\u3093\u306e\n\u7b11\u9854\u306e\u305f\u3081\u306b\uff01\u3000\u30a2\u30a4\u30c9\u30eb\n\u307f\u3093\u306a\u3067\u3001\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u3092\n\u6848\u5185\u3055\u305b\u3066\u304f\u3060\u3055\u3044\u3063\u266a",
+                "message": "\u3093\u30fc\u3001\u624b\u306f\u3042\u3063\u305f\u304b\u3044\uff01\n\u7dca\u5f35\u306f\u305d\u3093\u306a\u306b\u3057\u3066\u306a\u3044\n\u307f\u305f\u3044\u3060\u306d\u266a",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "32",
-                "story_id": "173801",
-                "character_id": "1100102",
+                "id": "19",
+                "story_id": "173802",
+                "character_id": "1568002",
                 "cname": "\u536f\u6708",
                 "height_diff": "",
-                "face": "1",
-                "position": "C",
+                "face": "2",
+                "position": "RR",
+                "movement": "pop",
+                "chara_effect": "laugh",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3042\u3063\uff01\u3000\u79c1\u3082\u624b\u3092\n\u7e4b\u304e\u305f\u3044\u3067\u3059\u266a\n\u307b\u3089\u3001\u51db\u3061\u3083\u3093\u3082\uff01",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "20",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
+                "height_diff": "",
+                "face": "2",
+                "position": "RR",
                 "movement": "out_R",
                 "chara_effect": "",
                 "effect_direction": "",
@@ -723,85 +497,104 @@
                 "auto": "0",
                 "sound_effect": ""
             }, {
-                "id": "33",
-                "story_id": "173801",
-                "character_id": "2102602",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "1",
-                "position": "C",
-                "movement": "in_L",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305d\u308c\u304b\u3089\u2026\u2026\u79c1\u305f\u3061\u306e\u8ecc\u8de1\u304c\u3001\n\u30e1\u30e2\u30ea\u30a2\u30eb\u30d6\u30c3\u30af\u306b\n\u306a\u308a\u307e\u3057\u305f\u3002\n\u2026\u2026\u2026",
-                "timing": "15",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "34",
-                "story_id": "173801",
-                "character_id": "2102602",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "1",
-                "position": "C",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305d\u308c\u304b\u3089\u2026\u2026\u79c1\u305f\u3061\u306e\u8ecc\u8de1\u304c\u3001\n\u30e1\u30e2\u30ea\u30a2\u30eb\u30d6\u30c3\u30af\u306b\n\u306a\u308a\u307e\u3057\u305f\u3002\n\u2026\u2026\u2026\u2026\u2026\u2026",
-                "timing": "15",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "35",
-                "story_id": "173801",
-                "character_id": "2102602",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "1",
-                "position": "C",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305d\u308c\u304b\u3089\u2026\u2026\u79c1\u305f\u3061\u306e\u8ecc\u8de1\u304c\u3001\n\u30e1\u30e2\u30ea\u30a2\u30eb\u30d6\u30c3\u30af\u306b\n\u306a\u308a\u307e\u3057\u305f\u3002\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "36",
-                "story_id": "173801",
-                "character_id": "3100102",
-                "cname": "\u672a\u592e",
+                "id": "21",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
                 "height_diff": "",
                 "face": "1",
                 "position": "RR",
-                "movement": "question_left",
+                "movement": "in_R",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u304a\u30fc\u3044\u3001\u3075\u307f\u3075\u307f\uff1f",
+                "message": "\u308f\u304b\u3063\u305f\u3088\u3002",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "37",
-                "story_id": "173801",
-                "character_id": "2102602",
+                "id": "22",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
+                "height_diff": "",
+                "face": "",
+                "position": "",
+                "movement": "",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "flash_short",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u304e\u3085\u3063",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "23",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "\u672a\u592e",
+                "height_diff": "",
+                "face": "3",
+                "position": "LL",
+                "movement": "question_right",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u304a\u3084\uff1f\u3000\u3057\u3076\u308a\u3093\u306e\u65b9\u304c\n\u51b7\u305f\u3044\u624b\u3060\u306d\u3002\u7dca\u5f35\u3057\u3066\u308b\uff1f",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "24",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
+                "height_diff": "",
+                "face": "4",
+                "position": "RR",
+                "movement": "question_left2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u305d\u308a\u3083\u3042\u306d\u3002\u6700\u9ad8\u306e\u30b9\u30c6\u30fc\u30b8\u3092\n\u5c4a\u3051\u306a\u304d\u3083\u3063\u3066\u3044\u3046\n\u30d7\u30ec\u30c3\u30b7\u30e3\u30fc\u306f\u3042\u308b\u3088\u3002",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "25",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
+                "height_diff": "",
+                "face": "3",
+                "position": "RR",
+                "movement": "nod2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u2026\u2026\u3067\u3082\u3001\u305d\u308c\u4ee5\u4e0a\u306b\u3001\u5927\u304d\u306a\n\u6c17\u6301\u3061\u304c\u3042\u308b\u3002\u6587\u9999\u3082\u3001\n\u304d\u3063\u3068\u305d\u3046\u3067\u3057\u3087\u3002",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "26",
+                "story_id": "173802",
+                "character_id": "2468501",
                 "cname": "\u6587\u9999",
                 "height_diff": "",
                 "face": "1",
@@ -813,17 +606,17 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3042\u3001\u3059\u307f\u307e\u305b\u3093\u3002\u3064\u3044\n\u8aad\u307f\u3075\u3051\u3063\u3066\u3057\u307e\u3044\u2026\u2026\u9801\u3092\n\u6372\u308b\u5ea6\u306b\u3001\u30a2\u30a4\u30c9\u30eb\u306e\u7686\u3055\u3093\u3092\n\u77e5\u308b\u3053\u3068\u304c\u3067\u304d\u308b\u66f8\u3067\u3059\u3002",
+                "message": "\u306f\u3044\u3002\u2026\u2026\u3053\u308c\u306f\u3001\u304a\u305d\u3089\u304f\n\u9ad8\u63da\u306a\u306e\u3060\u3068\u601d\u3044\u307e\u3059\u3002",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "38",
-                "story_id": "173801",
-                "character_id": "2102602",
+                "id": "27",
+                "story_id": "173802",
+                "character_id": "2468501",
                 "cname": "\u6587\u9999",
                 "height_diff": "",
-                "face": "1",
+                "face": "3",
                 "position": "C",
                 "movement": "swing",
                 "chara_effect": "",
@@ -832,55 +625,169 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u5206\u539a\u3044\u66f8\u306f\u3001\u4eca\u307e\u3067\u6b69\u3093\u3067\u304d\u305f\n\u9053\u306e\u308a\u306e\u91cd\u307f\u2026\u2026\u305d\u3057\u3066\u3001\n\u305d\u308c\u306f\u3053\u308c\u304b\u3089\u3082\u5897\u3057\u3066\n\u3044\u304f\u306e\u3067\u3057\u3087\u3046\u3002",
+                "message": "\u2026\u2026\u5ba2\u5e2d\u3092\u898b\u3066\u3001\u8003\u3048\u3066\n\u3044\u307e\u3057\u305f\u3002\u4eca\u307e\u3067\u306e\u3053\u3068\u3001\n\u3053\u308c\u304b\u3089\u306e\u3053\u3068\u2026\u2026",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "39",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "",
+                "id": "28",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
                 "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "all_out_fade",
+                "face": "1",
+                "position": "C",
+                "movement": "nod2",
                 "chara_effect": "",
                 "effect_direction": "",
-                "a_fade": "in",
-                "": "",
-                "bgimg": "change1",
-                "button": "",
-                "message": "",
-                "timing": "10",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "40",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "",
-                "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "out",
+                "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "",
-                "timing": "10",
+                "message": "\u7686\u3055\u3093\u306e\u7729\u3044\u7b11\u9854\u3084\u3001\n\u714c\u3081\u304f\u30e9\u30a4\u30c8\u306e\u3053\u3068\u306a\u3069\u2026\u2026\u3002",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "29",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
+                "height_diff": "",
+                "face": "3",
+                "position": "RR",
+                "movement": "out_R",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": " ",
+                "timing": "0",
                 "auto": "0",
                 "sound_effect": ""
             }, {
-                "id": "41",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
+                "id": "30",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
                 "height_diff": "",
-                "face": "11",
+                "face": "4",
+                "position": "RR",
+                "movement": "question_left2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3064\u307e\u308a\u3001\u6c17\u5408\u304c\u5165\u3063\u3066\u308b\n\u3063\u3066\u3053\u3068\u3067\u3059\u3088\u306d\uff01",
+                "timing": "15",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "31",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
+                "height_diff": "",
+                "face": "6",
+                "position": "RR",
+                "movement": "nod2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3064\u307e\u308a\u3001\u6c17\u5408\u304c\u5165\u3063\u3066\u308b\n\u3063\u3066\u3053\u3068\u3067\u3059\u3088\u306d\uff01\u3000\u3067\u3082\n\u30ea\u30e9\u30c3\u30af\u30b9\u3082\u5927\u5207\u3060\u3057\u2026\u2026",
+                "timing": "20",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "32",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
+                "height_diff": "",
+                "face": "5",
+                "position": "RR",
+                "movement": "pop",
+                "chara_effect": "notice",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3064\u307e\u308a\u3001\u6c17\u5408\u304c\u5165\u3063\u3066\u308b\n\u3063\u3066\u3053\u3068\u3067\u3059\u3088\u306d\uff01\u3000\u3067\u3082\n\u30ea\u30e9\u30c3\u30af\u30b9\u3082\u5927\u5207\u3060\u3057\u2026\u2026\n\u3042\u3001\u305d\u3046\u3060\uff01",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "33",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "\u672a\u592e",
+                "height_diff": "",
+                "face": "1",
+                "position": "LL",
+                "movement": "question_right2",
+                "chara_effect": "exclamation",
+                "effect_direction": "R",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u304a\u3063\u3001\u3057\u307e\u3080\u30fc\u3082\u601d\u3044\u3064\u3044\u305f\n\u3088\u3046\u3060\u306d\uff1f",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "34",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
+                "height_diff": "",
+                "face": "2",
+                "position": "RR",
+                "movement": "jump",
+                "chara_effect": "chord",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u306f\u3044\u3063\uff01\u3000\u79c1\u305f\u3061\u304c\u3088\u304f\n\u3084\u3063\u3066\u3082\u3089\u3063\u3066\u3044\u308b\u30a2\u30ec\n\u3067\u3059\u266a",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "35",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "\u536f\u6708",
+                "height_diff": "",
+                "face": "2",
+                "position": "RR",
+                "movement": "out_R",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": " ",
+                "timing": "0",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "36",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "\u51db",
+                "height_diff": "",
+                "face": "1",
                 "position": "RR",
                 "movement": "in_R",
                 "chara_effect": "",
@@ -889,57 +796,152 @@
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3053\u308c\u306f\u2026\u2026\u3002",
+                "message": "\u3042\u3042\u3001\u30a2\u30ec\u3002\u3055\u3089\u306b\u6c17\u5408\u304c\n\u5165\u308b\u3051\u3069\u3001\u5165\u308a\u3059\u304e\u305a\u2026\u2026\n\u3044\u3044\u611f\u3058\u306b\u30ea\u30e9\u30c3\u30af\u30b9\u3067\u304d\u308b\n\u65b9\u6cd5\u3060\u306d\u3002",
                 "timing": "",
                 "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "37",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
+                "height_diff": "",
+                "face": "6",
+                "position": "C",
+                "movement": "nod2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u2026\u2026\u306a\u308b\u307b\u3069\u3002\u30a2\u30ec\u3067\u3059\u304b\u3002",
+                "timing": "20",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "38",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
+                "height_diff": "",
+                "face": "4",
+                "position": "C",
+                "movement": "pop",
+                "chara_effect": "sweat_fly",
+                "effect_direction": "R",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u2026\u2026\u306a\u308b\u307b\u3069\u3002\u30a2\u30ec\u3067\u3059\u304b\u3002\n\u3042\u306e\u2026\u2026\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\u3001\n\u304a\u9858\u3044\u3057\u3066\u3082\u3044\u3044\u3067\u3057\u3087\u3046\u304b\uff1f",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "39",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
+                "height_diff": "",
+                "face": "",
+                "position": "",
+                "movement": "",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "1",
+                "message": "\u30a2\u30a4\u30c9\u30eb\u305f\u3061\u306e\n\u80cc\u4e2d\u3092\u62bc\u3059",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "40",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "\u6587\u9999",
+                "height_diff": "",
+                "face": "5",
+                "position": "C",
+                "movement": "nod2",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3075\u3075\u2026\u2026\n\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\n\u305d\u308c\u3067\u306f\u3001\u624b\u3092\u7e4b\u3044\u3067\n\u30b9\u30c6\u30fc\u30b8\u306b\u2015\u2015",
+                "timing": "",
+                "auto": "1",
+                "sound_effect": ""
+            }, {
+                "id": "41",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
+                "height_diff": "",
+                "face": "",
+                "position": "",
+                "movement": "all_out_fade",
+                "chara_effect": "",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": " ",
+                "timing": "0",
+                "auto": "0",
                 "sound_effect": ""
             }, {
                 "id": "42",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "4\u4eba",
                 "height_diff": "",
                 "face": "1",
-                "position": "LL",
-                "movement": "in_L",
-                "chara_effect": "",
+                "position": "R",
+                "movement": "in_float",
+                "chara_effect": "concent",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u306e\u5165\u308a\u53e3\u306b\u3042\u308b\n\u30c7\u30a3\u30b9\u30d7\u30ec\u30a4\u306b\u3001MV\u4ee5\u5916\u306e\n\u6620\u50cf\u3092\u6d41\u305b\u305f\u3089\u3044\u3044\u306a\u3063\u3066\n\u601d\u3063\u3066\u3001\u307f\u3093\u306a\u3067\u4f5c\u308a\u307e\u3057\u305f\uff01",
-                "timing": "",
-                "auto": "1",
+                "message": "\u3044\u3063\u3066\u304d\u307e\u3059\uff01",
+                "timing": "2",
+                "auto": "0",
                 "sound_effect": ""
             }, {
                 "id": "43",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "4\u4eba",
                 "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "in_R",
-                "chara_effect": "",
+                "face": "1",
+                "position": "L",
+                "movement": "in_float",
+                "chara_effect": "concent",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u5f97\u610f\u5206\u91ce\u306e\u3042\u308b\u4ef2\u9593\u305f\u3061\n\u3070\u3063\u304b\u308a\u3060\u304b\u3089\u3055\u3002\u7de8\u96c6\u3068\u304b\n\u30ed\u30b4\u3068\u304b\u3001\u9ad8\u3044\u30af\u30aa\u30ea\u30c6\u30a3\u306b\n\u306a\u3063\u3066\u308b\u3068\u601d\u3046\u3002",
-                "timing": "",
-                "auto": "1",
+                "message": "\u3044\u3063\u3066\u304d\u307e\u3059\uff01",
+                "timing": "2",
+                "auto": "0",
                 "sound_effect": ""
             }, {
                 "id": "44",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
                 "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "out_R",
+                "face": "",
+                "position": "",
+                "movement": "all_out_fade",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
@@ -952,108 +954,108 @@
                 "sound_effect": ""
             }, {
                 "id": "45",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "4\u4eba",
                 "height_diff": "",
                 "face": "1",
-                "position": "C",
-                "movement": "in_R",
-                "chara_effect": "",
+                "position": "R",
+                "movement": "in_float",
+                "chara_effect": "concent",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u3053\u308c\u306a\u3089\u3001\u5217\u306b\u4e26\u3093\u3067\u308b\u9593\u3082\n\u9000\u5c48\u305b\u305a\u306b\u6e08\u3080\u3088\u306d\uff01\n\u305d\u308c\u306b\u3001\u8a71\u3057\u5408\u3063\u305f\u6642\u306b\u3001\n\u307f\u3093\u306a\u540c\u3058\u3053\u3068\u601d\u3063\u3066\u3066\u3055\u3002",
+                "message": "\u3044\u3063\u3066\u304d\u307e\u3059\uff01",
+                "timing": "2",
+                "auto": "0",
+                "sound_effect": ""
+            }, {
+                "id": "46",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "4\u4eba",
+                "height_diff": "",
+                "face": "1",
+                "position": "L",
+                "movement": "in_float",
+                "chara_effect": "concent",
+                "effect_direction": "",
+                "a_fade": "",
+                "": "",
+                "bgimg": "",
+                "button": "",
+                "message": "\u3044\u3063\u3066\u304d\u307e\u3059\uff01",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
             }, {
-                "id": "46",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
+                "id": "47",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
                 "height_diff": "",
-                "face": "1",
-                "position": "LL",
-                "movement": "out_L",
+                "face": "",
+                "position": "",
+                "movement": "all_out_fade",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": " ",
+                "message": "",
                 "timing": "0",
                 "auto": "0",
                 "sound_effect": ""
             }, {
-                "id": "47",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
+                "id": "48",
+                "story_id": "173802",
+                "character_id": "1568002",
+                "cname": "4\u4eba",
                 "height_diff": "",
                 "face": "2",
-                "position": "LL",
-                "movement": "in_L",
-                "chara_effect": "",
+                "position": "R",
+                "movement": "jump",
+                "chara_effect": "flower_red",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u2026\u2026\u79c1\u305f\u3061\u3092\u5fdc\u63f4\u3057\u3066\u304f\u3060\u3055\u308b\n\u65b9\u3005\u2026\u2026\u305d\u3057\u3066\u3001\u304a\u4e16\u8a71\u306b\n\u306a\u3063\u305f\u65b9\u9054\u306b\u3001\u304a\u793c\u3092\u8a00\u3044\u305f\n\u304b\u3063\u305f\u3093\u3067\u3059\u3002\u4f55\u5ea6\u3067\u3082\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "48",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "jump",
-                "chara_effect": "laugh",
-                "effect_direction": "R",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3068\u3044\u3046\u308f\u3051\u3067\uff01\u3000\u5b8c\u6210\u3057\u3066\n\u307e\u305a\u306f\u3001\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3068\n\u3061\u3072\u308d\u3055\u3093\u306b\u898b\u305b\u3088\u3046\u3063\u3066\n\u3053\u3068\u306b\u306a\u3063\u305f\u308f\u3051\uff01",
-                "timing": "",
-                "auto": "1",
+                "message": "\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\uff01\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\uff01",
+                "timing": "2",
+                "auto": "0",
                 "sound_effect": ""
             }, {
                 "id": "49",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
+                "story_id": "173802",
+                "character_id": "2568602",
+                "cname": "4\u4eba",
                 "height_diff": "",
-                "face": "4",
-                "position": "RR",
-                "movement": "pop",
-                "chara_effect": "sweat_fly",
+                "face": "2",
+                "position": "L",
+                "movement": "jump",
+                "chara_effect": "flower_red",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u307f\u306a\u3055\u3093\u2026\u2026\uff01\n\u3053\u308c\u306f\u305c\u3072\u6d41\u3057\u3066\n\u3082\u3089\u3044\u307e\u3057\u3087\u3046\u3001\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\uff01",
-                "timing": "",
-                "auto": "1",
+                "message": "\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\uff01\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\uff01",
+                "timing": "2",
+                "auto": "0",
                 "sound_effect": ""
             }, {
                 "id": "50",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
+                "story_id": "173802",
+                "character_id": "",
+                "cname": "",
                 "height_diff": "",
-                "face": "2",
-                "position": "LL",
-                "movement": "out_L",
+                "face": "",
+                "position": "",
+                "movement": "all_out_fade",
                 "chara_effect": "",
                 "effect_direction": "",
                 "a_fade": "",
@@ -1066,400 +1068,39 @@
                 "sound_effect": ""
             }, {
                 "id": "51",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "2",
-                "position": "LL",
-                "movement": "in_L",
-                "chara_effect": "laugh",
-                "effect_direction": "R",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3075\u3075\u3063\u3001\u611f\u52d5\u3059\u308b\u306e\u306f\u307e\u3060\n\u65e9\u3044\u3067\u3059\u3088\u3001\u3061\u3072\u308d\u3055\u3093\u266a",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "52",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "7",
-                "position": "C",
-                "movement": "jump_double",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305d\u3046\u305d\u3046\uff01\u3000\u307e\u3060\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\n\u306e\u8a2d\u55b6\u3082\u6b8b\u3063\u3066\u308b\u3057\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "53",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
-                "height_diff": "",
-                "face": "5",
-                "position": "RR",
-                "movement": "question_left2",
-                "chara_effect": "chord",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u305d\u3046\u3067\u3059\u306d\uff01\u3000\u3042\u3063\u3001\u3058\u3083\u3042\n\u79c1\u306f\u3001\u3053\u3061\u3089\u306e\u6620\u50cf\u3092\u30b9\u30bf\u30c3\u30d5\n\u3055\u3093\u306b\u304a\u6e21\u3057\u3057\u3066\u304d\u307e\u3057\u3087\u3046\u266a",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "54",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u3061\u3072\u308d",
-                "height_diff": "",
-                "face": "5",
-                "position": "RR",
-                "movement": "out_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "55",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u51db",
-                "height_diff": "",
-                "face": "1",
-                "position": "RR",
-                "movement": "in_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u79c1\u3082\u3001\u8863\u88c5\u30b3\u30fc\u30ca\u30fc\u306e\u5b8c\u6210\u3092\n\u898b\u5c4a\u3051\u3088\u3046\u304b\u306a\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "56",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "1",
-                "position": "C",
-                "movement": "nod2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u79c1\u306f\u3001\u30b3\u30e9\u30dc\u30d5\u30fc\u30c9\u306e\u30b3\u30fc\u30ca\u30fc\n\u306b\u884c\u304f\u3068\u3057\u3066\u2026\u2026\u4f5c\u696d\u958b\u59cb\u306e\n\u639b\u3051\u58f0\u306f\u3001\u3075\u307f\u3075\u307f\u306b\u304a\u4efb\u305b\n\u3057\u3088\u3046\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "57",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "2",
-                "position": "LL",
-                "movement": "out_L",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "58",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "3",
-                "position": "LL",
-                "movement": "in_L",
-                "chara_effect": "sweat_fly",
-                "effect_direction": "R",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u308f\u3001\u79c1\u3067\u3059\u304b\u2026\u2026\uff1f",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "59",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u672a\u592e",
-                "height_diff": "",
-                "face": "1",
-                "position": "C",
-                "movement": "out_R",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": " ",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "60",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "7",
-                "position": "C",
-                "movement": "in_L",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u306e\u4f01\u753b\u3082\u3001\n\u30e1\u30e2\u30ea\u30a2\u30eb\u30d6\u30c3\u30af\u306e\u63d0\u6848\u3082\u3001\n\u6587\u9999\u3055\u3093\u304c\u884c\u3063\u3066\u304f\u308c\u307e\u3057\u305f\n\u304b\u3089\uff01",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "61",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u536f\u6708",
-                "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "question_left2",
-                "chara_effect": "chord",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u4eca\u65e5\u4e00\u65e5\u3001\u307f\u3093\u306a\u304c\u3082\u3063\u3068\n\u9811\u5f35\u308c\u308b\u3088\u3046\u306b\u3001\n\u304a\u9858\u3044\u3057\u307e\u3059\u266a",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "62",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "7",
-                "position": "LL",
-                "movement": "nod",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u8cac\u4efb\u91cd\u5927\u3067\u3059\u306d",
-                "timing": "15",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "63",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "8",
-                "position": "LL",
-                "movement": "question_right2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u8cac\u4efb\u91cd\u5927\u3067\u3059\u306d\n\u2026\u2026\u3067\u306f\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "64",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u6587\u9999",
-                "height_diff": "",
-                "face": "1",
-                "position": "LL",
-                "movement": "nod2",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u3044\u304d\u307e\u3057\u3087\u3046\u3002\n\u2026\u2026\u4eca\u65e5\u3082\u3001\u65b0\u305f\u306a\n\u4e00\u9801\u3092\u7db4\u308a\u306b\u3002",
-                "timing": "",
-                "auto": "1",
-                "sound_effect": ""
-            }, {
-                "id": "65",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "\u5168\u54e1",
-                "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "all_out_fade",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "66",
-                "story_id": "173801",
-                "character_id": "10234",
-                "cname": "\u5168\u54e1",
-                "height_diff": "",
-                "face": "2",
-                "position": "RR",
-                "movement": "in_float",
-                "chara_effect": "flower_red",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u304a\u30fc\uff01",
-                "timing": "2",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "67",
-                "story_id": "173801",
-                "character_id": "10101",
-                "cname": "\u5168\u54e1",
-                "height_diff": "",
-                "face": "2",
-                "position": "C",
-                "movement": "in_float",
-                "chara_effect": "flower_red",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u304a\u30fc\uff01",
-                "timing": "2",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "68",
-                "story_id": "173801",
-                "character_id": "10167",
-                "cname": "\u5168\u54e1",
-                "height_diff": "",
-                "face": "2",
-                "position": "LL",
-                "movement": "in_float",
-                "chara_effect": "flower_red",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "\u304a\u30fc\uff01",
-                "timing": "2",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "69",
-                "story_id": "173801",
-                "character_id": "",
-                "cname": "\u5168\u54e1",
-                "height_diff": "",
-                "face": "",
-                "position": "",
-                "movement": "all_out_fade",
-                "chara_effect": "",
-                "effect_direction": "",
-                "a_fade": "",
-                "": "",
-                "bgimg": "",
-                "button": "",
-                "message": "",
-                "timing": "0",
-                "auto": "0",
-                "sound_effect": ""
-            }, {
-                "id": "70",
-                "story_id": "173801",
-                "character_id": "10002",
-                "cname": "\u5168\u54e1",
+                "story_id": "173802",
+                "character_id": "2468501",
+                "cname": "4\u4eba",
                 "height_diff": "",
                 "face": "2",
                 "position": "R",
-                "movement": "in_float",
+                "movement": "jump",
                 "chara_effect": "flower_red",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u304a\u30fc\uff01",
+                "message": "\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\uff01\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\uff01",
                 "timing": "2",
                 "auto": "0",
                 "sound_effect": ""
             }, {
-                "id": "71",
-                "story_id": "173801",
-                "character_id": "10189",
-                "cname": "\u5168\u54e1",
+                "id": "52",
+                "story_id": "173802",
+                "character_id": "3568202",
+                "cname": "4\u4eba",
                 "height_diff": "",
                 "face": "2",
                 "position": "L",
-                "movement": "in_float",
+                "movement": "jump",
                 "chara_effect": "flower_red",
                 "effect_direction": "",
                 "a_fade": "",
                 "": "",
                 "bgimg": "",
                 "button": "",
-                "message": "\u304a\u30fc\uff01",
+                "message": "\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\uff01\n\u30d7\u30ed\u30c7\u30e5\u30fc\u30b5\u30fc\u3055\u3093\uff01",
                 "timing": "",
                 "auto": "1",
                 "sound_effect": ""
@@ -5546,94 +5187,48 @@
                     "other_chara_flg": "1"
                 }
             },
-            "bg_list": [173801, "00008"],
-            "effect_list": ["sweat_fly", "laugh", "flower_yellow", "concent", "chord", "notice", "flower_red", "question"],
+            "bg_list": [173803],
+            "effect_list": ["laugh", "flower_yellow", "chord", "question", "notice", "exclamation", "sweat_fly", "concent", "flower_red", "question"],
             "character_list": {
-                "10234": {
+                "2468501": {
                     "id": 1,
                     "hash_id": "",
-                    "name": "\u672a\u592e",
+                    "name": "\u6587\u9999",
                     "offsetx": "0",
                     "offsety": "0",
                     "other_flg": "1"
                 },
-                "10167": {
+                "3568202": {
                     "id": 2,
                     "hash_id": "",
-                    "name": "\u51db",
-                    "offsetx": "0",
-                    "offsety": "0",
-                    "other_flg": "1"
-                },
-                "10101": {
-                    "id": 3,
-                    "hash_id": "",
-                    "name": "\u536f\u6708",
-                    "offsetx": "0",
-                    "offsety": "0",
-                    "other_flg": "1"
-                },
-                "10189": {
-                    "id": 4,
-                    "hash_id": "",
-                    "name": "\u6587\u9999",
-                    "offsetx": "0",
-                    "offsety": "0",
-                    "other_flg": "1"
-                },
-                "10002": {
-                    "id": 5,
-                    "hash_id": "",
-                    "name": "\u3061\u3072\u308d",
-                    "offsetx": "0",
-                    "offsety": "0",
-                    "other_flg": "1"
-                },
-                "3100102": {
-                    "id": 6,
-                    "hash_id": "ce6baca22d2efbb08703302ef088640d",
                     "name": "\u672a\u592e",
                     "offsetx": "0",
                     "offsety": "0",
-                    "other_flg": "0"
+                    "other_flg": "1"
                 },
-                "2100102": {
-                    "id": 7,
-                    "hash_id": "e275bfe5941fd3959de60c5d5c5cacef",
+                "2568602": {
+                    "id": 3,
+                    "hash_id": "",
                     "name": "\u51db",
                     "offsetx": "0",
                     "offsety": "0",
-                    "other_flg": "0"
+                    "other_flg": "1"
                 },
-                "1100102": {
-                    "id": 8,
-                    "hash_id": "798ed3093c682f20234934cef65c2106",
+                "1568002": {
+                    "id": 4,
+                    "hash_id": "",
                     "name": "\u536f\u6708",
                     "offsetx": "0",
                     "offsety": "0",
-                    "other_flg": "0"
-                },
-                "2102602": {
-                    "id": 9,
-                    "hash_id": "7e5915c0369bb67f9240d3b0a501a2e5",
-                    "name": "\u6587\u9999",
-                    "offsetx": "0",
-                    "offsety": "0",
-                    "other_flg": "0"
+                    "other_flg": "1"
                 }
             },
-            "title": "\u8a2d\u55b6\u4e2d\u306e\u30df\u30e5\u30fc\u30b8\u30a2\u30e0",
-            "story_type": "1",
-            "all_skip": "0",
-            "logo_bg": "173802"
+            "title": "\u821e\u53f0\u8896",
+            "story_type": "3",
+            "all_skip": "1",
+            "logo_bg": ""
         };
-        window.replace_images = {
-            "event_logo": "image_sp\/event_flash\/story\/logo\/logo_173802.png",
-            "event_push": "image_sp\/event_flash\/story\/push\/push_173802.png",
-            "event_push_w": "image_sp\/event_flash\/story\/push\/push_173802_w.png",
-            "event_push_b": "image_sp\/event_flash\/story\/push\/push_173802_b.png",
-            "event_bg": "image_sp\/event_flash\/story\/bg\/bg173802.png"
-        }
+        window.replace_images = []
         2
         3
         4
@@ -5660,8 +5255,6 @@
         7
         8
         9
-        10
-        11
         2
         3
         4
@@ -5672,23 +5265,8 @@
         9
         10
         11
-        2
-        3
-        4
-        5
-        6
-        7
-        2
-        3
-        2
-        2
-        3
-        4
-        2
-        3
-        4
-        5
-        6
+        12
+        13
         window.chara_replace_images = {};
         // 一旦すべてのキャラ画像をダミーに差し替え
         for (i = 1; i <= 20; i++) {
@@ -5697,86 +5275,58 @@
             }
         }
         // 必要なキャラ画像を追加
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10234.png';
-        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/10234_2.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10234.png';
-        window.chara_replace_images['c1_face7'] = 'image_sp/cjs/chara/other/10234_7.png';
-        window.chara_replace_images['c1_face7'] = 'image_sp/cjs/chara/other/10234_7.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10234.png';
-        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/10234_2.png';
-        window.chara_replace_images['c1_face7'] = 'image_sp/cjs/chara/other/10234_7.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10234.png';
-        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/10234.png';
-        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/10234_2.png';
-        window.chara_replace_images['c1_b'] = 'image_sp/cjs/chara/other/10234_b.png';
-        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/10167.png';
-        window.chara_replace_images['c2_face6'] = 'image_sp/cjs/chara/other/10167_6.png';
-        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/10167.png';
-        window.chara_replace_images['c2_face3'] = 'image_sp/cjs/chara/other/10167_3.png';
-        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/10167.png';
-        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/10167_2.png';
-        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/10167_2.png';
-        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/10167.png';
-        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/10167_2.png';
-        window.chara_replace_images['c2_b'] = 'image_sp/cjs/chara/other/10167_b.png';
-        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/10101.png';
-        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/10101_2.png';
-        window.chara_replace_images['c3_face9'] = 'image_sp/cjs/chara/other/10101_9.png';
-        window.chara_replace_images['c3_face7'] = 'image_sp/cjs/chara/other/10101_7.png';
-        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/10101.png';
-        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/10101.png';
-        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/10101_2.png';
-        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/10101_2.png';
-        window.chara_replace_images['c3_face7'] = 'image_sp/cjs/chara/other/10101_7.png';
-        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/10101_2.png';
-        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/10101_2.png';
-        window.chara_replace_images['c3_b'] = 'image_sp/cjs/chara/other/10101_b.png';
-        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c4_face3'] = 'image_sp/cjs/chara/other/10189_3.png';
-        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c4_face3'] = 'image_sp/cjs/chara/other/10189_3.png';
-        window.chara_replace_images['c4_face7'] = 'image_sp/cjs/chara/other/10189_7.png';
-        window.chara_replace_images['c4_face8'] = 'image_sp/cjs/chara/other/10189_8.png';
-        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/10189.png';
-        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/10189_2.png';
-        window.chara_replace_images['c4_b'] = 'image_sp/cjs/chara/other/10189_b.png';
-        window.chara_replace_images['c5_face1'] = 'image_sp/cjs/chara/other/10002.png';
-        window.chara_replace_images['c5_face1'] = 'image_sp/cjs/chara/other/10002.png';
-        window.chara_replace_images['c5_face11'] = 'image_sp/cjs/chara/other/10002_11.png';
-        window.chara_replace_images['c5_face4'] = 'image_sp/cjs/chara/other/10002_4.png';
-        window.chara_replace_images['c5_face5'] = 'image_sp/cjs/chara/other/10002_5.png';
-        window.chara_replace_images['c5_face5'] = 'image_sp/cjs/chara/other/10002_5.png';
-        window.chara_replace_images['c5_face2'] = 'image_sp/cjs/chara/other/10002_2.png';
-        window.chara_replace_images['c5_b'] = 'image_sp/cjs/chara/other/10002_b.png';
-        window.chara_replace_images['c6_face1'] = 'image_sp/card/cm/ce6baca22d2efbb08703302ef088640d.png';
-        window.chara_replace_images['c6_face1'] = 'image_sp/card/cm/ce6baca22d2efbb08703302ef088640d.png';
-        window.chara_replace_images['c6_face1'] = 'image_sp/card/cm/ce6baca22d2efbb08703302ef088640d.png';
-        window.chara_replace_images['c6_b'] = 'image_sp/card/cm_face/ce6baca22d2efbb08703302ef088640d_b.png';
-        window.chara_replace_images['c7_face1'] = 'image_sp/card/cm/e275bfe5941fd3959de60c5d5c5cacef.png';
-        window.chara_replace_images['c7_face1'] = 'image_sp/card/cm/e275bfe5941fd3959de60c5d5c5cacef.png';
-        window.chara_replace_images['c7_b'] = 'image_sp/card/cm_face/e275bfe5941fd3959de60c5d5c5cacef_b.png';
-        window.chara_replace_images['c8_face1'] = 'image_sp/card/cm/798ed3093c682f20234934cef65c2106.png';
-        window.chara_replace_images['c8_face1'] = 'image_sp/card/cm/798ed3093c682f20234934cef65c2106.png';
-        window.chara_replace_images['c8_face1'] = 'image_sp/card/cm/798ed3093c682f20234934cef65c2106.png';
-        window.chara_replace_images['c8_face1'] = 'image_sp/card/cm/798ed3093c682f20234934cef65c2106.png';
-        window.chara_replace_images['c8_b'] = 'image_sp/card/cm_face/798ed3093c682f20234934cef65c2106_b.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_face1'] = 'image_sp/card/cm/7e5915c0369bb67f9240d3b0a501a2e5.png';
-        window.chara_replace_images['c9_b'] = 'image_sp/card/cm_face/7e5915c0369bb67f9240d3b0a501a2e5_b.png';
+        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/2468501.png';
+        window.chara_replace_images['c1_face4'] = 'image_sp/cjs/chara/other/2468501_4.png';
+        window.chara_replace_images['c1_face4'] = 'image_sp/cjs/chara/other/2468501_4.png';
+        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/2468501.png';
+        window.chara_replace_images['c1_face3'] = 'image_sp/cjs/chara/other/2468501_3.png';
+        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/2468501.png';
+        window.chara_replace_images['c1_face6'] = 'image_sp/cjs/chara/other/2468501_6.png';
+        window.chara_replace_images['c1_face4'] = 'image_sp/cjs/chara/other/2468501_4.png';
+        window.chara_replace_images['c1_face5'] = 'image_sp/cjs/chara/other/2468501_5.png';
+        window.chara_replace_images['c1_face1'] = 'image_sp/cjs/chara/other/2468501.png';
+        window.chara_replace_images['c1_face2'] = 'image_sp/cjs/chara/other/2468501_2.png';
+        window.chara_replace_images['c1_b'] = 'image_sp/cjs/chara/other/2468501_b.png';
+        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/3568202.png';
+        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/3568202_2.png';
+        window.chara_replace_images['c2_face3'] = 'image_sp/cjs/chara/other/3568202_3.png';
+        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/3568202_2.png';
+        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/3568202.png';
+        window.chara_replace_images['c2_face3'] = 'image_sp/cjs/chara/other/3568202_3.png';
+        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/3568202.png';
+        window.chara_replace_images['c2_face1'] = 'image_sp/cjs/chara/other/3568202.png';
+        window.chara_replace_images['c2_face2'] = 'image_sp/cjs/chara/other/3568202_2.png';
+        window.chara_replace_images['c2_b'] = 'image_sp/cjs/chara/other/3568202_b.png';
+        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/2568602.png';
+        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/2568602.png';
+        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/2568602.png';
+        window.chara_replace_images['c3_face4'] = 'image_sp/cjs/chara/other/2568602_4.png';
+        window.chara_replace_images['c3_face3'] = 'image_sp/cjs/chara/other/2568602_3.png';
+        window.chara_replace_images['c3_face3'] = 'image_sp/cjs/chara/other/2568602_3.png';
+        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/2568602.png';
+        window.chara_replace_images['c3_face1'] = 'image_sp/cjs/chara/other/2568602.png';
+        window.chara_replace_images['c3_face2'] = 'image_sp/cjs/chara/other/2568602_2.png';
+        window.chara_replace_images['c3_b'] = 'image_sp/cjs/chara/other/2568602_b.png';
+        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/1568002.png';
+        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/1568002.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_face3'] = 'image_sp/cjs/chara/other/1568002_3.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_face4'] = 'image_sp/cjs/chara/other/1568002_4.png';
+        window.chara_replace_images['c4_face6'] = 'image_sp/cjs/chara/other/1568002_6.png';
+        window.chara_replace_images['c4_face5'] = 'image_sp/cjs/chara/other/1568002_5.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_face1'] = 'image_sp/cjs/chara/other/1568002.png';
+        window.chara_replace_images['c4_face2'] = 'image_sp/cjs/chara/other/1568002_2.png';
+        window.chara_replace_images['c4_b'] = 'image_sp/cjs/chara/other/1568002_b.png';
         window.im_cjs.bg_frame_info = {
-            '173801': 0,
-            '00008': 1,
+            '173803': 0,
         };
         window.bg_replace_images = {};
-        window.bg_replace_images['bg1'] = '173801';
-        window.bg_replace_images['bg2'] = '00008';
+        window.bg_replace_images['bg1'] = '173803';
+        window.bg_replace_images['bg2'] = '_nobg';
         window.bg_replace_images['bg3'] = '_nobg';
         window.bg_replace_images['bg4'] = '_nobg';
         window.bg_replace_images['bg5'] = '_nobg';
@@ -5786,104 +5336,60 @@
         window.bg_replace_images['bg9'] = '_nobg';
         window.bg_replace_images['bg10'] = '_nobg';
         window.op_bg_replace_images = {};
-        window.op_bg_replace_images['bg_op'] = '173802';
         window.im_cjs.effect_frame_info = {
-            'sweat_fly': 0,
-            'laugh': 1,
-            'flower_yellow': 2,
-            'concent': 3,
-            'chord': 4,
-            'notice': 5,
-            'flower_red': 6,
-            'question': 7,
+            'laugh': 0,
+            'flower_yellow': 1,
+            'chord': 2,
+            'question': 3,
+            'notice': 4,
+            'exclamation': 5,
+            'sweat_fly': 6,
+            'concent': 7,
+            'flower_red': 8,
+            'question': 9,
         };
         window.im_cjs.chara_frame_info = {
-            "10234": {
+            "2468501": {
                 "id": 1,
                 "hash_id": "",
-                "name": "\u672a\u592e",
+                "name": "\u6587\u9999",
                 "offsetx": "0",
                 "offsety": "0",
                 "other_flg": "1",
-                "face": ["1", "2", "1", "7", "7", "1", "2", "7", "1", "1", "2"]
+                "face": ["1", "4", "4", "1", "3", "1", "6", "4", "5", "1", "2"]
             },
-            "10167": {
+            "3568202": {
                 "id": 2,
                 "hash_id": "",
-                "name": "\u51db",
-                "offsetx": "0",
-                "offsety": "0",
-                "other_flg": "1",
-                "face": ["1", "6", "1", "3", "1", "2", "2", "1", "2"]
-            },
-            "10101": {
-                "id": 3,
-                "hash_id": "",
-                "name": "\u536f\u6708",
-                "offsetx": "0",
-                "offsety": "0",
-                "other_flg": "1",
-                "face": ["1", "2", "9", "7", "1", "1", "2", "2", "7", "2", "2"]
-            },
-            "10189": {
-                "id": 4,
-                "hash_id": "",
-                "name": "\u6587\u9999",
-                "offsetx": "0",
-                "offsety": "0",
-                "other_flg": "1",
-                "face": ["1", "3", "1", "2", "2", "2", "3", "7", "8", "1", "2"]
-            },
-            "10002": {
-                "id": 5,
-                "hash_id": "",
-                "name": "\u3061\u3072\u308d",
-                "offsetx": "0",
-                "offsety": "0",
-                "other_flg": "1",
-                "face": ["1", "1", "11", "4", "5", "5", "2"]
-            },
-            "3100102": {
-                "id": 6,
-                "hash_id": "ce6baca22d2efbb08703302ef088640d",
                 "name": "\u672a\u592e",
                 "offsetx": "0",
                 "offsety": "0",
-                "other_flg": "0",
-                "face": ["1", "1", "1"]
+                "other_flg": "1",
+                "face": ["1", "2", "3", "2", "1", "3", "1", "1", "2"]
             },
-            "2100102": {
-                "id": 7,
-                "hash_id": "e275bfe5941fd3959de60c5d5c5cacef",
+            "2568602": {
+                "id": 3,
+                "hash_id": "",
                 "name": "\u51db",
                 "offsetx": "0",
                 "offsety": "0",
-                "other_flg": "0",
-                "face": ["1", "1"]
+                "other_flg": "1",
+                "face": ["1", "1", "1", "4", "3", "3", "1", "1", "2"]
             },
-            "1100102": {
-                "id": 8,
-                "hash_id": "798ed3093c682f20234934cef65c2106",
+            "1568002": {
+                "id": 4,
+                "hash_id": "",
                 "name": "\u536f\u6708",
                 "offsetx": "0",
                 "offsety": "0",
-                "other_flg": "0",
-                "face": ["1", "1", "1", "1"]
-            },
-            "2102602": {
-                "id": 9,
-                "hash_id": "7e5915c0369bb67f9240d3b0a501a2e5",
-                "name": "\u6587\u9999",
-                "offsetx": "0",
-                "offsety": "0",
-                "other_flg": "0",
-                "face": ["1", "1", "1", "1", "1", "1"]
+                "other_flg": "1",
+                "face": ["1", "1", "2", "3", "2", "2", "4", "6", "5", "2", "2", "1", "2"]
             }
         };
-        window.im_cjs.title_name = '設営中のミュージアム' || 'no_title';
-        window.im_cjs.event_type = '1' || 0;
+        window.im_cjs.title_name = '舞台袖' || 'no_title';
+        window.im_cjs.event_type = '3' || 0;
         window.im_cjs.jump_url = '../../detail/1738/index.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
-        window.im_cjs.chara_num = 10;
+        window.im_cjs.chara_num = 5;
         window.im_cjs.voice_flag = 0; // 音声再生フラグを定義
     </script>
     <script>
@@ -5905,7 +5411,7 @@
                 var comp = AdobeAn.getComposition(window.file_name);
                 lib = comp.getLibrary();
                 var comp_eff_supporter = [];
-                var effect_list = ["sweat_fly", "laugh", "flower_yellow", "concent", "chord", "notice", "flower_red", "question"];
+                var effect_list = ["laugh", "flower_yellow", "chord", "question", "notice", "exclamation", "sweat_fly", "concent", "flower_red", "question"];
                 for (var n = 0, len = _effect_cnt; n < len; n++) {
                     comp_eff_supporter[n] = AdobeAn.getComposition('eff_' + effect_list[n]);
                     if (comp_eff_supporter[n]) {
@@ -5992,6 +5498,22 @@
                     });
                     loader.addEventListener("complete", function(evt) {
                         handleComplete(evt, comp_eff_supporter[8])
+                    });
+                }
+                if (comp_eff_supporter[9]) {
+                    loader.addEventListener("fileload", function(evt) {
+                        handleFileLoad(evt, comp_eff_supporter[9])
+                    });
+                    loader.addEventListener("complete", function(evt) {
+                        handleComplete(evt, comp_eff_supporter[9])
+                    });
+                }
+                if (comp_eff_supporter[10]) {
+                    loader.addEventListener("fileload", function(evt) {
+                        handleFileLoad(evt, comp_eff_supporter[10])
+                    });
+                    loader.addEventListener("complete", function(evt) {
+                        handleComplete(evt, comp_eff_supporter[10])
                     });
                 }
                 var new_manifest = [];
@@ -6114,7 +5636,6 @@
                 AdobeAn.compositionLoaded(lib.properties.id);
                 fnStartAnimation();
                 $('.loading').hide();
-                exportRoot.skip_btn.visible = false;
             }
 
             function playSound(id, loop) {
