@@ -12,7 +12,6 @@
         if (window.localStorage) {var displaySet = localStorage.getItem('DisplayPositionSet');if (displaySet == 1) {if (navigator.userAgent.indexOf('Android') > 0) {document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;} else {document.write('<meta name="viewport" content="width=320, user-scalable=no">');}window.addEventListener('resize', function() {if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;});} else {document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');}} else {document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');}
     </script>
 </head>
-
 <body id="memory_produce">
     <div id="pageArea" onUnload="unloadBye()">
         <div id="top" class="page_container jsOnBtn">
