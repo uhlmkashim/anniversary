@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../../../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0) document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../../../js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 134800333;
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/game_error/report_js_error";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="../../../js/underscore-min.js"></script>
+    <script src="../../../js/require.js"></script>
+    <script src="../../../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../../../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../../../js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                tweenjs: "../../../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../../../js/movieclip-0.7.1.min.js",
+                createjs: "../../../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../../../js/common.js"></script>
+    <script src="../../../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/memory/detail/1711/0/0');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+<body id="memory" class="detail">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <style type="text/css">
+            .comments {
+                min-height: 115px;
+                text-align: left;
+                color: #1d1d1d;
+                padding: 25px 20px 10px;
+                position: relative;
+                top: -50px;
+            }
+
+            .comments.cute {
+                background: url('../../../image_sp/ui/event_memory/cute_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.cool {
+                background: url('../../../image_sp/ui/event_memory/cool_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.passion {
+                background: url('../../../image_sp/ui/event_memory/passion_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .icon_navi {
+                width: auto;
+                margin: 0 13px;
+                padding: 8px 0;
+                background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 130, from(#222), to(#333));
+                -webkit-border-radius: 6px;
+            }
+
+            .cover {
+                height: 370px;
+            }
+
+            .exBox {
+                width: 320px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            a.inline {
+                width: 300px;
+                height: 70px;
+                color: #1d1d1d;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .exArea {
+                width: 260px;
+                margin: 10px auto 0;
+                padding: 0;
+                border: 2px solid #b4d5f4;
+                background: #1d1d1d;
+                z-index: 10;
+                color: #ffffff;
+                line-height: 140%;
+                -webkit-border-radius: 8px;
+            }
+
+            .exArea h3 {
+                background: #17285c;
+                -webkit-border-top-left-radius: 8px;
+                -webkit-border-top-right-radius: 8px;
+                padding: 10px 0;
+            }
+
+            .check_close_btn {
+                top: -10px;
+                width: 37px;
+                height: 37px;
+                right: 20px;
+                display: block;
+            }
+
+            .m-12px {
+                margin-top: -12px;
+            }
+
+            .appear_idol_area .appear_idol_bg {
+                position: relative;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_chara {
+                position: absolute;
+                top: -15px;
+                left: 0;
+                z-index: 1;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_title_area {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                z-index: 2;
+                width: 320px;
+                height: 36px;
+            }
+
+            .appear_idol_area .appear_idol_title_bg {
+                position: relative;
+                background-image: url('../../../image_sp/ui/event_memory/appear_idol_title_bg.png');
+                background-size: 320px;
+                background-repeat: no-repeat;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: transparent;
+                padding-left: 34px;
+                -webkit-mask-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .appear_idol_area .appear_idol_title_text {
+                position: relative;
+                top: 2px;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: #1d1d1d;
+                padding-left: 34px;
+                text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
+            }
+
+            .appear_idol_area .appear_idol_title_text._line_2 {
+                top: -1px;
+                font-size: 12px;
+            }
+        </style>
+        <header style="margin:0 0 5px;">
+            <h1 style="margin:0 0 10px;"><img src='../../../image_sp/event/1711/top_event.jpg' width="100%" alt="アイドルプロデュース 夏島☆シーサイドLIVE!!" class="m-12px">
+            </h1>
+    <link rel="stylesheet" type="text/css" href='../../../css/rich/event_produce.css' media="all">
+    <style>
+        .encore_color {
+            color: #ff7100;
+        }
+
+        ._ls {
+            letter-spacing: -0.9px;
+        }
+
+        .select_area .tab_line_4_1._free_line {
+            letter-spacing: -0.9px;
+        }
+    </style>
+    <h2 class="title_img_blue" style="margin:0;">
+        <div>コミュイベントメモリー</div>
+    </h2>
+    <div class="area_look_back">
+        <section class="area_select_idol t-Cnt m-Top4" id="main_idol_tab">
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=1>
+                <img src='../../../image_sp/event/1711/rich/icon_idol_1_2.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=2>
+                <img src='../../../image_sp/event/1711/rich/icon_idol_2_2.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=3>
+                <img src='../../../image_sp/event/1711/rich/icon_idol_3_2.png' width="60"></a>
+            <a href='#' class="tab_idol_list jsOnDesignBtn" data-key=4>
+                <img src='../../../image_sp/event/1711/rich/icon_idol_4_2.png' width="60"></a></section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_1 area_select_area _attr_2" data-idol_id=1 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px">
+                <img src='../../../image_sp/event/1711/top_stage_chara_101.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">成宮由愛</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_1" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">ビーチ</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">波打ち際</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">ナイトビーチ</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/1/1.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/1/2.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/1/3.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/1/4.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/5.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/6.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/7.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/8.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/1/1/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/1/11.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/1/12.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/1/13.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/1/14.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/15.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/16.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/17.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/18.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/1/2/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/1/21.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/1/22.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/1/23.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/1/24.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/25.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/26.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/27.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/28.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/1/3/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_1 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/1/31.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/1/32.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/1/33.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/1/34.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/35.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/36.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/37.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/38.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/40.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/1/41.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント5</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/1/4/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_2 area_select_area _attr_1" data-idol_id=2 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='../../../image_sp/event/1711/top_stage_chara_201.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">水本ゆかり</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_2" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">ビーチ</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">波打ち際</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">ナイトビーチ</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/2/1.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/2/2.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/2/3.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/2/4.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/5.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/6.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/7.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/8.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/2/1/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/2/11.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/2/12.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/2/13.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/2/14.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/15.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/16.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/17.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/18.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/2/2/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/2/21.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/2/22.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/2/23.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/2/24.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/25.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/26.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/27.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/28.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/2/3/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_2 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/2/31.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/2/32.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/2/33.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/2/34.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/35.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/36.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/37.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/38.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/39.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/2/40.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント5</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/2/4/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_3 area_select_area _attr_3" data-idol_id=3 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='../../../image_sp/event/1711/top_stage_chara_301.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">冴島清美</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_3" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">ビーチ</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">波打ち際</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">ナイトビーチ</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/3/1.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/3/2.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/3/3.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/3/4.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/5.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/6.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/7.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/8.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/3/1/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/3/11.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/3/12.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/3/13.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/3/14.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/15.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/16.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/17.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/18.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/3/2/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/3/21.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/3/22.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/3/23.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/3/24.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/25.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/26.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/27.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/28.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/3/3/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_3 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/3/31.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/3/32.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/3/33.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/3/34.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/35.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/36.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/37.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/38.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/39.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/3/40.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント5</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/3/4/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <style>
+            .area_select_area._bg_1:before {
+                background-image: url(.././../image_sp/event_flash/1711/bg/1711/bg1_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_2:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg2_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_3:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg3_rich.jpg);
+                background-position-y: -60px;
+            }
+
+            .area_select_area._bg_4:before {
+                background-image: url(../../../image_sp/event_flash/1711/bg/1711/bg4_rich.jpg);
+                background-position-y: -60px;
+            }
+        </style>
+        <section class="main_idol_tab_4 area_select_area _attr_2" data-idol_id=4 data-view=>
+            <div class="bg_area"></div>
+            <div style="height:110px"><img src='../../../image_sp/event/1711/top_stage_chara_401.png' class="idol_img" width="250">
+                <div class="idol_name">
+                    <div class="text_value">黒川千秋</div>
+                </div>
+                <div class="main_area_name"></div>
+            </div>
+            <div class="select_area">
+                <div class="js_tab_elm ">
+                    <div id="small_tab_4" class='tab_common-small  m-Top4 m-Btm4' style=""><a class='tab_line_4_1 tab_text _free_line  ' style="" data-area_id="1">
+                            <div class="text-elem">ビーチ</div>
+                        </a><a class='tab_line_4_2 tab_text _free_line  ' style="" data-area_id="2">
+                            <div class="text-elem">波打ち際</div>
+                        </a><a class='tab_line_4_3 tab_text _free_line  ' style="" data-area_id="3">
+                            <div class="text-elem">LIVEステージ</div>
+                        </a><a class='tab_line_4_4 tab_text _free_line  ' style="" data-area_id="4">
+                            <div class="text-elem">ナイトビーチ</div>
+                        </a></div>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/4/1.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/4/2.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/4/3.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/4/4.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/5.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/6.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/7.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/8.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/4/1/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/4/11.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/4/12.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/4/13.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/4/14.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/15.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/16.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/17.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/18.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/4/2/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/4/21.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/4/22.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/4/23.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/4/24.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/25.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/26.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/27.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/28.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/4/3/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="small_area_tab_4 area_list m-Btm4">
+                    <ul>
+                        <li><a href='memory_produce/work_memory/4/31.html' class="btn_area jsOnDesignBtn">コミュイベント1</a></li>
+                        <li><a href='memory_produce/work_memory/4/32.html' class="btn_area jsOnDesignBtn">コミュイベント2</a></li>
+                        <li><a href='memory_produce/work_memory/4/33.html' class="btn_area jsOnDesignBtn">コミュイベント3</a></li>
+                        <li><a href='memory_produce/work_memory/4/34.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/35.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/36.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント3</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/37.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント1</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/38.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">ドラマチック<br>コミュイベント2</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/39.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント4</div>
+                            </a></li>
+                        <li><a href='memory_produce/work_memory/4/40.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">スペシャル<br>コミュイベント5</div>
+                            </a></li>
+                        <li><a href='memory_produce/episode_commu/4/4/1.html' class="btn_area jsOnDesignBtn">
+                                <div class="text_elem">エピソード<br>コミュイベント</div>
+                            </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/ilibrary.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        'use strict';
+        var produce_idols = {
+            "1": {
+                "produce_idol_id": "1",
+                "produce_idoleimage1": "3000101",
+                "produce_idoleimage2": "3468201",
+                "produce_idoleimage3": "3568202",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "1",
+                "produce_idol_flash2": "1",
+                "produce_idol_flash3": "1",
+                "produce_idol_flash4": "1",
+                "produce_idol_name": "本田未央",
+                "produce_idol_type": "3",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "4",
+                "complete_rank2": "14",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "1",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "1",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "12000",
+                "rank3_up_event_point": "18000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "私の光、もっとずっと遠くまで届かせよう! 星空の上を、これからも進むよ。%sプロデューサーと☆",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "プロデューサーの言葉は、いつだってキラキラしてるよね! だから、もっと聞いていたいんだ。たくさん話そうよ。私とふたりでさ♪",
+                "encore_time_comment": "私のワガママ、聞いてくれる? ふたりの時間がもっと続いてほしい…%sプロデューサーのこと、独り占めしていいかな?",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "1",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "2",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "1",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "2": {
+                "produce_idol_id": "2",
+                "produce_idoleimage1": "2000101",
+                "produce_idoleimage2": "2468601",
+                "produce_idoleimage3": "2568602",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "2",
+                "produce_idol_flash2": "2",
+                "produce_idol_flash3": "2",
+                "produce_idol_flash4": "2",
+                "produce_idol_name": "渋谷凛",
+                "produce_idol_type": "2",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "5",
+                "complete_rank2": "19",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "2",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "2",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "16000",
+                "rank3_up_event_point": "24000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "プロデューサー、もっと堂々としなよ。自慢のプロデューサーです、って言わないと自信持てない? …言ってもいいよ。本当のことだし",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "ごめん、ちょっと待って。プロデューサーの顔見てたら…話したいことがどんどん出てきた。なにそれ、って感じだよね。ふふっ",
+                "encore_time_comment": "…プロデューサー、もうちょっとだけここにいたら? …別に、言葉なんて要らないよ。私の近くにいてくれるだけで、十分だから",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "1",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "2",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "1",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "3": {
+                "produce_idol_id": "3",
+                "produce_idoleimage1": "1000101",
+                "produce_idoleimage2": "1468001",
+                "produce_idoleimage3": "1568002",
+                "produce_idoleimage4": "0",
+                "produce_idol_flash1": "3",
+                "produce_idol_flash2": "3",
+                "produce_idol_flash3": "3",
+                "produce_idol_flash4": "3",
+                "produce_idol_name": "島村卯月",
+                "produce_idol_type": "1",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "6",
+                "complete_rank2": "24",
+                "complete_rank3": "",
+                "complete1_item_category": "400",
+                "complete1_item": "3",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "401",
+                "complete2_item": "3",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "19000",
+                "rank3_up_event_point": "28000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "あなたのアイドル、島村卯月です! えへへ、言ってみたかったんです。ここにいる私は、プロデューサーさんが育てたんですから♪",
+                "rank3_up_comment": "",
+                "rank4_up_comment": "",
+                "fever_time_comment": "プロデューサーさんとだと話が尽きなくて…もう少しお話ししてもいいですか? できれば二人だけで…。ナイショのお話、ですね♪",
+                "encore_time_comment": "プロデューサーさんのお話も聞かせてください。どんなお話でも構いません。今はただ、あなたの声を聞いていたいんです…♪",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "1",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "2",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "1",
+                        "mission_bg": 4
+                    }
+                }
+            },
+            "4": {
+                "produce_idol_id": "4",
+                "produce_idoleimage1": "2002601",
+                "produce_idoleimage2": "2536302",
+                "produce_idoleimage3": "2468501",
+                "produce_idoleimage4": "2568502",
+                "produce_idol_flash1": "4",
+                "produce_idol_flash2": "4",
+                "produce_idol_flash3": "4",
+                "produce_idol_flash4": "4",
+                "produce_idol_name": "鷺沢文香",
+                "produce_idol_type": "2",
+                "need_hearts_rank_up": "5",
+                "complete_rank1": "6",
+                "complete_rank2": "18",
+                "complete_rank3": "",
+                "complete1_item_category": "40",
+                "complete1_item": "466",
+                "complete1_item_num": "1",
+                "complete1_item_category2": "1",
+                "complete1_item2": "5000",
+                "complete1_item_num2": "1",
+                "complete1_item_category3": "0",
+                "complete1_item3": "0",
+                "complete1_item_num3": "0",
+                "complete2_item_category": "40",
+                "complete2_item": "466",
+                "complete2_item_num": "1",
+                "complete2_item_category2": "1",
+                "complete2_item2": "5000",
+                "complete2_item_num2": "2",
+                "complete2_item_category3": "0",
+                "complete2_item3": "0",
+                "complete2_item_num3": "0",
+                "complete3_item_category": "0",
+                "complete3_item": "0",
+                "complete3_item_num": "0",
+                "complete3_item_category2": "0",
+                "complete3_item2": "0",
+                "complete3_item_num2": "0",
+                "complete3_item_category3": "0",
+                "complete3_item3": "0",
+                "complete3_item_num3": "0",
+                "rank2_up_event_point": "25000",
+                "rank3_up_event_point": "37000",
+                "rank4_up_event_point": "",
+                "rank2_up_comment": "変わりたい…そんな、私の淡い憧れは、%sさんの手で、眩い希望へ…そして、夢から現実へと形を変えました",
+                "rank3_up_comment": "…書ですら、時と共に評価は移ろいます。それでも…信じようと思います。…私の未来は変わらず、貴方と共に在る、と",
+                "rank4_up_comment": "",
+                "fever_time_comment": "%sさんに、お願いが…貴方の隣に居られる喜びを、まだ味わっていたいのです。…できれば、もう少し近くで…",
+                "encore_time_comment": "どうか…もう少しだけ、一緒に。言葉を交わしても、交わさずとも…貴方の隣で見る景色は、美しく、愛おしいものですから",
+                "quest_type": "2",
+                "mission_costume1": "",
+                "mission_costume2": "",
+                "mission_costume3": "",
+                "unlock_flag": true,
+                "bg_costume_list": {
+                    "1": {
+                        "mission_costume": "1",
+                        "mission_bg": 1
+                    },
+                    "2": {
+                        "mission_costume": "2",
+                        "mission_bg": 2
+                    },
+                    "3": {
+                        "mission_costume": "3",
+                        "mission_bg": 3
+                    },
+                    "4": {
+                        "mission_costume": "4",
+                        "mission_bg": 4
+                    }
+                }
+            }
+        };
+        var stage_data = {
+            "1": "ビーチ",
+            "2": "波打ち際",
+            "3": "LIVEステージ",
+            "4": "ナイトビーチ"
+        };
+        var extra_idol_key = null;
+        var extra_stage_data = null;
+        var current_area_info = {};
+        // アイドルタブ活性化
+        $('#main_idol_tab').tab_switch({
+            contents: "[class^='main_idol_tab_']",
+            storage: "produce_memory_idol_tab"
+        });
+        // エリアタブ活性化
+        $('#small_tab_1').tab_switch({
+            contents: "[class^='small_area_tab_1']",
+            storage: "produce_memory_idol_tab_mini_1"
+        });
+        var $area_id = $('.main_idol_tab_' + (1)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (1)).data('view');
+        current_area_info[1] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_2').tab_switch({
+            contents: "[class^='small_area_tab_2']",
+            storage: "produce_memory_idol_tab_mini_2"
+        });
+        var $area_id = $('.main_idol_tab_' + (2)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (2)).data('view');
+        current_area_info[2] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_3').tab_switch({
+            contents: "[class^='small_area_tab_3']",
+            storage: "produce_memory_idol_tab_mini_3"
+        });
+        var $area_id = $('.main_idol_tab_' + (3)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (3)).data('view');
+        current_area_info[3] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // エリアタブ活性化
+        $('#small_tab_4').tab_switch({
+            contents: "[class^='small_area_tab_4']",
+            storage: "produce_memory_idol_tab_mini_4"
+        });
+        var $area_id = $('.main_idol_tab_' + (4)).find('.selected');
+        var view_id = $('.main_idol_tab_' + (4)).data('view');
+        current_area_info[4] = ($area_id.length == 0) ? view_id : $area_id.data('area_id');
+        // アイドル画像描画
+        function viewIdol(idol_key, area_id) {
+            var img_path_pattern = '../../../image_sp/event/1711/top_stage_chara_XXX.png';
+            var idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+            if (!idol_img_path) {
+                while (!idol_img_path) {
+                    area_id++;
+                    idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+                }
+            }
+            if (idol_img_path) {
+                var _idol_img_path = img_path_pattern.replace('XXX', idol_key + '0' + idol_img_path.mission_costume);
+                $('.idol_img').attr('src', _idol_img_path);
+            }
+        }
+        // エリア名と背景描画
+        function viewBgText(idol_key, area_id) {
+            var $area_tab = $('.area_select_area').filter(function(element, index, array) {
+                return ($(index).data('idol_id') == idol_key);
+            });
+            // 背景表示
+            var imagePathPattern = '../../../image_sp/event_flash/1711/bg/1711/bg__AREA_ID___rich.jpg'
+            var idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+            if (idol_key == 5 && area_id == 1 & 1738 == 1735) {
+                $area_tab
+                    .find('.bg_area')
+                    .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', 1) + ')')
+            } else {
+                if (!idol_img_path) {
+                    while (!idol_img_path) {
+                        area_id++;
+                        idol_img_path = produce_idols[idol_key].bg_costume_list[area_id];
+                    }
+                }
+                if (idol_img_path) {
+                    var _area_bg_id = produce_idols[idol_key].bg_costume_list[area_id].mission_bg;
+                    $area_tab
+                        .find('.bg_area')
+                        .css('backgroundImage', 'url(' + imagePathPattern.replace('__AREA_ID__', _area_bg_id) + ')')
+                }
+            }
+            // エリア名表示
+            var _stage_data = (idol_key == extra_idol_key) ? extra_stage_data : stage_data;
+            if (idol_key == 5 && area_id == 1 & 1738 == 1735) {
+                $area_tab
+                    .find('.main_area_name')
+                    .text("校庭");
+            } else {
+                $area_tab
+                    .find('.main_area_name')
+                    .text(_stage_data[area_id]);
+            }
+        }
+        // 初期描画
+        var $idol_tab = $('.tab_idol_list').filter(function(element, index, array) {
+            return ($(index).hasClass('selected'));
+        });
+        $.each(current_area_info, function(index, elem) {
+            var $area_tab = $('#small_tab_' + index + ' a').filter(function(element, index, array) {
+                return ($(index).data('area_id') == elem);
+            });
+            $area_tab.trigger('click');
+        });
+        var current_idol_key = $idol_tab.data('key');
+        viewBgText(current_idol_key, current_area_info[current_idol_key]);
+        viewIdol(current_idol_key, current_area_info[current_idol_key]);
+        // アイドルタブ制御
+        $('.tab_idol_list').on('click', function() {
+            var idol_key = $(this).data('key');
+            viewBgText(idol_key, current_area_info[idol_key]);
+            viewIdol(idol_key, current_area_info[idol_key]);
+        });
+        // エリアタブ制御
+        $('.js_tab_elm').find('a').on('click', function() {
+            var idol_key = $('.tab_idol_list.selected').data('key');
+            var area_id = $(this).data('area_id');
+            current_area_info[idol_key] = area_id;
+            viewBgText(idol_key, area_id);
+            viewIdol(idol_key, area_id);
+        });
+        $('.js_epsode_release').on('click', function(e) {
+            $('#js_idol_name').text($(this).data('idol_name'));
+            $('#js_idol_area').text($(this).data('idol_area'));
+            $('#js_idol_id').val($(this).data('idol_id'));
+            $('#js_bg_id').val($(this).data('bg_id'));
+            $('#js_release_popup').trigger('click');
+            e.preventDefault();
+        });
+    </script>
+    <img src="../../../image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm8"><br>
+    <a href='index.html'>
+        <div class="backLink">イベントメモリー</div>
+    </a>
+    <a href='../../../mypage.html'>
+        <div class="backLink">マイスタジオ</div>
+    </a>
+    <script type="text/javascript">
+        $(function() {
+            $('form').bind('submit', function() {
+                var $submit = $("input[type=submit], input[type=reset]");
+                for (var i = 0; i < $submit.length; i++) {
+                    if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).val('送信中');
+                        $submit.eq(i).prop('disabled', true);
+                        var prev = $submit.eq(i).prev();
+                        if (prev.hasClass('btn_text')) {
+                            prev.text('送信中');
+                            if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                $submit.eq(i).parent().removeClass('_line_2');
+                            }
+                        }
+                    } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                        $submit.eq(i).prop('disabled', true);
+                    }
+                    if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                        $submit.eq(i).parent().css({
+                            "opacity": "0.5"
+                        });
+                    }
+                }
+                $(".livebutton input[type='submit']").val('').css({
+                    "opacity": "0.5"
+                }).prop('disabled', true);
+                var $imagesub = $("input[type='image']");
+                $imagesub.prop('disabled', true);
+                for (var i = 0; i < $imagesub.length; i++) {
+                    if (!$imagesub.eq(i).attr('class')) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                        continue;
+                    }
+                    if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                        $imagesub.eq(i).css({
+                            "opacity": "0.5"
+                        });
+                    } else {
+                        $imagesub.eq(i).css({
+                            "opacity": "1"
+                        });
+                    }
+                }
+                setTimeout(function() {
+                    $submit.prop('disabled', false).parent().css({
+                        "opacity": "1"
+                    });
+                    $imagesub.prop('disabled', false).css({
+                        "opacity": "1"
+                    });
+                    $(".livebutton input[type='submit']").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $(".submit a").click(function() {
+                $(this).click(function() {
+                    return false;
+                })
+                $(".submit").find("img").css({
+                    "opacity": "0.5"
+                });
+                setTimeout(function() {
+                    $(this).click(function() {
+                        return true;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "1"
+                    });
+                }, 2500);
+            });
+            $('body').on("click", '.stop-repeat-link', function(e) {
+                var self = $('.stop-repeat-link');
+                self.css({
+                    'pointer-events': 'none',
+                    'opacity': 0.6
+                });
+                setTimeout(function() {
+                    self.css({
+                        'pointer-events': 'auto',
+                        'opacity': 1
+                    });
+                }, 2500);
+            });
+        });
+    </script>
+    <footer>
+        <div class="line_idolmaster"></div><a href="#top" id="toPageTop" class="mypage_under">
+            <div></div>
+        </a>
+    </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
