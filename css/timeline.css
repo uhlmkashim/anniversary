@@ -70,11 +70,11 @@
   }
   main > section {
     margin-top:10px;
+    margin-left:12px;
   }
   main h2 {    
     font-size:1.5em;
     line-height: 1.5;
-    margin-left: 12px;
   }
   main div {
     margin-top: 12px;
@@ -95,21 +95,18 @@
 
   .card {
     float:left;
-    margin-right:12px;
-    margin-left: 12px;
+    margin-right: 5px;
     max-height: 200px;
     max-width: 200px;
   }
   .unit {
     float:top;
     margin-right:12px;
-    margin-left: 12px;
     max-height: 480px;
     max-width: 640px;
   }
   .banner {
     margin-right:12px;
-    margin-left: 12px;
   }
 
   .end {
