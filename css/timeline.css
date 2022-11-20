@@ -83,8 +83,8 @@
   main h3 {
     font-size: 2.2em;
     line-height: 2.2;
-    border-top: 2px solid #3874BB;
-    border-bottom: 2px solid #3874BB;
+    border-top: 10px solid #3874BB;
+    border-bottom: 10px solid #3874BB;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
