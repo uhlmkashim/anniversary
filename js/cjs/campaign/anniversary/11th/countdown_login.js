@@ -1637,7 +1637,7 @@ $jscomp.polyfill("Object.assign", function(a) {
             this.count_num >= this.count_limit ? (this.msg.text = this.txt2, this.stop(), exportRoot.txt_auto_flag = 0, exportRoot.gotoAndStop("scene_end")) : this.gotoAndPlay(2)
         };
         this.timeline.addTween(a.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1).call(this.frame_3).wait(1));
-        this.msg = new a.Text("", "13px 'Arial'");
+        this.msg = new a.Text("", "12px 'NanumSquare'");
         this.msg.name = "msg";
         this.msg.lineHeight = 15;
         this.msg.lineWidth = 224;
@@ -1823,7 +1823,7 @@ $jscomp.polyfill("Object.assign", function(a) {
         new a.Rectangle(-5.2, -179.6, 149, 185.2), null);
     (b.gr_nametxt = function(d, e, f) {
         this.initialize(d, e, f, {});
-        this.c_name = new a.Text("", "16px 'Arial'");
+        this.c_name = new a.Text("", "16px 'NanumSquare'");
         this.c_name.name = "c_name";
         this.c_name.lineHeight = 18;
         this.c_name.lineWidth = 171;
@@ -7752,7 +7752,7 @@ $jscomp.polyfill("Object.assign", function(a) {
         }, 57).to({
             state: []
         }, 16).wait(139));
-        this.m4 = new a.Text("", "12px 'Arial'", "#FFFFFF");
+        this.m4 = new a.Text("", "12px 'NanumSquare'", "#FFFFFF");
         this.m4.name = "m4";
         this.m4.lineHeight = 15;
         this.m4.lineWidth = 260;
@@ -7765,7 +7765,7 @@ $jscomp.polyfill("Object.assign", function(a) {
         }, 0).to({
             _off: !0
         }, 10).wait(143));
-        this.m3 = new a.Text("", "12px 'Arial'", "#FFFFFF");
+        this.m3 = new a.Text("", "12px 'NanumSquare'", "#FFFFFF");
         this.m3.name = "m3";
         this.m3.lineHeight = 15;
         this.m3.lineWidth = 260;
@@ -7777,7 +7777,7 @@ $jscomp.polyfill("Object.assign", function(a) {
         }, 0).to({
             _off: !0
         }, 10).wait(143));
-        this.m2 = new a.Text("", "12px 'Arial'", "#FFFFFF");
+        this.m2 = new a.Text("", "12px 'NanumSquare'", "#FFFFFF");
         this.m2.name = "m2";
         this.m2.lineHeight = 15;
         this.m2.lineWidth = 260;
@@ -7789,7 +7789,7 @@ $jscomp.polyfill("Object.assign", function(a) {
         }, 0).to({
             _off: !0
         }, 10).wait(143));
-        this.m1 = new a.Text("", "12px 'Arial'", "#FFFFFF");
+        this.m1 = new a.Text("", "12px 'NanumSquare'", "#FFFFFF");
         this.m1.name = "m1";
         this.m1.lineHeight = 15;
         this.m1.lineWidth = 260;
