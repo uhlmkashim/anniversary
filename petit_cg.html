@@ -756,46 +756,12 @@
                         </div>
                     </div>
                 </div>
-                <div class='chara-change-area display1'>
-                    <div class='cc__bg'>
-                        <div class='cc__inner'>
-                            <div class='cc__left'>
-                                <div id='cc-left' class='cc__icon-unselected' data-type='3'></div>
-                            </div>
-                            <div class='cc__center'>
-                                <div id='cc-center' class='cc__icon-unselected' data-type='1'></div>
-                            </div>
-                            <div class='cc__right'>
-                                <div id='cc-right' class='cc__icon-unselected' data-type='2'></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <span class="jsOnBtn">
                 <a href="#" id='index_action_btn' class="index_action_btn _off pexDom display1 display5">
                     <div></div>
                 </a>
             </span>
-            <div class="index_menu_area pexDom display1 display5">
-                <ul class="jsOnBtn">
-                    <li><a href='https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg?view_page=2&l_frm=Petit_cg_index_2&rnd=419756039' class="index_menu_bt_01 jsLinkAct se_022" data-text="2">
-                            <div></div>
-                        </a></li>
-                    <li><a href='https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg?l_frm=Petit_cg_index_3&rnd=904226215' class="index_menu_bt_02 jsTech_boardLink se_022">
-                            <div></div>
-                        </a></li>
-                    <li><a href='https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg?view_page=3&l_frm=Petit_cg_index_1&rnd=500063828' class="index_menu_bt_03 jsLinkAct se_022" data-text="3">
-                            <div></div>
-                        </a></li>
-                    <li><a href='https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/deck_edit_top?l_frm=Petit_cg_index_1&rnd=597682464' class="index_menu_bt_04 se_022">
-                            <div></div>
-                        </a></li>
-                    <li><a href='https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg?l_frm=Petit_cg_index_4&rnd=809506470' class="index_menu_bt_05 jsEquipmentLink se_022">
-                            <div></div>
-                        </a></li>
-                </ul>
-            </div>
         </section>
         <div class="display2 pexDom gray lesson_efficiency" style="display:none;padding:0 10px;margin-top:-7px;display:none">
             ※開催期間中にレッスン完了ボタンを押したぷちレッスンが効率アップの対象となります。
@@ -1853,8 +1819,8 @@
                         eyeCatch.offCount();
                     } else {
                         $.ajax({
-                                type: 'POST',
-                                url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_idol_status?l_frm=Petit_cg_index_1&rnd=68060265',
+                                type: 'get',
+                                url: 'petit_cg/ajax_idol_status_fumika.json',
                                 dataType: 'json',
                                 data: {
                                     "deck_position": chara()
@@ -1944,8 +1910,8 @@
                         $('#jsCoordinateSort').val(0);
                     }
                     $.ajax({
-                            type: 'POST',
-                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_coordinate_list?l_frm=Petit_cg_index_1&rnd=624505664',
+                            type: 'get',
+                            url: 'petit_cg/ajax_coordinate_list_fumika.json',
                             dataType: 'json',
                             data: {
                                 "type": type,
@@ -2030,7 +1996,7 @@
                     }
                     $.ajax({
                             type: 'POST',
-                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_coordinate?l_frm=Petit_cg_index_1&rnd=790856221',
+                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_coordinate',
                             dataType: 'json',
                             data: {
                                 "itemid_list": items,
@@ -2066,8 +2032,8 @@
 
                 function getHairstyleList() {
                     $.ajax({
-                            type: 'POST',
-                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_hair_styling_list?l_frm=Petit_cg_index_1&rnd=954243782',
+                            type: 'get',
+                            url: 'petit_cg/ajax_hair_styling_list_fumika.json',
                             dataType: 'json',
                             data: {
                                 "deck_position": chara()
@@ -2153,8 +2119,8 @@
 
                 function getEpisodeList(idol_id) {
                     $.ajax({
-                            type: 'POST',
-                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_episode_list?l_frm=Petit_cg_index_1&rnd=53330212',
+                            type: 'get',
+                            url: 'petit_cg/ajax_episode_list_fumika.json',
                             dataType: 'json',
                             data: {
                                 'idol_id': idol_id
@@ -2225,8 +2191,8 @@
 
                 function getCommentsList() {
                     $.ajax({
-                            type: 'POST',
-                            url: 'https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/petit_cg/ajax_idol_comment_list?l_frm=Petit_cg_index_1&rnd=205974129',
+                            type: 'get',
+                            url: 'petit_cg/ajax_idol_comment_list_fumika.json',
                             dataType: 'json',
                             data: {
                                 'deck_position': chara()
