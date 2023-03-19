@@ -618,8 +618,8 @@
             </div>
         </div>
         <a href="#" class="jsVisit_close" style="display:none"></a>
-        <a href='petit_cg_kiyomi.html'>
-            <div class="backLink">冴島清美</div>
+        <a href='petit_cg_fumika.html'>
+            <div class="backLink">鷺沢文香</div>
         </a>
         <a href='mypage.html'>
             <div class="backLink">マイスタジオへ</div>
@@ -1451,7 +1451,7 @@
                     } else {
                         $.ajax({
                                 type: 'get',
-                                url: 'petit_cg/ajax_idol_status_fumika.json',
+                                url: 'petit_cg/ajax_idol_status_kiyomi.json',
                                 dataType: 'json',
                                 data: {
                                     "deck_position": chara()
@@ -1542,7 +1542,7 @@
                     }
                     $.ajax({
                             type: 'get',
-                            url: 'petit_cg/ajax_coordinate_list_fumika.json',
+                            url: 'petit_cg/ajax_coordinate_list_kiyomi.json',
                             dataType: 'json',
                         })
                         .done(function(data) {
@@ -1660,7 +1660,7 @@
                 function getHairstyleList() {
                     $.ajax({
                             type: 'get',
-                            url: 'petit_cg/ajax_hair_styling_list_fumika.json',
+                            url: 'petit_cg/ajax_hair_styling_list_kiyomi.json',
                             dataType: 'json',
                             data: {
                                 "deck_position": chara()
@@ -1747,7 +1747,7 @@
                 function getEpisodeList(idol_id) {
                     $.ajax({
                             type: 'get',
-                            url: 'petit_cg/ajax_episode_list_fumika.json',
+                            url: 'petit_cg/ajax_episode_list_kiyomi.json',
                             dataType: 'json',
                             data: {
                                 'idol_id': idol_id
@@ -1766,7 +1766,7 @@
                     if ($.isEmptyObject(episodes)) {
                         var showHtml = "<div class='ep_list red' style='margin-left:6px;'>開放されているエピソードがありません。</div>";
                     } else {
-                        var baseUrl = ('memory/puchi_episode/fumika/__episode__.html');
+                        var baseUrl = ('memory/puchi_episode/kiyomi/__episode__.html');
                         baseUrl = baseUrl.replace('__idol_ld__', idol_id);
                         baseUrl = baseUrl.replace('__position__', chara());
                         var showHtml = "<ul class='ep_list'>";
@@ -1819,7 +1819,7 @@
                 function getCommentsList() {
                     $.ajax({
                             type: 'get',
-                            url: 'petit_cg/ajax_idol_comment_list_fumika.json',
+                            url: 'petit_cg/ajax_idol_comment_list_kiyomi.json',
                             dataType: 'json',
                             data: {
                                 'deck_position': chara()
@@ -2504,7 +2504,7 @@
             });
             window.addEventListener('load', function() {
                 menu = new Menu();
-                mc = new MakeCharacter($.parseJSON('{"1":{"attribute":"2","body_type":"1","breast_size":"2","short_name":"文香","image_url_list":{"expression_1033":"js/petit_cg/expression/1033.js","hair_10033":"js/petit_cg/hair/10033.js","costume_1_20033":"js/petit_cg/costume/1/20033.js"},"sub_type_list":{"head":null,"hand":null,"leg":null},"take_sub_type":{"head":0,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/20033","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":[],"idol_id":"1033"},"2":{"attribute":"2","body_type":"1","breast_size":"2","short_name":"頼子","image_url_list":{"expression_1101":"js/petit_cg/expression/1101.js","hair_10101":"js/petit_cg/hair/10101.js","costume_1_20101":"js/petit_cg/costume/1/20101.js"},"sub_type_list":{"head":{"head_1_30101":"js/petit_cg/head/1/30101.js"},"hand":null,"leg":null},"take_sub_type":{"head":1,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/23991","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":{"head_1_30101":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/30101","accessory_name":"赤縁眼鏡・頼子","explanation":"頼子の赤い縁の眼鏡です。<br>レンズ越しの風景を…。","type_id":"3"}},"idol_id":"1101"},"3":{"attribute":"3","body_type":"1","breast_size":"2","short_name":"\u6e05\u7f8e","image_url_list":{"expression_1108":"js/petit_cg/expression/1108.js","hair_19187":"js/petit_cg/hair/19187.js","costume_1_20108":"js/petit_cg/costume/1/20108.js"},"sub_type_list":{"head":{"head_1_30108":"js/petit_cg/head/1/30108.js"},"hand":null,"leg":null},"take_sub_type":{"head":1,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/20033","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":{"head_1_30108":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/30108","accessory_name":"銀縁眼鏡・清美","explanation":"しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!","type_id":"3"}},"idol_id":"1108"}}'));
+                mc = new MakeCharacter($.parseJSON('{"3":{"attribute":"2","body_type":"1","breast_size":"2","short_name":"文香","image_url_list":{"expression_1033":"js/petit_cg/expression/1033.js","hair_10033":"js/petit_cg/hair/10033.js","costume_1_20033":"js/petit_cg/costume/1/20033.js"},"sub_type_list":{"head":null,"hand":null,"leg":null},"take_sub_type":{"head":0,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/20033","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":[],"idol_id":"1033"},"2":{"attribute":"2","body_type":"1","breast_size":"2","short_name":"頼子","image_url_list":{"expression_1101":"js/petit_cg/expression/1101.js","hair_10101":"js/petit_cg/hair/10101.js","costume_1_20101":"js/petit_cg/costume/1/20101.js"},"sub_type_list":{"head":{"head_1_30101":"js/petit_cg/head/1/30101.js"},"hand":null,"leg":null},"take_sub_type":{"head":1,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/23991","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":{"head_1_30101":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/30101","accessory_name":"赤縁眼鏡・頼子","explanation":"頼子の赤い縁の眼鏡です。<br>レンズ越しの風景を…。","type_id":"3"}},"idol_id":"1101"},"1":{"attribute":"3","body_type":"1","breast_size":"2","short_name":"\u6e05\u7f8e","image_url_list":{"expression_1108":"js/petit_cg/expression/1108.js","hair_19187":"js/petit_cg/hair/19187.js","costume_1_20108":"js/petit_cg/costume/1/20108.js"},"sub_type_list":{"head":{"head_1_30108":"js/petit_cg/head/1/30108.js"},"hand":null,"leg":null},"take_sub_type":{"head":1,"hand":0,"leg":0},"petit_csv_info_list":{"head_1_33269":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/33269","accessory_name":"銀河リボンの髪飾り","explanation":"金の星がキラリと光る、夜空のようなリボンです。<br>リボンを結び、顔を上げたら…目の前には、広い世界があるのです。","type_id":"3"},"costume_1_20033":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/20033","accessory_name":"銀河司書のドレスコーデ","explanation":"金糸の装飾や、布地の星柄が煌めくワンピースです。<br>少女が輝き続ける物語…それを彩るのは、銀河色のドレスです。","type_id":"2"},"hand_1_42202":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/42202","accessory_name":"星の書","explanation":"煌めく星が散りばめられた、箔押しの装丁が美しい本です。<br>刻まれた文字が記すのは、輝く軌跡。美しく愛おしい一冊です。","type_id":"4"}},"petit_csv_sub_type_info_list":{"head_1_30108":{"image_path":"https:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http://mobamas.net/idolmaster/image_sp/item/l/petit_cg/30108","accessory_name":"銀縁眼鏡・清美","explanation":"しっかり者の印象をあたえる銀縁眼鏡。<br>伊達です! まずは形から入ります!","type_id":"3"}},"idol_id":"1108"}}'));
             }, false);
 
             function is_null(value) {
