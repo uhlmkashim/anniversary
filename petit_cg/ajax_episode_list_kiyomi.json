@@ -1,0 +1,37 @@
+{
+    "episode_list": [{
+        "episode_id": "1",
+        "episode_name": "冴島清美Viﾚｯｽﾝｴﾋﾟｿｰﾄﾞ1",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "2",
+        "episode_name": "冴島清美Voﾚｯｽﾝｴﾋﾟｿｰﾄﾞ1",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "3",
+        "episode_name": "冴島清美Daﾚｯｽﾝｴﾋﾟｿｰﾄﾞ1",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "4",
+        "episode_name": "冴島清美ｽﾃｯﾌﾟｱｯﾌﾟｴﾋﾟｿｰﾄﾞ1",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "5",
+        "episode_name": "冴島清美Viﾚｯｽﾝｴﾋﾟｿｰﾄﾞ2",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "6",
+        "episode_name": "冴島清美Voﾚｯｽﾝｴﾋﾟｿｰﾄﾞ2",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "7",
+        "episode_name": "冴島清美Daﾚｯｽﾝｴﾋﾟｿｰﾄﾞ2",
+        "episode_voice": "0"
+    }, {
+        "episode_id": "8",
+        "episode_name": "冴島清美ｽﾃｯﾌﾟｱｯﾌﾟｴﾋﾟｿｰﾄﾞ2",
+        "episode_voice": "0"
+    }],
+    "idol_message": "TPOに合った服装をお願いします! ﾌﾟﾛﾃﾞｭｰｻｰの目､信じていますから!",
+    "idol_attribute": "3"
+}

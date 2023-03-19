@@ -1,0 +1,36 @@
+{
+    "user_idol": {
+        "viewer_id": "134800333",
+        "idol_id": "1108",
+        "level": "30",
+        "exp": "8300",
+        "vocal": 19294,
+        "dance": 18046,
+        "visual": 17392,
+        "create_time": "2017-06-23 12:13:08",
+        "update_time": "2022-12-08 23:07:06",
+        "delete_time": null,
+        "total_param": 11850,
+        "idol_info": {
+            "image": "item/l/petit_cg/chara/1108",
+            "idol_id": "1108",
+            "idol_name": "冴島清美",
+            "short_name": "清美",
+            "attribute": "3"
+        },
+        "name": "冴島清美",
+        "attribute": "3"
+    },
+    "user_param": {
+        "viewer_id": "134800333",
+        "money": "1945663",
+        "point": "59540",
+        "create_time": "2016-06-26 20:30:52",
+        "update_time": "2022-12-21 18:00:12",
+        "delete_time": null
+    },
+    "deck_position": 3,
+    "idol_message": "腕章は手作りです! 超☆風紀委員とか､超☆ｱｲﾄﾞﾙとか! 立場を明確にする必需品です!",
+    "idol_attribute": "3",
+    "swf_url": null
+}
