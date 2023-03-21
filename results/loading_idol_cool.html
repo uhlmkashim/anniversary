@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0)
+                        document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 134800333;
+            var _url = "https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://mobamas.net/idolmaster/game_error/report_js_error";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../js/require.js"></script>
+    <script src="../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../js/easeljs-0.7.1.min.js",
+                //スプライトを読むためのバージョン
+                tweenjs: "../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../js/movieclip-0.7.1.min.js",
+                createjs: "../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../js/common.js%3Fv%3D20211006131600"></script>
+    <script src="../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/results/loading_idol_edit/2/0/0/0');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+</head>
+
+<body id="results" class="loading_idol_edit">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <style>
+            .attribute_list ul {
+                overflow: hidden;
+            }
+
+            .attribute_list li {
+                float: left;
+            }
+        </style>
+        <style type="text/css">
+            label {
+                cursor: pointer;
+            }
+
+            #colorbox {
+                width: 320px;
+            }
+
+            #cboxWrapper {
+                width: 315px;
+            }
+
+            #cboxMiddleLeft,
+            #cboxMiddleRight {
+                display: none;
+            }
+
+            div.show {
+                display: block;
+            }
+
+            .view1,
+            .view2,
+            .view3 {
+                display: none;
+            }
+
+            .view1 div,
+            .view2 div,
+            .view3 div {
+                height: 40px;
+                width: 100px;
+                display: table-cell;
+                vertical-align: middle;
+                line-height: 120%;
+            }
+
+            .hidden {
+                visibility: hidden;
+            }
+
+            img.visible {
+                visibility: visible;
+            }
+
+            .select_box select {
+                font-size: 100%;
+                width: 170px;
+            }
+
+            .opa_on {
+                opacity: 0.5;
+            }
+
+            input::-webkit-input-placeholder {
+                font-size: 10px;
+                text-indent: -1px;
+            }
+        </style>
+        <header class="m-Top8 m-Btm4">
+            <div class="t-Cnt">
+                <span class="blue">獲得したローディングキャラ:</span>
+                179
+            </div>
+            <img src="../image_sp/ui/line_hoshi.jpg" width="100%">
+        </header>
+        <section class="t-Cnt">
+            <div class="m-Btm8">
+                <div class="tab_attr_4">
+                    <form method="get" action='' style="margin:0">
+                        <label class="tab_attr_all label_reset_style" onClick="">
+                            <input type="submit" value="" class="submit_reset_style">
+                        </label>
+                    </form>
+                    <form method="get" action='loading_idol_cute.html' style="margin:0">
+                        <label class="tab_attr_cute label_reset_style" onClick="">
+                            <input type="submit" value="" class="submit_reset_style">
+                        </label>
+                    </form>
+                    <div class="tab_attr_cool _selected"></div>
+                    <form method="get" action='loading_idol_passion.html' style="margin:0">
+                        <label class="tab_attr_passion label_reset_style" onClick="">
+                            <input type="submit" value="" class="submit_reset_style">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <h3 class="title_img_gray m-Btm10">所持ローディングキャラ一覧</h3>
+        <form name="sell_form" class="type_01">
+            <div id="idolChk" class="m-Btm12">
+                <div class="displayBox">
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/100304.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/100441.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/100584.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                </div>
+                <div class="displayBox">
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/100912.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/101007.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/101199.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                </div>
+                <div class="displayBox">
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/101325.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/101480.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                    <div style="width:100px; height:160px; position: relative; margin:0 3px 8px 3px;" class="chk_area se_008">
+                        <div class="opa" style="padding:12px 0px 0px;">
+                            <img src="../image_sp/ui/rich/quest/loading/101608.gif" width="102" height="102">
+                        </div>
+                        <img src="../image_sp/ui/rich/bg/check_off.png" style="width:100px; height:160px;position: absolute; top:0px; left:0px; z-index:-1;" class="check_off">
+                    </div>
+                </div>
+                <input type="hidden" name="title_id_line" value="">
+                <input type="hidden" name="current_p_title_id_line" value="">
+                <input type="hidden" name="del_title_id_line" value="">
+            </div>
+        </form>
+        <img src="../image_sp/ui/line_hoshi.jpg" width="100%">
+        <br>
+        <a href='../results.html'>
+            <div class="backLink">プロフィールへ</div>
+        </a>
+        <script type="text/javascript">
+            $(function() {
+                var other_num = Math.max(10 - $('.chkbox:checked').length, 0);
+                var $chkbox = $('.chkbox');
+
+                function updateCheckBoxView() {
+                    $chkbox.each(function() {
+                        if ($(this).prop('checked'))
+                            $(this).nextAll('.check_on').addClass('visible');
+                    });
+                }
+
+                function isFullChecked() {
+                    return other_num + $('.chkbox:checked').length >= 10;
+                }
+
+                function updateCheckBoxOpacity() {
+                    if (!isFullChecked())
+                        return;
+                    $chkbox.each(function() {
+                        if (!$(this).prop('checked'))
+                            $(this).prevAll('.opa').addClass('opa_on');;
+                    })
+                }
+
+                function setSelectNum() {
+                    $('#select_num').text(other_num + $('.chkbox:checked').length);
+                }
+                updateCheckBoxView();
+                updateCheckBoxOpacity();
+                setSelectNum();
+                var is_move, scroll, $chk_area = $('.chk_area');
+                $chk_area.on(start, function() {
+                    is_move = false;
+                    scroll = $(window).scrollTop();
+                }).on('touchmove', function() {
+                    var now_scroll = $(window).scrollTop();
+                    if (Math.abs(scroll - now_scroll) > 20)
+                        is_move = true;
+                }).on(end, function() {
+                    if (is_move)
+                        return;
+                    var n_id = $('.chk_area').index(this);
+                    var $target = $('#on_' + n_id);
+                    var $cBox = $(this).children('.chkbox');
+                    if ($cBox.prop('checked')) {
+                        $target.removeClass('visible');
+                        $cBox.prop("checked", false);
+                        if (isFullChecked()) {
+                            $(this).children('.opa').addClass('opa_on')
+                        } else {
+                            $('.opa').removeClass('opa_on');
+                        }
+                    } else if (isFullChecked()) {
+                        return false;
+                    } else {
+                        $target.addClass('visible');
+                        $cBox.prop("checked", true);
+                        updateCheckBoxOpacity();
+                    }
+                    setSelectNum();
+                });
+            });
+        </script>
+        <footer>
+            <div class="line_idolmaster"></div>
+            <a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
