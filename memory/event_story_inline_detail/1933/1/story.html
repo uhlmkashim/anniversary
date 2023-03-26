@@ -1,0 +1,2798 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+    <head>
+        <title>ｱｲﾄﾞﾙﾏｽﾀｰ ｼﾝﾃﾞﾚﾗｶﾞｰﾙｽﾞ </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" href='../../../../css/game/pex.css' media="all">
+        <script src='../../../../js/jquery-1.9.1.min.js'></script>
+        <script>
+            $(document).ready(function() {
+                if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                    newrelic.setPageViewName('/idolmaster/index.php/memory/event_quest_story_swf/1933/10030/1/2');
+                }
+            });
+        </script>
+        <meta name="authoring-tool" content="Adobe_Animate_CC">
+        <style>
+            body {
+                overflow: hidden;
+            }
+
+            #mbga-pf-footer {
+                display: none;
+            }
+
+            #codeigniter_profiler {
+                height: 1500px;
+                position: absolute;
+                display: none;
+            }
+
+            #animation_container canvas {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+
+            #animation_container a {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+
+            .loading {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                margin-top: -55px;
+            }
+
+            .l_image {
+                position: relative;
+                display: block;
+                left: 3px;
+                margin: 35px auto 0;
+                width: 40px;
+            }
+        </style>
+        <script type='text/javascript' src='../../../../js/createjs.min.js'></script>
+        <script type='text/javascript' src='../../../../js/app_sound.js'></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/story_generator_n10.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_sweat_fly.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_shock.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_chord.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_shock2.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_drop.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_silence.js' crossorigin="anonymous"></script>
+        <script type='text/javascript' src='../../../../js/cjs/story_generator/effects/eff_question.js' crossorigin="anonymous"></script>
+        <script type='text/javascript'>
+            var se_flg = 0
+              , bgm_flg = 0
+              , chrome_app_flg = 0
+              , chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+        </script>
+        <script type='text/javascript' src='../../../../js/app_sound.js'></script>
+        <link rel="stylesheet" type="text/css" href="../../../../css/base.css"/>
+    </head>
+    <body style="margin:0px;">
+        <div id="animation_container" style="background-color:rgba(0, 0, 0, 0); width:100%; height: 1500px position: relative">
+            <canvas id="canvas" width="100%" height="" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+        </div>
+        <div class="loading">
+            <img class="l_image" src='data:image/png;base64,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'>
+        </div>
+        <script>
+            // -------------------------------------------------------------------------
+            // -------------------------------------------------------------------------
+            function handleFileLoadComplete(event) {
+                var result = event.result;
+            }
+            function handleComplete() {
+                window.js_load_comp = true;
+            }
+            var load_js = new createjs.LoadQueue();
+            load_js.setMaxConnections(6);
+            // 1つのファイルを読み込み終わったら
+            load_js.addEventListener("fileload", handleFileLoadComplete);
+            // 全てのファイルを読み込み終わったら
+            load_js.addEventListener("complete", handleComplete);
+            // 読み込み開始
+            load_js.loadManifest(window.js_load_files);
+            var _effect_cnt = 7;
+            window.im_cjs = window.im_cjs || {};
+            window.replace_images = [];
+            window.file_name = "story_generator_n10";
+            // createjs の本体ファイルを定義
+            window.dir_name = "../../../../image_sp/cjs/genechara/";
+            window.im_cjs = {
+                "scene_list": [{
+                    "id": "1",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "193306",
+                    "message": "",
+                    "timing": "",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "2",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "10007",
+                    "message": "",
+                    "timing": "",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "3",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "193308",
+                    "message": "",
+                    "timing": "",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "4",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "193307",
+                    "message": "",
+                    "timing": "",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "5",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "みんな、お揃いの制服は\n着てないんですか？\n私も、それっぽいの用意して\nみたんですけど！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "6",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "あ、うちの学校、そういうのは\nけっこう自由で……\nじゃなくて～！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "7",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "R",
+                    "movement": "shake",
+                    "chara_effect": "sweat_fly",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "本当に本当に、\n大丈夫なんですか？\n見学にしても、手続きとか、\nいろいろあるんじゃ……？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "8",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "11",
+                    "position": "L",
+                    "movement": "jump",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "大丈夫ですよ～！\nちゃんと済ませま……した！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "9",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "pop",
+                    "chara_effect": "shock",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "いつの間に……！？\n準備万全ですねぇ～！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "10",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……ま、完全に忘れてたん\nですけど……大丈夫ですから！\n大丈夫ですからっ！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "11",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "二回も言いましたねぇ～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "12",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "L",
+                    "movement": "jump_double",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ってことで、じゃっ！\nあとで落ち合いましょう！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "13",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "L",
+                    "movement": "out_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "14",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "R",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "どこで……って、\nあ～、行っちゃった！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "15",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "違う星に来てまで、\n学校が見たいだなんて……\nアカリちゃんってば、\n勉強熱心ですねぇ～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "16",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change2",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "17",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "18",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change1",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "19",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "20",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "C",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "この学校……「タネ」の気配を\nかなり感じるんだよねぇ……。\nしばらく滞在しながら、\nちゃちゃっと見ていくんご♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "21",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change3",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "22",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "23",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "――地球に来る前",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "24",
+                    "story_id": "193351",
+                    "character_id": "1566202_002",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "これが「タネ」……ですか。\nなんか普通の植物の種みたいな\n形状なんですね。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "25",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……この「タネ」は、\n我がヤマグァンタァ星が\n有する重要な「力」の一つ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "26",
+                    "story_id": "193351",
+                    "character_id": "1566202_002",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "L",
+                    "movement": "question_right",
+                    "chara_effect": "",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "つまり？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "27",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "人の「想像力」を栄養にして、\n意識下に根を張る物。異星の\n人間に、この星への忠誠心を\n組み込む、都合のいい代物よ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "28",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "想像力を蓄えきった時、\n我らの手で覚醒させれば、\n我が星の手となり足となる、\n従順な僕が生まれるの。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "29",
+                    "story_id": "193351",
+                    "character_id": "1566202_002",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "L",
+                    "movement": "jump",
+                    "chara_effect": "chord",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "へぇ～、すごい！\nそれじゃあ、\nどんどん蒔いちゃいましょう！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "30",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "swing",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "いや……人に蒔くのにも、\n強力な意識の操作が必要だし、\n育ちきるのにも時間がかかる。\n本格的な運用は、まだ先ね。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "31",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "とりあえず今回、貴方には、\n数年前、試験的に地球に\n蒔いた「タネ」の視察を\n頼みたいの。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "32",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "近々……地球に、大規模な\n労働力を割くことになるわ。\n少しでも人員は確保しておき\nたいの。意味はわかるわよね？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "33",
+                    "story_id": "193351",
+                    "character_id": "1566202_002",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "L",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "わかります。\nちゃんと使える状態かどうか、\n確認するだけでいいんですか？\nそれとも、覚醒させます？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "34",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "それは、貴方が判断しなさい。\nいいこと？　これは、貴方に\n課せられたミッションであり、\n試練でもある。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "35",
+                    "story_id": "193351",
+                    "character_id": "10059",
+                    "cname": "アカリの母",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "一つの星を導く存在として……\n強く、大きく成長するために。\nその意味を、よくよく考える\nことね。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "36",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change1",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "37",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "38",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "お母ちゃんは、ああやって\n脅してきましたけど、\nそう重要なミッションには\n思えないんですよね～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "39",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "L",
+                    "movement": "question_right2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "そもそも、想像の力って\nそんなに栄養になるもの\nなんですかね？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "40",
+                    "story_id": "193351",
+                    "character_id": "20210630",
+                    "cname": "リンゴロウ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "…………ンゴ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "41",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "L",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "こんなしみったれた地球で、\nそんなおっきな想像力を\n持った人なんて、いるとは\n思えませんし……",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "42",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "jump_double",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "あ、そうそう！\n忘れるところでした！\nもう一個ありましたね、\nミッションってやつ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "43",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "L",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "誰かがうっかり蒔いた、\n「黄金のタネ」の調査……\nまあ、こっちは芽が出てない\nと思いますけど。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "44",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "L",
+                    "movement": "nod_double",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "何しろ、普通の「タネ」の\n何万倍もの想像の力を\n蓄えないといけないらしい\nですし。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "45",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change4",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "46",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "47",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……光を切り裂きて、\n稲妻の如く現れる\n闇を纏いし者……！\n…………う～ん。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "48",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "おはようございます～、\nランコちゃん！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "49",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "9",
+                    "position": "L",
+                    "movement": "shake",
+                    "chara_effect": "sweat_fly",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "わっ、と、友よ！\n我の背後をとるなんて、\n流石ね……！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "50",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ランコちゃん、すごい集中\nしてましたからねぇ～。\nもしかして、その絵って、\n美術部の課題ですか～？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "51",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ええ……偉大なる創世の\n始まりをここに記さんと、\n我が深淵と向き合っていた\nところよ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "52",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "L",
+                    "movement": "shake",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……で、でも、まだ\n構想中だから、\nあんまり見られると、\nちょっと恥ずかしいな……？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "53",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "6",
+                    "position": "R",
+                    "movement": "jump",
+                    "chara_effect": "chord",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "うふふ～♪\n漆黒のお伽噺の新作、ヒナコも\n楽しみにしてます～♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "54",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "L",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……我も、友の創りし\n光明の叙事詩が再び語られる\n刻を、心待ちにしているわ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "55",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "L",
+                    "movement": "out_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "56",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "out_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "57",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "CtoR",
+                    "message": "",
+                    "timing": "15",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "58",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "flash_short",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ガラッ",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "59",
+                    "story_id": "193351",
+                    "character_id": "10189",
+                    "cname": "フミカ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……おはようございます。\n本日からこのクラスに一人、\n共に学ぶ仲間が加わります。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "60",
+                    "story_id": "193351",
+                    "character_id": "10189",
+                    "cname": "フミカ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……入ってください。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "61",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "C",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "はい！　ヤマグァンタァ\n生まれのリンゴプリンセス、\nアカリ・ツジノです！\nよろしくお願いしますっ♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "62",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……えっ！？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "63",
+                    "story_id": "193351",
+                    "character_id": "10189",
+                    "cname": "フミカ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……アカリさんは、山形から\n越してきたばかりで……\n何かと不慣れなこともあるかと\n思いますので……",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "64",
+                    "story_id": "193351",
+                    "character_id": "10189",
+                    "cname": "フミカ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "遠慮せずに、なんでも\n聞いてくださいね。\nみなさんも……積極的に\n声をかけてあげてください。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "65",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change2",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "66",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "67",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change4",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "68",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "69",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "L",
+                    "movement": "in_float",
+                    "chara_effect": "shock2",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ちょ、ちょちょちょ、\nアカリちゃん！\nいったいどういうこと\nなんですかぁ～！？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "70",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "どうって……何がです？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "71",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "L",
+                    "movement": "jump",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "この学校に入ったんですか？\n見学じゃなくて……というか、\nどうやって！？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "72",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "R",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ああ！　見学とか\nよくわかんなかったので、\n入学にしました！\nそれだけですよ～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "73",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "L",
+                    "movement": "down",
+                    "chara_effect": "drop",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "それだけって……\nリ、リンゴロウさんまで\nついてきちゃってるじゃない\nですか……大丈夫なんですか？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "74",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "あ、それなら大丈夫です。\nきっとあいつは、クラスで\n飼ってるネコか何かだと\n思われてるんで。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "75",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "L",
+                    "movement": "question_right2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "そんな、まさかぁ……？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "76",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "out_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "77",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "out_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "78",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "79",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "CtoL",
+                    "message": "",
+                    "timing": "15",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "80",
+                    "story_id": "193351",
+                    "character_id": "10127_003",
+                    "cname": "ミク",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "L",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "81",
+                    "story_id": "193351",
+                    "character_id": "20210630",
+                    "cname": "リンゴロウ",
+                    "offsety": "",
+                    "face": "",
+                    "position": "R",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "0",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "82",
+                    "story_id": "193351",
+                    "character_id": "10127_003",
+                    "cname": "ミク",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "L",
+                    "movement": "question_right2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ふふ、可愛いネコチャン\nだにゃ～。よーしよしよし！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "83",
+                    "story_id": "193351",
+                    "character_id": "20210630",
+                    "cname": "リンゴロウ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "…………ニャ、ンゴ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "84",
+                    "story_id": "193351",
+                    "character_id": "10127_003",
+                    "cname": "ミク",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "L",
+                    "movement": "out_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "85",
+                    "story_id": "193351",
+                    "character_id": "20210630",
+                    "cname": "リンゴロウ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "R",
+                    "movement": "out_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "0",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "86",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "LtoC",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "87",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "1",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "88",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "1",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "89",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "shake",
+                    "chara_effect": "shock",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "なぜ……！？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "90",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ちょこーっとだけ、\n記憶を操作してですね……\nまあまあまあ、細かいことは\nいいじゃないですか♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "91",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "LL",
+                    "movement": "question_right2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "いいんですかねぇ～……？\n……あ、ランコちゃん！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "92",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "C",
+                    "movement": "in_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "友……と、先の転校生。\n知り合いだったの？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "93",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "swing",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "そうなんですよぉ～。\nちょっとしたご縁があって、\nうちで一緒に暮らしてて！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "94",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "同じクラスになったのは\nビックリなんですけど……\nみんなで仲良くできたら、\n嬉しいなって思って♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "95",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "2",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "どうぞ、\nよろしくお願いするんご♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "96",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "8",
+                    "position": "C",
+                    "movement": "nod",
+                    "chara_effect": "silence",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……。\n友の言葉といえど……ここで、\n新たな盟約を交わすのは、\n我の信条に反するわ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "97",
+                    "story_id": "193351",
+                    "character_id": "10198",
+                    "cname": "ランコ",
+                    "offsety": "",
+                    "face": "8",
+                    "position": "C",
+                    "movement": "out_R",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": " ",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "98",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "LL",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "あっ、ランコちゃん……！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "99",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "nod",
+                    "chara_effect": "drop",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "変わった子ですねぇ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "100",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "question_right2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "悪い子じゃないんですよ～。\nそれに、アカリちゃんと\nランコちゃん……ちょっと、\n似てる気がするんです。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "101",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "いやぁ～？　そうですか～？\n全然わからないですねぇ～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "102",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "4",
+                    "position": "LL",
+                    "movement": "swing",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "あはは……でも、ヒナコは、\n二人が仲良くしてくれたら\n嬉しいなぁ～って。もちろん、\n無理にとは言いませんけど！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "103",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "まあ……善処します。\nヒナコちゃんには、\nお世話になってるんで！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "104",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……ランコちゃんは、こんな\nヒナコでも仲良くしてくれる、\n大事なお友達なんですよ～。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "105",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "nod",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "こんな？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "106",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "LL",
+                    "movement": "nod2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……ヒナコは、空想のお話を\n考えて、みんなに話すのが\n好きだったんですが……",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "107",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ああ、そんなこと\n言ってましたね。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "108",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "5",
+                    "position": "LL",
+                    "movement": "down",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "はい。それで……昔、学校に\n馴染めないことがあって。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "109",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "LL",
+                    "movement": "swing",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ランコちゃんだけが、\n声をかけてくれたんです。\nそのお話、もっと聞かせて\nって。……嬉しかったなぁ。",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "110",
+                    "story_id": "193351",
+                    "character_id": "10284",
+                    "cname": "ヒナコ",
+                    "offsety": "",
+                    "face": "6",
+                    "position": "LL",
+                    "movement": "pop",
+                    "chara_effect": "chord",
+                    "effect_direction": "R",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "それからずーっと、ヒナコの\nことを気にかけてくれてて\nですね……とっても優しいん\nですよぉ～♪",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "111",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "RR",
+                    "movement": "question_left2",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ふーん？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "112",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "all_out_fade",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "in",
+                    "": "",
+                    "bgimg": "change1",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "113",
+                    "story_id": "193351",
+                    "character_id": "",
+                    "cname": "",
+                    "offsety": "",
+                    "face": "",
+                    "position": "",
+                    "movement": "",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "out",
+                    "": "",
+                    "bgimg": "",
+                    "message": "",
+                    "timing": "10",
+                    "auto": "0",
+                    "sound_effect": ""
+                }, {
+                    "id": "114",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "3",
+                    "position": "C",
+                    "movement": "in_L",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "ん～、なんか、\nモヤモヤするんごね～。\nやっぱ、地球の空気がマズい\nせいでしょうか？",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }, {
+                    "id": "115",
+                    "story_id": "193351",
+                    "character_id": "10304",
+                    "cname": "アカリ",
+                    "offsety": "",
+                    "face": "1",
+                    "position": "C",
+                    "movement": "pop",
+                    "chara_effect": "",
+                    "effect_direction": "",
+                    "a_fade": "",
+                    "": "",
+                    "bgimg": "",
+                    "message": "……まあ、私は、\n頼まれごとをこなすだけです！\nあ、ミッション？\nどっちでもいっか！",
+                    "timing": "",
+                    "auto": "1",
+                    "sound_effect": ""
+                }],
+                "chara_list": {
+                    "10112": {
+                        "master_id": "10112",
+                        "id": "10112",
+                        "name": "智絵里",
+                        "image_story": "10112.png",
+                        "image_icon": "10112.png",
+                        "other_chara_flg": "1"
+                    }
+                },
+                "bg_list": [193306, 10007, 193308, 193307],
+                "effect_list": ["sweat_fly", "shock", "chord", "shock2", "drop", "silence", "question"],
+                "character_list": {
+                    "10304": {
+                        "id": 1,
+                        "hash_id": "",
+                        "name": "あかり",
+                        "offsetx": "0",
+                        "offsety": "0",
+                        "other_flg": "1"
+                    }
+                },
+                "title": "ﾔﾏｸﾞｧﾝﾀｧから来た少女",
+                "story_type": "0",
+                "all_skip": "1",
+                "logo_bg": ""
+            };
+            window.replace_images = []
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            10
+            11
+            12
+            13
+            14
+            15
+            16
+            17
+            18
+            19
+            20
+            21
+            22
+            23
+            24
+            25
+            26
+            27
+            28
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            10
+            11
+            12
+            13
+            14
+            15
+            16
+            17
+            18
+            19
+            20
+            21
+            22
+            23
+            24
+            25
+            26
+            27
+            2
+            2
+            3
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            2
+            3
+            4
+            5
+            2
+            3
+            4
+            window.chara_replace_images = {};
+            // 一旦すべてのキャラ画像をダミーに差し替え
+            for (i = 1; i <= 20; i++) {
+                for (n = 1; n <= 13; n++) {
+                    window.chara_replace_images[('c' + i + '_face' + n)] = '../../../../image_sp/cjs/chara/no_face.png';
+                }
+            }
+            // 必要なキャラ画像を追加
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face11'] = '../../../../image_sp/cjs/chara/other/10304_11.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face2'] = '../../../../image_sp/cjs/chara/other/10304_2.png';
+            window.chara_replace_images['c1_face2'] = '../../../../image_sp/cjs/chara/other/10304_2.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face2'] = '../../../../image_sp/cjs/chara/other/10304_2.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face2'] = '../../../../image_sp/cjs/chara/other/10304_2.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face2'] = '../../../../image_sp/cjs/chara/other/10304_2.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_face3'] = '../../../../image_sp/cjs/chara/other/10304_3.png';
+            window.chara_replace_images['c1_face1'] = '../../../../image_sp/cjs/chara/other/10304.png';
+            window.chara_replace_images['c1_b'] = '../../../../image_sp/cjs/chara/other/10304_b.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face6'] = '../../../../image_sp/cjs/chara/other/10284_6.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face4'] = '../../../../image_sp/cjs/chara/other/10284_4.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face4'] = '../../../../image_sp/cjs/chara/other/10284_4.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face5'] = '../../../../image_sp/cjs/chara/other/10284_5.png';
+            window.chara_replace_images['c2_face1'] = '../../../../image_sp/cjs/chara/other/10284.png';
+            window.chara_replace_images['c2_face6'] = '../../../../image_sp/cjs/chara/other/10284_6.png';
+            window.chara_replace_images['c2_b'] = '../../../../image_sp/cjs/chara/other/10284_b.png';
+            window.chara_replace_images['c3_face1'] = '../../../../image_sp/cjs/chara/other/1566202_002.png';
+            window.chara_replace_images['c3_face1'] = '../../../../image_sp/cjs/chara/other/1566202_002.png';
+            window.chara_replace_images['c3_b'] = '../../../../image_sp/cjs/chara/other/1566202_002_b.png';
+            window.chara_replace_images['c4_face1'] = '../../../../image_sp/cjs/chara/other/10059.png';
+            window.chara_replace_images['c4_b'] = '../../../../image_sp/cjs/chara/other/10059_b.png';
+            window.chara_replace_images['c5_face1'] = '../../../../image_sp/cjs/chara/other/20210630.png';
+            window.chara_replace_images['c5_face1'] = '../../../../image_sp/cjs/chara/other/20210630.png';
+            window.chara_replace_images['c5_face1'] = '../../../../image_sp/cjs/chara/other/20210630.png';
+            window.chara_replace_images['c5_b'] = '../../../../image_sp/cjs/chara/other/20210630_b.png';
+            window.chara_replace_images['c6_face1'] = '../../../../image_sp/cjs/chara/other/10198.png';
+            window.chara_replace_images['c6_face1'] = '../../../../image_sp/cjs/chara/other/10198.png';
+            window.chara_replace_images['c6_face9'] = '../../../../image_sp/cjs/chara/other/10198_9.png';
+            window.chara_replace_images['c6_face1'] = '../../../../image_sp/cjs/chara/other/10198.png';
+            window.chara_replace_images['c6_face4'] = '../../../../image_sp/cjs/chara/other/10198_4.png';
+            window.chara_replace_images['c6_face1'] = '../../../../image_sp/cjs/chara/other/10198.png';
+            window.chara_replace_images['c6_face1'] = '../../../../image_sp/cjs/chara/other/10198.png';
+            window.chara_replace_images['c6_face8'] = '../../../../image_sp/cjs/chara/other/10198_8.png';
+            window.chara_replace_images['c6_face8'] = '../../../../image_sp/cjs/chara/other/10198_8.png';
+            window.chara_replace_images['c6_b'] = '../../../../image_sp/cjs/chara/other/10198_b.png';
+            window.chara_replace_images['c7_face1'] = '../../../../image_sp/cjs/chara/other/10189.png';
+            window.chara_replace_images['c7_face1'] = '../../../../image_sp/cjs/chara/other/10189.png';
+            window.chara_replace_images['c7_face1'] = '../../../../image_sp/cjs/chara/other/10189.png';
+            window.chara_replace_images['c7_face1'] = '../../../../image_sp/cjs/chara/other/10189.png';
+            window.chara_replace_images['c7_face2'] = '../../../../image_sp/cjs/chara/other/10189_2.png';
+            window.chara_replace_images['c7_b'] = '../../../../image_sp/cjs/chara/other/10189_b.png';
+            window.chara_replace_images['c8_face1'] = '../../../../image_sp/cjs/chara/other/10127_003.png';
+            window.chara_replace_images['c8_face4'] = '../../../../image_sp/cjs/chara/other/10127_003_4.png';
+            window.chara_replace_images['c8_face4'] = '../../../../image_sp/cjs/chara/other/10127_003_4.png';
+            window.chara_replace_images['c8_face4'] = '../../../../image_sp/cjs/chara/other/10127_003_4.png';
+            window.chara_replace_images['c8_b'] = '../../../../image_sp/cjs/chara/other/10127_003_b.png';
+            window.im_cjs.bg_frame_info = {
+                '193306': 0,
+                '10007': 1,
+                '193308': 2,
+                '193307': 3,
+            };
+            window.bg_replace_images = {};
+            window.bg_replace_images['bg1'] = '193306';
+            window.bg_replace_images['bg2'] = '10007';
+            window.bg_replace_images['bg3'] = '193308';
+            window.bg_replace_images['bg4'] = '193307';
+            window.bg_replace_images['bg5'] = '_nobg';
+            window.bg_replace_images['bg6'] = '_nobg';
+            window.bg_replace_images['bg7'] = '_nobg';
+            window.bg_replace_images['bg8'] = '_nobg';
+            window.bg_replace_images['bg9'] = '_nobg';
+            window.bg_replace_images['bg10'] = '_nobg';
+            window.op_bg_replace_images = {};
+            window.im_cjs.effect_frame_info = {
+                'sweat_fly': 0,
+                'shock': 1,
+                'chord': 2,
+                'shock2': 3,
+                'drop': 4,
+                'silence': 5,
+                'question': 6,
+            };
+            window.im_cjs.chara_frame_info = {
+                "10304": {
+                    "id": 1,
+                    "hash_id": "",
+                    "name": "\u3042\u304b\u308a",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1", "11", "1", "2", "2", "3", "1", "3", "3", "1", "3", "3", "2", "1", "2", "1", "1", "1", "2", "1", "1", "1", "1", "1", "1", "3", "1"]
+                },
+                "10284": {
+                    "id": 2,
+                    "hash_id": "",
+                    "name": "\u65e5\u83dc\u5b50",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1", "5", "1", "5", "1", "1", "1", "6", "1", "5", "5", "5", "4", "1", "1", "5", "1", "1", "5", "1", "4", "1", "5", "5", "1", "6"]
+                },
+                "1566202_002": {
+                    "id": 3,
+                    "hash_id": "",
+                    "name": "\u3042\u304b\u308a",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1"]
+                },
+                "10059": {
+                    "id": 4,
+                    "hash_id": "",
+                    "name": "\u62c5\u4efb\u306e\u5148\u751f",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1"]
+                },
+                "20210630": {
+                    "id": 5,
+                    "hash_id": "",
+                    "name": "\u308a\u3093\u3054\u308d\u3046",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1", "1"]
+                },
+                "10198": {
+                    "id": 6,
+                    "hash_id": "",
+                    "name": "蘭子",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1", "9", "1", "4", "1", "1", "8", "8"]
+                },
+                "10189": {
+                    "id": 7,
+                    "hash_id": "",
+                    "name": "文香",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "1", "1", "1", "2"]
+                },
+                "10127_003": {
+                    "id": 8,
+                    "hash_id": "",
+                    "name": "みく",
+                    "offsetx": "0",
+                    "offsety": "0",
+                    "other_flg": "1",
+                    "face": ["1", "4", "4", "4"]
+                }
+            };
+            window.im_cjs.title_name = 'ﾔﾏｸﾞｧﾝﾀｧから来た少女' || 'no_title';
+            window.im_cjs.event_type = '0' || 0;
+            window.im_cjs.jump_url = '1.html';
+            // createjsの演出が全て終了した場合の飛び先urlの定義
+            window.im_cjs.chara_num = 10;
+            window.im_cjs.voice_flag = 0;
+            // 音声再生フラグを定義
+        </script>
+        <script>
+            (function() {
+                window.exportRoot;
+                var canvas, stage, anim_container, dom_overlay_container, fnStartAnimation, flag;
+                var manifest = [];
+                var manifestCount = 1;
+                var _child_num = [];
+                var loadCount = 0;
+                var lib;
+                var lib_supporter = [];
+                window.init = function init() {
+                    // 高さを設定する
+                    $('body').css('height', window.innerHeight);
+                    canvas = document.getElementById("canvas");
+                    anim_container = document.getElementById("animation_container");
+                    dom_overlay_container = document.getElementById("dom_overlay_container");
+                    var comp = AdobeAn.getComposition(window.file_name);
+                    lib = comp.getLibrary();
+                    var comp_eff_supporter = [];
+                    var effect_list = ["sweat_fly", "shock", "chord", "shock2", "drop", "silence", "question"];
+                    for (var n = 0, len = _effect_cnt; n < len; n++) {
+                        comp_eff_supporter[n] = AdobeAn.getComposition('eff_' + effect_list[n]);
+                        if (comp_eff_supporter[n]) {
+                            lib_supporter[n] = comp_eff_supporter[n].getLibrary();
+                        }
+                    }
+                    createjs.MotionGuidePlugin.install();
+                    var loader = new createjs.LoadQueue(false);
+                    loader.setMaxConnections(6);
+                    loader.installPlugin(createjs.Sound);
+                    loader.addEventListener("fileload", function(evt) {
+                        handleFileLoad(evt, comp)
+                    });
+                    loader.addEventListener("complete", function(evt) {
+                        handleComplete(evt, comp)
+                    });
+                    if (comp_eff_supporter[0]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[0])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[0])
+                        });
+                    }
+                    if (comp_eff_supporter[1]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[1])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[1])
+                        });
+                    }
+                    if (comp_eff_supporter[2]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[2])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[2])
+                        });
+                    }
+                    if (comp_eff_supporter[3]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[3])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[3])
+                        });
+                    }
+                    if (comp_eff_supporter[4]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[4])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[4])
+                        });
+                    }
+                    if (comp_eff_supporter[5]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[5])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[5])
+                        });
+                    }
+                    if (comp_eff_supporter[6]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[6])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[6])
+                        });
+                    }
+                    if (comp_eff_supporter[7]) {
+                        loader.addEventListener("fileload", function(evt) {
+                            handleFileLoad(evt, comp_eff_supporter[7])
+                        });
+                        loader.addEventListener("complete", function(evt) {
+                            handleComplete(evt, comp_eff_supporter[7])
+                        });
+                    }
+                    var new_manifest = [];
+                    for (var i = 0, len = lib.properties.manifest.length; i < len; i++) {
+                        var _img_path = window.dir_name + lib.properties.manifest[i].src;
+                        var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
+                        // 背景
+                        if (window.bg_replace_images[_prefix]) {
+                            _img_path = '../../../../image_sp/event_flash/story/bg/bg' + window.bg_replace_images[_prefix] + '_wide.jpg';
+                        }
+                        // op背景
+                        if (window.op_bg_replace_images[_prefix]) {
+                            _img_path = '../../../../image_sp/event_flash/story/bg/bg' + window.op_bg_replace_images[_prefix] + '.jpg';
+                        }
+                        if (window.chara_replace_images[_prefix]) {
+                            _img_path = window.chara_replace_images[_prefix];
+                        }
+                        if (window.replace_images[_prefix]) {
+                            _img_path = window.replace_images[_prefix];
+                        }
+                        new_manifest[i] = {
+                            'type': 'image',
+                            'src': encodeURIComponent(_img_path),
+                            'id': lib.properties.manifest[i].id,
+                            'crossOrigin': 'Anonymous'
+                        }
+                    }
+                    //console.warn("manifest", new_manifest);
+                    loader.loadManifest(new_manifest);
+                }
+                function handleFileLoad(evt, comp) {
+                    var images = comp.getImages();
+                    if (evt && (evt.item.type == "image")) {
+                        images[evt.item.id] = evt.result;
+                    }
+                }
+                function handleComplete(evt, comp) {
+                    // // //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+                    // var lib=comp.getLibrary();
+                    // var ss=comp.getSpriteSheet();
+                    // var queue = evt.target;
+                    // var ssMetadata = lib.ssMetadata;
+                    // for(i=0; i<ssMetadata.length; i++) {
+                    // ss[ssMetadata[i].name] = new createjs.SpriteSheet( { "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames } )
+                    // }
+                    // // 
+                    loadCount++;
+                    // /console.warn(loadCount, _child_num.length , _effect_cnt, (_child_num.length + _effect_cnt));
+                    if (loadCount < (_child_num.length + _effect_cnt)) {
+                        return;
+                    }
+                    if (flag) {
+                        return;
+                    }
+                    flag = true;
+                    var _eff_i = 0;
+                    var _chara_i = 0;
+                    for (var i in lib_supporter) {
+                        var _no = parseInt(i) + 1;
+                        if (lib_supporter[i] && (lib_supporter[i].properties.id.match(/eff_/) && lib_supporter[i].properties.id.match(/eff_/).length > 0)) {
+                            _eff_i++;
+                            lib['replace_effect' + _eff_i] = lib_supporter[i].replace;
+                        }
+                    }
+                    /* createjs本体を自動挿入するように変数を入れています。 */
+                    exportRoot = new lib[window.file_name]();
+                    /* -------------------------------------------- */
+                    stage = new lib.Stage(canvas);
+                    //Registers the "tick" event listener.
+                    fnStartAnimation = function() {
+                        stage.addChild(exportRoot);
+                        createjs.Ticker.framerate = 12;
+                        createjs.Ticker.addEventListener("tick", stage);
+                    }
+                    //Code to support hidpi screens and responsive scaling.
+                    function makeResponsive(isResp, respDim, isScale, scaleType) {
+                        var lastW, lastH, lastS = 1;
+                        window.addEventListener('resize', resizeCanvas);
+                        function resizeCanvas() {
+                            var w = lib.properties.width
+                              , h = lib.properties.height;
+                            var iw = window.innerWidth
+                              , ih = window.innerHeight;
+                            var pRatio = window.devicePixelRatio || 1
+                              , xRatio = iw / w
+                              , yRatio = ih / h
+                              , sRatio = 1;
+                            if (isResp) {
+                                if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                                    sRatio = lastS;
+                                } else if (!isScale) {
+                                    if (iw < w || ih < h)
+                                        sRatio = Math.min(xRatio, yRatio);
+                                } else if (scaleType == 1) {
+                                    sRatio = Math.min(xRatio, yRatio);
+                                } else if (scaleType == 2) {
+                                    sRatio = Math.max(xRatio, yRatio);
+                                }
+                            }
+                            canvas.width = w * pRatio * sRatio;
+                            canvas.height = h * pRatio * sRatio;
+                            canvas.style.width = dom_overlay_container.style.width = anim_container.style.width = w * sRatio + 'px';
+                            canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio + 'px';
+                            stage.scaleX = pRatio * sRatio;
+                            stage.scaleY = pRatio * sRatio;
+                            lastW = iw;
+                            lastH = ih;
+                            lastS = sRatio;
+                            stage.tickOnUpdate = false;
+                            stage.update();
+                            stage.tickOnUpdate = true;
+                            $('#animation_container').css('margin-top', (window.innerHeight - $('#animation_container').innerHeight()) / 2 + "px");
+                        }
+                        resizeCanvas();
+                    }
+                    makeResponsive(true, 'width', true, 1);
+                    AdobeAn.compositionLoaded(lib.properties.id);
+                    fnStartAnimation();
+                    $('.loading').hide();
+                }
+                function playSound(id, loop) {
+                    return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+                }
+                init();
+            }
+            )();
+            var keyup_func = function(e) {
+                $(window).off('keydown');
+                if (e.keyCode == 13) {
+                    if (typeof exportRoot.toggle_flag === 'undefined' || exportRoot.toggle_flag == 'in') {
+                        if ((exportRoot.scene_list.length - 1) <= exportRoot.story_point) {
+                            console.log("end_story");
+                            if (exportRoot.event_type == 0 || exportRoot.event_type == 1) {
+                                window.location.href = exportRoot.back_url;
+                                return;
+                            }
+                            if (exportRoot.scene_name == 'end') {
+                                window.location.href = exportRoot.back_url;
+                            } else {
+                                exportRoot.gotoAndPlay('end');
+                            }
+                            exportRoot.scene_name = 'end';
+                        } else {
+                            switch (exportRoot.scene_name) {
+                            case 'title':
+                                exportRoot.scene_name = 'main';
+                                exportRoot.gotoAndStop('main');
+                                exportRoot._u.scene_init();
+                                if (window.im_cjs.voice_flag) {
+                                    window.im_cjs.voice_play();
+                                    window.im_cjs.load_voice("scene" + (exportRoot.story_point + 2));
+                                    exportRoot.loader.visible = true;
+                                    exportRoot.addEventListener('tick', exportRoot._u._ticker);
+                                    exportRoot.stop();
+                                }
+                                e.stopPropagation();
+                                break;
+                            case 'main':
+                                exportRoot.story_point++;
+                                for (var i = 0; i < 7; i++) {
+                                    if (exportRoot.chara_display_info[exportRoot._all_pos[i]]) {
+                                        exportRoot['effect_target_' + exportRoot._all_pos[i]].visible = false;
+                                    }
+                                }
+                                exportRoot._u.scene_init();
+                                if (window.im_cjs.voice_flag) {
+                                    window.im_cjs.voice_play();
+                                    if (exportRoot.scene_list.length > (exportRoot.story_point + 1)) {
+                                        window.im_cjs.load_voice("scene" + (exportRoot.story_point + 2));
+                                        exportRoot.loader.visible = true;
+                                        exportRoot.addEventListener('tick', exportRoot._u._ticker);
+                                        exportRoot.stop();
+                                    }
+                                }
+                                e.stopPropagation();
+                                break;
+                            }
+                        }
+                    } else {
+                        exportRoot.toggle_flag = 'in';
+                        exportRoot.win.gotoAndPlay('in');
+                    }
+                }
+                $(window).off('keydown');
+                setTimeout(function() {
+                    $(window).one('keydown', keyup_func);
+                }, 300);
+                return false;
+            };
+            $(window).one('keydown', keyup_func);
+        </script>
+        <div id="mbga-pf-footer">
+            <script type="text/javascript" charset="UTF-8">
+                (function() {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var list = document.getElementsByClassName('mbga-pf-footer-li');
+                        var i = 0
+                          , l = list.length;
+                        for (; i < l; i++) {
+                            var elem = list[i];
+                            elem.addEventListener('touchstart', function(e) {
+                                e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                            });
+                            elem.addEventListener('touchend', function(e) {
+                                e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                            });
+                            elem.addEventListener('touchmove', function(e) {});
+                        }
+                    });
+                }
+                )();
+            </script>
+        </div>
+    </body>
+</html>
