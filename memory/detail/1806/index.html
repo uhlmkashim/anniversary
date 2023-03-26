@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ja" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="format-detection" content="telephone=no">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="../../../image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
+    <script type="text/javascript">
+        if (window.localStorage) {
+            var displaySet = localStorage.getItem('DisplayPositionSet');
+            if (displaySet == 1) {
+                if (navigator.userAgent.indexOf('Android') > 0) {
+                    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+                    document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                } else {
+                    document.write('<meta name="viewport" content="width=320, user-scalable=no">');
+                }
+                window.addEventListener('resize', function() {
+                    if (navigator.userAgent.indexOf('Android') > 0)
+                        document.getElementsByTagName('html')[0].style.zoom = document.documentElement.clientWidth / 320;
+                });
+            } else {
+                document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+        }
+    </script>
+    <script src="../../../js/jquery-2.2.2.min.js"></script>
+    <script>
+        (function() {
+            window.viewer_id = 134800333;
+            var _url = "../../../game_error/report_js_error";
+            var _path = location.href;
+            var _spec_obj;
+            var _spec = 'none';
+            var version = 1;
+            // access方法検出
+            _spec_obj = {
+                'isNative': false,
+                'isAndApp': false,
+                'isShellApp': false,
+                'isIosApp': false,
+                'isChromeApp': false
+            };
+            window._spec = _spec_obj;
+            if (_spec.isAndApp) {
+                _spec = 'andapp'
+            } else if (_spec.isIosApp) {
+                _spec = 'iosApp';
+            } else if (_spec.isShellApp) {
+                _spec = 'shellapp';
+            } else {
+                _spec = 'browser?';
+            }
+        })();
+    </script>
+    <script src="../../../js/underscore-min.js"></script>
+    <script src="../../../js/require.js"></script>
+    <script src="../../../js/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                easeljs: "../../../js/easeljs-0.8.2.min.js",
+                easeljs_0_7_1: "../../../js/easeljs-0.7.1.min.js",
+                //スプライトを読むためのバージョン
+                tweenjs: "../../../js/tweenjs-0.6.2.min.js",
+                movieclipjs: "../../../js/movieclip-0.7.1.min.js",
+                createjs: "../../../js/createjs-2015.11.26.min.js",
+            }
+        })
+    </script>
+    <script src="../../../js/common.js"></script>
+    <script src="../../../js/common_new.js"></script>
+    <script>
+        $(function() {
+            window.$ibox = $('.ibox').ibox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
+                newrelic.setPageViewName('/idolmaster/index.php/memory/detail/1806/10110/0');
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        var se_flg = 0,
+            bgm_flg = 0,
+            chrome_app_flg = 0,
+            chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
+    </script>
+    <script type='text/javascript' src='../../../js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+</head>
+
+<body id="memory" class="detail">
+    <div id="top" class="page_container jsOnBtn">
+        <input id="delay" type="hidden" value="0">
+        <style type="text/css">
+            .comments {
+                min-height: 115px;
+                text-align: left;
+                color: #1d1d1d;
+                padding: 25px 20px 10px;
+                position: relative;
+                top: -50px;
+            }
+
+            .comments.cute {
+                background: url('../../../image_sp/ui/event_memory/cute_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.cool {
+                background: url('../../../image_sp/ui/event_memory/cool_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .comments.passion {
+                background: url('../../../image_sp/ui/event_memory/passion_comment.png') center top no-repeat;
+                background-size: 300px;
+            }
+
+            .icon_navi {
+                width: auto;
+                margin: 0 13px;
+                padding: 8px 0;
+                background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 130, from(#222), to(#333));
+                -webkit-border-radius: 6px;
+            }
+
+            .cover {
+                height: 370px;
+            }
+
+            .exBox {
+                width: 320px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            a.inline {
+                width: 300px;
+                height: 70px;
+                color: #1d1d1d;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .exArea {
+                width: 260px;
+                margin: 10px auto 0;
+                padding: 0;
+                border: 2px solid #b4d5f4;
+                background: #1d1d1d;
+                z-index: 10;
+                color: #ffffff;
+                line-height: 140%;
+                -webkit-border-radius: 8px;
+            }
+
+            .exArea h3 {
+                background: #17285c;
+                -webkit-border-top-left-radius: 8px;
+                -webkit-border-top-right-radius: 8px;
+                padding: 10px 0;
+            }
+
+            .check_close_btn {
+                top: -10px;
+                width: 37px;
+                height: 37px;
+                right: 20px;
+                display: block;
+            }
+
+            .m-12px {
+                margin-top: -12px;
+            }
+
+            .appear_idol_area .appear_idol_bg {
+                position: relative;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_chara {
+                position: absolute;
+                top: -15px;
+                left: 0;
+                z-index: 1;
+                width: 320px;
+            }
+
+            .appear_idol_area .appear_idol_title_area {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                z-index: 2;
+                width: 320px;
+                height: 36px;
+            }
+
+            .appear_idol_area .appear_idol_title_bg {
+                position: relative;
+                background-image: url('../../../image_sp/ui/event_memory/appear_idol_title_bg.png');
+                background-size: 320px;
+                background-repeat: no-repeat;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: transparent;
+                padding-left: 34px;
+                -webkit-mask-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .appear_idol_area .appear_idol_title_text {
+                position: relative;
+                top: 2px;
+                display: table-cell;
+                height: inherit;
+                vertical-align: middle;
+                color: #1d1d1d;
+                padding-left: 34px;
+                text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
+            }
+
+            .appear_idol_area .appear_idol_title_text._line_2 {
+                top: -1px;
+                font-size: 12px;
+            }
+        </style>
+        <header style="margin:0 0 5px;">
+            <h1 style="margin:0 0 10px;">
+                <img src='../../../image_sp/event/1806/top_event.jpg' width="100%" alt="アイドルバラエティ　みんなで大きく! 冬の雪像コンテスト" class="m-12px">
+            </h1>
+            <div class="titleH2" style="margin:0 auto; padding:5px; line-height:110%;">
+                <span class="blue">開催期間</span>
+                <br>2018/02/15 ～ 2018/02/22
+            </div>
+        </header>
+        <img src="../../../image_sp/ui/line_hoshi.jpg" width="100%">
+        <br>
+        <section class="naviArea">
+            <img src="../../../image_sp/ui/navi/tujo_m2.png" width="90">
+            <div class="Wrap">
+                <div class="fukiRight">
+                    今回のアイドルバラエティは雪像作りコンテストに挑戦! 雫ちゃんたちが力を合わせて作った大きな親子牛の雪像は、たくさんの人の心をあったかくしていましたね!<br>
+                </div>
+            </div>
+        </section>
+        <img src="../../../image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm10">
+        <br>
+        <h2 class="title_img_blue" style="margin:0;">
+            <div>登場アイドル</div>
+        </h2>
+        <section class="iSlider">
+            <div class="underline"></div>
+            <div class="medal_idol">
+                <div class="medal_slide" style="min-height:370px;">
+                    <ul class="slides" style="display:none;">
+                        <li style="width:320px;margin:0; position:relative;">
+                            <h3 class="slideTitle">
+                                <div class="name">[雪像ﾊﾞﾗｴﾃｨ]吉岡沙紀+</div>
+                                <div class="icon">
+                                    <div class="type att_2"></div>
+                                    <div class="rarity r_4"></div>
+                                </div>
+                            </h3>
+                            <div>
+                                <img src='../../../image_sp/ui/event_memory/detail/event_1806_1.jpg' width="320" height="300" alt="へへっ、アーティストの血が騒ぐっす">
+                            </div>
+                            <div class="comments cool">
+                                <div>
+                                    <p class="l-Hgt120">へへっ､ｱｰﾃｨｽﾄの血が騒ぐっす</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="width:320px;margin:0; position:relative;">
+                            <h3 class="slideTitle">
+                                <div class="name">[雪像ﾊﾞﾗｴﾃｨ]冴島清美+</div>
+                                <div class="icon">
+                                    <div class="type att_3"></div>
+                                    <div class="rarity r_4"></div>
+                                </div>
+                            </h3>
+                            <div>
+                                <img src='../../../image_sp/ui/event_memory/detail/event_1806_2.jpg' width="320" height="300" alt="この寒さ…なかなか手強いです">
+                            </div>
+                            <div class="comments passion">
+                                <div>
+                                    <p class="l-Hgt120">この寒さ…なかなか手強いです</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="width:320px;margin:0; position:relative;">
+                            <h3 class="slideTitle">
+                                <div class="name">[はりきり雪椿]江上椿+</div>
+                                <div class="icon">
+                                    <div class="type att_1"></div>
+                                    <div class="rarity r_6"></div>
+                                </div>
+                            </h3>
+                            <div>
+                                <img src='../../../image_sp/ui/event_memory/detail/event_1806_3.jpg' width="320" height="300" alt="シャッターチャンスがありすぎますっ">
+                            </div>
+                            <div class="comments cute">
+                                <div>
+                                    <p class="l-Hgt120">ｼｬｯﾀｰﾁｬﾝｽがありすぎますっ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="width:320px;margin:0; position:relative;">
+                            <h3 class="slideTitle">
+                                <div class="name">[ひんやり超大作]及川雫+</div>
+                                <div class="icon">
+                                    <div class="type att_3"></div>
+                                    <div class="rarity r_6"></div>
+                                </div>
+                            </h3>
+                            <div>
+                                <img src='../../../image_sp/ui/event_memory/detail/event_1806_4.jpg' width="320" height="300" alt="完成したら、ぎゅぅーって抱きしめてあげたいですねー♪">
+                            </div>
+                            <div class="comments passion">
+                                <div>
+                                    <p class="l-Hgt120">完成したら､ぎゅぅｰって抱きしめてあげたいですねｰ♪</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ol class="icon_navi">
+                <li>
+                    <a>0</a>
+                </li>
+                <li>
+                    <a>1</a>
+                </li>
+                <li>
+                    <a>2</a>
+                </li>
+                <li>
+                    <a>3</a>
+                </li>
+            </ol>
+        </section>
+        <script src="../../../js/islider.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('.medal_slide').iSlider({
+                slideshowSpeed: 5000,
+                navi: ".icon_navi",
+                selected: "icon_selected",
+                touch: true,
+                loop: true
+            });
+        </script>
+        <section class="t-Cnt m-Btm0">
+            <img src="../../../image_sp/ui/line_hanyo_ten.jpg" width="100%" class="m-Btm10">
+            <br>
+            <p class="m-Btm10">
+                <a href='../../../cartoon/scene/1048' class="jsOnDesignBtn">
+                    <img src='../../../image_sp/ui/event_memory/theater/1048.jpg' style="width:150px; height:40px;">
+                </a>
+            </p>
+            <div class="area-btn-common _base-width m-Btm8">
+                <a class="btn_normal_line_2 " href='../../../memory/show_opening/1806/10110/0/1'>
+                    <span style="font-size: 12px;">イベントOP演出を見る</span>
+                </a>
+                <a class="btn_normal_line_2 " href='../../../memory/show_opening/1806/10110/0/2'>
+                    <span style="font-size: 12px;">イベントED演出を見る</span>
+                </a>
+            </div>
+            <div style="background:url(../../../image_sp/ui/episode/epi_frame_prof_top.jpg) center top no-repeat;background-size:326px;width:304px;height:44px; line-height:47px; margin:0 auto;">
+                登場アイドル一覧<br>
+            </div>
+            <div style="background:url(../../../image_sp/ui/episode/epi_frame_prof_line.jpg) center top repeat-y;background-size:326px;width:304px;text-align:center;margin:0 auto;">
+                <ul style="width:220px; margin:0 auto; padding: 10px 0 0; overflow:hidden; text-align:left;" class="displayBox">
+                    <li style="padding:5px 3px 5px 0px;">
+                        <a href="../../../idol_gallery/idol_detail/dee68a26562105b04be5de0807e82b5c" class="jsOnDesignBtn">
+                            <img src='../../../image_sp/card/xs/saki_28.jpg' style='width:50px; height:50px;'>
+                        </a>
+                    </li>
+                    <li style="padding:5px 3px;">
+                        <a href="../../../idol_gallery/idol_detail/b0dc1521b2a797bcd2b0a702ea1d338f" class="jsOnDesignBtn">
+                            <img src='../../../image_sp/card/xs/kiyomi_30.jpg' style='width:50px; height:50px;'>
+                        </a>
+                    </li>
+                    <li style="padding:5px 3px;">
+                        <a href="../../../idol_gallery/idol_detail/d9df13a45167df9c256571780fdfa6c4" class="jsOnDesignBtn">
+                            <img src='../../../image_sp/card/xs/tsubaki_21.jpg' style='width:50px; height:50px;'>
+                        </a>
+                    </li>
+                    <li style="padding:5px 3px;">
+                        <a href="../../../idol_gallery/idol_detail/f8c1ba4f70188487a8d1f69256e28bec" class="jsOnDesignBtn">
+                            <img src='../../../image_sp/card/xs/shizuku_33.jpg' style='width:50px; height:50px;'>
+                        </a>
+                    </li>
+                </ul>
+                <ul style="width:220px; margin:0 auto; overflow:hidden; text-align:left;" class="displayBox"></ul>
+            </div>
+            <div style="background:url(../../../image_sp/ui/episode/epi_frame_prof_bottom.jpg) center top no-repeat;background-size:326px; width:304px; height:19px; margin:0 auto 10px;"></div>
+        </section>
+        <h2 class="title_img_blue" style="margin:20px 0 10px;">
+            <div>イベントストーリー</div>
+        </h2>
+        <section class="t-Cnt">
+            <div class="area_tab t-Cnt">
+                <link rel="stylesheet" type="text/css" href="../../../css/rich/event_variety.css" media="all">
+                <div class="story_area m-Cnt m-Btm12">
+                    <div class="story_title variety-story-title_story_1">
+                        <img src='../../../image_sp/event/1806/rich/area_name1.png' class="story_title_img" />
+                    </div>
+                    <div class="area-btn-common _base-width story_list">
+                        <a href='../../../memory/play_event_story/1806/10110/1/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_1" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/2/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_2" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/3/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_3" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="story_area m-Cnt m-Btm12">
+                    <div class="story_title variety-story-title_story_2">
+                        <img src='../../../image_sp/event/1806/rich/area_name2.png' class="story_title_img" />
+                    </div>
+                    <div class="area-btn-common _base-width story_list">
+                        <a href='../../../memory/play_event_story/1806/10110/4/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_4" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/5/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_5" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/6/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_6" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="story_area m-Cnt m-Btm12">
+                    <div class="story_title variety-story-title_story_3">
+                        <img src='../../../image_sp/event/1806/rich/area_name3.png' class="story_title_img" />
+                    </div>
+                    <div class="area-btn-common _base-width story_list">
+                        <a href='../../../memory/play_event_story/1806/10110/7/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_7" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/8/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_8" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                        <a href='../../../memory/play_event_story/1806/10110/9/1' class="variety-story-button_story jsOnDesignBtn" style="position:relative;">
+                            <div class="variety-story-episode_9" style="position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;"></div>
+                        </a>
+                    </div>
+                </div>
+                <a href='../../../memory/play_event_story/1806/10110/10/1' class="top_last_story variety-story-button_story_last m-Cnt m-Top8 m-Btm8 jsOnDesignBtn">
+                    <div class="last_story_name">雪像コンテスト</div>
+                </a>
+            </div>
+            <div class="infortext_nosp gray">
+                <p>※未解放のイベントストーリーは、スターエンブレムを交換することで解放できます。</p>
+            </div>
+        </section>
+        <script src="../../../js/ilibrary.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('#story_collection_tab_sub').tab_switch({
+                contents: ".area_tab",
+                start: +0
+            });
+        </script>
+        <img src="../../../image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm8">
+        <br>
+        <a href='../../../mypage.html'>
+            <div class="backLink">マイスタジオ</div>
+        </a>
+        <script type="text/javascript">
+            $(function() {
+                $('form').bind('submit', function() {
+                    var $submit = $("input[type=submit], input[type=reset]");
+                    for (var i = 0; i < $submit.length; i++) {
+                        if ($submit.eq(i).val() != '' && !$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).val('送信中');
+                            $submit.eq(i).prop('disabled', true);
+                            var prev = $submit.eq(i).prev();
+                            if (prev.hasClass('btn_text')) {
+                                prev.text('送信中');
+                                if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                                    $submit.eq(i).parent().removeClass('_line_2');
+                                }
+                            }
+                        } else if (!$submit.eq(i).hasClass('jsNotDisabled')) {
+                            $submit.eq(i).prop('disabled', true);
+                        }
+                        if ($submit.eq(i).parent()[0].tagName == 'LABEL') {
+                            $submit.eq(i).parent().css({
+                                "opacity": "0.5"
+                            });
+                        }
+                    }
+                    $(".livebutton input[type='submit']").val('').css({
+                        "opacity": "0.5"
+                    }).prop('disabled', true);
+                    var $imagesub = $("input[type='image']");
+                    $imagesub.prop('disabled', true);
+                    for (var i = 0; i < $imagesub.length; i++) {
+                        if (!$imagesub.eq(i).attr('class')) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                            continue;
+                        }
+                        if ($imagesub.eq(i).attr('class').indexOf('noop') == -1) {
+                            $imagesub.eq(i).css({
+                                "opacity": "0.5"
+                            });
+                        } else {
+                            $imagesub.eq(i).css({
+                                "opacity": "1"
+                            });
+                        }
+                    }
+                    setTimeout(function() {
+                        $submit.prop('disabled', false).parent().css({
+                            "opacity": "1"
+                        });
+                        $imagesub.prop('disabled', false).css({
+                            "opacity": "1"
+                        });
+                        $(".livebutton input[type='submit']").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $(".submit a").click(function() {
+                    $(this).click(function() {
+                        return false;
+                    })
+                    $(".submit").find("img").css({
+                        "opacity": "0.5"
+                    });
+                    setTimeout(function() {
+                        $(this).click(function() {
+                            return true;
+                        })
+                        $(".submit").find("img").css({
+                            "opacity": "1"
+                        });
+                    }, 2500);
+                });
+                $('body').on("click", '.stop-repeat-link', function(e) {
+                    var self = $('.stop-repeat-link');
+                    self.css({
+                        'pointer-events': 'none',
+                        'opacity': 0.6
+                    });
+                    setTimeout(function() {
+                        self.css({
+                            'pointer-events': 'auto',
+                            'opacity': 1
+                        });
+                    }, 2500);
+                });
+            });
+        </script>
+        <footer>
+            <div class="line_idolmaster"></div>
+            <a href="#top" id="toPageTop" class="mypage_under">
+                <div></div>
+            </a>
+            <div class="t-Cnt">&copy;T.K. THE IDOLM@STER &trade;&amp;&copy;BNEI</div>
+        </footer>
+    </div>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <script>
+        window._tarminal = {
+            'native_app_flg': false,
+            'android_app_flg': false,
+            'ios_app_flg': false,
+            'shell_app_flg': false
+        };
+    </script>
+    <div id="mbga-pf-footer">
+        <script type="text/javascript" charset="UTF-8">
+            (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                    var list = document.getElementsByClassName('mbga-pf-footer-li');
+                    var i = 0,
+                        l = list.length;
+                    for (; i < l; i++) {
+                        var elem = list[i];
+                        elem.addEventListener('touchstart', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/$/, ' mbga-pf-tapped');
+                        });
+                        elem.addEventListener('touchend', function(e) {
+                            e.currentTarget.className = e.currentTarget.className.replace(/ mbga-pf-tapped/, '');
+                        });
+                        elem.addEventListener('touchmove', function(e) {});
+                    }
+                });
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
