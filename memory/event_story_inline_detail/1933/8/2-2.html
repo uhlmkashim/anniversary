@@ -88,7 +88,7 @@
     <script>
         $(document).ready(function() {
             if (typeof newrelic === 'object' && typeof newrelic.setPageViewName === 'function') {
-                newrelic.setPageViewName('/idolmaster/index.php/memory/event_story_inline_detail/1918/10030');
+                newrelic.setPageViewName('/idolmaster/index.php/memory/event_story_inline_detail/1918/10030/0/1/0');
             }
         });
     </script>
@@ -126,11 +126,11 @@
             }
         </style>
         <div class="tab_common-large m-Top8 m-Btm8">
-            <div class="tab_line_2 tab_text selected">ステージボス</div>
-            <a class="tab_line_2 tab_text" href="2-1.html">ステージボス(MASTER)</a>
+            <a class="tab_line_2 tab_text" href="1.html">ステージボス</a>
+            <div class="tab_line_2 tab_text selected" style="font-size:12px;">ステージボス(MASTER)</div>
         </div>
         <h3 class="title_img_gray m-Btm5">
-            <div class='frame'>ｱｶﾘ</div>
+            <div class='frame'>ﾌﾐｶ</div>
         </h3>
         <section class="t-Cnt m-Btm5">
             <script type="text/javascript" src="../../../../js/pex-1.2.0.js"></script>
@@ -159,17 +159,17 @@
                             'disableTouch': true
                         };
                         var container = document.getElementById("animation");
-                        var pex = new Pex("1.swf", "animation", option);
+                        var pex = new Pex("2-2.swf", "animation", option);
                     } else {
                         console.log("flashPlayer_on");
                         var objEle = document.createElement("object");
-                        objEle.setAttribute("data", "../../../../memory/show_inline_flash_select/1918/appear/0/1/0");
+                        objEle.setAttribute("data", "../../../../memory/show_inline_flash_select/1918/battle/0/1/0");
                         objEle.setAttribute("type", "application/x-shockwave-flash");
                         objEle.setAttribute("width", "320");
                         objEle.setAttribute("height", "240");
                         objEle.setAttribute("loop", "on");
                         objEle.setAttribute("quality", "high");
-                        objEle.setAttribute("src", "../../../../memory/show_inline_flash_select/1918/appear/0/1/0");
+                        objEle.setAttribute("src", "../../../../memory/show_inline_flash_select/1918/battle/0/1/0");
                         var container = document.getElementById("animation");
                         container.appendChild(objEle);
                     }
@@ -192,22 +192,11 @@
             <div id="animation" style="width:320px;height:240px;overflow:hidden;"></div>
         </section>
         <div class="area-btn-common _base-width m-Btm8 story_btn_area m-Top12">
-            <div class="btn_normal_line_5 _hover"><span class='gray'>登場</span></div>
-            <a class="btn_normal_line_5" href='2.html'>LIVE</a>
-            <a class="btn_normal_line_5" href='3.html'>LOSE</a>
-            <a class="btn_normal_line_5" href='4.html'>DRAW</a>
-            <a class="btn_normal_line_5" href='5.html'>WIN</a>
-        </div>
-        <div class='story'>
-            <div class="displayBox m-Cnt m-Btm5" style="padding-left:5px">
-                <div class="memory_thumbnail">
-                    <img src="../../../../image_sp/card/quest/hinako_38.jpg">
-                </div>
-                <div class="assault_ballon normal ballon_attr_3" style='margin-top:0;'>
-                    <div class="idol_name">ﾋﾅｺ</div>
-                    <div class="comment">ｱｶﾘちゃん…ﾋﾅｺを信じて､力を貸してくれるんですね…!</div>
-                </div>
-            </div>
+            <a class="btn_normal_line_5" href='2-1.html'>登場</a>
+            <div class="btn_normal_line_5 _hover"><span class='gray'>LIVE</span></div>
+            <a class="btn_normal_line_5" href='2-3.html'>LOSE</a>
+            <a class="btn_normal_line_5" href='2-4.html'>DRAW</a>
+            <a class="btn_normal_line_5" href='2-5.html'>WIN</a>
         </div>
         <a class="btn_normal_line_2 _line_2 m-Cnt m-Top10 m-Btm8" href='story.html'>ステージクリア<br>演出を見る</a>
         <img src="../../../../image_sp/ui/line_hoshi.jpg" width="100%" class="m-Btm10"><br>
