@@ -1,0 +1,36 @@
+{
+    "user_idol": {
+        "viewer_id": "134800333",
+        "idol_id": "1034",
+        "level": "30",
+        "exp": "8300",
+        "vocal": 15748,
+        "dance": 18064,
+        "visual": 19998,
+        "create_time": "2021-04-26 00:27:24",
+        "update_time": "2023-03-29 21:57:54",
+        "delete_time": null,
+        "total_param": 11775,
+        "idol_info": {
+            "image": "item\/l\/petit_cg\/chara\/1034",
+            "idol_id": "1034",
+            "idol_name": "\u6afb\u4e95\u6843\u83ef",
+            "short_name": "\u6843\u83ef",
+            "attribute": "1"
+        },
+        "name": "\u6afb\u4e95\u6843\u83ef",
+        "attribute": "1"
+    },
+    "user_param": {
+        "viewer_id": "134800333",
+        "money": "1945663",
+        "point": "23960",
+        "create_time": "2016-06-26 20:30:52",
+        "update_time": "2023-03-29 21:57:54",
+        "delete_time": null
+    },
+    "deck_position": 2,
+    "idol_message": "\uff75\uff70\uff83\uff9e\uff68\uff7c\uff6e\uff9d\u306f\u885d\u6483\u3067\u3057\u305f\u308f\uff61\u4ed6\u306e\u4eba\u305f\u3061\u306e\u6301\u3064\u5fc5\u6b7b\u3055\u304c\uff64\u308f\u305f\u304f\u3057\u306b\u306f\u8db3\u308a\u307e\u305b\u3093\u3067\u3057\u305f",
+    "idol_attribute": "1",
+    "swf_url": null
+}

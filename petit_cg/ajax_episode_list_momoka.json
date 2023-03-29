@@ -1,0 +1,37 @@
+{
+    "episode_list": [{
+        "episode_id": "1",
+        "episode_name": "\u6afb\u4e95\u6843\u83efVi\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e1",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "2",
+        "episode_name": "\u6afb\u4e95\u6843\u83efVo\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e1",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "3",
+        "episode_name": "\u6afb\u4e95\u6843\u83efDa\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e1",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "4",
+        "episode_name": "\u6afb\u4e95\u6843\u83ef\uff7d\uff83\uff6f\uff8c\uff9f\uff71\uff6f\uff8c\uff9f\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e1",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "5",
+        "episode_name": "\u6afb\u4e95\u6843\u83efVi\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e2",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "6",
+        "episode_name": "\u6afb\u4e95\u6843\u83efVo\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e2",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "7",
+        "episode_name": "\u6afb\u4e95\u6843\u83efDa\uff9a\uff6f\uff7d\uff9d\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e2",
+        "episode_voice": "1"
+    }, {
+        "episode_id": "8",
+        "episode_name": "\u6afb\u4e95\u6843\u83ef\uff7d\uff83\uff6f\uff8c\uff9f\uff71\uff6f\uff8c\uff9f\uff74\uff8b\uff9f\uff7f\uff70\uff84\uff9e2",
+        "episode_voice": "1"
+    }],
+    "idol_message": "\u4f55\u3092\u7740\u3066\u3082\u4f3c\u5408\u3046\u308f\u305f\u304f\u3057\u306b\u3069\u3093\u306a\uff7a\uff70\uff83\uff9e\uff68\uff88\uff70\uff84\u3092\u307f\u305b\u3066\u304f\u308c\u308b\u306e\u304b\uff64\u672c\u5f53\u306b\u697d\u3057\u307f\u3067\u3059\u308f",
+    "idol_attribute": "1"
+}
