@@ -67,12 +67,12 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:310px; position: absolute; left: 0px; top: 0px; display: block;"></div>
     </div>
     <script>
-        var image_server = "http://sp.pf-img-a.mbga.jp/12008305/";
-        var base_url = "http://125.6.169.35/idolmaster/";
+        var image_server = "";
+        var base_url = "";
         window.file_name = "event_gift_chance_extra"; // createjs の本体ファイルを定義
-        window.dir_name = "image_sp/cjs/event/produce/event_gift_chance_extra/";
+        window.dir_name = "../../../image_sp/cjs/event/produce/event_gift_chance_extra/";
         window.replace_images = {
-            "replace_card": "card\/l\/e96c0d9f1bc2c591042ff10001a3e28e.jpg",
+            "replace_card": "card\/l\/kiyomi_07.jpg",
             "replace_bg": "event_flash\/1733\/bg\/1733\/bg2_wide.jpg",
             "replace_character1_1": "event_flash\/1733\/idol_cm\/2000_1_1.png",
             "replace_character1_2": "event_flash\/1733\/idol_cm\/2000_1_2.png",
@@ -96,7 +96,7 @@
             "character_face2": "2",
             "character_face3": "2",
             "positive_reaction": "1",
-            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce_box_reward%2Fbox_result%3Fbox_round%3D%26l_frm%3DEvent_produce_box_reward_show_box_chance_flash_1%26rnd%3D286704381",
+            "_url": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http://125.6.169.35/idolmaster/event_produce_box_reward/box_result",
             "card_name1": "[\uff7c\uff6e\uff7a\uff97\uff8c\uff9a\uff70\uff8a\uff9e\uff70\uff65S]\u51b4\u5cf6\u6e05\u7f8e(\uff9a\uff71)",
             "card_att1": "2860",
             "card_def1": "2020",
@@ -104,7 +104,7 @@
         };
         window.child_obj = [];
         window.im_cjs = window.im_cjs || {};
-        window.im_cjs.jump_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON'; // createjsの演出が全て終了した場合の飛び先urlの定義
+        window.im_cjs.jump_url = '../memory.html'; // createjsの演出が全て終了した場合の飛び先urlの定義
         var _ua = navigator.userAgent;
         var ios_app_flg = false;
         var ios_browser_flg = (_ua.indexOf('iPhone') !== -1) ? true : false;
@@ -161,11 +161,11 @@
                     var _img_path = window.dir_name + lib.properties.manifest[i].src;
                     var _prefix = lib.properties.manifest[i].id.replace(window.file_name + '_', '');
                     if (window.replace_images[_prefix]) {
-                        _img_path = 'image_sp/' + window.replace_images[_prefix];
+                        _img_path = '../../../image_sp/' + window.replace_images[_prefix];
                     }
                     new_manifest[i] = {
                         'type': 'image',
-                        'src': window.image_server + '?url=' + encodeURIComponent(window.base_url + _img_path),
+                        'src': encodeURIComponent(_img_path),
                         'id': lib.properties.manifest[i].id,
                         'crossOrigin': 'Anonymous'
                     }
@@ -174,9 +174,9 @@
                     for (var n in lib_supporter[i].properties.manifest) {
                         var _img_path = window.dir_name + lib_supporter[i].properties.manifest[n].src;
                         if (window.child_replace_images && window.child_replace_images[lib_supporter[i].properties.manifest[n].id]) {
-                            _img_path = window.image_server + '?url=' + encodeURIComponent(window.base_url + 'image_sp/' + window.child_replace_images[lib_supporter[i].properties.manifest[n].id]);
+                            _img_path = encodeURIComponent('image_sp/' + window.child_replace_images[lib_supporter[i].properties.manifest[n].id]);
                         } else {
-                            _img_path = window.image_server + '?url=' + encodeURIComponent(window.base_url + window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src);
+                            _img_path = encodeURIComponent(window.child_obj[i].image_path + '/' + lib_supporter[i].properties.manifest[n].src);
                         }
                         new_manifest.push({
                             'type': 'image',
