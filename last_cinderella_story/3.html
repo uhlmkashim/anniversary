@@ -104,6 +104,8 @@
             // 読み込み開始
             load_js.loadManifest(window.js_load_files);
             var _effect_cnt = 8;
+			var image_server = "";
+			var base_url = "";
             window.im_cjs = window.im_cjs || {};
             window.replace_images = [];
             window.file_name = "story_generator_n40";
@@ -8922,7 +8924,7 @@
             // 一旦すべてのキャラ画像をダミーに差し替え
             for (i = 1; i <= 20; i++) {
                 for (n = 1; n <= 13; n++) {
-                    window.chara_replace_images[('c' + i + '_face' + n)] = 'image_sp/cjs/chara/no_face.png';
+                    window.chara_replace_images[('c' + i + '_face' + n)] = '../image_sp/cjs/chara/no_face.png';
                 }
             }
             // 必要なキャラ画像を追加
